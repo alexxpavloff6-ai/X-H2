@@ -1,0 +1,3174 @@
+{
+  "X-H2": {
+    "dat": "FIRMWARE/ver 5.30/FWUP0028.DAT",
+    "sha256_before": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+    "sha256_after": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+    "images": [
+      {
+        "base": "0x1101000",
+        "length": 12042160,
+        "sha256": "3aacc331157312a03531266cd9aca0daea28597b9f3535bb6141105ad7354b4d"
+      },
+      {
+        "base": "0x29ae000",
+        "length": 15515648,
+        "sha256": "a49b88c00d3724239207e6564f2dfbf9d0a59b41962012d44a05738455d2addd"
+      }
+    ],
+    "addresses": {
+      "film_writer_fragment": "0x2e537c8",
+      "saturation_writer_fragment": "0x2e52cbc",
+      "builder": "0x13503e4",
+      "predicate": "0x134df8c",
+      "selector": "0x134fd68",
+      "header": "0x134fbf0"
+    },
+    "parameter_offsets": {
+      "gate": "0x3978",
+      "mode": "0x39b8",
+      "color": "0x39b4"
+    },
+    "selector_group_2": "0x18d3dc8",
+    "descriptors": {
+      "1003": {
+        "address": "0x18d3eb8",
+        "bytes": "03 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 9a 00 00 00 00 00 00 00",
+        "source_offset": "0x9a"
+      },
+      "1401": {
+        "address": "0x18d49f8",
+        "bytes": "01 14 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 90 01 00 00 00 00 00 00",
+        "source_offset": "0x190"
+      }
+    },
+    "header_bytes": "46 55 4a 49 46 49 4c 4d 0c 00 00 00",
+    "cases": [
+      {
+        "input": {
+          "gate": 2,
+          "mode": 13,
+          "color": 4,
+          "override_film_flag": null
+        },
+        "film_value": 1536,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "8d77b9ff5df095ae243eb4fecb8e9056e6f80c044b32ce68cf235180944dcaf6",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 06 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 13,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 1536,
+        "saturation_value": 128,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "d29ece293b6a3a9cd10ad9c1d440270fd14a6ce8d0225ced3ef153987c5e55c3",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 06 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 13,
+          "color": 2,
+          "override_film_flag": null
+        },
+        "film_value": 1536,
+        "saturation_value": 256,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "1f6c4cecd7ea350dabbdbc57ae67aba7c8ba8d3a2b3bf3d19705f4702c26373a",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 06 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 01 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 4,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "cf5d552357da26ca8efd84d57efab9919e5f087e8c04108cb26a677bf6aab37c",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 128,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "7b90e0f4a679f163fac47f5f10fe884ded043b36ac9ab403cb1e70634a4ad26f",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 2,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 256,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "c8ae59ab1e710d96b8cc2ca08d6ce7c4863d87777abdd8abf27805d11a826ef4",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 01 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 22,
+          "color": 4,
+          "override_film_flag": null
+        },
+        "film_value": 2816,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "9844736c72886ea65d5ca20ab87ef7e1c3562e307ad8a0d444d650f54cd2796c",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 0b 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 22,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 2816,
+        "saturation_value": 128,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "f6be0adcdc99d7c82237fdd7950db8a0524dfd5d21651c660480e594c97b45d3",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 0b 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 22,
+          "color": 2,
+          "override_film_flag": null
+        },
+        "film_value": 2816,
+        "saturation_value": 256,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "35ee4da0717fc4b9b94f2cedbc715e5f4225abdb47d25f4aac74b3ed371914db",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 0b 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 01 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 3,
+          "override_film_flag": 0
+        },
+        "film_value": 2048,
+        "saturation_value": 128,
+        "film_flag_18c": 0,
+        "predicates": {
+          "1401": 0,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 4
+          }
+        },
+        "directory_length": 3566,
+        "directory_sha256": "9f993bbfd351c61077664385ae09a679fa3683da8849e08d3b486e646f472f14",
+        "records": {
+          "1401": [],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 4,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 65535,
+        "saturation_value": 768,
+        "film_flag_18c": 0,
+        "predicates": {
+          "1401": 0,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 4
+          }
+        },
+        "directory_length": 3566,
+        "directory_sha256": "ffa2066fc8fa6f9b9f81f9bfe5abf9a9105f249d659250ac660bd25f72d2870f",
+        "records": {
+          "1401": [],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 03 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 46,
+          "mode": 19,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 65535,
+        "saturation_value": 65535,
+        "film_flag_18c": 0,
+        "predicates": {
+          "1401": 0,
+          "1003": 0
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 4,
+            "1401": 4
+          }
+        },
+        "directory_length": 3554,
+        "directory_sha256": "d8233e64759e85025bba08246d5b2ed2a8d6c83d92c888e33221b2b31a372349",
+        "records": {
+          "1401": [],
+          "1003": []
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 9,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "cf5d552357da26ca8efd84d57efab9919e5f087e8c04108cb26a677bf6aab37c",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "X-H2S": {
+    "dat": "Firmware на прочиеFuji/FWUP0027.DAT",
+    "sha256_before": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+    "sha256_after": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+    "images": [
+      {
+        "base": "0x1421000",
+        "length": 12015376,
+        "sha256": "a32a90b7efefaebcf3b9c3f076cb23f82c1f4dda45bf828a024487fc0fb06c16"
+      },
+      {
+        "base": "0x2cca000",
+        "length": 14843904,
+        "sha256": "86c8c9f01ae6840f791bffea050e8442ff9e967b6b7cbbb7f9d8141dd41d764f"
+      }
+    ],
+    "addresses": {
+      "film_writer_fragment": "0x316a994",
+      "saturation_writer_fragment": "0x3169fa0",
+      "builder": "0x166dfc4",
+      "predicate": "0x166bb6c",
+      "selector": "0x166d948",
+      "header": "0x166d7d0"
+    },
+    "parameter_offsets": {
+      "gate": "0x391c",
+      "mode": "0x395c",
+      "color": "0x3958"
+    },
+    "selector_group_2": "0x1bf0fa0",
+    "descriptors": {
+      "1003": {
+        "address": "0x1bf1090",
+        "bytes": "03 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 9a 00 00 00 00 00 00 00",
+        "source_offset": "0x9a"
+      },
+      "1401": {
+        "address": "0x1bf1bd0",
+        "bytes": "01 14 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 90 01 00 00 00 00 00 00",
+        "source_offset": "0x190"
+      }
+    },
+    "header_bytes": "46 55 4a 49 46 49 4c 4d 0c 00 00 00",
+    "cases": [
+      {
+        "input": {
+          "gate": 2,
+          "mode": 13,
+          "color": 4,
+          "override_film_flag": null
+        },
+        "film_value": 1536,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "8d77b9ff5df095ae243eb4fecb8e9056e6f80c044b32ce68cf235180944dcaf6",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 06 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 13,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 1536,
+        "saturation_value": 128,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "d29ece293b6a3a9cd10ad9c1d440270fd14a6ce8d0225ced3ef153987c5e55c3",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 06 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 13,
+          "color": 2,
+          "override_film_flag": null
+        },
+        "film_value": 1536,
+        "saturation_value": 256,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "1f6c4cecd7ea350dabbdbc57ae67aba7c8ba8d3a2b3bf3d19705f4702c26373a",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 06 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 01 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 4,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "cf5d552357da26ca8efd84d57efab9919e5f087e8c04108cb26a677bf6aab37c",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 128,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "7b90e0f4a679f163fac47f5f10fe884ded043b36ac9ab403cb1e70634a4ad26f",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 2,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 256,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "c8ae59ab1e710d96b8cc2ca08d6ce7c4863d87777abdd8abf27805d11a826ef4",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 01 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 22,
+          "color": 4,
+          "override_film_flag": null
+        },
+        "film_value": 2816,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "9844736c72886ea65d5ca20ab87ef7e1c3562e307ad8a0d444d650f54cd2796c",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 0b 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 22,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 2816,
+        "saturation_value": 128,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "f6be0adcdc99d7c82237fdd7950db8a0524dfd5d21651c660480e594c97b45d3",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 0b 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 22,
+          "color": 2,
+          "override_film_flag": null
+        },
+        "film_value": 2816,
+        "saturation_value": 256,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "35ee4da0717fc4b9b94f2cedbc715e5f4225abdb47d25f4aac74b3ed371914db",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 0b 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 01 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 3,
+          "override_film_flag": 0
+        },
+        "film_value": 2048,
+        "saturation_value": 128,
+        "film_flag_18c": 0,
+        "predicates": {
+          "1401": 0,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 4
+          }
+        },
+        "directory_length": 3566,
+        "directory_sha256": "9f993bbfd351c61077664385ae09a679fa3683da8849e08d3b486e646f472f14",
+        "records": {
+          "1401": [],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 4,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 65535,
+        "saturation_value": 768,
+        "film_flag_18c": 0,
+        "predicates": {
+          "1401": 0,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 4
+          }
+        },
+        "directory_length": 3566,
+        "directory_sha256": "ffa2066fc8fa6f9b9f81f9bfe5abf9a9105f249d659250ac660bd25f72d2870f",
+        "records": {
+          "1401": [],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 03 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 46,
+          "mode": 19,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 65535,
+        "saturation_value": 65535,
+        "film_flag_18c": 0,
+        "predicates": {
+          "1401": 0,
+          "1003": 0
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 4,
+            "1401": 4
+          }
+        },
+        "directory_length": 3554,
+        "directory_sha256": "d8233e64759e85025bba08246d5b2ed2a8d6c83d92c888e33221b2b31a372349",
+        "records": {
+          "1401": [],
+          "1003": []
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 9,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3578,
+        "directory_sha256": "cf5d552357da26ca8efd84d57efab9919e5f087e8c04108cb26a677bf6aab37c",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "X-T5": {
+    "dat": "Firmware на прочиеFuji/FWUP0030.DAT",
+    "sha256_before": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+    "sha256_after": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+    "images": [
+      {
+        "base": "0x1101000",
+        "length": 11743456,
+        "sha256": "fd5f899217a833552f135d719d22e025aea2e0780b2fd1f8c66b353ead969724"
+      },
+      {
+        "base": "0x28eb000",
+        "length": 15446016,
+        "sha256": "d74dba337fe4078a6ee15ca5fddba7e502bdefb980825a09a15f9b13a01eb350"
+      }
+    ],
+    "addresses": {
+      "film_writer_fragment": "0x2d91a90",
+      "saturation_writer_fragment": "0x2d90f04",
+      "builder": "0x134d3b4",
+      "predicate": "0x134af5c",
+      "selector": "0x134cd38",
+      "header": "0x134cbc0"
+    },
+    "parameter_offsets": {
+      "gate": "0x39c0",
+      "mode": "0x3a00",
+      "color": "0x39fc"
+    },
+    "selector_group_2": "0x18d1650",
+    "descriptors": {
+      "1003": {
+        "address": "0x18d1740",
+        "bytes": "03 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 9a 00 00 00 00 00 00 00",
+        "source_offset": "0x9a"
+      },
+      "1401": {
+        "address": "0x18d2280",
+        "bytes": "01 14 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 90 01 00 00 00 00 00 00",
+        "source_offset": "0x190"
+      }
+    },
+    "header_bytes": "46 55 4a 49 46 49 4c 4d 0c 00 00 00",
+    "cases": [
+      {
+        "input": {
+          "gate": 2,
+          "mode": 13,
+          "color": 4,
+          "override_film_flag": null
+        },
+        "film_value": 1536,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3598,
+        "directory_sha256": "5d87662a7b97bb96878d72b66c4a561b82b4dc8f4c7fce62420cc66c159a86a3",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 06 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 13,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 1536,
+        "saturation_value": 128,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3598,
+        "directory_sha256": "7e759b57e910b770b2dab0762d683645bcdb3d47fd6b318d56230abe989ccd8d",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 06 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 13,
+          "color": 2,
+          "override_film_flag": null
+        },
+        "film_value": 1536,
+        "saturation_value": 256,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3598,
+        "directory_sha256": "1d63e3215cf2bc58ac498c0bafb5916bdd1837ff6a961a66c044f13e1167878a",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 06 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 01 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 4,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3598,
+        "directory_sha256": "d1758327246c4ba22e07c73d7578af678f5b9a4545822a4ab135ec9e5ffd2034",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 128,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3598,
+        "directory_sha256": "d62307a118c5145b32326d0b7dc6ae484ba3834095b2060b70ecda5f65f2a807",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 2,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 256,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3598,
+        "directory_sha256": "34143e8dc938511abb0009b18407ccb41f1b678b94e1c9ff27414cf93f8307a5",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 01 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 22,
+          "color": 4,
+          "override_film_flag": null
+        },
+        "film_value": 2816,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3598,
+        "directory_sha256": "5de48de1fb1f4fc1d0d497eb01fd9818da014bb444db4a07de4f0224b88ea27c",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 0b 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 22,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 2816,
+        "saturation_value": 128,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3598,
+        "directory_sha256": "dd24a1674ca421bdcf316f68ce97407094d5522172b011e3693744fc3d6005a1",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 0b 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 22,
+          "color": 2,
+          "override_film_flag": null
+        },
+        "film_value": 2816,
+        "saturation_value": 256,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3598,
+        "directory_sha256": "67a36967a452bf59f142f5cc08e4c59f9fe63d02e1a38c0d655b26c73d529d63",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 0b 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 01 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 3,
+          "override_film_flag": 0
+        },
+        "film_value": 2048,
+        "saturation_value": 128,
+        "film_flag_18c": 0,
+        "predicates": {
+          "1401": 0,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 4
+          }
+        },
+        "directory_length": 3586,
+        "directory_sha256": "438337bb3cd7ba71f674dcc5c6b22ad9de5663009f1ee776f513d2b98fb412fa",
+        "records": {
+          "1401": [],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 4,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 65535,
+        "saturation_value": 768,
+        "film_flag_18c": 0,
+        "predicates": {
+          "1401": 0,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 4
+          }
+        },
+        "directory_length": 3586,
+        "directory_sha256": "66c09fb216c73e42ff52a90f6d2fd41afc1c0d6e72126b5a0fad798c701fe782",
+        "records": {
+          "1401": [],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 03 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 46,
+          "mode": 19,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 65535,
+        "saturation_value": 65535,
+        "film_flag_18c": 0,
+        "predicates": {
+          "1401": 0,
+          "1003": 0
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 4,
+            "1401": 4
+          }
+        },
+        "directory_length": 3574,
+        "directory_sha256": "29c52ec2e2ea5b1a032f790a0261f6c7f62fd2cff8b489fd6430671071cc0d8c",
+        "records": {
+          "1401": [],
+          "1003": []
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 9,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3598,
+        "directory_sha256": "d1758327246c4ba22e07c73d7578af678f5b9a4545822a4ab135ec9e5ffd2034",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "X100VI": {
+    "dat": "Firmware на прочиеFuji/FPUPDATE.DAT",
+    "sha256_before": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+    "sha256_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+    "images": [
+      {
+        "base": "0x11c1000",
+        "length": 27121096,
+        "sha256": "77456fe5c9808ce5e638b1a5f6f12d9e8e40c1751e1f9b4640134fde662e09d4"
+      },
+      {
+        "base": "0x2b8f000",
+        "length": 22253568,
+        "sha256": "14b0557bd724fa74b51ff641fcd5481da5b3ac64146d4fc69375086dafcfb174"
+      }
+    ],
+    "addresses": {
+      "film_writer_fragment": "0x3061b1c",
+      "saturation_writer_fragment": "0x3060e3c",
+      "builder": "0x14376ac",
+      "predicate": "0x14350f8",
+      "selector": "0x1437030",
+      "header": "0x1436eb8"
+    },
+    "parameter_offsets": {
+      "gate": "0x3fa8",
+      "mode": "0x3fe8",
+      "color": "0x3fe4"
+    },
+    "selector_group_2": "0x19ca6a8",
+    "descriptors": {
+      "1003": {
+        "address": "0x19ca798",
+        "bytes": "03 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 9a 00 00 00 00 00 00 00",
+        "source_offset": "0x9a"
+      },
+      "1401": {
+        "address": "0x19cb2d8",
+        "bytes": "01 14 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 90 01 00 00 00 00 00 00",
+        "source_offset": "0x190"
+      }
+    },
+    "header_bytes": "46 55 4a 49 46 49 4c 4d 0c 00 00 00",
+    "cases": [
+      {
+        "input": {
+          "gate": 2,
+          "mode": 13,
+          "color": 4,
+          "override_film_flag": null
+        },
+        "film_value": 1536,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3518,
+        "directory_sha256": "e442d4d0b0f2216652306f6b74d66e4fefec4c83257733cc005d422aa56dafd8",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 06 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 13,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 1536,
+        "saturation_value": 128,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3518,
+        "directory_sha256": "da6481d365e9ef396d3c9acfd199cdaadc01dd0f5f99293f256818f34b4335ef",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 06 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 13,
+          "color": 2,
+          "override_film_flag": null
+        },
+        "film_value": 1536,
+        "saturation_value": 256,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3518,
+        "directory_sha256": "585727830a1b963863cf1da1a750c0a9088d4429edb0086777d432491fb74d5b",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 06 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 01 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 4,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3518,
+        "directory_sha256": "d11f7a70530f04b475b7e757bfd53309b55dbc395b603d00f7400000e0f97e33",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 128,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3518,
+        "directory_sha256": "4d77c6eac7f546dcaaf2a18f8c76a33f1c6e93f78809daf6056972b48424edf9",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 2,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 256,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3518,
+        "directory_sha256": "b6774114fa4bc7453228b147d2354bb7dc0301b84a9631ff96568ca08ada8f0e",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 01 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 22,
+          "color": 4,
+          "override_film_flag": null
+        },
+        "film_value": 2816,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3518,
+        "directory_sha256": "1c030fc959897b451e90bfe5322dd261541c847c5fc17bbdf66aaa9ab363f12a",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 0b 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 22,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 2816,
+        "saturation_value": 128,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3518,
+        "directory_sha256": "d2d657b1259ca84b64015d7350ad54e8322ae32b1781b7d083f446f53c255d43",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 0b 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 22,
+          "color": 2,
+          "override_film_flag": null
+        },
+        "film_value": 2816,
+        "saturation_value": 256,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3518,
+        "directory_sha256": "69669588f118e02c37e41a3ea91eaf01d9db5e77870f3b6800fcbbea454e31d9",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 0b 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 01 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 3,
+          "override_film_flag": 0
+        },
+        "film_value": 2048,
+        "saturation_value": 128,
+        "film_flag_18c": 0,
+        "predicates": {
+          "1401": 0,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 4
+          }
+        },
+        "directory_length": 3506,
+        "directory_sha256": "353d569bc76f639e4d40c9d2c2fcd69461f8ace49819b0dfa065b53250a60f8e",
+        "records": {
+          "1401": [],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 80 00 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 4,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 65535,
+        "saturation_value": 768,
+        "film_flag_18c": 0,
+        "predicates": {
+          "1401": 0,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 4
+          }
+        },
+        "directory_length": 3506,
+        "directory_sha256": "fdfde1fb8054a90d03360d40bdb39fc50726bd68f5b3fd7a4f87206016bba5f5",
+        "records": {
+          "1401": [],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 03 00 00"
+            }
+          ]
+        }
+      },
+      {
+        "input": {
+          "gate": 46,
+          "mode": 19,
+          "color": 3,
+          "override_film_flag": null
+        },
+        "film_value": 65535,
+        "saturation_value": 65535,
+        "film_flag_18c": 0,
+        "predicates": {
+          "1401": 0,
+          "1003": 0
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 4,
+            "1401": 4
+          }
+        },
+        "directory_length": 3494,
+        "directory_sha256": "356e4f8e1ecd75599af7470477d05b9a015c71221abacf431469bd7ff2050159",
+        "records": {
+          "1401": [],
+          "1003": []
+        }
+      },
+      {
+        "input": {
+          "gate": 2,
+          "mode": 19,
+          "color": 9,
+          "override_film_flag": null
+        },
+        "film_value": 2048,
+        "saturation_value": 0,
+        "film_flag_18c": 1,
+        "predicates": {
+          "1401": 1,
+          "1003": 1
+        },
+        "builder_observed": {
+          "predicate_calls": [
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1003",
+              "group": 2,
+              "object": "0x60010000"
+            },
+            {
+              "tag": "0x1401",
+              "group": 2,
+              "object": "0x60010000"
+            }
+          ],
+          "descriptor_reads": {
+            "1003": 21,
+            "1401": 21
+          }
+        },
+        "directory_length": 3518,
+        "directory_sha256": "d11f7a70530f04b475b7e757bfd53309b55dbc395b603d00f7400000e0f97e33",
+        "records": {
+          "1401": [
+            {
+              "offset": 710,
+              "bytes": "01 14 03 00 01 00 00 00 00 08 00 00"
+            }
+          ],
+          "1003": [
+            {
+              "offset": 74,
+              "bytes": "03 10 03 00 01 00 00 00 00 00 00 00"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

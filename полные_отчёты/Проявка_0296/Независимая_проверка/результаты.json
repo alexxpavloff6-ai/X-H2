@@ -1,0 +1,101 @@
+{
+  "method": "CV2 JPEG BGR -> 966x644 INTER_AREA -> float sRGB Lab. Same coordinates, no geometric registration. Common mask: all RGB channels 6..249 in all three frames; reference 0301 L* 15..85, C*ab >3. C* difference is not percent or ISP coefficient. User identifies all as camera developments of same RAF; image content/dimensions must not be assumed equal in other experiments.",
+  "sample_fraction": 0.5800300271337269,
+  "source_sha256": {
+    "DSCF0300.JPG": "a508796353a62ec3d13ca72b4358d7c3779867a44bc02af951479623f04c8cae",
+    "DSCF0301.JPG": "17949ce0e8660675e86a61a817857470b9c264b411d863aebded9e27330e4c8a",
+    "DSCF0302.JPG": "20f3b6ef810d587e9c9f5f987b90035e0a76c59a774f8631fc2c8707c6984e87"
+  },
+  "opencv_version": "4.13.0",
+  "numpy_version": "2.4.6",
+  "comparisons": [
+    {
+      "from": "DSCF0301",
+      "to": "DSCF0300",
+      "median_delta_Cab": 1.1567745208740234,
+      "mean_delta_Cab": 1.151371717453003,
+      "fraction_delta_Cab_positive": 0.9655635893015999,
+      "delta_Cab_p10_p90": [
+        0.503719711303711,
+        1.878641510009766
+      ],
+      "median_Cab_ratio": 1.0485519170761108,
+      "Cab_ratio_p10_p90": [
+        1.0272018909454346,
+        1.0682718753814697
+      ],
+      "median_delta_L": -0.0244140625
+    },
+    {
+      "from": "DSCF0300",
+      "to": "DSCF0302",
+      "median_delta_Cab": 1.2935848236083984,
+      "mean_delta_Cab": 1.3538264036178589,
+      "fraction_delta_Cab_positive": 0.9798358824849864,
+      "delta_Cab_p10_p90": [
+        0.6015933990478516,
+        2.22478256225586
+      ],
+      "median_Cab_ratio": 1.0542668104171753,
+      "Cab_ratio_p10_p90": [
+        1.0339982509613037,
+        1.0744633674621582
+      ],
+      "median_delta_L": -0.030517578125
+    },
+    {
+      "from": "DSCF0301",
+      "to": "DSCF0302",
+      "median_delta_Cab": 2.3779335021972656,
+      "mean_delta_Cab": 2.5051982402801514,
+      "fraction_delta_Cab_positive": 0.9959344749320334,
+      "delta_Cab_p10_p90": [
+        1.2262107849121096,
+        4.013099670410156
+      ],
+      "median_Cab_ratio": 1.1056103706359863,
+      "Cab_ratio_p10_p90": [
+        1.0786268711090088,
+        1.1280301809310913
+      ],
+      "median_delta_L": -0.067138671875
+    }
+  ],
+  "ratio_2_vs_0_by_reference_bin": [
+    {
+      "bin": "L 15..35",
+      "pixels": 137819,
+      "median_Cab_ratio_2_vs_0": 1.1040312051773071
+    },
+    {
+      "bin": "L 35..55",
+      "pixels": 68258,
+      "median_Cab_ratio_2_vs_0": 1.1067813634872437
+    },
+    {
+      "bin": "L 55..85",
+      "pixels": 154762,
+      "median_Cab_ratio_2_vs_0": 1.1058872938156128
+    },
+    {
+      "bin": "C 3..10",
+      "pixels": 22550,
+      "median_Cab_ratio_2_vs_0": 1.0927746295928955
+    },
+    {
+      "bin": "C 10..20",
+      "pixels": 97186,
+      "median_Cab_ratio_2_vs_0": 1.1038358211517334
+    },
+    {
+      "bin": "C 20..40",
+      "pixels": 215563,
+      "median_Cab_ratio_2_vs_0": 1.1061803102493286
+    },
+    {
+      "bin": "C 40+",
+      "pixels": 25540,
+      "median_Cab_ratio_2_vs_0": 1.1059598922729492
+    }
+  ]
+}

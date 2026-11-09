@@ -1,0 +1,2990 @@
+{
+  "X-H2": {
+    "source": "FIRMWARE/ver 5.30/FWUP0028.DAT",
+    "source_sha256": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+    "dt_dat_offset": "0x3c40274",
+    "dt_sha256": "e54d92a14cd021dc6bbb4a88ec36b21cc339af9bd8e8e3686014de71bbc833be",
+    "dt_size": 11425,
+    "version": 17,
+    "node_count": 62,
+    "cpu_nodes": [
+      "/cpus/cpu@1",
+      "/cpus/cpu@2",
+      "/cpus/cpu@4",
+      "/cpus/cpu@8"
+    ],
+    "memory_regions": [
+      {
+        "path": "/memory@07000000",
+        "address": "0x7000000",
+        "size": "0x10000000",
+        "compatible": ""
+      },
+      {
+        "path": "/amp_shared@17000000",
+        "address": "0x17000000",
+        "size": "0xff00000",
+        "compatible": "generic-uio"
+      },
+      {
+        "path": "/rpmsg_shared@26F00000",
+        "address": "0x26f00000",
+        "size": "0x100000",
+        "compatible": "cybertrust,marble_rpmsg_driver"
+      },
+      {
+        "path": "/amp_isgc_shared@05F00000",
+        "address": "0x5f00000",
+        "size": "0x1080000",
+        "compatible": "generic-uio"
+      }
+    ],
+    "literal_be_offsets_in_tree": {
+      "0xff96c634": -1,
+      "0xff96c638": -1,
+      "0xff96c000": -1
+    },
+    "nodes": [
+      {
+        "path": "/",
+        "properties": {
+          "model": "536f63696f6e657874204d4152424c4520446576656c6f706d656e7420426f61726400",
+          "compatible": "736f63696f6e6578742c6d6172626c6500",
+          "interrupt-parent": "00000001",
+          "#address-cells": "00000002",
+          "#size-cells": "00000002"
+        }
+      },
+      {
+        "path": "/aliases",
+        "properties": {
+          "serial0": "2f736f632f73657269616c40666639323030303000",
+          "serial1": "2f736f632f73657269616c40666639323130303000",
+          "serial2": "2f736f632f73657269616c40666639323230303000",
+          "serial3": "2f736f632f73657269616c40666639323330303000"
+        }
+      },
+      {
+        "path": "/chosen",
+        "properties": {
+          "stdout-path": "73657269616c333a3131353230306e3800",
+          "bootargs": "636f6e736f6c653d747479414d41332c3131353230306e3820726f6f746673747970653d72616d6673207264696e69743d2f7362696e2f696e6974206d6178637075733d312075696f5f706472765f67656e6972712e6f665f69643d67656e657269632d75696f206c6f675f6275665f6c656e3d384d206d656d3d3235364d00"
+        }
+      },
+      {
+        "path": "/memory@07000000",
+        "properties": {
+          "device_type": "6d656d6f727900",
+          "reg": "00000000070000000000000010000000"
+        }
+      },
+      {
+        "path": "/amp_shared@17000000",
+        "properties": {
+          "compatible": "67656e657269632d75696f00",
+          "reg": "0000000017000000000000000ff00000"
+        }
+      },
+      {
+        "path": "/rpmsg_shared@26F00000",
+        "properties": {
+          "compatible": "637962657274727573742c6d6172626c655f72706d73675f64726976657200",
+          "target-cpu": "00000000",
+          "vring0": "0000000f",
+          "vring1": "0000000e",
+          "num-descs": "00000100",
+          "dev-feature": "00000001",
+          "gen-feature": "00000000",
+          "num-vrings": "00000002",
+          "alignment": "00000004",
+          "ring-tx": "00000100",
+          "ring-rx": "00000100",
+          "reg": "0000000026f000000000000000100000"
+        }
+      },
+      {
+        "path": "/amp_isgc_shared@05F00000",
+        "properties": {
+          "compatible": "67656e657269632d75696f00",
+          "reg": "0000000005f000000000000001080000"
+        }
+      },
+      {
+        "path": "/cpus",
+        "properties": {
+          "#address-cells": "00000002",
+          "#size-cells": "00000000"
+        }
+      },
+      {
+        "path": "/cpus/cpu@1",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000001",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/cpu@2",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000002",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/cpu@4",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000004",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/cpu@8",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000008",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/l2-cache",
+        "properties": {
+          "compatible": "636163686500",
+          "cache-level": "00000002"
+        }
+      },
+      {
+        "path": "/soc",
+        "properties": {
+          "compatible": "73696d706c652d62757300",
+          "#address-cells": "00000001",
+          "#size-cells": "00000001",
+          "interrupt-parent": "00000001",
+          "ranges": ""
+        }
+      },
+      {
+        "path": "/soc/interrupt-controller@fa000000",
+        "properties": {
+          "compatible": "61726d2c6769632d763300",
+          "ranges": "",
+          "#redistributor-regions": "00000001",
+          "reg": "fa00000000080000fa0c000000020000fa10000000040000",
+          "interrupt-controller": "",
+          "#interrupt-cells": "00000003",
+          "interrupts": "000000010000000900000004",
+          "linux,phandle": "00000001",
+          "phandle": "00000001"
+        }
+      },
+      {
+        "path": "/soc/timer",
+        "properties": {
+          "compatible": "61726d2c61726d76382d74696d657200",
+          "interrupts": "000000010000000d00000008000000010000000e00000008000000010000000b00000008000000010000000a00000008",
+          "clock-frequency": "00936660"
+        }
+      },
+      {
+        "path": "/soc/clocks",
+        "properties": {
+          "#address-cells": "00000001",
+          "#size-cells": "00000001",
+          "ranges": ""
+        }
+      },
+      {
+        "path": "/soc/clocks/n48m",
+        "properties": {
+          "compatible": "66697865642d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-frequency": "02dc6c00",
+          "linux,phandle": "00000002",
+          "phandle": "00000002"
+        }
+      },
+      {
+        "path": "/soc/clocks/n24m",
+        "properties": {
+          "compatible": "66697865642d666163746f722d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-div": "00000002",
+          "clock-mult": "00000001",
+          "clocks": "00000002",
+          "linux,phandle": "00000003",
+          "phandle": "00000003"
+        }
+      },
+      {
+        "path": "/soc/clocks/n16m",
+        "properties": {
+          "compatible": "66697865642d666163746f722d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-div": "00000003",
+          "clock-mult": "00000001",
+          "clocks": "00000002",
+          "linux,phandle": "00000004",
+          "phandle": "00000004"
+        }
+      },
+      {
+        "path": "/soc/clocks/pclk",
+        "properties": {
+          "compatible": "66697865642d666163746f722d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-div": "0000000a",
+          "clock-mult": "00000053",
+          "clocks": "00000003",
+          "linux,phandle": "00000008",
+          "phandle": "00000008"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g0@ffa01000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000000",
+          "socionext,clock-mult": "00000053",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000004000000030000000200000002",
+          "socionext,clock-en": "00000001000000010000000100000001",
+          "clocks": "00000003",
+          "reg": "ffa0100000001000",
+          "linux,phandle": "00000005",
+          "phandle": "00000005"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g2@ffa03000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000000",
+          "socionext,clock-mult": "0000004b",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000002000000060000000200000000",
+          "socionext,clock-en": "00000001000000010000000000000000",
+          "clocks": "00000004",
+          "reg": "ffa0300000001000",
+          "linux,phandle": "00000006",
+          "phandle": "00000006"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g13@ffa18000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000001",
+          "socionext,clock-mult": "00000021",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000020000000200000000200000000",
+          "socionext,clock-en": "00000001000000010000000100000000",
+          "clocks": "00000002",
+          "reg": "ffa1800000001000",
+          "linux,phandle": "0000000d",
+          "phandle": "0000000d"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g3@ffa04000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000002",
+          "socionext,clock-mult": "00000012",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000006000000030000000c00000006",
+          "socionext,clock-en": "00000001000000000000000000000000",
+          "clocks": "00000002",
+          "reg": "ffa0400000001000",
+          "linux,phandle": "00000007",
+          "phandle": "00000007"
+        }
+      },
+      {
+        "path": "/soc/clocks/sysreg@ff90c000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c73797372656700",
+          "reg": "ff90c00000004000",
+          "xdmac_req_ch": "0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f"
+        }
+      },
+      {
+        "path": "/soc/clocks/aux-clock",
+        "properties": {
+          "compatible": "66697865642d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-frequency": "00989680",
+          "linux,phandle": "00000010",
+          "phandle": "00000010"
+        }
+      },
+      {
+        "path": "/soc/dma@ff930000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff930000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000cd0000000400000000000000ce00000004",
+          "interrupt-names": "78646d6163305f6368310078646d61635f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff931000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff931000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000cf0000000400000000000000d000000004",
+          "interrupt-names": "78646d6163315f6368310078646d6163315f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff932000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff932000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d10000000400000000000000d200000004",
+          "interrupt-names": "78646d6163325f6368310078646d6163325f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff933000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff933000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d30000000400000000000000d400000004",
+          "interrupt-names": "78646d6163335f6368310078646d6163335f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff934000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff934000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d50000000400000000000000d600000004",
+          "interrupt-names": "78646d6163345f6368310078646d6163345f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff935000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff935000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d70000000400000000000000d800000004",
+          "interrupt-names": "78646d6163355f6368310078646d6163355f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff936000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff936000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d90000000400000000000000da00000004",
+          "interrupt-names": "78646d6163365f6368310078646d6163365f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff937000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff937000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000db0000000400000000000000dc00000004",
+          "interrupt-names": "78646d6163375f6368310078646d6163375f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c70696e6374726c00",
+          "reg": "ff90700000001000"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart0-default",
+        "properties": {
+          "linux,phandle": "00000009",
+          "phandle": "00000009"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart0-default/mux",
+        "properties": {
+          "groups": "75617274305f305f67726f757000",
+          "function": "756172743000"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart1-default",
+        "properties": {
+          "linux,phandle": "0000000a",
+          "phandle": "0000000a"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart1-default/mux",
+        "properties": {
+          "groups": "75617274315f305f67726f757000",
+          "function": "756172743100"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart2-default",
+        "properties": {
+          "linux,phandle": "0000000b",
+          "phandle": "0000000b"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart2-default/mux",
+        "properties": {
+          "groups": "75617274325f305f67726f757000",
+          "function": "756172743200"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart3-default",
+        "properties": {
+          "linux,phandle": "0000000c",
+          "phandle": "0000000c"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart3-default/mux",
+        "properties": {
+          "groups": "75617274335f305f67726f757000",
+          "function": "756172743300"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd0-default",
+        "properties": {
+          "linux,phandle": "0000000e",
+          "phandle": "0000000e"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd0-default/mux",
+        "properties": {
+          "groups": "7364305f305f67726f7570007364305f315f67726f757000",
+          "function": "73643000"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd1-default",
+        "properties": {}
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd1-default/mux",
+        "properties": {
+          "groups": "7364315f305f67726f7570007364315f315f67726f757000",
+          "function": "73643100"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd2-default",
+        "properties": {
+          "linux,phandle": "0000000f",
+          "phandle": "0000000f"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd2-default/mux",
+        "properties": {
+          "groups": "7364325f305f67726f757000",
+          "function": "73643200"
+        }
+      },
+      {
+        "path": "/soc/serial@ff920000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92000000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000012400000004000000000000012500000004000000000000012600000004000000000000012700000004000000000000012800000004",
+          "interrupt-names": "756172746d73696e74723000756172747278696e74723000756172747478696e74723000756172747274696e747230007561727465696e74723000",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "00000009",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/serial@ff921000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92100000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000010900000004000000000000010a00000004000000000000010b00000004000000000000010c00000004000000000000010d00000004",
+          "interrupt-names": "756172746d73696e74723100756172747278696e74723100756172747478696e74723100756172747274696e747231007561727465696e74723100",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000a",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/serial@ff922000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92200000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000010e00000004000000000000010f00000004000000000000011000000004000000000000011100000004000000000000011200000004",
+          "interrupt-names": "756172746d73696e74723200756172747278696e74723200756172747478696e74723200756172747274696e747232007561727465696e74723200",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000b",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/serial@ff923000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92300000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000011300000004000000000000011400000004000000000000011500000004000000000000011600000004000000000000011700000004",
+          "interrupt-names": "756172746d73696e74723300756172747278696e74723300756172747478696e74723300756172747274696e747233007561727465696e74723300",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000c",
+          "status": "6f6b617900"
+        }
+      },
+      {
+        "path": "/soc/mmc@ff9b0000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c662d73646834302d6c7000",
+          "reg": "ff9b000000004000",
+          "clocks": "0000000d000000060000000600000007",
+          "clock-names": "696661636500636f726500",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000e60000000400000000000000eb00000004",
+          "interrupt-names": "7364302d696e74312d636f6c6166007364302d696e74322d636f6c616600",
+          "socionext,sd-id": "00000000",
+          "bus-width": "00000008",
+          "no-sdio": "",
+          "cap-sd-highspeed": "",
+          "sd-uhs-sdr50": "",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000e",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/mmc@ff9b4000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c662d73646834302d6c7000",
+          "reg": "ff9b400000004000",
+          "clocks": "0000000d000000070000000600000007",
+          "clock-names": "696661636500636f726500",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000ed0000000400000000000000f200000004",
+          "interrupt-names": "7364312d696e74312d636f6c6166007364312d696e74322d636f6c616600",
+          "socionext,sd-id": "00000001",
+          "bus-width": "00000004",
+          "no-sdio": "",
+          "cap-mmc-highspeed": "",
+          "mmc-hs200-1_8v": "",
+          "non-removable": "",
+          "disable-wp": "",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/mmc@ff9b8000",
+        "properties": {
+          "compatible": "66756a697473752c6d6238367337302d73646863692d332e3000",
+          "reg": "ff9b800000001000",
+          "clocks": "0000000d000000080000000600000007",
+          "clock-names": "696661636500636f726500",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000f400000004",
+          "interrupt-names": "7364322d696e74312d636f6c616600",
+          "socionext,sd-id": "00000002",
+          "bus-width": "00000008",
+          "no-sd": "",
+          "wifi-host": "",
+          "cap-sd-highspeed": "",
+          "sd-uhs-sdr50": "",
+          "cap-sdio-irq": "",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000f",
+          "status": "6f6b617900"
+        }
+      },
+      {
+        "path": "/soc/bcmdhd_wlan@0",
+        "properties": {
+          "compatible": "616e64726f69642c62636d6468645f776c616e00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000007f00000004",
+          "status": "6f6b617900"
+        }
+      },
+      {
+        "path": "/pcie@FA800000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d7063696500",
+          "status": "64697361626c656400",
+          "reg-names": "646269006c696e6b00636f6e66696700",
+          "reg": "00000000fa800000000000000000100000000000fa880000000000000000100000000000f8e00000000000000020000000000000ff9070000000000000001000",
+          "#address-cells": "00000003",
+          "#size-cells": "00000002",
+          "clocks": "00000010",
+          "num-lanes": "00000002",
+          "num-viewport": "00000001",
+          "device_type": "70636900",
+          "bus-range": "00000000000000ff",
+          "ranges": "82000000000000000000000000000000f80000000000000000800000",
+          "interrupt-parent": "00000001",
+          "interrupt-names": "6d73690065727200",
+          "interrupts": "000000000000015400000004000000000000015500000004",
+          "phy-names": "706369652d70687900",
+          "phys": "00000011"
+        }
+      },
+      {
+        "path": "/phy@FA882000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d706369652d70687900",
+          "status": "64697361626c656400",
+          "reg": "00000000fa8820000000000000001000",
+          "clocks": "00000010",
+          "#phy-cells": "00000000",
+          "linux,phandle": "00000011",
+          "phandle": "00000011"
+        }
+      },
+      {
+        "path": "/pcie@FAA00000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d7063696500",
+          "status": "64697361626c656400",
+          "reg-names": "646269006c696e6b00636f6e66696700",
+          "reg": "00000000faa00000000000000000100000000000faa80000000000000000100000000000f9e00000000000000020000000000000ff9070000000000000001000",
+          "#address-cells": "00000003",
+          "#size-cells": "00000002",
+          "clocks": "00000010",
+          "num-lanes": "00000002",
+          "num-viewport": "00000001",
+          "device_type": "70636900",
+          "bus-range": "00000000000000ff",
+          "ranges": "82000000000000000000000000000000f90000000000000000800000",
+          "interrupt-parent": "00000001",
+          "interrupt-names": "6d73690065727200",
+          "interrupts": "000000000000017900000004000000000000017a00000004",
+          "phy-names": "706369652d70687900",
+          "phys": "00000012"
+        }
+      },
+      {
+        "path": "/phy@FAA82000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d706369652d70687900",
+          "status": "64697361626c656400",
+          "reg": "00000000faa820000000000000001000",
+          "clocks": "00000010",
+          "#phy-cells": "00000000",
+          "linux,phandle": "00000012",
+          "phandle": "00000012"
+        }
+      }
+    ]
+  },
+  "X-H2S": {
+    "source": "Firmware на прочиеFuji/FWUP0027.DAT",
+    "source_sha256": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+    "dt_dat_offset": "0x3c40274",
+    "dt_sha256": "e54d92a14cd021dc6bbb4a88ec36b21cc339af9bd8e8e3686014de71bbc833be",
+    "dt_size": 11425,
+    "version": 17,
+    "node_count": 62,
+    "cpu_nodes": [
+      "/cpus/cpu@1",
+      "/cpus/cpu@2",
+      "/cpus/cpu@4",
+      "/cpus/cpu@8"
+    ],
+    "memory_regions": [
+      {
+        "path": "/memory@07000000",
+        "address": "0x7000000",
+        "size": "0x10000000",
+        "compatible": ""
+      },
+      {
+        "path": "/amp_shared@17000000",
+        "address": "0x17000000",
+        "size": "0xff00000",
+        "compatible": "generic-uio"
+      },
+      {
+        "path": "/rpmsg_shared@26F00000",
+        "address": "0x26f00000",
+        "size": "0x100000",
+        "compatible": "cybertrust,marble_rpmsg_driver"
+      },
+      {
+        "path": "/amp_isgc_shared@05F00000",
+        "address": "0x5f00000",
+        "size": "0x1080000",
+        "compatible": "generic-uio"
+      }
+    ],
+    "literal_be_offsets_in_tree": {
+      "0xff96c634": -1,
+      "0xff96c638": -1,
+      "0xff96c000": -1
+    },
+    "nodes": [
+      {
+        "path": "/",
+        "properties": {
+          "model": "536f63696f6e657874204d4152424c4520446576656c6f706d656e7420426f61726400",
+          "compatible": "736f63696f6e6578742c6d6172626c6500",
+          "interrupt-parent": "00000001",
+          "#address-cells": "00000002",
+          "#size-cells": "00000002"
+        }
+      },
+      {
+        "path": "/aliases",
+        "properties": {
+          "serial0": "2f736f632f73657269616c40666639323030303000",
+          "serial1": "2f736f632f73657269616c40666639323130303000",
+          "serial2": "2f736f632f73657269616c40666639323230303000",
+          "serial3": "2f736f632f73657269616c40666639323330303000"
+        }
+      },
+      {
+        "path": "/chosen",
+        "properties": {
+          "stdout-path": "73657269616c333a3131353230306e3800",
+          "bootargs": "636f6e736f6c653d747479414d41332c3131353230306e3820726f6f746673747970653d72616d6673207264696e69743d2f7362696e2f696e6974206d6178637075733d312075696f5f706472765f67656e6972712e6f665f69643d67656e657269632d75696f206c6f675f6275665f6c656e3d384d206d656d3d3235364d00"
+        }
+      },
+      {
+        "path": "/memory@07000000",
+        "properties": {
+          "device_type": "6d656d6f727900",
+          "reg": "00000000070000000000000010000000"
+        }
+      },
+      {
+        "path": "/amp_shared@17000000",
+        "properties": {
+          "compatible": "67656e657269632d75696f00",
+          "reg": "0000000017000000000000000ff00000"
+        }
+      },
+      {
+        "path": "/rpmsg_shared@26F00000",
+        "properties": {
+          "compatible": "637962657274727573742c6d6172626c655f72706d73675f64726976657200",
+          "target-cpu": "00000000",
+          "vring0": "0000000f",
+          "vring1": "0000000e",
+          "num-descs": "00000100",
+          "dev-feature": "00000001",
+          "gen-feature": "00000000",
+          "num-vrings": "00000002",
+          "alignment": "00000004",
+          "ring-tx": "00000100",
+          "ring-rx": "00000100",
+          "reg": "0000000026f000000000000000100000"
+        }
+      },
+      {
+        "path": "/amp_isgc_shared@05F00000",
+        "properties": {
+          "compatible": "67656e657269632d75696f00",
+          "reg": "0000000005f000000000000001080000"
+        }
+      },
+      {
+        "path": "/cpus",
+        "properties": {
+          "#address-cells": "00000002",
+          "#size-cells": "00000000"
+        }
+      },
+      {
+        "path": "/cpus/cpu@1",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000001",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/cpu@2",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000002",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/cpu@4",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000004",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/cpu@8",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000008",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/l2-cache",
+        "properties": {
+          "compatible": "636163686500",
+          "cache-level": "00000002"
+        }
+      },
+      {
+        "path": "/soc",
+        "properties": {
+          "compatible": "73696d706c652d62757300",
+          "#address-cells": "00000001",
+          "#size-cells": "00000001",
+          "interrupt-parent": "00000001",
+          "ranges": ""
+        }
+      },
+      {
+        "path": "/soc/interrupt-controller@fa000000",
+        "properties": {
+          "compatible": "61726d2c6769632d763300",
+          "ranges": "",
+          "#redistributor-regions": "00000001",
+          "reg": "fa00000000080000fa0c000000020000fa10000000040000",
+          "interrupt-controller": "",
+          "#interrupt-cells": "00000003",
+          "interrupts": "000000010000000900000004",
+          "linux,phandle": "00000001",
+          "phandle": "00000001"
+        }
+      },
+      {
+        "path": "/soc/timer",
+        "properties": {
+          "compatible": "61726d2c61726d76382d74696d657200",
+          "interrupts": "000000010000000d00000008000000010000000e00000008000000010000000b00000008000000010000000a00000008",
+          "clock-frequency": "00936660"
+        }
+      },
+      {
+        "path": "/soc/clocks",
+        "properties": {
+          "#address-cells": "00000001",
+          "#size-cells": "00000001",
+          "ranges": ""
+        }
+      },
+      {
+        "path": "/soc/clocks/n48m",
+        "properties": {
+          "compatible": "66697865642d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-frequency": "02dc6c00",
+          "linux,phandle": "00000002",
+          "phandle": "00000002"
+        }
+      },
+      {
+        "path": "/soc/clocks/n24m",
+        "properties": {
+          "compatible": "66697865642d666163746f722d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-div": "00000002",
+          "clock-mult": "00000001",
+          "clocks": "00000002",
+          "linux,phandle": "00000003",
+          "phandle": "00000003"
+        }
+      },
+      {
+        "path": "/soc/clocks/n16m",
+        "properties": {
+          "compatible": "66697865642d666163746f722d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-div": "00000003",
+          "clock-mult": "00000001",
+          "clocks": "00000002",
+          "linux,phandle": "00000004",
+          "phandle": "00000004"
+        }
+      },
+      {
+        "path": "/soc/clocks/pclk",
+        "properties": {
+          "compatible": "66697865642d666163746f722d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-div": "0000000a",
+          "clock-mult": "00000053",
+          "clocks": "00000003",
+          "linux,phandle": "00000008",
+          "phandle": "00000008"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g0@ffa01000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000000",
+          "socionext,clock-mult": "00000053",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000004000000030000000200000002",
+          "socionext,clock-en": "00000001000000010000000100000001",
+          "clocks": "00000003",
+          "reg": "ffa0100000001000",
+          "linux,phandle": "00000005",
+          "phandle": "00000005"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g2@ffa03000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000000",
+          "socionext,clock-mult": "0000004b",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000002000000060000000200000000",
+          "socionext,clock-en": "00000001000000010000000000000000",
+          "clocks": "00000004",
+          "reg": "ffa0300000001000",
+          "linux,phandle": "00000006",
+          "phandle": "00000006"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g13@ffa18000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000001",
+          "socionext,clock-mult": "00000021",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000020000000200000000200000000",
+          "socionext,clock-en": "00000001000000010000000100000000",
+          "clocks": "00000002",
+          "reg": "ffa1800000001000",
+          "linux,phandle": "0000000d",
+          "phandle": "0000000d"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g3@ffa04000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000002",
+          "socionext,clock-mult": "00000012",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000006000000030000000c00000006",
+          "socionext,clock-en": "00000001000000000000000000000000",
+          "clocks": "00000002",
+          "reg": "ffa0400000001000",
+          "linux,phandle": "00000007",
+          "phandle": "00000007"
+        }
+      },
+      {
+        "path": "/soc/clocks/sysreg@ff90c000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c73797372656700",
+          "reg": "ff90c00000004000",
+          "xdmac_req_ch": "0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f"
+        }
+      },
+      {
+        "path": "/soc/clocks/aux-clock",
+        "properties": {
+          "compatible": "66697865642d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-frequency": "00989680",
+          "linux,phandle": "00000010",
+          "phandle": "00000010"
+        }
+      },
+      {
+        "path": "/soc/dma@ff930000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff930000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000cd0000000400000000000000ce00000004",
+          "interrupt-names": "78646d6163305f6368310078646d61635f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff931000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff931000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000cf0000000400000000000000d000000004",
+          "interrupt-names": "78646d6163315f6368310078646d6163315f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff932000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff932000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d10000000400000000000000d200000004",
+          "interrupt-names": "78646d6163325f6368310078646d6163325f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff933000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff933000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d30000000400000000000000d400000004",
+          "interrupt-names": "78646d6163335f6368310078646d6163335f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff934000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff934000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d50000000400000000000000d600000004",
+          "interrupt-names": "78646d6163345f6368310078646d6163345f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff935000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff935000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d70000000400000000000000d800000004",
+          "interrupt-names": "78646d6163355f6368310078646d6163355f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff936000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff936000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d90000000400000000000000da00000004",
+          "interrupt-names": "78646d6163365f6368310078646d6163365f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff937000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff937000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000db0000000400000000000000dc00000004",
+          "interrupt-names": "78646d6163375f6368310078646d6163375f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c70696e6374726c00",
+          "reg": "ff90700000001000"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart0-default",
+        "properties": {
+          "linux,phandle": "00000009",
+          "phandle": "00000009"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart0-default/mux",
+        "properties": {
+          "groups": "75617274305f305f67726f757000",
+          "function": "756172743000"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart1-default",
+        "properties": {
+          "linux,phandle": "0000000a",
+          "phandle": "0000000a"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart1-default/mux",
+        "properties": {
+          "groups": "75617274315f305f67726f757000",
+          "function": "756172743100"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart2-default",
+        "properties": {
+          "linux,phandle": "0000000b",
+          "phandle": "0000000b"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart2-default/mux",
+        "properties": {
+          "groups": "75617274325f305f67726f757000",
+          "function": "756172743200"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart3-default",
+        "properties": {
+          "linux,phandle": "0000000c",
+          "phandle": "0000000c"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart3-default/mux",
+        "properties": {
+          "groups": "75617274335f305f67726f757000",
+          "function": "756172743300"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd0-default",
+        "properties": {
+          "linux,phandle": "0000000e",
+          "phandle": "0000000e"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd0-default/mux",
+        "properties": {
+          "groups": "7364305f305f67726f7570007364305f315f67726f757000",
+          "function": "73643000"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd1-default",
+        "properties": {}
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd1-default/mux",
+        "properties": {
+          "groups": "7364315f305f67726f7570007364315f315f67726f757000",
+          "function": "73643100"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd2-default",
+        "properties": {
+          "linux,phandle": "0000000f",
+          "phandle": "0000000f"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd2-default/mux",
+        "properties": {
+          "groups": "7364325f305f67726f757000",
+          "function": "73643200"
+        }
+      },
+      {
+        "path": "/soc/serial@ff920000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92000000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000012400000004000000000000012500000004000000000000012600000004000000000000012700000004000000000000012800000004",
+          "interrupt-names": "756172746d73696e74723000756172747278696e74723000756172747478696e74723000756172747274696e747230007561727465696e74723000",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "00000009",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/serial@ff921000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92100000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000010900000004000000000000010a00000004000000000000010b00000004000000000000010c00000004000000000000010d00000004",
+          "interrupt-names": "756172746d73696e74723100756172747278696e74723100756172747478696e74723100756172747274696e747231007561727465696e74723100",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000a",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/serial@ff922000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92200000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000010e00000004000000000000010f00000004000000000000011000000004000000000000011100000004000000000000011200000004",
+          "interrupt-names": "756172746d73696e74723200756172747278696e74723200756172747478696e74723200756172747274696e747232007561727465696e74723200",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000b",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/serial@ff923000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92300000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000011300000004000000000000011400000004000000000000011500000004000000000000011600000004000000000000011700000004",
+          "interrupt-names": "756172746d73696e74723300756172747278696e74723300756172747478696e74723300756172747274696e747233007561727465696e74723300",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000c",
+          "status": "6f6b617900"
+        }
+      },
+      {
+        "path": "/soc/mmc@ff9b0000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c662d73646834302d6c7000",
+          "reg": "ff9b000000004000",
+          "clocks": "0000000d000000060000000600000007",
+          "clock-names": "696661636500636f726500",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000e60000000400000000000000eb00000004",
+          "interrupt-names": "7364302d696e74312d636f6c6166007364302d696e74322d636f6c616600",
+          "socionext,sd-id": "00000000",
+          "bus-width": "00000008",
+          "no-sdio": "",
+          "cap-sd-highspeed": "",
+          "sd-uhs-sdr50": "",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000e",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/mmc@ff9b4000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c662d73646834302d6c7000",
+          "reg": "ff9b400000004000",
+          "clocks": "0000000d000000070000000600000007",
+          "clock-names": "696661636500636f726500",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000ed0000000400000000000000f200000004",
+          "interrupt-names": "7364312d696e74312d636f6c6166007364312d696e74322d636f6c616600",
+          "socionext,sd-id": "00000001",
+          "bus-width": "00000004",
+          "no-sdio": "",
+          "cap-mmc-highspeed": "",
+          "mmc-hs200-1_8v": "",
+          "non-removable": "",
+          "disable-wp": "",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/mmc@ff9b8000",
+        "properties": {
+          "compatible": "66756a697473752c6d6238367337302d73646863692d332e3000",
+          "reg": "ff9b800000001000",
+          "clocks": "0000000d000000080000000600000007",
+          "clock-names": "696661636500636f726500",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000f400000004",
+          "interrupt-names": "7364322d696e74312d636f6c616600",
+          "socionext,sd-id": "00000002",
+          "bus-width": "00000008",
+          "no-sd": "",
+          "wifi-host": "",
+          "cap-sd-highspeed": "",
+          "sd-uhs-sdr50": "",
+          "cap-sdio-irq": "",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000f",
+          "status": "6f6b617900"
+        }
+      },
+      {
+        "path": "/soc/bcmdhd_wlan@0",
+        "properties": {
+          "compatible": "616e64726f69642c62636d6468645f776c616e00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000007f00000004",
+          "status": "6f6b617900"
+        }
+      },
+      {
+        "path": "/pcie@FA800000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d7063696500",
+          "status": "64697361626c656400",
+          "reg-names": "646269006c696e6b00636f6e66696700",
+          "reg": "00000000fa800000000000000000100000000000fa880000000000000000100000000000f8e00000000000000020000000000000ff9070000000000000001000",
+          "#address-cells": "00000003",
+          "#size-cells": "00000002",
+          "clocks": "00000010",
+          "num-lanes": "00000002",
+          "num-viewport": "00000001",
+          "device_type": "70636900",
+          "bus-range": "00000000000000ff",
+          "ranges": "82000000000000000000000000000000f80000000000000000800000",
+          "interrupt-parent": "00000001",
+          "interrupt-names": "6d73690065727200",
+          "interrupts": "000000000000015400000004000000000000015500000004",
+          "phy-names": "706369652d70687900",
+          "phys": "00000011"
+        }
+      },
+      {
+        "path": "/phy@FA882000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d706369652d70687900",
+          "status": "64697361626c656400",
+          "reg": "00000000fa8820000000000000001000",
+          "clocks": "00000010",
+          "#phy-cells": "00000000",
+          "linux,phandle": "00000011",
+          "phandle": "00000011"
+        }
+      },
+      {
+        "path": "/pcie@FAA00000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d7063696500",
+          "status": "64697361626c656400",
+          "reg-names": "646269006c696e6b00636f6e66696700",
+          "reg": "00000000faa00000000000000000100000000000faa80000000000000000100000000000f9e00000000000000020000000000000ff9070000000000000001000",
+          "#address-cells": "00000003",
+          "#size-cells": "00000002",
+          "clocks": "00000010",
+          "num-lanes": "00000002",
+          "num-viewport": "00000001",
+          "device_type": "70636900",
+          "bus-range": "00000000000000ff",
+          "ranges": "82000000000000000000000000000000f90000000000000000800000",
+          "interrupt-parent": "00000001",
+          "interrupt-names": "6d73690065727200",
+          "interrupts": "000000000000017900000004000000000000017a00000004",
+          "phy-names": "706369652d70687900",
+          "phys": "00000012"
+        }
+      },
+      {
+        "path": "/phy@FAA82000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d706369652d70687900",
+          "status": "64697361626c656400",
+          "reg": "00000000faa820000000000000001000",
+          "clocks": "00000010",
+          "#phy-cells": "00000000",
+          "linux,phandle": "00000012",
+          "phandle": "00000012"
+        }
+      }
+    ]
+  },
+  "X-T5": {
+    "source": "Firmware на прочиеFuji/FWUP0030.DAT",
+    "source_sha256": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+    "dt_dat_offset": "0x3c40274",
+    "dt_sha256": "9cb8691aee109ebe858dfdd79c8c97d51df59d781282a9d7d9cffb4a2dbec13f",
+    "dt_size": 11425,
+    "version": 17,
+    "node_count": 62,
+    "cpu_nodes": [
+      "/cpus/cpu@1",
+      "/cpus/cpu@2",
+      "/cpus/cpu@4",
+      "/cpus/cpu@8"
+    ],
+    "memory_regions": [
+      {
+        "path": "/memory@40000000",
+        "address": "0x40000000",
+        "size": "0x10000000",
+        "compatible": ""
+      },
+      {
+        "path": "/amp_shared@50000000",
+        "address": "0x50000000",
+        "size": "0xff00000",
+        "compatible": "generic-uio"
+      },
+      {
+        "path": "/rpmsg_shared@5FF00000",
+        "address": "0x5ff00000",
+        "size": "0x100000",
+        "compatible": "cybertrust,marble_rpmsg_driver"
+      },
+      {
+        "path": "/amp_isgc_shared@05F00000",
+        "address": "0x5f00000",
+        "size": "0x1080000",
+        "compatible": "generic-uio"
+      }
+    ],
+    "literal_be_offsets_in_tree": {
+      "0xff96c634": -1,
+      "0xff96c638": -1,
+      "0xff96c000": -1
+    },
+    "nodes": [
+      {
+        "path": "/",
+        "properties": {
+          "model": "536f63696f6e657874204d4152424c4520446576656c6f706d656e7420426f61726400",
+          "compatible": "736f63696f6e6578742c6d6172626c6500",
+          "interrupt-parent": "00000001",
+          "#address-cells": "00000002",
+          "#size-cells": "00000002"
+        }
+      },
+      {
+        "path": "/aliases",
+        "properties": {
+          "serial0": "2f736f632f73657269616c40666639323030303000",
+          "serial1": "2f736f632f73657269616c40666639323130303000",
+          "serial2": "2f736f632f73657269616c40666639323230303000",
+          "serial3": "2f736f632f73657269616c40666639323330303000"
+        }
+      },
+      {
+        "path": "/chosen",
+        "properties": {
+          "stdout-path": "73657269616c333a3131353230306e3800",
+          "bootargs": "636f6e736f6c653d747479414d41332c3131353230306e3820726f6f746673747970653d72616d6673207264696e69743d2f7362696e2f696e6974206d6178637075733d312075696f5f706472765f67656e6972712e6f665f69643d67656e657269632d75696f206c6f675f6275665f6c656e3d384d206d656d3d3235364d00"
+        }
+      },
+      {
+        "path": "/memory@40000000",
+        "properties": {
+          "device_type": "6d656d6f727900",
+          "reg": "00000000400000000000000010000000"
+        }
+      },
+      {
+        "path": "/amp_shared@50000000",
+        "properties": {
+          "compatible": "67656e657269632d75696f00",
+          "reg": "0000000050000000000000000ff00000"
+        }
+      },
+      {
+        "path": "/rpmsg_shared@5FF00000",
+        "properties": {
+          "compatible": "637962657274727573742c6d6172626c655f72706d73675f64726976657200",
+          "target-cpu": "00000000",
+          "vring0": "0000000f",
+          "vring1": "0000000e",
+          "num-descs": "00000100",
+          "dev-feature": "00000001",
+          "gen-feature": "00000000",
+          "num-vrings": "00000002",
+          "alignment": "00000004",
+          "ring-tx": "00000100",
+          "ring-rx": "00000100",
+          "reg": "000000005ff000000000000000100000"
+        }
+      },
+      {
+        "path": "/amp_isgc_shared@05F00000",
+        "properties": {
+          "compatible": "67656e657269632d75696f00",
+          "reg": "0000000005f000000000000001080000"
+        }
+      },
+      {
+        "path": "/cpus",
+        "properties": {
+          "#address-cells": "00000002",
+          "#size-cells": "00000000"
+        }
+      },
+      {
+        "path": "/cpus/cpu@1",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000001",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/cpu@2",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000002",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/cpu@4",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000004",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/cpu@8",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000008",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/l2-cache",
+        "properties": {
+          "compatible": "636163686500",
+          "cache-level": "00000002"
+        }
+      },
+      {
+        "path": "/soc",
+        "properties": {
+          "compatible": "73696d706c652d62757300",
+          "#address-cells": "00000001",
+          "#size-cells": "00000001",
+          "interrupt-parent": "00000001",
+          "ranges": ""
+        }
+      },
+      {
+        "path": "/soc/interrupt-controller@fa000000",
+        "properties": {
+          "compatible": "61726d2c6769632d763300",
+          "ranges": "",
+          "#redistributor-regions": "00000001",
+          "reg": "fa00000000080000fa0c000000020000fa10000000040000",
+          "interrupt-controller": "",
+          "#interrupt-cells": "00000003",
+          "interrupts": "000000010000000900000004",
+          "linux,phandle": "00000001",
+          "phandle": "00000001"
+        }
+      },
+      {
+        "path": "/soc/timer",
+        "properties": {
+          "compatible": "61726d2c61726d76382d74696d657200",
+          "interrupts": "000000010000000d00000008000000010000000e00000008000000010000000b00000008000000010000000a00000008",
+          "clock-frequency": "00936660"
+        }
+      },
+      {
+        "path": "/soc/clocks",
+        "properties": {
+          "#address-cells": "00000001",
+          "#size-cells": "00000001",
+          "ranges": ""
+        }
+      },
+      {
+        "path": "/soc/clocks/n48m",
+        "properties": {
+          "compatible": "66697865642d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-frequency": "02dc6c00",
+          "linux,phandle": "00000002",
+          "phandle": "00000002"
+        }
+      },
+      {
+        "path": "/soc/clocks/n24m",
+        "properties": {
+          "compatible": "66697865642d666163746f722d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-div": "00000002",
+          "clock-mult": "00000001",
+          "clocks": "00000002",
+          "linux,phandle": "00000003",
+          "phandle": "00000003"
+        }
+      },
+      {
+        "path": "/soc/clocks/n16m",
+        "properties": {
+          "compatible": "66697865642d666163746f722d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-div": "00000003",
+          "clock-mult": "00000001",
+          "clocks": "00000002",
+          "linux,phandle": "00000004",
+          "phandle": "00000004"
+        }
+      },
+      {
+        "path": "/soc/clocks/pclk",
+        "properties": {
+          "compatible": "66697865642d666163746f722d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-div": "0000000a",
+          "clock-mult": "00000053",
+          "clocks": "00000003",
+          "linux,phandle": "00000008",
+          "phandle": "00000008"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g0@ffa01000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000000",
+          "socionext,clock-mult": "00000053",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000004000000030000000200000002",
+          "socionext,clock-en": "00000001000000010000000100000001",
+          "clocks": "00000003",
+          "reg": "ffa0100000001000",
+          "linux,phandle": "00000005",
+          "phandle": "00000005"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g2@ffa03000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000000",
+          "socionext,clock-mult": "0000004b",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000002000000060000000200000000",
+          "socionext,clock-en": "00000001000000010000000000000000",
+          "clocks": "00000004",
+          "reg": "ffa0300000001000",
+          "linux,phandle": "00000006",
+          "phandle": "00000006"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g13@ffa18000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000001",
+          "socionext,clock-mult": "00000021",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000020000000200000000200000000",
+          "socionext,clock-en": "00000001000000010000000100000000",
+          "clocks": "00000002",
+          "reg": "ffa1800000001000",
+          "linux,phandle": "0000000d",
+          "phandle": "0000000d"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g3@ffa04000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000002",
+          "socionext,clock-mult": "00000012",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000006000000030000000c00000006",
+          "socionext,clock-en": "00000001000000000000000000000000",
+          "clocks": "00000002",
+          "reg": "ffa0400000001000",
+          "linux,phandle": "00000007",
+          "phandle": "00000007"
+        }
+      },
+      {
+        "path": "/soc/clocks/sysreg@ff90c000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c73797372656700",
+          "reg": "ff90c00000004000",
+          "xdmac_req_ch": "0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f"
+        }
+      },
+      {
+        "path": "/soc/clocks/aux-clock",
+        "properties": {
+          "compatible": "66697865642d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-frequency": "00989680",
+          "linux,phandle": "00000010",
+          "phandle": "00000010"
+        }
+      },
+      {
+        "path": "/soc/dma@ff930000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff930000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000cd0000000400000000000000ce00000004",
+          "interrupt-names": "78646d6163305f6368310078646d61635f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff931000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff931000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000cf0000000400000000000000d000000004",
+          "interrupt-names": "78646d6163315f6368310078646d6163315f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff932000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff932000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d10000000400000000000000d200000004",
+          "interrupt-names": "78646d6163325f6368310078646d6163325f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff933000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff933000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d30000000400000000000000d400000004",
+          "interrupt-names": "78646d6163335f6368310078646d6163335f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff934000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff934000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d50000000400000000000000d600000004",
+          "interrupt-names": "78646d6163345f6368310078646d6163345f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff935000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff935000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d70000000400000000000000d800000004",
+          "interrupt-names": "78646d6163355f6368310078646d6163355f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff936000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff936000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d90000000400000000000000da00000004",
+          "interrupt-names": "78646d6163365f6368310078646d6163365f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff937000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff937000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000db0000000400000000000000dc00000004",
+          "interrupt-names": "78646d6163375f6368310078646d6163375f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c70696e6374726c00",
+          "reg": "ff90700000001000"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart0-default",
+        "properties": {
+          "linux,phandle": "00000009",
+          "phandle": "00000009"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart0-default/mux",
+        "properties": {
+          "groups": "75617274305f305f67726f757000",
+          "function": "756172743000"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart1-default",
+        "properties": {
+          "linux,phandle": "0000000a",
+          "phandle": "0000000a"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart1-default/mux",
+        "properties": {
+          "groups": "75617274315f305f67726f757000",
+          "function": "756172743100"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart2-default",
+        "properties": {
+          "linux,phandle": "0000000b",
+          "phandle": "0000000b"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart2-default/mux",
+        "properties": {
+          "groups": "75617274325f305f67726f757000",
+          "function": "756172743200"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart3-default",
+        "properties": {
+          "linux,phandle": "0000000c",
+          "phandle": "0000000c"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart3-default/mux",
+        "properties": {
+          "groups": "75617274335f305f67726f757000",
+          "function": "756172743300"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd0-default",
+        "properties": {
+          "linux,phandle": "0000000e",
+          "phandle": "0000000e"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd0-default/mux",
+        "properties": {
+          "groups": "7364305f305f67726f7570007364305f315f67726f757000",
+          "function": "73643000"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd1-default",
+        "properties": {}
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd1-default/mux",
+        "properties": {
+          "groups": "7364315f305f67726f7570007364315f315f67726f757000",
+          "function": "73643100"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd2-default",
+        "properties": {
+          "linux,phandle": "0000000f",
+          "phandle": "0000000f"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd2-default/mux",
+        "properties": {
+          "groups": "7364325f305f67726f757000",
+          "function": "73643200"
+        }
+      },
+      {
+        "path": "/soc/serial@ff920000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92000000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000012400000004000000000000012500000004000000000000012600000004000000000000012700000004000000000000012800000004",
+          "interrupt-names": "756172746d73696e74723000756172747278696e74723000756172747478696e74723000756172747274696e747230007561727465696e74723000",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "00000009",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/serial@ff921000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92100000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000010900000004000000000000010a00000004000000000000010b00000004000000000000010c00000004000000000000010d00000004",
+          "interrupt-names": "756172746d73696e74723100756172747278696e74723100756172747478696e74723100756172747274696e747231007561727465696e74723100",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000a",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/serial@ff922000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92200000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000010e00000004000000000000010f00000004000000000000011000000004000000000000011100000004000000000000011200000004",
+          "interrupt-names": "756172746d73696e74723200756172747278696e74723200756172747478696e74723200756172747274696e747232007561727465696e74723200",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000b",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/serial@ff923000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92300000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000011300000004000000000000011400000004000000000000011500000004000000000000011600000004000000000000011700000004",
+          "interrupt-names": "756172746d73696e74723300756172747278696e74723300756172747478696e74723300756172747274696e747233007561727465696e74723300",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000c",
+          "status": "6f6b617900"
+        }
+      },
+      {
+        "path": "/soc/mmc@ff9b0000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c662d73646834302d6c7000",
+          "reg": "ff9b000000004000",
+          "clocks": "0000000d000000060000000600000007",
+          "clock-names": "696661636500636f726500",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000e60000000400000000000000eb00000004",
+          "interrupt-names": "7364302d696e74312d636f6c6166007364302d696e74322d636f6c616600",
+          "socionext,sd-id": "00000000",
+          "bus-width": "00000008",
+          "no-sdio": "",
+          "cap-sd-highspeed": "",
+          "sd-uhs-sdr50": "",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000e",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/mmc@ff9b4000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c662d73646834302d6c7000",
+          "reg": "ff9b400000004000",
+          "clocks": "0000000d000000070000000600000007",
+          "clock-names": "696661636500636f726500",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000ed0000000400000000000000f200000004",
+          "interrupt-names": "7364312d696e74312d636f6c6166007364312d696e74322d636f6c616600",
+          "socionext,sd-id": "00000001",
+          "bus-width": "00000004",
+          "no-sdio": "",
+          "cap-mmc-highspeed": "",
+          "mmc-hs200-1_8v": "",
+          "non-removable": "",
+          "disable-wp": "",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/mmc@ff9b8000",
+        "properties": {
+          "compatible": "66756a697473752c6d6238367337302d73646863692d332e3000",
+          "reg": "ff9b800000001000",
+          "clocks": "0000000d000000080000000600000007",
+          "clock-names": "696661636500636f726500",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000f400000004",
+          "interrupt-names": "7364322d696e74312d636f6c616600",
+          "socionext,sd-id": "00000002",
+          "bus-width": "00000008",
+          "no-sd": "",
+          "wifi-host": "",
+          "cap-sd-highspeed": "",
+          "sd-uhs-sdr50": "",
+          "cap-sdio-irq": "",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000f",
+          "status": "6f6b617900"
+        }
+      },
+      {
+        "path": "/soc/bcmdhd_wlan@0",
+        "properties": {
+          "compatible": "616e64726f69642c62636d6468645f776c616e00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000007f00000004",
+          "status": "6f6b617900"
+        }
+      },
+      {
+        "path": "/pcie@FA800000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d7063696500",
+          "status": "64697361626c656400",
+          "reg-names": "646269006c696e6b00636f6e66696700",
+          "reg": "00000000fa800000000000000000100000000000fa880000000000000000100000000000f8e00000000000000020000000000000ff9070000000000000001000",
+          "#address-cells": "00000003",
+          "#size-cells": "00000002",
+          "clocks": "00000010",
+          "num-lanes": "00000002",
+          "num-viewport": "00000001",
+          "device_type": "70636900",
+          "bus-range": "00000000000000ff",
+          "ranges": "82000000000000000000000000000000f80000000000000000800000",
+          "interrupt-parent": "00000001",
+          "interrupt-names": "6d73690065727200",
+          "interrupts": "000000000000015400000004000000000000015500000004",
+          "phy-names": "706369652d70687900",
+          "phys": "00000011"
+        }
+      },
+      {
+        "path": "/phy@FA882000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d706369652d70687900",
+          "status": "64697361626c656400",
+          "reg": "00000000fa8820000000000000001000",
+          "clocks": "00000010",
+          "#phy-cells": "00000000",
+          "linux,phandle": "00000011",
+          "phandle": "00000011"
+        }
+      },
+      {
+        "path": "/pcie@FAA00000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d7063696500",
+          "status": "64697361626c656400",
+          "reg-names": "646269006c696e6b00636f6e66696700",
+          "reg": "00000000faa00000000000000000100000000000faa80000000000000000100000000000f9e00000000000000020000000000000ff9070000000000000001000",
+          "#address-cells": "00000003",
+          "#size-cells": "00000002",
+          "clocks": "00000010",
+          "num-lanes": "00000002",
+          "num-viewport": "00000001",
+          "device_type": "70636900",
+          "bus-range": "00000000000000ff",
+          "ranges": "82000000000000000000000000000000f90000000000000000800000",
+          "interrupt-parent": "00000001",
+          "interrupt-names": "6d73690065727200",
+          "interrupts": "000000000000017900000004000000000000017a00000004",
+          "phy-names": "706369652d70687900",
+          "phys": "00000012"
+        }
+      },
+      {
+        "path": "/phy@FAA82000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d706369652d70687900",
+          "status": "64697361626c656400",
+          "reg": "00000000faa820000000000000001000",
+          "clocks": "00000010",
+          "#phy-cells": "00000000",
+          "linux,phandle": "00000012",
+          "phandle": "00000012"
+        }
+      }
+    ]
+  },
+  "X100VI": {
+    "source": "Firmware на прочиеFuji/FPUPDATE.DAT",
+    "source_sha256": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+    "dt_dat_offset": "0x43002bc",
+    "dt_sha256": "079adf0d121afab2704e1b55b9b4a3f37360a0a2d4f2f3120a383eb07f63354d",
+    "dt_size": 11425,
+    "version": 17,
+    "node_count": 62,
+    "cpu_nodes": [
+      "/cpus/cpu@1",
+      "/cpus/cpu@2",
+      "/cpus/cpu@4",
+      "/cpus/cpu@8"
+    ],
+    "memory_regions": [
+      {
+        "path": "/memory@40000000",
+        "address": "0x40000000",
+        "size": "0x16e00000",
+        "compatible": ""
+      },
+      {
+        "path": "/amp_shared@56E00000",
+        "address": "0x56e00000",
+        "size": "0xff00000",
+        "compatible": "generic-uio"
+      },
+      {
+        "path": "/rpmsg_shared@66D00000",
+        "address": "0x66d00000",
+        "size": "0x100000",
+        "compatible": "cybertrust,marble_rpmsg_driver"
+      },
+      {
+        "path": "/amp_isgc_shared@66E00000",
+        "address": "0x66e00000",
+        "size": "0x1100000",
+        "compatible": "generic-uio"
+      }
+    ],
+    "literal_be_offsets_in_tree": {
+      "0xff96c634": -1,
+      "0xff96c638": -1,
+      "0xff96c000": -1
+    },
+    "nodes": [
+      {
+        "path": "/",
+        "properties": {
+          "model": "536f63696f6e657874204d4152424c4520446576656c6f706d656e7420426f61726400",
+          "compatible": "736f63696f6e6578742c6d6172626c6500",
+          "interrupt-parent": "00000001",
+          "#address-cells": "00000002",
+          "#size-cells": "00000002"
+        }
+      },
+      {
+        "path": "/aliases",
+        "properties": {
+          "serial0": "2f736f632f73657269616c40666639323030303000",
+          "serial1": "2f736f632f73657269616c40666639323130303000",
+          "serial2": "2f736f632f73657269616c40666639323230303000",
+          "serial3": "2f736f632f73657269616c40666639323330303000"
+        }
+      },
+      {
+        "path": "/chosen",
+        "properties": {
+          "stdout-path": "73657269616c333a3131353230306e3800",
+          "bootargs": "636f6e736f6c653d747479414d41332c3131353230306e3820726f6f746673747970653d72616d6673207264696e69743d2f7362696e2f696e6974206d6178637075733d312075696f5f706472765f67656e6972712e6f665f69643d67656e657269632d75696f206c6f675f6275665f6c656e3d384d206d656d3d3336364d00"
+        }
+      },
+      {
+        "path": "/memory@40000000",
+        "properties": {
+          "device_type": "6d656d6f727900",
+          "reg": "00000000400000000000000016e00000"
+        }
+      },
+      {
+        "path": "/amp_shared@56E00000",
+        "properties": {
+          "compatible": "67656e657269632d75696f00",
+          "reg": "0000000056e00000000000000ff00000"
+        }
+      },
+      {
+        "path": "/rpmsg_shared@66D00000",
+        "properties": {
+          "compatible": "637962657274727573742c6d6172626c655f72706d73675f64726976657200",
+          "target-cpu": "00000000",
+          "vring0": "0000000f",
+          "vring1": "0000000e",
+          "num-descs": "00000100",
+          "dev-feature": "00000001",
+          "gen-feature": "00000000",
+          "num-vrings": "00000002",
+          "alignment": "00000004",
+          "ring-tx": "00000100",
+          "ring-rx": "00000100",
+          "reg": "0000000066d000000000000000100000"
+        }
+      },
+      {
+        "path": "/amp_isgc_shared@66E00000",
+        "properties": {
+          "compatible": "67656e657269632d75696f00",
+          "reg": "0000000066e000000000000001100000"
+        }
+      },
+      {
+        "path": "/cpus",
+        "properties": {
+          "#address-cells": "00000002",
+          "#size-cells": "00000000"
+        }
+      },
+      {
+        "path": "/cpus/cpu@1",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000001",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/cpu@2",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000002",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/cpu@4",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000004",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/cpu@8",
+        "properties": {
+          "device_type": "63707500",
+          "compatible": "61726d2c636f727465782d6135330061726d2c61726d763800",
+          "reg": "0000000000000008",
+          "enable-method": "7370696e2d7461626c6500",
+          "cpu-release-addr": "000000001ffffff8"
+        }
+      },
+      {
+        "path": "/cpus/l2-cache",
+        "properties": {
+          "compatible": "636163686500",
+          "cache-level": "00000002"
+        }
+      },
+      {
+        "path": "/soc",
+        "properties": {
+          "compatible": "73696d706c652d62757300",
+          "#address-cells": "00000001",
+          "#size-cells": "00000001",
+          "interrupt-parent": "00000001",
+          "ranges": ""
+        }
+      },
+      {
+        "path": "/soc/interrupt-controller@fa000000",
+        "properties": {
+          "compatible": "61726d2c6769632d763300",
+          "ranges": "",
+          "#redistributor-regions": "00000001",
+          "reg": "fa00000000080000fa0c000000020000fa10000000040000",
+          "interrupt-controller": "",
+          "#interrupt-cells": "00000003",
+          "interrupts": "000000010000000900000004",
+          "linux,phandle": "00000001",
+          "phandle": "00000001"
+        }
+      },
+      {
+        "path": "/soc/timer",
+        "properties": {
+          "compatible": "61726d2c61726d76382d74696d657200",
+          "interrupts": "000000010000000d00000008000000010000000e00000008000000010000000b00000008000000010000000a00000008",
+          "clock-frequency": "00936660"
+        }
+      },
+      {
+        "path": "/soc/clocks",
+        "properties": {
+          "#address-cells": "00000001",
+          "#size-cells": "00000001",
+          "ranges": ""
+        }
+      },
+      {
+        "path": "/soc/clocks/n48m",
+        "properties": {
+          "compatible": "66697865642d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-frequency": "02dc6c00",
+          "linux,phandle": "00000002",
+          "phandle": "00000002"
+        }
+      },
+      {
+        "path": "/soc/clocks/n24m",
+        "properties": {
+          "compatible": "66697865642d666163746f722d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-div": "00000002",
+          "clock-mult": "00000001",
+          "clocks": "00000002",
+          "linux,phandle": "00000003",
+          "phandle": "00000003"
+        }
+      },
+      {
+        "path": "/soc/clocks/n16m",
+        "properties": {
+          "compatible": "66697865642d666163746f722d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-div": "00000003",
+          "clock-mult": "00000001",
+          "clocks": "00000002",
+          "linux,phandle": "00000004",
+          "phandle": "00000004"
+        }
+      },
+      {
+        "path": "/soc/clocks/pclk",
+        "properties": {
+          "compatible": "66697865642d666163746f722d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-div": "0000000a",
+          "clock-mult": "00000053",
+          "clocks": "00000003",
+          "linux,phandle": "00000008",
+          "phandle": "00000008"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g0@ffa01000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000000",
+          "socionext,clock-mult": "00000053",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000004000000030000000200000002",
+          "socionext,clock-en": "00000001000000010000000100000001",
+          "clocks": "00000003",
+          "reg": "ffa0100000001000",
+          "linux,phandle": "00000005",
+          "phandle": "00000005"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g2@ffa03000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000000",
+          "socionext,clock-mult": "0000004b",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000002000000060000000200000000",
+          "socionext,clock-en": "00000001000000010000000000000000",
+          "clocks": "00000004",
+          "reg": "ffa0300000001000",
+          "linux,phandle": "00000006",
+          "phandle": "00000006"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g13@ffa18000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000001",
+          "socionext,clock-mult": "00000021",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000020000000200000000200000000",
+          "socionext,clock-en": "00000001000000010000000100000000",
+          "clocks": "00000002",
+          "reg": "ffa1800000001000",
+          "linux,phandle": "0000000d",
+          "phandle": "0000000d"
+        }
+      },
+      {
+        "path": "/soc/clocks/gcrg_g3@ffa04000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6763726700",
+          "#clock-cells": "00000001",
+          "socionext,pll-type": "00000002",
+          "socionext,clock-mult": "00000012",
+          "socionext,clock-bypass": "00000000",
+          "socionext,clock-div": "00000006000000030000000c00000006",
+          "socionext,clock-en": "00000001000000000000000000000000",
+          "clocks": "00000002",
+          "reg": "ffa0400000001000",
+          "linux,phandle": "00000007",
+          "phandle": "00000007"
+        }
+      },
+      {
+        "path": "/soc/clocks/sysreg@ff90c000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c73797372656700",
+          "reg": "ff90c00000004000",
+          "xdmac_req_ch": "0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f0000003f"
+        }
+      },
+      {
+        "path": "/soc/clocks/aux-clock",
+        "properties": {
+          "compatible": "66697865642d636c6f636b00",
+          "#clock-cells": "00000000",
+          "clock-frequency": "00989680",
+          "linux,phandle": "00000010",
+          "phandle": "00000010"
+        }
+      },
+      {
+        "path": "/soc/dma@ff930000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff930000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000cd0000000400000000000000ce00000004",
+          "interrupt-names": "78646d6163305f6368310078646d61635f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff931000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff931000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000cf0000000400000000000000d000000004",
+          "interrupt-names": "78646d6163315f6368310078646d6163315f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff932000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff932000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d10000000400000000000000d200000004",
+          "interrupt-names": "78646d6163325f6368310078646d6163325f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff933000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff933000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d30000000400000000000000d400000004",
+          "interrupt-names": "78646d6163335f6368310078646d6163335f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000500000006",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff934000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff934000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d50000000400000000000000d600000004",
+          "interrupt-names": "78646d6163345f6368310078646d6163345f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff935000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff935000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d70000000400000000000000d800000004",
+          "interrupt-names": "78646d6163355f6368310078646d6163355f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff936000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff936000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000d90000000400000000000000da00000004",
+          "interrupt-names": "78646d6163365f6368310078646d6163365f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/dma@ff937000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c6178692d646d6100",
+          "reg": "ff937000000003e8",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000db0000000400000000000000dc00000004",
+          "interrupt-names": "78646d6163375f6368310078646d6163375f63683200",
+          "#dma-cells": "00000003",
+          "dma-channels": "00000002",
+          "clocks": "0000000600000007",
+          "clock-names": "646d615f636c6b00"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c70696e6374726c00",
+          "reg": "ff90700000001000"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart0-default",
+        "properties": {
+          "linux,phandle": "00000009",
+          "phandle": "00000009"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart0-default/mux",
+        "properties": {
+          "groups": "75617274305f305f67726f757000",
+          "function": "756172743000"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart1-default",
+        "properties": {
+          "linux,phandle": "0000000a",
+          "phandle": "0000000a"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart1-default/mux",
+        "properties": {
+          "groups": "75617274315f305f67726f757000",
+          "function": "756172743100"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart2-default",
+        "properties": {
+          "linux,phandle": "0000000b",
+          "phandle": "0000000b"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart2-default/mux",
+        "properties": {
+          "groups": "75617274325f305f67726f757000",
+          "function": "756172743200"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart3-default",
+        "properties": {
+          "linux,phandle": "0000000c",
+          "phandle": "0000000c"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/uart3-default/mux",
+        "properties": {
+          "groups": "75617274335f305f67726f757000",
+          "function": "756172743300"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd0-default",
+        "properties": {
+          "linux,phandle": "0000000e",
+          "phandle": "0000000e"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd0-default/mux",
+        "properties": {
+          "groups": "7364305f305f67726f7570007364305f315f67726f757000",
+          "function": "73643000"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd1-default",
+        "properties": {}
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd1-default/mux",
+        "properties": {
+          "groups": "7364315f305f67726f7570007364315f315f67726f757000",
+          "function": "73643100"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd2-default",
+        "properties": {
+          "linux,phandle": "0000000f",
+          "phandle": "0000000f"
+        }
+      },
+      {
+        "path": "/soc/pinctrl@ff907000/sd2-default/mux",
+        "properties": {
+          "groups": "7364325f305f67726f757000",
+          "function": "73643200"
+        }
+      },
+      {
+        "path": "/soc/serial@ff920000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92000000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000012400000004000000000000012500000004000000000000012600000004000000000000012700000004000000000000012800000004",
+          "interrupt-names": "756172746d73696e74723000756172747278696e74723000756172747478696e74723000756172747274696e747230007561727465696e74723000",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "00000009",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/serial@ff921000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92100000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000010900000004000000000000010a00000004000000000000010b00000004000000000000010c00000004000000000000010d00000004",
+          "interrupt-names": "756172746d73696e74723100756172747278696e74723100756172747478696e74723100756172747274696e747231007561727465696e74723100",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000a",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/serial@ff922000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92200000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000010e00000004000000000000010f00000004000000000000011000000004000000000000011100000004000000000000011200000004",
+          "interrupt-names": "756172746d73696e74723200756172747278696e74723200756172747478696e74723200756172747274696e747232007561727465696e74723200",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000b",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/serial@ff923000",
+        "properties": {
+          "compatible": "61726d2c706c3031310061726d2c7072696d6563656c6c00",
+          "reg": "ff92300000001000",
+          "clocks": "000000070000000600000008",
+          "clock-names": "75617274636c6b006170625f70636c6b00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000011300000004000000000000011400000004000000000000011500000004000000000000011600000004000000000000011700000004",
+          "interrupt-names": "756172746d73696e74723300756172747278696e74723300756172747478696e74723300756172747274696e747233007561727465696e74723300",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000c",
+          "status": "6f6b617900"
+        }
+      },
+      {
+        "path": "/soc/mmc@ff9b0000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c662d73646834302d6c7000",
+          "reg": "ff9b000000004000",
+          "clocks": "0000000d000000060000000600000007",
+          "clock-names": "696661636500636f726500",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000e60000000400000000000000eb00000004",
+          "interrupt-names": "7364302d696e74312d636f6c6166007364302d696e74322d636f6c616600",
+          "socionext,sd-id": "00000000",
+          "bus-width": "00000008",
+          "no-sdio": "",
+          "cap-sd-highspeed": "",
+          "sd-uhs-sdr50": "",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000e",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/mmc@ff9b4000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c662d73646834302d6c7000",
+          "reg": "ff9b400000004000",
+          "clocks": "0000000d000000070000000600000007",
+          "clock-names": "696661636500636f726500",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000ed0000000400000000000000f200000004",
+          "interrupt-names": "7364312d696e74312d636f6c6166007364312d696e74322d636f6c616600",
+          "socionext,sd-id": "00000001",
+          "bus-width": "00000004",
+          "no-sdio": "",
+          "cap-mmc-highspeed": "",
+          "mmc-hs200-1_8v": "",
+          "non-removable": "",
+          "disable-wp": "",
+          "status": "64697361626c656400"
+        }
+      },
+      {
+        "path": "/soc/mmc@ff9b8000",
+        "properties": {
+          "compatible": "66756a697473752c6d6238367337302d73646863692d332e3000",
+          "reg": "ff9b800000001000",
+          "clocks": "0000000d000000080000000600000007",
+          "clock-names": "696661636500636f726500",
+          "interrupt-parent": "00000001",
+          "interrupts": "00000000000000f400000004",
+          "interrupt-names": "7364322d696e74312d636f6c616600",
+          "socionext,sd-id": "00000002",
+          "bus-width": "00000008",
+          "no-sd": "",
+          "wifi-host": "",
+          "cap-sd-highspeed": "",
+          "sd-uhs-sdr50": "",
+          "cap-sdio-irq": "",
+          "pinctrl-names": "64656661756c7400",
+          "pinctrl-0": "0000000f",
+          "status": "6f6b617900"
+        }
+      },
+      {
+        "path": "/soc/bcmdhd_wlan@0",
+        "properties": {
+          "compatible": "616e64726f69642c62636d6468645f776c616e00",
+          "interrupt-parent": "00000001",
+          "interrupts": "000000000000007f00000004",
+          "status": "6f6b617900"
+        }
+      },
+      {
+        "path": "/pcie@FA800000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d7063696500",
+          "status": "64697361626c656400",
+          "reg-names": "646269006c696e6b00636f6e66696700",
+          "reg": "00000000fa800000000000000000100000000000fa880000000000000000100000000000f8e00000000000000020000000000000ff9070000000000000001000",
+          "#address-cells": "00000003",
+          "#size-cells": "00000002",
+          "clocks": "00000010",
+          "num-lanes": "00000002",
+          "num-viewport": "00000001",
+          "device_type": "70636900",
+          "bus-range": "00000000000000ff",
+          "ranges": "82000000000000000000000000000000f80000000000000000800000",
+          "interrupt-parent": "00000001",
+          "interrupt-names": "6d73690065727200",
+          "interrupts": "000000000000015400000004000000000000015500000004",
+          "phy-names": "706369652d70687900",
+          "phys": "00000011"
+        }
+      },
+      {
+        "path": "/phy@FA882000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d706369652d70687900",
+          "status": "64697361626c656400",
+          "reg": "00000000fa8820000000000000001000",
+          "clocks": "00000010",
+          "#phy-cells": "00000000",
+          "linux,phandle": "00000011",
+          "phandle": "00000011"
+        }
+      },
+      {
+        "path": "/pcie@FAA00000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d7063696500",
+          "status": "64697361626c656400",
+          "reg-names": "646269006c696e6b00636f6e66696700",
+          "reg": "00000000faa00000000000000000100000000000faa80000000000000000100000000000f9e00000000000000020000000000000ff9070000000000000001000",
+          "#address-cells": "00000003",
+          "#size-cells": "00000002",
+          "clocks": "00000010",
+          "num-lanes": "00000002",
+          "num-viewport": "00000001",
+          "device_type": "70636900",
+          "bus-range": "00000000000000ff",
+          "ranges": "82000000000000000000000000000000f90000000000000000800000",
+          "interrupt-parent": "00000001",
+          "interrupt-names": "6d73690065727200",
+          "interrupts": "000000000000017900000004000000000000017a00000004",
+          "phy-names": "706369652d70687900",
+          "phys": "00000012"
+        }
+      },
+      {
+        "path": "/phy@FAA82000",
+        "properties": {
+          "compatible": "736f63696f6e6578742c736370313038612d706369652d70687900",
+          "status": "64697361626c656400",
+          "reg": "00000000faa820000000000000001000",
+          "clocks": "00000010",
+          "#phy-cells": "00000000",
+          "linux,phandle": "00000012",
+          "phandle": "00000012"
+        }
+      }
+    ]
+  }
+}

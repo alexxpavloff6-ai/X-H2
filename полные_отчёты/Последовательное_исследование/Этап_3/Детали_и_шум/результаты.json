@@ -1,0 +1,2429 @@
+{
+  "method": "Independent original caller fragments and separately manually seeded builder; no fragment chaining. Artificial RAM; no pixels or camera state.",
+  "cameras": {
+    "X-H2": {
+      "dat": "FIRMWARE/ver 5.30/FWUP0028.DAT",
+      "sha256_before": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+      "sha256_after": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+      "images": [
+        {
+          "base": "0x1101000",
+          "length": 12042160,
+          "sha256": "3aacc331157312a03531266cd9aca0daea28597b9f3535bb6141105ad7354b4d"
+        },
+        {
+          "base": "0x29ae000",
+          "length": 15515648,
+          "sha256": "a49b88c00d3724239207e6564f2dfbf9d0a59b41962012d44a05738455d2addd"
+        }
+      ],
+      "gate_offset": "0x3978",
+      "input_offsets": {
+        "sharp": "0x39b0",
+        "nr": "0x39d8",
+        "clarity": "0x3f34"
+      },
+      "fragments": {
+        "sharp": "0x2e52c98",
+        "nr": "0x2e52d38",
+        "clarity": "0x2e52d44"
+      },
+      "functions": {
+        "sharp": "0x2e50d20",
+        "nr": "0x2e514c8",
+        "clarity": "0x2e5151c"
+      },
+      "builder": "0x13503e4",
+      "predicate": "0x134df8c",
+      "descriptors": {
+        "1001": {
+          "address": "0x18d3e68",
+          "bytes": "01 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 42 00 00 00 00 00 00 00",
+          "offset": 66
+        },
+        "100e": {
+          "address": "0x18d3fa8",
+          "bytes": "0e 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 b8 00 00 00 00 00 00 00",
+          "offset": 184
+        },
+        "100f": {
+          "address": "0x18d3fd0",
+          "bytes": "0f 10 13 00 09 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 bc 00 00 00 00 00 00 00",
+          "offset": 188
+        }
+      },
+      "fragment_cases": [
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 4,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 4,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 3,
+          "object_value_bytes": "82 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 3,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 0,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 0,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 8,
+          "object_value_bytes": "06 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 8,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 9,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 9,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 4294967295,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 4294967295,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 4,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 4,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 0,
+          "object_value_bytes": "e0 02",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 0,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 8,
+          "object_value_bytes": "e0 01",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 8,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 9,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 9,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 4294967295,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 4294967295,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 0,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 0,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 3,
+          "object_value_bytes": "b8 0b 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 3,
+          "object_value_bytes": "b8 0b 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": -5,
+          "object_value_bytes": "78 ec ff ff",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": -5,
+          "object_value_bytes": "78 ec ff ff",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 5,
+          "object_value_bytes": "88 13 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 5,
+          "object_value_bytes": "88 13 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": -6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": -6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        }
+      ],
+      "builder_cases": [
+        {
+          "case": "neutral",
+          "manually_seeded": {
+            "sharp": 3,
+            "nr": 0,
+            "clarity": 0,
+            "nr_flag": 1
+          },
+          "predicates": {
+            "1001": 1,
+            "100e": 1,
+            "100f": 1
+          },
+          "length": 3578,
+          "records": {
+            "1001": [
+              {
+                "offset": 50,
+                "bytes": "01 10 03 00 01 00 00 00 03 00 00 00"
+              }
+            ],
+            "100e": [
+              {
+                "offset": 110,
+                "bytes": "0e 10 03 00 01 00 00 00 00 00 00 00"
+              }
+            ],
+            "100f": [
+              {
+                "offset": 122,
+                "bytes": "0f 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "case": "recipe",
+          "manually_seeded": {
+            "sharp": 130,
+            "nr": 736,
+            "clarity": 3000,
+            "nr_flag": 1
+          },
+          "predicates": {
+            "1001": 1,
+            "100e": 1,
+            "100f": 1
+          },
+          "length": 3578,
+          "records": {
+            "1001": [
+              {
+                "offset": 50,
+                "bytes": "01 10 03 00 01 00 00 00 82 00 00 00"
+              }
+            ],
+            "100e": [
+              {
+                "offset": 110,
+                "bytes": "0e 10 03 00 01 00 00 00 e0 02 00 00"
+              }
+            ],
+            "100f": [
+              {
+                "offset": 122,
+                "bytes": "0f 10 09 00 01 00 00 00 b8 0b 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "case": "nr_flag_zero",
+          "manually_seeded": {
+            "sharp": 130,
+            "nr": 736,
+            "clarity": 3000,
+            "nr_flag": 0
+          },
+          "predicates": {
+            "1001": 1,
+            "100e": 0,
+            "100f": 1
+          },
+          "length": 3566,
+          "records": {
+            "1001": [
+              {
+                "offset": 50,
+                "bytes": "01 10 03 00 01 00 00 00 82 00 00 00"
+              }
+            ],
+            "100e": [],
+            "100f": [
+              {
+                "offset": 110,
+                "bytes": "0f 10 09 00 01 00 00 00 b8 0b 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "case": "sharp_sentinel",
+          "manually_seeded": {
+            "sharp": 65535,
+            "nr": 736,
+            "clarity": 3000,
+            "nr_flag": 1
+          },
+          "predicates": {
+            "1001": 0,
+            "100e": 1,
+            "100f": 1
+          },
+          "length": 3566,
+          "records": {
+            "1001": [],
+            "100e": [
+              {
+                "offset": 98,
+                "bytes": "0e 10 03 00 01 00 00 00 e0 02 00 00"
+              }
+            ],
+            "100f": [
+              {
+                "offset": 110,
+                "bytes": "0f 10 09 00 01 00 00 00 b8 0b 00 00"
+              }
+            ]
+          }
+        }
+      ],
+      "disassembly": {
+        "sharp_caller": [
+          "02e52c98 e0 03 13 aa mov x0, x19",
+          "02e52c9c 21 f8 ff 97 bl #0x2e50d20",
+          "02e52ca0 80 86 00 79 strh w0, [x20, #0x42]"
+        ],
+        "nr_caller": [
+          "02e52d38 e1 03 14 aa mov x1, x20",
+          "02e52d3c e0 03 13 aa mov x0, x19",
+          "02e52d40 e2 f9 ff 97 bl #0x2e514c8"
+        ],
+        "clarity_caller": [
+          "02e52d44 e0 03 13 aa mov x0, x19",
+          "02e52d48 f5 f9 ff 97 bl #0x2e5151c",
+          "02e52d4c 80 be 00 b9 str w0, [x20, #0xbc]"
+        ],
+        "sharp_function": [
+          "02e50d20 01 78 79 b9 ldr w1, [x0, #0x3978]",
+          "02e50d24 3f 5c 00 71 cmp w1, #0x17",
+          "02e50d28 40 06 00 54 b.eq #0x2e50df0",
+          "02e50d2c 3f b4 00 71 cmp w1, #0x2d",
+          "02e50d30 88 04 00 54 b.hi #0x2e50dc0",
+          "02e50d34 82 03 80 d2 mov x2, #0x1c",
+          "02e50d38 02 00 b0 f2 movk x2, #0x8000, lsl #16",
+          "02e50d3c c2 03 c6 f2 movk x2, #0x301e, lsl #32",
+          "02e50d40 41 24 c1 9a lsr x1, x2, x1",
+          "02e50d44 e1 03 00 36 tbz w1, #0, #0x2e50dc0",
+          "02e50d48 01 b0 79 b9 ldr w1, [x0, #0x39b0]",
+          "02e50d4c 3f 14 00 71 cmp w1, #5",
+          "02e50d50 40 05 00 54 b.eq #0x2e50df8",
+          "02e50d54 28 02 00 54 b.hi #0x2e50d98",
+          "02e50d58 40 00 80 52 mov w0, #2",
+          "02e50d5c 3f 00 00 6b cmp w1, w0",
+          "02e50d60 a0 01 00 54 b.eq #0x2e50d94",
+          "02e50d64 3f 08 00 71 cmp w1, #2",
+          "02e50d68 c9 00 00 54 b.ls #0x2e50d80",
+          "02e50d6c 3f 0c 00 71 cmp w1, #3",
+          "02e50d70 60 00 80 52 mov w0, #3",
+          "02e50d74 41 10 80 52 mov w1, #0x82",
+          "02e50d78 00 10 81 1a csel w0, w0, w1, ne",
+          "02e50d7c 06 00 00 14 b #0x2e50d94",
+          "02e50d80 00 00 80 52 mov w0, #0",
+          "02e50d84 81 00 00 34 cbz w1, #0x2e50d94",
+          "02e50d88 3f 04 00 71 cmp w1, #1",
+          "02e50d8c 60 00 80 52 mov w0, #3",
+          "02e50d90 00 14 9f 1a csinc w0, w0, wzr, ne",
+          "02e50d94 c0 03 5f d6 ret ",
+          "02e50d98 a0 00 80 52 mov w0, #5",
+          "02e50d9c 3f 1c 00 71 cmp w1, #7",
+          "02e50da0 a0 ff ff 54 b.eq #0x2e50d94",
+          "02e50da4 c0 00 80 52 mov w0, #6",
+          "02e50da8 3f 20 00 71 cmp w1, #8",
+          "02e50dac 40 ff ff 54 b.eq #0x2e50d94",
+          "02e50db0 3f 00 00 6b cmp w1, w0",
+          "02e50db4 e0 17 9f 1a cset w0, eq",
+          "02e50db8 00 0c 00 11 add w0, w0, #3",
+          "02e50dbc f6 ff ff 17 b #0x2e50d94",
+          "02e50dc0 01 b8 79 b9 ldr w1, [x0, #0x39b8]",
+          "02e50dc4 60 00 80 52 mov w0, #3",
+          "02e50dc8 3f 58 00 71 cmp w1, #0x16",
+          "02e50dcc 48 fe ff 54 b.hi #0x2e50d94",
+          "02e50dd0 40 01 87 d2 mov x0, #0x380a",
+          "02e50dd4 80 0f a0 f2 movk x0, #0x7c, lsl #16",
+          "02e50dd8 00 24 c1 9a lsr x0, x0, x1",
+          "02e50ddc 1f 00 40 f2 tst x0, #1",
+          "02e50de0 00 00 90 52 mov w0, #0x8000",
+          "02e50de4 61 00 80 52 mov w1, #3",
+          "02e50de8 00 10 81 1a csel w0, w0, w1, ne",
+          "02e50dec ea ff ff 17 b #0x2e50d94",
+          "02e50df0 80 00 80 52 mov w0, #4",
+          "02e50df4 e8 ff ff 17 b #0x2e50d94",
+          "02e50df8 80 10 80 52 mov w0, #0x84",
+          "02e50dfc e6 ff ff 17 b #0x2e50d94"
+        ],
+        "nr_function": [
+          "02e51450 01 d8 79 b9 ldr w1, [x0, #0x39d8]",
+          "02e51454 3f 14 00 71 cmp w1, #5",
+          "02e51458 40 03 00 54 b.eq #0x2e514c0",
+          "02e5145c e8 01 00 54 b.hi #0x2e51498",
+          "02e51460 00 40 80 52 mov w0, #0x200",
+          "02e51464 3f 08 00 71 cmp w1, #2",
+          "02e51468 60 01 00 54 b.eq #0x2e51494",
+          "02e5146c a9 00 00 54 b.ls #0x2e51480",
+          "02e51470 3f 0c 00 71 cmp w1, #3",
+          "02e51474 00 50 80 52 mov w0, #0x280",
+          "02e51478 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02e5147c 06 00 00 14 b #0x2e51494",
+          "02e51480 00 5c 80 52 mov w0, #0x2e0",
+          "02e51484 81 00 00 34 cbz w1, #0x2e51494",
+          "02e51488 3f 04 00 71 cmp w1, #1",
+          "02e5148c 00 58 80 52 mov w0, #0x2c0",
+          "02e51490 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02e51494 c0 03 5f d6 ret ",
+          "02e51498 00 38 80 52 mov w0, #0x1c0",
+          "02e5149c 3f 1c 00 71 cmp w1, #7",
+          "02e514a0 a0 ff ff 54 b.eq #0x2e51494",
+          "02e514a4 00 3c 80 52 mov w0, #0x1e0",
+          "02e514a8 3f 20 00 71 cmp w1, #8",
+          "02e514ac 40 ff ff 54 b.eq #0x2e51494",
+          "02e514b0 3f 18 00 71 cmp w1, #6",
+          "02e514b4 00 20 80 52 mov w0, #0x100",
+          "02e514b8 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02e514bc f6 ff ff 17 b #0x2e51494",
+          "02e514c0 00 30 80 52 mov w0, #0x180",
+          "02e514c4 f4 ff ff 17 b #0x2e51494",
+          "02e514c8 fd 7b be a9 stp x29, x30, [sp, #-0x20]!",
+          "02e514cc fd 03 00 91 mov x29, sp",
+          "02e514d0 f3 0b 00 f9 str x19, [sp, #0x10]",
+          "02e514d4 f3 03 01 aa mov x19, x1",
+          "02e514d8 02 78 79 b9 ldr w2, [x0, #0x3978]",
+          "02e514dc 5f b4 00 71 cmp w2, #0x2d",
+          "02e514e0 a8 01 00 54 b.hi #0x2e51514",
+          "02e514e4 81 03 80 d2 mov x1, #0x1c",
+          "02e514e8 01 00 b0 f2 movk x1, #0x8000, lsl #16",
+          "02e514ec c1 03 c6 f2 movk x1, #0x301e, lsl #32",
+          "02e514f0 21 24 c2 9a lsr x1, x1, x2",
+          "02e514f4 01 01 00 36 tbz w1, #0, #0x2e51514",
+          "02e514f8 d6 ff ff 97 bl #0x2e51450",
+          "02e514fc 60 72 01 79 strh w0, [x19, #0xb8]",
+          "02e51500 20 00 80 52 mov w0, #1",
+          "02e51504 60 b6 00 b9 str w0, [x19, #0xb4]",
+          "02e51508 f3 0b 40 f9 ldr x19, [sp, #0x10]",
+          "02e5150c fd 7b c2 a8 ldp x29, x30, [sp], #0x20",
+          "02e51510 c0 03 5f d6 ret ",
+          "02e51514 7f b6 00 b9 str wzr, [x19, #0xb4]",
+          "02e51518 fc ff ff 17 b #0x2e51508"
+        ],
+        "clarity_function": [
+          "02e5151c 01 34 7f b9 ldr w1, [x0, #0x3f34]",
+          "02e51520 3f 04 00 71 cmp w1, #1",
+          "02e51524 40 04 00 54 b.eq #0x2e515ac",
+          "02e51528 4c 02 00 54 b.gt #0x2e51570",
+          "02e5152c 3f 0c 00 31 cmn w1, #3",
+          "02e51530 20 04 00 54 b.eq #0x2e515b4",
+          "02e51534 3f 08 00 31 cmn w1, #2",
+          "02e51538 eb 00 00 54 b.lt #0x2e51554",
+          "02e5153c e0 f9 80 12 mov w0, #-0x7d0",
+          "02e51540 60 01 00 54 b.eq #0x2e5156c",
+          "02e51544 3f 04 00 31 cmn w1, #1",
+          "02e51548 e0 7c 80 12 mov w0, #-0x3e8",
+          "02e5154c 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02e51550 07 00 00 14 b #0x2e5156c",
+          "02e51554 e0 70 82 12 mov w0, #-0x1388",
+          "02e51558 3f 14 00 31 cmn w1, #5",
+          "02e5155c 80 00 00 54 b.eq #0x2e5156c",
+          "02e51560 3f 10 00 31 cmn w1, #4",
+          "02e51564 e0 f3 81 12 mov w0, #-0xfa0",
+          "02e51568 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02e5156c c0 03 5f d6 ret ",
+          "02e51570 00 f4 81 52 mov w0, #0xfa0",
+          "02e51574 3f 10 00 71 cmp w1, #4",
+          "02e51578 a0 ff ff 54 b.eq #0x2e5156c",
+          "02e5157c ad 00 00 54 b.le #0x2e51590",
+          "02e51580 3f 14 00 71 cmp w1, #5",
+          "02e51584 00 71 82 52 mov w0, #0x1388",
+          "02e51588 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02e5158c f8 ff ff 17 b #0x2e5156c",
+          "02e51590 00 fa 80 52 mov w0, #0x7d0",
+          "02e51594 3f 08 00 71 cmp w1, #2",
+          "02e51598 a0 fe ff 54 b.eq #0x2e5156c",
+          "02e5159c 3f 0c 00 71 cmp w1, #3",
+          "02e515a0 00 77 81 52 mov w0, #0xbb8",
+          "02e515a4 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02e515a8 f1 ff ff 17 b #0x2e5156c",
+          "02e515ac 00 7d 80 52 mov w0, #0x3e8",
+          "02e515b0 ef ff ff 17 b #0x2e5156c",
+          "02e515b4 e0 76 81 12 mov w0, #-0xbb8",
+          "02e515b8 ed ff ff 17 b #0x2e5156c",
+          "02e515bc 01 c8 21 8b add x1, x0, w1, sxtw #2",
+          "02e515c0 20 a8 79 b9 ldr w0, [x1, #0x39a8]",
+          "02e515c4 00 24 00 11 add w0, w0, #9",
+          "02e515c8 1f 48 00 71 cmp w0, #0x12",
+          "02e515cc e8 02 00 54 b.hi #0x2e51628",
+          "02e515d0 c1 2d 00 f0 adrp x1, #0x340c000",
+          "02e515d4 21 f0 2b 91 add x1, x1, #0xafc",
+          "02e515d8 20 48 60 38 ldrb w0, [x1, w0, uxtw]",
+          "02e515dc 61 00 00 10 adr x1, #0x2e515e8",
+          "02e515e0 20 88 20 8b add x0, x1, w0, sxtb #2",
+          "02e515e4 00 00 1f d6 br x0",
+          "02e515e8 e0 13 80 12 mov w0, #-0xa0"
+        ]
+      }
+    },
+    "X-H2S": {
+      "dat": "Firmware на прочиеFuji/FWUP0027.DAT",
+      "sha256_before": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "sha256_after": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "images": [
+        {
+          "base": "0x1421000",
+          "length": 12015376,
+          "sha256": "a32a90b7efefaebcf3b9c3f076cb23f82c1f4dda45bf828a024487fc0fb06c16"
+        },
+        {
+          "base": "0x2cca000",
+          "length": 14843904,
+          "sha256": "86c8c9f01ae6840f791bffea050e8442ff9e967b6b7cbbb7f9d8141dd41d764f"
+        }
+      ],
+      "gate_offset": "0x391c",
+      "input_offsets": {
+        "sharp": "0x3954",
+        "nr": "0x397c",
+        "clarity": "0x3ee0"
+      },
+      "fragments": {
+        "sharp": "0x3169f7c",
+        "nr": "0x316a01c",
+        "clarity": "0x316a028"
+      },
+      "functions": {
+        "sharp": "0x3168010",
+        "nr": "0x31687b0",
+        "clarity": "0x3168804"
+      },
+      "builder": "0x166dfc4",
+      "predicate": "0x166bb6c",
+      "descriptors": {
+        "1001": {
+          "address": "0x1bf1040",
+          "bytes": "01 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 42 00 00 00 00 00 00 00",
+          "offset": 66
+        },
+        "100e": {
+          "address": "0x1bf1180",
+          "bytes": "0e 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 b8 00 00 00 00 00 00 00",
+          "offset": 184
+        },
+        "100f": {
+          "address": "0x1bf11a8",
+          "bytes": "0f 10 13 00 09 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 bc 00 00 00 00 00 00 00",
+          "offset": 188
+        }
+      },
+      "fragment_cases": [
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 4,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 4,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 3,
+          "object_value_bytes": "82 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 3,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 0,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 0,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 8,
+          "object_value_bytes": "06 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 8,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 9,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 9,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 4294967295,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 4294967295,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 4,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 4,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 0,
+          "object_value_bytes": "e0 02",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 0,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 8,
+          "object_value_bytes": "e0 01",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 8,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 9,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 9,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 4294967295,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 4294967295,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 0,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 0,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 3,
+          "object_value_bytes": "b8 0b 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 3,
+          "object_value_bytes": "b8 0b 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": -5,
+          "object_value_bytes": "78 ec ff ff",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": -5,
+          "object_value_bytes": "78 ec ff ff",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 5,
+          "object_value_bytes": "88 13 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 5,
+          "object_value_bytes": "88 13 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": -6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": -6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        }
+      ],
+      "builder_cases": [
+        {
+          "case": "neutral",
+          "manually_seeded": {
+            "sharp": 3,
+            "nr": 0,
+            "clarity": 0,
+            "nr_flag": 1
+          },
+          "predicates": {
+            "1001": 1,
+            "100e": 1,
+            "100f": 1
+          },
+          "length": 3578,
+          "records": {
+            "1001": [
+              {
+                "offset": 50,
+                "bytes": "01 10 03 00 01 00 00 00 03 00 00 00"
+              }
+            ],
+            "100e": [
+              {
+                "offset": 110,
+                "bytes": "0e 10 03 00 01 00 00 00 00 00 00 00"
+              }
+            ],
+            "100f": [
+              {
+                "offset": 122,
+                "bytes": "0f 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "case": "recipe",
+          "manually_seeded": {
+            "sharp": 130,
+            "nr": 736,
+            "clarity": 3000,
+            "nr_flag": 1
+          },
+          "predicates": {
+            "1001": 1,
+            "100e": 1,
+            "100f": 1
+          },
+          "length": 3578,
+          "records": {
+            "1001": [
+              {
+                "offset": 50,
+                "bytes": "01 10 03 00 01 00 00 00 82 00 00 00"
+              }
+            ],
+            "100e": [
+              {
+                "offset": 110,
+                "bytes": "0e 10 03 00 01 00 00 00 e0 02 00 00"
+              }
+            ],
+            "100f": [
+              {
+                "offset": 122,
+                "bytes": "0f 10 09 00 01 00 00 00 b8 0b 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "case": "nr_flag_zero",
+          "manually_seeded": {
+            "sharp": 130,
+            "nr": 736,
+            "clarity": 3000,
+            "nr_flag": 0
+          },
+          "predicates": {
+            "1001": 1,
+            "100e": 0,
+            "100f": 1
+          },
+          "length": 3566,
+          "records": {
+            "1001": [
+              {
+                "offset": 50,
+                "bytes": "01 10 03 00 01 00 00 00 82 00 00 00"
+              }
+            ],
+            "100e": [],
+            "100f": [
+              {
+                "offset": 110,
+                "bytes": "0f 10 09 00 01 00 00 00 b8 0b 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "case": "sharp_sentinel",
+          "manually_seeded": {
+            "sharp": 65535,
+            "nr": 736,
+            "clarity": 3000,
+            "nr_flag": 1
+          },
+          "predicates": {
+            "1001": 0,
+            "100e": 1,
+            "100f": 1
+          },
+          "length": 3566,
+          "records": {
+            "1001": [],
+            "100e": [
+              {
+                "offset": 98,
+                "bytes": "0e 10 03 00 01 00 00 00 e0 02 00 00"
+              }
+            ],
+            "100f": [
+              {
+                "offset": 110,
+                "bytes": "0f 10 09 00 01 00 00 00 b8 0b 00 00"
+              }
+            ]
+          }
+        }
+      ],
+      "disassembly": {
+        "sharp_caller": [
+          "03169f7c e0 03 13 aa mov x0, x19",
+          "03169f80 24 f8 ff 97 bl #0x3168010",
+          "03169f84 80 86 00 79 strh w0, [x20, #0x42]"
+        ],
+        "nr_caller": [
+          "0316a01c e1 03 14 aa mov x1, x20",
+          "0316a020 e0 03 13 aa mov x0, x19",
+          "0316a024 e3 f9 ff 97 bl #0x31687b0"
+        ],
+        "clarity_caller": [
+          "0316a028 e0 03 13 aa mov x0, x19",
+          "0316a02c f6 f9 ff 97 bl #0x3168804",
+          "0316a030 80 be 00 b9 str w0, [x20, #0xbc]"
+        ],
+        "sharp_function": [
+          "03168010 01 1c 79 b9 ldr w1, [x0, #0x391c]",
+          "03168014 3f 5c 00 71 cmp w1, #0x17",
+          "03168018 40 06 00 54 b.eq #0x31680e0",
+          "0316801c 3f b4 00 71 cmp w1, #0x2d",
+          "03168020 88 04 00 54 b.hi #0x31680b0",
+          "03168024 82 03 80 d2 mov x2, #0x1c",
+          "03168028 02 00 b0 f2 movk x2, #0x8000, lsl #16",
+          "0316802c c2 03 c6 f2 movk x2, #0x301e, lsl #32",
+          "03168030 41 24 c1 9a lsr x1, x2, x1",
+          "03168034 e1 03 00 36 tbz w1, #0, #0x31680b0",
+          "03168038 01 54 79 b9 ldr w1, [x0, #0x3954]",
+          "0316803c 3f 14 00 71 cmp w1, #5",
+          "03168040 40 05 00 54 b.eq #0x31680e8",
+          "03168044 28 02 00 54 b.hi #0x3168088",
+          "03168048 40 00 80 52 mov w0, #2",
+          "0316804c 3f 00 00 6b cmp w1, w0",
+          "03168050 a0 01 00 54 b.eq #0x3168084",
+          "03168054 3f 08 00 71 cmp w1, #2",
+          "03168058 c9 00 00 54 b.ls #0x3168070",
+          "0316805c 3f 0c 00 71 cmp w1, #3",
+          "03168060 60 00 80 52 mov w0, #3",
+          "03168064 41 10 80 52 mov w1, #0x82",
+          "03168068 00 10 81 1a csel w0, w0, w1, ne",
+          "0316806c 06 00 00 14 b #0x3168084",
+          "03168070 00 00 80 52 mov w0, #0",
+          "03168074 81 00 00 34 cbz w1, #0x3168084",
+          "03168078 3f 04 00 71 cmp w1, #1",
+          "0316807c 60 00 80 52 mov w0, #3",
+          "03168080 00 14 9f 1a csinc w0, w0, wzr, ne",
+          "03168084 c0 03 5f d6 ret ",
+          "03168088 a0 00 80 52 mov w0, #5",
+          "0316808c 3f 1c 00 71 cmp w1, #7",
+          "03168090 a0 ff ff 54 b.eq #0x3168084",
+          "03168094 c0 00 80 52 mov w0, #6",
+          "03168098 3f 20 00 71 cmp w1, #8",
+          "0316809c 40 ff ff 54 b.eq #0x3168084",
+          "031680a0 3f 00 00 6b cmp w1, w0",
+          "031680a4 e0 17 9f 1a cset w0, eq",
+          "031680a8 00 0c 00 11 add w0, w0, #3",
+          "031680ac f6 ff ff 17 b #0x3168084",
+          "031680b0 01 5c 79 b9 ldr w1, [x0, #0x395c]",
+          "031680b4 60 00 80 52 mov w0, #3",
+          "031680b8 3f 58 00 71 cmp w1, #0x16",
+          "031680bc 48 fe ff 54 b.hi #0x3168084",
+          "031680c0 40 01 87 d2 mov x0, #0x380a",
+          "031680c4 80 0f a0 f2 movk x0, #0x7c, lsl #16",
+          "031680c8 00 24 c1 9a lsr x0, x0, x1",
+          "031680cc 1f 00 40 f2 tst x0, #1",
+          "031680d0 00 00 90 52 mov w0, #0x8000",
+          "031680d4 61 00 80 52 mov w1, #3",
+          "031680d8 00 10 81 1a csel w0, w0, w1, ne",
+          "031680dc ea ff ff 17 b #0x3168084",
+          "031680e0 80 00 80 52 mov w0, #4",
+          "031680e4 e8 ff ff 17 b #0x3168084",
+          "031680e8 80 10 80 52 mov w0, #0x84",
+          "031680ec e6 ff ff 17 b #0x3168084"
+        ],
+        "nr_function": [
+          "03168738 01 7c 79 b9 ldr w1, [x0, #0x397c]",
+          "0316873c 3f 14 00 71 cmp w1, #5",
+          "03168740 40 03 00 54 b.eq #0x31687a8",
+          "03168744 e8 01 00 54 b.hi #0x3168780",
+          "03168748 00 40 80 52 mov w0, #0x200",
+          "0316874c 3f 08 00 71 cmp w1, #2",
+          "03168750 60 01 00 54 b.eq #0x316877c",
+          "03168754 a9 00 00 54 b.ls #0x3168768",
+          "03168758 3f 0c 00 71 cmp w1, #3",
+          "0316875c 00 50 80 52 mov w0, #0x280",
+          "03168760 00 00 9f 1a csel w0, w0, wzr, eq",
+          "03168764 06 00 00 14 b #0x316877c",
+          "03168768 00 5c 80 52 mov w0, #0x2e0",
+          "0316876c 81 00 00 34 cbz w1, #0x316877c",
+          "03168770 3f 04 00 71 cmp w1, #1",
+          "03168774 00 58 80 52 mov w0, #0x2c0",
+          "03168778 00 00 9f 1a csel w0, w0, wzr, eq",
+          "0316877c c0 03 5f d6 ret ",
+          "03168780 00 38 80 52 mov w0, #0x1c0",
+          "03168784 3f 1c 00 71 cmp w1, #7",
+          "03168788 a0 ff ff 54 b.eq #0x316877c",
+          "0316878c 00 3c 80 52 mov w0, #0x1e0",
+          "03168790 3f 20 00 71 cmp w1, #8",
+          "03168794 40 ff ff 54 b.eq #0x316877c",
+          "03168798 3f 18 00 71 cmp w1, #6",
+          "0316879c 00 20 80 52 mov w0, #0x100",
+          "031687a0 00 00 9f 1a csel w0, w0, wzr, eq",
+          "031687a4 f6 ff ff 17 b #0x316877c",
+          "031687a8 00 30 80 52 mov w0, #0x180",
+          "031687ac f4 ff ff 17 b #0x316877c",
+          "031687b0 fd 7b be a9 stp x29, x30, [sp, #-0x20]!",
+          "031687b4 fd 03 00 91 mov x29, sp",
+          "031687b8 f3 0b 00 f9 str x19, [sp, #0x10]",
+          "031687bc f3 03 01 aa mov x19, x1",
+          "031687c0 02 1c 79 b9 ldr w2, [x0, #0x391c]",
+          "031687c4 5f b4 00 71 cmp w2, #0x2d",
+          "031687c8 a8 01 00 54 b.hi #0x31687fc",
+          "031687cc 81 03 80 d2 mov x1, #0x1c",
+          "031687d0 01 00 b0 f2 movk x1, #0x8000, lsl #16",
+          "031687d4 c1 03 c6 f2 movk x1, #0x301e, lsl #32",
+          "031687d8 21 24 c2 9a lsr x1, x1, x2",
+          "031687dc 01 01 00 36 tbz w1, #0, #0x31687fc",
+          "031687e0 d6 ff ff 97 bl #0x3168738",
+          "031687e4 60 72 01 79 strh w0, [x19, #0xb8]",
+          "031687e8 20 00 80 52 mov w0, #1",
+          "031687ec 60 b6 00 b9 str w0, [x19, #0xb4]",
+          "031687f0 f3 0b 40 f9 ldr x19, [sp, #0x10]",
+          "031687f4 fd 7b c2 a8 ldp x29, x30, [sp], #0x20",
+          "031687f8 c0 03 5f d6 ret ",
+          "031687fc 7f b6 00 b9 str wzr, [x19, #0xb4]",
+          "03168800 fc ff ff 17 b #0x31687f0"
+        ],
+        "clarity_function": [
+          "03168804 01 e0 7e b9 ldr w1, [x0, #0x3ee0]",
+          "03168808 3f 04 00 71 cmp w1, #1",
+          "0316880c 40 04 00 54 b.eq #0x3168894",
+          "03168810 4c 02 00 54 b.gt #0x3168858",
+          "03168814 3f 0c 00 31 cmn w1, #3",
+          "03168818 20 04 00 54 b.eq #0x316889c",
+          "0316881c 3f 08 00 31 cmn w1, #2",
+          "03168820 eb 00 00 54 b.lt #0x316883c",
+          "03168824 e0 f9 80 12 mov w0, #-0x7d0",
+          "03168828 60 01 00 54 b.eq #0x3168854",
+          "0316882c 3f 04 00 31 cmn w1, #1",
+          "03168830 e0 7c 80 12 mov w0, #-0x3e8",
+          "03168834 00 00 9f 1a csel w0, w0, wzr, eq",
+          "03168838 07 00 00 14 b #0x3168854",
+          "0316883c e0 70 82 12 mov w0, #-0x1388",
+          "03168840 3f 14 00 31 cmn w1, #5",
+          "03168844 80 00 00 54 b.eq #0x3168854",
+          "03168848 3f 10 00 31 cmn w1, #4",
+          "0316884c e0 f3 81 12 mov w0, #-0xfa0",
+          "03168850 00 00 9f 1a csel w0, w0, wzr, eq",
+          "03168854 c0 03 5f d6 ret ",
+          "03168858 00 f4 81 52 mov w0, #0xfa0",
+          "0316885c 3f 10 00 71 cmp w1, #4",
+          "03168860 a0 ff ff 54 b.eq #0x3168854",
+          "03168864 ad 00 00 54 b.le #0x3168878",
+          "03168868 3f 14 00 71 cmp w1, #5",
+          "0316886c 00 71 82 52 mov w0, #0x1388",
+          "03168870 00 00 9f 1a csel w0, w0, wzr, eq",
+          "03168874 f8 ff ff 17 b #0x3168854",
+          "03168878 00 fa 80 52 mov w0, #0x7d0",
+          "0316887c 3f 08 00 71 cmp w1, #2",
+          "03168880 a0 fe ff 54 b.eq #0x3168854",
+          "03168884 3f 0c 00 71 cmp w1, #3",
+          "03168888 00 77 81 52 mov w0, #0xbb8",
+          "0316888c 00 00 9f 1a csel w0, w0, wzr, eq",
+          "03168890 f1 ff ff 17 b #0x3168854",
+          "03168894 00 7d 80 52 mov w0, #0x3e8",
+          "03168898 ef ff ff 17 b #0x3168854",
+          "0316889c e0 76 81 12 mov w0, #-0xbb8",
+          "031688a0 ed ff ff 17 b #0x3168854",
+          "031688a4 01 c8 21 8b add x1, x0, w1, sxtw #2",
+          "031688a8 20 4c 79 b9 ldr w0, [x1, #0x394c]",
+          "031688ac 00 24 00 11 add w0, w0, #9",
+          "031688b0 1f 48 00 71 cmp w0, #0x12",
+          "031688b4 e8 02 00 54 b.hi #0x3168910",
+          "031688b8 81 2e 00 d0 adrp x1, #0x373a000",
+          "031688bc 21 50 0c 91 add x1, x1, #0x314",
+          "031688c0 20 48 60 38 ldrb w0, [x1, w0, uxtw]",
+          "031688c4 61 00 00 10 adr x1, #0x31688d0",
+          "031688c8 20 88 20 8b add x0, x1, w0, sxtb #2",
+          "031688cc 00 00 1f d6 br x0",
+          "031688d0 e0 13 80 12 mov w0, #-0xa0"
+        ]
+      }
+    },
+    "X-T5": {
+      "dat": "Firmware на прочиеFuji/FWUP0030.DAT",
+      "sha256_before": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "sha256_after": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "images": [
+        {
+          "base": "0x1101000",
+          "length": 11743456,
+          "sha256": "fd5f899217a833552f135d719d22e025aea2e0780b2fd1f8c66b353ead969724"
+        },
+        {
+          "base": "0x28eb000",
+          "length": 15446016,
+          "sha256": "d74dba337fe4078a6ee15ca5fddba7e502bdefb980825a09a15f9b13a01eb350"
+        }
+      ],
+      "gate_offset": "0x39c0",
+      "input_offsets": {
+        "sharp": "0x39f8",
+        "nr": "0x3a20",
+        "clarity": "0x3f6c"
+      },
+      "fragments": {
+        "sharp": "0x2d90ee0",
+        "nr": "0x2d90f80",
+        "clarity": "0x2d90f8c"
+      },
+      "functions": {
+        "sharp": "0x2d8ee58",
+        "nr": "0x2d8f650",
+        "clarity": "0x2d8f6a4"
+      },
+      "builder": "0x134d3b4",
+      "predicate": "0x134af5c",
+      "descriptors": {
+        "1001": {
+          "address": "0x18d16f0",
+          "bytes": "01 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 42 00 00 00 00 00 00 00",
+          "offset": 66
+        },
+        "100e": {
+          "address": "0x18d1830",
+          "bytes": "0e 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 b8 00 00 00 00 00 00 00",
+          "offset": 184
+        },
+        "100f": {
+          "address": "0x18d1858",
+          "bytes": "0f 10 13 00 09 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 bc 00 00 00 00 00 00 00",
+          "offset": 188
+        }
+      },
+      "fragment_cases": [
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 4,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 4,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 3,
+          "object_value_bytes": "82 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 3,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 0,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 0,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 8,
+          "object_value_bytes": "06 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 8,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 9,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 9,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 4294967295,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 4294967295,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 4,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 4,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 0,
+          "object_value_bytes": "e0 02",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 0,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 8,
+          "object_value_bytes": "e0 01",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 8,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 9,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 9,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 4294967295,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 4294967295,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 0,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 0,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 3,
+          "object_value_bytes": "b8 0b 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 3,
+          "object_value_bytes": "b8 0b 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": -5,
+          "object_value_bytes": "78 ec ff ff",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": -5,
+          "object_value_bytes": "78 ec ff ff",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 5,
+          "object_value_bytes": "88 13 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 5,
+          "object_value_bytes": "88 13 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": -6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": -6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        }
+      ],
+      "builder_cases": [
+        {
+          "case": "neutral",
+          "manually_seeded": {
+            "sharp": 3,
+            "nr": 0,
+            "clarity": 0,
+            "nr_flag": 1
+          },
+          "predicates": {
+            "1001": 1,
+            "100e": 1,
+            "100f": 1
+          },
+          "length": 3598,
+          "records": {
+            "1001": [
+              {
+                "offset": 50,
+                "bytes": "01 10 03 00 01 00 00 00 03 00 00 00"
+              }
+            ],
+            "100e": [
+              {
+                "offset": 110,
+                "bytes": "0e 10 03 00 01 00 00 00 00 00 00 00"
+              }
+            ],
+            "100f": [
+              {
+                "offset": 122,
+                "bytes": "0f 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "case": "recipe",
+          "manually_seeded": {
+            "sharp": 130,
+            "nr": 736,
+            "clarity": 3000,
+            "nr_flag": 1
+          },
+          "predicates": {
+            "1001": 1,
+            "100e": 1,
+            "100f": 1
+          },
+          "length": 3598,
+          "records": {
+            "1001": [
+              {
+                "offset": 50,
+                "bytes": "01 10 03 00 01 00 00 00 82 00 00 00"
+              }
+            ],
+            "100e": [
+              {
+                "offset": 110,
+                "bytes": "0e 10 03 00 01 00 00 00 e0 02 00 00"
+              }
+            ],
+            "100f": [
+              {
+                "offset": 122,
+                "bytes": "0f 10 09 00 01 00 00 00 b8 0b 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "case": "nr_flag_zero",
+          "manually_seeded": {
+            "sharp": 130,
+            "nr": 736,
+            "clarity": 3000,
+            "nr_flag": 0
+          },
+          "predicates": {
+            "1001": 1,
+            "100e": 0,
+            "100f": 1
+          },
+          "length": 3586,
+          "records": {
+            "1001": [
+              {
+                "offset": 50,
+                "bytes": "01 10 03 00 01 00 00 00 82 00 00 00"
+              }
+            ],
+            "100e": [],
+            "100f": [
+              {
+                "offset": 110,
+                "bytes": "0f 10 09 00 01 00 00 00 b8 0b 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "case": "sharp_sentinel",
+          "manually_seeded": {
+            "sharp": 65535,
+            "nr": 736,
+            "clarity": 3000,
+            "nr_flag": 1
+          },
+          "predicates": {
+            "1001": 0,
+            "100e": 1,
+            "100f": 1
+          },
+          "length": 3586,
+          "records": {
+            "1001": [],
+            "100e": [
+              {
+                "offset": 98,
+                "bytes": "0e 10 03 00 01 00 00 00 e0 02 00 00"
+              }
+            ],
+            "100f": [
+              {
+                "offset": 110,
+                "bytes": "0f 10 09 00 01 00 00 00 b8 0b 00 00"
+              }
+            ]
+          }
+        }
+      ],
+      "disassembly": {
+        "sharp_caller": [
+          "02d90ee0 e0 03 13 aa mov x0, x19",
+          "02d90ee4 dd f7 ff 97 bl #0x2d8ee58",
+          "02d90ee8 80 86 00 79 strh w0, [x20, #0x42]"
+        ],
+        "nr_caller": [
+          "02d90f80 e1 03 14 aa mov x1, x20",
+          "02d90f84 e0 03 13 aa mov x0, x19",
+          "02d90f88 b2 f9 ff 97 bl #0x2d8f650"
+        ],
+        "clarity_caller": [
+          "02d90f8c e0 03 13 aa mov x0, x19",
+          "02d90f90 c5 f9 ff 97 bl #0x2d8f6a4",
+          "02d90f94 80 be 00 b9 str w0, [x20, #0xbc]"
+        ],
+        "sharp_function": [
+          "02d8ee58 01 c0 79 b9 ldr w1, [x0, #0x39c0]",
+          "02d8ee5c 3f 5c 00 71 cmp w1, #0x17",
+          "02d8ee60 40 06 00 54 b.eq #0x2d8ef28",
+          "02d8ee64 3f b4 00 71 cmp w1, #0x2d",
+          "02d8ee68 88 04 00 54 b.hi #0x2d8eef8",
+          "02d8ee6c 82 03 80 d2 mov x2, #0x1c",
+          "02d8ee70 02 00 b0 f2 movk x2, #0x8000, lsl #16",
+          "02d8ee74 c2 03 c6 f2 movk x2, #0x301e, lsl #32",
+          "02d8ee78 41 24 c1 9a lsr x1, x2, x1",
+          "02d8ee7c e1 03 00 36 tbz w1, #0, #0x2d8eef8",
+          "02d8ee80 01 f8 79 b9 ldr w1, [x0, #0x39f8]",
+          "02d8ee84 3f 14 00 71 cmp w1, #5",
+          "02d8ee88 40 05 00 54 b.eq #0x2d8ef30",
+          "02d8ee8c 28 02 00 54 b.hi #0x2d8eed0",
+          "02d8ee90 40 00 80 52 mov w0, #2",
+          "02d8ee94 3f 00 00 6b cmp w1, w0",
+          "02d8ee98 a0 01 00 54 b.eq #0x2d8eecc",
+          "02d8ee9c 3f 08 00 71 cmp w1, #2",
+          "02d8eea0 c9 00 00 54 b.ls #0x2d8eeb8",
+          "02d8eea4 3f 0c 00 71 cmp w1, #3",
+          "02d8eea8 60 00 80 52 mov w0, #3",
+          "02d8eeac 41 10 80 52 mov w1, #0x82",
+          "02d8eeb0 00 10 81 1a csel w0, w0, w1, ne",
+          "02d8eeb4 06 00 00 14 b #0x2d8eecc",
+          "02d8eeb8 00 00 80 52 mov w0, #0",
+          "02d8eebc 81 00 00 34 cbz w1, #0x2d8eecc",
+          "02d8eec0 3f 04 00 71 cmp w1, #1",
+          "02d8eec4 60 00 80 52 mov w0, #3",
+          "02d8eec8 00 14 9f 1a csinc w0, w0, wzr, ne",
+          "02d8eecc c0 03 5f d6 ret ",
+          "02d8eed0 a0 00 80 52 mov w0, #5",
+          "02d8eed4 3f 1c 00 71 cmp w1, #7",
+          "02d8eed8 a0 ff ff 54 b.eq #0x2d8eecc",
+          "02d8eedc c0 00 80 52 mov w0, #6",
+          "02d8eee0 3f 20 00 71 cmp w1, #8",
+          "02d8eee4 40 ff ff 54 b.eq #0x2d8eecc",
+          "02d8eee8 3f 00 00 6b cmp w1, w0",
+          "02d8eeec e0 17 9f 1a cset w0, eq",
+          "02d8eef0 00 0c 00 11 add w0, w0, #3",
+          "02d8eef4 f6 ff ff 17 b #0x2d8eecc",
+          "02d8eef8 01 00 7a b9 ldr w1, [x0, #0x3a00]",
+          "02d8eefc 60 00 80 52 mov w0, #3",
+          "02d8ef00 3f 58 00 71 cmp w1, #0x16",
+          "02d8ef04 48 fe ff 54 b.hi #0x2d8eecc",
+          "02d8ef08 40 01 87 d2 mov x0, #0x380a",
+          "02d8ef0c 80 0f a0 f2 movk x0, #0x7c, lsl #16",
+          "02d8ef10 00 24 c1 9a lsr x0, x0, x1",
+          "02d8ef14 1f 00 40 f2 tst x0, #1",
+          "02d8ef18 00 00 90 52 mov w0, #0x8000",
+          "02d8ef1c 61 00 80 52 mov w1, #3",
+          "02d8ef20 00 10 81 1a csel w0, w0, w1, ne",
+          "02d8ef24 ea ff ff 17 b #0x2d8eecc",
+          "02d8ef28 80 00 80 52 mov w0, #4",
+          "02d8ef2c e8 ff ff 17 b #0x2d8eecc",
+          "02d8ef30 80 10 80 52 mov w0, #0x84",
+          "02d8ef34 e6 ff ff 17 b #0x2d8eecc"
+        ],
+        "nr_function": [
+          "02d8f5d8 01 20 7a b9 ldr w1, [x0, #0x3a20]",
+          "02d8f5dc 3f 14 00 71 cmp w1, #5",
+          "02d8f5e0 40 03 00 54 b.eq #0x2d8f648",
+          "02d8f5e4 e8 01 00 54 b.hi #0x2d8f620",
+          "02d8f5e8 00 40 80 52 mov w0, #0x200",
+          "02d8f5ec 3f 08 00 71 cmp w1, #2",
+          "02d8f5f0 60 01 00 54 b.eq #0x2d8f61c",
+          "02d8f5f4 a9 00 00 54 b.ls #0x2d8f608",
+          "02d8f5f8 3f 0c 00 71 cmp w1, #3",
+          "02d8f5fc 00 50 80 52 mov w0, #0x280",
+          "02d8f600 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02d8f604 06 00 00 14 b #0x2d8f61c",
+          "02d8f608 00 5c 80 52 mov w0, #0x2e0",
+          "02d8f60c 81 00 00 34 cbz w1, #0x2d8f61c",
+          "02d8f610 3f 04 00 71 cmp w1, #1",
+          "02d8f614 00 58 80 52 mov w0, #0x2c0",
+          "02d8f618 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02d8f61c c0 03 5f d6 ret ",
+          "02d8f620 00 38 80 52 mov w0, #0x1c0",
+          "02d8f624 3f 1c 00 71 cmp w1, #7",
+          "02d8f628 a0 ff ff 54 b.eq #0x2d8f61c",
+          "02d8f62c 00 3c 80 52 mov w0, #0x1e0",
+          "02d8f630 3f 20 00 71 cmp w1, #8",
+          "02d8f634 40 ff ff 54 b.eq #0x2d8f61c",
+          "02d8f638 3f 18 00 71 cmp w1, #6",
+          "02d8f63c 00 20 80 52 mov w0, #0x100",
+          "02d8f640 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02d8f644 f6 ff ff 17 b #0x2d8f61c",
+          "02d8f648 00 30 80 52 mov w0, #0x180",
+          "02d8f64c f4 ff ff 17 b #0x2d8f61c",
+          "02d8f650 fd 7b be a9 stp x29, x30, [sp, #-0x20]!",
+          "02d8f654 fd 03 00 91 mov x29, sp",
+          "02d8f658 f3 0b 00 f9 str x19, [sp, #0x10]",
+          "02d8f65c f3 03 01 aa mov x19, x1",
+          "02d8f660 02 c0 79 b9 ldr w2, [x0, #0x39c0]",
+          "02d8f664 5f b4 00 71 cmp w2, #0x2d",
+          "02d8f668 a8 01 00 54 b.hi #0x2d8f69c",
+          "02d8f66c 81 03 80 d2 mov x1, #0x1c",
+          "02d8f670 01 00 b0 f2 movk x1, #0x8000, lsl #16",
+          "02d8f674 c1 03 c6 f2 movk x1, #0x301e, lsl #32",
+          "02d8f678 21 24 c2 9a lsr x1, x1, x2",
+          "02d8f67c 01 01 00 36 tbz w1, #0, #0x2d8f69c",
+          "02d8f680 d6 ff ff 97 bl #0x2d8f5d8",
+          "02d8f684 60 72 01 79 strh w0, [x19, #0xb8]",
+          "02d8f688 20 00 80 52 mov w0, #1",
+          "02d8f68c 60 b6 00 b9 str w0, [x19, #0xb4]",
+          "02d8f690 f3 0b 40 f9 ldr x19, [sp, #0x10]",
+          "02d8f694 fd 7b c2 a8 ldp x29, x30, [sp], #0x20",
+          "02d8f698 c0 03 5f d6 ret ",
+          "02d8f69c 7f b6 00 b9 str wzr, [x19, #0xb4]",
+          "02d8f6a0 fc ff ff 17 b #0x2d8f690"
+        ],
+        "clarity_function": [
+          "02d8f6a4 fd 7b be a9 stp x29, x30, [sp, #-0x20]!",
+          "02d8f6a8 fd 03 00 91 mov x29, sp",
+          "02d8f6ac f3 0b 00 f9 str x19, [sp, #0x10]",
+          "02d8f6b0 f3 03 00 aa mov x19, x0",
+          "02d8f6b4 00 c0 79 b9 ldr w0, [x0, #0x39c0]",
+          "02d8f6b8 f2 69 9d 97 bl #0x14e9e80",
+          "02d8f6bc 1f 04 00 71 cmp w0, #1",
+          "02d8f6c0 e0 04 00 54 b.eq #0x2d8f75c",
+          "02d8f6c4 61 6e 7f b9 ldr w1, [x19, #0x3f6c]",
+          "02d8f6c8 3f 04 00 71 cmp w1, #1",
+          "02d8f6cc c0 04 00 54 b.eq #0x2d8f764",
+          "02d8f6d0 8c 02 00 54 b.gt #0x2d8f720",
+          "02d8f6d4 3f 0c 00 31 cmn w1, #3",
+          "02d8f6d8 a0 04 00 54 b.eq #0x2d8f76c",
+          "02d8f6dc 3f 08 00 31 cmn w1, #2",
+          "02d8f6e0 eb 00 00 54 b.lt #0x2d8f6fc",
+          "02d8f6e4 e0 f9 80 12 mov w0, #-0x7d0",
+          "02d8f6e8 60 01 00 54 b.eq #0x2d8f714",
+          "02d8f6ec 3f 04 00 31 cmn w1, #1",
+          "02d8f6f0 e0 7c 80 12 mov w0, #-0x3e8",
+          "02d8f6f4 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02d8f6f8 07 00 00 14 b #0x2d8f714",
+          "02d8f6fc e0 70 82 12 mov w0, #-0x1388",
+          "02d8f700 3f 14 00 31 cmn w1, #5",
+          "02d8f704 80 00 00 54 b.eq #0x2d8f714",
+          "02d8f708 3f 10 00 31 cmn w1, #4",
+          "02d8f70c e0 f3 81 12 mov w0, #-0xfa0",
+          "02d8f710 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02d8f714 f3 0b 40 f9 ldr x19, [sp, #0x10]",
+          "02d8f718 fd 7b c2 a8 ldp x29, x30, [sp], #0x20",
+          "02d8f71c c0 03 5f d6 ret ",
+          "02d8f720 00 f4 81 52 mov w0, #0xfa0",
+          "02d8f724 3f 10 00 71 cmp w1, #4",
+          "02d8f728 60 ff ff 54 b.eq #0x2d8f714",
+          "02d8f72c ad 00 00 54 b.le #0x2d8f740",
+          "02d8f730 3f 14 00 71 cmp w1, #5",
+          "02d8f734 00 71 82 52 mov w0, #0x1388",
+          "02d8f738 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02d8f73c f6 ff ff 17 b #0x2d8f714",
+          "02d8f740 00 fa 80 52 mov w0, #0x7d0",
+          "02d8f744 3f 08 00 71 cmp w1, #2",
+          "02d8f748 60 fe ff 54 b.eq #0x2d8f714",
+          "02d8f74c 3f 0c 00 71 cmp w1, #3",
+          "02d8f750 00 77 81 52 mov w0, #0xbb8",
+          "02d8f754 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02d8f758 ef ff ff 17 b #0x2d8f714",
+          "02d8f75c 00 00 80 52 mov w0, #0",
+          "02d8f760 ed ff ff 17 b #0x2d8f714",
+          "02d8f764 00 7d 80 52 mov w0, #0x3e8",
+          "02d8f768 eb ff ff 17 b #0x2d8f714",
+          "02d8f76c e0 76 81 12 mov w0, #-0xbb8",
+          "02d8f770 e9 ff ff 17 b #0x2d8f714"
+        ]
+      }
+    },
+    "X100VI": {
+      "dat": "Firmware на прочиеFuji/FPUPDATE.DAT",
+      "sha256_before": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "sha256_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "images": [
+        {
+          "base": "0x11c1000",
+          "length": 27121096,
+          "sha256": "77456fe5c9808ce5e638b1a5f6f12d9e8e40c1751e1f9b4640134fde662e09d4"
+        },
+        {
+          "base": "0x2b8f000",
+          "length": 22253568,
+          "sha256": "14b0557bd724fa74b51ff641fcd5481da5b3ac64146d4fc69375086dafcfb174"
+        }
+      ],
+      "gate_offset": "0x3fa8",
+      "input_offsets": {
+        "sharp": "0x3fe0",
+        "nr": "0x4008",
+        "clarity": "0x4560"
+      },
+      "fragments": {
+        "sharp": "0x3060e18",
+        "nr": "0x3060eb8",
+        "clarity": "0x3060ec4"
+      },
+      "functions": {
+        "sharp": "0x305ee00",
+        "nr": "0x305f600",
+        "clarity": "0x305f654"
+      },
+      "builder": "0x14376ac",
+      "predicate": "0x14350f8",
+      "descriptors": {
+        "1001": {
+          "address": "0x19ca748",
+          "bytes": "01 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 42 00 00 00 00 00 00 00",
+          "offset": 66
+        },
+        "100e": {
+          "address": "0x19ca888",
+          "bytes": "0e 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 b8 00 00 00 00 00 00 00",
+          "offset": 184
+        },
+        "100f": {
+          "address": "0x19ca8b0",
+          "bytes": "0f 10 13 00 09 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 bc 00 00 00 00 00 00 00",
+          "offset": 188
+        }
+      },
+      "fragment_cases": [
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 4,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 4,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 3,
+          "object_value_bytes": "82 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 3,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 0,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 0,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 8,
+          "object_value_bytes": "06 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 8,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 9,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 9,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 2,
+          "input": 4294967295,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "sharp",
+          "gate": 46,
+          "input": 4294967295,
+          "object_value_bytes": "03 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 4,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 4,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 0,
+          "object_value_bytes": "e0 02",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 0,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 8,
+          "object_value_bytes": "e0 01",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 8,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 9,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 9,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 2,
+          "input": 4294967295,
+          "object_value_bytes": "00 00",
+          "nr_flag_bytes": "01 00 00 00"
+        },
+        {
+          "kind": "nr",
+          "gate": 46,
+          "input": 4294967295,
+          "object_value_bytes": "a5 a5",
+          "nr_flag_bytes": "00 00 00 00"
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 0,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 0,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 3,
+          "object_value_bytes": "b8 0b 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 3,
+          "object_value_bytes": "b8 0b 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": -5,
+          "object_value_bytes": "78 ec ff ff",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": -5,
+          "object_value_bytes": "78 ec ff ff",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 5,
+          "object_value_bytes": "88 13 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 5,
+          "object_value_bytes": "88 13 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": 6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": 6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 2,
+          "input": -6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        },
+        {
+          "kind": "clarity",
+          "gate": 46,
+          "input": -6,
+          "object_value_bytes": "00 00 00 00",
+          "nr_flag_bytes": null
+        }
+      ],
+      "builder_cases": [
+        {
+          "case": "neutral",
+          "manually_seeded": {
+            "sharp": 3,
+            "nr": 0,
+            "clarity": 0,
+            "nr_flag": 1
+          },
+          "predicates": {
+            "1001": 1,
+            "100e": 1,
+            "100f": 1
+          },
+          "length": 3518,
+          "records": {
+            "1001": [
+              {
+                "offset": 50,
+                "bytes": "01 10 03 00 01 00 00 00 03 00 00 00"
+              }
+            ],
+            "100e": [
+              {
+                "offset": 110,
+                "bytes": "0e 10 03 00 01 00 00 00 00 00 00 00"
+              }
+            ],
+            "100f": [
+              {
+                "offset": 122,
+                "bytes": "0f 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "case": "recipe",
+          "manually_seeded": {
+            "sharp": 130,
+            "nr": 736,
+            "clarity": 3000,
+            "nr_flag": 1
+          },
+          "predicates": {
+            "1001": 1,
+            "100e": 1,
+            "100f": 1
+          },
+          "length": 3518,
+          "records": {
+            "1001": [
+              {
+                "offset": 50,
+                "bytes": "01 10 03 00 01 00 00 00 82 00 00 00"
+              }
+            ],
+            "100e": [
+              {
+                "offset": 110,
+                "bytes": "0e 10 03 00 01 00 00 00 e0 02 00 00"
+              }
+            ],
+            "100f": [
+              {
+                "offset": 122,
+                "bytes": "0f 10 09 00 01 00 00 00 b8 0b 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "case": "nr_flag_zero",
+          "manually_seeded": {
+            "sharp": 130,
+            "nr": 736,
+            "clarity": 3000,
+            "nr_flag": 0
+          },
+          "predicates": {
+            "1001": 1,
+            "100e": 0,
+            "100f": 1
+          },
+          "length": 3506,
+          "records": {
+            "1001": [
+              {
+                "offset": 50,
+                "bytes": "01 10 03 00 01 00 00 00 82 00 00 00"
+              }
+            ],
+            "100e": [],
+            "100f": [
+              {
+                "offset": 110,
+                "bytes": "0f 10 09 00 01 00 00 00 b8 0b 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "case": "sharp_sentinel",
+          "manually_seeded": {
+            "sharp": 65535,
+            "nr": 736,
+            "clarity": 3000,
+            "nr_flag": 1
+          },
+          "predicates": {
+            "1001": 0,
+            "100e": 1,
+            "100f": 1
+          },
+          "length": 3506,
+          "records": {
+            "1001": [],
+            "100e": [
+              {
+                "offset": 98,
+                "bytes": "0e 10 03 00 01 00 00 00 e0 02 00 00"
+              }
+            ],
+            "100f": [
+              {
+                "offset": 110,
+                "bytes": "0f 10 09 00 01 00 00 00 b8 0b 00 00"
+              }
+            ]
+          }
+        }
+      ],
+      "disassembly": {
+        "sharp_caller": [
+          "03060e18 e0 03 13 aa mov x0, x19",
+          "03060e1c f9 f7 ff 97 bl #0x305ee00",
+          "03060e20 80 86 00 79 strh w0, [x20, #0x42]"
+        ],
+        "nr_caller": [
+          "03060eb8 e1 03 14 aa mov x1, x20",
+          "03060ebc e0 03 13 aa mov x0, x19",
+          "03060ec0 d0 f9 ff 97 bl #0x305f600"
+        ],
+        "clarity_caller": [
+          "03060ec4 e0 03 13 aa mov x0, x19",
+          "03060ec8 e3 f9 ff 97 bl #0x305f654",
+          "03060ecc 80 be 00 b9 str w0, [x20, #0xbc]"
+        ],
+        "sharp_function": [
+          "0305ee00 01 a8 7f b9 ldr w1, [x0, #0x3fa8]",
+          "0305ee04 3f 5c 00 71 cmp w1, #0x17",
+          "0305ee08 40 06 00 54 b.eq #0x305eed0",
+          "0305ee0c 3f b4 00 71 cmp w1, #0x2d",
+          "0305ee10 88 04 00 54 b.hi #0x305eea0",
+          "0305ee14 82 03 80 d2 mov x2, #0x1c",
+          "0305ee18 02 00 b0 f2 movk x2, #0x8000, lsl #16",
+          "0305ee1c c2 03 c6 f2 movk x2, #0x301e, lsl #32",
+          "0305ee20 41 24 c1 9a lsr x1, x2, x1",
+          "0305ee24 e1 03 00 36 tbz w1, #0, #0x305eea0",
+          "0305ee28 01 e0 7f b9 ldr w1, [x0, #0x3fe0]",
+          "0305ee2c 3f 14 00 71 cmp w1, #5",
+          "0305ee30 40 05 00 54 b.eq #0x305eed8",
+          "0305ee34 28 02 00 54 b.hi #0x305ee78",
+          "0305ee38 40 00 80 52 mov w0, #2",
+          "0305ee3c 3f 00 00 6b cmp w1, w0",
+          "0305ee40 a0 01 00 54 b.eq #0x305ee74",
+          "0305ee44 3f 08 00 71 cmp w1, #2",
+          "0305ee48 c9 00 00 54 b.ls #0x305ee60",
+          "0305ee4c 3f 0c 00 71 cmp w1, #3",
+          "0305ee50 60 00 80 52 mov w0, #3",
+          "0305ee54 41 10 80 52 mov w1, #0x82",
+          "0305ee58 00 10 81 1a csel w0, w0, w1, ne",
+          "0305ee5c 06 00 00 14 b #0x305ee74",
+          "0305ee60 00 00 80 52 mov w0, #0",
+          "0305ee64 81 00 00 34 cbz w1, #0x305ee74",
+          "0305ee68 3f 04 00 71 cmp w1, #1",
+          "0305ee6c 60 00 80 52 mov w0, #3",
+          "0305ee70 00 14 9f 1a csinc w0, w0, wzr, ne",
+          "0305ee74 c0 03 5f d6 ret ",
+          "0305ee78 a0 00 80 52 mov w0, #5",
+          "0305ee7c 3f 1c 00 71 cmp w1, #7",
+          "0305ee80 a0 ff ff 54 b.eq #0x305ee74",
+          "0305ee84 c0 00 80 52 mov w0, #6",
+          "0305ee88 3f 20 00 71 cmp w1, #8",
+          "0305ee8c 40 ff ff 54 b.eq #0x305ee74",
+          "0305ee90 3f 00 00 6b cmp w1, w0",
+          "0305ee94 e0 17 9f 1a cset w0, eq",
+          "0305ee98 00 0c 00 11 add w0, w0, #3",
+          "0305ee9c f6 ff ff 17 b #0x305ee74",
+          "0305eea0 01 e8 7f b9 ldr w1, [x0, #0x3fe8]",
+          "0305eea4 60 00 80 52 mov w0, #3",
+          "0305eea8 3f 58 00 71 cmp w1, #0x16",
+          "0305eeac 48 fe ff 54 b.hi #0x305ee74",
+          "0305eeb0 40 01 87 d2 mov x0, #0x380a",
+          "0305eeb4 80 0f a0 f2 movk x0, #0x7c, lsl #16",
+          "0305eeb8 00 24 c1 9a lsr x0, x0, x1",
+          "0305eebc 1f 00 40 f2 tst x0, #1",
+          "0305eec0 00 00 90 52 mov w0, #0x8000",
+          "0305eec4 61 00 80 52 mov w1, #3",
+          "0305eec8 00 10 81 1a csel w0, w0, w1, ne",
+          "0305eecc ea ff ff 17 b #0x305ee74",
+          "0305eed0 80 00 80 52 mov w0, #4",
+          "0305eed4 e8 ff ff 17 b #0x305ee74",
+          "0305eed8 80 10 80 52 mov w0, #0x84",
+          "0305eedc e6 ff ff 17 b #0x305ee74"
+        ],
+        "nr_function": [
+          "0305f588 01 08 40 b9 ldr w1, [x0, #8]",
+          "0305f58c 3f 14 00 71 cmp w1, #5",
+          "0305f590 40 03 00 54 b.eq #0x305f5f8",
+          "0305f594 e8 01 00 54 b.hi #0x305f5d0",
+          "0305f598 00 40 80 52 mov w0, #0x200",
+          "0305f59c 3f 08 00 71 cmp w1, #2",
+          "0305f5a0 60 01 00 54 b.eq #0x305f5cc",
+          "0305f5a4 a9 00 00 54 b.ls #0x305f5b8",
+          "0305f5a8 3f 0c 00 71 cmp w1, #3",
+          "0305f5ac 00 50 80 52 mov w0, #0x280",
+          "0305f5b0 00 00 9f 1a csel w0, w0, wzr, eq",
+          "0305f5b4 06 00 00 14 b #0x305f5cc",
+          "0305f5b8 00 5c 80 52 mov w0, #0x2e0",
+          "0305f5bc 81 00 00 34 cbz w1, #0x305f5cc",
+          "0305f5c0 3f 04 00 71 cmp w1, #1",
+          "0305f5c4 00 58 80 52 mov w0, #0x2c0",
+          "0305f5c8 00 00 9f 1a csel w0, w0, wzr, eq",
+          "0305f5cc c0 03 5f d6 ret ",
+          "0305f5d0 00 38 80 52 mov w0, #0x1c0",
+          "0305f5d4 3f 1c 00 71 cmp w1, #7",
+          "0305f5d8 a0 ff ff 54 b.eq #0x305f5cc",
+          "0305f5dc 00 3c 80 52 mov w0, #0x1e0",
+          "0305f5e0 3f 20 00 71 cmp w1, #8",
+          "0305f5e4 40 ff ff 54 b.eq #0x305f5cc",
+          "0305f5e8 3f 18 00 71 cmp w1, #6",
+          "0305f5ec 00 20 80 52 mov w0, #0x100",
+          "0305f5f0 00 00 9f 1a csel w0, w0, wzr, eq",
+          "0305f5f4 f6 ff ff 17 b #0x305f5cc",
+          "0305f5f8 00 30 80 52 mov w0, #0x180",
+          "0305f5fc f4 ff ff 17 b #0x305f5cc",
+          "0305f600 fd 7b be a9 stp x29, x30, [sp, #-0x20]!",
+          "0305f604 fd 03 00 91 mov x29, sp",
+          "0305f608 f3 0b 00 f9 str x19, [sp, #0x10]",
+          "0305f60c f3 03 01 aa mov x19, x1",
+          "0305f610 02 a8 7f b9 ldr w2, [x0, #0x3fa8]",
+          "0305f614 5f b4 00 71 cmp w2, #0x2d",
+          "0305f618 a8 01 00 54 b.hi #0x305f64c",
+          "0305f61c 81 03 80 d2 mov x1, #0x1c",
+          "0305f620 01 00 b0 f2 movk x1, #0x8000, lsl #16",
+          "0305f624 c1 03 c6 f2 movk x1, #0x301e, lsl #32",
+          "0305f628 21 24 c2 9a lsr x1, x1, x2",
+          "0305f62c 01 01 00 36 tbz w1, #0, #0x305f64c",
+          "0305f630 d5 ff ff 97 bl #0x305f584",
+          "0305f634 60 72 01 79 strh w0, [x19, #0xb8]",
+          "0305f638 20 00 80 52 mov w0, #1",
+          "0305f63c 60 b6 00 b9 str w0, [x19, #0xb4]",
+          "0305f640 f3 0b 40 f9 ldr x19, [sp, #0x10]",
+          "0305f644 fd 7b c2 a8 ldp x29, x30, [sp], #0x20",
+          "0305f648 c0 03 5f d6 ret ",
+          "0305f64c 7f b6 00 b9 str wzr, [x19, #0xb4]",
+          "0305f650 fc ff ff 17 b #0x305f640"
+        ],
+        "clarity_function": [
+          "0305f654 fd 7b be a9 stp x29, x30, [sp, #-0x20]!",
+          "0305f658 fd 03 00 91 mov x29, sp",
+          "0305f65c f3 0b 00 f9 str x19, [sp, #0x10]",
+          "0305f660 f3 03 00 aa mov x19, x0",
+          "0305f664 00 a8 7f b9 ldr w0, [x0, #0x3fa8]",
+          "0305f668 f5 76 95 97 bl #0x15bd23c",
+          "0305f66c 1f 04 00 71 cmp w0, #1",
+          "0305f670 00 05 00 54 b.eq #0x305f710",
+          "0305f674 73 12 40 91 add x19, x19, #4, lsl #12",
+          "0305f678 61 62 45 b9 ldr w1, [x19, #0x560]",
+          "0305f67c 3f 04 00 71 cmp w1, #1",
+          "0305f680 c0 04 00 54 b.eq #0x305f718",
+          "0305f684 8c 02 00 54 b.gt #0x305f6d4",
+          "0305f688 3f 0c 00 31 cmn w1, #3",
+          "0305f68c a0 04 00 54 b.eq #0x305f720",
+          "0305f690 3f 08 00 31 cmn w1, #2",
+          "0305f694 eb 00 00 54 b.lt #0x305f6b0",
+          "0305f698 e0 f9 80 12 mov w0, #-0x7d0",
+          "0305f69c 60 01 00 54 b.eq #0x305f6c8",
+          "0305f6a0 3f 04 00 31 cmn w1, #1",
+          "0305f6a4 e0 7c 80 12 mov w0, #-0x3e8",
+          "0305f6a8 00 00 9f 1a csel w0, w0, wzr, eq",
+          "0305f6ac 07 00 00 14 b #0x305f6c8",
+          "0305f6b0 e0 70 82 12 mov w0, #-0x1388",
+          "0305f6b4 3f 14 00 31 cmn w1, #5",
+          "0305f6b8 80 00 00 54 b.eq #0x305f6c8",
+          "0305f6bc 3f 10 00 31 cmn w1, #4",
+          "0305f6c0 e0 f3 81 12 mov w0, #-0xfa0",
+          "0305f6c4 00 00 9f 1a csel w0, w0, wzr, eq",
+          "0305f6c8 f3 0b 40 f9 ldr x19, [sp, #0x10]",
+          "0305f6cc fd 7b c2 a8 ldp x29, x30, [sp], #0x20",
+          "0305f6d0 c0 03 5f d6 ret ",
+          "0305f6d4 00 f4 81 52 mov w0, #0xfa0",
+          "0305f6d8 3f 10 00 71 cmp w1, #4",
+          "0305f6dc 60 ff ff 54 b.eq #0x305f6c8",
+          "0305f6e0 ad 00 00 54 b.le #0x305f6f4",
+          "0305f6e4 3f 14 00 71 cmp w1, #5",
+          "0305f6e8 00 71 82 52 mov w0, #0x1388",
+          "0305f6ec 00 00 9f 1a csel w0, w0, wzr, eq",
+          "0305f6f0 f6 ff ff 17 b #0x305f6c8",
+          "0305f6f4 00 fa 80 52 mov w0, #0x7d0",
+          "0305f6f8 3f 08 00 71 cmp w1, #2",
+          "0305f6fc 60 fe ff 54 b.eq #0x305f6c8",
+          "0305f700 3f 0c 00 71 cmp w1, #3",
+          "0305f704 00 77 81 52 mov w0, #0xbb8",
+          "0305f708 00 00 9f 1a csel w0, w0, wzr, eq",
+          "0305f70c ef ff ff 17 b #0x305f6c8",
+          "0305f710 00 00 80 52 mov w0, #0",
+          "0305f714 ed ff ff 17 b #0x305f6c8",
+          "0305f718 00 7d 80 52 mov w0, #0x3e8",
+          "0305f71c eb ff ff 17 b #0x305f6c8",
+          "0305f720 e0 76 81 12 mov w0, #-0xbb8"
+        ]
+      }
+    }
+  }
+}

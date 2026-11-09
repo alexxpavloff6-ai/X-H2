@@ -1,0 +1,48 @@
+{
+  "method": "Compare embedded RAF JPEG preview with decoded camera JPEG: OpenCV 1/8 grayscale decode resized 192x128 then Pearson correlation; independently compare selected ExifTool -n fields by equality only. Similarity and EXIF support but do not prove pixel origin. RAW previews are not new independent captures. No photos, precise times, GPS or serial numbers exported.",
+  "pairs": [
+    {
+      "raw_name": "DSCF9835.RAF",
+      "jpeg": "B/DSCF0318.JPG",
+      "embedded_preview_grayscale_correlation": 0.9961641430854797,
+      "selected_exif_field_equality": {
+        "ExifIFD:CreateDate": true,
+        "ExifIFD:DateTimeOriginal": true,
+        "ExifIFD:ExposureTime": true,
+        "ExifIFD:FNumber": true,
+        "ExifIFD:FocalLength": true,
+        "ExifIFD:ISO": true,
+        "ExifIFD:LensModel": true,
+        "IFD0:Model": true
+      },
+      "raw_generation": 0,
+      "jpeg_generation": 1,
+      "sha256_before_after": {
+        "raw": "3d768d2dfa93bc49dfa5e3589c2f37f6a46cf41bc9aa435f7e3e4c0e4415f2be",
+        "jpeg": "08b50c4d8988cf983960a77e62bcede5205a846d57479ce17c253960b1c419cf"
+      }
+    },
+    {
+      "raw_name": "DSCF0064.RAF",
+      "jpeg": "A/DSCF0317.JPG",
+      "embedded_preview_grayscale_correlation": 0.9995864629745483,
+      "selected_exif_field_equality": {
+        "ExifIFD:CreateDate": true,
+        "ExifIFD:DateTimeOriginal": true,
+        "ExifIFD:ExposureTime": true,
+        "ExifIFD:FNumber": true,
+        "ExifIFD:FocalLength": true,
+        "ExifIFD:ISO": true,
+        "ExifIFD:LensModel": true,
+        "IFD0:Model": true
+      },
+      "raw_generation": 0,
+      "jpeg_generation": 1,
+      "sha256_before_after": {
+        "raw": "dcf094b0f204c596619dc1c8503153956644fba28b3cccad1c607f5421f2e526",
+        "jpeg": "96531fdcc22cf19e1eb9359799e1d5d360cab23654c25b2275145c675ee0153a"
+      }
+    }
+  ],
+  "opencv_version": "4.13.0"
+}

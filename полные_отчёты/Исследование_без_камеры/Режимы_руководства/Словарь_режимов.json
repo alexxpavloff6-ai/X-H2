@@ -1,0 +1,412 @@
+{
+  "method": "В указанном распакованном блоке поиск полного ASCII имени с NUL и всех выровненных по 8 смещений указателей base+offset; следующее uint64 — значение таблицы, не доказанное значение состояния камеры.",
+  "labels": [
+    "UI_FOCUS_MODE_CAF",
+    "UI_FOCUS_MODE_SAF",
+    "UI_FOCUS_MODE_MF",
+    "UI_SHUTTER_TYPE_MECHA",
+    "UI_SHUTTER_TYPE_ELE",
+    "UI_SHUTTER_TYPE_SME",
+    "UI_SHUTTER_TYPE_AUTO",
+    "UI_SHUTTER_TYPE_SME_MECHA",
+    "UI_SHUTTER_TYPE_SME_MECHA_ELE",
+    "UI_SHUTTER_TYPE_SME_ELE",
+    "UI_PERFORMANCE_AF_SPEED_UP",
+    "UI_FUNC_SET_PERFORMANCE",
+    "BKUP_PERFORMANCE_AF_SPEED_UP",
+    "UI_FOCUS_MODE_NOT_A_REAL_MODE"
+  ],
+  "dependency": "Анализ_прошивки\\анализ_файла.py",
+  "dependency_sha256_before": "ea7a4b4b0f1d6e83a511b7af35cf831fee18be49759dd55c1c1406cae168ab90",
+  "models": {
+    "X-H2 5.30": {
+      "input": "FIRMWARE/ver 5.30/FWUP0028.DAT",
+      "sha256_before": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+      "sha256_after": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+      "packed_block_offset": "0x840274",
+      "unpacked_size": 15515648,
+      "unpacked_sha256": "a49b88c00d3724239207e6564f2dfbf9d0a59b41962012d44a05738455d2addd",
+      "virtual_base": "0x29ae000",
+      "entries": {
+        "UI_FOCUS_MODE_CAF": [
+          {
+            "string_offset": "0x829548",
+            "record_offset": "0x8808f8",
+            "value": 0
+          }
+        ],
+        "UI_FOCUS_MODE_SAF": [
+          {
+            "string_offset": "0x829560",
+            "record_offset": "0x880908",
+            "value": 1
+          }
+        ],
+        "UI_FOCUS_MODE_MF": [
+          {
+            "string_offset": "0x829578",
+            "record_offset": "0x880918",
+            "value": 2
+          }
+        ],
+        "UI_SHUTTER_TYPE_MECHA": [
+          {
+            "string_offset": "0x820a60",
+            "record_offset": "0x87c6a8",
+            "value": 0
+          }
+        ],
+        "UI_SHUTTER_TYPE_ELE": [
+          {
+            "string_offset": "0x820a78",
+            "record_offset": "0x87c6b8",
+            "value": 1
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME": [
+          {
+            "string_offset": "0x820a90",
+            "record_offset": "0x87c6c8",
+            "value": 2
+          }
+        ],
+        "UI_SHUTTER_TYPE_AUTO": [
+          {
+            "string_offset": "0x820aa8",
+            "record_offset": "0x87c6d8",
+            "value": 3
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME_MECHA": [
+          {
+            "string_offset": "0x820ac0",
+            "record_offset": "0x87c6e8",
+            "value": 4
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME_MECHA_ELE": [
+          {
+            "string_offset": "0x820ae0",
+            "record_offset": "0x87c6f8",
+            "value": 5
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME_ELE": [
+          {
+            "string_offset": "0x820b00",
+            "record_offset": "0x87c708",
+            "value": 6
+          }
+        ],
+        "UI_PERFORMANCE_AF_SPEED_UP": [
+          {
+            "string_offset": "0x812a00",
+            "record_offset": "0x8745b8",
+            "value": 4
+          }
+        ],
+        "UI_FUNC_SET_PERFORMANCE": [
+          {
+            "string_offset": "0x81a3b8",
+            "record_offset": "0x8789e8",
+            "value": 46
+          }
+        ],
+        "BKUP_PERFORMANCE_AF_SPEED_UP": [],
+        "UI_FOCUS_MODE_NOT_A_REAL_MODE": []
+      }
+    },
+    "X-H2S 7.30": {
+      "input": "Firmware на прочиеFuji/FWUP0027.DAT",
+      "sha256_before": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "sha256_after": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "packed_block_offset": "0x840274",
+      "unpacked_size": 14843904,
+      "unpacked_sha256": "86c8c9f01ae6840f791bffea050e8442ff9e967b6b7cbbb7f9d8141dd41d764f",
+      "virtual_base": "0x2cca000",
+      "entries": {
+        "UI_FOCUS_MODE_CAF": [
+          {
+            "string_offset": "0x81f530",
+            "record_offset": "0x876838",
+            "value": 0
+          }
+        ],
+        "UI_FOCUS_MODE_SAF": [
+          {
+            "string_offset": "0x81f548",
+            "record_offset": "0x876848",
+            "value": 1
+          }
+        ],
+        "UI_FOCUS_MODE_MF": [
+          {
+            "string_offset": "0x81f560",
+            "record_offset": "0x876858",
+            "value": 2
+          }
+        ],
+        "UI_SHUTTER_TYPE_MECHA": [
+          {
+            "string_offset": "0x816a48",
+            "record_offset": "0x8725e8",
+            "value": 0
+          }
+        ],
+        "UI_SHUTTER_TYPE_ELE": [
+          {
+            "string_offset": "0x816a60",
+            "record_offset": "0x8725f8",
+            "value": 1
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME": [
+          {
+            "string_offset": "0x816a78",
+            "record_offset": "0x872608",
+            "value": 2
+          }
+        ],
+        "UI_SHUTTER_TYPE_AUTO": [
+          {
+            "string_offset": "0x816a90",
+            "record_offset": "0x872618",
+            "value": 3
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME_MECHA": [
+          {
+            "string_offset": "0x816aa8",
+            "record_offset": "0x872628",
+            "value": 4
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME_MECHA_ELE": [
+          {
+            "string_offset": "0x816ac8",
+            "record_offset": "0x872638",
+            "value": 5
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME_ELE": [
+          {
+            "string_offset": "0x816ae8",
+            "record_offset": "0x872648",
+            "value": 6
+          }
+        ],
+        "UI_PERFORMANCE_AF_SPEED_UP": [
+          {
+            "string_offset": "0x808a00",
+            "record_offset": "0x86a508",
+            "value": 4
+          }
+        ],
+        "UI_FUNC_SET_PERFORMANCE": [
+          {
+            "string_offset": "0x8103a0",
+            "record_offset": "0x86e928",
+            "value": 46
+          }
+        ],
+        "BKUP_PERFORMANCE_AF_SPEED_UP": [],
+        "UI_FOCUS_MODE_NOT_A_REAL_MODE": []
+      }
+    },
+    "X-T5 4.31": {
+      "input": "Firmware на прочиеFuji/FWUP0030.DAT",
+      "sha256_before": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "sha256_after": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "packed_block_offset": "0x820274",
+      "unpacked_size": 15446016,
+      "unpacked_sha256": "d74dba337fe4078a6ee15ca5fddba7e502bdefb980825a09a15f9b13a01eb350",
+      "virtual_base": "0x28eb000",
+      "entries": {
+        "UI_FOCUS_MODE_CAF": [
+          {
+            "string_offset": "0x82b800",
+            "record_offset": "0x884950",
+            "value": 0
+          }
+        ],
+        "UI_FOCUS_MODE_SAF": [
+          {
+            "string_offset": "0x82b818",
+            "record_offset": "0x884960",
+            "value": 1
+          }
+        ],
+        "UI_FOCUS_MODE_MF": [
+          {
+            "string_offset": "0x82b830",
+            "record_offset": "0x884970",
+            "value": 2
+          }
+        ],
+        "UI_SHUTTER_TYPE_MECHA": [
+          {
+            "string_offset": "0x822f30",
+            "record_offset": "0x880800",
+            "value": 0
+          }
+        ],
+        "UI_SHUTTER_TYPE_ELE": [
+          {
+            "string_offset": "0x822f48",
+            "record_offset": "0x880810",
+            "value": 1
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME": [
+          {
+            "string_offset": "0x822f60",
+            "record_offset": "0x880820",
+            "value": 2
+          }
+        ],
+        "UI_SHUTTER_TYPE_AUTO": [
+          {
+            "string_offset": "0x822f78",
+            "record_offset": "0x880830",
+            "value": 3
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME_MECHA": [
+          {
+            "string_offset": "0x822f90",
+            "record_offset": "0x880840",
+            "value": 4
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME_MECHA_ELE": [
+          {
+            "string_offset": "0x822fb0",
+            "record_offset": "0x880850",
+            "value": 5
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME_ELE": [
+          {
+            "string_offset": "0x822fd0",
+            "record_offset": "0x880860",
+            "value": 6
+          }
+        ],
+        "UI_PERFORMANCE_AF_SPEED_UP": [
+          {
+            "string_offset": "0x814be0",
+            "record_offset": "0x878590",
+            "value": 4
+          }
+        ],
+        "UI_FUNC_SET_PERFORMANCE": [
+          {
+            "string_offset": "0x81c6d0",
+            "record_offset": "0x87ca70",
+            "value": 46
+          }
+        ],
+        "BKUP_PERFORMANCE_AF_SPEED_UP": [],
+        "UI_FOCUS_MODE_NOT_A_REAL_MODE": []
+      }
+    },
+    "X100VI 1.31": {
+      "input": "Firmware на прочиеFuji/FPUPDATE.DAT",
+      "sha256_before": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "sha256_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "packed_block_offset": "0x10e02bc",
+      "unpacked_size": 22253568,
+      "unpacked_sha256": "14b0557bd724fa74b51ff641fcd5481da5b3ac64146d4fc69375086dafcfb174",
+      "virtual_base": "0x2b8f000",
+      "entries": {
+        "UI_FOCUS_MODE_CAF": [
+          {
+            "string_offset": "0x864760",
+            "record_offset": "0x8bfa68",
+            "value": 0
+          }
+        ],
+        "UI_FOCUS_MODE_SAF": [
+          {
+            "string_offset": "0x864778",
+            "record_offset": "0x8bfa78",
+            "value": 1
+          }
+        ],
+        "UI_FOCUS_MODE_MF": [
+          {
+            "string_offset": "0x864790",
+            "record_offset": "0x8bfa88",
+            "value": 2
+          }
+        ],
+        "UI_SHUTTER_TYPE_MECHA": [
+          {
+            "string_offset": "0x85b690",
+            "record_offset": "0x8bb4a8",
+            "value": 0
+          }
+        ],
+        "UI_SHUTTER_TYPE_ELE": [
+          {
+            "string_offset": "0x85b6a8",
+            "record_offset": "0x8bb4b8",
+            "value": 1
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME": [
+          {
+            "string_offset": "0x85b6c0",
+            "record_offset": "0x8bb4c8",
+            "value": 2
+          }
+        ],
+        "UI_SHUTTER_TYPE_AUTO": [
+          {
+            "string_offset": "0x85b6d8",
+            "record_offset": "0x8bb4d8",
+            "value": 3
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME_MECHA": [
+          {
+            "string_offset": "0x85b6f0",
+            "record_offset": "0x8bb4e8",
+            "value": 4
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME_MECHA_ELE": [
+          {
+            "string_offset": "0x85b710",
+            "record_offset": "0x8bb4f8",
+            "value": 5
+          }
+        ],
+        "UI_SHUTTER_TYPE_SME_ELE": [
+          {
+            "string_offset": "0x85b730",
+            "record_offset": "0x8bb508",
+            "value": 6
+          }
+        ],
+        "UI_PERFORMANCE_AF_SPEED_UP": [
+          {
+            "string_offset": "0x84cea0",
+            "record_offset": "0x8b2fa8",
+            "value": 4
+          }
+        ],
+        "UI_FUNC_SET_PERFORMANCE": [
+          {
+            "string_offset": "0x854bc8",
+            "record_offset": "0x8b75c8",
+            "value": 46
+          }
+        ],
+        "BKUP_PERFORMANCE_AF_SPEED_UP": [],
+        "UI_FOCUS_MODE_NOT_A_REAL_MODE": []
+      }
+    }
+  },
+  "dependency_sha256_after": "ea7a4b4b0f1d6e83a511b7af35cf831fee18be49759dd55c1c1406cae168ab90"
+}

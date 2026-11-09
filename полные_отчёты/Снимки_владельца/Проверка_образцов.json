@@ -1,0 +1,190 @@
+{
+  "DSCF9761": {
+    "jpg": {
+      "model": "X-H2",
+      "lens": "XF8-16mmF2.8 R LM WR",
+      "taken": "<время скрыто>",
+      "film_tag_1401": 2048,
+      "saturation": "Normal"
+    },
+    "raf_preview": {
+      "model": "X-H2",
+      "lens": "XF8-16mmF2.8 R LM WR",
+      "taken": "<время скрыто>",
+      "film_tag_1401": 2048,
+      "saturation": "Normal"
+    },
+    "jpeg_sha256": "2dcb8d74ab5a60e7c1932d48bb3ee963c855cd67320c34defbcbd55618cdbcf4",
+    "raf_sha256": "413922ea69403e6174d665ae6af5b16d152f4f64c5284b635f8fc92f8eacb063"
+  },
+  "DSCF9768": {
+    "jpg": {
+      "model": "X-H2",
+      "lens": "XF16-55mmF2.8 R LM WR",
+      "taken": "<время скрыто>",
+      "film_tag_1401": 2816,
+      "saturation": "Normal"
+    },
+    "raf_preview": {
+      "model": "X-H2",
+      "lens": "XF16-55mmF2.8 R LM WR",
+      "taken": "<время скрыто>",
+      "film_tag_1401": 2816,
+      "saturation": "Normal"
+    },
+    "jpeg_sha256": "9c690f12d4645d9c53814c64ea44084af103044551672ac7f378637d01a6358f",
+    "raf_sha256": "b64a21d5551ffc3ad97281a975226cc4f8c7efba35cd736c1e8ed0c97e76a449",
+    "sensor": {
+      "raw_width": 7872,
+      "raw_height": 5196,
+      "visible_width": 7752,
+      "visible_height": 5178,
+      "cfa_pattern_rows": [
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          0,
+          1
+        ]
+      ],
+      "white_level": 16383,
+      "visible_first_sample": 1639
+    }
+  },
+  "DSCF0001": {
+    "jpg": {
+      "model": "X-H2",
+      "lens": "XF16-55mmF2.8 R LM WR",
+      "taken": "<время скрыто>",
+      "film_tag_1401": 1536,
+      "saturation": "Normal"
+    },
+    "raf_preview": {
+      "model": "X-H2",
+      "lens": "XF16-55mmF2.8 R LM WR",
+      "taken": "<время скрыто>",
+      "film_tag_1401": 1536,
+      "saturation": "Normal"
+    },
+    "jpeg_sha256": "233b650d59f619860d59a3dfcce489dace85514c885131dbc503eaae805b40cc",
+    "raf_sha256": "b2b3e30485e8d6c75900d85568559376c7790dcbb74a8f2c1b19e7b5f1f68fea",
+    "sensor": {
+      "raw_width": 7872,
+      "raw_height": 5196,
+      "visible_width": 7752,
+      "visible_height": 5178,
+      "cfa_pattern_rows": [
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          0,
+          1
+        ]
+      ],
+      "white_level": 16383,
+      "visible_first_sample": 1819
+    }
+  },
+  "DSCF0291": {
+    "jpg": {
+      "model": "X-H2",
+      "lens": "XF16-55mmF2.8 R LM WR",
+      "taken": "<время скрыто>",
+      "film_tag_1401": 1536,
+      "saturation": "Normal"
+    },
+    "raf_preview": {
+      "model": "X-H2",
+      "lens": "XF16-55mmF2.8 R LM WR",
+      "taken": "<время скрыто>",
+      "film_tag_1401": 1536,
+      "saturation": "Normal"
+    },
+    "jpeg_sha256": "78e3b820c0970d82d2c18c88fb01a63d701a87007ef15c2ceb29fe54fefb0c9c",
+    "raf_sha256": "9d7c7838ca8988a70d52a244c10618f52344b080dec277a2e70004ed7392d7b9"
+  }
+}

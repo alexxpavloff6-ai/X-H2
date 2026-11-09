@@ -1,0 +1,930 @@
+{
+  "X-H2": {
+    "path": "FIRMWARE\\ver 5.30\\FWUP0028.DAT",
+    "sha256": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+    "packed_block_offset": "0x840274",
+    "decoded_block_sha256": "a49b88c00d3724239207e6564f2dfbf9d0a59b41962012d44a05738455d2addd",
+    "address_base": "0x29ae000",
+    "film": [
+      {
+        "name": "UI_FILM_SIM_STD",
+        "value": 0,
+        "record_offset": "0x878f58",
+        "string_offset": "0x81ad30"
+      },
+      {
+        "name": "UI_FILM_SIM_F1B",
+        "value": 1,
+        "record_offset": "0x878f68",
+        "string_offset": "0x81ad40"
+      },
+      {
+        "name": "UI_FILM_SIM_F1C",
+        "value": 2,
+        "record_offset": "0x878f78",
+        "string_offset": "0x81ad50"
+      },
+      {
+        "name": "UI_FILM_SIM_F2",
+        "value": 3,
+        "record_offset": "0x878f88",
+        "string_offset": "0x81ad60"
+      },
+      {
+        "name": "UI_FILM_SIM_BW",
+        "value": 4,
+        "record_offset": "0x878f98",
+        "string_offset": "0x81ad70"
+      },
+      {
+        "name": "UI_FILM_SIM_SEPIA",
+        "value": 5,
+        "record_offset": "0x878fa8",
+        "string_offset": "0x81ad80"
+      },
+      {
+        "name": "UI_FILM_SIM_CHROME",
+        "value": 6,
+        "record_offset": "0x878fb8",
+        "string_offset": "0x81ad98"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER",
+        "value": 7,
+        "record_offset": "0x878fc8",
+        "string_offset": "0x81adb0"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_NON",
+        "value": 8,
+        "record_offset": "0x878fd8",
+        "string_offset": "0x81adc8"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_R",
+        "value": 9,
+        "record_offset": "0x878fe8",
+        "string_offset": "0x81ade8"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_Y",
+        "value": 10,
+        "record_offset": "0x878ff8",
+        "string_offset": "0x81ae00"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_G",
+        "value": 11,
+        "record_offset": "0x879008",
+        "string_offset": "0x81ae18"
+      },
+      {
+        "name": "UI_FILM_SIM_PRONEGA_S",
+        "value": 12,
+        "record_offset": "0x879018",
+        "string_offset": "0x81ae30"
+      },
+      {
+        "name": "UI_FILM_SIM_PRONEGA_H",
+        "value": 13,
+        "record_offset": "0x879028",
+        "string_offset": "0x81ae48"
+      },
+      {
+        "name": "UI_FILM_SIM_CLASSIC_CHROME",
+        "value": 14,
+        "record_offset": "0x879038",
+        "string_offset": "0x81ae60"
+      },
+      {
+        "name": "UI_FILM_SIM_SUPERIA",
+        "value": 15,
+        "record_offset": "0x879048",
+        "string_offset": "0x81ae80"
+      },
+      {
+        "name": "UI_FILM_SIM_AMERICAN_NEW_COLOR",
+        "value": 16,
+        "record_offset": "0x879058",
+        "string_offset": "0x81ae98"
+      },
+      {
+        "name": "UI_FILM_SIM_REALA",
+        "value": 17,
+        "record_offset": "0x879068",
+        "string_offset": "0x81aeb8"
+      },
+      {
+        "name": "UI_FILM_SIM_ETERNA",
+        "value": 18,
+        "record_offset": "0x879078",
+        "string_offset": "0x81aed0"
+      },
+      {
+        "name": "UI_FILM_SIM_BLEACH_BYPASS",
+        "value": 19,
+        "record_offset": "0x879088",
+        "string_offset": "0x81aee8"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER",
+        "value": 20,
+        "record_offset": "0x879098",
+        "string_offset": "0x81af08"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_NON",
+        "value": 21,
+        "record_offset": "0x8790a8",
+        "string_offset": "0x81af28"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_R",
+        "value": 22,
+        "record_offset": "0x8790b8",
+        "string_offset": "0x81af48"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_Y",
+        "value": 23,
+        "record_offset": "0x8790c8",
+        "string_offset": "0x81af68"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_G",
+        "value": 24,
+        "record_offset": "0x8790d8",
+        "string_offset": "0x81af88"
+      },
+      {
+        "name": "UI_FILM_SIM_AUTO",
+        "value": 25,
+        "record_offset": "0x8790e8",
+        "string_offset": "0x81afa8"
+      }
+    ],
+    "settings": {
+      "UI_SETP_FILM_SIM": {
+        "string_offset": "0x844550",
+        "record_offset": "0x865918",
+        "value": 1678
+      },
+      "UI_SETP_WB": {
+        "string_offset": "0x8434d0",
+        "record_offset": "0x864f88",
+        "value": 1525
+      },
+      "UI_SETP_WB_TUNING_R": {
+        "string_offset": "0x844a68",
+        "record_offset": "0x865c28",
+        "value": 1727
+      },
+      "UI_SETP_WB_TUNING_B": {
+        "string_offset": "0x844e88",
+        "record_offset": "0x865e08",
+        "value": 1757
+      },
+      "UI_SETP_NR": {
+        "string_offset": "0x843680",
+        "record_offset": "0x865068",
+        "value": 1539
+      },
+      "UI_SETP_CLARITY": {
+        "string_offset": "0x8436a8",
+        "record_offset": "0x865088",
+        "value": 1541
+      },
+      "UI_SETP_DRANGE": {
+        "string_offset": "0x844810",
+        "record_offset": "0x865a98",
+        "value": 1702
+      },
+      "UI_SETP_STILLCOLOR": {
+        "string_offset": "0x844950",
+        "record_offset": "0x865b68",
+        "value": 1715
+      },
+      "UI_SETP_SHARPNESS": {
+        "string_offset": "0x844988",
+        "record_offset": "0x865b88",
+        "value": 1717
+      },
+      "UI_SETP_HIGHLIGHT": {
+        "string_offset": "0x8449e0",
+        "record_offset": "0x865bc8",
+        "value": 1721
+      },
+      "UI_SETP_SHADOW": {
+        "string_offset": "0x844a10",
+        "record_offset": "0x865be8",
+        "value": 1723
+      },
+      "UI_SETP_GRAIN": {
+        "string_offset": "0x838b20",
+        "record_offset": "0x860098",
+        "value": 262
+      },
+      "UI_SETP_GRAIN_SIZE": {
+        "string_offset": "0x838b30",
+        "record_offset": "0x8600a8",
+        "value": 263
+      }
+    }
+  },
+  "X-H2S": {
+    "path": "Firmware на прочиеFuji\\FWUP0027.DAT",
+    "sha256": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+    "packed_block_offset": "0x840274",
+    "decoded_block_sha256": "86c8c9f01ae6840f791bffea050e8442ff9e967b6b7cbbb7f9d8141dd41d764f",
+    "address_base": "0x2cca000",
+    "film": [
+      {
+        "name": "UI_FILM_SIM_STD",
+        "value": 0,
+        "record_offset": "0x86ee98",
+        "string_offset": "0x810d18"
+      },
+      {
+        "name": "UI_FILM_SIM_F1B",
+        "value": 1,
+        "record_offset": "0x86eea8",
+        "string_offset": "0x810d28"
+      },
+      {
+        "name": "UI_FILM_SIM_F1C",
+        "value": 2,
+        "record_offset": "0x86eeb8",
+        "string_offset": "0x810d38"
+      },
+      {
+        "name": "UI_FILM_SIM_F2",
+        "value": 3,
+        "record_offset": "0x86eec8",
+        "string_offset": "0x810d48"
+      },
+      {
+        "name": "UI_FILM_SIM_BW",
+        "value": 4,
+        "record_offset": "0x86eed8",
+        "string_offset": "0x810d58"
+      },
+      {
+        "name": "UI_FILM_SIM_SEPIA",
+        "value": 5,
+        "record_offset": "0x86eee8",
+        "string_offset": "0x810d68"
+      },
+      {
+        "name": "UI_FILM_SIM_CHROME",
+        "value": 6,
+        "record_offset": "0x86eef8",
+        "string_offset": "0x810d80"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER",
+        "value": 7,
+        "record_offset": "0x86ef08",
+        "string_offset": "0x810d98"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_NON",
+        "value": 8,
+        "record_offset": "0x86ef18",
+        "string_offset": "0x810db0"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_R",
+        "value": 9,
+        "record_offset": "0x86ef28",
+        "string_offset": "0x810dd0"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_Y",
+        "value": 10,
+        "record_offset": "0x86ef38",
+        "string_offset": "0x810de8"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_G",
+        "value": 11,
+        "record_offset": "0x86ef48",
+        "string_offset": "0x810e00"
+      },
+      {
+        "name": "UI_FILM_SIM_PRONEGA_S",
+        "value": 12,
+        "record_offset": "0x86ef58",
+        "string_offset": "0x810e18"
+      },
+      {
+        "name": "UI_FILM_SIM_PRONEGA_H",
+        "value": 13,
+        "record_offset": "0x86ef68",
+        "string_offset": "0x810e30"
+      },
+      {
+        "name": "UI_FILM_SIM_CLASSIC_CHROME",
+        "value": 14,
+        "record_offset": "0x86ef78",
+        "string_offset": "0x810e48"
+      },
+      {
+        "name": "UI_FILM_SIM_SUPERIA",
+        "value": 15,
+        "record_offset": "0x86ef88",
+        "string_offset": "0x810e68"
+      },
+      {
+        "name": "UI_FILM_SIM_AMERICAN_NEW_COLOR",
+        "value": 16,
+        "record_offset": "0x86ef98",
+        "string_offset": "0x810e80"
+      },
+      {
+        "name": "UI_FILM_SIM_REALA",
+        "value": 17,
+        "record_offset": "0x86efa8",
+        "string_offset": "0x810ea0"
+      },
+      {
+        "name": "UI_FILM_SIM_ETERNA",
+        "value": 18,
+        "record_offset": "0x86efb8",
+        "string_offset": "0x810eb8"
+      },
+      {
+        "name": "UI_FILM_SIM_BLEACH_BYPASS",
+        "value": 19,
+        "record_offset": "0x86efc8",
+        "string_offset": "0x810ed0"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER",
+        "value": 20,
+        "record_offset": "0x86efd8",
+        "string_offset": "0x810ef0"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_NON",
+        "value": 21,
+        "record_offset": "0x86efe8",
+        "string_offset": "0x810f10"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_R",
+        "value": 22,
+        "record_offset": "0x86eff8",
+        "string_offset": "0x810f30"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_Y",
+        "value": 23,
+        "record_offset": "0x86f008",
+        "string_offset": "0x810f50"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_G",
+        "value": 24,
+        "record_offset": "0x86f018",
+        "string_offset": "0x810f70"
+      },
+      {
+        "name": "UI_FILM_SIM_AUTO",
+        "value": 25,
+        "record_offset": "0x86f028",
+        "string_offset": "0x810f90"
+      }
+    ],
+    "settings": {
+      "UI_SETP_FILM_SIM": {
+        "string_offset": "0x83a4d8",
+        "record_offset": "0x85b878",
+        "value": 1677
+      },
+      "UI_SETP_WB": {
+        "string_offset": "0x839470",
+        "record_offset": "0x85aef8",
+        "value": 1525
+      },
+      "UI_SETP_WB_TUNING_R": {
+        "string_offset": "0x83a9f0",
+        "record_offset": "0x85bb88",
+        "value": 1726
+      },
+      "UI_SETP_WB_TUNING_B": {
+        "string_offset": "0x83ae10",
+        "record_offset": "0x85bd68",
+        "value": 1756
+      },
+      "UI_SETP_NR": {
+        "string_offset": "0x839620",
+        "record_offset": "0x85afd8",
+        "value": 1539
+      },
+      "UI_SETP_CLARITY": {
+        "string_offset": "0x839648",
+        "record_offset": "0x85aff8",
+        "value": 1541
+      },
+      "UI_SETP_DRANGE": {
+        "string_offset": "0x83a798",
+        "record_offset": "0x85b9f8",
+        "value": 1701
+      },
+      "UI_SETP_STILLCOLOR": {
+        "string_offset": "0x83a8d8",
+        "record_offset": "0x85bac8",
+        "value": 1714
+      },
+      "UI_SETP_SHARPNESS": {
+        "string_offset": "0x83a910",
+        "record_offset": "0x85bae8",
+        "value": 1716
+      },
+      "UI_SETP_HIGHLIGHT": {
+        "string_offset": "0x83a968",
+        "record_offset": "0x85bb28",
+        "value": 1720
+      },
+      "UI_SETP_SHADOW": {
+        "string_offset": "0x83a998",
+        "record_offset": "0x85bb48",
+        "value": 1722
+      },
+      "UI_SETP_GRAIN": {
+        "string_offset": "0x82eac0",
+        "record_offset": "0x856008",
+        "value": 262
+      },
+      "UI_SETP_GRAIN_SIZE": {
+        "string_offset": "0x82ead0",
+        "record_offset": "0x856018",
+        "value": 263
+      }
+    }
+  },
+  "X-T5": {
+    "path": "Firmware на прочиеFuji\\FWUP0030.DAT",
+    "sha256": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+    "packed_block_offset": "0x820274",
+    "decoded_block_sha256": "d74dba337fe4078a6ee15ca5fddba7e502bdefb980825a09a15f9b13a01eb350",
+    "address_base": "0x28eb000",
+    "film": [
+      {
+        "name": "UI_FILM_SIM_STD",
+        "value": 0,
+        "record_offset": "0x87cfd0",
+        "string_offset": "0x81d020"
+      },
+      {
+        "name": "UI_FILM_SIM_F1B",
+        "value": 1,
+        "record_offset": "0x87cfe0",
+        "string_offset": "0x81d030"
+      },
+      {
+        "name": "UI_FILM_SIM_F1C",
+        "value": 2,
+        "record_offset": "0x87cff0",
+        "string_offset": "0x81d040"
+      },
+      {
+        "name": "UI_FILM_SIM_F2",
+        "value": 3,
+        "record_offset": "0x87d000",
+        "string_offset": "0x81d050"
+      },
+      {
+        "name": "UI_FILM_SIM_BW",
+        "value": 4,
+        "record_offset": "0x87d010",
+        "string_offset": "0x81d060"
+      },
+      {
+        "name": "UI_FILM_SIM_SEPIA",
+        "value": 5,
+        "record_offset": "0x87d020",
+        "string_offset": "0x81d070"
+      },
+      {
+        "name": "UI_FILM_SIM_CHROME",
+        "value": 6,
+        "record_offset": "0x87d030",
+        "string_offset": "0x81d088"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER",
+        "value": 7,
+        "record_offset": "0x87d040",
+        "string_offset": "0x81d0a0"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_NON",
+        "value": 8,
+        "record_offset": "0x87d050",
+        "string_offset": "0x81d0b8"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_R",
+        "value": 9,
+        "record_offset": "0x87d060",
+        "string_offset": "0x81d0d8"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_Y",
+        "value": 10,
+        "record_offset": "0x87d070",
+        "string_offset": "0x81d0f0"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_G",
+        "value": 11,
+        "record_offset": "0x87d080",
+        "string_offset": "0x81d108"
+      },
+      {
+        "name": "UI_FILM_SIM_PRONEGA_S",
+        "value": 12,
+        "record_offset": "0x87d090",
+        "string_offset": "0x81d120"
+      },
+      {
+        "name": "UI_FILM_SIM_PRONEGA_H",
+        "value": 13,
+        "record_offset": "0x87d0a0",
+        "string_offset": "0x81d138"
+      },
+      {
+        "name": "UI_FILM_SIM_CLASSIC_CHROME",
+        "value": 14,
+        "record_offset": "0x87d0b0",
+        "string_offset": "0x81d150"
+      },
+      {
+        "name": "UI_FILM_SIM_SUPERIA",
+        "value": 15,
+        "record_offset": "0x87d0c0",
+        "string_offset": "0x81d170"
+      },
+      {
+        "name": "UI_FILM_SIM_AMERICAN_NEW_COLOR",
+        "value": 16,
+        "record_offset": "0x87d0d0",
+        "string_offset": "0x81d188"
+      },
+      {
+        "name": "UI_FILM_SIM_REALA",
+        "value": 17,
+        "record_offset": "0x87d0e0",
+        "string_offset": "0x81d1a8"
+      },
+      {
+        "name": "UI_FILM_SIM_ETERNA",
+        "value": 18,
+        "record_offset": "0x87d0f0",
+        "string_offset": "0x81d1c0"
+      },
+      {
+        "name": "UI_FILM_SIM_BLEACH_BYPASS",
+        "value": 19,
+        "record_offset": "0x87d100",
+        "string_offset": "0x81d1d8"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER",
+        "value": 20,
+        "record_offset": "0x87d110",
+        "string_offset": "0x81d1f8"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_NON",
+        "value": 21,
+        "record_offset": "0x87d120",
+        "string_offset": "0x81d218"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_R",
+        "value": 22,
+        "record_offset": "0x87d130",
+        "string_offset": "0x81d238"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_Y",
+        "value": 23,
+        "record_offset": "0x87d140",
+        "string_offset": "0x81d258"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_G",
+        "value": 24,
+        "record_offset": "0x87d150",
+        "string_offset": "0x81d278"
+      },
+      {
+        "name": "UI_FILM_SIM_AUTO",
+        "value": 25,
+        "record_offset": "0x87d160",
+        "string_offset": "0x81d298"
+      }
+    ],
+    "settings": {
+      "UI_SETP_FILM_SIM": {
+        "string_offset": "0x846ae0",
+        "record_offset": "0x869110",
+        "value": 1699
+      },
+      "UI_SETP_WB": {
+        "string_offset": "0x845298",
+        "record_offset": "0x8683b0",
+        "value": 1485
+      },
+      "UI_SETP_WB_TUNING_R": {
+        "string_offset": "0x847100",
+        "record_offset": "0x8694c0",
+        "value": 1758
+      },
+      "UI_SETP_WB_TUNING_B": {
+        "string_offset": "0x847748",
+        "record_offset": "0x869790",
+        "value": 1803
+      },
+      "UI_SETP_NR": {
+        "string_offset": "0x845470",
+        "record_offset": "0x8684b0",
+        "value": 1501
+      },
+      "UI_SETP_CLARITY": {
+        "string_offset": "0x8454a8",
+        "record_offset": "0x8684e0",
+        "value": 1504
+      },
+      "UI_SETP_DRANGE": {
+        "string_offset": "0x846e30",
+        "record_offset": "0x8692e0",
+        "value": 1728
+      },
+      "UI_SETP_STILLCOLOR": {
+        "string_offset": "0x846f88",
+        "record_offset": "0x8693c0",
+        "value": 1742
+      },
+      "UI_SETP_SHARPNESS": {
+        "string_offset": "0x846fd8",
+        "record_offset": "0x8693f0",
+        "value": 1745
+      },
+      "UI_SETP_HIGHLIGHT": {
+        "string_offset": "0x847048",
+        "record_offset": "0x869440",
+        "value": 1750
+      },
+      "UI_SETP_SHADOW": {
+        "string_offset": "0x847090",
+        "record_offset": "0x869470",
+        "value": 1753
+      },
+      "UI_SETP_GRAIN": {
+        "string_offset": "0x83af08",
+        "record_offset": "0x863780",
+        "value": 266
+      },
+      "UI_SETP_GRAIN_SIZE": {
+        "string_offset": "0x83af18",
+        "record_offset": "0x863790",
+        "value": 267
+      }
+    }
+  },
+  "X100VI": {
+    "path": "Firmware на прочиеFuji\\FPUPDATE.DAT",
+    "sha256": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+    "packed_block_offset": "0x10e02bc",
+    "decoded_block_sha256": "14b0557bd724fa74b51ff641fcd5481da5b3ac64146d4fc69375086dafcfb174",
+    "address_base": "0x2b8f000",
+    "film": [
+      {
+        "name": "UI_FILM_SIM_STD",
+        "value": 0,
+        "record_offset": "0x8b7b78",
+        "string_offset": "0x8555b8"
+      },
+      {
+        "name": "UI_FILM_SIM_F1B",
+        "value": 1,
+        "record_offset": "0x8b7b88",
+        "string_offset": "0x8555c8"
+      },
+      {
+        "name": "UI_FILM_SIM_F1C",
+        "value": 2,
+        "record_offset": "0x8b7b98",
+        "string_offset": "0x8555d8"
+      },
+      {
+        "name": "UI_FILM_SIM_F2",
+        "value": 3,
+        "record_offset": "0x8b7ba8",
+        "string_offset": "0x8555e8"
+      },
+      {
+        "name": "UI_FILM_SIM_BW",
+        "value": 4,
+        "record_offset": "0x8b7bb8",
+        "string_offset": "0x8555f8"
+      },
+      {
+        "name": "UI_FILM_SIM_SEPIA",
+        "value": 5,
+        "record_offset": "0x8b7bc8",
+        "string_offset": "0x855608"
+      },
+      {
+        "name": "UI_FILM_SIM_CHROME",
+        "value": 6,
+        "record_offset": "0x8b7bd8",
+        "string_offset": "0x855620"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER",
+        "value": 7,
+        "record_offset": "0x8b7be8",
+        "string_offset": "0x855638"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_NON",
+        "value": 8,
+        "record_offset": "0x8b7bf8",
+        "string_offset": "0x855650"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_R",
+        "value": 9,
+        "record_offset": "0x8b7c08",
+        "string_offset": "0x855670"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_Y",
+        "value": 10,
+        "record_offset": "0x8b7c18",
+        "string_offset": "0x855688"
+      },
+      {
+        "name": "UI_FILM_SIM_BW_FILTER_G",
+        "value": 11,
+        "record_offset": "0x8b7c28",
+        "string_offset": "0x8556a0"
+      },
+      {
+        "name": "UI_FILM_SIM_PRONEGA_S",
+        "value": 12,
+        "record_offset": "0x8b7c38",
+        "string_offset": "0x8556b8"
+      },
+      {
+        "name": "UI_FILM_SIM_PRONEGA_H",
+        "value": 13,
+        "record_offset": "0x8b7c48",
+        "string_offset": "0x8556d0"
+      },
+      {
+        "name": "UI_FILM_SIM_CLASSIC_CHROME",
+        "value": 14,
+        "record_offset": "0x8b7c58",
+        "string_offset": "0x8556e8"
+      },
+      {
+        "name": "UI_FILM_SIM_SUPERIA",
+        "value": 15,
+        "record_offset": "0x8b7c68",
+        "string_offset": "0x855708"
+      },
+      {
+        "name": "UI_FILM_SIM_AMERICAN_NEW_COLOR",
+        "value": 16,
+        "record_offset": "0x8b7c78",
+        "string_offset": "0x855720"
+      },
+      {
+        "name": "UI_FILM_SIM_REALA",
+        "value": 17,
+        "record_offset": "0x8b7c88",
+        "string_offset": "0x855740"
+      },
+      {
+        "name": "UI_FILM_SIM_ETERNA",
+        "value": 18,
+        "record_offset": "0x8b7c98",
+        "string_offset": "0x855758"
+      },
+      {
+        "name": "UI_FILM_SIM_BLEACH_BYPASS",
+        "value": 19,
+        "record_offset": "0x8b7ca8",
+        "string_offset": "0x855770"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER",
+        "value": 20,
+        "record_offset": "0x8b7cb8",
+        "string_offset": "0x855790"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_NON",
+        "value": 21,
+        "record_offset": "0x8b7cc8",
+        "string_offset": "0x8557b0"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_R",
+        "value": 22,
+        "record_offset": "0x8b7cd8",
+        "string_offset": "0x8557d0"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_Y",
+        "value": 23,
+        "record_offset": "0x8b7ce8",
+        "string_offset": "0x8557f0"
+      },
+      {
+        "name": "UI_FILM_SIM_ACROS_FILTER_G",
+        "value": 24,
+        "record_offset": "0x8b7cf8",
+        "string_offset": "0x855810"
+      },
+      {
+        "name": "UI_FILM_SIM_AUTO",
+        "value": 25,
+        "record_offset": "0x8b7d08",
+        "string_offset": "0x855830"
+      }
+    ],
+    "settings": {
+      "UI_SETP_FILM_SIM": {
+        "string_offset": "0x880958",
+        "record_offset": "0x8a3898",
+        "value": 1756
+      },
+      "UI_SETP_WB": {
+        "string_offset": "0x87f738",
+        "record_offset": "0x8a2e28",
+        "value": 1589
+      },
+      "UI_SETP_WB_TUNING_R": {
+        "string_offset": "0x880e70",
+        "record_offset": "0x8a3ba8",
+        "value": 1805
+      },
+      "UI_SETP_WB_TUNING_B": {
+        "string_offset": "0x881290",
+        "record_offset": "0x8a3d88",
+        "value": 1835
+      },
+      "UI_SETP_NR": {
+        "string_offset": "0x87f8e8",
+        "record_offset": "0x8a2f08",
+        "value": 1603
+      },
+      "UI_SETP_CLARITY": {
+        "string_offset": "0x87f910",
+        "record_offset": "0x8a2f28",
+        "value": 1605
+      },
+      "UI_SETP_DRANGE": {
+        "string_offset": "0x880c18",
+        "record_offset": "0x8a3a18",
+        "value": 1780
+      },
+      "UI_SETP_STILLCOLOR": {
+        "string_offset": "0x880d58",
+        "record_offset": "0x8a3ae8",
+        "value": 1793
+      },
+      "UI_SETP_SHARPNESS": {
+        "string_offset": "0x880d90",
+        "record_offset": "0x8a3b08",
+        "value": 1795
+      },
+      "UI_SETP_HIGHLIGHT": {
+        "string_offset": "0x880de8",
+        "record_offset": "0x8a3b48",
+        "value": 1799
+      },
+      "UI_SETP_SHADOW": {
+        "string_offset": "0x880e18",
+        "record_offset": "0x8a3b68",
+        "value": 1801
+      },
+      "UI_SETP_GRAIN": {
+        "string_offset": "0x8744e0",
+        "record_offset": "0x89db78",
+        "value": 266
+      },
+      "UI_SETP_GRAIN_SIZE": {
+        "string_offset": "0x8744f0",
+        "record_offset": "0x89db88",
+        "value": 267
+      }
+    }
+  }
+}

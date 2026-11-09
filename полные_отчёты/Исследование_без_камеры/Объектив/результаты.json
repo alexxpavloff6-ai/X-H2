@@ -1,0 +1,1835 @@
+{
+  "inputs": {
+    "archive": {
+      "path": "Firmware на прочиеFuji\\Lens\\XFUP0019.zip",
+      "sha256_before": "a1ef3f1a78462a7425824d852f039970285239f0f9491f417dd8d0952f6b91d5",
+      "sha256_after": "a1ef3f1a78462a7425824d852f039970285239f0f9491f417dd8d0952f6b91d5",
+      "unchanged": true
+    },
+    "X-H2 5.30": {
+      "path": "FIRMWARE\\ver 5.30\\FWUP0028.DAT",
+      "sha256_before": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+      "sha256_after": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+      "unchanged": true
+    },
+    "X-H2S 7.30": {
+      "path": "Firmware на прочиеFuji\\FWUP0027.DAT",
+      "sha256_before": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "sha256_after": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "unchanged": true
+    },
+    "X-T5 4.31": {
+      "path": "Firmware на прочиеFuji\\FWUP0030.DAT",
+      "sha256_before": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "sha256_after": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "unchanged": true
+    },
+    "X100VI 1.31": {
+      "path": "Firmware на прочиеFuji\\FPUPDATE.DAT",
+      "sha256_before": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "sha256_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "unchanged": true
+    }
+  },
+  "scope": "Whole decompressed DAT members and whole raw camera DAT files; offsets are file offsets unless labelled otherwise.",
+  "members": {
+    "XFUP0019/XFUP0019.DAT": {
+      "size": 521466,
+      "compressed_size": 155309,
+      "compression_method": 8,
+      "zip_crc32": "2ba94a78",
+      "sha256": "9f3ff1b4382bbee4128fd839e9b488d579686b19506518fd97bb2cc8b0947025",
+      "header_u32_le": [
+        5,
+        0,
+        1,
+        51,
+        4216105912,
+        4,
+        520706,
+        520706,
+        156,
+        520194,
+        4216105912
+      ],
+      "header_hex_ascii_decoded": "LX218A00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "declared_region_offset": 1116,
+      "declared_region_length": 520194,
+      "remaining_bytes": 156,
+      "payload_sha256": "4f4102f6d05d3fdedea6e4bf7a167045fe085d4f61fb61c9819d700cb05e1090",
+      "trailer_sha256": "42897ee8e3cc8ee663ddcec438f7e10bf5b4debd0998e0a475bb3d30a12cf3bb",
+      "header_eight_candidate_pairs": [
+        {
+          "first": 0,
+          "second": 4096
+        },
+        {
+          "first": 4096,
+          "second": 49152
+        },
+        {
+          "first": 53248,
+          "second": 122880
+        },
+        {
+          "first": 176128,
+          "second": 8192
+        },
+        {
+          "first": 184320,
+          "second": 258048
+        },
+        {
+          "first": 442368,
+          "second": 69632
+        },
+        {
+          "first": 512000,
+          "second": 8192
+        },
+        {
+          "first": 520192,
+          "second": 4096
+        }
+      ],
+      "hypothetical_linear_base": 0,
+      "markers": {
+        "FLZNW016": [
+          177244
+        ],
+        "LX218A": [
+          608,
+          177255
+        ],
+        "FUJIFILM": [
+          177300
+        ],
+        "XF16-55mmF2.8 R LM WR": [
+          177318
+        ],
+        "lenscom": [
+          41724,
+          42796,
+          43000,
+          368572,
+          369948,
+          370216
+        ],
+        "lensdata": [],
+        "mfm\\0": [
+          371736
+        ],
+        "mim\\0": [
+          371768
+        ],
+        "mzm\\0": [
+          371800
+        ],
+        "Monitor Focus Move. Toggle": [
+          371740
+        ],
+        "Monitor Iris Move. Toggle": [
+          371772
+        ],
+        "Monitor Zoom Move. Toggle": [
+          371804
+        ],
+        "focus move monitor = %d": [
+          371520
+        ],
+        "iris move monitor = %d": [
+          371496
+        ],
+        "zoom move monitor = %d": [
+          371472
+        ]
+      },
+      "diagnostic_records": [
+        {
+          "record_file_offset": 371172,
+          "words_le": [
+            370620,
+            214317,
+            370624
+          ],
+          "translated_file_offsets": [
+            371736,
+            215433,
+            371740
+          ],
+          "name": "mfm",
+          "description": "Monitor Focus Move. Toggle",
+          "candidate_target_file_offset": 215432,
+          "target_bytes": "80b500af064b1978d1f1010138bf00211970044801f00101fff7d2fb80bd00bf"
+        },
+        {
+          "record_file_offset": 371184,
+          "words_le": [
+            370652,
+            214277,
+            370656
+          ],
+          "translated_file_offsets": [
+            371768,
+            215393,
+            371772
+          ],
+          "name": "mim",
+          "description": "Monitor Iris Move. Toggle",
+          "candidate_target_file_offset": 215392,
+          "target_bytes": "80b500af064b1978d1f1010138bf00211970044801f00101fff7e6fb80bd00bf"
+        },
+        {
+          "record_file_offset": 371196,
+          "words_le": [
+            370684,
+            214237,
+            370688
+          ],
+          "translated_file_offsets": [
+            371800,
+            215353,
+            371804
+          ],
+          "name": "mzm",
+          "description": "Monitor Zoom Move. Toggle",
+          "candidate_target_file_offset": 215352,
+          "target_bytes": "80b500af064b1978d1f1010138bf00211970044801f00101fff7fafb80bd00bf"
+        }
+      ],
+      "elf_magic_offsets": []
+    },
+    "XFUP0019/XFUP0064.DAT": {
+      "size": 525560,
+      "compressed_size": 154815,
+      "compression_method": 8,
+      "zip_crc32": "65da60f0",
+      "sha256": "079ba2d550d838ef0ab2fd76c613b1aa2b667c5247b7fa6d488bcaf6d02071be",
+      "header_u32_le": [
+        5,
+        0,
+        1,
+        51,
+        4214144838,
+        2,
+        524800,
+        524800,
+        156,
+        524288,
+        4214144838
+      ],
+      "header_hex_ascii_decoded": "LX218A00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "declared_region_offset": 1116,
+      "declared_region_length": 524288,
+      "remaining_bytes": 156,
+      "payload_sha256": "72ed5e5b3ca84fca64e2f8f8f709378fa29735ea3a67a6efec1ede0464d926f8",
+      "trailer_sha256": "42897ee8e3cc8ee663ddcec438f7e10bf5b4debd0998e0a475bb3d30a12cf3bb",
+      "header_eight_candidate_pairs": [
+        {
+          "first": 4294443008,
+          "second": 32768
+        },
+        {
+          "first": 4294475776,
+          "second": 32768
+        },
+        {
+          "first": 4294508544,
+          "second": 0
+        },
+        {
+          "first": 4294508544,
+          "second": 32768
+        },
+        {
+          "first": 4294541312,
+          "second": 229376
+        },
+        {
+          "first": 4294770688,
+          "second": 131072
+        },
+        {
+          "first": 4294901760,
+          "second": 57344
+        },
+        {
+          "first": 4294959104,
+          "second": 8192
+        }
+      ],
+      "hypothetical_linear_base": 4294443008,
+      "markers": {
+        "FLZNW016": [
+          66652
+        ],
+        "LX218A": [
+          608,
+          66663
+        ],
+        "FUJIFILM": [
+          66708
+        ],
+        "XF16-55mmF2.8 R LM WR": [
+          66726
+        ],
+        "lenscom": [
+          135392,
+          135400,
+          135676,
+          465216,
+          465224,
+          465256
+        ],
+        "lensdata": [],
+        "mfm\\0": [
+          135737
+        ],
+        "mim\\0": [
+          135768
+        ],
+        "mzm\\0": [
+          135798
+        ],
+        "Monitor Focus Move. Toggle": [
+          135741
+        ],
+        "Monitor Iris Move. Toggle": [
+          135772
+        ],
+        "Monitor Zoom Move. Toggle": [
+          135802
+        ],
+        "focus move monitor = %d": [
+          136095
+        ],
+        "iris move monitor = %d": [
+          136120
+        ],
+        "zoom move monitor = %d": [
+          136144
+        ]
+      },
+      "diagnostic_records": [
+        {
+          "record_file_offset": 129840,
+          "words_le": [
+            4294577629,
+            4294682701,
+            4294577633
+          ],
+          "translated_file_offsets": [
+            135737,
+            240809,
+            135741
+          ],
+          "name": "mfm",
+          "description": "Monitor Focus Move. Toggle",
+          "candidate_target_file_offset": 240809,
+          "target_bytes": "fbee38b901ecef610ffcd8e06080e4e001fbee430ffae30e394ba5628002fbee"
+        },
+        {
+          "record_file_offset": 129852,
+          "words_le": [
+            4294577660,
+            4294682731,
+            4294577664
+          ],
+          "translated_file_offsets": [
+            135768,
+            240839,
+            135772
+          ],
+          "name": "mim",
+          "description": "Monitor Iris Move. Toggle",
+          "candidate_target_file_offset": 240839,
+          "target_bytes": "fbee3cb901ecef610ffcd8e06080e4e001fbee5c0ffae30e392da5628002fbee"
+        },
+        {
+          "record_file_offset": 129864,
+          "words_le": [
+            4294577690,
+            4294682761,
+            4294577694
+          ],
+          "translated_file_offsets": [
+            135798,
+            240869,
+            135802
+          ],
+          "name": "mzm",
+          "description": "Monitor Zoom Move. Toggle",
+          "candidate_target_file_offset": 240869,
+          "target_bytes": "fbee34b901ecef610ffcd8e06080e4e001fbee740ffae30e390fa5628002fbee"
+        }
+      ],
+      "elf_magic_offsets": []
+    }
+  },
+  "camera_ascii": {
+    "X-H2 5.30": {
+      "lenscom": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 8,
+          "first_32_file_offsets": [
+            5801251,
+            8523295,
+            109634612,
+            109637756,
+            109638028,
+            110132276,
+            110133652,
+            110133928
+          ]
+        }
+      },
+      "lensdata": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 1,
+          "first_32_file_offsets": [
+            6599554
+          ]
+        }
+      },
+      "lensdc": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 1,
+          "first_32_file_offsets": [
+            7807925
+          ]
+        }
+      },
+      "Monitor Focus Move. Toggle": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 0,
+          "first_32_file_offsets": []
+        }
+      },
+      "focus move monitor = %d": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 0,
+          "first_32_file_offsets": []
+        }
+      },
+      "FLZNW016": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 0,
+          "first_32_file_offsets": []
+        }
+      }
+    },
+    "X-H2S 7.30": {
+      "lenscom": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 8,
+          "first_32_file_offsets": [
+            5798548,
+            8515042,
+            109634612,
+            109637756,
+            109638028,
+            110132276,
+            110133652,
+            110133928
+          ]
+        }
+      },
+      "lensdata": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 1,
+          "first_32_file_offsets": [
+            6593035
+          ]
+        }
+      },
+      "lensdc": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 1,
+          "first_32_file_offsets": [
+            7800467
+          ]
+        }
+      },
+      "Monitor Focus Move. Toggle": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 0,
+          "first_32_file_offsets": []
+        }
+      },
+      "focus move monitor = %d": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 0,
+          "first_32_file_offsets": []
+        }
+      },
+      "FLZNW016": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 0,
+          "first_32_file_offsets": []
+        }
+      }
+    },
+    "X-T5 4.31": {
+      "lenscom": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 2,
+          "first_32_file_offsets": [
+            5789036,
+            8464301
+          ]
+        }
+      },
+      "lensdata": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 1,
+          "first_32_file_offsets": [
+            6609597
+          ]
+        }
+      },
+      "lensdc": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 1,
+          "first_32_file_offsets": [
+            7787576
+          ]
+        }
+      },
+      "Monitor Focus Move. Toggle": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 0,
+          "first_32_file_offsets": []
+        }
+      },
+      "focus move monitor = %d": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 0,
+          "first_32_file_offsets": []
+        }
+      },
+      "FLZNW016": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 0,
+          "first_32_file_offsets": []
+        }
+      }
+    },
+    "X100VI 1.31": {
+      "lenscom": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 0,
+          "first_32_file_offsets": []
+        }
+      },
+      "lensdata": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 0,
+          "first_32_file_offsets": []
+        }
+      },
+      "lensdc": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 1,
+          "first_32_file_offsets": [
+            14865306
+          ]
+        }
+      },
+      "Monitor Focus Move. Toggle": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 0,
+          "first_32_file_offsets": []
+        }
+      },
+      "focus move monitor = %d": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 0,
+          "first_32_file_offsets": []
+        }
+      },
+      "FLZNW016": {
+        "raw": {
+          "count": 0,
+          "first_32_file_offsets": []
+        },
+        "byte_inverted": {
+          "count": 0,
+          "first_32_file_offsets": []
+        }
+      }
+    }
+  },
+  "vm": [
+    {
+      "command": "mfm",
+      "entry": 214316,
+      "flag_address": 536907999,
+      "initial": 0,
+      "flag_after": 1,
+      "call_boundary": {
+        "target": 212204,
+        "format_address": 370404,
+        "format": "focus move monitor = %d\n",
+        "r1": 1
+      },
+      "trace": [
+        {
+          "address": 214316,
+          "bytes": "80b5"
+        },
+        {
+          "address": 214318,
+          "bytes": "00af"
+        },
+        {
+          "address": 214320,
+          "bytes": "064b"
+        },
+        {
+          "address": 214322,
+          "bytes": "1978"
+        },
+        {
+          "address": 214324,
+          "bytes": "d1f10101"
+        },
+        {
+          "address": 214328,
+          "bytes": "38bf"
+        },
+        {
+          "address": 214332,
+          "bytes": "1970"
+        },
+        {
+          "address": 214334,
+          "bytes": "0448"
+        },
+        {
+          "address": 214336,
+          "bytes": "01f00101"
+        },
+        {
+          "address": 214340,
+          "bytes": "fff7d2fb"
+        }
+      ],
+      "limit": 40
+    },
+    {
+      "command": "mfm",
+      "entry": 214316,
+      "flag_address": 536907999,
+      "initial": 1,
+      "flag_after": 0,
+      "call_boundary": {
+        "target": 212204,
+        "format_address": 370404,
+        "format": "focus move monitor = %d\n",
+        "r1": 0
+      },
+      "trace": [
+        {
+          "address": 214316,
+          "bytes": "80b5"
+        },
+        {
+          "address": 214318,
+          "bytes": "00af"
+        },
+        {
+          "address": 214320,
+          "bytes": "064b"
+        },
+        {
+          "address": 214322,
+          "bytes": "1978"
+        },
+        {
+          "address": 214324,
+          "bytes": "d1f10101"
+        },
+        {
+          "address": 214328,
+          "bytes": "38bf"
+        },
+        {
+          "address": 214332,
+          "bytes": "1970"
+        },
+        {
+          "address": 214334,
+          "bytes": "0448"
+        },
+        {
+          "address": 214336,
+          "bytes": "01f00101"
+        },
+        {
+          "address": 214340,
+          "bytes": "fff7d2fb"
+        }
+      ],
+      "limit": 40
+    },
+    {
+      "command": "mfm",
+      "entry": 214316,
+      "flag_address": 536907999,
+      "initial": 2,
+      "flag_after": 0,
+      "call_boundary": {
+        "target": 212204,
+        "format_address": 370404,
+        "format": "focus move monitor = %d\n",
+        "r1": 0
+      },
+      "trace": [
+        {
+          "address": 214316,
+          "bytes": "80b5"
+        },
+        {
+          "address": 214318,
+          "bytes": "00af"
+        },
+        {
+          "address": 214320,
+          "bytes": "064b"
+        },
+        {
+          "address": 214322,
+          "bytes": "1978"
+        },
+        {
+          "address": 214324,
+          "bytes": "d1f10101"
+        },
+        {
+          "address": 214328,
+          "bytes": "38bf"
+        },
+        {
+          "address": 214330,
+          "bytes": "0021"
+        },
+        {
+          "address": 214332,
+          "bytes": "1970"
+        },
+        {
+          "address": 214334,
+          "bytes": "0448"
+        },
+        {
+          "address": 214336,
+          "bytes": "01f00101"
+        },
+        {
+          "address": 214340,
+          "bytes": "fff7d2fb"
+        }
+      ],
+      "limit": 40
+    },
+    {
+      "command": "mim",
+      "entry": 214276,
+      "flag_address": 536908000,
+      "initial": 0,
+      "flag_after": 1,
+      "call_boundary": {
+        "target": 212204,
+        "format_address": 370380,
+        "format": "iris move monitor = %d\n",
+        "r1": 1
+      },
+      "trace": [
+        {
+          "address": 214276,
+          "bytes": "80b5"
+        },
+        {
+          "address": 214278,
+          "bytes": "00af"
+        },
+        {
+          "address": 214280,
+          "bytes": "064b"
+        },
+        {
+          "address": 214282,
+          "bytes": "1978"
+        },
+        {
+          "address": 214284,
+          "bytes": "d1f10101"
+        },
+        {
+          "address": 214288,
+          "bytes": "38bf"
+        },
+        {
+          "address": 214292,
+          "bytes": "1970"
+        },
+        {
+          "address": 214294,
+          "bytes": "0448"
+        },
+        {
+          "address": 214296,
+          "bytes": "01f00101"
+        },
+        {
+          "address": 214300,
+          "bytes": "fff7e6fb"
+        }
+      ],
+      "limit": 40
+    },
+    {
+      "command": "mim",
+      "entry": 214276,
+      "flag_address": 536908000,
+      "initial": 1,
+      "flag_after": 0,
+      "call_boundary": {
+        "target": 212204,
+        "format_address": 370380,
+        "format": "iris move monitor = %d\n",
+        "r1": 0
+      },
+      "trace": [
+        {
+          "address": 214276,
+          "bytes": "80b5"
+        },
+        {
+          "address": 214278,
+          "bytes": "00af"
+        },
+        {
+          "address": 214280,
+          "bytes": "064b"
+        },
+        {
+          "address": 214282,
+          "bytes": "1978"
+        },
+        {
+          "address": 214284,
+          "bytes": "d1f10101"
+        },
+        {
+          "address": 214288,
+          "bytes": "38bf"
+        },
+        {
+          "address": 214292,
+          "bytes": "1970"
+        },
+        {
+          "address": 214294,
+          "bytes": "0448"
+        },
+        {
+          "address": 214296,
+          "bytes": "01f00101"
+        },
+        {
+          "address": 214300,
+          "bytes": "fff7e6fb"
+        }
+      ],
+      "limit": 40
+    },
+    {
+      "command": "mim",
+      "entry": 214276,
+      "flag_address": 536908000,
+      "initial": 2,
+      "flag_after": 0,
+      "call_boundary": {
+        "target": 212204,
+        "format_address": 370380,
+        "format": "iris move monitor = %d\n",
+        "r1": 0
+      },
+      "trace": [
+        {
+          "address": 214276,
+          "bytes": "80b5"
+        },
+        {
+          "address": 214278,
+          "bytes": "00af"
+        },
+        {
+          "address": 214280,
+          "bytes": "064b"
+        },
+        {
+          "address": 214282,
+          "bytes": "1978"
+        },
+        {
+          "address": 214284,
+          "bytes": "d1f10101"
+        },
+        {
+          "address": 214288,
+          "bytes": "38bf"
+        },
+        {
+          "address": 214290,
+          "bytes": "0021"
+        },
+        {
+          "address": 214292,
+          "bytes": "1970"
+        },
+        {
+          "address": 214294,
+          "bytes": "0448"
+        },
+        {
+          "address": 214296,
+          "bytes": "01f00101"
+        },
+        {
+          "address": 214300,
+          "bytes": "fff7e6fb"
+        }
+      ],
+      "limit": 40
+    },
+    {
+      "command": "mzm",
+      "entry": 214236,
+      "flag_address": 536907996,
+      "initial": 0,
+      "flag_after": 1,
+      "call_boundary": {
+        "target": 212204,
+        "format_address": 370356,
+        "format": "zoom move monitor = %d\n",
+        "r1": 1
+      },
+      "trace": [
+        {
+          "address": 214236,
+          "bytes": "80b5"
+        },
+        {
+          "address": 214238,
+          "bytes": "00af"
+        },
+        {
+          "address": 214240,
+          "bytes": "064b"
+        },
+        {
+          "address": 214242,
+          "bytes": "1978"
+        },
+        {
+          "address": 214244,
+          "bytes": "d1f10101"
+        },
+        {
+          "address": 214248,
+          "bytes": "38bf"
+        },
+        {
+          "address": 214252,
+          "bytes": "1970"
+        },
+        {
+          "address": 214254,
+          "bytes": "0448"
+        },
+        {
+          "address": 214256,
+          "bytes": "01f00101"
+        },
+        {
+          "address": 214260,
+          "bytes": "fff7fafb"
+        }
+      ],
+      "limit": 40
+    },
+    {
+      "command": "mzm",
+      "entry": 214236,
+      "flag_address": 536907996,
+      "initial": 1,
+      "flag_after": 0,
+      "call_boundary": {
+        "target": 212204,
+        "format_address": 370356,
+        "format": "zoom move monitor = %d\n",
+        "r1": 0
+      },
+      "trace": [
+        {
+          "address": 214236,
+          "bytes": "80b5"
+        },
+        {
+          "address": 214238,
+          "bytes": "00af"
+        },
+        {
+          "address": 214240,
+          "bytes": "064b"
+        },
+        {
+          "address": 214242,
+          "bytes": "1978"
+        },
+        {
+          "address": 214244,
+          "bytes": "d1f10101"
+        },
+        {
+          "address": 214248,
+          "bytes": "38bf"
+        },
+        {
+          "address": 214252,
+          "bytes": "1970"
+        },
+        {
+          "address": 214254,
+          "bytes": "0448"
+        },
+        {
+          "address": 214256,
+          "bytes": "01f00101"
+        },
+        {
+          "address": 214260,
+          "bytes": "fff7fafb"
+        }
+      ],
+      "limit": 40
+    },
+    {
+      "command": "mzm",
+      "entry": 214236,
+      "flag_address": 536907996,
+      "initial": 2,
+      "flag_after": 0,
+      "call_boundary": {
+        "target": 212204,
+        "format_address": 370356,
+        "format": "zoom move monitor = %d\n",
+        "r1": 0
+      },
+      "trace": [
+        {
+          "address": 214236,
+          "bytes": "80b5"
+        },
+        {
+          "address": 214238,
+          "bytes": "00af"
+        },
+        {
+          "address": 214240,
+          "bytes": "064b"
+        },
+        {
+          "address": 214242,
+          "bytes": "1978"
+        },
+        {
+          "address": 214244,
+          "bytes": "d1f10101"
+        },
+        {
+          "address": 214248,
+          "bytes": "38bf"
+        },
+        {
+          "address": 214250,
+          "bytes": "0021"
+        },
+        {
+          "address": 214252,
+          "bytes": "1970"
+        },
+        {
+          "address": 214254,
+          "bytes": "0448"
+        },
+        {
+          "address": 214256,
+          "bytes": "01f00101"
+        },
+        {
+          "address": 214260,
+          "bytes": "fff7fafb"
+        }
+      ],
+      "limit": 40
+    }
+  ],
+  "limitations": [
+    "Address translation is a hypothesis supported by multiple independent table string pointers, not hardware memory map proof.",
+    "VM runs only 0019 isolated Thumb diagnostic handlers; synthetic RAM and flags; stops before external call 0x33cec, no real I/O or device.",
+    "0064 RX decoding and execution cover only three restricted diagnostic fragments; no specific MCU, complete firmware, actual invocation, physical address map or peripheral is established.",
+    "ASCII labels and matching table layouts do not establish physical packets, motion commands, installed versions, hardware compatibility or exchange.",
+    "Camera searches cover raw and byte-inverted ASCII substrings in complete DAT, not decompressed FFLZ blocks or proven executable references; no absence inference beyond those ranges and forms."
+  ],
+  "comparison": {
+    "common_suffix_length": 156,
+    "trailer_equal": true,
+    "header_decoded_equal": true
+  },
+  "thumb_handler_instructions": {
+    "mfm": [
+      {
+        "address": 214316,
+        "bytes": "80b5",
+        "instruction": "push {r7, lr}"
+      },
+      {
+        "address": 214318,
+        "bytes": "00af",
+        "instruction": "add r7, sp, #0"
+      },
+      {
+        "address": 214320,
+        "bytes": "064b",
+        "instruction": "ldr r3, [pc, #0x18]"
+      },
+      {
+        "address": 214322,
+        "bytes": "1978",
+        "instruction": "ldrb r1, [r3]"
+      },
+      {
+        "address": 214324,
+        "bytes": "d1f10101",
+        "instruction": "rsbs.w r1, r1, #1"
+      },
+      {
+        "address": 214328,
+        "bytes": "38bf",
+        "instruction": "it lo"
+      },
+      {
+        "address": 214330,
+        "bytes": "0021",
+        "instruction": "movlo r1, #0"
+      },
+      {
+        "address": 214332,
+        "bytes": "1970",
+        "instruction": "strb r1, [r3]"
+      },
+      {
+        "address": 214334,
+        "bytes": "0448",
+        "instruction": "ldr r0, [pc, #0x10]"
+      },
+      {
+        "address": 214336,
+        "bytes": "01f00101",
+        "instruction": "and r1, r1, #1"
+      },
+      {
+        "address": 214340,
+        "bytes": "fff7d2fb",
+        "instruction": "bl #0x33cec"
+      },
+      {
+        "address": 214344,
+        "bytes": "80bd",
+        "instruction": "pop {r7, pc}"
+      }
+    ],
+    "mim": [
+      {
+        "address": 214276,
+        "bytes": "80b5",
+        "instruction": "push {r7, lr}"
+      },
+      {
+        "address": 214278,
+        "bytes": "00af",
+        "instruction": "add r7, sp, #0"
+      },
+      {
+        "address": 214280,
+        "bytes": "064b",
+        "instruction": "ldr r3, [pc, #0x18]"
+      },
+      {
+        "address": 214282,
+        "bytes": "1978",
+        "instruction": "ldrb r1, [r3]"
+      },
+      {
+        "address": 214284,
+        "bytes": "d1f10101",
+        "instruction": "rsbs.w r1, r1, #1"
+      },
+      {
+        "address": 214288,
+        "bytes": "38bf",
+        "instruction": "it lo"
+      },
+      {
+        "address": 214290,
+        "bytes": "0021",
+        "instruction": "movlo r1, #0"
+      },
+      {
+        "address": 214292,
+        "bytes": "1970",
+        "instruction": "strb r1, [r3]"
+      },
+      {
+        "address": 214294,
+        "bytes": "0448",
+        "instruction": "ldr r0, [pc, #0x10]"
+      },
+      {
+        "address": 214296,
+        "bytes": "01f00101",
+        "instruction": "and r1, r1, #1"
+      },
+      {
+        "address": 214300,
+        "bytes": "fff7e6fb",
+        "instruction": "bl #0x33cec"
+      },
+      {
+        "address": 214304,
+        "bytes": "80bd",
+        "instruction": "pop {r7, pc}"
+      }
+    ],
+    "mzm": [
+      {
+        "address": 214236,
+        "bytes": "80b5",
+        "instruction": "push {r7, lr}"
+      },
+      {
+        "address": 214238,
+        "bytes": "00af",
+        "instruction": "add r7, sp, #0"
+      },
+      {
+        "address": 214240,
+        "bytes": "064b",
+        "instruction": "ldr r3, [pc, #0x18]"
+      },
+      {
+        "address": 214242,
+        "bytes": "1978",
+        "instruction": "ldrb r1, [r3]"
+      },
+      {
+        "address": 214244,
+        "bytes": "d1f10101",
+        "instruction": "rsbs.w r1, r1, #1"
+      },
+      {
+        "address": 214248,
+        "bytes": "38bf",
+        "instruction": "it lo"
+      },
+      {
+        "address": 214250,
+        "bytes": "0021",
+        "instruction": "movlo r1, #0"
+      },
+      {
+        "address": 214252,
+        "bytes": "1970",
+        "instruction": "strb r1, [r3]"
+      },
+      {
+        "address": 214254,
+        "bytes": "0448",
+        "instruction": "ldr r0, [pc, #0x10]"
+      },
+      {
+        "address": 214256,
+        "bytes": "01f00101",
+        "instruction": "and r1, r1, #1"
+      },
+      {
+        "address": 214260,
+        "bytes": "fff7fafb",
+        "instruction": "bl #0x33cec"
+      },
+      {
+        "address": 214264,
+        "bytes": "80bd",
+        "instruction": "pop {r7, pc}"
+      }
+    ]
+  },
+  "rx0064": {
+    "reference": "GNU binutils RX opcode patterns and simulator semantic definitions; restricted independent decoder/interpreter",
+    "reference_url": "https://gnu.googlesource.com/binutils-gdb/+/refs/heads/master/opcodes/rx-decode.opc",
+    "execution_model": "synthetic stack and memory, 32-bit words; stop before bsr, no actual target or hardware",
+    "candidates": {
+      "mfm": {
+        "decoded": {
+          "accepted": true,
+          "entry": 4294682701,
+          "file_offset": 240809,
+          "bytes": "fbee38b901ecef610ffcd8e06080e4e001fbee430ffae30e394ba5628002",
+          "flag_candidate": 112952,
+          "format_address": 4294577987,
+          "signed_branch_displacement": -23221,
+          "branch_target": 4294659504,
+          "format_file_offset": 136095,
+          "instructions": [
+            {
+              "address": 4294682701,
+              "bytes": "fbee38b901",
+              "instruction": "mov.l #0x1b938, r14"
+            },
+            {
+              "address": 4294682706,
+              "bytes": "ecef",
+              "instruction": "mov.l [r14], r15"
+            },
+            {
+              "address": 4294682708,
+              "bytes": "610f",
+              "instruction": "cmp #0, r15"
+            },
+            {
+              "address": 4294682710,
+              "bytes": "fcd8e0",
+              "instruction": "sceq.l [r14]"
+            },
+            {
+              "address": 4294682713,
+              "bytes": "6080",
+              "instruction": "sub #8, r0"
+            },
+            {
+              "address": 4294682715,
+              "bytes": "e4e001",
+              "instruction": "mov.l [r14], 4[r0]"
+            },
+            {
+              "address": 4294682718,
+              "bytes": "fbee430ffa",
+              "instruction": "mov.l #0xfffa0f43, r14"
+            },
+            {
+              "address": 4294682723,
+              "bytes": "e30e",
+              "instruction": "mov.l r14, [r0]"
+            },
+            {
+              "address": 4294682725,
+              "bytes": "394ba5",
+              "instruction": "bsr.w 0xfffb4db0"
+            },
+            {
+              "address": 4294682728,
+              "bytes": "6280",
+              "instruction": "add #8, r0"
+            },
+            {
+              "address": 4294682730,
+              "bytes": "02",
+              "instruction": "rts"
+            }
+          ]
+        },
+        "format": "focus move monitor = %d\n",
+        "runs": [
+          {
+            "initial": 0,
+            "flag_after": 1,
+            "stack_pointer": 2093048,
+            "call_boundary": 4294659504,
+            "stack_word_0_format": 4294577987,
+            "format": "focus move monitor = %d\n",
+            "stack_word_1": 1,
+            "trace": [
+              4294682701,
+              4294682706,
+              4294682708,
+              4294682710,
+              4294682713,
+              4294682715,
+              4294682718,
+              4294682723,
+              4294682725
+            ],
+            "halt": "before bsr; callee and return not executed"
+          },
+          {
+            "initial": 1,
+            "flag_after": 0,
+            "stack_pointer": 2093048,
+            "call_boundary": 4294659504,
+            "stack_word_0_format": 4294577987,
+            "format": "focus move monitor = %d\n",
+            "stack_word_1": 0,
+            "trace": [
+              4294682701,
+              4294682706,
+              4294682708,
+              4294682710,
+              4294682713,
+              4294682715,
+              4294682718,
+              4294682723,
+              4294682725
+            ],
+            "halt": "before bsr; callee and return not executed"
+          },
+          {
+            "initial": 2,
+            "flag_after": 0,
+            "stack_pointer": 2093048,
+            "call_boundary": 4294659504,
+            "stack_word_0_format": 4294577987,
+            "format": "focus move monitor = %d\n",
+            "stack_word_1": 0,
+            "trace": [
+              4294682701,
+              4294682706,
+              4294682708,
+              4294682710,
+              4294682713,
+              4294682715,
+              4294682718,
+              4294682723,
+              4294682725
+            ],
+            "halt": "before bsr; callee and return not executed"
+          }
+        ],
+        "mutated_opcode_negative_control": {
+          "accepted": false,
+          "reason": "unsupported or corrupted opcode sequence",
+          "bytes": "faee38b901ecef610ffcd8e06080e4e001fbee430ffae30e394ba5628002"
+        },
+        "thumb_wrong_alignment_control": []
+      },
+      "mim": {
+        "decoded": {
+          "accepted": true,
+          "entry": 4294682731,
+          "file_offset": 240839,
+          "bytes": "fbee3cb901ecef610ffcd8e06080e4e001fbee5c0ffae30e392da5628002",
+          "flag_candidate": 112956,
+          "format_address": 4294578012,
+          "signed_branch_displacement": -23251,
+          "branch_target": 4294659504,
+          "format_file_offset": 136120,
+          "instructions": [
+            {
+              "address": 4294682731,
+              "bytes": "fbee3cb901",
+              "instruction": "mov.l #0x1b93c, r14"
+            },
+            {
+              "address": 4294682736,
+              "bytes": "ecef",
+              "instruction": "mov.l [r14], r15"
+            },
+            {
+              "address": 4294682738,
+              "bytes": "610f",
+              "instruction": "cmp #0, r15"
+            },
+            {
+              "address": 4294682740,
+              "bytes": "fcd8e0",
+              "instruction": "sceq.l [r14]"
+            },
+            {
+              "address": 4294682743,
+              "bytes": "6080",
+              "instruction": "sub #8, r0"
+            },
+            {
+              "address": 4294682745,
+              "bytes": "e4e001",
+              "instruction": "mov.l [r14], 4[r0]"
+            },
+            {
+              "address": 4294682748,
+              "bytes": "fbee5c0ffa",
+              "instruction": "mov.l #0xfffa0f5c, r14"
+            },
+            {
+              "address": 4294682753,
+              "bytes": "e30e",
+              "instruction": "mov.l r14, [r0]"
+            },
+            {
+              "address": 4294682755,
+              "bytes": "392da5",
+              "instruction": "bsr.w 0xfffb4db0"
+            },
+            {
+              "address": 4294682758,
+              "bytes": "6280",
+              "instruction": "add #8, r0"
+            },
+            {
+              "address": 4294682760,
+              "bytes": "02",
+              "instruction": "rts"
+            }
+          ]
+        },
+        "format": "iris move monitor = %d\n",
+        "runs": [
+          {
+            "initial": 0,
+            "flag_after": 1,
+            "stack_pointer": 2093048,
+            "call_boundary": 4294659504,
+            "stack_word_0_format": 4294578012,
+            "format": "iris move monitor = %d\n",
+            "stack_word_1": 1,
+            "trace": [
+              4294682731,
+              4294682736,
+              4294682738,
+              4294682740,
+              4294682743,
+              4294682745,
+              4294682748,
+              4294682753,
+              4294682755
+            ],
+            "halt": "before bsr; callee and return not executed"
+          },
+          {
+            "initial": 1,
+            "flag_after": 0,
+            "stack_pointer": 2093048,
+            "call_boundary": 4294659504,
+            "stack_word_0_format": 4294578012,
+            "format": "iris move monitor = %d\n",
+            "stack_word_1": 0,
+            "trace": [
+              4294682731,
+              4294682736,
+              4294682738,
+              4294682740,
+              4294682743,
+              4294682745,
+              4294682748,
+              4294682753,
+              4294682755
+            ],
+            "halt": "before bsr; callee and return not executed"
+          },
+          {
+            "initial": 2,
+            "flag_after": 0,
+            "stack_pointer": 2093048,
+            "call_boundary": 4294659504,
+            "stack_word_0_format": 4294578012,
+            "format": "iris move monitor = %d\n",
+            "stack_word_1": 0,
+            "trace": [
+              4294682731,
+              4294682736,
+              4294682738,
+              4294682740,
+              4294682743,
+              4294682745,
+              4294682748,
+              4294682753,
+              4294682755
+            ],
+            "halt": "before bsr; callee and return not executed"
+          }
+        ],
+        "mutated_opcode_negative_control": {
+          "accepted": false,
+          "reason": "unsupported or corrupted opcode sequence",
+          "bytes": "faee3cb901ecef610ffcd8e06080e4e001fbee5c0ffae30e392da5628002"
+        },
+        "thumb_wrong_alignment_control": []
+      },
+      "mzm": {
+        "decoded": {
+          "accepted": true,
+          "entry": 4294682761,
+          "file_offset": 240869,
+          "bytes": "fbee34b901ecef610ffcd8e06080e4e001fbee740ffae30e390fa5628002",
+          "flag_candidate": 112948,
+          "format_address": 4294578036,
+          "signed_branch_displacement": -23281,
+          "branch_target": 4294659504,
+          "format_file_offset": 136144,
+          "instructions": [
+            {
+              "address": 4294682761,
+              "bytes": "fbee34b901",
+              "instruction": "mov.l #0x1b934, r14"
+            },
+            {
+              "address": 4294682766,
+              "bytes": "ecef",
+              "instruction": "mov.l [r14], r15"
+            },
+            {
+              "address": 4294682768,
+              "bytes": "610f",
+              "instruction": "cmp #0, r15"
+            },
+            {
+              "address": 4294682770,
+              "bytes": "fcd8e0",
+              "instruction": "sceq.l [r14]"
+            },
+            {
+              "address": 4294682773,
+              "bytes": "6080",
+              "instruction": "sub #8, r0"
+            },
+            {
+              "address": 4294682775,
+              "bytes": "e4e001",
+              "instruction": "mov.l [r14], 4[r0]"
+            },
+            {
+              "address": 4294682778,
+              "bytes": "fbee740ffa",
+              "instruction": "mov.l #0xfffa0f74, r14"
+            },
+            {
+              "address": 4294682783,
+              "bytes": "e30e",
+              "instruction": "mov.l r14, [r0]"
+            },
+            {
+              "address": 4294682785,
+              "bytes": "390fa5",
+              "instruction": "bsr.w 0xfffb4db0"
+            },
+            {
+              "address": 4294682788,
+              "bytes": "6280",
+              "instruction": "add #8, r0"
+            },
+            {
+              "address": 4294682790,
+              "bytes": "02",
+              "instruction": "rts"
+            }
+          ]
+        },
+        "format": "zoom move monitor = %d\n",
+        "runs": [
+          {
+            "initial": 0,
+            "flag_after": 1,
+            "stack_pointer": 2093048,
+            "call_boundary": 4294659504,
+            "stack_word_0_format": 4294578036,
+            "format": "zoom move monitor = %d\n",
+            "stack_word_1": 1,
+            "trace": [
+              4294682761,
+              4294682766,
+              4294682768,
+              4294682770,
+              4294682773,
+              4294682775,
+              4294682778,
+              4294682783,
+              4294682785
+            ],
+            "halt": "before bsr; callee and return not executed"
+          },
+          {
+            "initial": 1,
+            "flag_after": 0,
+            "stack_pointer": 2093048,
+            "call_boundary": 4294659504,
+            "stack_word_0_format": 4294578036,
+            "format": "zoom move monitor = %d\n",
+            "stack_word_1": 0,
+            "trace": [
+              4294682761,
+              4294682766,
+              4294682768,
+              4294682770,
+              4294682773,
+              4294682775,
+              4294682778,
+              4294682783,
+              4294682785
+            ],
+            "halt": "before bsr; callee and return not executed"
+          },
+          {
+            "initial": 2,
+            "flag_after": 0,
+            "stack_pointer": 2093048,
+            "call_boundary": 4294659504,
+            "stack_word_0_format": 4294578036,
+            "format": "zoom move monitor = %d\n",
+            "stack_word_1": 0,
+            "trace": [
+              4294682761,
+              4294682766,
+              4294682768,
+              4294682770,
+              4294682773,
+              4294682775,
+              4294682778,
+              4294682783,
+              4294682785
+            ],
+            "halt": "before bsr; callee and return not executed"
+          }
+        ],
+        "mutated_opcode_negative_control": {
+          "accepted": false,
+          "reason": "unsupported or corrupted opcode sequence",
+          "bytes": "faee34b901ecef610ffcd8e06080e4e001fbee740ffae30e390fa5628002"
+        },
+        "thumb_wrong_alignment_control": []
+      }
+    },
+    "different_byte_positions_in_30_byte_handlers": [
+      2,
+      19,
+      25
+    ],
+    "alternative_base_controls": [
+      {
+        "base": 4294443008,
+        "translated_offset": 135737,
+        "text": "mfm",
+        "expected": "mfm"
+      },
+      {
+        "base": 0,
+        "translated_offset": 4294578745,
+        "text": null,
+        "expected": "mfm"
+      },
+      {
+        "base": 4294443009,
+        "translated_offset": 135736,
+        "text": "",
+        "expected": "mfm"
+      }
+    ],
+    "common_branch_targets": [
+      4294659504,
+      4294659504,
+      4294659504
+    ]
+  }
+}

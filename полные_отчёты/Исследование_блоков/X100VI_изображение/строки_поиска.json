@@ -1,0 +1,1177 @@
+[
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x2102a6",
+    "text": "recovery_main"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xc54f7d",
+    "text": "jpeg_qualit"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xc61610",
+    "text": "T_JPEG"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xc62951",
+    "text": "JPEG_INN"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xc68a71",
+    "text": "JPEG_HEI"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xc6a5bb",
+    "text": "JPEG_HEIF_CH"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xc7b347",
+    "text": "JPEG_QUA"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xc7c764",
+    "text": "JPEG_HEIF_CHANG"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xc7d5c9",
+    "text": "JPEG_HE"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xc8bd4a",
+    "text": "JPEGHEIF"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xca2964",
+    "text": "SD_JPEG"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xcac78e",
+    "text": "JpegHeifChang"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xcae3fe",
+    "text": "JpegHeifChang"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xcb07f2",
+    "text": "TransferImgCheckJpeg"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xcffc17",
+    "text": "JpegInner"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0xd0141a",
+    "text": "JpegHei"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x15e4656",
+    "text": "JPEG_HEI"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x15ee18f",
+    "text": "JPEG_HEI"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x15efce7",
+    "text": "JPEG_HEIF_CH"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x1669cd6",
+    "text": "SoruceJpeg"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x1673529",
+    "text": "HUMBNAIL_JPEG"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x16761e6",
+    "text": "ResIncludedJpegParams"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x1676b26",
+    "text": "MakeJpeg"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x482c38c",
+    "text": "mmc_blk_cmd_recovery"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x48f9254",
+    "text": "INFO: recovery required on readonly filesystem"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x48f92b4",
+    "text": "write access will be enabled during recovery"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x48f94d4",
+    "text": "required journal recovery suppressed and not mounted read-only"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x48f9994",
+    "text": "recovery complete"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x48f9b5c",
+    "text": "norecovery"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x48fc375",
+    "text": "3JBD2: Invalid checksum recovering block %lu in log"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x48fc3ad",
+    "text": "3JBD2: IO error %d recovering block %lu in log"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x48fc3e5",
+    "text": "3JBD2: IO error %d recovering block %ld in log"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x48fc41d",
+    "text": "3JBD2: Invalid checksum recovering block %llu in log"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x48fc455",
+    "text": "3JBD2: Out of memory during recovery."
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x48fc47d",
+    "text": "3JBD2: recovery pass %d ended at transaction %u, expected %u"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x48fcc3d",
+    "text": "4JBD2: %s recovery information on journal"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x48fcd7d",
+    "text": "4JBD2: recovery failed"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x48fec7c",
+    "text": "recoverable transport"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x49077a4",
+    "text": "AER: Device recovery successful"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x49077cc",
+    "text": "AER: Device recovery failed"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x490dc6c",
+    "text": "restore"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x490dc74",
+    "text": "recover"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x490f024",
+    "text": "Device offlined - not ready after error recovery"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x490fd44",
+    "text": "cancel/recovery"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x490fd54",
+    "text": "deleted/recovery"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x49186ec",
+    "text": "recovering %s"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x491f7b4",
+    "text": "tcp_recovery"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x491fefc",
+    "text": "TCPRenoRecovery"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x491ff0c",
+    "text": "TCPSackRecovery"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x4920054",
+    "text": "TCPLossProbeRecovery"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x492006c",
+    "text": "TCPRenoRecoveryFail"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x4920084",
+    "text": "TCPSackRecoveryFail"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x494669c",
+    "text": "_raw_write_unlock_irqrestore"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x4946756",
+    "text": "_raw_read_unlock_irqrestore"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x4946809",
+    "text": "_raw_spin_unlock_irqrestore"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x49519ec",
+    "text": "pci_restore_state"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x49520fd",
+    "text": "pci_restore_msi_state"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x495215d",
+    "text": "pci_restore_ats_state"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x4952ed9",
+    "text": "virtio_device_restore"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x4955138",
+    "text": "pm_generic_restore"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x495514b",
+    "text": "pm_generic_restore_early"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x4955164",
+    "text": "pm_generic_restore_noirq"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x495631d",
+    "text": "scsi_eh_restore_cmnd"
+  },
+  {
+    "region": "DAT_XOR_FF",
+    "offset": "0x4957ea4",
+    "text": "mmc_power_restore_host"
+  },
+  {
+    "region": "FFLZ_0x1402bc",
+    "offset": "0x14a398",
+    "text": "recovery_main"
+  },
+  {
+    "region": "FFLZ_0x1402bc",
+    "offset": "0x14a3a8",
+    "text": "recovery_disp"
+  },
+  {
+    "region": "FFLZ_0x1402bc",
+    "offset": "0x14a6f8",
+    "text": "recovery_update"
+  },
+  {
+    "region": "FFLZ_0x1402bc",
+    "offset": "0x14a720",
+    "text": "recovery_key"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x50d7a8",
+    "text": "A_REC_FCS_RESTORE"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5120e0",
+    "text": "UI:AUTOSET:ui_jpeg_quality_val Error"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x512108",
+    "text": "UI:AUTOSET:ui_jpeg_val Error"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x512128",
+    "text": "UI:AUTOSET:ui_jpeg_heif_change_val Error"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x559ef8",
+    "text": "MODE_RECORD_MOTIONJPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x55b3a0",
+    "text": "MODE_STILL_FORMAT_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x55ef80",
+    "text": "MODE_JPEG_INNER_JPEG_OFF"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x55efa0",
+    "text": "MODE_JPEG_INNER_JPEG_ON"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x55efb8",
+    "text": "MODE_JPEG_INNER_JPEG_NUM"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x561878",
+    "text": "MODE_MEDIA_WRITE_ON_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x563598",
+    "text": "FRAME_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5635a8",
+    "text": "FRAME_JPEG_THUMB"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x563648",
+    "text": "FRAME_JPEG_RAF"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x563658",
+    "text": "FRAME_JPEG_THUMB_RAF"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x563670",
+    "text": "FRAME_JPEG_RAF_VOICE"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x563688",
+    "text": "FRAME_JPEG_THUMB_RAF_VOICE"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5636c8",
+    "text": "FRAME_MPO_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5636d8",
+    "text": "FRAME_MPO_THUMB_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x563760",
+    "text": "FRAME_OBJ_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x563790",
+    "text": "FRAME_OBJ_JPEG_RAF"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x567a08",
+    "text": "UI_SETP_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x567a18",
+    "text": "UI_SETP_JPEG_QUALITY"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x577690",
+    "text": "UI_SETP_JPEG_HEIF_CHANGE"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x57cfc8",
+    "text": "UI_SETP_DOTLCD_JPEG_HEIF_CHANGE"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x57dfa8",
+    "text": "UI_SETP_TRANSFER_IMG_CHECK_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x57e008",
+    "text": "UI_SETP_FTP_TRANSFER_IMG_CHECK_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x57e188",
+    "text": "UI_SETP_FRAMEIO_TRANSFER_IMG_CHECK_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x57e228",
+    "text": "UI_SETP_C2PA_TRANSFER_IMG_CHECK_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5861c8",
+    "text": "WLESS_RESTORE_SETTINGS_REQ"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5861e8",
+    "text": "WLESS_RESTORE_SETTINGS_END"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x586350",
+    "text": "MOBILE_RESTORE_SETTING_REQ"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x586370",
+    "text": "MOBILE_RESTORE_SETTING_END"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x58bb58",
+    "text": "UI_STM_STATENO_RESTORING_BACKUP_DATA"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x58f720",
+    "text": "UI_MENU_KIND_JPEG_HEIF_CHANGE"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x594ad0",
+    "text": "UI_DPS_FILE_JPEG_NONSUPPORT"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5aa1f0",
+    "text": "UI_EXE_BACKUP_RESTORE_SETPARAM"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5b1f30",
+    "text": "UI_JPEG_VAL_IGNORE_SET"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5b1f48",
+    "text": "UI_JPEG_ON"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5b1f58",
+    "text": "UI_JPEG_OFF"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5b1f68",
+    "text": "UI_JPEG_VAL_MAX"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5b1f78",
+    "text": "UI_JPEG_VAL_BACKUP_GET"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5b1f90",
+    "text": "UI_JPEG_VAL_PREV_GET"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5b4038",
+    "text": "UI_REC_MODE_CHG_MOTIONJPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5b6b70",
+    "text": "UI_JPEG_QUALITY_VAL_IGNORE_SET"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5b6b90",
+    "text": "UI_JPEG_QUALITY_NORMAL"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5b6ba8",
+    "text": "UI_JPEG_QUALITY_FINE"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5b6bc0",
+    "text": "UI_JPEG_QUALITY_SUPER_FINE"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5b6be0",
+    "text": "UI_JPEG_QUALITY_VAL_MAX"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5b6bf8",
+    "text": "UI_JPEG_QUALITY_VAL_BACKUP_GET"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5b6c18",
+    "text": "UI_JPEG_QUALITY_VAL_PREV_GET"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5baf00",
+    "text": "UI_RAW_DEV_KIND_AUTOSET_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5bc188",
+    "text": "UI_JPEG_HEIF_CHANGE_VAL_IGNORE_SET"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5bc1b0",
+    "text": "UI_JPEG_HEIF_CHANGE_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5bc1d0",
+    "text": "UI_JPEG_HEIF_CHANGE_HEIF"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5bc1f0",
+    "text": "UI_JPEG_HEIF_CHANGE_VAL_MAX"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5bc210",
+    "text": "UI_JPEG_HEIF_CHANGE_VAL_BACKUP_GET"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5bc238",
+    "text": "UI_JPEG_HEIF_CHANGE_VAL_PREV_GET"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5bdee8",
+    "text": "UI_AUTOSET_FACTOR_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5be920",
+    "text": "UI_AUTOSET_FACTOR_JPEG_QUALITY"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5bf648",
+    "text": "UI_AUTOSET_FACTOR_JPEG_HEIF_CHANGE"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5c4e98",
+    "text": "TSK_RECMVBK_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5c5928",
+    "text": "TSK_RECOVERY_KEY"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5c5940",
+    "text": "TSK_RECOVERY_MAIN"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5c5958",
+    "text": "TSK_RECOVERY_DISP"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5c5970",
+    "text": "TSK_RECOVERY_UPDATE"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5cad40",
+    "text": "UI_MENUCOM_ITEM_JPEG_HEIF_CHANGE"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5cdb00",
+    "text": "ERR_FOCUS_RESTORE"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5d0e40",
+    "text": "UI_EVT_WLESS_RESTORE_SETTING_REQ"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5d0e68",
+    "text": "UI_EVT_WLESS_RESTORE_SETTING_END"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5e1568",
+    "text": "PB_RAW_FILETYPE_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5ee390",
+    "text": "MSG_ITEM_JPEGHEIFSET"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5ee3a8",
+    "text": "MSG_TITLE_JPEGHEIFSET"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5ee3c0",
+    "text": "MSG_ITEM_JPEGHEIFSET_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5ee3e0",
+    "text": "MSG_ITEM_JPEGHEIFSET_HEIF"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5ee400",
+    "text": "MSG_VALS_JPEGHEIFSET_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5ee420",
+    "text": "MSG_VALS_JPEGHEIFSET_HEIF"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5ee440",
+    "text": "MSG_COMMENT_JPEGHEIFSET_HEIF"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5ee4e8",
+    "text": "MSG_VALM_HEIFCONVERT_FILETYPE_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5ee560",
+    "text": "MSG_VALS_HEIFCONVERT_FILETYPE_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5f0098",
+    "text": "MSG_VALM_BT_SENDTARGET_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5f4380",
+    "text": "MSG_ITEM_FRAMEIOFILE_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x5fd5b0",
+    "text": "ICO_SD_JPEG_OL"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x612070",
+    "text": "REC_REMAIN_COUNT_JPEG_INNER_DEFAULT"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x64a770",
+    "text": "DOT_5013_ICO_SVG_SD_JPEG"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x6589e8",
+    "text": "UI_COMM_MENU_SET_REG_BY_PURPOSE_PC_BACKUP_RESTORE"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x65cab0",
+    "text": "SYS_BT_NOTIFY_RESTORE_STATE"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x6618e1",
+    "text": "$BACKUP[%d]bJpeg %s(%d)->%s(%d)"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x678639",
+    "text": "$BACKUP_FROM[%d][%d]bJpegHeifChange %s(%d)->%s(%d)"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x678671",
+    "text": "$BACKUP_NON[%d][%d]bJpegHeifChange %s(%d)->%s(%d)"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x6786a9",
+    "text": "$BACKUP[%d]bJpegHeifChange %s(%d)->%s(%d)"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x680d39",
+    "text": "$BACKUP[%d]eDotlcd_JpegHeifChange %s(%d)->%s(%d)"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x682621",
+    "text": "$BACKUP[%d]eTransferImgCheckJpeg %s(%d)->%s(%d)"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x682729",
+    "text": "$BACKUP[%d]eFtpTransferimgCheckJpeg %s(%d)->%s(%d)"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x68cfb9",
+    "text": "$BACKUP[%d]eFrameIoTransferImgCheckJpeg %s(%d)->%s(%d)"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x68de21",
+    "text": "$BACKUP[%d]eC2PATransferImgCheckJpeg %s(%d)->%s(%d)"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x7f75e1",
+    "text": "$INPUT eModeJpegInnerJpeg %s->%s"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x7fc109",
+    "text": "$INFO_REC tJpegHeif.bUnUserSet[%s] %d->%d"
+  },
+  {
+    "region": "FFLZ_0x9c02bc",
+    "offset": "0x7fc139",
+    "text": "$INFO_REC tJpegHeif.bFactor[%s]  %d->%d"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x83fdc8",
+    "text": "UI_MENUCOM_ITEM_JPEG_HEIF_CHANGE"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8454c0",
+    "text": "UI_JPEG_ON"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8454d0",
+    "text": "UI_JPEG_OFF"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8454e0",
+    "text": "UI_JPEG_QUALITY_NORMAL"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8454f8",
+    "text": "UI_JPEG_QUALITY_FINE"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x845510",
+    "text": "UI_JPEG_QUALITY_SUPER_FINE"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x84cd80",
+    "text": "UI_REC_MODE_CHG_MOTIONJPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x84d288",
+    "text": "UI_MYMENU_JPEG_HEIF_CHANGE"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x85b8a0",
+    "text": "UI_JPEG_HEIF_CHANGE_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x85b8c0",
+    "text": "UI_JPEG_HEIF_CHANGE_HEIF"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x866000",
+    "text": "UI_RAW_DEV_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x866050",
+    "text": "UI_RAW_DEV_KIND_AUTOSET_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x869178",
+    "text": "UI_PLAY_HEIF_CONV_FORMAT_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x86fb30",
+    "text": "UI_COMM_MENU_SET_REG_BY_PURPOSE_PC_BACKUP_RESTORE"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x86fee8",
+    "text": "UI_TRANSFER_IMG_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x86ff30",
+    "text": "UI_FTP_TRANSFER_IMG_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x870050",
+    "text": "UI_FRAMEIO_TRANSFER_IMG_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8700d0",
+    "text": "UI_C2PA_TRANSFER_IMG_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x873dc0",
+    "text": "UI_SETP_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x873dd0",
+    "text": "UI_SETP_JPEG_QUALITY"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x883c40",
+    "text": "UI_SETP_JPEG_HEIF_CHANGE"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x889590",
+    "text": "UI_SETP_DOTLCD_JPEG_HEIF_CHANGE"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x88a570",
+    "text": "UI_SETP_TRANSFER_IMG_CHECK_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x88a5d0",
+    "text": "UI_SETP_FTP_TRANSFER_IMG_CHECK_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x88a750",
+    "text": "UI_SETP_FRAMEIO_TRANSFER_IMG_CHECK_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x88a7f0",
+    "text": "UI_SETP_C2PA_TRANSFER_IMG_CHECK_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x890a10",
+    "text": "(JPEG)"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x890a32",
+    "text": "YC(JPEG)"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x891720",
+    "text": "recbjpeg"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8938b0",
+    "text": "Q_BKLIST_JPEG_"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8938c8",
+    "text": "Q_BKLIST_JPEG_"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8938e0",
+    "text": "Q_BKLIST_JPEG_"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x893900",
+    "text": "Q_BKLIST_JPEG_"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x893920",
+    "text": "Q_BKLIST_JPEG_"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x893940",
+    "text": "Q_BKLIST_JPEG_"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x893960",
+    "text": "Q_BKLIST_JPEG_"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x893980",
+    "text": "Q_BKLIST_JPEG_"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8939a0",
+    "text": "Q_BKLIST_JPEG_"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8939c0",
+    "text": "Q_BKLIST_JPEG_"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x893dc8",
+    "text": "RCV_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x895612",
+    "text": "CreateExifHeadTiffInnerJpeg"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8963b0",
+    "text": "LIST_JPEG_COMP"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8963d8",
+    "text": "LIST_JPEG_COMP_RAF"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x896408",
+    "text": "LIST_JPEG_COMP_RAF_INNER"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x896440",
+    "text": "LIST_JPEG_COMP_RAF_RAW"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8969e8",
+    "text": "PROC_MOTION_JPEG_COMP"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8970c8",
+    "text": "MJPEG_S"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8970d0",
+    "text": "MJPEG_E"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x8970d8",
+    "text": "LIST_MOTION_JPEG_COMP"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xa40a08",
+    "text": ">> rec_focus_pos_restore(id=0x%04X)"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xa64e98",
+    "text": "rmbJpeg"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xa70228",
+    "text": "RECCONT:RESTORE"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xa8d6f8",
+    "text": "FFHashSoruceJpeg"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xa8d710",
+    "text": "FFHashGenerateJpeg"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xa8d728",
+    "text": "FFHashWriteJpeg"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xaa7968",
+    "text": "recmvsJpegCompComplete"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xaa7980",
+    "text": "recmvsJpegTransComplete"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xaa79b0",
+    "text": "recmvsJpegComp"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xaa79d8",
+    "text": "recmvsJpegTrans"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xaa7b40",
+    "text": "recmvsFreeJpegMemoryInFrame"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xaa7f98",
+    "text": "RECMB_SV_THUMBNAIL_JPEG"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xaa7fb0",
+    "text": "RECMB_SV_JPEG_COMP"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xaaf908",
+    "text": "imsCalcResIncludedJpegParams"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xaaf928",
+    "text": "imsCalcResIncludedJpegParams1"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xaafb50",
+    "text": "imsSetDecompParamForJpeg_SamplingErr"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0xab1378",
+    "text": "imsCompress MakeJpegErr"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x14cf106",
+    "text": "REC_T_FOCUS_STORE_RESTORE"
+  },
+  {
+    "region": "FFLZ_0x10e02bc",
+    "offset": "0x14cf13c",
+    "text": "REC_M_FOCUS_STORE_RESTORE"
+  },
+  {
+    "region": "FFLZ_0x1a202bc",
+    "offset": "0xa38ce0",
+    "text": "recovered %d pages from %s"
+  }
+]

@@ -1,0 +1,346 @@
+{
+  "source": "<корень проекта>\\FIRMWARE\\ver 5.30\\FWUP0028.DAT",
+  "source_sha256": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "packed_block_file_offset": "0x840274",
+  "decoded_block_sha256": "a49b88c00d3724239207e6564f2dfbf9d0a59b41962012d44a05738455d2addd",
+  "header_address_basis": "0x29ae000",
+  "record_shape": "u64 name_pointer, u64 enumeration_value, little endian",
+  "film_dictionary_start": "0x878f58",
+  "film_dictionary_records": 26,
+  "related_setting_values": 255,
+  "setting_id_records": 17,
+  "film_simulations": [
+    {
+      "record_offset": 8884056,
+      "string_offset": 8498480,
+      "pointer": 52202800,
+      "value": 0,
+      "name": "UI_FILM_SIM_STD"
+    },
+    {
+      "record_offset": 8884072,
+      "string_offset": 8498496,
+      "pointer": 52202816,
+      "value": 1,
+      "name": "UI_FILM_SIM_F1B"
+    },
+    {
+      "record_offset": 8884088,
+      "string_offset": 8498512,
+      "pointer": 52202832,
+      "value": 2,
+      "name": "UI_FILM_SIM_F1C"
+    },
+    {
+      "record_offset": 8884104,
+      "string_offset": 8498528,
+      "pointer": 52202848,
+      "value": 3,
+      "name": "UI_FILM_SIM_F2"
+    },
+    {
+      "record_offset": 8884120,
+      "string_offset": 8498544,
+      "pointer": 52202864,
+      "value": 4,
+      "name": "UI_FILM_SIM_BW"
+    },
+    {
+      "record_offset": 8884136,
+      "string_offset": 8498560,
+      "pointer": 52202880,
+      "value": 5,
+      "name": "UI_FILM_SIM_SEPIA"
+    },
+    {
+      "record_offset": 8884152,
+      "string_offset": 8498584,
+      "pointer": 52202904,
+      "value": 6,
+      "name": "UI_FILM_SIM_CHROME"
+    },
+    {
+      "record_offset": 8884168,
+      "string_offset": 8498608,
+      "pointer": 52202928,
+      "value": 7,
+      "name": "UI_FILM_SIM_BW_FILTER"
+    },
+    {
+      "record_offset": 8884184,
+      "string_offset": 8498632,
+      "pointer": 52202952,
+      "value": 8,
+      "name": "UI_FILM_SIM_BW_FILTER_NON"
+    },
+    {
+      "record_offset": 8884200,
+      "string_offset": 8498664,
+      "pointer": 52202984,
+      "value": 9,
+      "name": "UI_FILM_SIM_BW_FILTER_R"
+    },
+    {
+      "record_offset": 8884216,
+      "string_offset": 8498688,
+      "pointer": 52203008,
+      "value": 10,
+      "name": "UI_FILM_SIM_BW_FILTER_Y"
+    },
+    {
+      "record_offset": 8884232,
+      "string_offset": 8498712,
+      "pointer": 52203032,
+      "value": 11,
+      "name": "UI_FILM_SIM_BW_FILTER_G"
+    },
+    {
+      "record_offset": 8884248,
+      "string_offset": 8498736,
+      "pointer": 52203056,
+      "value": 12,
+      "name": "UI_FILM_SIM_PRONEGA_S"
+    },
+    {
+      "record_offset": 8884264,
+      "string_offset": 8498760,
+      "pointer": 52203080,
+      "value": 13,
+      "name": "UI_FILM_SIM_PRONEGA_H"
+    },
+    {
+      "record_offset": 8884280,
+      "string_offset": 8498784,
+      "pointer": 52203104,
+      "value": 14,
+      "name": "UI_FILM_SIM_CLASSIC_CHROME"
+    },
+    {
+      "record_offset": 8884296,
+      "string_offset": 8498816,
+      "pointer": 52203136,
+      "value": 15,
+      "name": "UI_FILM_SIM_SUPERIA"
+    },
+    {
+      "record_offset": 8884312,
+      "string_offset": 8498840,
+      "pointer": 52203160,
+      "value": 16,
+      "name": "UI_FILM_SIM_AMERICAN_NEW_COLOR"
+    },
+    {
+      "record_offset": 8884328,
+      "string_offset": 8498872,
+      "pointer": 52203192,
+      "value": 17,
+      "name": "UI_FILM_SIM_REALA"
+    },
+    {
+      "record_offset": 8884344,
+      "string_offset": 8498896,
+      "pointer": 52203216,
+      "value": 18,
+      "name": "UI_FILM_SIM_ETERNA"
+    },
+    {
+      "record_offset": 8884360,
+      "string_offset": 8498920,
+      "pointer": 52203240,
+      "value": 19,
+      "name": "UI_FILM_SIM_BLEACH_BYPASS"
+    },
+    {
+      "record_offset": 8884376,
+      "string_offset": 8498952,
+      "pointer": 52203272,
+      "value": 20,
+      "name": "UI_FILM_SIM_ACROS_FILTER"
+    },
+    {
+      "record_offset": 8884392,
+      "string_offset": 8498984,
+      "pointer": 52203304,
+      "value": 21,
+      "name": "UI_FILM_SIM_ACROS_FILTER_NON"
+    },
+    {
+      "record_offset": 8884408,
+      "string_offset": 8499016,
+      "pointer": 52203336,
+      "value": 22,
+      "name": "UI_FILM_SIM_ACROS_FILTER_R"
+    },
+    {
+      "record_offset": 8884424,
+      "string_offset": 8499048,
+      "pointer": 52203368,
+      "value": 23,
+      "name": "UI_FILM_SIM_ACROS_FILTER_Y"
+    },
+    {
+      "record_offset": 8884440,
+      "string_offset": 8499080,
+      "pointer": 52203400,
+      "value": 24,
+      "name": "UI_FILM_SIM_ACROS_FILTER_G"
+    },
+    {
+      "record_offset": 8884456,
+      "string_offset": 8499112,
+      "pointer": 52203432,
+      "value": 25,
+      "name": "UI_FILM_SIM_AUTO"
+    }
+  ],
+  "setting_ids": [
+    {
+      "record_offset": 8781976,
+      "string_offset": 8620832,
+      "pointer": 52325152,
+      "value": 262,
+      "name": "UI_SETP_GRAIN"
+    },
+    {
+      "record_offset": 8781992,
+      "string_offset": 8620848,
+      "pointer": 52325168,
+      "value": 263,
+      "name": "UI_SETP_GRAIN_SIZE"
+    },
+    {
+      "record_offset": 8782024,
+      "string_offset": 8620888,
+      "pointer": 52325208,
+      "value": 265,
+      "name": "UI_SETP_SHADOWING"
+    },
+    {
+      "record_offset": 8782040,
+      "string_offset": 8620912,
+      "pointer": 52325232,
+      "value": 266,
+      "name": "UI_SETP_BLUE_EFFECT"
+    },
+    {
+      "record_offset": 8802184,
+      "string_offset": 8664272,
+      "pointer": 52368592,
+      "value": 1525,
+      "name": "UI_SETP_WB"
+    },
+    {
+      "record_offset": 8802408,
+      "string_offset": 8664704,
+      "pointer": 52369024,
+      "value": 1539,
+      "name": "UI_SETP_NR"
+    },
+    {
+      "record_offset": 8802440,
+      "string_offset": 8664744,
+      "pointer": 52369064,
+      "value": 1541,
+      "name": "UI_SETP_CLARITY"
+    },
+    {
+      "record_offset": 8804632,
+      "string_offset": 8668496,
+      "pointer": 52372816,
+      "value": 1678,
+      "name": "UI_SETP_FILM_SIM"
+    },
+    {
+      "record_offset": 8804648,
+      "string_offset": 8668520,
+      "pointer": 52372840,
+      "value": 1679,
+      "name": "UI_SETP_FILM_SIM_ACROS"
+    },
+    {
+      "record_offset": 8804664,
+      "string_offset": 8668544,
+      "pointer": 52372864,
+      "value": 1680,
+      "name": "UI_SETP_FILM_SIM_MONO"
+    },
+    {
+      "record_offset": 8805016,
+      "string_offset": 8669200,
+      "pointer": 52373520,
+      "value": 1702,
+      "name": "UI_SETP_DRANGE"
+    },
+    {
+      "record_offset": 8805224,
+      "string_offset": 8669520,
+      "pointer": 52373840,
+      "value": 1715,
+      "name": "UI_SETP_STILLCOLOR"
+    },
+    {
+      "record_offset": 8805256,
+      "string_offset": 8669576,
+      "pointer": 52373896,
+      "value": 1717,
+      "name": "UI_SETP_SHARPNESS"
+    },
+    {
+      "record_offset": 8805320,
+      "string_offset": 8669664,
+      "pointer": 52373984,
+      "value": 1721,
+      "name": "UI_SETP_HIGHLIGHT"
+    },
+    {
+      "record_offset": 8805352,
+      "string_offset": 8669712,
+      "pointer": 52374032,
+      "value": 1723,
+      "name": "UI_SETP_SHADOW"
+    },
+    {
+      "record_offset": 8805416,
+      "string_offset": 8669800,
+      "pointer": 52374120,
+      "value": 1727,
+      "name": "UI_SETP_WB_TUNING_R"
+    },
+    {
+      "record_offset": 8805896,
+      "string_offset": 8670856,
+      "pointer": 52375176,
+      "value": 1757,
+      "name": "UI_SETP_WB_TUNING_B"
+    }
+  ],
+  "family_counts": {
+    "чёткость": 12,
+    "светлые_участки": 13,
+    "тёмные_участки": 13,
+    "сдвиг_баланса_белого": 38,
+    "тонирование_монохрома": 74,
+    "динамический_диапазон": 6,
+    "цвет": 9,
+    "резкость": 9,
+    "шумоподавление": 9,
+    "зерно": 12,
+    "эффекты_цвета_внутренние_названия": 6,
+    "баланс_белого": 54
+  },
+  "raw_to_named_examples": {
+    "UI_CLARITY_0": 5,
+    "UI_HIGHLIGHT_0": 8,
+    "UI_SHADOW_0": 8,
+    "UI_WB_TUNING_R_0": 9,
+    "UI_WB_TUNING_B_0": 9,
+    "UI_GRAIN_OFF": 2
+  },
+  "limits": [
+    "Enum dictionary codes are not image-processing coefficients.",
+    "Dictionary presence does not prove availability on this camera.",
+    "This does not identify firmware storage layout or USB/EXIF protocol codes.",
+    "No per-film colour LUTs, tone curves or factory preset bundles have been established."
+  ],
+  "input_unchanged": true
+}

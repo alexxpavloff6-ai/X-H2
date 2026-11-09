@@ -1,0 +1,366 @@
+{
+  "X-H2": {
+    "source_sha256_before": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+    "source_sha256_after": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+    "function": "0x2e51064",
+    "field_gate": "0x3978",
+    "field_mode": "0x39b8",
+    "field_color": "0x39b4",
+    "inputs": {
+      "gate": 2,
+      "mode": 19,
+      "color": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "outputs": [
+      224,
+      192,
+      256,
+      128,
+      0,
+      384,
+      1024,
+      1216,
+      1248
+    ],
+    "controls": [
+      {
+        "gate": 2,
+        "mode": 4,
+        "color": 3,
+        "return": 768
+      },
+      {
+        "gate": 46,
+        "mode": 19,
+        "color": 3,
+        "return": 65535
+      },
+      {
+        "gate": 2,
+        "mode": 19,
+        "color": 9,
+        "return": 0
+      }
+    ],
+    "first_instructions": [
+      "02e51064 e20300aa mov x2, x0",
+      "02e51068 047879b9 ldr w4, [x0, #0x3978]",
+      "02e5106c 9fb40071 cmp w4, #0x2d",
+      "02e51070 80010054 b.eq #0x2e510a0",
+      "02e51074 01b879b9 ldr w1, [x0, #0x39b8]",
+      "02e51078 3f280071 cmp w1, #0xa",
+      "02e5107c c00c0054 b.eq #0x2e51214",
+      "02e51080 e8070054 b.hi #0x2e5117c"
+    ],
+    "film_function": "0x2e516fc",
+    "film_conversions": [
+      {
+        "mode": 0,
+        "return": 0
+      },
+      {
+        "mode": 4,
+        "return": 65535
+      },
+      {
+        "mode": 13,
+        "return": 1536
+      },
+      {
+        "mode": 19,
+        "return": 2048
+      },
+      {
+        "mode": 22,
+        "return": 2816
+      }
+    ],
+    "block_sha256": [
+      "3aacc331157312a03531266cd9aca0daea28597b9f3535bb6141105ad7354b4d",
+      "a49b88c00d3724239207e6564f2dfbf9d0a59b41962012d44a05738455d2addd"
+    ]
+  },
+  "X-H2S": {
+    "source_sha256_before": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+    "source_sha256_after": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+    "function": "0x3168340",
+    "field_gate": "0x391c",
+    "field_mode": "0x395c",
+    "field_color": "0x3958",
+    "inputs": {
+      "gate": 2,
+      "mode": 19,
+      "color": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "outputs": [
+      224,
+      192,
+      256,
+      128,
+      0,
+      384,
+      1024,
+      1216,
+      1248
+    ],
+    "controls": [
+      {
+        "gate": 2,
+        "mode": 4,
+        "color": 3,
+        "return": 768
+      },
+      {
+        "gate": 46,
+        "mode": 19,
+        "color": 3,
+        "return": 65535
+      },
+      {
+        "gate": 2,
+        "mode": 19,
+        "color": 9,
+        "return": 0
+      }
+    ],
+    "first_instructions": [
+      "03168340 e20300aa mov x2, x0",
+      "03168344 041c79b9 ldr w4, [x0, #0x391c]",
+      "03168348 9fb40071 cmp w4, #0x2d",
+      "0316834c 80010054 b.eq #0x316837c",
+      "03168350 015c79b9 ldr w1, [x0, #0x395c]",
+      "03168354 3f280071 cmp w1, #0xa",
+      "03168358 600d0054 b.eq #0x3168504",
+      "0316835c c8070054 b.hi #0x3168454"
+    ],
+    "film_function": "0x31689e4",
+    "film_conversions": [
+      {
+        "mode": 0,
+        "return": 0
+      },
+      {
+        "mode": 4,
+        "return": 65535
+      },
+      {
+        "mode": 13,
+        "return": 1536
+      },
+      {
+        "mode": 19,
+        "return": 2048
+      },
+      {
+        "mode": 22,
+        "return": 2816
+      }
+    ],
+    "block_sha256": [
+      "a32a90b7efefaebcf3b9c3f076cb23f82c1f4dda45bf828a024487fc0fb06c16",
+      "86c8c9f01ae6840f791bffea050e8442ff9e967b6b7cbbb7f9d8141dd41d764f"
+    ]
+  },
+  "X-T5": {
+    "source_sha256_before": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+    "source_sha256_after": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+    "function": "0x2d8f19c",
+    "field_gate": "0x39c0",
+    "field_mode": "0x3a00",
+    "field_color": "0x39fc",
+    "inputs": {
+      "gate": 2,
+      "mode": 19,
+      "color": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "outputs": [
+      224,
+      192,
+      256,
+      128,
+      0,
+      384,
+      1024,
+      1216,
+      1248
+    ],
+    "controls": [
+      {
+        "gate": 2,
+        "mode": 4,
+        "color": 3,
+        "return": 768
+      },
+      {
+        "gate": 46,
+        "mode": 19,
+        "color": 3,
+        "return": 65535
+      },
+      {
+        "gate": 2,
+        "mode": 19,
+        "color": 9,
+        "return": 0
+      }
+    ],
+    "first_instructions": [
+      "02d8f19c fd7bbea9 stp x29, x30, [sp, #-0x20]!",
+      "02d8f1a0 fd030091 mov x29, sp",
+      "02d8f1a4 f30b00f9 str x19, [sp, #0x10]",
+      "02d8f1a8 f30300aa mov x19, x0",
+      "02d8f1ac 02c079b9 ldr w2, [x0, #0x39c0]",
+      "02d8f1b0 5fb40071 cmp w2, #0x2d",
+      "02d8f1b4 a0010054 b.eq #0x2d8f1e8",
+      "02d8f1b8 01007ab9 ldr w1, [x0, #0x3a00]"
+    ],
+    "film_function": "0x2d8f8b4",
+    "film_conversions": [
+      {
+        "mode": 0,
+        "return": 0
+      },
+      {
+        "mode": 4,
+        "return": 65535
+      },
+      {
+        "mode": 13,
+        "return": 1536
+      },
+      {
+        "mode": 19,
+        "return": 2048
+      },
+      {
+        "mode": 22,
+        "return": 2816
+      }
+    ],
+    "block_sha256": [
+      "fd5f899217a833552f135d719d22e025aea2e0780b2fd1f8c66b353ead969724",
+      "d74dba337fe4078a6ee15ca5fddba7e502bdefb980825a09a15f9b13a01eb350"
+    ]
+  },
+  "X100VI": {
+    "source_sha256_before": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+    "source_sha256_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+    "function": "0x305f144",
+    "field_gate": "0x3fa8",
+    "field_mode": "0x3fe8",
+    "field_color": "0x3fe4",
+    "inputs": {
+      "gate": 2,
+      "mode": 19,
+      "color": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "outputs": [
+      224,
+      192,
+      256,
+      128,
+      0,
+      384,
+      1024,
+      1216,
+      1248
+    ],
+    "controls": [
+      {
+        "gate": 2,
+        "mode": 4,
+        "color": 3,
+        "return": 768
+      },
+      {
+        "gate": 46,
+        "mode": 19,
+        "color": 3,
+        "return": 65535
+      },
+      {
+        "gate": 2,
+        "mode": 19,
+        "color": 9,
+        "return": 0
+      }
+    ],
+    "first_instructions": [
+      "0305f144 fd7bbea9 stp x29, x30, [sp, #-0x20]!",
+      "0305f148 fd030091 mov x29, sp",
+      "0305f14c f30b00f9 str x19, [sp, #0x10]",
+      "0305f150 f30300aa mov x19, x0",
+      "0305f154 02a87fb9 ldr w2, [x0, #0x3fa8]",
+      "0305f158 5fb40071 cmp w2, #0x2d",
+      "0305f15c a0010054 b.eq #0x305f190",
+      "0305f160 01e87fb9 ldr w1, [x0, #0x3fe8]"
+    ],
+    "film_function": "0x305f888",
+    "film_conversions": [
+      {
+        "mode": 0,
+        "return": 0
+      },
+      {
+        "mode": 4,
+        "return": 65535
+      },
+      {
+        "mode": 13,
+        "return": 1536
+      },
+      {
+        "mode": 19,
+        "return": 2048
+      },
+      {
+        "mode": 22,
+        "return": 2816
+      }
+    ],
+    "block_sha256": [
+      "77456fe5c9808ce5e638b1a5f6f12d9e8e40c1751e1f9b4640134fde662e09d4",
+      "14b0557bd724fa74b51ff641fcd5481da5b3ac64146d4fc69375086dafcfb174"
+    ]
+  }
+}

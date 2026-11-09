@@ -1,0 +1,2524 @@
+{
+  "method": "Each model: original instructions; synthetic RAM and registers, independently started fragments, no UI or camera; WB manually starts in the discriminator=10 branch. The calculator uses an artificial mode=13 and base DAT settings image manually attached, not real calibration.",
+  "cameras": {
+    "X-H2": {
+      "dat": "FIRMWARE/ver 5.30/FWUP0028.DAT",
+      "sha256_before": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+      "sha256_after": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+      "offsets": {
+        "chrome": "0x3f10",
+        "blue": "0x3f14",
+        "wb_temperature": "0x3a94"
+      },
+      "chrome_fragment": [
+        {
+          "pc": "0x2df1d38",
+          "bytes": "80127fb9",
+          "asm": "ldr w0, [x20, #0x3f10]"
+        },
+        {
+          "pc": "0x2df1d3c",
+          "bytes": "608e01b9",
+          "asm": "str w0, [x19, #0x18c]"
+        },
+        {
+          "pc": "0x2df1d40",
+          "bytes": "80167fb9",
+          "asm": "ldr w0, [x20, #0x3f14]"
+        },
+        {
+          "pc": "0x2df1d44",
+          "bytes": "609201b9",
+          "asm": "str w0, [x19, #0x190]"
+        }
+      ],
+      "consumer_fragment": [
+        {
+          "pc": "0x2f3a190",
+          "bytes": "818e41b9",
+          "asm": "ldr w1, [x20, #0x18c]"
+        },
+        {
+          "pc": "0x2f3a194",
+          "bytes": "e00313aa",
+          "asm": "mov x0, x19"
+        },
+        {
+          "pc": "0x2f3a198",
+          "bytes": "1efdff97",
+          "asm": "bl #0x2f39610"
+        },
+        {
+          "pc": "0x2f3a19c",
+          "bytes": "819241b9",
+          "asm": "ldr w1, [x20, #0x190]"
+        },
+        {
+          "pc": "0x2f3a1a0",
+          "bytes": "e00313aa",
+          "asm": "mov x0, x19"
+        },
+        {
+          "pc": "0x2f3a1a4",
+          "bytes": "25fdff97",
+          "asm": "bl #0x2f39638"
+        }
+      ],
+      "wb_fragment": [
+        {
+          "pc": "0x2de561c",
+          "bytes": "600a4091",
+          "asm": "add x0, x19, #2, lsl #12"
+        },
+        {
+          "pc": "0x2de5620",
+          "bytes": "00287579",
+          "asm": "ldrh w0, [x0, #0x1a94]"
+        },
+        {
+          "pc": "0x2de5624",
+          "bytes": "55399c97",
+          "asm": "bl #0x14f3b78"
+        },
+        {
+          "pc": "0x2de5628",
+          "bytes": "e05b0179",
+          "asm": "strh w0, [sp, #0xac]"
+        },
+        {
+          "pc": "0x2de562c",
+          "bytes": "60827ab9",
+          "asm": "ldr w0, [x19, #0x3a80]"
+        },
+        {
+          "pc": "0x2de5630",
+          "bytes": "48399c97",
+          "asm": "bl #0x14f3b50"
+        },
+        {
+          "pc": "0x2de5634",
+          "bytes": "e0b300b9",
+          "asm": "str w0, [sp, #0xb0]"
+        },
+        {
+          "pc": "0x2de5638",
+          "bytes": "78124091",
+          "asm": "add x24, x19, #4, lsl #12"
+        },
+        {
+          "pc": "0x2de563c",
+          "bytes": "00374479",
+          "asm": "ldrh w0, [x24, #0x21a]"
+        },
+        {
+          "pc": "0x2de5640",
+          "bytes": "e06b0179",
+          "asm": "strh w0, [sp, #0xb4]"
+        },
+        {
+          "pc": "0x2de5644",
+          "bytes": "f75f00f9",
+          "asm": "str x23, [sp, #0xb8]"
+        },
+        {
+          "pc": "0x2de5648",
+          "bytes": "030080d2",
+          "asm": "mov x3, #0"
+        },
+        {
+          "pc": "0x2de564c",
+          "bytes": "e203192a",
+          "asm": "mov w2, w25"
+        },
+        {
+          "pc": "0x2de5650",
+          "bytes": "e1e30191",
+          "asm": "add x1, sp, #0x78"
+        },
+        {
+          "pc": "0x2de5654",
+          "bytes": "e0630291",
+          "asm": "add x0, sp, #0x98"
+        },
+        {
+          "pc": "0x2de5658",
+          "bytes": "ee6a0694",
+          "asm": "bl #0x2f80210"
+        }
+      ],
+      "cases": [
+        {
+          "case": "strong_5750",
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            2,
+            2
+          ],
+          "consumer_output_words": [
+            2,
+            2
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2df1d38",
+              "offset": "0x3f10",
+              "size": 4,
+              "bytes": "02000000"
+            },
+            {
+              "pc": "0x2df1d40",
+              "offset": "0x3f14",
+              "size": 4,
+              "bytes": "02000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2de5620",
+              "offset": "0x3a94",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2de562c",
+              "offset": "0x3a80",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2de563c",
+              "offset": "0x421a",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x2f80210",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x2f7ef80",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "chrome_off",
+          "inputs": {
+            "chrome": 0,
+            "blue": 2,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            0,
+            2
+          ],
+          "consumer_output_words": [
+            0,
+            2
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2df1d38",
+              "offset": "0x3f10",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2df1d40",
+              "offset": "0x3f14",
+              "size": 4,
+              "bytes": "02000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2de5620",
+              "offset": "0x3a94",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2de562c",
+              "offset": "0x3a80",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2de563c",
+              "offset": "0x421a",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x2f80210",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x2f7ef80",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "blue_off",
+          "inputs": {
+            "chrome": 2,
+            "blue": 0,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            2,
+            0
+          ],
+          "consumer_output_words": [
+            2,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2df1d38",
+              "offset": "0x3f10",
+              "size": 4,
+              "bytes": "02000000"
+            },
+            {
+              "pc": "0x2df1d40",
+              "offset": "0x3f14",
+              "size": 4,
+              "bytes": "00000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2de5620",
+              "offset": "0x3a94",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2de562c",
+              "offset": "0x3a80",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2de563c",
+              "offset": "0x421a",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x2f80210",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x2f7ef80",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "both_off",
+          "inputs": {
+            "chrome": 0,
+            "blue": 0,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            0,
+            0
+          ],
+          "consumer_output_words": [
+            0,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2df1d38",
+              "offset": "0x3f10",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2df1d40",
+              "offset": "0x3f14",
+              "size": 4,
+              "bytes": "00000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2de5620",
+              "offset": "0x3a94",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2de562c",
+              "offset": "0x3a80",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2de563c",
+              "offset": "0x421a",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x2f80210",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x2f7ef80",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "wb_5000",
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "temperature": 5000
+          },
+          "chrome_output_words": [
+            2,
+            2
+          ],
+          "consumer_output_words": [
+            2,
+            2
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2df1d38",
+              "offset": "0x3f10",
+              "size": 4,
+              "bytes": "02000000"
+            },
+            {
+              "pc": "0x2df1d40",
+              "offset": "0x3f14",
+              "size": 4,
+              "bytes": "02000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2de5620",
+              "offset": "0x3a94",
+              "size": 2,
+              "bytes": "8813"
+            },
+            {
+              "pc": "0x2de562c",
+              "offset": "0x3a80",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2de563c",
+              "offset": "0x421a",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x2f80210",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000088130000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5000,
+            "temperature_field_reads": [
+              {
+                "pc": "0x2f7ef80",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "off_5000",
+          "inputs": {
+            "chrome": 0,
+            "blue": 0,
+            "temperature": 5000
+          },
+          "chrome_output_words": [
+            0,
+            0
+          ],
+          "consumer_output_words": [
+            0,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2df1d38",
+              "offset": "0x3f10",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2df1d40",
+              "offset": "0x3f14",
+              "size": 4,
+              "bytes": "00000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2de5620",
+              "offset": "0x3a94",
+              "size": 2,
+              "bytes": "8813"
+            },
+            {
+              "pc": "0x2de562c",
+              "offset": "0x3a80",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2de563c",
+              "offset": "0x421a",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x2f80210",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000088130000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5000,
+            "temperature_field_reads": [
+              {
+                "pc": "0x2f7ef80",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "invalid_3",
+          "inputs": {
+            "chrome": 3,
+            "blue": 3,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            3,
+            3
+          ],
+          "consumer_output_words": [
+            0,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2df1d38",
+              "offset": "0x3f10",
+              "size": 4,
+              "bytes": "03000000"
+            },
+            {
+              "pc": "0x2df1d40",
+              "offset": "0x3f14",
+              "size": 4,
+              "bytes": "03000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2de5620",
+              "offset": "0x3a94",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2de562c",
+              "offset": "0x3a80",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2de563c",
+              "offset": "0x421a",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x2f80210",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x2f7ef80",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        }
+      ]
+    },
+    "X-H2S": {
+      "dat": "Firmware на прочиеFuji/FWUP0027.DAT",
+      "sha256_before": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "sha256_after": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "offsets": {
+        "chrome": "0x3ebc",
+        "blue": "0x3ec0",
+        "wb_temperature": "0x3a40"
+      },
+      "chrome_fragment": [
+        {
+          "pc": "0x3109330",
+          "bytes": "80be7eb9",
+          "asm": "ldr w0, [x20, #0x3ebc]"
+        },
+        {
+          "pc": "0x3109334",
+          "bytes": "608e01b9",
+          "asm": "str w0, [x19, #0x18c]"
+        },
+        {
+          "pc": "0x3109338",
+          "bytes": "80c27eb9",
+          "asm": "ldr w0, [x20, #0x3ec0]"
+        },
+        {
+          "pc": "0x310933c",
+          "bytes": "609201b9",
+          "asm": "str w0, [x19, #0x190]"
+        }
+      ],
+      "consumer_fragment": [
+        {
+          "pc": "0x3250f08",
+          "bytes": "818e41b9",
+          "asm": "ldr w1, [x20, #0x18c]"
+        },
+        {
+          "pc": "0x3250f0c",
+          "bytes": "e00313aa",
+          "asm": "mov x0, x19"
+        },
+        {
+          "pc": "0x3250f10",
+          "bytes": "1efdff97",
+          "asm": "bl #0x3250388"
+        },
+        {
+          "pc": "0x3250f14",
+          "bytes": "819241b9",
+          "asm": "ldr w1, [x20, #0x190]"
+        },
+        {
+          "pc": "0x3250f18",
+          "bytes": "e00313aa",
+          "asm": "mov x0, x19"
+        },
+        {
+          "pc": "0x3250f1c",
+          "bytes": "25fdff97",
+          "asm": "bl #0x32503b0"
+        }
+      ],
+      "wb_fragment": [
+        {
+          "pc": "0x30fcbfc",
+          "bytes": "600a4091",
+          "asm": "add x0, x19, #2, lsl #12"
+        },
+        {
+          "pc": "0x30fcc00",
+          "bytes": "00807479",
+          "asm": "ldrh w0, [x0, #0x1a40]"
+        },
+        {
+          "pc": "0x30fcc04",
+          "bytes": "6e5a9c97",
+          "asm": "bl #0x18135bc"
+        },
+        {
+          "pc": "0x30fcc08",
+          "bytes": "e05b0179",
+          "asm": "strh w0, [sp, #0xac]"
+        },
+        {
+          "pc": "0x30fcc0c",
+          "bytes": "602e7ab9",
+          "asm": "ldr w0, [x19, #0x3a2c]"
+        },
+        {
+          "pc": "0x30fcc10",
+          "bytes": "615a9c97",
+          "asm": "bl #0x1813594"
+        },
+        {
+          "pc": "0x30fcc14",
+          "bytes": "e0b300b9",
+          "asm": "str w0, [sp, #0xb0]"
+        },
+        {
+          "pc": "0x30fcc18",
+          "bytes": "78124091",
+          "asm": "add x24, x19, #4, lsl #12"
+        },
+        {
+          "pc": "0x30fcc1c",
+          "bytes": "00974379",
+          "asm": "ldrh w0, [x24, #0x1ca]"
+        },
+        {
+          "pc": "0x30fcc20",
+          "bytes": "e06b0179",
+          "asm": "strh w0, [sp, #0xb4]"
+        },
+        {
+          "pc": "0x30fcc24",
+          "bytes": "f75f00f9",
+          "asm": "str x23, [sp, #0xb8]"
+        },
+        {
+          "pc": "0x30fcc28",
+          "bytes": "030080d2",
+          "asm": "mov x3, #0"
+        },
+        {
+          "pc": "0x30fcc2c",
+          "bytes": "e203192a",
+          "asm": "mov w2, w25"
+        },
+        {
+          "pc": "0x30fcc30",
+          "bytes": "e1e30191",
+          "asm": "add x1, sp, #0x78"
+        },
+        {
+          "pc": "0x30fcc34",
+          "bytes": "e0630291",
+          "asm": "add x0, sp, #0x98"
+        },
+        {
+          "pc": "0x30fcc38",
+          "bytes": "a0640694",
+          "asm": "bl #0x3295eb8"
+        }
+      ],
+      "cases": [
+        {
+          "case": "strong_5750",
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            2,
+            2
+          ],
+          "consumer_output_words": [
+            2,
+            2
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x3109330",
+              "offset": "0x3ebc",
+              "size": 4,
+              "bytes": "02000000"
+            },
+            {
+              "pc": "0x3109338",
+              "offset": "0x3ec0",
+              "size": 4,
+              "bytes": "02000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x30fcc00",
+              "offset": "0x3a40",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x30fcc0c",
+              "offset": "0x3a2c",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x30fcc1c",
+              "offset": "0x41ca",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x3295eb8",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x3294c28",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "chrome_off",
+          "inputs": {
+            "chrome": 0,
+            "blue": 2,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            0,
+            2
+          ],
+          "consumer_output_words": [
+            0,
+            2
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x3109330",
+              "offset": "0x3ebc",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x3109338",
+              "offset": "0x3ec0",
+              "size": 4,
+              "bytes": "02000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x30fcc00",
+              "offset": "0x3a40",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x30fcc0c",
+              "offset": "0x3a2c",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x30fcc1c",
+              "offset": "0x41ca",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x3295eb8",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x3294c28",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "blue_off",
+          "inputs": {
+            "chrome": 2,
+            "blue": 0,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            2,
+            0
+          ],
+          "consumer_output_words": [
+            2,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x3109330",
+              "offset": "0x3ebc",
+              "size": 4,
+              "bytes": "02000000"
+            },
+            {
+              "pc": "0x3109338",
+              "offset": "0x3ec0",
+              "size": 4,
+              "bytes": "00000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x30fcc00",
+              "offset": "0x3a40",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x30fcc0c",
+              "offset": "0x3a2c",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x30fcc1c",
+              "offset": "0x41ca",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x3295eb8",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x3294c28",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "both_off",
+          "inputs": {
+            "chrome": 0,
+            "blue": 0,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            0,
+            0
+          ],
+          "consumer_output_words": [
+            0,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x3109330",
+              "offset": "0x3ebc",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x3109338",
+              "offset": "0x3ec0",
+              "size": 4,
+              "bytes": "00000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x30fcc00",
+              "offset": "0x3a40",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x30fcc0c",
+              "offset": "0x3a2c",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x30fcc1c",
+              "offset": "0x41ca",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x3295eb8",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x3294c28",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "wb_5000",
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "temperature": 5000
+          },
+          "chrome_output_words": [
+            2,
+            2
+          ],
+          "consumer_output_words": [
+            2,
+            2
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x3109330",
+              "offset": "0x3ebc",
+              "size": 4,
+              "bytes": "02000000"
+            },
+            {
+              "pc": "0x3109338",
+              "offset": "0x3ec0",
+              "size": 4,
+              "bytes": "02000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x30fcc00",
+              "offset": "0x3a40",
+              "size": 2,
+              "bytes": "8813"
+            },
+            {
+              "pc": "0x30fcc0c",
+              "offset": "0x3a2c",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x30fcc1c",
+              "offset": "0x41ca",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x3295eb8",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000088130000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5000,
+            "temperature_field_reads": [
+              {
+                "pc": "0x3294c28",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "off_5000",
+          "inputs": {
+            "chrome": 0,
+            "blue": 0,
+            "temperature": 5000
+          },
+          "chrome_output_words": [
+            0,
+            0
+          ],
+          "consumer_output_words": [
+            0,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x3109330",
+              "offset": "0x3ebc",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x3109338",
+              "offset": "0x3ec0",
+              "size": 4,
+              "bytes": "00000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x30fcc00",
+              "offset": "0x3a40",
+              "size": 2,
+              "bytes": "8813"
+            },
+            {
+              "pc": "0x30fcc0c",
+              "offset": "0x3a2c",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x30fcc1c",
+              "offset": "0x41ca",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x3295eb8",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000088130000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5000,
+            "temperature_field_reads": [
+              {
+                "pc": "0x3294c28",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "invalid_3",
+          "inputs": {
+            "chrome": 3,
+            "blue": 3,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            3,
+            3
+          ],
+          "consumer_output_words": [
+            0,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x3109330",
+              "offset": "0x3ebc",
+              "size": 4,
+              "bytes": "03000000"
+            },
+            {
+              "pc": "0x3109338",
+              "offset": "0x3ec0",
+              "size": 4,
+              "bytes": "03000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x30fcc00",
+              "offset": "0x3a40",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x30fcc0c",
+              "offset": "0x3a2c",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x30fcc1c",
+              "offset": "0x41ca",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x3295eb8",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x3294c28",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        }
+      ]
+    },
+    "X-T5": {
+      "dat": "Firmware на прочиеFuji/FWUP0030.DAT",
+      "sha256_before": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "sha256_after": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "offsets": {
+        "chrome": "0x3f48",
+        "blue": "0x3f4c",
+        "wb_temperature": "0x3ad0"
+      },
+      "chrome_fragment": [
+        {
+          "pc": "0x2d2f3b0",
+          "bytes": "804a7fb9",
+          "asm": "ldr w0, [x20, #0x3f48]"
+        },
+        {
+          "pc": "0x2d2f3b4",
+          "bytes": "608e01b9",
+          "asm": "str w0, [x19, #0x18c]"
+        },
+        {
+          "pc": "0x2d2f3b8",
+          "bytes": "804e7fb9",
+          "asm": "ldr w0, [x20, #0x3f4c]"
+        },
+        {
+          "pc": "0x2d2f3bc",
+          "bytes": "609201b9",
+          "asm": "str w0, [x19, #0x190]"
+        }
+      ],
+      "consumer_fragment": [
+        {
+          "pc": "0x2e7548c",
+          "bytes": "818e41b9",
+          "asm": "ldr w1, [x20, #0x18c]"
+        },
+        {
+          "pc": "0x2e75490",
+          "bytes": "e00313aa",
+          "asm": "mov x0, x19"
+        },
+        {
+          "pc": "0x2e75494",
+          "bytes": "1efdff97",
+          "asm": "bl #0x2e7490c"
+        },
+        {
+          "pc": "0x2e75498",
+          "bytes": "819241b9",
+          "asm": "ldr w1, [x20, #0x190]"
+        },
+        {
+          "pc": "0x2e7549c",
+          "bytes": "e00313aa",
+          "asm": "mov x0, x19"
+        },
+        {
+          "pc": "0x2e754a0",
+          "bytes": "25fdff97",
+          "asm": "bl #0x2e74934"
+        }
+      ],
+      "wb_fragment": [
+        {
+          "pc": "0x2d22cc0",
+          "bytes": "600a4091",
+          "asm": "add x0, x19, #2, lsl #12"
+        },
+        {
+          "pc": "0x2d22cc4",
+          "bytes": "00a07579",
+          "asm": "ldrh w0, [x0, #0x1ad0]"
+        },
+        {
+          "pc": "0x2d22cc8",
+          "bytes": "1a239f97",
+          "asm": "bl #0x14eb930"
+        },
+        {
+          "pc": "0x2d22ccc",
+          "bytes": "e05b0179",
+          "asm": "strh w0, [sp, #0xac]"
+        },
+        {
+          "pc": "0x2d22cd0",
+          "bytes": "60be7ab9",
+          "asm": "ldr w0, [x19, #0x3abc]"
+        },
+        {
+          "pc": "0x2d22cd4",
+          "bytes": "0d239f97",
+          "asm": "bl #0x14eb908"
+        },
+        {
+          "pc": "0x2d22cd8",
+          "bytes": "e0b300b9",
+          "asm": "str w0, [sp, #0xb0]"
+        },
+        {
+          "pc": "0x2d22cdc",
+          "bytes": "78124091",
+          "asm": "add x24, x19, #4, lsl #12"
+        },
+        {
+          "pc": "0x2d22ce0",
+          "bytes": "00274779",
+          "asm": "ldrh w0, [x24, #0x392]"
+        },
+        {
+          "pc": "0x2d22ce4",
+          "bytes": "e06b0179",
+          "asm": "strh w0, [sp, #0xb4]"
+        },
+        {
+          "pc": "0x2d22ce8",
+          "bytes": "f75f00f9",
+          "asm": "str x23, [sp, #0xb8]"
+        },
+        {
+          "pc": "0x2d22cec",
+          "bytes": "030080d2",
+          "asm": "mov x3, #0"
+        },
+        {
+          "pc": "0x2d22cf0",
+          "bytes": "e203192a",
+          "asm": "mov w2, w25"
+        },
+        {
+          "pc": "0x2d22cf4",
+          "bytes": "e1e30191",
+          "asm": "add x1, sp, #0x78"
+        },
+        {
+          "pc": "0x2d22cf8",
+          "bytes": "e0630291",
+          "asm": "add x0, sp, #0x98"
+        },
+        {
+          "pc": "0x2d22cfc",
+          "bytes": "82650694",
+          "asm": "bl #0x2ebc304"
+        }
+      ],
+      "cases": [
+        {
+          "case": "strong_5750",
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            2,
+            2
+          ],
+          "consumer_output_words": [
+            2,
+            2
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2d2f3b0",
+              "offset": "0x3f48",
+              "size": 4,
+              "bytes": "02000000"
+            },
+            {
+              "pc": "0x2d2f3b8",
+              "offset": "0x3f4c",
+              "size": 4,
+              "bytes": "02000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2d22cc4",
+              "offset": "0x3ad0",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2d22cd0",
+              "offset": "0x3abc",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2d22ce0",
+              "offset": "0x4392",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x2ebc304",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x2ebb018",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "chrome_off",
+          "inputs": {
+            "chrome": 0,
+            "blue": 2,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            0,
+            2
+          ],
+          "consumer_output_words": [
+            0,
+            2
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2d2f3b0",
+              "offset": "0x3f48",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2d2f3b8",
+              "offset": "0x3f4c",
+              "size": 4,
+              "bytes": "02000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2d22cc4",
+              "offset": "0x3ad0",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2d22cd0",
+              "offset": "0x3abc",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2d22ce0",
+              "offset": "0x4392",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x2ebc304",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x2ebb018",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "blue_off",
+          "inputs": {
+            "chrome": 2,
+            "blue": 0,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            2,
+            0
+          ],
+          "consumer_output_words": [
+            2,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2d2f3b0",
+              "offset": "0x3f48",
+              "size": 4,
+              "bytes": "02000000"
+            },
+            {
+              "pc": "0x2d2f3b8",
+              "offset": "0x3f4c",
+              "size": 4,
+              "bytes": "00000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2d22cc4",
+              "offset": "0x3ad0",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2d22cd0",
+              "offset": "0x3abc",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2d22ce0",
+              "offset": "0x4392",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x2ebc304",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x2ebb018",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "both_off",
+          "inputs": {
+            "chrome": 0,
+            "blue": 0,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            0,
+            0
+          ],
+          "consumer_output_words": [
+            0,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2d2f3b0",
+              "offset": "0x3f48",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2d2f3b8",
+              "offset": "0x3f4c",
+              "size": 4,
+              "bytes": "00000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2d22cc4",
+              "offset": "0x3ad0",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2d22cd0",
+              "offset": "0x3abc",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2d22ce0",
+              "offset": "0x4392",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x2ebc304",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x2ebb018",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "wb_5000",
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "temperature": 5000
+          },
+          "chrome_output_words": [
+            2,
+            2
+          ],
+          "consumer_output_words": [
+            2,
+            2
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2d2f3b0",
+              "offset": "0x3f48",
+              "size": 4,
+              "bytes": "02000000"
+            },
+            {
+              "pc": "0x2d2f3b8",
+              "offset": "0x3f4c",
+              "size": 4,
+              "bytes": "02000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2d22cc4",
+              "offset": "0x3ad0",
+              "size": 2,
+              "bytes": "8813"
+            },
+            {
+              "pc": "0x2d22cd0",
+              "offset": "0x3abc",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2d22ce0",
+              "offset": "0x4392",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x2ebc304",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000088130000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5000,
+            "temperature_field_reads": [
+              {
+                "pc": "0x2ebb018",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "off_5000",
+          "inputs": {
+            "chrome": 0,
+            "blue": 0,
+            "temperature": 5000
+          },
+          "chrome_output_words": [
+            0,
+            0
+          ],
+          "consumer_output_words": [
+            0,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2d2f3b0",
+              "offset": "0x3f48",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2d2f3b8",
+              "offset": "0x3f4c",
+              "size": 4,
+              "bytes": "00000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2d22cc4",
+              "offset": "0x3ad0",
+              "size": 2,
+              "bytes": "8813"
+            },
+            {
+              "pc": "0x2d22cd0",
+              "offset": "0x3abc",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2d22ce0",
+              "offset": "0x4392",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x2ebc304",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000088130000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5000,
+            "temperature_field_reads": [
+              {
+                "pc": "0x2ebb018",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "invalid_3",
+          "inputs": {
+            "chrome": 3,
+            "blue": 3,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            3,
+            3
+          ],
+          "consumer_output_words": [
+            0,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2d2f3b0",
+              "offset": "0x3f48",
+              "size": 4,
+              "bytes": "03000000"
+            },
+            {
+              "pc": "0x2d2f3b8",
+              "offset": "0x3f4c",
+              "size": 4,
+              "bytes": "03000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2d22cc4",
+              "offset": "0x3ad0",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2d22cd0",
+              "offset": "0x3abc",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2d22ce0",
+              "offset": "0x4392",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x2ebc304",
+            "x0": "0x70008098",
+            "x1": "0x70008078",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x2ebb018",
+                "address": "0x700080ac",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        }
+      ]
+    },
+    "X100VI": {
+      "dat": "Firmware на прочиеFuji/FPUPDATE.DAT",
+      "sha256_before": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "sha256_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "offsets": {
+        "chrome": "0x4538",
+        "blue": "0x453c",
+        "wb_temperature": "0x40c0"
+      },
+      "chrome_fragment": [
+        {
+          "pc": "0x2ffabfc",
+          "bytes": "013845b9",
+          "asm": "ldr w1, [x0, #0x538]"
+        },
+        {
+          "pc": "0x2ffac00",
+          "bytes": "618e01b9",
+          "asm": "str w1, [x19, #0x18c]"
+        },
+        {
+          "pc": "0x2ffac04",
+          "bytes": "003c45b9",
+          "asm": "ldr w0, [x0, #0x53c]"
+        },
+        {
+          "pc": "0x2ffac08",
+          "bytes": "609201b9",
+          "asm": "str w0, [x19, #0x190]"
+        }
+      ],
+      "consumer_fragment": [
+        {
+          "pc": "0x3150528",
+          "bytes": "818e41b9",
+          "asm": "ldr w1, [x20, #0x18c]"
+        },
+        {
+          "pc": "0x315052c",
+          "bytes": "e00313aa",
+          "asm": "mov x0, x19"
+        },
+        {
+          "pc": "0x3150530",
+          "bytes": "ecfcff97",
+          "asm": "bl #0x314f8e0"
+        },
+        {
+          "pc": "0x3150534",
+          "bytes": "819241b9",
+          "asm": "ldr w1, [x20, #0x190]"
+        },
+        {
+          "pc": "0x3150538",
+          "bytes": "e00313aa",
+          "asm": "mov x0, x19"
+        },
+        {
+          "pc": "0x315053c",
+          "bytes": "f3fcff97",
+          "asm": "bl #0x314f908"
+        }
+      ],
+      "wb_fragment": [
+        {
+          "pc": "0x2fed93c",
+          "bytes": "78124091",
+          "asm": "add x24, x19, #4, lsl #12"
+        },
+        {
+          "pc": "0x2fed940",
+          "bytes": "00834179",
+          "asm": "ldrh w0, [x24, #0xc0]"
+        },
+        {
+          "pc": "0x2fed944",
+          "bytes": "75459797",
+          "asm": "bl #0x15bef18"
+        },
+        {
+          "pc": "0x2fed948",
+          "bytes": "e07b0179",
+          "asm": "strh w0, [sp, #0xbc]"
+        },
+        {
+          "pc": "0x2fed94c",
+          "bytes": "00af40b9",
+          "asm": "ldr w0, [x24, #0xac]"
+        },
+        {
+          "pc": "0x2fed950",
+          "bytes": "68459797",
+          "asm": "bl #0x15beef0"
+        },
+        {
+          "pc": "0x2fed954",
+          "bytes": "e0c300b9",
+          "asm": "str w0, [sp, #0xc0]"
+        },
+        {
+          "pc": "0x2fed958",
+          "bytes": "00775379",
+          "asm": "ldrh w0, [x24, #0x9ba]"
+        },
+        {
+          "pc": "0x2fed95c",
+          "bytes": "e08b0179",
+          "asm": "strh w0, [sp, #0xc4]"
+        },
+        {
+          "pc": "0x2fed960",
+          "bytes": "f76700f9",
+          "asm": "str x23, [sp, #0xc8]"
+        },
+        {
+          "pc": "0x2fed964",
+          "bytes": "030080d2",
+          "asm": "mov x3, #0"
+        },
+        {
+          "pc": "0x2fed968",
+          "bytes": "e203192a",
+          "asm": "mov w2, w25"
+        },
+        {
+          "pc": "0x2fed96c",
+          "bytes": "e1230291",
+          "asm": "add x1, sp, #0x88"
+        },
+        {
+          "pc": "0x2fed970",
+          "bytes": "e0a30291",
+          "asm": "add x0, sp, #0xa8"
+        },
+        {
+          "pc": "0x2fed974",
+          "bytes": "d6bb0694",
+          "asm": "bl #0x319c8cc"
+        }
+      ],
+      "cases": [
+        {
+          "case": "strong_5750",
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            2,
+            2
+          ],
+          "consumer_output_words": [
+            2,
+            2
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2ffabfc",
+              "offset": "0x4538",
+              "size": 4,
+              "bytes": "02000000"
+            },
+            {
+              "pc": "0x2ffac04",
+              "offset": "0x453c",
+              "size": 4,
+              "bytes": "02000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2fed940",
+              "offset": "0x40c0",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2fed94c",
+              "offset": "0x40ac",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2fed958",
+              "offset": "0x49ba",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x319c8cc",
+            "x0": "0x700080a8",
+            "x1": "0x70008088",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x319b5e0",
+                "address": "0x700080bc",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "chrome_off",
+          "inputs": {
+            "chrome": 0,
+            "blue": 2,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            0,
+            2
+          ],
+          "consumer_output_words": [
+            0,
+            2
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2ffabfc",
+              "offset": "0x4538",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2ffac04",
+              "offset": "0x453c",
+              "size": 4,
+              "bytes": "02000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2fed940",
+              "offset": "0x40c0",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2fed94c",
+              "offset": "0x40ac",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2fed958",
+              "offset": "0x49ba",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x319c8cc",
+            "x0": "0x700080a8",
+            "x1": "0x70008088",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x319b5e0",
+                "address": "0x700080bc",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "blue_off",
+          "inputs": {
+            "chrome": 2,
+            "blue": 0,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            2,
+            0
+          ],
+          "consumer_output_words": [
+            2,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2ffabfc",
+              "offset": "0x4538",
+              "size": 4,
+              "bytes": "02000000"
+            },
+            {
+              "pc": "0x2ffac04",
+              "offset": "0x453c",
+              "size": 4,
+              "bytes": "00000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2fed940",
+              "offset": "0x40c0",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2fed94c",
+              "offset": "0x40ac",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2fed958",
+              "offset": "0x49ba",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x319c8cc",
+            "x0": "0x700080a8",
+            "x1": "0x70008088",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x319b5e0",
+                "address": "0x700080bc",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "both_off",
+          "inputs": {
+            "chrome": 0,
+            "blue": 0,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            0,
+            0
+          ],
+          "consumer_output_words": [
+            0,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2ffabfc",
+              "offset": "0x4538",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2ffac04",
+              "offset": "0x453c",
+              "size": 4,
+              "bytes": "00000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2fed940",
+              "offset": "0x40c0",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2fed94c",
+              "offset": "0x40ac",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2fed958",
+              "offset": "0x49ba",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x319c8cc",
+            "x0": "0x700080a8",
+            "x1": "0x70008088",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x319b5e0",
+                "address": "0x700080bc",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "wb_5000",
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "temperature": 5000
+          },
+          "chrome_output_words": [
+            2,
+            2
+          ],
+          "consumer_output_words": [
+            2,
+            2
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2ffabfc",
+              "offset": "0x4538",
+              "size": 4,
+              "bytes": "02000000"
+            },
+            {
+              "pc": "0x2ffac04",
+              "offset": "0x453c",
+              "size": 4,
+              "bytes": "02000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2fed940",
+              "offset": "0x40c0",
+              "size": 2,
+              "bytes": "8813"
+            },
+            {
+              "pc": "0x2fed94c",
+              "offset": "0x40ac",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2fed958",
+              "offset": "0x49ba",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x319c8cc",
+            "x0": "0x700080a8",
+            "x1": "0x70008088",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000088130000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5000,
+            "temperature_field_reads": [
+              {
+                "pc": "0x319b5e0",
+                "address": "0x700080bc",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "off_5000",
+          "inputs": {
+            "chrome": 0,
+            "blue": 0,
+            "temperature": 5000
+          },
+          "chrome_output_words": [
+            0,
+            0
+          ],
+          "consumer_output_words": [
+            0,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2ffabfc",
+              "offset": "0x4538",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2ffac04",
+              "offset": "0x453c",
+              "size": 4,
+              "bytes": "00000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2fed940",
+              "offset": "0x40c0",
+              "size": 2,
+              "bytes": "8813"
+            },
+            {
+              "pc": "0x2fed94c",
+              "offset": "0x40ac",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2fed958",
+              "offset": "0x49ba",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x319c8cc",
+            "x0": "0x700080a8",
+            "x1": "0x70008088",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000088130000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5000,
+            "temperature_field_reads": [
+              {
+                "pc": "0x319b5e0",
+                "address": "0x700080bc",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        },
+        {
+          "case": "invalid_3",
+          "inputs": {
+            "chrome": 3,
+            "blue": 3,
+            "temperature": 5750
+          },
+          "chrome_output_words": [
+            3,
+            3
+          ],
+          "consumer_output_words": [
+            0,
+            0
+          ],
+          "chrome_parameter_reads": [
+            {
+              "pc": "0x2ffabfc",
+              "offset": "0x4538",
+              "size": 4,
+              "bytes": "03000000"
+            },
+            {
+              "pc": "0x2ffac04",
+              "offset": "0x453c",
+              "size": 4,
+              "bytes": "03000000"
+            }
+          ],
+          "wb_parameter_reads": [
+            {
+              "pc": "0x2fed940",
+              "offset": "0x40c0",
+              "size": 2,
+              "bytes": "7616"
+            },
+            {
+              "pc": "0x2fed94c",
+              "offset": "0x40ac",
+              "size": 4,
+              "bytes": "00000000"
+            },
+            {
+              "pc": "0x2fed958",
+              "offset": "0x49ba",
+              "size": 2,
+              "bytes": "0000"
+            }
+          ],
+          "wb_call": {
+            "target": "0x319c8cc",
+            "x0": "0x700080a8",
+            "x1": "0x70008088",
+            "x2": 0,
+            "x3": 0,
+            "input_hex": "00000000000000000d000000000000000000000076160000000000000000000000000000000000000000000000000000",
+            "temperature_word": 5750,
+            "temperature_field_reads": [
+              {
+                "pc": "0x319b5e0",
+                "address": "0x700080bc",
+                "size": 2
+              }
+            ],
+            "synthetic_zero_context_attempt": "returned",
+            "stop_pc": "0x70000000",
+            "output_hex": "0000000000000000000000000000000000000000000000001027102710270000"
+          }
+        }
+      ]
+    }
+  }
+}

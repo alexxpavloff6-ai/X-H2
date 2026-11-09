@@ -1,0 +1,586 @@
+{
+  "X-H2": {
+    "source_sha256": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+    "function_address": "0x12e67ac",
+    "parameter_id": 1678,
+    "input_representation": 0,
+    "output_representation": 3,
+    "error_address": "0x2051408",
+    "cases": [
+      {
+        "input_ui_code": 0,
+        "result": 0,
+        "error": 0
+      },
+      {
+        "input_ui_code": 1,
+        "result": 1,
+        "error": 0
+      },
+      {
+        "input_ui_code": 2,
+        "result": 2,
+        "error": 0
+      },
+      {
+        "input_ui_code": 3,
+        "result": 3,
+        "error": 0
+      },
+      {
+        "input_ui_code": 4,
+        "result": 4,
+        "error": 0
+      },
+      {
+        "input_ui_code": 5,
+        "result": 5,
+        "error": 0
+      },
+      {
+        "input_ui_code": 6,
+        "result": 6,
+        "error": 0
+      },
+      {
+        "input_ui_code": 7,
+        "result": 0,
+        "error": 1
+      },
+      {
+        "input_ui_code": 8,
+        "result": 7,
+        "error": 0
+      },
+      {
+        "input_ui_code": 9,
+        "result": 8,
+        "error": 0
+      },
+      {
+        "input_ui_code": 10,
+        "result": 9,
+        "error": 0
+      },
+      {
+        "input_ui_code": 11,
+        "result": 10,
+        "error": 0
+      },
+      {
+        "input_ui_code": 12,
+        "result": 11,
+        "error": 0
+      },
+      {
+        "input_ui_code": 13,
+        "result": 12,
+        "error": 0
+      },
+      {
+        "input_ui_code": 14,
+        "result": 13,
+        "error": 0
+      },
+      {
+        "input_ui_code": 15,
+        "result": 19,
+        "error": 0
+      },
+      {
+        "input_ui_code": 16,
+        "result": 21,
+        "error": 0
+      },
+      {
+        "input_ui_code": 17,
+        "result": 22,
+        "error": 0
+      },
+      {
+        "input_ui_code": 18,
+        "result": 18,
+        "error": 0
+      },
+      {
+        "input_ui_code": 19,
+        "result": 20,
+        "error": 0
+      },
+      {
+        "input_ui_code": 20,
+        "result": 0,
+        "error": 1
+      },
+      {
+        "input_ui_code": 21,
+        "result": 14,
+        "error": 0
+      },
+      {
+        "input_ui_code": 22,
+        "result": 15,
+        "error": 0
+      },
+      {
+        "input_ui_code": 23,
+        "result": 16,
+        "error": 0
+      },
+      {
+        "input_ui_code": 24,
+        "result": 17,
+        "error": 0
+      },
+      {
+        "input_ui_code": 25,
+        "result": 0,
+        "error": 1
+      },
+      {
+        "input_ui_code": 26,
+        "result": 0,
+        "error": 1
+      }
+    ],
+    "source_unchanged": true
+  },
+  "X-H2S": {
+    "source_sha256": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+    "function_address": "0x1604da0",
+    "parameter_id": 1677,
+    "input_representation": 0,
+    "output_representation": 3,
+    "error_address": "0x236b408",
+    "cases": [
+      {
+        "input_ui_code": 0,
+        "result": 0,
+        "error": 0
+      },
+      {
+        "input_ui_code": 1,
+        "result": 1,
+        "error": 0
+      },
+      {
+        "input_ui_code": 2,
+        "result": 2,
+        "error": 0
+      },
+      {
+        "input_ui_code": 3,
+        "result": 3,
+        "error": 0
+      },
+      {
+        "input_ui_code": 4,
+        "result": 4,
+        "error": 0
+      },
+      {
+        "input_ui_code": 5,
+        "result": 5,
+        "error": 0
+      },
+      {
+        "input_ui_code": 6,
+        "result": 6,
+        "error": 0
+      },
+      {
+        "input_ui_code": 7,
+        "result": 0,
+        "error": 1
+      },
+      {
+        "input_ui_code": 8,
+        "result": 7,
+        "error": 0
+      },
+      {
+        "input_ui_code": 9,
+        "result": 8,
+        "error": 0
+      },
+      {
+        "input_ui_code": 10,
+        "result": 9,
+        "error": 0
+      },
+      {
+        "input_ui_code": 11,
+        "result": 10,
+        "error": 0
+      },
+      {
+        "input_ui_code": 12,
+        "result": 11,
+        "error": 0
+      },
+      {
+        "input_ui_code": 13,
+        "result": 12,
+        "error": 0
+      },
+      {
+        "input_ui_code": 14,
+        "result": 13,
+        "error": 0
+      },
+      {
+        "input_ui_code": 15,
+        "result": 19,
+        "error": 0
+      },
+      {
+        "input_ui_code": 16,
+        "result": 21,
+        "error": 0
+      },
+      {
+        "input_ui_code": 17,
+        "result": 22,
+        "error": 0
+      },
+      {
+        "input_ui_code": 18,
+        "result": 18,
+        "error": 0
+      },
+      {
+        "input_ui_code": 19,
+        "result": 20,
+        "error": 0
+      },
+      {
+        "input_ui_code": 20,
+        "result": 0,
+        "error": 1
+      },
+      {
+        "input_ui_code": 21,
+        "result": 14,
+        "error": 0
+      },
+      {
+        "input_ui_code": 22,
+        "result": 15,
+        "error": 0
+      },
+      {
+        "input_ui_code": 23,
+        "result": 16,
+        "error": 0
+      },
+      {
+        "input_ui_code": 24,
+        "result": 17,
+        "error": 0
+      },
+      {
+        "input_ui_code": 25,
+        "result": 0,
+        "error": 1
+      },
+      {
+        "input_ui_code": 26,
+        "result": 0,
+        "error": 1
+      }
+    ],
+    "source_unchanged": true
+  },
+  "X-T5": {
+    "source_sha256": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+    "function_address": "0x12e48b0",
+    "parameter_id": 1699,
+    "input_representation": 0,
+    "output_representation": 3,
+    "error_address": "0x20007ec",
+    "cases": [
+      {
+        "input_ui_code": 0,
+        "result": 0,
+        "error": 0
+      },
+      {
+        "input_ui_code": 1,
+        "result": 1,
+        "error": 0
+      },
+      {
+        "input_ui_code": 2,
+        "result": 2,
+        "error": 0
+      },
+      {
+        "input_ui_code": 3,
+        "result": 3,
+        "error": 0
+      },
+      {
+        "input_ui_code": 4,
+        "result": 4,
+        "error": 0
+      },
+      {
+        "input_ui_code": 5,
+        "result": 5,
+        "error": 0
+      },
+      {
+        "input_ui_code": 6,
+        "result": 6,
+        "error": 0
+      },
+      {
+        "input_ui_code": 7,
+        "result": 0,
+        "error": 1
+      },
+      {
+        "input_ui_code": 8,
+        "result": 7,
+        "error": 0
+      },
+      {
+        "input_ui_code": 9,
+        "result": 8,
+        "error": 0
+      },
+      {
+        "input_ui_code": 10,
+        "result": 9,
+        "error": 0
+      },
+      {
+        "input_ui_code": 11,
+        "result": 10,
+        "error": 0
+      },
+      {
+        "input_ui_code": 12,
+        "result": 11,
+        "error": 0
+      },
+      {
+        "input_ui_code": 13,
+        "result": 12,
+        "error": 0
+      },
+      {
+        "input_ui_code": 14,
+        "result": 13,
+        "error": 0
+      },
+      {
+        "input_ui_code": 15,
+        "result": 19,
+        "error": 0
+      },
+      {
+        "input_ui_code": 16,
+        "result": 21,
+        "error": 0
+      },
+      {
+        "input_ui_code": 17,
+        "result": 22,
+        "error": 0
+      },
+      {
+        "input_ui_code": 18,
+        "result": 18,
+        "error": 0
+      },
+      {
+        "input_ui_code": 19,
+        "result": 20,
+        "error": 0
+      },
+      {
+        "input_ui_code": 20,
+        "result": 0,
+        "error": 1
+      },
+      {
+        "input_ui_code": 21,
+        "result": 14,
+        "error": 0
+      },
+      {
+        "input_ui_code": 22,
+        "result": 15,
+        "error": 0
+      },
+      {
+        "input_ui_code": 23,
+        "result": 16,
+        "error": 0
+      },
+      {
+        "input_ui_code": 24,
+        "result": 17,
+        "error": 0
+      },
+      {
+        "input_ui_code": 25,
+        "result": 255,
+        "error": 0
+      },
+      {
+        "input_ui_code": 26,
+        "result": 0,
+        "error": 1
+      }
+    ],
+    "source_unchanged": true
+  },
+  "X100VI": {
+    "source_sha256": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+    "function_address": "0x13c9930",
+    "parameter_id": 1756,
+    "input_representation": 0,
+    "output_representation": 3,
+    "error_address": "0x20b44c4",
+    "cases": [
+      {
+        "input_ui_code": 0,
+        "result": 0,
+        "error": 0
+      },
+      {
+        "input_ui_code": 1,
+        "result": 1,
+        "error": 0
+      },
+      {
+        "input_ui_code": 2,
+        "result": 2,
+        "error": 0
+      },
+      {
+        "input_ui_code": 3,
+        "result": 3,
+        "error": 0
+      },
+      {
+        "input_ui_code": 4,
+        "result": 4,
+        "error": 0
+      },
+      {
+        "input_ui_code": 5,
+        "result": 5,
+        "error": 0
+      },
+      {
+        "input_ui_code": 6,
+        "result": 6,
+        "error": 0
+      },
+      {
+        "input_ui_code": 7,
+        "result": 0,
+        "error": 1
+      },
+      {
+        "input_ui_code": 8,
+        "result": 7,
+        "error": 0
+      },
+      {
+        "input_ui_code": 9,
+        "result": 8,
+        "error": 0
+      },
+      {
+        "input_ui_code": 10,
+        "result": 9,
+        "error": 0
+      },
+      {
+        "input_ui_code": 11,
+        "result": 10,
+        "error": 0
+      },
+      {
+        "input_ui_code": 12,
+        "result": 11,
+        "error": 0
+      },
+      {
+        "input_ui_code": 13,
+        "result": 12,
+        "error": 0
+      },
+      {
+        "input_ui_code": 14,
+        "result": 13,
+        "error": 0
+      },
+      {
+        "input_ui_code": 15,
+        "result": 19,
+        "error": 0
+      },
+      {
+        "input_ui_code": 16,
+        "result": 21,
+        "error": 0
+      },
+      {
+        "input_ui_code": 17,
+        "result": 22,
+        "error": 0
+      },
+      {
+        "input_ui_code": 18,
+        "result": 18,
+        "error": 0
+      },
+      {
+        "input_ui_code": 19,
+        "result": 20,
+        "error": 0
+      },
+      {
+        "input_ui_code": 20,
+        "result": 0,
+        "error": 1
+      },
+      {
+        "input_ui_code": 21,
+        "result": 14,
+        "error": 0
+      },
+      {
+        "input_ui_code": 22,
+        "result": 15,
+        "error": 0
+      },
+      {
+        "input_ui_code": 23,
+        "result": 16,
+        "error": 0
+      },
+      {
+        "input_ui_code": 24,
+        "result": 17,
+        "error": 0
+      },
+      {
+        "input_ui_code": 25,
+        "result": 0,
+        "error": 1
+      },
+      {
+        "input_ui_code": 26,
+        "result": 0,
+        "error": 1
+      }
+    ],
+    "source_unchanged": true
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "method": "Embedded JPEG only; OpenCV 1/8 reduced decode, assumed sRGB to Lab; blue hue [210,310), warm [0,75), C*>=15, 15<L*<85. Rank by min(blue,warm) coverage. Other raw files checked via stat during preview read, not full hashes; selected RAF full SHA read twice after ranking. Preview is not a direct camera development and cannot predict exact FX Blue effect. RAW must also be accessible to camera for conversion.",
+  "count": 518,
+  "successful": 518,
+  "failures": [],
+  "top_candidates": [
+    {
+      "file": "DSCF9835.RAF",
+      "blue_fraction": 0.47668064744801514,
+      "warm_fraction": 0.4382925724637681,
+      "selection_score_minimum": 0.4382925724637681
+    },
+    {
+      "file": "DSCF9804.RAF",
+      "blue_fraction": 0.411236806868305,
+      "warm_fraction": 0.45154477788279773,
+      "selection_score_minimum": 0.411236806868305
+    },
+    {
+      "file": "DSCF9810.RAF",
+      "blue_fraction": 0.4103063957151859,
+      "warm_fraction": 0.43114957466918713,
+      "selection_score_minimum": 0.4103063957151859
+    },
+    {
+      "file": "DSCF9820.RAF",
+      "blue_fraction": 0.4069638074984247,
+      "warm_fraction": 0.47804918872085694,
+      "selection_score_minimum": 0.4069638074984247
+    },
+    {
+      "file": "DSCF9834.RAF",
+      "blue_fraction": 0.4062204631379962,
+      "warm_fraction": 0.5501191320100819,
+      "selection_score_minimum": 0.4062204631379962
+    },
+    {
+      "file": "DSCF9789.RAF",
+      "blue_fraction": 0.40233144297416507,
+      "warm_fraction": 0.40964673913043476,
+      "selection_score_minimum": 0.40233144297416507
+    },
+    {
+      "file": "DSCF9836.RAF",
+      "blue_fraction": 0.5157185333963453,
+      "warm_fraction": 0.3991365390674228,
+      "selection_score_minimum": 0.3991365390674228
+    },
+    {
+      "file": "DSCF9824.RAF",
+      "blue_fraction": 0.3937608301827347,
+      "warm_fraction": 0.4858026149968494,
+      "selection_score_minimum": 0.3937608301827347
+    },
+    {
+      "file": "DSCF9853.RAF",
+      "blue_fraction": 0.39263842942659105,
+      "warm_fraction": 0.47172830025204787,
+      "selection_score_minimum": 0.39263842942659105
+    },
+    {
+      "file": "DSCF9847.RAF",
+      "blue_fraction": 0.3860320179584121,
+      "warm_fraction": 0.39968297101449274,
+      "selection_score_minimum": 0.3860320179584121
+    }
+  ],
+  "selected_source_sha256_twice": "3d768d2dfa93bc49dfa5e3589c2f37f6a46cf41bc9aa435f7e3e4c0e4415f2be",
+  "opencv_version": "4.13.0",
+  "numpy_version": "2.4.6"
+}

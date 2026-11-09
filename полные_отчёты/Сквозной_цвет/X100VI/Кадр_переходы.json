@@ -1,0 +1,45 @@
+{
+  "source_sha256": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+  "source_unchanged": true,
+  "fragments": [
+    "0x162a450..return",
+    "0x30655fc..0x306560c",
+    "0x2ffa690..0x2ffa698",
+    "0x31501c0..0x31501d4"
+  ],
+  "results": [
+    {
+      "input": 0,
+      "frame_d0": 0,
+      "params_3fe8": 0,
+      "intermediate_20": 0,
+      "context_130": 0
+    },
+    {
+      "input": 13,
+      "frame_d0": 13,
+      "params_3fe8": 13,
+      "intermediate_20": 13,
+      "context_130": 8
+    },
+    {
+      "input": 18,
+      "frame_d0": 18,
+      "params_3fe8": 18,
+      "intermediate_20": 18,
+      "context_130": 9
+    },
+    {
+      "input": 22,
+      "frame_d0": 22,
+      "params_3fe8": 22,
+      "intermediate_20": 22,
+      "context_130": 13
+    }
+  ],
+  "limits": [
+    "Synthetic initial value is passed to frame setter by investigator; no global state to frame bridge proven.",
+    "Separate fragments started by investigator; condition before 0x2ffa690 not executed.",
+    "No real camera or image hardware."
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "raf_files": 518,
+  "jpg_files": 528,
+  "image_stems": 528,
+  "raf_without_jpg": [],
+  "jpg_without_raf": [
+    "DSCF0117",
+    "DSCF0118",
+    "DSCF0282",
+    "DSCF0283",
+    "DSCF0284",
+    "DSCF0285",
+    "DSCF0286",
+    "DSCF0287",
+    "DSCF0288",
+    "DSCF0289"
+  ],
+  "models": {
+    "X-H2": 528
+  },
+  "software": {
+    "Digital Camera X-H2 Ver5.30": 528
+  },
+  "lenses": {
+    "XF16-55mmF2.8 R LM WR": 472,
+    "XF8-16mmF2.8 R LM WR": 56
+  },
+  "films": {
+    "Classic Chrome": 399,
+    "Classic Negative": 7,
+    "Reala ACE": 122
+  },
+  "film_raw": {
+    "1536": 399,
+    "2048": 7,
+    "2816": 122
+  },
+  "pair_status": {
+    "metadata_match": 518,
+    "single": 10
+  },
+  "reala_filenames": [
+    "DSCF9768",
+    "DSCF9769",
+    "DSCF9770",
+    "DSCF9771",
+    "DSCF9772",
+    "DSCF9773",
+    "DSCF9774",
+    "DSCF9775",
+    "DSCF9776",
+    "DSCF9777",
+    "DSCF9778",
+    "DSCF9779",
+    "DSCF9780",
+    "DSCF9781",
+    "DSCF9782",
+    "DSCF9783",
+    "DSCF9784",
+    "DSCF9785",
+    "DSCF9786",
+    "DSCF9787",
+    "DSCF9788",
+    "DSCF9789",
+    "DSCF9790",
+    "DSCF9791",
+    "DSCF9792",
+    "DSCF9793",
+    "DSCF9794",
+    "DSCF9795",
+    "DSCF9796",
+    "DSCF9797",
+    "DSCF9798",
+    "DSCF9799",
+    "DSCF9800",
+    "DSCF9801",
+    "DSCF9802",
+    "DSCF9803",
+    "DSCF9804",
+    "DSCF9805",
+    "DSCF9806",
+    "DSCF9807",
+    "DSCF9808",
+    "DSCF9809",
+    "DSCF9810",
+    "DSCF9811",
+    "DSCF9812",
+    "DSCF9813",
+    "DSCF9814",
+    "DSCF9815",
+    "DSCF9816",
+    "DSCF9817",
+    "DSCF9818",
+    "DSCF9819",
+    "DSCF9820",
+    "DSCF9821",
+    "DSCF9822",
+    "DSCF9823",
+    "DSCF9824",
+    "DSCF9825",
+    "DSCF9826",
+    "DSCF9827",
+    "DSCF9828",
+    "DSCF9829",
+    "DSCF9830",
+    "DSCF9831",
+    "DSCF9832",
+    "DSCF9833",
+    "DSCF9834",
+    "DSCF9835",
+    "DSCF9836",
+    "DSCF9837",
+    "DSCF9838",
+    "DSCF9839",
+    "DSCF9840",
+    "DSCF9841",
+    "DSCF9842",
+    "DSCF9843",
+    "DSCF9844",
+    "DSCF9845",
+    "DSCF9846",
+    "DSCF9847",
+    "DSCF9848",
+    "DSCF9849",
+    "DSCF9850",
+    "DSCF9851",
+    "DSCF9852",
+    "DSCF9853",
+    "DSCF9854",
+    "DSCF9855",
+    "DSCF9856",
+    "DSCF9857",
+    "DSCF9858",
+    "DSCF9859",
+    "DSCF9860",
+    "DSCF9861",
+    "DSCF9862",
+    "DSCF9863",
+    "DSCF9864",
+    "DSCF9865",
+    "DSCF9866",
+    "DSCF9867",
+    "DSCF9868",
+    "DSCF9869",
+    "DSCF9870",
+    "DSCF9871",
+    "DSCF9872",
+    "DSCF9873",
+    "DSCF9874",
+    "DSCF9875",
+    "DSCF9876",
+    "DSCF9877",
+    "DSCF9878",
+    "DSCF9879",
+    "DSCF9880",
+    "DSCF9881",
+    "DSCF9882",
+    "DSCF9883",
+    "DSCF9884",
+    "DSCF9885",
+    "DSCF9886",
+    "DSCF9887",
+    "DSCF9888",
+    "DSCF9889"
+  ],
+  "reala_count": 122,
+  "reala_lenses": {
+    "XF16-55mmF2.8 R LM WR": 122
+  },
+  "saturation_raw": {
+    "0": 528
+  },
+  "mismatched_pairs": [],
+  "recipe_groups_raf": [
+    {
+      "base_film": "Classic Chrome",
+      "raf_count": 389,
+      "tag_groups": [
+        {
+          "count": 389,
+          "tags": {
+            "film_raw": 1536,
+            "saturation_raw": 0,
+            "white_balance_raw": 256,
+            "wb_fine_tune_raw": [
+              0,
+              -80
+            ],
+            "highlight_raw": 0,
+            "shadow_raw": 0,
+            "sharpness_raw": 3,
+            "noise_reduction_raw": 0,
+            "clarity_raw": 0,
+            "color_chrome_raw": 0,
+            "color_chrome_blue_raw": 32,
+            "grain_roughness_raw": 0,
+            "grain_size_raw": 0,
+            "dynamic_range_setting_raw": 1,
+            "color_temperature_raw": null
+          }
+        }
+      ]
+    },
+    {
+      "base_film": "Classic Negative",
+      "raf_count": 7,
+      "tag_groups": [
+        {
+          "count": 7,
+          "tags": {
+            "film_raw": 2048,
+            "saturation_raw": 0,
+            "white_balance_raw": 256,
+            "wb_fine_tune_raw": [
+              80,
+              -40
+            ],
+            "highlight_raw": 0,
+            "shadow_raw": 0,
+            "sharpness_raw": 3,
+            "noise_reduction_raw": 0,
+            "clarity_raw": 0,
+            "color_chrome_raw": 0,
+            "color_chrome_blue_raw": 32,
+            "grain_roughness_raw": 0,
+            "grain_size_raw": 0,
+            "dynamic_range_setting_raw": 1,
+            "color_temperature_raw": null
+          }
+        }
+      ]
+    },
+    {
+      "base_film": "Reala ACE",
+      "raf_count": 122,
+      "tag_groups": [
+        {
+          "count": 90,
+          "tags": {
+            "film_raw": 2816,
+            "saturation_raw": 0,
+            "white_balance_raw": 256,
+            "wb_fine_tune_raw": [
+              80,
+              -40
+            ],
+            "highlight_raw": 0,
+            "shadow_raw": 0,
+            "sharpness_raw": 3,
+            "noise_reduction_raw": 0,
+            "clarity_raw": 0,
+            "color_chrome_raw": 0,
+            "color_chrome_blue_raw": 32,
+            "grain_roughness_raw": 0,
+            "grain_size_raw": 0,
+            "dynamic_range_setting_raw": 1,
+            "color_temperature_raw": null
+          }
+        },
+        {
+          "count": 32,
+          "tags": {
+            "film_raw": 2816,
+            "saturation_raw": 0,
+            "white_balance_raw": 256,
+            "wb_fine_tune_raw": [
+              0,
+              -80
+            ],
+            "highlight_raw": 0,
+            "shadow_raw": 0,
+            "sharpness_raw": 3,
+            "noise_reduction_raw": 0,
+            "clarity_raw": 0,
+            "color_chrome_raw": 0,
+            "color_chrome_blue_raw": 32,
+            "grain_roughness_raw": 0,
+            "grain_size_raw": 0,
+            "dynamic_range_setting_raw": 1,
+            "color_temperature_raw": null
+          }
+        }
+      ]
+    }
+  ],
+  "recipe_fields": [
+    "film_raw",
+    "saturation_raw",
+    "white_balance_raw",
+    "wb_fine_tune_raw",
+    "highlight_raw",
+    "shadow_raw",
+    "sharpness_raw",
+    "noise_reduction_raw",
+    "clarity_raw",
+    "color_chrome_raw",
+    "color_chrome_blue_raw",
+    "grain_roughness_raw",
+    "grain_size_raw",
+    "dynamic_range_setting_raw",
+    "color_temperature_raw"
+  ],
+  "recipe_metadata_mismatch_count": 0,
+  "issues": [],
+  "limitations": [
+    "Owner states JPEGs are Lightroom-processed; camera software metadata and matching tags do not prove in-camera rendering",
+    "FilmMode identifies base simulation, not a complete recipe or saved C-slot",
+    "Matching RAW/JPEG metadata can be inherited and are not independent rendering evidence",
+    "RAF preview JPEG metadata, not raw sensor samples or confirmed complete camera settings",
+    "No original is written; per-file size and modification time checked, not full file checksum",
+    "No GPS or serial numbers exported"
+  ]
+}

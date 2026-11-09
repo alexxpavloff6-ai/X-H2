@@ -1,0 +1,190 @@
+{
+  "X-H2S": [
+    {
+      "ui": 14,
+      "mode": 13,
+      "helper_return_synthetic": 0,
+      "writer_output_address": "0x29d9e9c",
+      "bytes_before": "aabb",
+      "bytes_after": "0b00",
+      "synthetic_counter_after": 2,
+      "helper_calls": [
+        {
+          "helper": "0x2f0eca8",
+          "synthetic_return": 0
+        }
+      ]
+    },
+    {
+      "ui": 0,
+      "mode": 0,
+      "helper_return_synthetic": 0,
+      "writer_output_address": "0x29d9e9c",
+      "bytes_before": "aabb",
+      "bytes_after": "0100",
+      "synthetic_counter_after": 2,
+      "helper_calls": [
+        {
+          "helper": "0x2f0eca8",
+          "synthetic_return": 0
+        }
+      ]
+    },
+    {
+      "ui": 14,
+      "mode": 13,
+      "helper_return_synthetic": 1,
+      "writer_output_address": "0x29d9e9c",
+      "bytes_before": "aabb",
+      "bytes_after": "aabb",
+      "synthetic_counter_after": 0,
+      "helper_calls": [
+        {
+          "helper": "0x2f0eca8",
+          "synthetic_return": 1
+        }
+      ]
+    }
+  ],
+  "X-T5": [
+    {
+      "ui": 14,
+      "mode": 13,
+      "helper_return_synthetic": 0,
+      "writer_output_address": "0x25fa75c",
+      "bytes_before": "aabb",
+      "bytes_after": "0b00",
+      "synthetic_counter_after": 2,
+      "helper_calls": [
+        {
+          "helper": "0x2b369f0",
+          "synthetic_return": 0
+        }
+      ]
+    },
+    {
+      "ui": 0,
+      "mode": 0,
+      "helper_return_synthetic": 0,
+      "writer_output_address": "0x25fa75c",
+      "bytes_before": "aabb",
+      "bytes_after": "0100",
+      "synthetic_counter_after": 2,
+      "helper_calls": [
+        {
+          "helper": "0x2b369f0",
+          "synthetic_return": 0
+        }
+      ]
+    },
+    {
+      "ui": 14,
+      "mode": 13,
+      "helper_return_synthetic": 1,
+      "writer_output_address": "0x25fa75c",
+      "bytes_before": "aabb",
+      "bytes_after": "aabb",
+      "synthetic_counter_after": 0,
+      "helper_calls": [
+        {
+          "helper": "0x2b369f0",
+          "synthetic_return": 1
+        }
+      ]
+    }
+  ],
+  "X-H2": [
+    {
+      "ui": 14,
+      "mode": 13,
+      "helper_return_synthetic": 0,
+      "writer_output_address": "0x26be0c4",
+      "bytes_before": "aabb",
+      "bytes_after": "0b00",
+      "synthetic_counter_after": 2,
+      "helper_calls": [
+        {
+          "helper": "0x2bf66d0",
+          "synthetic_return": 0
+        }
+      ]
+    },
+    {
+      "ui": 0,
+      "mode": 0,
+      "helper_return_synthetic": 0,
+      "writer_output_address": "0x26be0c4",
+      "bytes_before": "aabb",
+      "bytes_after": "0100",
+      "synthetic_counter_after": 2,
+      "helper_calls": [
+        {
+          "helper": "0x2bf66d0",
+          "synthetic_return": 0
+        }
+      ]
+    },
+    {
+      "ui": 14,
+      "mode": 13,
+      "helper_return_synthetic": 1,
+      "writer_output_address": "0x26be0c4",
+      "bytes_before": "aabb",
+      "bytes_after": "aabb",
+      "synthetic_counter_after": 0,
+      "helper_calls": [
+        {
+          "helper": "0x2bf66d0",
+          "synthetic_return": 1
+        }
+      ]
+    }
+  ],
+  "X100VI": [
+    {
+      "ui": 14,
+      "mode": 13,
+      "helper_return_synthetic": 0,
+      "writer_output_address": "0x284170c",
+      "bytes_before": "aabb",
+      "bytes_after": "0b00",
+      "synthetic_counter_after": 2,
+      "helper_calls": [
+        {
+          "helper": "0x2df31d0",
+          "synthetic_return": 0
+        }
+      ]
+    },
+    {
+      "ui": 0,
+      "mode": 0,
+      "helper_return_synthetic": 0,
+      "writer_output_address": "0x284170c",
+      "bytes_before": "aabb",
+      "bytes_after": "0100",
+      "synthetic_counter_after": 2,
+      "helper_calls": [
+        {
+          "helper": "0x2df31d0",
+          "synthetic_return": 0
+        }
+      ]
+    },
+    {
+      "ui": 14,
+      "mode": 13,
+      "helper_return_synthetic": 1,
+      "writer_output_address": "0x284170c",
+      "bytes_before": "aabb",
+      "bytes_after": "aabb",
+      "synthetic_counter_after": 0,
+      "helper_calls": [
+        {
+          "helper": "0x2df31d0",
+          "synthetic_return": 1
+        }
+      ]
+    }
+  ]
+}

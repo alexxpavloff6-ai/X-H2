@@ -1,0 +1,141 @@
+{
+  "method": "Original ARM64 fragments with synthetic input and context; no real camera or pixel pipeline, no calculated WB gains.",
+  "cameras": {
+    "X-H2": {
+      "source_sha256_before": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+      "source_sha256_after": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+      "start": "0x2e52ca4",
+      "stop_exclusive": "0x2e52d2c",
+      "cases": [
+        {
+          "synthetic_kelvin_input": 5750,
+          "synthetic_internal_shift": [
+            1,
+            -5
+          ],
+          "mode_field": 4080,
+          "kelvin_field": 5750,
+          "shift_fields": [
+            20,
+            -100
+          ]
+        },
+        {
+          "synthetic_kelvin_input": 5000,
+          "synthetic_internal_shift": [
+            1,
+            -5
+          ],
+          "mode_field": 4080,
+          "kelvin_field": 5000,
+          "shift_fields": [
+            20,
+            -100
+          ]
+        }
+      ]
+    },
+    "X-H2S": {
+      "source_sha256_before": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "source_sha256_after": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "start": "0x3169f88",
+      "stop_exclusive": "0x316a010",
+      "cases": [
+        {
+          "synthetic_kelvin_input": 5750,
+          "synthetic_internal_shift": [
+            1,
+            -5
+          ],
+          "mode_field": 4080,
+          "kelvin_field": 5750,
+          "shift_fields": [
+            20,
+            -100
+          ]
+        },
+        {
+          "synthetic_kelvin_input": 5000,
+          "synthetic_internal_shift": [
+            1,
+            -5
+          ],
+          "mode_field": 4080,
+          "kelvin_field": 5000,
+          "shift_fields": [
+            20,
+            -100
+          ]
+        }
+      ]
+    },
+    "X-T5": {
+      "source_sha256_before": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "source_sha256_after": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "start": "0x2d90eec",
+      "stop_exclusive": "0x2d90f74",
+      "cases": [
+        {
+          "synthetic_kelvin_input": 5750,
+          "synthetic_internal_shift": [
+            1,
+            -5
+          ],
+          "mode_field": 4080,
+          "kelvin_field": 5750,
+          "shift_fields": [
+            20,
+            -100
+          ]
+        },
+        {
+          "synthetic_kelvin_input": 5000,
+          "synthetic_internal_shift": [
+            1,
+            -5
+          ],
+          "mode_field": 4080,
+          "kelvin_field": 5000,
+          "shift_fields": [
+            20,
+            -100
+          ]
+        }
+      ]
+    },
+    "X100VI": {
+      "source_sha256_before": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "source_sha256_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "start": "0x3060e24",
+      "stop_exclusive": "0x3060eac",
+      "cases": [
+        {
+          "synthetic_kelvin_input": 5750,
+          "synthetic_internal_shift": [
+            1,
+            -5
+          ],
+          "mode_field": 4080,
+          "kelvin_field": 5750,
+          "shift_fields": [
+            20,
+            -100
+          ]
+        },
+        {
+          "synthetic_kelvin_input": 5000,
+          "synthetic_internal_shift": [
+            1,
+            -5
+          ],
+          "mode_field": 4080,
+          "kelvin_field": 5000,
+          "shift_fields": [
+            20,
+            -100
+          ]
+        }
+      ]
+    }
+  }
+}

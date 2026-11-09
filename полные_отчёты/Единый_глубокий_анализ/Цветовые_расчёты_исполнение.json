@@ -1,0 +1,494 @@
+{
+  "X-H2": {
+    "source_sha256": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+    "selector_address": "0x2f24284",
+    "calculation_address": "0x2f24680",
+    "template_pointer_storage": "0x20c1458",
+    "template_dat_offset": "0xc0274",
+    "synthetic_context": {
+      "0x100": 0,
+      "0x12c": 1,
+      "0x130": 8,
+      "0x124": 18,
+      "0x128": 18,
+      "0x13c": 4,
+      "0x10c": 8,
+      "0x17c": 2
+    },
+    "selector_output": 6,
+    "selected_key_offsets": [
+      "0xaed8",
+      "0xaeda",
+      "0xaedc",
+      "0xaede"
+    ],
+    "four_template_values_signed_in_table_order": [
+      885,
+      859,
+      -10,
+      -12
+    ],
+    "input_runs": [
+      {
+        "input_index": 0,
+        "gain_byte": 102,
+        "four_output_signed": [
+          705,
+          -8,
+          684,
+          -10
+        ]
+      },
+      {
+        "input_index": 1,
+        "gain_byte": 109,
+        "four_output_signed": [
+          753,
+          -9,
+          731,
+          -11
+        ]
+      },
+      {
+        "input_index": 2,
+        "gain_byte": 115,
+        "four_output_signed": [
+          795,
+          -9,
+          771,
+          -11
+        ]
+      },
+      {
+        "input_index": 3,
+        "gain_byte": 122,
+        "four_output_signed": [
+          843,
+          -10,
+          818,
+          -12
+        ]
+      },
+      {
+        "input_index": 4,
+        "gain_byte": 128,
+        "four_output_signed": [
+          885,
+          -10,
+          859,
+          -12
+        ]
+      },
+      {
+        "input_index": 5,
+        "gain_byte": 134,
+        "four_output_signed": [
+          926,
+          -11,
+          899,
+          -13
+        ]
+      },
+      {
+        "input_index": 6,
+        "gain_byte": 141,
+        "four_output_signed": [
+          974,
+          -12,
+          946,
+          -14
+        ]
+      },
+      {
+        "input_index": 7,
+        "gain_byte": 147,
+        "four_output_signed": [
+          1016,
+          -12,
+          986,
+          -14
+        ]
+      },
+      {
+        "input_index": 8,
+        "gain_byte": 154,
+        "four_output_signed": [
+          1064,
+          -13,
+          1033,
+          -15
+        ]
+      }
+    ],
+    "source_unchanged": true
+  },
+  "X-H2S": {
+    "source_sha256": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+    "selector_address": "0x323b004",
+    "calculation_address": "0x323b400",
+    "template_pointer_storage": "0x23dbc30",
+    "template_dat_offset": "0xc0274",
+    "synthetic_context": {
+      "0x100": 0,
+      "0x12c": 1,
+      "0x130": 8,
+      "0x124": 18,
+      "0x128": 18,
+      "0x13c": 4,
+      "0x10c": 8,
+      "0x17c": 2
+    },
+    "selector_output": 6,
+    "selected_key_offsets": [
+      "0xaed8",
+      "0xaeda",
+      "0xaedc",
+      "0xaede"
+    ],
+    "four_template_values_signed_in_table_order": [
+      866,
+      996,
+      -27,
+      69
+    ],
+    "input_runs": [
+      {
+        "input_index": 0,
+        "gain_byte": 102,
+        "four_output_signed": [
+          690,
+          -22,
+          793,
+          54
+        ]
+      },
+      {
+        "input_index": 1,
+        "gain_byte": 109,
+        "four_output_signed": [
+          737,
+          -23,
+          848,
+          58
+        ]
+      },
+      {
+        "input_index": 2,
+        "gain_byte": 115,
+        "four_output_signed": [
+          778,
+          -25,
+          894,
+          61
+        ]
+      },
+      {
+        "input_index": 3,
+        "gain_byte": 122,
+        "four_output_signed": [
+          825,
+          -26,
+          949,
+          65
+        ]
+      },
+      {
+        "input_index": 4,
+        "gain_byte": 128,
+        "four_output_signed": [
+          866,
+          -27,
+          996,
+          69
+        ]
+      },
+      {
+        "input_index": 5,
+        "gain_byte": 134,
+        "four_output_signed": [
+          906,
+          -29,
+          1042,
+          72
+        ]
+      },
+      {
+        "input_index": 6,
+        "gain_byte": 141,
+        "four_output_signed": [
+          953,
+          -30,
+          1097,
+          76
+        ]
+      },
+      {
+        "input_index": 7,
+        "gain_byte": 147,
+        "four_output_signed": [
+          994,
+          -32,
+          1143,
+          79
+        ]
+      },
+      {
+        "input_index": 8,
+        "gain_byte": 154,
+        "four_output_signed": [
+          1041,
+          -33,
+          1198,
+          83
+        ]
+      }
+    ],
+    "source_unchanged": true
+  },
+  "X-T5": {
+    "source_sha256": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+    "selector_address": "0x2e5f410",
+    "calculation_address": "0x2e5f7dc",
+    "template_pointer_storage": "0x2066d90",
+    "template_dat_offset": "0xc0274",
+    "synthetic_context": {
+      "0x100": 0,
+      "0x12c": 1,
+      "0x130": 8,
+      "0x124": 18,
+      "0x128": 18,
+      "0x13c": 4,
+      "0x10c": 8,
+      "0x17c": 2
+    },
+    "selector_output": 6,
+    "selected_key_offsets": [
+      "0xaed8",
+      "0xaeda",
+      "0xaedc",
+      "0xaede"
+    ],
+    "four_template_values_signed_in_table_order": [
+      885,
+      859,
+      -10,
+      -12
+    ],
+    "input_runs": [
+      {
+        "input_index": 0,
+        "gain_byte": 102,
+        "four_output_signed": [
+          705,
+          -8,
+          684,
+          -10
+        ]
+      },
+      {
+        "input_index": 1,
+        "gain_byte": 109,
+        "four_output_signed": [
+          753,
+          -9,
+          731,
+          -11
+        ]
+      },
+      {
+        "input_index": 2,
+        "gain_byte": 115,
+        "four_output_signed": [
+          795,
+          -9,
+          771,
+          -11
+        ]
+      },
+      {
+        "input_index": 3,
+        "gain_byte": 122,
+        "four_output_signed": [
+          843,
+          -10,
+          818,
+          -12
+        ]
+      },
+      {
+        "input_index": 4,
+        "gain_byte": 128,
+        "four_output_signed": [
+          885,
+          -10,
+          859,
+          -12
+        ]
+      },
+      {
+        "input_index": 5,
+        "gain_byte": 134,
+        "four_output_signed": [
+          926,
+          -11,
+          899,
+          -13
+        ]
+      },
+      {
+        "input_index": 6,
+        "gain_byte": 141,
+        "four_output_signed": [
+          974,
+          -12,
+          946,
+          -14
+        ]
+      },
+      {
+        "input_index": 7,
+        "gain_byte": 147,
+        "four_output_signed": [
+          1016,
+          -12,
+          986,
+          -14
+        ]
+      },
+      {
+        "input_index": 8,
+        "gain_byte": 154,
+        "four_output_signed": [
+          1064,
+          -13,
+          1033,
+          -15
+        ]
+      }
+    ],
+    "source_unchanged": true
+  },
+  "X100VI": {
+    "source_sha256": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+    "selector_address": "0x313a1c0",
+    "calculation_address": "0x313a590",
+    "template_pointer_storage": "0x211c1c8",
+    "template_dat_offset": "0x6602bc",
+    "synthetic_context": {
+      "0x100": 0,
+      "0x12c": 1,
+      "0x130": 8,
+      "0x124": 18,
+      "0x128": 18,
+      "0x13c": 4,
+      "0x10c": 8,
+      "0x17c": 2
+    },
+    "selector_output": 6,
+    "selected_key_offsets": [
+      "0xb058",
+      "0xb05a",
+      "0xb05c",
+      "0xb05e"
+    ],
+    "four_template_values_signed_in_table_order": [
+      885,
+      859,
+      -10,
+      -12
+    ],
+    "input_runs": [
+      {
+        "input_index": 0,
+        "gain_byte": 102,
+        "four_output_signed": [
+          705,
+          -8,
+          684,
+          -10
+        ]
+      },
+      {
+        "input_index": 1,
+        "gain_byte": 109,
+        "four_output_signed": [
+          753,
+          -9,
+          731,
+          -11
+        ]
+      },
+      {
+        "input_index": 2,
+        "gain_byte": 115,
+        "four_output_signed": [
+          795,
+          -9,
+          771,
+          -11
+        ]
+      },
+      {
+        "input_index": 3,
+        "gain_byte": 122,
+        "four_output_signed": [
+          843,
+          -10,
+          818,
+          -12
+        ]
+      },
+      {
+        "input_index": 4,
+        "gain_byte": 128,
+        "four_output_signed": [
+          885,
+          -10,
+          859,
+          -12
+        ]
+      },
+      {
+        "input_index": 5,
+        "gain_byte": 134,
+        "four_output_signed": [
+          926,
+          -11,
+          899,
+          -13
+        ]
+      },
+      {
+        "input_index": 6,
+        "gain_byte": 141,
+        "four_output_signed": [
+          974,
+          -12,
+          946,
+          -14
+        ]
+      },
+      {
+        "input_index": 7,
+        "gain_byte": 147,
+        "four_output_signed": [
+          1016,
+          -12,
+          986,
+          -14
+        ]
+      },
+      {
+        "input_index": 8,
+        "gain_byte": 154,
+        "four_output_signed": [
+          1064,
+          -13,
+          1033,
+          -15
+        ]
+      }
+    ],
+    "source_unchanged": true
+  }
+}

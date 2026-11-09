@@ -1,0 +1,332 @@
+{
+  "source": "Firmware на прочиеFuji\\FPUPDATE.DAT",
+  "source_bytes": 109251576,
+  "source_sha256": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+  "source_sha256_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+  "transform": "XOR ff for each DAT byte; offsets unchanged",
+  "fflz_dat_offset": "0x4402bc",
+  "fflz_header_le_words": [
+    599493,
+    452548,
+    28,
+    16384,
+    4
+  ],
+  "packed_transformed_sha256": "b0dd28035d6d2a1e37c865a357164470363d06abce1cbbc0f2a635f38303322a",
+  "jpeg_bytes": 599493,
+  "jpeg_sha256": "ca95789cdf2c7097985e3f3ae0e4feab05ca4df797919d0d1b4e4b5962613ba9",
+  "jpeg_md5": "00e25d1175249dc3c00c890bb6d909dd",
+  "jpeg_soi": "ffd8",
+  "jpeg_last_16": "1400514514005145140051451401ffd9",
+  "jpeg_eoi_offsets": [
+    "0x925c3"
+  ],
+  "image_width_height": [
+    640,
+    9120
+  ],
+  "mode": "RGB",
+  "crops": [
+    {
+      "file": "полоса_00000_00512.png",
+      "y_start": 0,
+      "y_end_exclusive": 512
+    },
+    {
+      "file": "полоса_00512_01024.png",
+      "y_start": 512,
+      "y_end_exclusive": 1024
+    },
+    {
+      "file": "полоса_01024_01536.png",
+      "y_start": 1024,
+      "y_end_exclusive": 1536
+    },
+    {
+      "file": "полоса_01536_02048.png",
+      "y_start": 1536,
+      "y_end_exclusive": 2048
+    },
+    {
+      "file": "полоса_02048_02560.png",
+      "y_start": 2048,
+      "y_end_exclusive": 2560
+    },
+    {
+      "file": "полоса_02560_03072.png",
+      "y_start": 2560,
+      "y_end_exclusive": 3072
+    },
+    {
+      "file": "полоса_03072_03584.png",
+      "y_start": 3072,
+      "y_end_exclusive": 3584
+    },
+    {
+      "file": "полоса_03584_04096.png",
+      "y_start": 3584,
+      "y_end_exclusive": 4096
+    },
+    {
+      "file": "полоса_04096_04608.png",
+      "y_start": 4096,
+      "y_end_exclusive": 4608
+    },
+    {
+      "file": "полоса_04608_05120.png",
+      "y_start": 4608,
+      "y_end_exclusive": 5120
+    },
+    {
+      "file": "полоса_05120_05632.png",
+      "y_start": 5120,
+      "y_end_exclusive": 5632
+    },
+    {
+      "file": "полоса_05632_06144.png",
+      "y_start": 5632,
+      "y_end_exclusive": 6144
+    },
+    {
+      "file": "полоса_06144_06656.png",
+      "y_start": 6144,
+      "y_end_exclusive": 6656
+    },
+    {
+      "file": "полоса_06656_07168.png",
+      "y_start": 6656,
+      "y_end_exclusive": 7168
+    },
+    {
+      "file": "полоса_07168_07680.png",
+      "y_start": 7168,
+      "y_end_exclusive": 7680
+    },
+    {
+      "file": "полоса_07680_08192.png",
+      "y_start": 7680,
+      "y_end_exclusive": 8192
+    },
+    {
+      "file": "полоса_08192_08704.png",
+      "y_start": 8192,
+      "y_end_exclusive": 8704
+    },
+    {
+      "file": "полоса_08704_09120.png",
+      "y_start": 8704,
+      "y_end_exclusive": 9120
+    }
+  ],
+  "panels": [
+    {
+      "index_one_based": 1,
+      "y_start": 0,
+      "y_end_exclusive": 480,
+      "file": "кадр_01.png"
+    },
+    {
+      "index_one_based": 2,
+      "y_start": 480,
+      "y_end_exclusive": 960,
+      "file": "кадр_02.png"
+    },
+    {
+      "index_one_based": 3,
+      "y_start": 960,
+      "y_end_exclusive": 1440,
+      "file": "кадр_03.png"
+    },
+    {
+      "index_one_based": 4,
+      "y_start": 1440,
+      "y_end_exclusive": 1920,
+      "file": "кадр_04.png"
+    },
+    {
+      "index_one_based": 5,
+      "y_start": 1920,
+      "y_end_exclusive": 2400,
+      "file": "кадр_05.png"
+    },
+    {
+      "index_one_based": 6,
+      "y_start": 2400,
+      "y_end_exclusive": 2880,
+      "file": "кадр_06.png"
+    },
+    {
+      "index_one_based": 7,
+      "y_start": 2880,
+      "y_end_exclusive": 3360,
+      "file": "кадр_07.png"
+    },
+    {
+      "index_one_based": 8,
+      "y_start": 3360,
+      "y_end_exclusive": 3840,
+      "file": "кадр_08.png"
+    },
+    {
+      "index_one_based": 9,
+      "y_start": 3840,
+      "y_end_exclusive": 4320,
+      "file": "кадр_09.png"
+    },
+    {
+      "index_one_based": 10,
+      "y_start": 4320,
+      "y_end_exclusive": 4800,
+      "file": "кадр_10.png"
+    },
+    {
+      "index_one_based": 11,
+      "y_start": 4800,
+      "y_end_exclusive": 5280,
+      "file": "кадр_11.png"
+    },
+    {
+      "index_one_based": 12,
+      "y_start": 5280,
+      "y_end_exclusive": 5760,
+      "file": "кадр_12.png"
+    },
+    {
+      "index_one_based": 13,
+      "y_start": 5760,
+      "y_end_exclusive": 6240,
+      "file": "кадр_13.png"
+    },
+    {
+      "index_one_based": 14,
+      "y_start": 6240,
+      "y_end_exclusive": 6720,
+      "file": "кадр_14.png"
+    },
+    {
+      "index_one_based": 15,
+      "y_start": 6720,
+      "y_end_exclusive": 7200,
+      "file": "кадр_15.png"
+    },
+    {
+      "index_one_based": 16,
+      "y_start": 7200,
+      "y_end_exclusive": 7680,
+      "file": "кадр_16.png"
+    },
+    {
+      "index_one_based": 17,
+      "y_start": 7680,
+      "y_end_exclusive": 8160,
+      "file": "кадр_17.png"
+    },
+    {
+      "index_one_based": 18,
+      "y_start": 8160,
+      "y_end_exclusive": 8640,
+      "file": "кадр_18.png"
+    },
+    {
+      "index_one_based": 19,
+      "y_start": 8640,
+      "y_end_exclusive": 9120,
+      "file": "кадр_19.png"
+    }
+  ],
+  "scan": "00 40 00 00 04 00 00 00 at header+12; valid size and decoding; other variants not excluded",
+  "blocks": [
+    {
+      "offset": "0x1402bc",
+      "packed": 1146798,
+      "unpacked": 2091592
+    },
+    {
+      "offset": "0x4402bc",
+      "packed": 452548,
+      "unpacked": 599493
+    },
+    {
+      "offset": "0x9c02bc",
+      "packed": 7400642,
+      "unpacked": 27121096
+    },
+    {
+      "offset": "0x10e02bc",
+      "packed": 9573574,
+      "unpacked": 22253568
+    },
+    {
+      "offset": "0x1a202bc",
+      "packed": 7756464,
+      "unpacked": 15278080
+    },
+    {
+      "offset": "0x2b602bc",
+      "packed": 3906507,
+      "unpacked": 7587656
+    }
+  ],
+  "literal_hits": {
+    "DAT_XOR_FF:packed_size:little": [
+      "0x4402c0"
+    ],
+    "DAT_XOR_FF:unpacked_size:little": [
+      "0x4402bc"
+    ],
+    "FFLZ_0x1a202bc:unpacked_size:big": [
+      "0xde6171"
+    ]
+  },
+  "matching_strings_file": "строки_поиска.json",
+  "qr_opencv": [
+    {
+      "panel": 2,
+      "detected": true,
+      "text": "https://fujifilm-dsc.com/en-int/manual/error_message_recovery/"
+    },
+    {
+      "panel": 15,
+      "detected": true,
+      "text": "https://fujifilm-dsc.com/en-int/manual/error_message_recovery/"
+    },
+    {
+      "panel": 16,
+      "detected": true,
+      "text": "https://fujifilm-dsc.com/en-int/manual/error_message_recovery/"
+    },
+    {
+      "panel": 17,
+      "detected": true,
+      "text": "https://fujifilm-dsc.com/en-int/manual/error_message_recovery/"
+    },
+    {
+      "panel": 18,
+      "detected": true,
+      "text": "https://fujifilm-dsc.com/en-int/manual/error_message_recovery/"
+    },
+    {
+      "panel": 19,
+      "detected": true,
+      "text": "https://fujifilm-dsc.com/en-int/manual/error_message_recovery/"
+    }
+  ],
+  "recovery_link_evidence": {
+    "fflz_1402bc_header_u64le": [
+      "0x0",
+      "0x881000",
+      "0x1ff000",
+      "0x88104c",
+      "0x0",
+      "0x0",
+      "0x0",
+      "0xaaaaffff"
+    ],
+    "dispatch_table_offset": "0x14a3b8",
+    "dispatch_table_six_rows_hex": "8814000000000000ec26880000000000000000000000000000000000000000000000000000000000000000000000000001000000050000000500000005000000050000000000000089140000000000001c27880000000000000000000000000000000000000000001c2788000000000000000000000000000400000005000000050000000400000005000000000000008b14000000000000000000000000000000000000000000000000000000000000702788000000000000000000000000000500000005000000050000000500000005000000000000008a14000000000000000000000000000000000000000000000000000000000000882788000000000000000000000000000500000005000000050000000500000005000000000000008c140000000000000000000000000000b8278800000000000000000000000000000000000000000000000000000000000500000002000000050000000500000005000000000000008d1400000000000000000000000000000000000000000000d02788000000000000000000000000000000000000000000050000000500000003000000050000000500000000000000",
+    "dat_xor_ff_u64_at_0x120394": "0x681000",
+    "dat_xor_ff_u64_at_0x1203b4": "0x440000",
+    "code_relocated_to_0x881000_adrp_add_at_0x1afc": "0x681000",
+    "code_relocated_to_0x881000_adrp_add_at_0x1b10": "0x925c5"
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "source": "Firmware на прочиеFuji\\FPUPDATE.DAT",
+  "source_sha256": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+  "recovery_fflz_dat_offset": "0x1402bc",
+  "block_sha256": "fbbacc6736e28c9bb44550fac0f450d8ae23b5a26e94b060c49cfc142cdbeaed",
+  "conditional_base": "0x881000",
+  "method": "Original sender and dispatcher execute in one VM; synthetic hooks replace services 0x3d14, 0x49e0, 0x4c10 and manually copy the captured message and payload to the receive buffer. State is synthetic. A separate callback runs with the resulting index, synthetic base/stride and stubbed 0x31c6c/0x31d9c; stops before call 0x194c. No physical device or actual queue.",
+  "index_offset_in_conditional_map": "0x254098",
+  "cases": [
+    {
+      "input": 0,
+      "synthetic_state": 3,
+      "message_id_override": null,
+      "synthetic_send_result": 0,
+      "send_calls": [
+        {
+          "destination": 234,
+          "id": 5258,
+          "length": 4,
+          "payload_hex": "00000000"
+        }
+      ],
+      "receive_calls": [
+        {
+          "destination": 234,
+          "message_id": 5258,
+          "payload_hex": "00000000",
+          "result": 0
+        }
+      ],
+      "executed_offsets": [
+        "0x1514",
+        "0x1574",
+        "0x159c",
+        "0x15c8",
+        "0x1644",
+        "0x1694",
+        "0x1788",
+        "0x17a8",
+        "0x1a60",
+        "0x1a74"
+      ],
+      "send_return_w0": 0,
+      "state_after": 3,
+      "index_after": 0,
+      "draw_stubbed_calls": [
+        "0x31c6c",
+        "0x31d9c"
+      ],
+      "separate_draw_callback": {
+        "stop_before_call_offset": "0x194c",
+        "x0": "0x40bc0000",
+        "x1": "0x40080000",
+        "x2": "0x1000",
+        "synthetic_base": "0x40080000",
+        "synthetic_stride": "0x1000"
+      }
+    },
+    {
+      "input": 9,
+      "synthetic_state": 3,
+      "message_id_override": null,
+      "synthetic_send_result": 0,
+      "send_calls": [
+        {
+          "destination": 234,
+          "id": 5258,
+          "length": 4,
+          "payload_hex": "09000000"
+        }
+      ],
+      "receive_calls": [
+        {
+          "destination": 234,
+          "message_id": 5258,
+          "payload_hex": "09000000",
+          "result": 0
+        }
+      ],
+      "executed_offsets": [
+        "0x1514",
+        "0x1574",
+        "0x159c",
+        "0x15c8",
+        "0x1644",
+        "0x1694",
+        "0x1788",
+        "0x17a8",
+        "0x1a60",
+        "0x1a74"
+      ],
+      "send_return_w0": 0,
+      "state_after": 3,
+      "index_after": 9,
+      "draw_stubbed_calls": [
+        "0x31c6c",
+        "0x31d9c"
+      ],
+      "separate_draw_callback": {
+        "stop_before_call_offset": "0x194c",
+        "x0": "0x40bc0000",
+        "x1": "0x40089000",
+        "x2": "0x1000",
+        "synthetic_base": "0x40080000",
+        "synthetic_stride": "0x1000"
+      }
+    },
+    {
+      "input": 18,
+      "synthetic_state": 3,
+      "message_id_override": null,
+      "synthetic_send_result": 0,
+      "send_calls": [
+        {
+          "destination": 234,
+          "id": 5258,
+          "length": 4,
+          "payload_hex": "12000000"
+        }
+      ],
+      "receive_calls": [
+        {
+          "destination": 234,
+          "message_id": 5258,
+          "payload_hex": "12000000",
+          "result": 0
+        }
+      ],
+      "executed_offsets": [
+        "0x1514",
+        "0x1574",
+        "0x159c",
+        "0x15c8",
+        "0x1644",
+        "0x1694",
+        "0x1788",
+        "0x17a8",
+        "0x1a60",
+        "0x1a74"
+      ],
+      "send_return_w0": 0,
+      "state_after": 3,
+      "index_after": 18,
+      "draw_stubbed_calls": [
+        "0x31c6c",
+        "0x31d9c"
+      ],
+      "separate_draw_callback": {
+        "stop_before_call_offset": "0x194c",
+        "x0": "0x40bc0000",
+        "x1": "0x40092000",
+        "x2": "0x1000",
+        "synthetic_base": "0x40080000",
+        "synthetic_stride": "0x1000"
+      }
+    },
+    {
+      "input": 9,
+      "synthetic_state": 0,
+      "message_id_override": null,
+      "synthetic_send_result": 0,
+      "send_calls": [
+        {
+          "destination": 234,
+          "id": 5258,
+          "length": 4,
+          "payload_hex": "09000000"
+        }
+      ],
+      "receive_calls": [
+        {
+          "destination": 234,
+          "message_id": 5258,
+          "payload_hex": "09000000",
+          "result": 0
+        }
+      ],
+      "executed_offsets": [
+        "0x1514",
+        "0x1574",
+        "0x159c",
+        "0x15c8",
+        "0x1644",
+        "0x16e4"
+      ],
+      "send_return_w0": 0,
+      "state_after": 0,
+      "index_after": 4294967295,
+      "separate_draw_callback": {
+        "returned_without_buffer_call": true
+      }
+    },
+    {
+      "input": 9,
+      "synthetic_state": 1,
+      "message_id_override": null,
+      "synthetic_send_result": 0,
+      "send_calls": [
+        {
+          "destination": 234,
+          "id": 5258,
+          "length": 4,
+          "payload_hex": "09000000"
+        }
+      ],
+      "receive_calls": [
+        {
+          "destination": 234,
+          "message_id": 5258,
+          "payload_hex": "09000000",
+          "result": 0
+        }
+      ],
+      "executed_offsets": [
+        "0x1514",
+        "0x1574",
+        "0x159c",
+        "0x15c8",
+        "0x1644",
+        "0x16e4"
+      ],
+      "send_return_w0": 0,
+      "state_after": 1,
+      "index_after": 4294967295,
+      "separate_draw_callback": {
+        "returned_without_buffer_call": true
+      }
+    },
+    {
+      "input": 9,
+      "synthetic_state": 2,
+      "message_id_override": null,
+      "synthetic_send_result": 0,
+      "send_calls": [
+        {
+          "destination": 234,
+          "id": 5258,
+          "length": 4,
+          "payload_hex": "09000000"
+        }
+      ],
+      "receive_calls": [
+        {
+          "destination": 234,
+          "message_id": 5258,
+          "payload_hex": "09000000",
+          "result": 0
+        }
+      ],
+      "executed_offsets": [
+        "0x1514",
+        "0x1574",
+        "0x159c",
+        "0x15c8",
+        "0x1644",
+        "0x16e4"
+      ],
+      "send_return_w0": 0,
+      "state_after": 2,
+      "index_after": 4294967295,
+      "separate_draw_callback": {
+        "returned_without_buffer_call": true
+      }
+    },
+    {
+      "input": 9,
+      "synthetic_state": 4,
+      "message_id_override": null,
+      "synthetic_send_result": 0,
+      "send_calls": [
+        {
+          "destination": 234,
+          "id": 5258,
+          "length": 4,
+          "payload_hex": "09000000"
+        }
+      ],
+      "receive_calls": [
+        {
+          "destination": 234,
+          "message_id": 5258,
+          "payload_hex": "09000000",
+          "result": 0
+        }
+      ],
+      "executed_offsets": [
+        "0x1514",
+        "0x1574",
+        "0x159c",
+        "0x15c8",
+        "0x1644",
+        "0x16e4"
+      ],
+      "send_return_w0": 0,
+      "state_after": 4,
+      "index_after": 4294967295,
+      "separate_draw_callback": {
+        "returned_without_buffer_call": true
+      }
+    },
+    {
+      "input": 9,
+      "synthetic_state": 3,
+      "message_id_override": 39321,
+      "synthetic_send_result": 0,
+      "send_calls": [
+        {
+          "destination": 234,
+          "id": 5258,
+          "length": 4,
+          "payload_hex": "09000000"
+        }
+      ],
+      "receive_calls": [
+        {
+          "destination": 234,
+          "message_id": 39321,
+          "payload_hex": "09000000",
+          "result": 0
+        }
+      ],
+      "executed_offsets": [
+        "0x1514",
+        "0x1574",
+        "0x159c",
+        "0x15c8",
+        "0x16e4"
+      ],
+      "send_return_w0": 0,
+      "state_after": 3,
+      "index_after": 4294967295,
+      "separate_draw_callback": {
+        "returned_without_buffer_call": true
+      }
+    },
+    {
+      "input": 19,
+      "synthetic_state": 3,
+      "message_id_override": null,
+      "synthetic_send_result": 0,
+      "send_calls": [],
+      "receive_calls": [],
+      "executed_offsets": [
+        "0x1514"
+      ],
+      "send_return_w0": 4294967290,
+      "receive_skipped": true
+    },
+    {
+      "input": 9,
+      "synthetic_state": 3,
+      "message_id_override": null,
+      "synthetic_send_result": 1,
+      "send_calls": [
+        {
+          "destination": 234,
+          "id": 5258,
+          "length": 4,
+          "payload_hex": "09000000"
+        }
+      ],
+      "receive_calls": [],
+      "executed_offsets": [
+        "0x1514",
+        "0x1574"
+      ],
+      "send_return_w0": 4294967290,
+      "receive_skipped": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+﻿native	index	gain	selector	a	b	d	c	field0	field1	field2	field3	writes
+0	8	154	6	1064	-13	1033	-15	1064	8179	1033	8177	"[{""address"": ""0xff96c634"", ""size"": 4, ""value"": ""0x1ff30428""}, {""address"": ""0xff96c638"", ""size"": 4, ""value"": ""0x1ff10409""}]"
+1	7	147	6	1016	-12	986	-14	1016	8180	986	8178	"[{""address"": ""0xff96c634"", ""size"": 4, ""value"": ""0x1ff403f8""}, {""address"": ""0xff96c638"", ""size"": 4, ""value"": ""0x1ff203da""}]"
+2	6	141	6	974	-12	946	-14	974	8180	946	8178	"[{""address"": ""0xff96c634"", ""size"": 4, ""value"": ""0x1ff403ce""}, {""address"": ""0xff96c638"", ""size"": 4, ""value"": ""0x1ff203b2""}]"
+3	5	134	6	926	-11	899	-13	926	8181	899	8179	"[{""address"": ""0xff96c634"", ""size"": 4, ""value"": ""0x1ff5039e""}, {""address"": ""0xff96c638"", ""size"": 4, ""value"": ""0x1ff30383""}]"
+4	4	128	6	885	-10	859	-12	885	8182	859	8180	"[{""address"": ""0xff96c634"", ""size"": 4, ""value"": ""0x1ff60375""}, {""address"": ""0xff96c638"", ""size"": 4, ""value"": ""0x1ff4035b""}]"
+5	3	122	6	843	-10	818	-12	843	8182	818	8180	"[{""address"": ""0xff96c634"", ""size"": 4, ""value"": ""0x1ff6034b""}, {""address"": ""0xff96c638"", ""size"": 4, ""value"": ""0x1ff40332""}]"
+6	2	115	6	795	-9	771	-11	795	8183	771	8181	"[{""address"": ""0xff96c634"", ""size"": 4, ""value"": ""0x1ff7031b""}, {""address"": ""0xff96c638"", ""size"": 4, ""value"": ""0x1ff50303""}]"
+7	1	109	6	753	-9	731	-11	753	8183	731	8181	"[{""address"": ""0xff96c634"", ""size"": 4, ""value"": ""0x1ff702f1""}, {""address"": ""0xff96c638"", ""size"": 4, ""value"": ""0x1ff502db""}]"
+8	0	102	6	705	-8	684	-10	705	8184	684	8182	"[{""address"": ""0xff96c634"", ""size"": 4, ""value"": ""0x1ff802c1""}, {""address"": ""0xff96c638"", ""size"": 4, ""value"": ""0x1ff602ac""}]"

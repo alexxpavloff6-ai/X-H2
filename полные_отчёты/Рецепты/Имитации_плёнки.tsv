@@ -1,0 +1,27 @@
+﻿код_перечисления	код_16ричный	внутреннее_обозначение	пояснение_по_названию	смещение_записи_в_распакованном_блоке	смещение_строки_в_блоке
+0	0x0	UI_FILM_SIM_STD	Стандартная имитация (STD)	0x878f58	0x81ad30
+1	0x1	UI_FILM_SIM_F1B	Требуется проверка назначения и доступности	0x878f68	0x81ad40
+2	0x2	UI_FILM_SIM_F1C	Требуется проверка назначения и доступности	0x878f78	0x81ad50
+3	0x3	UI_FILM_SIM_F2	Требуется проверка назначения и доступности	0x878f88	0x81ad60
+4	0x4	UI_FILM_SIM_BW	Требуется проверка назначения и доступности	0x878f98	0x81ad70
+5	0x5	UI_FILM_SIM_SEPIA	Сепия	0x878fa8	0x81ad80
+6	0x6	UI_FILM_SIM_CHROME	Требуется проверка назначения и доступности	0x878fb8	0x81ad98
+7	0x7	UI_FILM_SIM_BW_FILTER	Требуется проверка назначения и доступности	0x878fc8	0x81adb0
+8	0x8	UI_FILM_SIM_BW_FILTER_NON	Монохром без цветного фильтра	0x878fd8	0x81adc8
+9	0x9	UI_FILM_SIM_BW_FILTER_R	Монохром с красным фильтром	0x878fe8	0x81ade8
+10	0xa	UI_FILM_SIM_BW_FILTER_Y	Монохром с жёлтым фильтром	0x878ff8	0x81ae00
+11	0xb	UI_FILM_SIM_BW_FILTER_G	Монохром с зелёным фильтром	0x879008	0x81ae18
+12	0xc	UI_FILM_SIM_PRONEGA_S	PRO Neg. Std, по названию	0x879018	0x81ae30
+13	0xd	UI_FILM_SIM_PRONEGA_H	PRO Neg. Hi, по названию	0x879028	0x81ae48
+14	0xe	UI_FILM_SIM_CLASSIC_CHROME	Classic Chrome	0x879038	0x81ae60
+15	0xf	UI_FILM_SIM_SUPERIA	Требуется проверка назначения и доступности	0x879048	0x81ae80
+16	0x10	UI_FILM_SIM_AMERICAN_NEW_COLOR	Требуется проверка назначения и доступности	0x879058	0x81ae98
+17	0x11	UI_FILM_SIM_REALA	REALA	0x879068	0x81aeb8
+18	0x12	UI_FILM_SIM_ETERNA	ETERNA	0x879078	0x81aed0
+19	0x13	UI_FILM_SIM_BLEACH_BYPASS	ETERNA BLEACH BYPASS, по названию	0x879088	0x81aee8
+20	0x14	UI_FILM_SIM_ACROS_FILTER	Требуется проверка назначения и доступности	0x879098	0x81af08
+21	0x15	UI_FILM_SIM_ACROS_FILTER_NON	ACROS без цветного фильтра	0x8790a8	0x81af28
+22	0x16	UI_FILM_SIM_ACROS_FILTER_R	ACROS с красным фильтром	0x8790b8	0x81af48
+23	0x17	UI_FILM_SIM_ACROS_FILTER_Y	ACROS с жёлтым фильтром	0x8790c8	0x81af68
+24	0x18	UI_FILM_SIM_ACROS_FILTER_G	ACROS с зелёным фильтром	0x8790d8	0x81af88
+25	0x19	UI_FILM_SIM_AUTO	Требуется проверка назначения и доступности	0x8790e8	0x81afa8

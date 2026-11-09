@@ -1,0 +1,662 @@
+{
+  "method": {
+    "source_relationship": "Владелец сообщил, что 0300/0301/0302 — камерные проявки 0296; EXIF согласуется, но сам по себе происхождение не доказывает.",
+    "comparability": "Кандидат сравнения только для JPEG заявленного общего RAW с различием целевого поля и равенством остальных полей матрицы; скрытые настройки не исключены.",
+    "metadata_source": "Анализ_прошивки/Проявка_0296/Метаданные/метаданные.json",
+    "metadata_sha256_before": "159a1634581c091673558c48e49f538cd539c3929299b38022ba35892846b6e9",
+    "metadata_sha256_after": "159a1634581c091673558c48e49f538cd539c3929299b38022ba35892846b6e9",
+    "metadata_exiftool_version": "13.61",
+    "numeric_convention": "-n ExifTool: ValueConv, не обязательно сырые байты",
+    "privacy": "Только имена файлов, хеши и выбранные неприватные теги; изображения и приватные теги не сохраняются."
+  },
+  "input_inventory": [
+    {
+      "path": "Тестовые фото/DSCF0292.JPG",
+      "sha256_before": "5cb365b79963fdfafb06d3383397e3e8201c30ab084ce539b69464c8518fc200",
+      "sha256_after": "5cb365b79963fdfafb06d3383397e3e8201c30ab084ce539b69464c8518fc200"
+    },
+    {
+      "path": "Тестовые фото/DSCF0292.RAF",
+      "sha256_before": "e5a316d50d5c1f0ec3fd84d200bf82646090f9cd8ab55e29c7cbd1462f46bfb2",
+      "sha256_after": "e5a316d50d5c1f0ec3fd84d200bf82646090f9cd8ab55e29c7cbd1462f46bfb2"
+    },
+    {
+      "path": "Тестовые фото/DSCF0293.JPG",
+      "sha256_before": "59a333a484f4f5ed81decc930af67d600b2a379328c07669eced2fa7e987f88c",
+      "sha256_after": "59a333a484f4f5ed81decc930af67d600b2a379328c07669eced2fa7e987f88c"
+    },
+    {
+      "path": "Тестовые фото/DSCF0293.RAF",
+      "sha256_before": "0a4a3acc20541f1c4b1b689130d365d948842331c5c157e64b6c0f65fc4b2dec",
+      "sha256_after": "0a4a3acc20541f1c4b1b689130d365d948842331c5c157e64b6c0f65fc4b2dec"
+    },
+    {
+      "path": "Тестовые фото/DSCF0294.JPG",
+      "sha256_before": "c63fb478d4b33a520cff689cabb51c5b386ed9b1eae60dcd1016447e5cdc5387",
+      "sha256_after": "c63fb478d4b33a520cff689cabb51c5b386ed9b1eae60dcd1016447e5cdc5387"
+    },
+    {
+      "path": "Тестовые фото/DSCF0294.RAF",
+      "sha256_before": "e15dc41569eb54493eb9856cf624886efdbfa4be1798c44777c1df2adeaa8007",
+      "sha256_after": "e15dc41569eb54493eb9856cf624886efdbfa4be1798c44777c1df2adeaa8007"
+    },
+    {
+      "path": "Тестовые фото/DSCF0295.JPG",
+      "sha256_before": "d0f735c340fc849af6a81ad01918e3aab06ab1efcf177ab1e8f405a00d686be6",
+      "sha256_after": "d0f735c340fc849af6a81ad01918e3aab06ab1efcf177ab1e8f405a00d686be6"
+    },
+    {
+      "path": "Тестовые фото/DSCF0295.RAF",
+      "sha256_before": "18e3ce61495be626e575144747fb694d66072b9129fdae65dadf2ff19f1cee4e",
+      "sha256_after": "18e3ce61495be626e575144747fb694d66072b9129fdae65dadf2ff19f1cee4e"
+    },
+    {
+      "path": "Тестовые фото/DSCF0296.RAF",
+      "sha256_before": "adff97c88d4c12b097c79f69ff61d93e2cbd023bc751da1446c1b5bc0260e986",
+      "sha256_after": "adff97c88d4c12b097c79f69ff61d93e2cbd023bc751da1446c1b5bc0260e986"
+    },
+    {
+      "path": "Тестовые фото/DSCF0297.RAF",
+      "sha256_before": "0657162370d2d7217ba15aa4f9c7d5a3978d1ae8132307fa0e9039d1740859ae",
+      "sha256_after": "0657162370d2d7217ba15aa4f9c7d5a3978d1ae8132307fa0e9039d1740859ae"
+    },
+    {
+      "path": "Тестовые фото/DSCF0298.JPG",
+      "sha256_before": "daac5f9280c0bc125a64d21f5219791477ed80d5a789de1a89c08d774d814d04",
+      "sha256_after": "daac5f9280c0bc125a64d21f5219791477ed80d5a789de1a89c08d774d814d04"
+    },
+    {
+      "path": "Тестовые фото/DSCF0298.RAF",
+      "sha256_before": "b0a69b6a80e3314a8ea9e4381769752034fba92f25cbfb652d56379cba2e34bc",
+      "sha256_after": "b0a69b6a80e3314a8ea9e4381769752034fba92f25cbfb652d56379cba2e34bc"
+    },
+    {
+      "path": "Тестовые фото/DSCF0299.JPG",
+      "sha256_before": "8cfb2f3feccc3023262306911fa21df2644a26baf0b78b76b9e57645ab52b613",
+      "sha256_after": "8cfb2f3feccc3023262306911fa21df2644a26baf0b78b76b9e57645ab52b613"
+    },
+    {
+      "path": "Тестовые фото/DSCF0299.RAF",
+      "sha256_before": "ff50d62f565fcc52f98eda82348ac804b74dffa7e0924228424b5b09d2c32313",
+      "sha256_after": "ff50d62f565fcc52f98eda82348ac804b74dffa7e0924228424b5b09d2c32313"
+    },
+    {
+      "path": "Тестовые фото/Доработка 296 в камере/DSCF0300.JPG",
+      "sha256_before": "a508796353a62ec3d13ca72b4358d7c3779867a44bc02af951479623f04c8cae",
+      "sha256_after": "a508796353a62ec3d13ca72b4358d7c3779867a44bc02af951479623f04c8cae"
+    },
+    {
+      "path": "Тестовые фото/Доработка 296 в камере/DSCF0301.JPG",
+      "sha256_before": "17949ce0e8660675e86a61a817857470b9c264b411d863aebded9e27330e4c8a",
+      "sha256_after": "17949ce0e8660675e86a61a817857470b9c264b411d863aebded9e27330e4c8a"
+    },
+    {
+      "path": "Тестовые фото/Доработка 296 в камере/DSCF0302.JPG",
+      "sha256_before": "20f3b6ef810d587e9c9f5f987b90035e0a76c59a774f8631fc2c8707c6984e87",
+      "sha256_after": "20f3b6ef810d587e9c9f5f987b90035e0a76c59a774f8631fc2c8707c6984e87"
+    }
+  ],
+  "values": {
+    "DSCF0296.RAF": {
+      "света": {
+        "FujiFilm:HighlightTone": {
+          "numeric": -24,
+          "display": 1.5
+        }
+      },
+      "тени": {
+        "FujiFilm:ShadowTone": {
+          "numeric": -8,
+          "display": 0.5
+        }
+      },
+      "Color Chrome": {
+        "FujiFilm:ColorChromeEffect": {
+          "numeric": 64,
+          "display": "Strong"
+        }
+      },
+      "FX Blue": {
+        "FujiFilm:ColorChromeFXBlue": {
+          "numeric": 64,
+          "display": "Strong"
+        }
+      },
+      "WB": {
+        "FujiFilm:WhiteBalance": {
+          "numeric": 4080,
+          "display": "Kelvin"
+        },
+        "FujiFilm:ColorTemperature": {
+          "numeric": 5750,
+          "display": 5750
+        },
+        "FujiFilm:WhiteBalanceFineTune": {
+          "numeric": "20 -100",
+          "display": "Red +20, Blue -100"
+        }
+      },
+      "clarity": {
+        "FujiFilm:Clarity": {
+          "numeric": 3000,
+          "display": 3
+        }
+      },
+      "sharpness": {
+        "FujiFilm:Sharpness": {
+          "numeric": 130,
+          "display": "-1 (medium soft)"
+        }
+      },
+      "noise reduction": {
+        "FujiFilm:NoiseReduction": {
+          "numeric": 736,
+          "display": "-4 (weakest)"
+        }
+      },
+      "color": {
+        "FujiFilm:Saturation": {
+          "numeric": 128,
+          "display": "+1 (medium high)"
+        }
+      }
+    },
+    "DSCF0300.JPG": {
+      "света": {
+        "FujiFilm:HighlightTone": {
+          "numeric": -24,
+          "display": 1.5
+        }
+      },
+      "тени": {
+        "FujiFilm:ShadowTone": {
+          "numeric": -8,
+          "display": 0.5
+        }
+      },
+      "Color Chrome": {
+        "FujiFilm:ColorChromeEffect": {
+          "numeric": 64,
+          "display": "Strong"
+        }
+      },
+      "FX Blue": {
+        "FujiFilm:ColorChromeFXBlue": {
+          "numeric": 64,
+          "display": "Strong"
+        }
+      },
+      "WB": {
+        "FujiFilm:WhiteBalance": {
+          "numeric": 4080,
+          "display": "Kelvin"
+        },
+        "FujiFilm:ColorTemperature": {
+          "numeric": 5750,
+          "display": 5750
+        },
+        "FujiFilm:WhiteBalanceFineTune": {
+          "numeric": "20 -100",
+          "display": "Red +20, Blue -100"
+        }
+      },
+      "clarity": {
+        "FujiFilm:Clarity": {
+          "numeric": 3000,
+          "display": 3
+        }
+      },
+      "sharpness": {
+        "FujiFilm:Sharpness": {
+          "numeric": 130,
+          "display": "-1 (medium soft)"
+        }
+      },
+      "noise reduction": {
+        "FujiFilm:NoiseReduction": {
+          "numeric": 736,
+          "display": "-4 (weakest)"
+        }
+      },
+      "color": {
+        "FujiFilm:Saturation": {
+          "numeric": 128,
+          "display": "+1 (medium high)"
+        }
+      }
+    },
+    "DSCF0301.JPG": {
+      "света": {
+        "FujiFilm:HighlightTone": {
+          "numeric": -24,
+          "display": 1.5
+        }
+      },
+      "тени": {
+        "FujiFilm:ShadowTone": {
+          "numeric": -8,
+          "display": 0.5
+        }
+      },
+      "Color Chrome": {
+        "FujiFilm:ColorChromeEffect": {
+          "numeric": 64,
+          "display": "Strong"
+        }
+      },
+      "FX Blue": {
+        "FujiFilm:ColorChromeFXBlue": {
+          "numeric": 64,
+          "display": "Strong"
+        }
+      },
+      "WB": {
+        "FujiFilm:WhiteBalance": {
+          "numeric": 4080,
+          "display": "Kelvin"
+        },
+        "FujiFilm:ColorTemperature": {
+          "numeric": 5750,
+          "display": 5750
+        },
+        "FujiFilm:WhiteBalanceFineTune": {
+          "numeric": "20 -100",
+          "display": "Red +20, Blue -100"
+        }
+      },
+      "clarity": {
+        "FujiFilm:Clarity": {
+          "numeric": 3000,
+          "display": 3
+        }
+      },
+      "sharpness": {
+        "FujiFilm:Sharpness": {
+          "numeric": 130,
+          "display": "-1 (medium soft)"
+        }
+      },
+      "noise reduction": {
+        "FujiFilm:NoiseReduction": {
+          "numeric": 736,
+          "display": "-4 (weakest)"
+        }
+      },
+      "color": {
+        "FujiFilm:Saturation": {
+          "numeric": 0,
+          "display": "0 (normal)"
+        }
+      }
+    },
+    "DSCF0302.JPG": {
+      "света": {
+        "FujiFilm:HighlightTone": {
+          "numeric": -24,
+          "display": 1.5
+        }
+      },
+      "тени": {
+        "FujiFilm:ShadowTone": {
+          "numeric": -8,
+          "display": 0.5
+        }
+      },
+      "Color Chrome": {
+        "FujiFilm:ColorChromeEffect": {
+          "numeric": 64,
+          "display": "Strong"
+        }
+      },
+      "FX Blue": {
+        "FujiFilm:ColorChromeFXBlue": {
+          "numeric": 64,
+          "display": "Strong"
+        }
+      },
+      "WB": {
+        "FujiFilm:WhiteBalance": {
+          "numeric": 4080,
+          "display": "Kelvin"
+        },
+        "FujiFilm:ColorTemperature": {
+          "numeric": 5750,
+          "display": 5750
+        },
+        "FujiFilm:WhiteBalanceFineTune": {
+          "numeric": "20 -100",
+          "display": "Red +20, Blue -100"
+        }
+      },
+      "clarity": {
+        "FujiFilm:Clarity": {
+          "numeric": 3000,
+          "display": 3
+        }
+      },
+      "sharpness": {
+        "FujiFilm:Sharpness": {
+          "numeric": 130,
+          "display": "-1 (medium soft)"
+        }
+      },
+      "noise reduction": {
+        "FujiFilm:NoiseReduction": {
+          "numeric": 736,
+          "display": "-4 (weakest)"
+        }
+      },
+      "color": {
+        "FujiFilm:Saturation": {
+          "numeric": 256,
+          "display": "+2 (high)"
+        }
+      }
+    }
+  },
+  "comparison_matrix": [
+    {
+      "parameter": "света",
+      "pairs": [
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0301.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0301.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        }
+      ],
+      "available": false,
+      "future_single_change": {
+        "menu": "TONE CURVE / HIGHLIGHT",
+        "baseline": "+1.5",
+        "target": "0",
+        "status": "ожидается JPEG владельца; доступность меню не проверена на камере"
+      }
+    },
+    {
+      "parameter": "тени",
+      "pairs": [
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0301.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0301.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        }
+      ],
+      "available": false,
+      "future_single_change": {
+        "menu": "TONE CURVE / SHADOW",
+        "baseline": "+0.5",
+        "target": "0",
+        "status": "ожидается JPEG владельца; доступность меню не проверена на камере"
+      }
+    },
+    {
+      "parameter": "Color Chrome",
+      "pairs": [
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0301.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0301.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        }
+      ],
+      "available": false,
+      "future_single_change": {
+        "menu": "COLOR CHROME EFFECT",
+        "baseline": "STRONG",
+        "target": "OFF",
+        "status": "ожидается JPEG владельца; доступность меню не проверена на камере"
+      }
+    },
+    {
+      "parameter": "FX Blue",
+      "pairs": [
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0301.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0301.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        }
+      ],
+      "available": false,
+      "future_single_change": {
+        "menu": "COLOR CHROME FX BLUE",
+        "baseline": "STRONG",
+        "target": "OFF",
+        "status": "ожидается JPEG владельца; доступность меню не проверена на камере"
+      }
+    },
+    {
+      "parameter": "WB",
+      "pairs": [
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0301.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0301.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        }
+      ],
+      "available": false,
+      "future_single_change": {
+        "menu": "WHITE BALANCE / COLOR TEMPERATURE",
+        "baseline": "5750 K",
+        "target": "5000 K",
+        "status": "ожидается JPEG владельца; доступность меню не проверена на камере"
+      }
+    },
+    {
+      "parameter": "clarity",
+      "pairs": [
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0301.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0301.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        }
+      ],
+      "available": false,
+      "future_single_change": {
+        "menu": "CLARITY",
+        "baseline": "+3",
+        "target": "0",
+        "status": "ожидается JPEG владельца; доступность меню не проверена на камере"
+      }
+    },
+    {
+      "parameter": "sharpness",
+      "pairs": [
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0301.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0301.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        }
+      ],
+      "available": false,
+      "future_single_change": {
+        "menu": "SHARPNESS",
+        "baseline": "-1",
+        "target": "0",
+        "status": "ожидается JPEG владельца; доступность меню не проверена на камере"
+      }
+    },
+    {
+      "parameter": "noise reduction",
+      "pairs": [
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0301.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        },
+        {
+          "a": "DSCF0301.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": false,
+          "other_matrix_fields_equal": false,
+          "available_candidate": false
+        }
+      ],
+      "available": false,
+      "future_single_change": {
+        "menu": "HIGH ISO NR",
+        "baseline": "-4",
+        "target": "0",
+        "status": "ожидается JPEG владельца; доступность меню не проверена на камере"
+      }
+    },
+    {
+      "parameter": "color",
+      "pairs": [
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0301.JPG",
+          "target_differs": true,
+          "other_matrix_fields_equal": true,
+          "available_candidate": true
+        },
+        {
+          "a": "DSCF0300.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": true,
+          "other_matrix_fields_equal": true,
+          "available_candidate": true
+        },
+        {
+          "a": "DSCF0301.JPG",
+          "b": "DSCF0302.JPG",
+          "target_differs": true,
+          "other_matrix_fields_equal": true,
+          "available_candidate": true
+        }
+      ],
+      "available": true
+    }
+  ],
+  "future_baseline": {
+    "status": "отсутствует; создать владельцу",
+    "source": "DSCF0296.RAF",
+    "restore": "REFLECT SHOOTING COND. перед каждой проявкой",
+    "common_output": "JPEG, O 3:2 7728x5152, FINE; одинаково для всей новой серии",
+    "note": "Базовая проявка и восемь одиночных изменений; 0300 не считать автоматически идентичной новой базе."
+  },
+  "manual": {
+    "raw_conversion": "https://fujifilm-dsc.com/en-int/manual/x-h2/playback/menu_playback/index.html#raw_conversion",
+    "image_quality": "https://fujifilm-dsc.com/en-int/manual/x-h2/menu_shooting/image_quality_setting/index.html",
+    "caveat": "Some settings may be unavailable depending on the options chosen when the picture was taken."
+  }
+}

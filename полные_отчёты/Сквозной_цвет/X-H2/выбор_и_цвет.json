@@ -1,0 +1,220 @@
+{
+  "source_sha256": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "source_unchanged": true,
+  "change_fragment": "0x132d138",
+  "compared_addresses": [
+    "0x2053f70",
+    "0x2051c90"
+  ],
+  "state_address": "0x2680414",
+  "change_cases": [
+    {
+      "new_word": 0,
+      "compared_word": 1,
+      "state": 0,
+      "stop": "0x132d5e0",
+      "visited": [
+        "0x132d5d8",
+        "0x1135930",
+        "0x12e67ac",
+        "0x12eefc0"
+      ],
+      "separate_consumer_output": 1
+    },
+    {
+      "new_word": 14,
+      "compared_word": 0,
+      "state": 13,
+      "stop": "0x132d5e0",
+      "visited": [
+        "0x132d5d8",
+        "0x1135930",
+        "0x12e67ac",
+        "0x12eefc0"
+      ],
+      "separate_consumer_output": 11
+    },
+    {
+      "new_word": 17,
+      "compared_word": 0,
+      "state": 22,
+      "stop": "0x132d5e0",
+      "visited": [
+        "0x132d5d8",
+        "0x1135930",
+        "0x12e67ac",
+        "0x12eefc0"
+      ],
+      "separate_consumer_output": 20
+    },
+    {
+      "new_word": 18,
+      "compared_word": 0,
+      "state": 18,
+      "stop": "0x132d5e0",
+      "visited": [
+        "0x132d5d8",
+        "0x1135930",
+        "0x12e67ac",
+        "0x12eefc0"
+      ],
+      "separate_consumer_output": 16
+    },
+    {
+      "new_word": 14,
+      "compared_word": 14,
+      "state": 2863311530,
+      "stop": "0x132d150",
+      "visited": [],
+      "separate_consumer_output": null
+    }
+  ],
+  "frame_fragments": [
+    {
+      "mode": 0,
+      "frame_c0": 0,
+      "params_39b8": 0,
+      "intermediate_20": 0,
+      "color_130": 0
+    },
+    {
+      "mode": 13,
+      "frame_c0": 13,
+      "params_39b8": 13,
+      "intermediate_20": 13,
+      "color_130": 8
+    },
+    {
+      "mode": 18,
+      "frame_c0": 18,
+      "params_39b8": 18,
+      "intermediate_20": 18,
+      "color_130": 9
+    },
+    {
+      "mode": 22,
+      "frame_c0": 22,
+      "params_39b8": 22,
+      "intermediate_20": 22,
+      "color_130": 13
+    }
+  ],
+  "color_parameter_id": 1715,
+  "color_table_address": "0x176d7b0",
+  "color_cases": [
+    {
+      "ui_enum": 0,
+      "representation_div10": 4.0,
+      "native": 0,
+      "index": 8,
+      "coefficients": [
+        1064,
+        -13,
+        1033,
+        -15
+      ]
+    },
+    {
+      "ui_enum": 1,
+      "representation_div10": 3.0,
+      "native": 1,
+      "index": 7,
+      "coefficients": [
+        1016,
+        -12,
+        986,
+        -14
+      ]
+    },
+    {
+      "ui_enum": 2,
+      "representation_div10": 2.0,
+      "native": 2,
+      "index": 6,
+      "coefficients": [
+        974,
+        -12,
+        946,
+        -14
+      ]
+    },
+    {
+      "ui_enum": 3,
+      "representation_div10": 1.0,
+      "native": 3,
+      "index": 5,
+      "coefficients": [
+        926,
+        -11,
+        899,
+        -13
+      ]
+    },
+    {
+      "ui_enum": 4,
+      "representation_div10": 0.0,
+      "native": 4,
+      "index": 4,
+      "coefficients": [
+        885,
+        -10,
+        859,
+        -12
+      ]
+    },
+    {
+      "ui_enum": 5,
+      "representation_div10": -1.0,
+      "native": 5,
+      "index": 3,
+      "coefficients": [
+        843,
+        -10,
+        818,
+        -12
+      ]
+    },
+    {
+      "ui_enum": 6,
+      "representation_div10": -2.0,
+      "native": 6,
+      "index": 2,
+      "coefficients": [
+        795,
+        -9,
+        771,
+        -11
+      ]
+    },
+    {
+      "ui_enum": 7,
+      "representation_div10": -3.0,
+      "native": 7,
+      "index": 1,
+      "coefficients": [
+        753,
+        -9,
+        731,
+        -11
+      ]
+    },
+    {
+      "ui_enum": 8,
+      "representation_div10": -4.0,
+      "native": 8,
+      "index": 0,
+      "coefficients": [
+        705,
+        -8,
+        684,
+        -10
+      ]
+    }
+  ],
+  "limits": [
+    "Values of compared global words are synthetic; physical input and actual provenance not observed.",
+    "The investigator manually supplies MODE to the frame setter and starts separate fragments; no state-to-frame bridge proven.",
+    "Color state and film branch are connected by the investigator using results; not one continuous camera run.",
+    "Camera hardware and output image not executed."
+  ]
+}

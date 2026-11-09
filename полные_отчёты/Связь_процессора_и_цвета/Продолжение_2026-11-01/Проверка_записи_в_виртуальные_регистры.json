@@ -1,0 +1,1037 @@
+{
+  "source": "<корень проекта>\\FIRMWARE\\ver 5.30\\FWUP0028.DAT",
+  "source_sha256": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "source_unchanged": true,
+  "date": "2026-11-01",
+  "conditions": "Artificial neutral context; unmodified ARM64 commands; virtual memory only.",
+  "not_verified": [
+    "Real camera execution and register readback",
+    "Hardware pixel computation",
+    "Exact role of these registers in all shooting modes"
+  ],
+  "descriptor_address": "0x018DF948",
+  "descriptors": [
+    {
+      "device_address": "0xff96c634",
+      "buffer_offset": "0x1ec",
+      "word_count": 1
+    },
+    {
+      "device_address": "0xff96c638",
+      "buffer_offset": "0x1f0",
+      "word_count": 1
+    }
+  ],
+  "general_record_subblock_offset": "0x96C",
+  "general_record_coefficient_offsets": [
+    "0xB46",
+    "0xB48",
+    "0xB4A",
+    "0xB4C"
+  ],
+  "update_mask": "0x80",
+  "coefficient_storage_bits": 13,
+  "virtual_runs": 64,
+  "cases": [
+    {
+      "color": -4,
+      "index": 0,
+      "gain": 102,
+      "record_values": [
+        705,
+        -8,
+        684,
+        -10
+      ],
+      "reserved_upper_bits": "0x0",
+      "packed_fields": [
+        705,
+        8184,
+        684,
+        8182
+      ],
+      "register_words": [
+        "0x1ff802c1",
+        "0x1ff602ac"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 536347329,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 536216236,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": -4,
+      "index": 0,
+      "gain": 102,
+      "record_values": [
+        705,
+        -8,
+        684,
+        -10
+      ],
+      "reserved_upper_bits": "0xa000",
+      "packed_fields": [
+        41665,
+        49144,
+        41644,
+        49142
+      ],
+      "register_words": [
+        "0xbff8a2c1",
+        "0xbff6a2ac"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 3220742849,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 3220611756,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": -4,
+      "index": 0,
+      "gain": 102,
+      "record_values": [
+        705,
+        -8,
+        684,
+        -10
+      ],
+      "reserved_upper_bits": "0xe000",
+      "packed_fields": [
+        58049,
+        65528,
+        58028,
+        65526
+      ],
+      "register_words": [
+        "0xfff8e2c1",
+        "0xfff6e2ac"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 4294501057,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 4294369964,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": -3,
+      "index": 1,
+      "gain": 109,
+      "record_values": [
+        753,
+        -9,
+        731,
+        -11
+      ],
+      "reserved_upper_bits": "0x0",
+      "packed_fields": [
+        753,
+        8183,
+        731,
+        8181
+      ],
+      "register_words": [
+        "0x1ff702f1",
+        "0x1ff502db"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 536281841,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 536150747,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": -3,
+      "index": 1,
+      "gain": 109,
+      "record_values": [
+        753,
+        -9,
+        731,
+        -11
+      ],
+      "reserved_upper_bits": "0xa000",
+      "packed_fields": [
+        41713,
+        49143,
+        41691,
+        49141
+      ],
+      "register_words": [
+        "0xbff7a2f1",
+        "0xbff5a2db"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 3220677361,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 3220546267,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": -3,
+      "index": 1,
+      "gain": 109,
+      "record_values": [
+        753,
+        -9,
+        731,
+        -11
+      ],
+      "reserved_upper_bits": "0xe000",
+      "packed_fields": [
+        58097,
+        65527,
+        58075,
+        65525
+      ],
+      "register_words": [
+        "0xfff7e2f1",
+        "0xfff5e2db"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 4294435569,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 4294304475,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": -2,
+      "index": 2,
+      "gain": 115,
+      "record_values": [
+        795,
+        -9,
+        771,
+        -11
+      ],
+      "reserved_upper_bits": "0x0",
+      "packed_fields": [
+        795,
+        8183,
+        771,
+        8181
+      ],
+      "register_words": [
+        "0x1ff7031b",
+        "0x1ff50303"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 536281883,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 536150787,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": -2,
+      "index": 2,
+      "gain": 115,
+      "record_values": [
+        795,
+        -9,
+        771,
+        -11
+      ],
+      "reserved_upper_bits": "0xa000",
+      "packed_fields": [
+        41755,
+        49143,
+        41731,
+        49141
+      ],
+      "register_words": [
+        "0xbff7a31b",
+        "0xbff5a303"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 3220677403,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 3220546307,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": -2,
+      "index": 2,
+      "gain": 115,
+      "record_values": [
+        795,
+        -9,
+        771,
+        -11
+      ],
+      "reserved_upper_bits": "0xe000",
+      "packed_fields": [
+        58139,
+        65527,
+        58115,
+        65525
+      ],
+      "register_words": [
+        "0xfff7e31b",
+        "0xfff5e303"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 4294435611,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 4294304515,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": -1,
+      "index": 3,
+      "gain": 122,
+      "record_values": [
+        843,
+        -10,
+        818,
+        -12
+      ],
+      "reserved_upper_bits": "0x0",
+      "packed_fields": [
+        843,
+        8182,
+        818,
+        8180
+      ],
+      "register_words": [
+        "0x1ff6034b",
+        "0x1ff40332"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 536216395,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 536085298,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": -1,
+      "index": 3,
+      "gain": 122,
+      "record_values": [
+        843,
+        -10,
+        818,
+        -12
+      ],
+      "reserved_upper_bits": "0xa000",
+      "packed_fields": [
+        41803,
+        49142,
+        41778,
+        49140
+      ],
+      "register_words": [
+        "0xbff6a34b",
+        "0xbff4a332"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 3220611915,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 3220480818,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": -1,
+      "index": 3,
+      "gain": 122,
+      "record_values": [
+        843,
+        -10,
+        818,
+        -12
+      ],
+      "reserved_upper_bits": "0xe000",
+      "packed_fields": [
+        58187,
+        65526,
+        58162,
+        65524
+      ],
+      "register_words": [
+        "0xfff6e34b",
+        "0xfff4e332"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 4294370123,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 4294239026,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 0,
+      "index": 4,
+      "gain": 128,
+      "record_values": [
+        885,
+        -10,
+        859,
+        -12
+      ],
+      "reserved_upper_bits": "0x0",
+      "packed_fields": [
+        885,
+        8182,
+        859,
+        8180
+      ],
+      "register_words": [
+        "0x1ff60375",
+        "0x1ff4035b"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 536216437,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 536085339,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 0,
+      "index": 4,
+      "gain": 128,
+      "record_values": [
+        885,
+        -10,
+        859,
+        -12
+      ],
+      "reserved_upper_bits": "0xa000",
+      "packed_fields": [
+        41845,
+        49142,
+        41819,
+        49140
+      ],
+      "register_words": [
+        "0xbff6a375",
+        "0xbff4a35b"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 3220611957,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 3220480859,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 0,
+      "index": 4,
+      "gain": 128,
+      "record_values": [
+        885,
+        -10,
+        859,
+        -12
+      ],
+      "reserved_upper_bits": "0xe000",
+      "packed_fields": [
+        58229,
+        65526,
+        58203,
+        65524
+      ],
+      "register_words": [
+        "0xfff6e375",
+        "0xfff4e35b"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 4294370165,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 4294239067,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 1,
+      "index": 5,
+      "gain": 134,
+      "record_values": [
+        926,
+        -11,
+        899,
+        -13
+      ],
+      "reserved_upper_bits": "0x0",
+      "packed_fields": [
+        926,
+        8181,
+        899,
+        8179
+      ],
+      "register_words": [
+        "0x1ff5039e",
+        "0x1ff30383"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 536150942,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 536019843,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 1,
+      "index": 5,
+      "gain": 134,
+      "record_values": [
+        926,
+        -11,
+        899,
+        -13
+      ],
+      "reserved_upper_bits": "0xa000",
+      "packed_fields": [
+        41886,
+        49141,
+        41859,
+        49139
+      ],
+      "register_words": [
+        "0xbff5a39e",
+        "0xbff3a383"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 3220546462,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 3220415363,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 1,
+      "index": 5,
+      "gain": 134,
+      "record_values": [
+        926,
+        -11,
+        899,
+        -13
+      ],
+      "reserved_upper_bits": "0xe000",
+      "packed_fields": [
+        58270,
+        65525,
+        58243,
+        65523
+      ],
+      "register_words": [
+        "0xfff5e39e",
+        "0xfff3e383"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 4294304670,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 4294173571,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 2,
+      "index": 6,
+      "gain": 141,
+      "record_values": [
+        974,
+        -12,
+        946,
+        -14
+      ],
+      "reserved_upper_bits": "0x0",
+      "packed_fields": [
+        974,
+        8180,
+        946,
+        8178
+      ],
+      "register_words": [
+        "0x1ff403ce",
+        "0x1ff203b2"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 536085454,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 535954354,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 2,
+      "index": 6,
+      "gain": 141,
+      "record_values": [
+        974,
+        -12,
+        946,
+        -14
+      ],
+      "reserved_upper_bits": "0xa000",
+      "packed_fields": [
+        41934,
+        49140,
+        41906,
+        49138
+      ],
+      "register_words": [
+        "0xbff4a3ce",
+        "0xbff2a3b2"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 3220480974,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 3220349874,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 2,
+      "index": 6,
+      "gain": 141,
+      "record_values": [
+        974,
+        -12,
+        946,
+        -14
+      ],
+      "reserved_upper_bits": "0xe000",
+      "packed_fields": [
+        58318,
+        65524,
+        58290,
+        65522
+      ],
+      "register_words": [
+        "0xfff4e3ce",
+        "0xfff2e3b2"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 4294239182,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 4294108082,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 3,
+      "index": 7,
+      "gain": 147,
+      "record_values": [
+        1016,
+        -12,
+        986,
+        -14
+      ],
+      "reserved_upper_bits": "0x0",
+      "packed_fields": [
+        1016,
+        8180,
+        986,
+        8178
+      ],
+      "register_words": [
+        "0x1ff403f8",
+        "0x1ff203da"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 536085496,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 535954394,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 3,
+      "index": 7,
+      "gain": 147,
+      "record_values": [
+        1016,
+        -12,
+        986,
+        -14
+      ],
+      "reserved_upper_bits": "0xa000",
+      "packed_fields": [
+        41976,
+        49140,
+        41946,
+        49138
+      ],
+      "register_words": [
+        "0xbff4a3f8",
+        "0xbff2a3da"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 3220481016,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 3220349914,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 3,
+      "index": 7,
+      "gain": 147,
+      "record_values": [
+        1016,
+        -12,
+        986,
+        -14
+      ],
+      "reserved_upper_bits": "0xe000",
+      "packed_fields": [
+        58360,
+        65524,
+        58330,
+        65522
+      ],
+      "register_words": [
+        "0xfff4e3f8",
+        "0xfff2e3da"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 4294239224,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 4294108122,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 4,
+      "index": 8,
+      "gain": 154,
+      "record_values": [
+        1064,
+        -13,
+        1033,
+        -15
+      ],
+      "reserved_upper_bits": "0x0",
+      "packed_fields": [
+        1064,
+        8179,
+        1033,
+        8177
+      ],
+      "register_words": [
+        "0x1ff30428",
+        "0x1ff10409"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 536020008,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 535888905,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 4,
+      "index": 8,
+      "gain": 154,
+      "record_values": [
+        1064,
+        -13,
+        1033,
+        -15
+      ],
+      "reserved_upper_bits": "0xa000",
+      "packed_fields": [
+        42024,
+        49139,
+        41993,
+        49137
+      ],
+      "register_words": [
+        "0xbff3a428",
+        "0xbff1a409"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 3220415528,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 3220284425,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    },
+    {
+      "color": 4,
+      "index": 8,
+      "gain": 154,
+      "record_values": [
+        1064,
+        -13,
+        1033,
+        -15
+      ],
+      "reserved_upper_bits": "0xe000",
+      "packed_fields": [
+        58408,
+        65523,
+        58377,
+        65521
+      ],
+      "register_words": [
+        "0xfff3e428",
+        "0xfff1e409"
+      ],
+      "coefficient_writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": 4294173736,
+          "pc": "0x5de10"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": 4294042633,
+          "pc": "0x5de10"
+        }
+      ],
+      "total_device_writes_in_run": 27
+    }
+  ],
+  "negative_control_no_bit7_no_coefficient_writes": true
+}

@@ -1,0 +1,10 @@
+*.DAT
+*.dat
+*.RAF
+*.raf
+*.JPG
+*.jpg
+*.pem
+*.asm
+__pycache__/
+*.pyc

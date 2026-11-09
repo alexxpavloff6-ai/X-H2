@@ -1,0 +1,124 @@
+{
+  "source_sha256": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "source_unchanged": true,
+  "virtual_runs": 12,
+  "cases": [
+    {
+      "display": 0,
+      "native": 4,
+      "P_39B4": 4,
+      "P_39B8_mode": 13,
+      "T_0C": 4,
+      "C_13C": 4,
+      "C_130_mode": 8,
+      "coefficient_set": 6,
+      "gain": 128,
+      "P_bytes": "04 00 00 00",
+      "T_bytes": "04 00 00 00",
+      "C_bytes": "04 00 00 00",
+      "output_3C_3E_40_42": [
+        885,
+        -10,
+        859,
+        -12
+      ],
+      "output_bytes": "75 03 F6 FF 5B 03 F4 FF",
+      "math_trace": [
+        {
+          "before_instruction": "0x2f2481c",
+          "x0": 128,
+          "x4": 64,
+          "x5": 128,
+          "x6": 885
+        },
+        {
+          "before_instruction": "0x2f24820",
+          "x0": 113280,
+          "x4": 64,
+          "x5": 128,
+          "x6": 885
+        },
+        {
+          "before_instruction": "0x2f24824",
+          "x0": 14499840,
+          "x4": 64,
+          "x5": 128,
+          "x6": 885
+        },
+        {
+          "before_instruction": "0x2f24828",
+          "x0": 927989760,
+          "x4": 64,
+          "x5": 128,
+          "x6": 885
+        },
+        {
+          "before_instruction": "0x2f2482c",
+          "x0": 885,
+          "x4": 64,
+          "x5": 128,
+          "x6": 885
+        }
+      ]
+    },
+    {
+      "display": 2,
+      "native": 2,
+      "P_39B4": 2,
+      "P_39B8_mode": 13,
+      "T_0C": 2,
+      "C_13C": 6,
+      "C_130_mode": 8,
+      "coefficient_set": 6,
+      "gain": 141,
+      "P_bytes": "02 00 00 00",
+      "T_bytes": "02 00 00 00",
+      "C_bytes": "06 00 00 00",
+      "output_3C_3E_40_42": [
+        974,
+        -12,
+        946,
+        -14
+      ],
+      "output_bytes": "CE 03 F4 FF B2 03 F2 FF",
+      "math_trace": [
+        {
+          "before_instruction": "0x2f2481c",
+          "x0": 141,
+          "x4": 64,
+          "x5": 128,
+          "x6": 885
+        },
+        {
+          "before_instruction": "0x2f24820",
+          "x0": 124785,
+          "x4": 64,
+          "x5": 128,
+          "x6": 885
+        },
+        {
+          "before_instruction": "0x2f24824",
+          "x0": 15972480,
+          "x4": 64,
+          "x5": 128,
+          "x6": 885
+        },
+        {
+          "before_instruction": "0x2f24828",
+          "x0": 1022238720,
+          "x4": 64,
+          "x5": 128,
+          "x6": 885
+        },
+        {
+          "before_instruction": "0x2f2482c",
+          "x0": 974,
+          "x4": 64,
+          "x5": 128,
+          "x6": 885
+        }
+      ]
+    }
+  ],
+  "scope": "Separate unmodified firmware fragments executed with synthetic context; GUI event handler and final pixel calculation not emulated."
+}

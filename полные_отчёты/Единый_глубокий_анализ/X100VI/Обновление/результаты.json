@@ -1,0 +1,593 @@
+{
+  "source": "Firmware на прочиеFuji\\FPUPDATE.DAT",
+  "source_size": 109251576,
+  "source_sha256": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+  "source_sha256_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+  "xor": "ff in memory",
+  "blocks": {
+    "recovery": {
+      "dat_offset": "0x1402bc",
+      "sha256": "fbbacc6736e28c9bb44550fac0f450d8ae23b5a26e94b060c49cfc142cdbeaed",
+      "bytes": 2091592,
+      "conditional_base": "0x881000"
+    },
+    "main_labels": {
+      "dat_offset": "0x9c02bc",
+      "sha256": "77456fe5c9808ce5e638b1a5f6f12d9e8e40c1751e1f9b4640134fde662e09d4",
+      "bytes": 27121096
+    },
+    "update": {
+      "dat_offset": "0x10e02bc",
+      "sha256": "14b0557bd724fa74b51ff641fcd5481da5b3ac64146d4fc69375086dafcfb174",
+      "bytes": 22253568,
+      "conditional_base": "0x2b8f000"
+    }
+  },
+  "signature": {
+    "algorithm": "ECDSA secp256r1 SHA-256",
+    "signature_offset": "0x6830bb0",
+    "signature_bytes": 72,
+    "signed_prefix_bytes": 109251504,
+    "valid": true,
+    "modified_copy_rejected": true,
+    "public_key_path": "Анализ_прошивки\\Сравнение_камер\\X100VI\\x100vi_pubkey.pem",
+    "public_key_sha256": "2f62e215502ae247f5e3b019389910bf4705f9dffe7ca543a30145c78a927f58",
+    "public_point_in_xor_dat": "0x23cb40"
+  },
+  "labels_main_block_offsets": {
+    "A_UPDATE_DEINIT": "0x50cd90",
+    "A_UPDATE_INIT": "0x50cda0",
+    "A_UPDATE_START": "0x50cdb0",
+    "A_UPDATE_WRITE": "0x50cdc0",
+    "UI_ERR_UPDATE_NO_FILE": "0x583bd8",
+    "UI_ERR_UPDATE_BROKEN_FILE": "0x583bf0",
+    "UI_ERR_UPDATE_OLD_FILE": "0x583c10",
+    "UI_ERR_UPDATE_MODEDIFFER": "0x583c28",
+    "UI_ERR_UPDATE_FAILURE": "0x583ca0"
+  },
+  "request_runs": [
+    {
+      "stage": "INIT",
+      "entry_block_offset": "0x3b25b8",
+      "stop_before_bl_block_offset": "0x3b25f0",
+      "command": "0x600",
+      "payload_size": 16,
+      "payload_hex": "443322118877665500ffeeddccbbaa99",
+      "input_hex": "4433221188776655ccbbaa9900ffeedd",
+      "entry_note": "function entry"
+    },
+    {
+      "stage": "START",
+      "entry_block_offset": "0x3b25fc",
+      "stop_before_bl_block_offset": "0x3b2618",
+      "command": "0x602",
+      "payload_size": 4,
+      "payload_hex": "44332211",
+      "input_hex": "4433221188776655ccbbaa9900ffeedd",
+      "entry_note": "function entry"
+    },
+    {
+      "stage": "WRITE",
+      "entry_block_offset": "0x3b263c",
+      "stop_before_bl_block_offset": "0x3b2650",
+      "command": "0x603",
+      "payload_size": 4,
+      "payload_hex": "44332211",
+      "input_hex": "4433221188776655ccbbaa9900ffeedd",
+      "entry_note": "after prior call; X19 and SP synthetic"
+    },
+    {
+      "stage": "DEINIT",
+      "entry_block_offset": "0x3b2680",
+      "stop_before_bl_block_offset": "0x3b2694",
+      "command": "0x601",
+      "payload_size": 4,
+      "payload_hex": "44332211",
+      "input_hex": "4433221188776655ccbbaa9900ffeedd",
+      "entry_note": "after prior call; X19 and SP synthetic"
+    }
+  ],
+  "recovery_selector_runs": [
+    {
+      "input": 0,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 0,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 1,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 1,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 2,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 2,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 3,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 3,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 4,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 4,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 5,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 5,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 6,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 6,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 7,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 7,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 8,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 8,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 9,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 9,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 10,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 10,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 11,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 11,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 12,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 12,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 13,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 13,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 14,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 14,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 15,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 15,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 16,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 16,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 17,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 17,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 18,
+      "message_service_return": 0,
+      "return_w0": "0x0",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 18,
+          "stub_return": 0
+        }
+      ]
+    },
+    {
+      "input": 19,
+      "message_service_return": 0,
+      "return_w0": "0xfffffffa",
+      "calls": []
+    },
+    {
+      "input": 20,
+      "message_service_return": 0,
+      "return_w0": "0xfffffffa",
+      "calls": []
+    },
+    {
+      "input": 4294967295,
+      "message_service_return": 0,
+      "return_w0": "0xfffffffa",
+      "calls": []
+    },
+    {
+      "input": 0,
+      "message_service_return": 1,
+      "return_w0": "0xfffffffa",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 0,
+          "stub_return": 1
+        }
+      ]
+    },
+    {
+      "input": 18,
+      "message_service_return": 1,
+      "return_w0": "0xfffffffa",
+      "calls": [
+        {
+          "target": "0x3d14",
+          "stub_return": 4660
+        },
+        {
+          "target": "0x49e0",
+          "x0": "0xea",
+          "header_hex": "8a143412ea0000000400000000000000d8ef007000000000",
+          "id": "0x148a",
+          "source": "0x1234",
+          "destination": "0xea",
+          "size": 4,
+          "payload": 18,
+          "stub_return": 1
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "conditional bases are not proven runtime addresses",
+    "no transport or hardware execution",
+    "WRITE and DEINIT snippets start after a skipped call",
+    "recovery service calls are synthetic stubs",
+    "signature verification on host does not establish camera verification order"
+  ],
+  "filename_table": {
+    "recovery_offset": "0x179380",
+    "update_offset": "0x82a1a0",
+    "stride": 17,
+    "names": [
+      "A:\\FPUPDATE.DAT",
+      "A:\\XFUPDATE.DAT",
+      "A:\\XFTCDATE.DAT",
+      "A:\\GFACDATE.DAT",
+      "A:\\FAUPxxxx.DAT",
+      "A:\\FTUPxxxx.DAT"
+    ],
+    "interpretation": "static tables; no demonstrated file open"
+  }
+}

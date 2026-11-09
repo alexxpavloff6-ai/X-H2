@@ -1,0 +1,573 @@
+{
+  "date": "2026-10-31",
+  "source_sha256": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "virtual_runs": 95,
+  "WB_conversion_checks": 14,
+  "WB_shift_conversion_checks": 38,
+  "WB_shift_pack_checks": 38,
+  "WB_modes": [
+    {
+      "ui_code": 0,
+      "ui_name": "UI_WB_AUTO",
+      "native_code": 0
+    },
+    {
+      "ui_code": 1,
+      "ui_name": "UI_WB_AUTO_WHITE",
+      "native_code": 1
+    },
+    {
+      "ui_code": 2,
+      "ui_name": "UI_WB_AUTO_ATMOSPHERE",
+      "native_code": 2
+    },
+    {
+      "ui_code": 3,
+      "ui_name": "UI_WB_CUSTOM1",
+      "native_code": 10
+    },
+    {
+      "ui_code": 4,
+      "ui_name": "UI_WB_CUSTOM2",
+      "native_code": 11
+    },
+    {
+      "ui_code": 5,
+      "ui_name": "UI_WB_CUSTOM3",
+      "native_code": 12
+    },
+    {
+      "ui_code": 6,
+      "ui_name": "UI_WB_KELVIN",
+      "native_code": 13
+    },
+    {
+      "ui_code": 7,
+      "ui_name": "UI_WB_CLEAR",
+      "native_code": 3
+    },
+    {
+      "ui_code": 8,
+      "ui_name": "UI_WB_CLOUDY",
+      "native_code": 4
+    },
+    {
+      "ui_code": 9,
+      "ui_name": "UI_WB_F_LAMP1",
+      "native_code": 5
+    },
+    {
+      "ui_code": 10,
+      "ui_name": "UI_WB_F_LAMP2",
+      "native_code": 6
+    },
+    {
+      "ui_code": 11,
+      "ui_name": "UI_WB_F_LAMP3",
+      "native_code": 7
+    },
+    {
+      "ui_code": 12,
+      "ui_name": "UI_WB_BULB",
+      "native_code": 8
+    },
+    {
+      "ui_code": 13,
+      "ui_name": "UI_WB_UNDERWATER",
+      "native_code": 9
+    }
+  ],
+  "WB_shifts": [
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 0,
+      "native_value": 9,
+      "develop_pack_value": 9
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 1,
+      "native_value": 8,
+      "develop_pack_value": 8
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 2,
+      "native_value": 7,
+      "develop_pack_value": 7
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 3,
+      "native_value": 6,
+      "develop_pack_value": 6
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 4,
+      "native_value": 5,
+      "develop_pack_value": 5
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 5,
+      "native_value": 4,
+      "develop_pack_value": 4
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 6,
+      "native_value": 3,
+      "develop_pack_value": 3
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 7,
+      "native_value": 2,
+      "develop_pack_value": 2
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 8,
+      "native_value": 1,
+      "develop_pack_value": 1
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 9,
+      "native_value": 0,
+      "develop_pack_value": 0
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 10,
+      "native_value": -1,
+      "develop_pack_value": -1
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 11,
+      "native_value": -2,
+      "develop_pack_value": -2
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 12,
+      "native_value": -3,
+      "develop_pack_value": -3
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 13,
+      "native_value": -4,
+      "develop_pack_value": -4
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 14,
+      "native_value": -5,
+      "develop_pack_value": -5
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 15,
+      "native_value": -6,
+      "develop_pack_value": -6
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 16,
+      "native_value": -7,
+      "develop_pack_value": -7
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 17,
+      "native_value": -8,
+      "develop_pack_value": -8
+    },
+    {
+      "axis": "R",
+      "parameter": "0x6bf",
+      "ui_code": 18,
+      "native_value": -9,
+      "develop_pack_value": -9
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 0,
+      "native_value": 9,
+      "develop_pack_value": 9
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 1,
+      "native_value": 8,
+      "develop_pack_value": 8
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 2,
+      "native_value": 7,
+      "develop_pack_value": 7
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 3,
+      "native_value": 6,
+      "develop_pack_value": 6
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 4,
+      "native_value": 5,
+      "develop_pack_value": 5
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 5,
+      "native_value": 4,
+      "develop_pack_value": 4
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 6,
+      "native_value": 3,
+      "develop_pack_value": 3
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 7,
+      "native_value": 2,
+      "develop_pack_value": 2
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 8,
+      "native_value": 1,
+      "develop_pack_value": 1
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 9,
+      "native_value": 0,
+      "develop_pack_value": 0
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 10,
+      "native_value": -1,
+      "develop_pack_value": -1
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 11,
+      "native_value": -2,
+      "develop_pack_value": -2
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 12,
+      "native_value": -3,
+      "develop_pack_value": -3
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 13,
+      "native_value": -4,
+      "develop_pack_value": -4
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 14,
+      "native_value": -5,
+      "develop_pack_value": -5
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 15,
+      "native_value": -6,
+      "develop_pack_value": -6
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 16,
+      "native_value": -7,
+      "develop_pack_value": -7
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 17,
+      "native_value": -8,
+      "develop_pack_value": -8
+    },
+    {
+      "axis": "B",
+      "parameter": "0x6dd",
+      "ui_code": 18,
+      "native_value": -9,
+      "develop_pack_value": -9
+    }
+  ],
+  "tone_examples": {
+    "neutral": {
+      "H_internal": 8,
+      "S_internal": 8,
+      "output": [
+        402,
+        404,
+        406,
+        409,
+        410,
+        413,
+        414,
+        418,
+        421,
+        423,
+        429,
+        431,
+        434,
+        437,
+        437,
+        438,
+        440,
+        440,
+        440,
+        438,
+        440,
+        440,
+        442,
+        438,
+        438,
+        434,
+        434,
+        434,
+        433,
+        432,
+        433,
+        433,
+        434,
+        436,
+        439,
+        449,
+        464,
+        477,
+        495,
+        512
+      ]
+    },
+    "highlight_plus_2": {
+      "H_internal": 12,
+      "S_internal": 8,
+      "output": [
+        402,
+        404,
+        406,
+        409,
+        410,
+        413,
+        414,
+        418,
+        421,
+        423,
+        429,
+        431,
+        434,
+        437,
+        437,
+        438,
+        440,
+        440,
+        440,
+        438,
+        440,
+        440,
+        442,
+        438,
+        438,
+        434,
+        434,
+        436,
+        458,
+        489,
+        513,
+        538,
+        556,
+        554,
+        555,
+        551,
+        542,
+        534,
+        522,
+        512
+      ],
+      "changed_indices": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    "shadow_plus_2": {
+      "H_internal": 8,
+      "S_internal": 12,
+      "output": [
+        170,
+        170,
+        174,
+        174,
+        176,
+        177,
+        178,
+        181,
+        182,
+        185,
+        189,
+        192,
+        195,
+        201,
+        206,
+        214,
+        226,
+        234,
+        240,
+        252,
+        256,
+        268,
+        284,
+        314,
+        348,
+        426,
+        444,
+        434,
+        433,
+        432,
+        433,
+        433,
+        434,
+        436,
+        439,
+        449,
+        464,
+        477,
+        495,
+        512
+      ],
+      "changed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    }
+  },
+  "color_examples": [
+    {
+      "display": 0,
+      "native": 4,
+      "index": 4,
+      "gain": 128,
+      "output_storage_order_3c_3e_40_42": [
+        885,
+        -10,
+        859,
+        -12
+      ],
+      "matrix_row_order": [
+        885,
+        -10,
+        -12,
+        859
+      ]
+    },
+    {
+      "display": 2,
+      "native": 2,
+      "index": 6,
+      "gain": 141,
+      "output_storage_order_3c_3e_40_42": [
+        974,
+        -12,
+        946,
+        -14
+      ],
+      "matrix_row_order": [
+        974,
+        -12,
+        -14,
+        946
+      ]
+    }
+  ],
+  "WB_limit": "Internal codes and develop parameter packing only; RGB gain/pixel path not established",
+  "pictures_are_synthetic_illustrations": true,
+  "pictures_not_rendered_by_this_firmware": true,
+  "input_unchanged": true
+}

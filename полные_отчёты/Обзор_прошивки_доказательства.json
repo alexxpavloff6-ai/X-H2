@@ -1,0 +1,3902 @@
+{
+  "source": "<корень проекта>\\FIRMWARE\\ver 5.30\\FWUP0028.DAT",
+  "source_size": 110302544,
+  "source_sha256": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "device_tree_header": [
+    3490578157,
+    11425,
+    72,
+    10572,
+    40,
+    17,
+    16,
+    0,
+    853,
+    10500
+  ],
+  "root_and_cpu_properties": [
+    {
+      "node": "/",
+      "property": "model",
+      "bytes": "53 6F 63 69 6F 6E 65 78 74 20 4D 41 52 42 4C 45 20 44 65 76 65 6C 6F 70 6D 65 6E 74 20 42 6F 61 72 64 00",
+      "text": "Socionext MARBLE Development Board",
+      "u32_be": null
+    },
+    {
+      "node": "/",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 6D 61 72 62 6C 65 00",
+      "text": "socionext,marble",
+      "u32_be": null
+    },
+    {
+      "node": "/cpus/cpu@1",
+      "property": "device_type",
+      "bytes": "63 70 75 00",
+      "text": "cpu",
+      "u32_be": [
+        1668314368
+      ]
+    },
+    {
+      "node": "/cpus/cpu@1",
+      "property": "compatible",
+      "bytes": "61 72 6D 2C 63 6F 72 74 65 78 2D 61 35 33 00 61 72 6D 2C 61 72 6D 76 38 00",
+      "text": "arm,cortex-a53 | arm,armv8",
+      "u32_be": null
+    },
+    {
+      "node": "/cpus/cpu@2",
+      "property": "device_type",
+      "bytes": "63 70 75 00",
+      "text": "cpu",
+      "u32_be": [
+        1668314368
+      ]
+    },
+    {
+      "node": "/cpus/cpu@2",
+      "property": "compatible",
+      "bytes": "61 72 6D 2C 63 6F 72 74 65 78 2D 61 35 33 00 61 72 6D 2C 61 72 6D 76 38 00",
+      "text": "arm,cortex-a53 | arm,armv8",
+      "u32_be": null
+    },
+    {
+      "node": "/cpus/cpu@4",
+      "property": "device_type",
+      "bytes": "63 70 75 00",
+      "text": "cpu",
+      "u32_be": [
+        1668314368
+      ]
+    },
+    {
+      "node": "/cpus/cpu@4",
+      "property": "compatible",
+      "bytes": "61 72 6D 2C 63 6F 72 74 65 78 2D 61 35 33 00 61 72 6D 2C 61 72 6D 76 38 00",
+      "text": "arm,cortex-a53 | arm,armv8",
+      "u32_be": null
+    },
+    {
+      "node": "/cpus/cpu@8",
+      "property": "device_type",
+      "bytes": "63 70 75 00",
+      "text": "cpu",
+      "u32_be": [
+        1668314368
+      ]
+    },
+    {
+      "node": "/cpus/cpu@8",
+      "property": "compatible",
+      "bytes": "61 72 6D 2C 63 6F 72 74 65 78 2D 61 35 33 00 61 72 6D 2C 61 72 6D 76 38 00",
+      "text": "arm,cortex-a53 | arm,armv8",
+      "u32_be": null
+    },
+    {
+      "node": "/cpus/l2-cache",
+      "property": "compatible",
+      "bytes": "63 61 63 68 65 00",
+      "text": "cache",
+      "u32_be": null
+    }
+  ],
+  "all_device_tree_properties": [
+    {
+      "node": "/",
+      "property": "model",
+      "bytes": "53 6F 63 69 6F 6E 65 78 74 20 4D 41 52 42 4C 45 20 44 65 76 65 6C 6F 70 6D 65 6E 74 20 42 6F 61 72 64 00",
+      "text": "Socionext MARBLE Development Board",
+      "u32_be": null
+    },
+    {
+      "node": "/",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 6D 61 72 62 6C 65 00",
+      "text": "socionext,marble",
+      "u32_be": null
+    },
+    {
+      "node": "/",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/",
+      "property": "#address-cells",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/",
+      "property": "#size-cells",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/aliases",
+      "property": "serial0",
+      "bytes": "2F 73 6F 63 2F 73 65 72 69 61 6C 40 66 66 39 32 30 30 30 30 00",
+      "text": "/soc/serial@ff920000",
+      "u32_be": null
+    },
+    {
+      "node": "/aliases",
+      "property": "serial1",
+      "bytes": "2F 73 6F 63 2F 73 65 72 69 61 6C 40 66 66 39 32 31 30 30 30 00",
+      "text": "/soc/serial@ff921000",
+      "u32_be": null
+    },
+    {
+      "node": "/aliases",
+      "property": "serial2",
+      "bytes": "2F 73 6F 63 2F 73 65 72 69 61 6C 40 66 66 39 32 32 30 30 30 00",
+      "text": "/soc/serial@ff922000",
+      "u32_be": null
+    },
+    {
+      "node": "/aliases",
+      "property": "serial3",
+      "bytes": "2F 73 6F 63 2F 73 65 72 69 61 6C 40 66 66 39 32 33 30 30 30 00",
+      "text": "/soc/serial@ff923000",
+      "u32_be": null
+    },
+    {
+      "node": "/chosen",
+      "property": "stdout-path",
+      "bytes": "73 65 72 69 61 6C 33 3A 31 31 35 32 30 30 6E 38 00",
+      "text": "serial3:115200n8",
+      "u32_be": null
+    },
+    {
+      "node": "/chosen",
+      "property": "bootargs",
+      "bytes": "63 6F 6E 73 6F 6C 65 3D 74 74 79 41 4D 41 33 2C 31 31 35 32 30 30 6E 38 20 72 6F 6F 74 66 73 74 79 70 65 3D 72 61 6D 66 73 20 72 64 69 6E 69 74 3D 2F 73 62 69 6E 2F 69 6E 69 74 20 6D 61 78 63 70 75 73 3D 31 20 75 69 6F 5F 70 64 72 76 5F 67 65 6E 69 72 71 2E 6F 66 5F 69 64 3D 67 65 6E 65 72 69 63 2D 75 69 6F 20 6C 6F 67 5F 62 75 66 5F 6C 65 6E 3D 38 4D 20 6D 65 6D 3D 32 35 36 4D 00",
+      "text": "console=ttyAMA3,115200n8 rootfstype=ramfs rdinit=/sbin/init maxcpus=1 uio_pdrv_genirq.of_id=generic-uio log_buf_len=8M mem=256M",
+      "u32_be": [
+        1668247155,
+        1869374781,
+        1953790273,
+        1296118572,
+        825308466,
+        808480312,
+        544370543,
+        1952871284,
+        2037409085,
+        1918987622,
+        1931506276,
+        1768843636,
+        1026519906,
+        1768828777,
+        1852404768,
+        1835104355,
+        1886745405,
+        824210793,
+        1868525668,
+        1920360295,
+        1701734770,
+        1898868582,
+        1600742461,
+        1734700645,
+        1919509293,
+        1969844000,
+        1819240287,
+        1651861087,
+        1818586685,
+        944578669,
+        1701657906,
+        892751104
+      ]
+    },
+    {
+      "node": "/memory@07000000",
+      "property": "device_type",
+      "bytes": "6D 65 6D 6F 72 79 00",
+      "text": "memory",
+      "u32_be": null
+    },
+    {
+      "node": "/memory@07000000",
+      "property": "reg",
+      "bytes": "00 00 00 00 07 00 00 00 00 00 00 00 10 00 00 00",
+      "text": null,
+      "u32_be": [
+        0,
+        117440512,
+        0,
+        268435456
+      ]
+    },
+    {
+      "node": "/amp_shared@17000000",
+      "property": "compatible",
+      "bytes": "67 65 6E 65 72 69 63 2D 75 69 6F 00",
+      "text": "generic-uio",
+      "u32_be": [
+        1734700645,
+        1919509293,
+        1969843968
+      ]
+    },
+    {
+      "node": "/amp_shared@17000000",
+      "property": "reg",
+      "bytes": "00 00 00 00 17 00 00 00 00 00 00 00 0F F0 00 00",
+      "text": null,
+      "u32_be": [
+        0,
+        385875968,
+        0,
+        267386880
+      ]
+    },
+    {
+      "node": "/rpmsg_shared@26F00000",
+      "property": "compatible",
+      "bytes": "63 79 62 65 72 74 72 75 73 74 2C 6D 61 72 62 6C 65 5F 72 70 6D 73 67 5F 64 72 69 76 65 72 00",
+      "text": "cybertrust,marble_rpmsg_driver",
+      "u32_be": null
+    },
+    {
+      "node": "/rpmsg_shared@26F00000",
+      "property": "target-cpu",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/rpmsg_shared@26F00000",
+      "property": "vring0",
+      "bytes": "00 00 00 0F",
+      "text": null,
+      "u32_be": [
+        15
+      ]
+    },
+    {
+      "node": "/rpmsg_shared@26F00000",
+      "property": "vring1",
+      "bytes": "00 00 00 0E",
+      "text": null,
+      "u32_be": [
+        14
+      ]
+    },
+    {
+      "node": "/rpmsg_shared@26F00000",
+      "property": "num-descs",
+      "bytes": "00 00 01 00",
+      "text": null,
+      "u32_be": [
+        256
+      ]
+    },
+    {
+      "node": "/rpmsg_shared@26F00000",
+      "property": "dev-feature",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/rpmsg_shared@26F00000",
+      "property": "gen-feature",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/rpmsg_shared@26F00000",
+      "property": "num-vrings",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/rpmsg_shared@26F00000",
+      "property": "alignment",
+      "bytes": "00 00 00 04",
+      "text": null,
+      "u32_be": [
+        4
+      ]
+    },
+    {
+      "node": "/rpmsg_shared@26F00000",
+      "property": "ring-tx",
+      "bytes": "00 00 01 00",
+      "text": null,
+      "u32_be": [
+        256
+      ]
+    },
+    {
+      "node": "/rpmsg_shared@26F00000",
+      "property": "ring-rx",
+      "bytes": "00 00 01 00",
+      "text": null,
+      "u32_be": [
+        256
+      ]
+    },
+    {
+      "node": "/rpmsg_shared@26F00000",
+      "property": "reg",
+      "bytes": "00 00 00 00 26 F0 00 00 00 00 00 00 00 10 00 00",
+      "text": null,
+      "u32_be": [
+        0,
+        653262848,
+        0,
+        1048576
+      ]
+    },
+    {
+      "node": "/amp_isgc_shared@05F00000",
+      "property": "compatible",
+      "bytes": "67 65 6E 65 72 69 63 2D 75 69 6F 00",
+      "text": "generic-uio",
+      "u32_be": [
+        1734700645,
+        1919509293,
+        1969843968
+      ]
+    },
+    {
+      "node": "/amp_isgc_shared@05F00000",
+      "property": "reg",
+      "bytes": "00 00 00 00 05 F0 00 00 00 00 00 00 01 08 00 00",
+      "text": null,
+      "u32_be": [
+        0,
+        99614720,
+        0,
+        17301504
+      ]
+    },
+    {
+      "node": "/cpus",
+      "property": "#address-cells",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/cpus",
+      "property": "#size-cells",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/cpus/cpu@1",
+      "property": "device_type",
+      "bytes": "63 70 75 00",
+      "text": "cpu",
+      "u32_be": [
+        1668314368
+      ]
+    },
+    {
+      "node": "/cpus/cpu@1",
+      "property": "compatible",
+      "bytes": "61 72 6D 2C 63 6F 72 74 65 78 2D 61 35 33 00 61 72 6D 2C 61 72 6D 76 38 00",
+      "text": "arm,cortex-a53 | arm,armv8",
+      "u32_be": null
+    },
+    {
+      "node": "/cpus/cpu@1",
+      "property": "reg",
+      "bytes": "00 00 00 00 00 00 00 01",
+      "text": null,
+      "u32_be": [
+        0,
+        1
+      ]
+    },
+    {
+      "node": "/cpus/cpu@1",
+      "property": "enable-method",
+      "bytes": "73 70 69 6E 2D 74 61 62 6C 65 00",
+      "text": "spin-table",
+      "u32_be": null
+    },
+    {
+      "node": "/cpus/cpu@1",
+      "property": "cpu-release-addr",
+      "bytes": "00 00 00 00 1F FF FF F8",
+      "text": null,
+      "u32_be": [
+        0,
+        536870904
+      ]
+    },
+    {
+      "node": "/cpus/cpu@2",
+      "property": "device_type",
+      "bytes": "63 70 75 00",
+      "text": "cpu",
+      "u32_be": [
+        1668314368
+      ]
+    },
+    {
+      "node": "/cpus/cpu@2",
+      "property": "compatible",
+      "bytes": "61 72 6D 2C 63 6F 72 74 65 78 2D 61 35 33 00 61 72 6D 2C 61 72 6D 76 38 00",
+      "text": "arm,cortex-a53 | arm,armv8",
+      "u32_be": null
+    },
+    {
+      "node": "/cpus/cpu@2",
+      "property": "reg",
+      "bytes": "00 00 00 00 00 00 00 02",
+      "text": null,
+      "u32_be": [
+        0,
+        2
+      ]
+    },
+    {
+      "node": "/cpus/cpu@2",
+      "property": "enable-method",
+      "bytes": "73 70 69 6E 2D 74 61 62 6C 65 00",
+      "text": "spin-table",
+      "u32_be": null
+    },
+    {
+      "node": "/cpus/cpu@2",
+      "property": "cpu-release-addr",
+      "bytes": "00 00 00 00 1F FF FF F8",
+      "text": null,
+      "u32_be": [
+        0,
+        536870904
+      ]
+    },
+    {
+      "node": "/cpus/cpu@4",
+      "property": "device_type",
+      "bytes": "63 70 75 00",
+      "text": "cpu",
+      "u32_be": [
+        1668314368
+      ]
+    },
+    {
+      "node": "/cpus/cpu@4",
+      "property": "compatible",
+      "bytes": "61 72 6D 2C 63 6F 72 74 65 78 2D 61 35 33 00 61 72 6D 2C 61 72 6D 76 38 00",
+      "text": "arm,cortex-a53 | arm,armv8",
+      "u32_be": null
+    },
+    {
+      "node": "/cpus/cpu@4",
+      "property": "reg",
+      "bytes": "00 00 00 00 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        4
+      ]
+    },
+    {
+      "node": "/cpus/cpu@4",
+      "property": "enable-method",
+      "bytes": "73 70 69 6E 2D 74 61 62 6C 65 00",
+      "text": "spin-table",
+      "u32_be": null
+    },
+    {
+      "node": "/cpus/cpu@4",
+      "property": "cpu-release-addr",
+      "bytes": "00 00 00 00 1F FF FF F8",
+      "text": null,
+      "u32_be": [
+        0,
+        536870904
+      ]
+    },
+    {
+      "node": "/cpus/cpu@8",
+      "property": "device_type",
+      "bytes": "63 70 75 00",
+      "text": "cpu",
+      "u32_be": [
+        1668314368
+      ]
+    },
+    {
+      "node": "/cpus/cpu@8",
+      "property": "compatible",
+      "bytes": "61 72 6D 2C 63 6F 72 74 65 78 2D 61 35 33 00 61 72 6D 2C 61 72 6D 76 38 00",
+      "text": "arm,cortex-a53 | arm,armv8",
+      "u32_be": null
+    },
+    {
+      "node": "/cpus/cpu@8",
+      "property": "reg",
+      "bytes": "00 00 00 00 00 00 00 08",
+      "text": null,
+      "u32_be": [
+        0,
+        8
+      ]
+    },
+    {
+      "node": "/cpus/cpu@8",
+      "property": "enable-method",
+      "bytes": "73 70 69 6E 2D 74 61 62 6C 65 00",
+      "text": "spin-table",
+      "u32_be": null
+    },
+    {
+      "node": "/cpus/cpu@8",
+      "property": "cpu-release-addr",
+      "bytes": "00 00 00 00 1F FF FF F8",
+      "text": null,
+      "u32_be": [
+        0,
+        536870904
+      ]
+    },
+    {
+      "node": "/cpus/l2-cache",
+      "property": "compatible",
+      "bytes": "63 61 63 68 65 00",
+      "text": "cache",
+      "u32_be": null
+    },
+    {
+      "node": "/cpus/l2-cache",
+      "property": "cache-level",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc",
+      "property": "compatible",
+      "bytes": "73 69 6D 70 6C 65 2D 62 75 73 00",
+      "text": "simple-bus",
+      "u32_be": null
+    },
+    {
+      "node": "/soc",
+      "property": "#address-cells",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc",
+      "property": "#size-cells",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc",
+      "property": "ranges",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/interrupt-controller@fa000000",
+      "property": "compatible",
+      "bytes": "61 72 6D 2C 67 69 63 2D 76 33 00",
+      "text": "arm,gic-v3",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/interrupt-controller@fa000000",
+      "property": "ranges",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/interrupt-controller@fa000000",
+      "property": "#redistributor-regions",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/interrupt-controller@fa000000",
+      "property": "reg",
+      "bytes": "FA 00 00 00 00 08 00 00 FA 0C 00 00 00 02 00 00 FA 10 00 00 00 04 00 00",
+      "text": null,
+      "u32_be": [
+        4194304000,
+        524288,
+        4195090432,
+        131072,
+        4195352576,
+        262144
+      ]
+    },
+    {
+      "node": "/soc/interrupt-controller@fa000000",
+      "property": "interrupt-controller",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/interrupt-controller@fa000000",
+      "property": "#interrupt-cells",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/soc/interrupt-controller@fa000000",
+      "property": "interrupts",
+      "bytes": "00 00 00 01 00 00 00 09 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        1,
+        9,
+        4
+      ]
+    },
+    {
+      "node": "/soc/interrupt-controller@fa000000",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/interrupt-controller@fa000000",
+      "property": "phandle",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/timer",
+      "property": "compatible",
+      "bytes": "61 72 6D 2C 61 72 6D 76 38 2D 74 69 6D 65 72 00",
+      "text": "arm,armv8-timer",
+      "u32_be": [
+        1634889004,
+        1634889078,
+        942503017,
+        1835364864
+      ]
+    },
+    {
+      "node": "/soc/timer",
+      "property": "interrupts",
+      "bytes": "00 00 00 01 00 00 00 0D 00 00 00 08 00 00 00 01 00 00 00 0E 00 00 00 08 00 00 00 01 00 00 00 0B 00 00 00 08 00 00 00 01 00 00 00 0A 00 00 00 08",
+      "text": null,
+      "u32_be": [
+        1,
+        13,
+        8,
+        1,
+        14,
+        8,
+        1,
+        11,
+        8,
+        1,
+        10,
+        8
+      ]
+    },
+    {
+      "node": "/soc/timer",
+      "property": "clock-frequency",
+      "bytes": "00 93 66 60",
+      "text": null,
+      "u32_be": [
+        9660000
+      ]
+    },
+    {
+      "node": "/soc/clocks",
+      "property": "#address-cells",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/clocks",
+      "property": "#size-cells",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/clocks",
+      "property": "ranges",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/clocks/n48m",
+      "property": "compatible",
+      "bytes": "66 69 78 65 64 2D 63 6C 6F 63 6B 00",
+      "text": "fixed-clock",
+      "u32_be": [
+        1718188133,
+        1680696172,
+        1868786432
+      ]
+    },
+    {
+      "node": "/soc/clocks/n48m",
+      "property": "#clock-cells",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/n48m",
+      "property": "clock-frequency",
+      "bytes": "02 DC 6C 00",
+      "text": null,
+      "u32_be": [
+        48000000
+      ]
+    },
+    {
+      "node": "/soc/clocks/n48m",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/clocks/n48m",
+      "property": "phandle",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/clocks/n24m",
+      "property": "compatible",
+      "bytes": "66 69 78 65 64 2D 66 61 63 74 6F 72 2D 63 6C 6F 63 6B 00",
+      "text": "fixed-factor-clock",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/clocks/n24m",
+      "property": "#clock-cells",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/n24m",
+      "property": "clock-div",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/clocks/n24m",
+      "property": "clock-mult",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/clocks/n24m",
+      "property": "clocks",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/clocks/n24m",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/soc/clocks/n24m",
+      "property": "phandle",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/soc/clocks/n16m",
+      "property": "compatible",
+      "bytes": "66 69 78 65 64 2D 66 61 63 74 6F 72 2D 63 6C 6F 63 6B 00",
+      "text": "fixed-factor-clock",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/clocks/n16m",
+      "property": "#clock-cells",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/n16m",
+      "property": "clock-div",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/soc/clocks/n16m",
+      "property": "clock-mult",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/clocks/n16m",
+      "property": "clocks",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/clocks/n16m",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 04",
+      "text": null,
+      "u32_be": [
+        4
+      ]
+    },
+    {
+      "node": "/soc/clocks/n16m",
+      "property": "phandle",
+      "bytes": "00 00 00 04",
+      "text": null,
+      "u32_be": [
+        4
+      ]
+    },
+    {
+      "node": "/soc/clocks/pclk",
+      "property": "compatible",
+      "bytes": "66 69 78 65 64 2D 66 61 63 74 6F 72 2D 63 6C 6F 63 6B 00",
+      "text": "fixed-factor-clock",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/clocks/pclk",
+      "property": "#clock-cells",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/pclk",
+      "property": "clock-div",
+      "bytes": "00 00 00 0A",
+      "text": null,
+      "u32_be": [
+        10
+      ]
+    },
+    {
+      "node": "/soc/clocks/pclk",
+      "property": "clock-mult",
+      "bytes": "00 00 00 53",
+      "text": " |  |  | S",
+      "u32_be": [
+        83
+      ]
+    },
+    {
+      "node": "/soc/clocks/pclk",
+      "property": "clocks",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/soc/clocks/pclk",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 08",
+      "text": null,
+      "u32_be": [
+        8
+      ]
+    },
+    {
+      "node": "/soc/clocks/pclk",
+      "property": "phandle",
+      "bytes": "00 00 00 08",
+      "text": null,
+      "u32_be": [
+        8
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g0@ffa01000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 67 63 72 67 00",
+      "text": "socionext,gcrg",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/clocks/gcrg_g0@ffa01000",
+      "property": "#clock-cells",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g0@ffa01000",
+      "property": "socionext,pll-type",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g0@ffa01000",
+      "property": "socionext,clock-mult",
+      "bytes": "00 00 00 53",
+      "text": " |  |  | S",
+      "u32_be": [
+        83
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g0@ffa01000",
+      "property": "socionext,clock-bypass",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g0@ffa01000",
+      "property": "socionext,clock-div",
+      "bytes": "00 00 00 04 00 00 00 03 00 00 00 02 00 00 00 02",
+      "text": null,
+      "u32_be": [
+        4,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g0@ffa01000",
+      "property": "socionext,clock-en",
+      "bytes": "00 00 00 01 00 00 00 01 00 00 00 01 00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g0@ffa01000",
+      "property": "clocks",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g0@ffa01000",
+      "property": "reg",
+      "bytes": "FF A0 10 00 00 00 10 00",
+      "text": null,
+      "u32_be": [
+        4288679936,
+        4096
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g0@ffa01000",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 05",
+      "text": null,
+      "u32_be": [
+        5
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g0@ffa01000",
+      "property": "phandle",
+      "bytes": "00 00 00 05",
+      "text": null,
+      "u32_be": [
+        5
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g2@ffa03000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 67 63 72 67 00",
+      "text": "socionext,gcrg",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/clocks/gcrg_g2@ffa03000",
+      "property": "#clock-cells",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g2@ffa03000",
+      "property": "socionext,pll-type",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g2@ffa03000",
+      "property": "socionext,clock-mult",
+      "bytes": "00 00 00 4B",
+      "text": " |  |  | K",
+      "u32_be": [
+        75
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g2@ffa03000",
+      "property": "socionext,clock-bypass",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g2@ffa03000",
+      "property": "socionext,clock-div",
+      "bytes": "00 00 00 02 00 00 00 06 00 00 00 02 00 00 00 00",
+      "text": null,
+      "u32_be": [
+        2,
+        6,
+        2,
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g2@ffa03000",
+      "property": "socionext,clock-en",
+      "bytes": "00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 00",
+      "text": null,
+      "u32_be": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g2@ffa03000",
+      "property": "clocks",
+      "bytes": "00 00 00 04",
+      "text": null,
+      "u32_be": [
+        4
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g2@ffa03000",
+      "property": "reg",
+      "bytes": "FF A0 30 00 00 00 10 00",
+      "text": null,
+      "u32_be": [
+        4288688128,
+        4096
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g2@ffa03000",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 06",
+      "text": null,
+      "u32_be": [
+        6
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g2@ffa03000",
+      "property": "phandle",
+      "bytes": "00 00 00 06",
+      "text": null,
+      "u32_be": [
+        6
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g13@ffa18000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 67 63 72 67 00",
+      "text": "socionext,gcrg",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/clocks/gcrg_g13@ffa18000",
+      "property": "#clock-cells",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g13@ffa18000",
+      "property": "socionext,pll-type",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g13@ffa18000",
+      "property": "socionext,clock-mult",
+      "bytes": "00 00 00 21",
+      "text": " |  |  | !",
+      "u32_be": [
+        33
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g13@ffa18000",
+      "property": "socionext,clock-bypass",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g13@ffa18000",
+      "property": "socionext,clock-div",
+      "bytes": "00 00 00 20 00 00 00 20 00 00 00 02 00 00 00 00",
+      "text": null,
+      "u32_be": [
+        32,
+        32,
+        2,
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g13@ffa18000",
+      "property": "socionext,clock-en",
+      "bytes": "00 00 00 01 00 00 00 01 00 00 00 01 00 00 00 00",
+      "text": null,
+      "u32_be": [
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g13@ffa18000",
+      "property": "clocks",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g13@ffa18000",
+      "property": "reg",
+      "bytes": "FF A1 80 00 00 00 10 00",
+      "text": null,
+      "u32_be": [
+        4288774144,
+        4096
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g13@ffa18000",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 0D",
+      "text": null,
+      "u32_be": [
+        13
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g13@ffa18000",
+      "property": "phandle",
+      "bytes": "00 00 00 0D",
+      "text": null,
+      "u32_be": [
+        13
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g3@ffa04000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 67 63 72 67 00",
+      "text": "socionext,gcrg",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/clocks/gcrg_g3@ffa04000",
+      "property": "#clock-cells",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g3@ffa04000",
+      "property": "socionext,pll-type",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g3@ffa04000",
+      "property": "socionext,clock-mult",
+      "bytes": "00 00 00 12",
+      "text": null,
+      "u32_be": [
+        18
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g3@ffa04000",
+      "property": "socionext,clock-bypass",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g3@ffa04000",
+      "property": "socionext,clock-div",
+      "bytes": "00 00 00 06 00 00 00 03 00 00 00 0C 00 00 00 06",
+      "text": null,
+      "u32_be": [
+        6,
+        3,
+        12,
+        6
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g3@ffa04000",
+      "property": "socionext,clock-en",
+      "bytes": "00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00",
+      "text": null,
+      "u32_be": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g3@ffa04000",
+      "property": "clocks",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g3@ffa04000",
+      "property": "reg",
+      "bytes": "FF A0 40 00 00 00 10 00",
+      "text": null,
+      "u32_be": [
+        4288692224,
+        4096
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g3@ffa04000",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 07",
+      "text": null,
+      "u32_be": [
+        7
+      ]
+    },
+    {
+      "node": "/soc/clocks/gcrg_g3@ffa04000",
+      "property": "phandle",
+      "bytes": "00 00 00 07",
+      "text": null,
+      "u32_be": [
+        7
+      ]
+    },
+    {
+      "node": "/soc/clocks/sysreg@ff90c000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 73 79 73 72 65 67 00",
+      "text": "socionext,sysreg",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/clocks/sysreg@ff90c000",
+      "property": "reg",
+      "bytes": "FF 90 C0 00 00 00 40 00",
+      "text": null,
+      "u32_be": [
+        4287676416,
+        16384
+      ]
+    },
+    {
+      "node": "/soc/clocks/sysreg@ff90c000",
+      "property": "xdmac_req_ch",
+      "bytes": "00 00 00 3F 00 00 00 3F 00 00 00 3F 00 00 00 3F 00 00 00 3F 00 00 00 3F 00 00 00 3F 00 00 00 3F 00 00 00 3F 00 00 00 3F 00 00 00 3F 00 00 00 3F 00 00 00 3F 00 00 00 3F 00 00 00 3F 00 00 00 3F",
+      "text": " |  |  | ? |  |  | ? |  |  | ? |  |  | ? |  |  | ? |  |  | ? |  |  | ? |  |  | ? |  |  | ? |  |  | ? |  |  | ? |  |  | ? |  |  | ? |  |  | ? |  |  | ? |  |  | ?",
+      "u32_be": [
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63
+      ]
+    },
+    {
+      "node": "/soc/clocks/aux-clock",
+      "property": "compatible",
+      "bytes": "66 69 78 65 64 2D 63 6C 6F 63 6B 00",
+      "text": "fixed-clock",
+      "u32_be": [
+        1718188133,
+        1680696172,
+        1868786432
+      ]
+    },
+    {
+      "node": "/soc/clocks/aux-clock",
+      "property": "#clock-cells",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/soc/clocks/aux-clock",
+      "property": "clock-frequency",
+      "bytes": "00 98 96 80",
+      "text": null,
+      "u32_be": [
+        10000000
+      ]
+    },
+    {
+      "node": "/soc/clocks/aux-clock",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 10",
+      "text": null,
+      "u32_be": [
+        16
+      ]
+    },
+    {
+      "node": "/soc/clocks/aux-clock",
+      "property": "phandle",
+      "bytes": "00 00 00 10",
+      "text": null,
+      "u32_be": [
+        16
+      ]
+    },
+    {
+      "node": "/soc/dma@ff930000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 61 78 69 2D 64 6D 61 00",
+      "text": "socionext,axi-dma",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff930000",
+      "property": "reg",
+      "bytes": "FF 93 00 00 00 00 03 E8",
+      "text": null,
+      "u32_be": [
+        4287823872,
+        1000
+      ]
+    },
+    {
+      "node": "/soc/dma@ff930000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/dma@ff930000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 00 CD 00 00 00 04 00 00 00 00 00 00 00 CE 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        205,
+        4,
+        0,
+        206,
+        4
+      ]
+    },
+    {
+      "node": "/soc/dma@ff930000",
+      "property": "interrupt-names",
+      "bytes": "78 64 6D 61 63 30 5F 63 68 31 00 78 64 6D 61 63 5F 63 68 32 00",
+      "text": "xdmac0_ch1 | xdmac_ch2",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff930000",
+      "property": "#dma-cells",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/soc/dma@ff930000",
+      "property": "dma-channels",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/dma@ff930000",
+      "property": "clocks",
+      "bytes": "00 00 00 05 00 00 00 06",
+      "text": null,
+      "u32_be": [
+        5,
+        6
+      ]
+    },
+    {
+      "node": "/soc/dma@ff930000",
+      "property": "clock-names",
+      "bytes": "64 6D 61 5F 63 6C 6B 00",
+      "text": "dma_clk",
+      "u32_be": [
+        1684889951,
+        1668049664
+      ]
+    },
+    {
+      "node": "/soc/dma@ff931000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 61 78 69 2D 64 6D 61 00",
+      "text": "socionext,axi-dma",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff931000",
+      "property": "reg",
+      "bytes": "FF 93 10 00 00 00 03 E8",
+      "text": null,
+      "u32_be": [
+        4287827968,
+        1000
+      ]
+    },
+    {
+      "node": "/soc/dma@ff931000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/dma@ff931000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 00 CF 00 00 00 04 00 00 00 00 00 00 00 D0 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        207,
+        4,
+        0,
+        208,
+        4
+      ]
+    },
+    {
+      "node": "/soc/dma@ff931000",
+      "property": "interrupt-names",
+      "bytes": "78 64 6D 61 63 31 5F 63 68 31 00 78 64 6D 61 63 31 5F 63 68 32 00",
+      "text": "xdmac1_ch1 | xdmac1_ch2",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff931000",
+      "property": "#dma-cells",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/soc/dma@ff931000",
+      "property": "dma-channels",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/dma@ff931000",
+      "property": "clocks",
+      "bytes": "00 00 00 05 00 00 00 06",
+      "text": null,
+      "u32_be": [
+        5,
+        6
+      ]
+    },
+    {
+      "node": "/soc/dma@ff931000",
+      "property": "clock-names",
+      "bytes": "64 6D 61 5F 63 6C 6B 00",
+      "text": "dma_clk",
+      "u32_be": [
+        1684889951,
+        1668049664
+      ]
+    },
+    {
+      "node": "/soc/dma@ff932000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 61 78 69 2D 64 6D 61 00",
+      "text": "socionext,axi-dma",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff932000",
+      "property": "reg",
+      "bytes": "FF 93 20 00 00 00 03 E8",
+      "text": null,
+      "u32_be": [
+        4287832064,
+        1000
+      ]
+    },
+    {
+      "node": "/soc/dma@ff932000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/dma@ff932000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 00 D1 00 00 00 04 00 00 00 00 00 00 00 D2 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        209,
+        4,
+        0,
+        210,
+        4
+      ]
+    },
+    {
+      "node": "/soc/dma@ff932000",
+      "property": "interrupt-names",
+      "bytes": "78 64 6D 61 63 32 5F 63 68 31 00 78 64 6D 61 63 32 5F 63 68 32 00",
+      "text": "xdmac2_ch1 | xdmac2_ch2",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff932000",
+      "property": "#dma-cells",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/soc/dma@ff932000",
+      "property": "dma-channels",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/dma@ff932000",
+      "property": "clocks",
+      "bytes": "00 00 00 05 00 00 00 06",
+      "text": null,
+      "u32_be": [
+        5,
+        6
+      ]
+    },
+    {
+      "node": "/soc/dma@ff932000",
+      "property": "clock-names",
+      "bytes": "64 6D 61 5F 63 6C 6B 00",
+      "text": "dma_clk",
+      "u32_be": [
+        1684889951,
+        1668049664
+      ]
+    },
+    {
+      "node": "/soc/dma@ff933000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 61 78 69 2D 64 6D 61 00",
+      "text": "socionext,axi-dma",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff933000",
+      "property": "reg",
+      "bytes": "FF 93 30 00 00 00 03 E8",
+      "text": null,
+      "u32_be": [
+        4287836160,
+        1000
+      ]
+    },
+    {
+      "node": "/soc/dma@ff933000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/dma@ff933000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 00 D3 00 00 00 04 00 00 00 00 00 00 00 D4 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        211,
+        4,
+        0,
+        212,
+        4
+      ]
+    },
+    {
+      "node": "/soc/dma@ff933000",
+      "property": "interrupt-names",
+      "bytes": "78 64 6D 61 63 33 5F 63 68 31 00 78 64 6D 61 63 33 5F 63 68 32 00",
+      "text": "xdmac3_ch1 | xdmac3_ch2",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff933000",
+      "property": "#dma-cells",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/soc/dma@ff933000",
+      "property": "dma-channels",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/dma@ff933000",
+      "property": "clocks",
+      "bytes": "00 00 00 05 00 00 00 06",
+      "text": null,
+      "u32_be": [
+        5,
+        6
+      ]
+    },
+    {
+      "node": "/soc/dma@ff933000",
+      "property": "clock-names",
+      "bytes": "64 6D 61 5F 63 6C 6B 00",
+      "text": "dma_clk",
+      "u32_be": [
+        1684889951,
+        1668049664
+      ]
+    },
+    {
+      "node": "/soc/dma@ff934000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 61 78 69 2D 64 6D 61 00",
+      "text": "socionext,axi-dma",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff934000",
+      "property": "reg",
+      "bytes": "FF 93 40 00 00 00 03 E8",
+      "text": null,
+      "u32_be": [
+        4287840256,
+        1000
+      ]
+    },
+    {
+      "node": "/soc/dma@ff934000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/dma@ff934000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 00 D5 00 00 00 04 00 00 00 00 00 00 00 D6 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        213,
+        4,
+        0,
+        214,
+        4
+      ]
+    },
+    {
+      "node": "/soc/dma@ff934000",
+      "property": "interrupt-names",
+      "bytes": "78 64 6D 61 63 34 5F 63 68 31 00 78 64 6D 61 63 34 5F 63 68 32 00",
+      "text": "xdmac4_ch1 | xdmac4_ch2",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff934000",
+      "property": "#dma-cells",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/soc/dma@ff934000",
+      "property": "dma-channels",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/dma@ff934000",
+      "property": "clocks",
+      "bytes": "00 00 00 06 00 00 00 07",
+      "text": null,
+      "u32_be": [
+        6,
+        7
+      ]
+    },
+    {
+      "node": "/soc/dma@ff934000",
+      "property": "clock-names",
+      "bytes": "64 6D 61 5F 63 6C 6B 00",
+      "text": "dma_clk",
+      "u32_be": [
+        1684889951,
+        1668049664
+      ]
+    },
+    {
+      "node": "/soc/dma@ff935000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 61 78 69 2D 64 6D 61 00",
+      "text": "socionext,axi-dma",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff935000",
+      "property": "reg",
+      "bytes": "FF 93 50 00 00 00 03 E8",
+      "text": null,
+      "u32_be": [
+        4287844352,
+        1000
+      ]
+    },
+    {
+      "node": "/soc/dma@ff935000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/dma@ff935000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 00 D7 00 00 00 04 00 00 00 00 00 00 00 D8 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        215,
+        4,
+        0,
+        216,
+        4
+      ]
+    },
+    {
+      "node": "/soc/dma@ff935000",
+      "property": "interrupt-names",
+      "bytes": "78 64 6D 61 63 35 5F 63 68 31 00 78 64 6D 61 63 35 5F 63 68 32 00",
+      "text": "xdmac5_ch1 | xdmac5_ch2",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff935000",
+      "property": "#dma-cells",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/soc/dma@ff935000",
+      "property": "dma-channels",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/dma@ff935000",
+      "property": "clocks",
+      "bytes": "00 00 00 06 00 00 00 07",
+      "text": null,
+      "u32_be": [
+        6,
+        7
+      ]
+    },
+    {
+      "node": "/soc/dma@ff935000",
+      "property": "clock-names",
+      "bytes": "64 6D 61 5F 63 6C 6B 00",
+      "text": "dma_clk",
+      "u32_be": [
+        1684889951,
+        1668049664
+      ]
+    },
+    {
+      "node": "/soc/dma@ff936000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 61 78 69 2D 64 6D 61 00",
+      "text": "socionext,axi-dma",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff936000",
+      "property": "reg",
+      "bytes": "FF 93 60 00 00 00 03 E8",
+      "text": null,
+      "u32_be": [
+        4287848448,
+        1000
+      ]
+    },
+    {
+      "node": "/soc/dma@ff936000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/dma@ff936000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 00 D9 00 00 00 04 00 00 00 00 00 00 00 DA 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        217,
+        4,
+        0,
+        218,
+        4
+      ]
+    },
+    {
+      "node": "/soc/dma@ff936000",
+      "property": "interrupt-names",
+      "bytes": "78 64 6D 61 63 36 5F 63 68 31 00 78 64 6D 61 63 36 5F 63 68 32 00",
+      "text": "xdmac6_ch1 | xdmac6_ch2",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff936000",
+      "property": "#dma-cells",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/soc/dma@ff936000",
+      "property": "dma-channels",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/dma@ff936000",
+      "property": "clocks",
+      "bytes": "00 00 00 06 00 00 00 07",
+      "text": null,
+      "u32_be": [
+        6,
+        7
+      ]
+    },
+    {
+      "node": "/soc/dma@ff936000",
+      "property": "clock-names",
+      "bytes": "64 6D 61 5F 63 6C 6B 00",
+      "text": "dma_clk",
+      "u32_be": [
+        1684889951,
+        1668049664
+      ]
+    },
+    {
+      "node": "/soc/dma@ff937000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 61 78 69 2D 64 6D 61 00",
+      "text": "socionext,axi-dma",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff937000",
+      "property": "reg",
+      "bytes": "FF 93 70 00 00 00 03 E8",
+      "text": null,
+      "u32_be": [
+        4287852544,
+        1000
+      ]
+    },
+    {
+      "node": "/soc/dma@ff937000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/dma@ff937000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 00 DB 00 00 00 04 00 00 00 00 00 00 00 DC 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        219,
+        4,
+        0,
+        220,
+        4
+      ]
+    },
+    {
+      "node": "/soc/dma@ff937000",
+      "property": "interrupt-names",
+      "bytes": "78 64 6D 61 63 37 5F 63 68 31 00 78 64 6D 61 63 37 5F 63 68 32 00",
+      "text": "xdmac7_ch1 | xdmac7_ch2",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/dma@ff937000",
+      "property": "#dma-cells",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/soc/dma@ff937000",
+      "property": "dma-channels",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/dma@ff937000",
+      "property": "clocks",
+      "bytes": "00 00 00 06 00 00 00 07",
+      "text": null,
+      "u32_be": [
+        6,
+        7
+      ]
+    },
+    {
+      "node": "/soc/dma@ff937000",
+      "property": "clock-names",
+      "bytes": "64 6D 61 5F 63 6C 6B 00",
+      "text": "dma_clk",
+      "u32_be": [
+        1684889951,
+        1668049664
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 70 69 6E 63 74 72 6C 00",
+      "text": "socionext,pinctrl",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/pinctrl@ff907000",
+      "property": "reg",
+      "bytes": "FF 90 70 00 00 00 10 00",
+      "text": null,
+      "u32_be": [
+        4287655936,
+        4096
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart0-default",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 09",
+      "text": null,
+      "u32_be": [
+        9
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart0-default",
+      "property": "phandle",
+      "bytes": "00 00 00 09",
+      "text": null,
+      "u32_be": [
+        9
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart0-default/mux",
+      "property": "groups",
+      "bytes": "75 61 72 74 30 5F 30 5F 67 72 6F 75 70 00",
+      "text": "uart0_0_group",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart0-default/mux",
+      "property": "function",
+      "bytes": "75 61 72 74 30 00",
+      "text": "uart0",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart1-default",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 0A",
+      "text": null,
+      "u32_be": [
+        10
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart1-default",
+      "property": "phandle",
+      "bytes": "00 00 00 0A",
+      "text": null,
+      "u32_be": [
+        10
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart1-default/mux",
+      "property": "groups",
+      "bytes": "75 61 72 74 31 5F 30 5F 67 72 6F 75 70 00",
+      "text": "uart1_0_group",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart1-default/mux",
+      "property": "function",
+      "bytes": "75 61 72 74 31 00",
+      "text": "uart1",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart2-default",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 0B",
+      "text": null,
+      "u32_be": [
+        11
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart2-default",
+      "property": "phandle",
+      "bytes": "00 00 00 0B",
+      "text": null,
+      "u32_be": [
+        11
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart2-default/mux",
+      "property": "groups",
+      "bytes": "75 61 72 74 32 5F 30 5F 67 72 6F 75 70 00",
+      "text": "uart2_0_group",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart2-default/mux",
+      "property": "function",
+      "bytes": "75 61 72 74 32 00",
+      "text": "uart2",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart3-default",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 0C",
+      "text": null,
+      "u32_be": [
+        12
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart3-default",
+      "property": "phandle",
+      "bytes": "00 00 00 0C",
+      "text": null,
+      "u32_be": [
+        12
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart3-default/mux",
+      "property": "groups",
+      "bytes": "75 61 72 74 33 5F 30 5F 67 72 6F 75 70 00",
+      "text": "uart3_0_group",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/uart3-default/mux",
+      "property": "function",
+      "bytes": "75 61 72 74 33 00",
+      "text": "uart3",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/sd0-default",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 0E",
+      "text": null,
+      "u32_be": [
+        14
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/sd0-default",
+      "property": "phandle",
+      "bytes": "00 00 00 0E",
+      "text": null,
+      "u32_be": [
+        14
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/sd0-default/mux",
+      "property": "groups",
+      "bytes": "73 64 30 5F 30 5F 67 72 6F 75 70 00 73 64 30 5F 31 5F 67 72 6F 75 70 00",
+      "text": "sd0_0_group | sd0_1_group",
+      "u32_be": [
+        1935945823,
+        811558770,
+        1869967360,
+        1935945823,
+        828335986,
+        1869967360
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/sd0-default/mux",
+      "property": "function",
+      "bytes": "73 64 30 00",
+      "text": "sd0",
+      "u32_be": [
+        1935945728
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/sd1-default/mux",
+      "property": "groups",
+      "bytes": "73 64 31 5F 30 5F 67 72 6F 75 70 00 73 64 31 5F 31 5F 67 72 6F 75 70 00",
+      "text": "sd1_0_group | sd1_1_group",
+      "u32_be": [
+        1935946079,
+        811558770,
+        1869967360,
+        1935946079,
+        828335986,
+        1869967360
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/sd1-default/mux",
+      "property": "function",
+      "bytes": "73 64 31 00",
+      "text": "sd1",
+      "u32_be": [
+        1935945984
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/sd2-default",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 0F",
+      "text": null,
+      "u32_be": [
+        15
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/sd2-default",
+      "property": "phandle",
+      "bytes": "00 00 00 0F",
+      "text": null,
+      "u32_be": [
+        15
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/sd2-default/mux",
+      "property": "groups",
+      "bytes": "73 64 32 5F 30 5F 67 72 6F 75 70 00",
+      "text": "sd2_0_group",
+      "u32_be": [
+        1935946335,
+        811558770,
+        1869967360
+      ]
+    },
+    {
+      "node": "/soc/pinctrl@ff907000/sd2-default/mux",
+      "property": "function",
+      "bytes": "73 64 32 00",
+      "text": "sd2",
+      "u32_be": [
+        1935946240
+      ]
+    },
+    {
+      "node": "/soc/serial@ff920000",
+      "property": "compatible",
+      "bytes": "61 72 6D 2C 70 6C 30 31 31 00 61 72 6D 2C 70 72 69 6D 65 63 65 6C 6C 00",
+      "text": "arm,pl011 | arm,primecell",
+      "u32_be": [
+        1634889004,
+        1886138417,
+        822108530,
+        1831628914,
+        1768777059,
+        1701604352
+      ]
+    },
+    {
+      "node": "/soc/serial@ff920000",
+      "property": "reg",
+      "bytes": "FF 92 00 00 00 00 10 00",
+      "text": null,
+      "u32_be": [
+        4287758336,
+        4096
+      ]
+    },
+    {
+      "node": "/soc/serial@ff920000",
+      "property": "clocks",
+      "bytes": "00 00 00 07 00 00 00 06 00 00 00 08",
+      "text": null,
+      "u32_be": [
+        7,
+        6,
+        8
+      ]
+    },
+    {
+      "node": "/soc/serial@ff920000",
+      "property": "clock-names",
+      "bytes": "75 61 72 74 63 6C 6B 00 61 70 62 5F 70 63 6C 6B 00",
+      "text": "uartclk | apb_pclk",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/serial@ff920000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/serial@ff920000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 01 24 00 00 00 04 00 00 00 00 00 00 01 25 00 00 00 04 00 00 00 00 00 00 01 26 00 00 00 04 00 00 00 00 00 00 01 27 00 00 00 04 00 00 00 00 00 00 01 28 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        292,
+        4,
+        0,
+        293,
+        4,
+        0,
+        294,
+        4,
+        0,
+        295,
+        4,
+        0,
+        296,
+        4
+      ]
+    },
+    {
+      "node": "/soc/serial@ff920000",
+      "property": "interrupt-names",
+      "bytes": "75 61 72 74 6D 73 69 6E 74 72 30 00 75 61 72 74 72 78 69 6E 74 72 30 00 75 61 72 74 74 78 69 6E 74 72 30 00 75 61 72 74 72 74 69 6E 74 72 30 00 75 61 72 74 65 69 6E 74 72 30 00",
+      "text": "uartmsintr0 | uartrxintr0 | uarttxintr0 | uartrtintr0 | uarteintr0",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/serial@ff920000",
+      "property": "pinctrl-names",
+      "bytes": "64 65 66 61 75 6C 74 00",
+      "text": "default",
+      "u32_be": [
+        1684366945,
+        1970041856
+      ]
+    },
+    {
+      "node": "/soc/serial@ff920000",
+      "property": "pinctrl-0",
+      "bytes": "00 00 00 09",
+      "text": null,
+      "u32_be": [
+        9
+      ]
+    },
+    {
+      "node": "/soc/serial@ff920000",
+      "property": "status",
+      "bytes": "64 69 73 61 62 6C 65 64 00",
+      "text": "disabled",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/serial@ff921000",
+      "property": "compatible",
+      "bytes": "61 72 6D 2C 70 6C 30 31 31 00 61 72 6D 2C 70 72 69 6D 65 63 65 6C 6C 00",
+      "text": "arm,pl011 | arm,primecell",
+      "u32_be": [
+        1634889004,
+        1886138417,
+        822108530,
+        1831628914,
+        1768777059,
+        1701604352
+      ]
+    },
+    {
+      "node": "/soc/serial@ff921000",
+      "property": "reg",
+      "bytes": "FF 92 10 00 00 00 10 00",
+      "text": null,
+      "u32_be": [
+        4287762432,
+        4096
+      ]
+    },
+    {
+      "node": "/soc/serial@ff921000",
+      "property": "clocks",
+      "bytes": "00 00 00 07 00 00 00 06 00 00 00 08",
+      "text": null,
+      "u32_be": [
+        7,
+        6,
+        8
+      ]
+    },
+    {
+      "node": "/soc/serial@ff921000",
+      "property": "clock-names",
+      "bytes": "75 61 72 74 63 6C 6B 00 61 70 62 5F 70 63 6C 6B 00",
+      "text": "uartclk | apb_pclk",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/serial@ff921000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/serial@ff921000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 01 09 00 00 00 04 00 00 00 00 00 00 01 0A 00 00 00 04 00 00 00 00 00 00 01 0B 00 00 00 04 00 00 00 00 00 00 01 0C 00 00 00 04 00 00 00 00 00 00 01 0D 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        265,
+        4,
+        0,
+        266,
+        4,
+        0,
+        267,
+        4,
+        0,
+        268,
+        4,
+        0,
+        269,
+        4
+      ]
+    },
+    {
+      "node": "/soc/serial@ff921000",
+      "property": "interrupt-names",
+      "bytes": "75 61 72 74 6D 73 69 6E 74 72 31 00 75 61 72 74 72 78 69 6E 74 72 31 00 75 61 72 74 74 78 69 6E 74 72 31 00 75 61 72 74 72 74 69 6E 74 72 31 00 75 61 72 74 65 69 6E 74 72 31 00",
+      "text": "uartmsintr1 | uartrxintr1 | uarttxintr1 | uartrtintr1 | uarteintr1",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/serial@ff921000",
+      "property": "pinctrl-names",
+      "bytes": "64 65 66 61 75 6C 74 00",
+      "text": "default",
+      "u32_be": [
+        1684366945,
+        1970041856
+      ]
+    },
+    {
+      "node": "/soc/serial@ff921000",
+      "property": "pinctrl-0",
+      "bytes": "00 00 00 0A",
+      "text": null,
+      "u32_be": [
+        10
+      ]
+    },
+    {
+      "node": "/soc/serial@ff921000",
+      "property": "status",
+      "bytes": "64 69 73 61 62 6C 65 64 00",
+      "text": "disabled",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/serial@ff922000",
+      "property": "compatible",
+      "bytes": "61 72 6D 2C 70 6C 30 31 31 00 61 72 6D 2C 70 72 69 6D 65 63 65 6C 6C 00",
+      "text": "arm,pl011 | arm,primecell",
+      "u32_be": [
+        1634889004,
+        1886138417,
+        822108530,
+        1831628914,
+        1768777059,
+        1701604352
+      ]
+    },
+    {
+      "node": "/soc/serial@ff922000",
+      "property": "reg",
+      "bytes": "FF 92 20 00 00 00 10 00",
+      "text": null,
+      "u32_be": [
+        4287766528,
+        4096
+      ]
+    },
+    {
+      "node": "/soc/serial@ff922000",
+      "property": "clocks",
+      "bytes": "00 00 00 07 00 00 00 06 00 00 00 08",
+      "text": null,
+      "u32_be": [
+        7,
+        6,
+        8
+      ]
+    },
+    {
+      "node": "/soc/serial@ff922000",
+      "property": "clock-names",
+      "bytes": "75 61 72 74 63 6C 6B 00 61 70 62 5F 70 63 6C 6B 00",
+      "text": "uartclk | apb_pclk",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/serial@ff922000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/serial@ff922000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 01 0E 00 00 00 04 00 00 00 00 00 00 01 0F 00 00 00 04 00 00 00 00 00 00 01 10 00 00 00 04 00 00 00 00 00 00 01 11 00 00 00 04 00 00 00 00 00 00 01 12 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        270,
+        4,
+        0,
+        271,
+        4,
+        0,
+        272,
+        4,
+        0,
+        273,
+        4,
+        0,
+        274,
+        4
+      ]
+    },
+    {
+      "node": "/soc/serial@ff922000",
+      "property": "interrupt-names",
+      "bytes": "75 61 72 74 6D 73 69 6E 74 72 32 00 75 61 72 74 72 78 69 6E 74 72 32 00 75 61 72 74 74 78 69 6E 74 72 32 00 75 61 72 74 72 74 69 6E 74 72 32 00 75 61 72 74 65 69 6E 74 72 32 00",
+      "text": "uartmsintr2 | uartrxintr2 | uarttxintr2 | uartrtintr2 | uarteintr2",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/serial@ff922000",
+      "property": "pinctrl-names",
+      "bytes": "64 65 66 61 75 6C 74 00",
+      "text": "default",
+      "u32_be": [
+        1684366945,
+        1970041856
+      ]
+    },
+    {
+      "node": "/soc/serial@ff922000",
+      "property": "pinctrl-0",
+      "bytes": "00 00 00 0B",
+      "text": null,
+      "u32_be": [
+        11
+      ]
+    },
+    {
+      "node": "/soc/serial@ff922000",
+      "property": "status",
+      "bytes": "64 69 73 61 62 6C 65 64 00",
+      "text": "disabled",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/serial@ff923000",
+      "property": "compatible",
+      "bytes": "61 72 6D 2C 70 6C 30 31 31 00 61 72 6D 2C 70 72 69 6D 65 63 65 6C 6C 00",
+      "text": "arm,pl011 | arm,primecell",
+      "u32_be": [
+        1634889004,
+        1886138417,
+        822108530,
+        1831628914,
+        1768777059,
+        1701604352
+      ]
+    },
+    {
+      "node": "/soc/serial@ff923000",
+      "property": "reg",
+      "bytes": "FF 92 30 00 00 00 10 00",
+      "text": null,
+      "u32_be": [
+        4287770624,
+        4096
+      ]
+    },
+    {
+      "node": "/soc/serial@ff923000",
+      "property": "clocks",
+      "bytes": "00 00 00 07 00 00 00 06 00 00 00 08",
+      "text": null,
+      "u32_be": [
+        7,
+        6,
+        8
+      ]
+    },
+    {
+      "node": "/soc/serial@ff923000",
+      "property": "clock-names",
+      "bytes": "75 61 72 74 63 6C 6B 00 61 70 62 5F 70 63 6C 6B 00",
+      "text": "uartclk | apb_pclk",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/serial@ff923000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/serial@ff923000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 01 13 00 00 00 04 00 00 00 00 00 00 01 14 00 00 00 04 00 00 00 00 00 00 01 15 00 00 00 04 00 00 00 00 00 00 01 16 00 00 00 04 00 00 00 00 00 00 01 17 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        275,
+        4,
+        0,
+        276,
+        4,
+        0,
+        277,
+        4,
+        0,
+        278,
+        4,
+        0,
+        279,
+        4
+      ]
+    },
+    {
+      "node": "/soc/serial@ff923000",
+      "property": "interrupt-names",
+      "bytes": "75 61 72 74 6D 73 69 6E 74 72 33 00 75 61 72 74 72 78 69 6E 74 72 33 00 75 61 72 74 74 78 69 6E 74 72 33 00 75 61 72 74 72 74 69 6E 74 72 33 00 75 61 72 74 65 69 6E 74 72 33 00",
+      "text": "uartmsintr3 | uartrxintr3 | uarttxintr3 | uartrtintr3 | uarteintr3",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/serial@ff923000",
+      "property": "pinctrl-names",
+      "bytes": "64 65 66 61 75 6C 74 00",
+      "text": "default",
+      "u32_be": [
+        1684366945,
+        1970041856
+      ]
+    },
+    {
+      "node": "/soc/serial@ff923000",
+      "property": "pinctrl-0",
+      "bytes": "00 00 00 0C",
+      "text": null,
+      "u32_be": [
+        12
+      ]
+    },
+    {
+      "node": "/soc/serial@ff923000",
+      "property": "status",
+      "bytes": "6F 6B 61 79 00",
+      "text": "okay",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 66 2D 73 64 68 34 30 2D 6C 70 00",
+      "text": "socionext,f-sdh40-lp",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "reg",
+      "bytes": "FF 9B 00 00 00 00 40 00",
+      "text": null,
+      "u32_be": [
+        4288348160,
+        16384
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "clocks",
+      "bytes": "00 00 00 0D 00 00 00 06 00 00 00 06 00 00 00 07",
+      "text": null,
+      "u32_be": [
+        13,
+        6,
+        6,
+        7
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "clock-names",
+      "bytes": "69 66 61 63 65 00 63 6F 72 65 00",
+      "text": "iface | core",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 00 E6 00 00 00 04 00 00 00 00 00 00 00 EB 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        230,
+        4,
+        0,
+        235,
+        4
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "interrupt-names",
+      "bytes": "73 64 30 2D 69 6E 74 31 2D 63 6F 6C 61 66 00 73 64 30 2D 69 6E 74 32 2D 63 6F 6C 61 66 00",
+      "text": "sd0-int1-colaf | sd0-int2-colaf",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "socionext,sd-id",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "bus-width",
+      "bytes": "00 00 00 08",
+      "text": null,
+      "u32_be": [
+        8
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "no-sdio",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "cap-sd-highspeed",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "sd-uhs-sdr50",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "pinctrl-names",
+      "bytes": "64 65 66 61 75 6C 74 00",
+      "text": "default",
+      "u32_be": [
+        1684366945,
+        1970041856
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "pinctrl-0",
+      "bytes": "00 00 00 0E",
+      "text": null,
+      "u32_be": [
+        14
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b0000",
+      "property": "status",
+      "bytes": "64 69 73 61 62 6C 65 64 00",
+      "text": "disabled",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 66 2D 73 64 68 34 30 2D 6C 70 00",
+      "text": "socionext,f-sdh40-lp",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "reg",
+      "bytes": "FF 9B 40 00 00 00 40 00",
+      "text": null,
+      "u32_be": [
+        4288364544,
+        16384
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "clocks",
+      "bytes": "00 00 00 0D 00 00 00 07 00 00 00 06 00 00 00 07",
+      "text": null,
+      "u32_be": [
+        13,
+        7,
+        6,
+        7
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "clock-names",
+      "bytes": "69 66 61 63 65 00 63 6F 72 65 00",
+      "text": "iface | core",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 00 ED 00 00 00 04 00 00 00 00 00 00 00 F2 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        237,
+        4,
+        0,
+        242,
+        4
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "interrupt-names",
+      "bytes": "73 64 31 2D 69 6E 74 31 2D 63 6F 6C 61 66 00 73 64 31 2D 69 6E 74 32 2D 63 6F 6C 61 66 00",
+      "text": "sd1-int1-colaf | sd1-int2-colaf",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "socionext,sd-id",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "bus-width",
+      "bytes": "00 00 00 04",
+      "text": null,
+      "u32_be": [
+        4
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "no-sdio",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "cap-mmc-highspeed",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "mmc-hs200-1_8v",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "non-removable",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "disable-wp",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b4000",
+      "property": "status",
+      "bytes": "64 69 73 61 62 6C 65 64 00",
+      "text": "disabled",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "compatible",
+      "bytes": "66 75 6A 69 74 73 75 2C 6D 62 38 36 73 37 30 2D 73 64 68 63 69 2D 33 2E 30 00",
+      "text": "fujitsu,mb86s70-sdhci-3.0",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "reg",
+      "bytes": "FF 9B 80 00 00 00 10 00",
+      "text": null,
+      "u32_be": [
+        4288380928,
+        4096
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "clocks",
+      "bytes": "00 00 00 0D 00 00 00 08 00 00 00 06 00 00 00 07",
+      "text": null,
+      "u32_be": [
+        13,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "clock-names",
+      "bytes": "69 66 61 63 65 00 63 6F 72 65 00",
+      "text": "iface | core",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 00 F4 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        244,
+        4
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "interrupt-names",
+      "bytes": "73 64 32 2D 69 6E 74 31 2D 63 6F 6C 61 66 00",
+      "text": "sd2-int1-colaf",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "socionext,sd-id",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "bus-width",
+      "bytes": "00 00 00 08",
+      "text": null,
+      "u32_be": [
+        8
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "no-sd",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "wifi-host",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "cap-sd-highspeed",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "sd-uhs-sdr50",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "cap-sdio-irq",
+      "bytes": "",
+      "text": null,
+      "u32_be": null
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "pinctrl-names",
+      "bytes": "64 65 66 61 75 6C 74 00",
+      "text": "default",
+      "u32_be": [
+        1684366945,
+        1970041856
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "pinctrl-0",
+      "bytes": "00 00 00 0F",
+      "text": null,
+      "u32_be": [
+        15
+      ]
+    },
+    {
+      "node": "/soc/mmc@ff9b8000",
+      "property": "status",
+      "bytes": "6F 6B 61 79 00",
+      "text": "okay",
+      "u32_be": null
+    },
+    {
+      "node": "/soc/bcmdhd_wlan@0",
+      "property": "compatible",
+      "bytes": "61 6E 64 72 6F 69 64 2C 62 63 6D 64 68 64 5F 77 6C 61 6E 00",
+      "text": "android,bcmdhd_wlan",
+      "u32_be": [
+        1634624626,
+        1869177900,
+        1650683236,
+        1751408503,
+        1818324480
+      ]
+    },
+    {
+      "node": "/soc/bcmdhd_wlan@0",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/soc/bcmdhd_wlan@0",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 00 7F 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        127,
+        4
+      ]
+    },
+    {
+      "node": "/soc/bcmdhd_wlan@0",
+      "property": "status",
+      "bytes": "6F 6B 61 79 00",
+      "text": "okay",
+      "u32_be": null
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 73 63 70 31 30 38 61 2D 70 63 69 65 00",
+      "text": "socionext,scp108a-pcie",
+      "u32_be": null
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "status",
+      "bytes": "64 69 73 61 62 6C 65 64 00",
+      "text": "disabled",
+      "u32_be": null
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "reg-names",
+      "bytes": "64 62 69 00 6C 69 6E 6B 00 63 6F 6E 66 69 67 00",
+      "text": "dbi | link | config",
+      "u32_be": [
+        1684171008,
+        1818848875,
+        6516590,
+        1718183680
+      ]
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "reg",
+      "bytes": "00 00 00 00 FA 80 00 00 00 00 00 00 00 00 10 00 00 00 00 00 FA 88 00 00 00 00 00 00 00 00 10 00 00 00 00 00 F8 E0 00 00 00 00 00 00 00 20 00 00 00 00 00 00 FF 90 70 00 00 00 00 00 00 00 10 00",
+      "text": null,
+      "u32_be": [
+        0,
+        4202692608,
+        0,
+        4096,
+        0,
+        4203216896,
+        0,
+        4096,
+        0,
+        4175429632,
+        0,
+        2097152,
+        0,
+        4287655936,
+        0,
+        4096
+      ]
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "#address-cells",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "#size-cells",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "clocks",
+      "bytes": "00 00 00 10",
+      "text": null,
+      "u32_be": [
+        16
+      ]
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "num-lanes",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "num-viewport",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "device_type",
+      "bytes": "70 63 69 00",
+      "text": "pci",
+      "u32_be": [
+        1885563136
+      ]
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "bus-range",
+      "bytes": "00 00 00 00 00 00 00 FF",
+      "text": null,
+      "u32_be": [
+        0,
+        255
+      ]
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "ranges",
+      "bytes": "82 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 F8 00 00 00 00 00 00 00 00 80 00 00",
+      "text": null,
+      "u32_be": [
+        2181038080,
+        0,
+        0,
+        0,
+        4160749568,
+        0,
+        8388608
+      ]
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "interrupt-names",
+      "bytes": "6D 73 69 00 65 72 72 00",
+      "text": "msi | err",
+      "u32_be": [
+        1836280064,
+        1701999104
+      ]
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 01 54 00 00 00 04 00 00 00 00 00 00 01 55 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        340,
+        4,
+        0,
+        341,
+        4
+      ]
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "phy-names",
+      "bytes": "70 63 69 65 2D 70 68 79 00",
+      "text": "pcie-phy",
+      "u32_be": null
+    },
+    {
+      "node": "/pcie@FA800000",
+      "property": "phys",
+      "bytes": "00 00 00 11",
+      "text": null,
+      "u32_be": [
+        17
+      ]
+    },
+    {
+      "node": "/phy@FA882000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 73 63 70 31 30 38 61 2D 70 63 69 65 2D 70 68 79 00",
+      "text": "socionext,scp108a-pcie-phy",
+      "u32_be": null
+    },
+    {
+      "node": "/phy@FA882000",
+      "property": "status",
+      "bytes": "64 69 73 61 62 6C 65 64 00",
+      "text": "disabled",
+      "u32_be": null
+    },
+    {
+      "node": "/phy@FA882000",
+      "property": "reg",
+      "bytes": "00 00 00 00 FA 88 20 00 00 00 00 00 00 00 10 00",
+      "text": null,
+      "u32_be": [
+        0,
+        4203225088,
+        0,
+        4096
+      ]
+    },
+    {
+      "node": "/phy@FA882000",
+      "property": "clocks",
+      "bytes": "00 00 00 10",
+      "text": null,
+      "u32_be": [
+        16
+      ]
+    },
+    {
+      "node": "/phy@FA882000",
+      "property": "#phy-cells",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/phy@FA882000",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 11",
+      "text": null,
+      "u32_be": [
+        17
+      ]
+    },
+    {
+      "node": "/phy@FA882000",
+      "property": "phandle",
+      "bytes": "00 00 00 11",
+      "text": null,
+      "u32_be": [
+        17
+      ]
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 73 63 70 31 30 38 61 2D 70 63 69 65 00",
+      "text": "socionext,scp108a-pcie",
+      "u32_be": null
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "status",
+      "bytes": "64 69 73 61 62 6C 65 64 00",
+      "text": "disabled",
+      "u32_be": null
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "reg-names",
+      "bytes": "64 62 69 00 6C 69 6E 6B 00 63 6F 6E 66 69 67 00",
+      "text": "dbi | link | config",
+      "u32_be": [
+        1684171008,
+        1818848875,
+        6516590,
+        1718183680
+      ]
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "reg",
+      "bytes": "00 00 00 00 FA A0 00 00 00 00 00 00 00 00 10 00 00 00 00 00 FA A8 00 00 00 00 00 00 00 00 10 00 00 00 00 00 F9 E0 00 00 00 00 00 00 00 20 00 00 00 00 00 00 FF 90 70 00 00 00 00 00 00 00 10 00",
+      "text": null,
+      "u32_be": [
+        0,
+        4204789760,
+        0,
+        4096,
+        0,
+        4205314048,
+        0,
+        4096,
+        0,
+        4192206848,
+        0,
+        2097152,
+        0,
+        4287655936,
+        0,
+        4096
+      ]
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "#address-cells",
+      "bytes": "00 00 00 03",
+      "text": null,
+      "u32_be": [
+        3
+      ]
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "#size-cells",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "clocks",
+      "bytes": "00 00 00 10",
+      "text": null,
+      "u32_be": [
+        16
+      ]
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "num-lanes",
+      "bytes": "00 00 00 02",
+      "text": null,
+      "u32_be": [
+        2
+      ]
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "num-viewport",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "device_type",
+      "bytes": "70 63 69 00",
+      "text": "pci",
+      "u32_be": [
+        1885563136
+      ]
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "bus-range",
+      "bytes": "00 00 00 00 00 00 00 FF",
+      "text": null,
+      "u32_be": [
+        0,
+        255
+      ]
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "ranges",
+      "bytes": "82 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 F9 00 00 00 00 00 00 00 00 80 00 00",
+      "text": null,
+      "u32_be": [
+        2181038080,
+        0,
+        0,
+        0,
+        4177526784,
+        0,
+        8388608
+      ]
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "interrupt-parent",
+      "bytes": "00 00 00 01",
+      "text": null,
+      "u32_be": [
+        1
+      ]
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "interrupt-names",
+      "bytes": "6D 73 69 00 65 72 72 00",
+      "text": "msi | err",
+      "u32_be": [
+        1836280064,
+        1701999104
+      ]
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "interrupts",
+      "bytes": "00 00 00 00 00 00 01 79 00 00 00 04 00 00 00 00 00 00 01 7A 00 00 00 04",
+      "text": null,
+      "u32_be": [
+        0,
+        377,
+        4,
+        0,
+        378,
+        4
+      ]
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "phy-names",
+      "bytes": "70 63 69 65 2D 70 68 79 00",
+      "text": "pcie-phy",
+      "u32_be": null
+    },
+    {
+      "node": "/pcie@FAA00000",
+      "property": "phys",
+      "bytes": "00 00 00 12",
+      "text": null,
+      "u32_be": [
+        18
+      ]
+    },
+    {
+      "node": "/phy@FAA82000",
+      "property": "compatible",
+      "bytes": "73 6F 63 69 6F 6E 65 78 74 2C 73 63 70 31 30 38 61 2D 70 63 69 65 2D 70 68 79 00",
+      "text": "socionext,scp108a-pcie-phy",
+      "u32_be": null
+    },
+    {
+      "node": "/phy@FAA82000",
+      "property": "status",
+      "bytes": "64 69 73 61 62 6C 65 64 00",
+      "text": "disabled",
+      "u32_be": null
+    },
+    {
+      "node": "/phy@FAA82000",
+      "property": "reg",
+      "bytes": "00 00 00 00 FA A8 20 00 00 00 00 00 00 00 10 00",
+      "text": null,
+      "u32_be": [
+        0,
+        4205322240,
+        0,
+        4096
+      ]
+    },
+    {
+      "node": "/phy@FAA82000",
+      "property": "clocks",
+      "bytes": "00 00 00 10",
+      "text": null,
+      "u32_be": [
+        16
+      ]
+    },
+    {
+      "node": "/phy@FAA82000",
+      "property": "#phy-cells",
+      "bytes": "00 00 00 00",
+      "text": "",
+      "u32_be": [
+        0
+      ]
+    },
+    {
+      "node": "/phy@FAA82000",
+      "property": "linux,phandle",
+      "bytes": "00 00 00 12",
+      "text": null,
+      "u32_be": [
+        18
+      ]
+    },
+    {
+      "node": "/phy@FAA82000",
+      "property": "phandle",
+      "bytes": "00 00 00 12",
+      "text": null,
+      "u32_be": [
+        18
+      ]
+    }
+  ],
+  "string_evidence": {
+    "Cortex-A53": {
+      "count_in_inverted_DAT": 5,
+      "first_hits": [
+        {
+          "file_offset": "0x3c406ec",
+          "text": "arm,cortex-a53"
+        },
+        {
+          "file_offset": "0x3c40774",
+          "text": "arm,cortex-a53"
+        },
+        {
+          "file_offset": "0x3c407fc",
+          "text": "arm,cortex-a53"
+        },
+        {
+          "file_offset": "0x3c40884",
+          "text": "arm,cortex-a53"
+        },
+        {
+          "file_offset": "0x4136664",
+          "text": "arm,cortex-a53"
+        }
+      ]
+    },
+    "CEVA-XM6": {
+      "count_in_inverted_DAT": 10,
+      "first_hits": [
+        {
+          "file_offset": "0x786d12",
+          "text": "CEVA-XM6"
+        },
+        {
+          "file_offset": "0x78f206",
+          "text": "CEVA-XM6"
+        },
+        {
+          "file_offset": "0x796534",
+          "text": "CEVA-XM6"
+        },
+        {
+          "file_offset": "0x79bac1",
+          "text": "CEVA-XM6"
+        },
+        {
+          "file_offset": "0x7a46ff",
+          "text": "CEVA-XM6"
+        }
+      ]
+    },
+    "C_source": {
+      "count_in_inverted_DAT": 11,
+      "first_hits": [
+        {
+          "file_offset": "0x775d1e",
+          "text": "src/egl/client/dmpdevconf.c"
+        },
+        {
+          "file_offset": "0x786d25",
+          "text": "/drivers/csl/src/mss.c"
+        },
+        {
+          "file_offset": "0x78f219",
+          "text": "/drivers/csl/src/mss.c"
+        },
+        {
+          "file_offset": "0x796547",
+          "text": "/drivers/csl/src/mss.c"
+        },
+        {
+          "file_offset": "0x79bad4",
+          "text": "/drivers/csl/src/mss.c"
+        }
+      ]
+    },
+    "Linux": {
+      "count_in_inverted_DAT": 1,
+      "first_hits": [
+        {
+          "file_offset": "0x41302c4",
+          "text": "Linux version 4.9.92 (oe-user@oe-host) (gcc version 7.3.0 (GCC) ) #2 SMP PREEMPT Tue Jun 24 20:25:56 JST 2025\n"
+        }
+      ]
+    },
+    "ThreadX": {
+      "count_in_inverted_DAT": 1,
+      "first_hits": [
+        {
+          "file_offset": "0x7e519",
+          "text": "ThreadX Cortex-A5x-SMP/ARM Version G5.9.5.5 SN: 5239-270-1319 *"
+        }
+      ]
+    }
+  },
+  "elf": {
+    "ident": "7F 45 4C 46 02 01 01 00 00 00 00 00 00 00 00 00",
+    "class": 2,
+    "data_encoding": 1,
+    "type": 3,
+    "machine": 183
+  },
+  "source_unchanged": true
+}

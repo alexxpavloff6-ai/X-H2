@@ -1,0 +1,676 @@
+[
+  {
+    "model": "X-H2",
+    "dat_sha256": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+    "blocks": [
+      {
+        "base": "0x1101000",
+        "mapped_bytes": 12042160,
+        "sha256": "3aacc331157312a03531266cd9aca0daea28597b9f3535bb6141105ad7354b4d"
+      },
+      {
+        "base": "0x29ae000",
+        "mapped_bytes": 15515648,
+        "sha256": "a49b88c00d3724239207e6564f2dfbf9d0a59b41962012d44a05738455d2addd"
+      }
+    ],
+    "state": "0x2680414",
+    "setter": "0x1562e18",
+    "wrapper": "0x1554a68",
+    "wrapper_body": [
+      "0x01554a68: fd7bbda9 stp x29, x30, [sp, #-0x30]!",
+      "0x01554a6c: fd030091 mov x29, sp",
+      "0x01554a70: f35301a9 stp x19, x20, [sp, #0x10]",
+      "0x01554a74: f51300f9 str x21, [sp, #0x20]",
+      "0x01554a78: f403002a mov w20, w0",
+      "0x01554a7c: f303012a mov w19, w1",
+      "0x01554a80: f503022a mov w21, w2",
+      "0x01554a84: 41018052 mov w1, #0xa",
+      "0x01554a88: b3320094 bl #0x1561554",
+      "0x01554a8c: a0000035 cbnz w0, #0x1554aa0",
+      "0x01554a90: f35341a9 ldp x19, x20, [sp, #0x10]",
+      "0x01554a94: f51340f9 ldr x21, [sp, #0x20]",
+      "0x01554a98: fd7bc3a8 ldp x29, x30, [sp], #0x30",
+      "0x01554a9c: c0035fd6 ret ",
+      "0x01554aa0: e003142a mov w0, w20",
+      "0x01554aa4: 91400094 bl #0x1564ce8",
+      "0x01554aa8: e103132a mov w1, w19",
+      "0x01554aac: 131d80d2 mov x19, #0xe8",
+      "0x01554ab0: 217c139b mul x1, x1, x19",
+      "0x01554ab4: 21800f91 add x1, x1, #0x3e0",
+      "0x01554ab8: e003002a mov w0, w0",
+      "0x01554abc: 02e984d2 mov x2, #0x2748",
+      "0x01554ac0: 0004029b madd x0, x0, x2, x1",
+      "0x01554ac4: e103152a mov w1, w21",
+      "0x01554ac8: 426a00d0 adrp x2, #0x229e000",
+      "0x01554acc: 42800e91 add x2, x2, #0x3a0",
+      "0x01554ad0: 4000008b add x0, x2, x0",
+      "0x01554ad4: d1380094 bl #0x1562e18",
+      "0x01554ad8: eeffff17 b #0x1554a90"
+    ],
+    "direct_bl_setter": [
+      {
+        "address": "0x1554ad4",
+        "instructions": [
+          "0x01554aa4: 91400094 bl #0x1564ce8",
+          "0x01554aa8: e103132a mov w1, w19",
+          "0x01554aac: 131d80d2 mov x19, #0xe8",
+          "0x01554ab0: 217c139b mul x1, x1, x19",
+          "0x01554ab4: 21800f91 add x1, x1, #0x3e0",
+          "0x01554ab8: e003002a mov w0, w0",
+          "0x01554abc: 02e984d2 mov x2, #0x2748",
+          "0x01554ac0: 0004029b madd x0, x0, x2, x1",
+          "0x01554ac4: e103152a mov w1, w21",
+          "0x01554ac8: 426a00d0 adrp x2, #0x229e000",
+          "0x01554acc: 42800e91 add x2, x2, #0x3a0",
+          "0x01554ad0: 4000008b add x0, x2, x0",
+          "0x01554ad4: d1380094 bl #0x1562e18",
+          "0x01554ad8: eeffff17 b #0x1554a90",
+          "0x01554adc: fd7bbea9 stp x29, x30, [sp, #-0x20]!",
+          "0x01554ae0: fd030091 mov x29, sp",
+          "0x01554ae4: f35301a9 stp x19, x20, [sp, #0x10]",
+          "0x01554ae8: f403002a mov w20, w0"
+        ]
+      }
+    ],
+    "direct_bl_wrapper": [
+      {
+        "address": "0x2fbcccc",
+        "instructions": [
+          "0x02fbcc9c: e003132a mov w0, w19",
+          "0x02fbcca0: e05f9697 bl #0x1554c20",
+          "0x02fbcca4: a27a40b9 ldr w2, [x21, #0x78]",
+          "0x02fbcca8: e103142a mov w1, w20",
+          "0x02fbccac: e003132a mov w0, w19",
+          "0x02fbccb0: 13609697 bl #0x1554cfc",
+          "0x02fbccb4: 00eb00f0 adrp x0, #0x4d1f000",
+          "0x02fbccb8: 00e00391 add x0, x0, #0xf8",
+          "0x02fbccbc: 0008348b add x0, x0, w20, uxtb #2",
+          "0x02fbccc0: 02d04ab9 ldr w2, [x0, #0xad0]",
+          "0x02fbccc4: e103142a mov w1, w20",
+          "0x02fbccc8: e003132a mov w0, w19",
+          "0x02fbcccc: 675f9697 bl #0x1554a68",
+          "0x02fbccd0: e27a78b8 ldr w2, [x23, x24, lsl #2]",
+          "0x02fbccd4: e103142a mov w1, w20",
+          "0x02fbccd8: e003132a mov w0, w19",
+          "0x02fbccdc: 9a5f9697 bl #0x1554b44",
+          "0x02fbcce0: e203162a mov w2, w22"
+        ]
+      }
+    ],
+    "direct_adrp_state_access": [
+      {
+        "address": "0x12eefe4",
+        "instructions": [
+          "0x012eefe4: 809c00d0 adrp x0, #0x2680000",
+          "0x012eefe8: 001444b9 ldr w0, [x0, #0x414]",
+          "0x012eefec: 1f00136b cmp w0, w19",
+          "0x012eeff0: 20010054 b.eq #0x12ef014",
+          "0x012eeff4: 819c0090 adrp x1, #0x267e000",
+          "0x012eeff8: 21b46f39 ldrb w1, [x1, #0xbed]",
+          "0x012eeffc: c1000036 tbz w1, #0, #0x12ef014",
+          "0x012ef000: c19d0090 adrp x1, #0x26a7000",
+          "0x012ef004: 21a00291 add x1, x1, #0xa8",
+          "0x012ef008: 21704091 add x1, x1, #0x1c, lsl #12",
+          "0x012ef00c: 212874b9 ldr w1, [x1, #0x3428]",
+          "0x012ef010: c1000035 cbnz w1, #0x12ef028"
+        ]
+      },
+      {
+        "address": "0x12ef014",
+        "instructions": [
+          "0x012ef014: 809c00b0 adrp x0, #0x2680000",
+          "0x012ef018: 131404b9 str w19, [x0, #0x414]",
+          "0x012ef01c: f35341a9 ldp x19, x20, [sp, #0x10]",
+          "0x012ef020: fd7bc2a8 ldp x29, x30, [sp], #0x20",
+          "0x012ef024: c0035fd6 ret ",
+          "0x012ef028: e751f997 bl #0x11437c4",
+          "0x012ef02c: f40300aa mov x20, x0",
+          "0x012ef030: e003132a mov w0, w19",
+          "0x012ef034: e451f997 bl #0x11437c4",
+          "0x012ef038: e30300aa mov x3, x0",
+          "0x012ef03c: e20314aa mov x2, x20",
+          "0x012ef040: 812e00b0 adrp x1, #0x18c0000"
+        ]
+      },
+      {
+        "address": "0x2bfaccc",
+        "instructions": [
+          "0x02bfaccc: 20d4ffd0 adrp x0, #0x2680000",
+          "0x02bfacd0: 011444b9 ldr w1, [x0, #0x414]",
+          "0x02bfacd4: c0d18052 mov w0, #0x68e",
+          "0x02bfacd8: 1beb9497 bl #0x1135944",
+          "0x02bfacdc: e0000035 cbnz w0, #0x2bfacf8",
+          "0x02bface0: 21008052 mov w1, #1",
+          "0x02bface4: e00313aa mov x0, x19",
+          "0x02bface8: 97f7ff97 bl #0x2bf8b44",
+          "0x02bfacec: f30b40f9 ldr x19, [sp, #0x10]",
+          "0x02bfacf0: fd7bc2a8 ldp x29, x30, [sp], #0x20",
+          "0x02bfacf4: c0035fd6 ret ",
+          "0x02bfacf8: 83008052 mov w3, #4"
+        ]
+      },
+      {
+        "address": "0x2bfad00",
+        "instructions": [
+          "0x02bfad00: 20d4ffd0 adrp x0, #0x2680000",
+          "0x02bfad04: 011444b9 ldr w1, [x0, #0x414]",
+          "0x02bfad08: c0d18052 mov w0, #0x68e",
+          "0x02bfad0c: 09eb9497 bl #0x1135930",
+          "0x02bfad10: e103002a mov w1, w0",
+          "0x02bfad14: e00313aa mov x0, x19",
+          "0x02bfad18: 8bf7ff97 bl #0x2bf8b44",
+          "0x02bfad1c: f4ffff17 b #0x2bfacec",
+          "0x02bfad20: fd7bbea9 stp x29, x30, [sp, #-0x20]!",
+          "0x02bfad24: fd030091 mov x29, sp",
+          "0x02bfad28: f30b00f9 str x19, [sp, #0x10]",
+          "0x02bfad2c: f30300aa mov x19, x0"
+        ]
+      },
+      {
+        "address": "0x2c96ad8",
+        "instructions": [
+          "0x02c96ad8: 40cfffd0 adrp x0, #0x2680000",
+          "0x02c96adc: 011444b9 ldr w1, [x0, #0x414]",
+          "0x02c96ae0: 3f280071 cmp w1, #0xa",
+          "0x02c96ae4: a8040054 b.hi #0x2c96b78",
+          "0x02c96ae8: 3f180071 cmp w1, #6",
+          "0x02c96aec: 48050054 b.hi #0x2c96b94",
+          "0x02c96af0: 03008052 mov w3, #0",
+          "0x02c96af4: 62008052 mov w2, #3",
+          "0x02c96af8: e003132a mov w0, w19",
+          "0x02c96afc: 8d7b9297 bl #0x1135930",
+          "0x02c96b00: e00f01b9 str w0, [sp, #0x10c]",
+          "0x02c96b04: 6df5ff17 b #0x2c940b8"
+        ]
+      },
+      {
+        "address": "0x2c96bac",
+        "instructions": [
+          "0x02c96bac: 40cfffd0 adrp x0, #0x2680000",
+          "0x02c96bb0: 011444b9 ldr w1, [x0, #0x414]",
+          "0x02c96bb4: 00d28052 mov w0, #0x690",
+          "0x02c96bb8: 5e7b9297 bl #0x1135930",
+          "0x02c96bbc: e00f01b9 str w0, [sp, #0x10c]",
+          "0x02c96bc0: 3ef5ff17 b #0x2c940b8",
+          "0x02c96bc4: 03008052 mov w3, #0",
+          "0x02c96bc8: 62008052 mov w2, #3",
+          "0x02c96bcc: 40cfffd0 adrp x0, #0x2680000",
+          "0x02c96bd0: 011444b9 ldr w1, [x0, #0x414]",
+          "0x02c96bd4: e0d18052 mov w0, #0x68f",
+          "0x02c96bd8: 567b9297 bl #0x1135930"
+        ]
+      },
+      {
+        "address": "0x2c96bcc",
+        "instructions": [
+          "0x02c96bcc: 40cfffd0 adrp x0, #0x2680000",
+          "0x02c96bd0: 011444b9 ldr w1, [x0, #0x414]",
+          "0x02c96bd4: e0d18052 mov w0, #0x68f",
+          "0x02c96bd8: 567b9297 bl #0x1135930",
+          "0x02c96bdc: e00f01b9 str w0, [sp, #0x10c]",
+          "0x02c96be0: 36f5ff17 b #0x2c940b8",
+          "0x02c96be4: 7f8a1a71 cmp w19, #0x6a2",
+          "0x02c96be8: 20020054 b.eq #0x2c96c2c",
+          "0x02c96bec: 7f8e1a71 cmp w19, #0x6a3",
+          "0x02c96bf0: 61020054 b.ne #0x2c96c3c",
+          "0x02c96bf4: 40cfffd0 adrp x0, #0x2680000",
+          "0x02c96bf8: 00d042b9 ldr w0, [x0, #0x2d0]"
+        ]
+      },
+      {
+        "address": "0x2c9f9dc",
+        "instructions": [
+          "0x02c9f9dc: 00cfffb0 adrp x0, #0x2680000",
+          "0x02c9f9e0: 001444b9 ldr w0, [x0, #0x414]",
+          "0x02c9f9e4: 1f180071 cmp w0, #6",
+          "0x02c9f9e8: 20040054 b.eq #0x2c9fa6c",
+          "0x02c9f9ec: 00cfffb0 adrp x0, #0x2680000",
+          "0x02c9f9f0: 14904bb9 ldr w20, [x0, #0xb90]",
+          "0x02c9f9f4: 9f020071 cmp w20, #0",
+          "0x02c9f9f8: 40008052 mov w0, #2",
+          "0x02c9f9fc: 9402801a csel w20, w20, w0, eq",
+          "0x02c9fa00: 02000014 b #0x2c9fa08",
+          "0x02c9fa04: 54008052 mov w20, #2",
+          "0x02c9fa08: c0d48052 mov w0, #0x6a6"
+        ]
+      }
+    ],
+    "executed_array_to_frame": [
+      {
+        "entry": "0x2fbccb4",
+        "stop": "0x2fbccd0",
+        "handle_w19": "0xffff0000",
+        "index_w20": 0,
+        "synthetic_source_address": "0x4d1fbc8",
+        "synthetic_source_value": 13,
+        "default_frame_index_address": "0x2271500",
+        "default_frame_index": 0,
+        "frame_field": "0x229e840",
+        "frame_field_initial": "0xaabbccdd",
+        "frame_field_final": "0xd",
+        "visited": [
+          "0x1554a68",
+          "0x1562e18"
+        ]
+      },
+      {
+        "entry": "0x2fbccb4",
+        "stop": "0x2fbccd0",
+        "handle_w19": "0xffffffff",
+        "index_w20": 0,
+        "synthetic_source_address": "0x4d1fbc8",
+        "synthetic_source_value": 13,
+        "default_frame_index_address": "0x2271500",
+        "default_frame_index": 0,
+        "frame_field": "0x229e840",
+        "frame_field_initial": "0xaabbccdd",
+        "frame_field_final": "0xaabbccdd",
+        "visited": [
+          "0x1554a68"
+        ]
+      }
+    ],
+    "saved_state_separate_reader": [
+      {
+        "new_word": 14,
+        "old_word": 0,
+        "initial_saved": 0,
+        "zeroed_flags": [
+          "0x2051408",
+          "0x267ebec"
+        ],
+        "selection_entry": "0x132d138",
+        "selection_stop": "0x132d5e0",
+        "saved": 13,
+        "separate_reader_entry": "0x2bfacf8",
+        "reader_conversion_stop": "0x2bfad10",
+        "reader_x0": 11,
+        "synthetic_destination_x19": "0x70001000",
+        "writer_entry_stop": "0x2bf8b44",
+        "writer_w1": 11,
+        "state_transferred_by_researcher": false
+      },
+      {
+        "new_word": 0,
+        "old_word": 14,
+        "initial_saved": 0,
+        "zeroed_flags": [
+          "0x2051408",
+          "0x267ebec"
+        ],
+        "selection_entry": "0x132d138",
+        "selection_stop": "0x132d5e0",
+        "saved": 0,
+        "separate_reader_entry": "0x2bfacf8",
+        "reader_conversion_stop": "0x2bfad10",
+        "reader_x0": 1,
+        "synthetic_destination_x19": "0x70001000",
+        "writer_entry_stop": "0x2bf8b44",
+        "writer_w1": 1,
+        "state_transferred_by_researcher": false
+      },
+      {
+        "new_word": 14,
+        "old_word": 14,
+        "initial_saved": 0,
+        "zeroed_flags": [
+          "0x2051408",
+          "0x267ebec"
+        ],
+        "selection_entry": "0x132d138",
+        "selection_stop": "0x132d150",
+        "saved": 0,
+        "separate_reader_entry": "0x2bfacf8",
+        "reader_conversion_stop": "0x2bfad10",
+        "reader_x0": 1,
+        "synthetic_destination_x19": "0x70001000",
+        "writer_entry_stop": "0x2bf8b44",
+        "writer_w1": 1,
+        "state_transferred_by_researcher": false
+      }
+    ]
+  },
+  {
+    "model": "X100VI",
+    "dat_sha256": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+    "blocks": [
+      {
+        "base": "0x11c1000",
+        "mapped_bytes": 27058176,
+        "sha256": "4c672e43fc7ed28680c817c1ea529666e7b43433eb6eb15ed1551fc946b45bce"
+      },
+      {
+        "base": "0x2b8f000",
+        "mapped_bytes": 22253568,
+        "sha256": "14b0557bd724fa74b51ff641fcd5481da5b3ac64146d4fc69375086dafcfb174"
+      }
+    ],
+    "state": "0x27f7a54",
+    "setter": "0x162a450",
+    "wrapper": "0x161ad5c",
+    "wrapper_body": [
+      "0x0161ad5c: fd7bbda9 stp x29, x30, [sp, #-0x30]!",
+      "0x0161ad60: fd030091 mov x29, sp",
+      "0x0161ad64: f35301a9 stp x19, x20, [sp, #0x10]",
+      "0x0161ad68: f51300f9 str x21, [sp, #0x20]",
+      "0x0161ad6c: f403002a mov w20, w0",
+      "0x0161ad70: f303012a mov w19, w1",
+      "0x0161ad74: f503022a mov w21, w2",
+      "0x0161ad78: 41018052 mov w1, #0xa",
+      "0x0161ad7c: 64370094 bl #0x1628b0c",
+      "0x0161ad80: a0000035 cbnz w0, #0x161ad94",
+      "0x0161ad84: f35341a9 ldp x19, x20, [sp, #0x10]",
+      "0x0161ad88: f51340f9 ldr x21, [sp, #0x20]",
+      "0x0161ad8c: fd7bc3a8 ldp x29, x30, [sp], #0x30",
+      "0x0161ad90: c0035fd6 ret ",
+      "0x0161ad94: e003142a mov w0, w20",
+      "0x0161ad98: 02460094 bl #0x162c5a0",
+      "0x0161ad9c: e103132a mov w1, w19",
+      "0x0161ada0: 132180d2 mov x19, #0x108",
+      "0x0161ada4: 217c139b mul x1, x1, x19",
+      "0x0161ada8: 21201091 add x1, x1, #0x408",
+      "0x0161adac: e003002a mov w0, w0",
+      "0x0161adb0: 02c485d2 mov x2, #0x2e20",
+      "0x0161adb4: 0004029b madd x0, x0, x2, x1",
+      "0x0161adb8: e103152a mov w1, w21",
+      "0x0161adbc: a26700b0 adrp x2, #0x230f000",
+      "0x0161adc0: 42e02991 add x2, x2, #0xa78",
+      "0x0161adc4: 4000008b add x0, x2, x0",
+      "0x0161adc8: a23d0094 bl #0x162a450",
+      "0x0161adcc: eeffff17 b #0x161ad84"
+    ],
+    "direct_bl_setter": [
+      {
+        "address": "0x161adc8",
+        "instructions": [
+          "0x0161ad98: 02460094 bl #0x162c5a0",
+          "0x0161ad9c: e103132a mov w1, w19",
+          "0x0161ada0: 132180d2 mov x19, #0x108",
+          "0x0161ada4: 217c139b mul x1, x1, x19",
+          "0x0161ada8: 21201091 add x1, x1, #0x408",
+          "0x0161adac: e003002a mov w0, w0",
+          "0x0161adb0: 02c485d2 mov x2, #0x2e20",
+          "0x0161adb4: 0004029b madd x0, x0, x2, x1",
+          "0x0161adb8: e103152a mov w1, w21",
+          "0x0161adbc: a26700b0 adrp x2, #0x230f000",
+          "0x0161adc0: 42e02991 add x2, x2, #0xa78",
+          "0x0161adc4: 4000008b add x0, x2, x0",
+          "0x0161adc8: a23d0094 bl #0x162a450",
+          "0x0161adcc: eeffff17 b #0x161ad84",
+          "0x0161add0: fd7bbea9 stp x29, x30, [sp, #-0x20]!",
+          "0x0161add4: fd030091 mov x29, sp",
+          "0x0161add8: f35301a9 stp x19, x20, [sp, #0x10]",
+          "0x0161addc: f403002a mov w20, w0"
+        ]
+      }
+    ],
+    "direct_bl_wrapper": [
+      {
+        "address": "0x31db0b8",
+        "instructions": [
+          "0x031db088: daff9097 bl #0x161aff0",
+          "0x031db08c: e2a30191 add x2, sp, #0x68",
+          "0x031db090: 41008052 mov w1, #2",
+          "0x031db094: e003132a mov w0, w19",
+          "0x031db098: 78730194 bl #0x3237e78",
+          "0x031db09c: e003132a mov w0, w19",
+          "0x031db0a0: c2e09097 bl #0x16133a8",
+          "0x031db0a4: e26b40b9 ldr w2, [sp, #0x68]",
+          "0x031db0a8: 1f300071 cmp w0, #0xc",
+          "0x031db0ac: 000c0054 b.eq #0x31db22c",
+          "0x031db0b0: e103142a mov w1, w20",
+          "0x031db0b4: e003132a mov w0, w19",
+          "0x031db0b8: 29ff9097 bl #0x161ad5c",
+          "0x031db0bc: e27a78b8 ldr w2, [x23, x24, lsl #2]",
+          "0x031db0c0: e103142a mov w1, w20",
+          "0x031db0c4: e003132a mov w0, w19",
+          "0x031db0c8: 5cff9097 bl #0x161ae38",
+          "0x031db0cc: e26f40b9 ldr w2, [sp, #0x6c]"
+        ]
+      }
+    ],
+    "direct_adrp_state_access": [
+      {
+        "address": "0x13d2064",
+        "instructions": [
+          "0x013d2064: 20a100b0 adrp x0, #0x27f7000",
+          "0x013d2068: 00544ab9 ldr w0, [x0, #0xa54]",
+          "0x013d206c: 1f00136b cmp w0, w19",
+          "0x013d2070: 20010054 b.eq #0x13d2094",
+          "0x013d2074: 21a10090 adrp x1, #0x27f6000",
+          "0x013d2078: 21744039 ldrb w1, [x1, #0x1d]",
+          "0x013d207c: c1000036 tbz w1, #0, #0x13d2094",
+          "0x013d2080: 61a200b0 adrp x1, #0x281f000",
+          "0x013d2084: 21c01e91 add x1, x1, #0x7b0",
+          "0x013d2088: 21d04191 add x1, x1, #0x74, lsl #12",
+          "0x013d208c: 21607cb9 ldr w1, [x1, #0x3c60]",
+          "0x013d2090: c1000035 cbnz w1, #0x13d20a8"
+        ]
+      },
+      {
+        "address": "0x13d2094",
+        "instructions": [
+          "0x013d2094: 20a100b0 adrp x0, #0x27f7000",
+          "0x013d2098: 13540ab9 str w19, [x0, #0xa54]",
+          "0x013d209c: f35341a9 ldp x19, x20, [sp, #0x10]",
+          "0x013d20a0: fd7bc2a8 ldp x29, x30, [sp], #0x20",
+          "0x013d20a4: c0035fd6 ret ",
+          "0x013d20a8: f3c5f897 bl #0x1203874",
+          "0x013d20ac: f40300aa mov x20, x0",
+          "0x013d20b0: e003132a mov w0, w19",
+          "0x013d20b4: f0c5f897 bl #0x1203874",
+          "0x013d20b8: e30300aa mov x3, x0",
+          "0x013d20bc: e20314aa mov x2, x20",
+          "0x013d20c0: 212f00d0 adrp x1, #0x19b8000"
+        ]
+      },
+      {
+        "address": "0x2df7c84",
+        "instructions": [
+          "0x02df7c84: 00d0ff90 adrp x0, #0x27f7000",
+          "0x02df7c88: 01544ab9 ldr w1, [x0, #0xa54]",
+          "0x02df7c8c: 80db8052 mov w0, #0x6dc",
+          "0x02df7c90: 6ef78f97 bl #0x11f5a48",
+          "0x02df7c94: e0000035 cbnz w0, #0x2df7cb0",
+          "0x02df7c98: 21008052 mov w1, #1",
+          "0x02df7c9c: e00313aa mov x0, x19",
+          "0x02df7ca0: 8df6ff97 bl #0x2df56d4",
+          "0x02df7ca4: f30b40f9 ldr x19, [sp, #0x10]",
+          "0x02df7ca8: fd7bc2a8 ldp x29, x30, [sp], #0x20",
+          "0x02df7cac: c0035fd6 ret ",
+          "0x02df7cb0: 83008052 mov w3, #4"
+        ]
+      },
+      {
+        "address": "0x2df7cb8",
+        "instructions": [
+          "0x02df7cb8: 00d0ff90 adrp x0, #0x27f7000",
+          "0x02df7cbc: 01544ab9 ldr w1, [x0, #0xa54]",
+          "0x02df7cc0: 80db8052 mov w0, #0x6dc",
+          "0x02df7cc4: 5cf78f97 bl #0x11f5a34",
+          "0x02df7cc8: e103002a mov w1, w0",
+          "0x02df7ccc: e00313aa mov x0, x19",
+          "0x02df7cd0: 81f6ff97 bl #0x2df56d4",
+          "0x02df7cd4: f4ffff17 b #0x2df7ca4",
+          "0x02df7cd8: fd7bbea9 stp x29, x30, [sp, #-0x20]!",
+          "0x02df7cdc: fd030091 mov x29, sp",
+          "0x02df7ce0: f30b00f9 str x19, [sp, #0x10]",
+          "0x02df7ce4: f30300aa mov x19, x0"
+        ]
+      },
+      {
+        "address": "0x2e9a6bc",
+        "instructions": [
+          "0x02e9a6bc: e0caffb0 adrp x0, #0x27f7000",
+          "0x02e9a6c0: 01544ab9 ldr w1, [x0, #0xa54]",
+          "0x02e9a6c4: 3f280071 cmp w1, #0xa",
+          "0x02e9a6c8: a8040054 b.hi #0x2e9a75c",
+          "0x02e9a6cc: 3f180071 cmp w1, #6",
+          "0x02e9a6d0: 48050054 b.hi #0x2e9a778",
+          "0x02e9a6d4: 03008052 mov w3, #0",
+          "0x02e9a6d8: 62008052 mov w2, #3",
+          "0x02e9a6dc: e003132a mov w0, w19",
+          "0x02e9a6e0: d56c8d97 bl #0x11f5a34",
+          "0x02e9a6e4: e07f00b9 str w0, [sp, #0x7c]",
+          "0x02e9a6e8: 6ff5ff17 b #0x2e97ca4"
+        ]
+      },
+      {
+        "address": "0x2e9a790",
+        "instructions": [
+          "0x02e9a790: e0caffb0 adrp x0, #0x27f7000",
+          "0x02e9a794: 01544ab9 ldr w1, [x0, #0xa54]",
+          "0x02e9a798: c0db8052 mov w0, #0x6de",
+          "0x02e9a79c: a66c8d97 bl #0x11f5a34",
+          "0x02e9a7a0: e07f00b9 str w0, [sp, #0x7c]",
+          "0x02e9a7a4: 40f5ff17 b #0x2e97ca4",
+          "0x02e9a7a8: 03008052 mov w3, #0",
+          "0x02e9a7ac: 62008052 mov w2, #3",
+          "0x02e9a7b0: e0caffb0 adrp x0, #0x27f7000",
+          "0x02e9a7b4: 01544ab9 ldr w1, [x0, #0xa54]",
+          "0x02e9a7b8: a0db8052 mov w0, #0x6dd",
+          "0x02e9a7bc: 9e6c8d97 bl #0x11f5a34"
+        ]
+      },
+      {
+        "address": "0x2e9a7b0",
+        "instructions": [
+          "0x02e9a7b0: e0caffb0 adrp x0, #0x27f7000",
+          "0x02e9a7b4: 01544ab9 ldr w1, [x0, #0xa54]",
+          "0x02e9a7b8: a0db8052 mov w0, #0x6dd",
+          "0x02e9a7bc: 9e6c8d97 bl #0x11f5a34",
+          "0x02e9a7c0: e07f00b9 str w0, [sp, #0x7c]",
+          "0x02e9a7c4: 38f5ff17 b #0x2e97ca4",
+          "0x02e9a7c8: 7fc21b71 cmp w19, #0x6f0",
+          "0x02e9a7cc: 20020054 b.eq #0x2e9a810",
+          "0x02e9a7d0: 7fc61b71 cmp w19, #0x6f1",
+          "0x02e9a7d4: 61020054 b.ne #0x2e9a820",
+          "0x02e9a7d8: e0caffb0 adrp x0, #0x27f7000",
+          "0x02e9a7dc: 001049b9 ldr w0, [x0, #0x910]"
+        ]
+      },
+      {
+        "address": "0x2ea37c4",
+        "instructions": [
+          "0x02ea37c4: a0caff90 adrp x0, #0x27f7000",
+          "0x02ea37c8: 00544ab9 ldr w0, [x0, #0xa54]",
+          "0x02ea37cc: 1f180071 cmp w0, #6",
+          "0x02ea37d0: 20040054 b.eq #0x2ea3854",
+          "0x02ea37d4: a0caffb0 adrp x0, #0x27f8000",
+          "0x02ea37d8: 14f841b9 ldr w20, [x0, #0x1f8]",
+          "0x02ea37dc: 9f020071 cmp w20, #0",
+          "0x02ea37e0: 40008052 mov w0, #2",
+          "0x02ea37e4: 9402801a csel w20, w20, w0, eq",
+          "0x02ea37e8: 02000014 b #0x2ea37f0",
+          "0x02ea37ec: 54008052 mov w20, #2",
+          "0x02ea37f0: 80de8052 mov w0, #0x6f4"
+        ]
+      }
+    ],
+    "executed_array_to_frame": [
+      {
+        "entry": "0x31db22c",
+        "stop": "0x31db0bc",
+        "handle_w19": "0xffff0000",
+        "index_w20": 0,
+        "synthetic_source_address": "0x52b6bb8",
+        "synthetic_source_value": 13,
+        "default_frame_index_address": "0x22c5768",
+        "default_frame_index": 0,
+        "frame_field": "0x230ff50",
+        "frame_field_initial": "0xaabbccdd",
+        "frame_field_final": "0xd",
+        "visited": [
+          "0x161ad5c",
+          "0x162a450"
+        ]
+      },
+      {
+        "entry": "0x31db22c",
+        "stop": "0x31db0bc",
+        "handle_w19": "0xffffffff",
+        "index_w20": 0,
+        "synthetic_source_address": "0x52b6bb8",
+        "synthetic_source_value": 13,
+        "default_frame_index_address": "0x22c5768",
+        "default_frame_index": 0,
+        "frame_field": "0x230ff50",
+        "frame_field_initial": "0xaabbccdd",
+        "frame_field_final": "0xaabbccdd",
+        "visited": [
+          "0x161ad5c"
+        ]
+      }
+    ],
+    "saved_state_separate_reader": [
+      {
+        "new_word": 14,
+        "old_word": 0,
+        "initial_saved": 0,
+        "zeroed_flags": [
+          "0x20b44c4",
+          "0x2897414",
+          "0x27f601c"
+        ],
+        "selection_entry": "0x1411a3c",
+        "selection_stop": "0x1411fb4",
+        "saved": 13,
+        "separate_reader_entry": "0x2df7cb0",
+        "reader_conversion_stop": "0x2df7cc8",
+        "reader_x0": 11,
+        "synthetic_destination_x19": "0x70001000",
+        "writer_entry_stop": "0x2df56d4",
+        "writer_w1": 11,
+        "state_transferred_by_researcher": false
+      },
+      {
+        "new_word": 0,
+        "old_word": 14,
+        "initial_saved": 0,
+        "zeroed_flags": [
+          "0x20b44c4",
+          "0x2897414",
+          "0x27f601c"
+        ],
+        "selection_entry": "0x1411a3c",
+        "selection_stop": "0x1411fb4",
+        "saved": 0,
+        "separate_reader_entry": "0x2df7cb0",
+        "reader_conversion_stop": "0x2df7cc8",
+        "reader_x0": 1,
+        "synthetic_destination_x19": "0x70001000",
+        "writer_entry_stop": "0x2df56d4",
+        "writer_w1": 1,
+        "state_transferred_by_researcher": false
+      },
+      {
+        "new_word": 14,
+        "old_word": 14,
+        "initial_saved": 0,
+        "zeroed_flags": [
+          "0x20b44c4",
+          "0x2897414",
+          "0x27f601c"
+        ],
+        "selection_entry": "0x1411a3c",
+        "selection_stop": "0x1411a54",
+        "saved": 0,
+        "separate_reader_entry": "0x2df7cb0",
+        "reader_conversion_stop": "0x2df7cc8",
+        "reader_x0": 1,
+        "synthetic_destination_x19": "0x70001000",
+        "writer_entry_stop": "0x2df56d4",
+        "writer_w1": 1,
+        "state_transferred_by_researcher": false
+      }
+    ],
+    "alternate_array_branch": [
+      "0x031db22c: c00601f0 adrp x0, #0x52b6000",
+      "0x031db230: 00a00391 add x0, x0, #0xe8",
+      "0x031db234: 0008348b add x0, x0, w20, uxtb #2",
+      "0x031db238: 02d04ab9 ldr w2, [x0, #0xad0]",
+      "0x031db23c: 9dffff17 b #0x31db0b0"
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "method": "Uncompressed FujiIFD strip from previously extracted ExifTool metadata; compare every 16-bit sample with rawpy/LibRaw raw_image, before demosaic. Big-endian interpretation is a negative control. This verifies bytes of this file against this decoder, not the camera recording process or other RAF formats.",
+  "file": "DSCF0296.RAF",
+  "sha256_before": "adff97c88d4c12b097c79f69ff61d93e2cbd023bc751da1446c1b5bc0260e986",
+  "sha256_after": "adff97c88d4c12b097c79f69ff61d93e2cbd023bc751da1446c1b5bc0260e986",
+  "width": 7872,
+  "height": 5196,
+  "strip_offset_bytes": 3505152,
+  "strip_length_bytes": 81805824,
+  "reported_bits_per_sample": 14,
+  "sample_count": 40902912,
+  "mismatches_little_endian": 0,
+  "mismatches_big_endian_control": 40074178,
+  "samples_greater_than_16383": 0,
+  "numpy_version": "2.4.6",
+  "rawpy_version": "0.27.1"
+}

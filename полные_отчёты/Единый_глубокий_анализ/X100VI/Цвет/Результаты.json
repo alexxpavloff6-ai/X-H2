@@ -1,0 +1,500 @@
+{
+  "source_sha256": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+  "blocks": [
+    {
+      "dat": "0x9c02bc",
+      "base": "0x11c1000"
+    },
+    {
+      "dat": "0x10e02bc",
+      "base": "0x2b8f000"
+    }
+  ],
+  "menu_conversion": {
+    "function": "0x13c9930",
+    "args": [
+      1756,
+      14,
+      0,
+      3
+    ],
+    "mode": 13,
+    "error": 0
+  },
+  "mode_map": [
+    {
+      "mode": 0,
+      "color_code": 0
+    },
+    {
+      "mode": 1,
+      "color_code": 5
+    },
+    {
+      "mode": 2,
+      "color_code": 0
+    },
+    {
+      "mode": 3,
+      "color_code": 4
+    },
+    {
+      "mode": 4,
+      "color_code": 2
+    },
+    {
+      "mode": 5,
+      "color_code": 3
+    },
+    {
+      "mode": 6,
+      "color_code": 1
+    },
+    {
+      "mode": 7,
+      "color_code": 2
+    },
+    {
+      "mode": 8,
+      "color_code": 2
+    },
+    {
+      "mode": 9,
+      "color_code": 2
+    },
+    {
+      "mode": 10,
+      "color_code": 2
+    },
+    {
+      "mode": 11,
+      "color_code": 6
+    },
+    {
+      "mode": 12,
+      "color_code": 7
+    },
+    {
+      "mode": 13,
+      "color_code": 8
+    },
+    {
+      "mode": 14,
+      "color_code": 16
+    },
+    {
+      "mode": 15,
+      "color_code": 18
+    },
+    {
+      "mode": 16,
+      "color_code": 17
+    },
+    {
+      "mode": 17,
+      "color_code": 19
+    },
+    {
+      "mode": 18,
+      "color_code": 9
+    },
+    {
+      "mode": 19,
+      "color_code": 10
+    },
+    {
+      "mode": 20,
+      "color_code": 11
+    },
+    {
+      "mode": 21,
+      "color_code": 12
+    },
+    {
+      "mode": 22,
+      "color_code": 13
+    },
+    {
+      "mode": 23,
+      "color_code": 0
+    }
+  ],
+  "coefficient_key_table": "0x365f538",
+  "coefficient_keys": [
+    "0xb058",
+    "0xb05a",
+    "0xb05c",
+    "0xb05e"
+  ],
+  "source_u16": [
+    885,
+    859,
+    8182,
+    8180
+  ],
+  "settings_dat_base": "0x6602bc",
+  "results": [
+    {
+      "native": 0,
+      "index": 8,
+      "gain": 154,
+      "selector": 6,
+      "coefficients": [
+        1064,
+        -13,
+        1033,
+        -15
+      ],
+      "packed_fields": [
+        1064,
+        8179,
+        1033,
+        8177
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff30428"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff10409"
+        }
+      ]
+    },
+    {
+      "native": 1,
+      "index": 7,
+      "gain": 147,
+      "selector": 6,
+      "coefficients": [
+        1016,
+        -12,
+        986,
+        -14
+      ],
+      "packed_fields": [
+        1016,
+        8180,
+        986,
+        8178
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff403f8"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff203da"
+        }
+      ]
+    },
+    {
+      "native": 2,
+      "index": 6,
+      "gain": 141,
+      "selector": 6,
+      "coefficients": [
+        974,
+        -12,
+        946,
+        -14
+      ],
+      "packed_fields": [
+        974,
+        8180,
+        946,
+        8178
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff403ce"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff203b2"
+        }
+      ]
+    },
+    {
+      "native": 3,
+      "index": 5,
+      "gain": 134,
+      "selector": 6,
+      "coefficients": [
+        926,
+        -11,
+        899,
+        -13
+      ],
+      "packed_fields": [
+        926,
+        8181,
+        899,
+        8179
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff5039e"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff30383"
+        }
+      ]
+    },
+    {
+      "native": 4,
+      "index": 4,
+      "gain": 128,
+      "selector": 6,
+      "coefficients": [
+        885,
+        -10,
+        859,
+        -12
+      ],
+      "packed_fields": [
+        885,
+        8182,
+        859,
+        8180
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff60375"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff4035b"
+        }
+      ]
+    },
+    {
+      "native": 5,
+      "index": 3,
+      "gain": 122,
+      "selector": 6,
+      "coefficients": [
+        843,
+        -10,
+        818,
+        -12
+      ],
+      "packed_fields": [
+        843,
+        8182,
+        818,
+        8180
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff6034b"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff40332"
+        }
+      ]
+    },
+    {
+      "native": 6,
+      "index": 2,
+      "gain": 115,
+      "selector": 6,
+      "coefficients": [
+        795,
+        -9,
+        771,
+        -11
+      ],
+      "packed_fields": [
+        795,
+        8183,
+        771,
+        8181
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff7031b"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff50303"
+        }
+      ]
+    },
+    {
+      "native": 7,
+      "index": 1,
+      "gain": 109,
+      "selector": 6,
+      "coefficients": [
+        753,
+        -9,
+        731,
+        -11
+      ],
+      "packed_fields": [
+        753,
+        8183,
+        731,
+        8181
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff702f1"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff502db"
+        }
+      ]
+    },
+    {
+      "native": 8,
+      "index": 0,
+      "gain": 102,
+      "selector": 6,
+      "coefficients": [
+        705,
+        -8,
+        684,
+        -10
+      ],
+      "packed_fields": [
+        705,
+        8184,
+        684,
+        8182
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff802c1"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff602ac"
+        }
+      ]
+    }
+  ],
+  "packing_boundary_cases": [
+    {
+      "input": [
+        885,
+        -10,
+        859,
+        -12
+      ],
+      "upper": "0x0",
+      "fields": [
+        885,
+        8182,
+        859,
+        8180
+      ]
+    },
+    {
+      "input": [
+        4095,
+        -4096,
+        4096,
+        -4097
+      ],
+      "upper": "0x0",
+      "fields": [
+        4095,
+        4096,
+        4095,
+        4096
+      ]
+    },
+    {
+      "input": [
+        885,
+        -10,
+        859,
+        -12
+      ],
+      "upper": "0xa000",
+      "fields": [
+        41845,
+        49142,
+        41819,
+        49140
+      ]
+    },
+    {
+      "input": [
+        4095,
+        -4096,
+        4096,
+        -4097
+      ],
+      "upper": "0xa000",
+      "fields": [
+        45055,
+        45056,
+        45055,
+        45056
+      ]
+    },
+    {
+      "input": [
+        885,
+        -10,
+        859,
+        -12
+      ],
+      "upper": "0xe000",
+      "fields": [
+        58229,
+        65526,
+        58203,
+        65524
+      ]
+    },
+    {
+      "input": [
+        4095,
+        -4096,
+        4096,
+        -4097
+      ],
+      "upper": "0xe000",
+      "fields": [
+        61439,
+        61440,
+        61439,
+        61440
+      ]
+    }
+  ]
+}

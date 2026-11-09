@@ -1,0 +1,294 @@
+[
+  {
+    "archive": "gzip cpio usr/lib/libff_api.a",
+    "object": "os_unix.o",
+    "symbol": "os_zalloc",
+    "section_index": 1,
+    "section_relative_offset": "0x100",
+    "object_file_offset": "0x140",
+    "symbol_size": 12,
+    "object_sha256": "6a5c5430a199ce033a74d0037f750b2b98b247a9b11115ab20ccfc647dec3aef",
+    "instructions": [
+      {
+        "section_offset": "0x100",
+        "bytes": "e10300aa",
+        "mnemonic": "mov",
+        "operands": "x1, x0"
+      },
+      {
+        "section_offset": "0x104",
+        "bytes": "200080d2",
+        "mnemonic": "mov",
+        "operands": "x0, #1"
+      },
+      {
+        "section_offset": "0x108",
+        "bytes": "00000014",
+        "mnemonic": "b",
+        "operands": "#0x108"
+      }
+    ],
+    "note": "ET_REL: branch targets needing relocation are unresolved, offsets are not runtime addresses."
+  },
+  {
+    "archive": "gzip cpio usr/lib/libff_api.a",
+    "object": "ff_wlan_api.o",
+    "symbol": "ch_to_freq",
+    "section_index": 1,
+    "section_relative_offset": "0xe8",
+    "object_file_offset": "0x128",
+    "symbol_size": 24,
+    "object_sha256": "34c544b60c7ef042cd3cebd103cf9f5aa24cb44ef5ef69223e716194fd757dc4",
+    "instructions": [
+      {
+        "section_offset": "0xe8",
+        "bytes": "1f000071",
+        "mnemonic": "cmp",
+        "operands": "w0, #0"
+      },
+      {
+        "section_offset": "0xec",
+        "bytes": "6d000054",
+        "mnemonic": "b.le",
+        "operands": "#0xf8"
+      },
+      {
+        "section_offset": "0xf0",
+        "bytes": "c4ffff17",
+        "mnemonic": "b",
+        "operands": "#0"
+      },
+      {
+        "section_offset": "0xf4",
+        "bytes": "1f2003d5",
+        "mnemonic": "nop",
+        "operands": ""
+      },
+      {
+        "section_offset": "0xf8",
+        "bytes": "e0039f5a",
+        "mnemonic": "csetm",
+        "operands": "w0, ne"
+      },
+      {
+        "section_offset": "0xfc",
+        "bytes": "c0035fd6",
+        "mnemonic": "ret",
+        "operands": ""
+      }
+    ],
+    "note": "ET_REL: branch targets needing relocation are unresolved, offsets are not runtime addresses."
+  },
+  {
+    "archive": "gzip cpio usr/lib/libff_api.a",
+    "object": "common.o",
+    "symbol": "hex2byte",
+    "section_index": 1,
+    "section_relative_offset": "0x50",
+    "object_file_offset": "0x90",
+    "symbol_size": 64,
+    "object_sha256": "8999d68decc760cc6ccd33ae28de7422ec625889240d0d55630933e48ebe7a44",
+    "instructions": [
+      {
+        "section_offset": "0x50",
+        "bytes": "fd7bbfa9",
+        "mnemonic": "stp",
+        "operands": "x29, x30, [sp, #-0x10]!"
+      },
+      {
+        "section_offset": "0x54",
+        "bytes": "e40300aa",
+        "mnemonic": "mov",
+        "operands": "x4, x0"
+      },
+      {
+        "section_offset": "0x58",
+        "bytes": "fd030091",
+        "mnemonic": "mov",
+        "operands": "x29, sp"
+      },
+      {
+        "section_offset": "0x5c",
+        "bytes": "00004039",
+        "mnemonic": "ldrb",
+        "operands": "w0, [x0]"
+      },
+      {
+        "section_offset": "0x60",
+        "bytes": "e8ffff97",
+        "mnemonic": "bl",
+        "operands": "#0"
+      },
+      {
+        "section_offset": "0x64",
+        "bytes": "2001f837",
+        "mnemonic": "tbnz",
+        "operands": "w0, #0x1f, #0x88"
+      },
+      {
+        "section_offset": "0x68",
+        "bytes": "e303002a",
+        "mnemonic": "mov",
+        "operands": "w3, w0"
+      },
+      {
+        "section_offset": "0x6c",
+        "bytes": "80044039",
+        "mnemonic": "ldrb",
+        "operands": "w0, [x4, #1]"
+      },
+      {
+        "section_offset": "0x70",
+        "bytes": "e4ffff97",
+        "mnemonic": "bl",
+        "operands": "#0"
+      },
+      {
+        "section_offset": "0x74",
+        "bytes": "a000f837",
+        "mnemonic": "tbnz",
+        "operands": "w0, #0x1f, #0x88"
+      },
+      {
+        "section_offset": "0x78",
+        "bytes": "0010032a",
+        "mnemonic": "orr",
+        "operands": "w0, w0, w3, lsl #4"
+      },
+      {
+        "section_offset": "0x7c",
+        "bytes": "fd7bc1a8",
+        "mnemonic": "ldp",
+        "operands": "x29, x30, [sp], #0x10"
+      },
+      {
+        "section_offset": "0x80",
+        "bytes": "c0035fd6",
+        "mnemonic": "ret",
+        "operands": ""
+      },
+      {
+        "section_offset": "0x84",
+        "bytes": "1f2003d5",
+        "mnemonic": "nop",
+        "operands": ""
+      },
+      {
+        "section_offset": "0x88",
+        "bytes": "00008012",
+        "mnemonic": "mov",
+        "operands": "w0, #-1"
+      },
+      {
+        "section_offset": "0x8c",
+        "bytes": "fcffff17",
+        "mnemonic": "b",
+        "operands": "#0x7c"
+      }
+    ],
+    "note": "ET_REL: branch targets needing relocation are unresolved, offsets are not runtime addresses."
+  },
+  {
+    "container": "FFLZ DAT 0xf20274",
+    "offset_in_unpacked": "0x10",
+    "note": "No identified symbol or semantic attribution; disassembly is a candidate code fragment.",
+    "instructions": [
+      {
+        "block_offset": "0x10",
+        "bytes": "ff8300d1",
+        "mnemonic": "sub",
+        "operands": "sp, sp, #0x20"
+      },
+      {
+        "block_offset": "0x14",
+        "bytes": "fd7b01a9",
+        "mnemonic": "stp",
+        "operands": "x29, x30, [sp, #0x10]"
+      },
+      {
+        "block_offset": "0x18",
+        "bytes": "fd430091",
+        "mnemonic": "add",
+        "operands": "x29, sp, #0x10"
+      },
+      {
+        "block_offset": "0x1c",
+        "bytes": "e803002a",
+        "mnemonic": "mov",
+        "operands": "w8, w0"
+      },
+      {
+        "block_offset": "0x20",
+        "bytes": "493c0013",
+        "mnemonic": "sxth",
+        "operands": "w9, w2"
+      },
+      {
+        "block_offset": "0x24",
+        "bytes": "e00303aa",
+        "mnemonic": "mov",
+        "operands": "x0, x3"
+      },
+      {
+        "block_offset": "0x28",
+        "bytes": "823c0012",
+        "mnemonic": "and",
+        "operands": "w2, w4, #0xffff"
+      },
+      {
+        "block_offset": "0x2c",
+        "bytes": "c43c0012",
+        "mnemonic": "and",
+        "operands": "w4, w6, #0xffff"
+      },
+      {
+        "block_offset": "0x30",
+        "bytes": "e62340b9",
+        "mnemonic": "ldr",
+        "operands": "w6, [sp, #0x20]"
+      },
+      {
+        "block_offset": "0x34",
+        "bytes": "230200b4",
+        "mnemonic": "cbz",
+        "operands": "x3, #0x78"
+      },
+      {
+        "block_offset": "0x38",
+        "bytes": "213c0013",
+        "mnemonic": "sxth",
+        "operands": "w1, w1"
+      },
+      {
+        "block_offset": "0x3c",
+        "bytes": "a33c0012",
+        "mnemonic": "and",
+        "operands": "w3, w5, #0xffff"
+      },
+      {
+        "block_offset": "0x40",
+        "bytes": "e53c0012",
+        "mnemonic": "and",
+        "operands": "w5, w7, #0xffff"
+      },
+      {
+        "block_offset": "0x44",
+        "bytes": "47f2ff90",
+        "mnemonic": "adrp",
+        "operands": "x7, #0xffffffffffe48000"
+      },
+      {
+        "block_offset": "0x48",
+        "bytes": "ea001291",
+        "mnemonic": "add",
+        "operands": "x10, x7, #0x480"
+      },
+      {
+        "block_offset": "0x4c",
+        "bytes": "e1000979",
+        "mnemonic": "strh",
+        "operands": "w1, [x7, #0x480]"
+      }
+    ]
+  }
+]

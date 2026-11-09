@@ -1,0 +1,562 @@
+{
+  "source": "Firmware на прочиеFuji/FPUPDATE.DAT",
+  "source_sha256": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+  "source_sha256_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+  "fflz_dat_offset": "0x9c02bc",
+  "decoded_sha256": "77456fe5c9808ce5e638b1a5f6f12d9e8e40c1751e1f9b4640134fde662e09d4",
+  "decoded_size": 27121096,
+  "assumed_base": "0x11c1000",
+  "method": "Unicorn ARM64, оригинальные инструкции; в 0x13ccc78 перехват вместо исполнения функции, затем возврат по LR; начальное содержимое стека синтетическое",
+  "cases": [
+    {
+      "name": "focus_mode",
+      "start": "0x11ff784",
+      "stack_offset": "0xa0",
+      "error_path": "0x11ffe48",
+      "continuation": "0x11ff794",
+      "diagnostic_address": "0x16d2fc0",
+      "diagnostic": "UI:AUTOSET:ui_focus_mode_val Error",
+      "instructions": [
+        {
+          "address": "0x11ff784",
+          "bytes": "e0a340b9",
+          "instruction": "ldr w0, [sp, #0xa0]"
+        },
+        {
+          "address": "0x11ff788",
+          "bytes": "00140051",
+          "instruction": "sub w0, w0, #5"
+        },
+        {
+          "address": "0x11ff78c",
+          "bytes": "1f040071",
+          "instruction": "cmp w0, #1"
+        },
+        {
+          "address": "0x11ff790",
+          "bytes": "c9350054",
+          "instruction": "b.ls #0x11ffe48"
+        },
+        {
+          "address": "0x11ffe48",
+          "bytes": "802600f0",
+          "instruction": "adrp x0, #0x16d2000"
+        },
+        {
+          "address": "0x11ffe4c",
+          "bytes": "00003f91",
+          "instruction": "add x0, x0, #0xfc0"
+        },
+        {
+          "address": "0x11ffe50",
+          "bytes": "8a330794",
+          "instruction": "bl #0x13ccc78"
+        },
+        {
+          "address": "0x11ffe54",
+          "bytes": "50feff17",
+          "instruction": "b #0x11ff794"
+        }
+      ]
+    },
+    {
+      "name": "focus",
+      "start": "0x11ff9c4",
+      "stack_offset": "0xa4",
+      "error_path": "0x1200088",
+      "continuation": "0x11ff9d4",
+      "diagnostic_address": "0x16d3590",
+      "diagnostic": "UI:AUTOSET:ui_focus_val Error",
+      "instructions": [
+        {
+          "address": "0x11ff9c4",
+          "bytes": "e0a740b9",
+          "instruction": "ldr w0, [sp, #0xa4]"
+        },
+        {
+          "address": "0x11ff9c8",
+          "bytes": "00280051",
+          "instruction": "sub w0, w0, #0xa"
+        },
+        {
+          "address": "0x11ff9cc",
+          "bytes": "1f040071",
+          "instruction": "cmp w0, #1"
+        },
+        {
+          "address": "0x11ff9d0",
+          "bytes": "c9350054",
+          "instruction": "b.ls #0x1200088"
+        },
+        {
+          "address": "0x1200088",
+          "bytes": "802600f0",
+          "instruction": "adrp x0, #0x16d3000"
+        },
+        {
+          "address": "0x120008c",
+          "bytes": "00401691",
+          "instruction": "add x0, x0, #0x590"
+        },
+        {
+          "address": "0x1200090",
+          "bytes": "fa320794",
+          "instruction": "bl #0x13ccc78"
+        },
+        {
+          "address": "0x1200094",
+          "bytes": "50feff17",
+          "instruction": "b #0x11ff9d4"
+        }
+      ]
+    },
+    {
+      "name": "face",
+      "start": "0x11ffaa4",
+      "stack_offset": "0x98",
+      "error_path": "0x1200168",
+      "continuation": "0x11ffab4",
+      "diagnostic_address": "0x16d37a0",
+      "diagnostic": "UI:AUTOSET:ui_facedetect_val Error",
+      "instructions": [
+        {
+          "address": "0x11ffaa4",
+          "bytes": "e09b40b9",
+          "instruction": "ldr w0, [sp, #0x98]"
+        },
+        {
+          "address": "0x11ffaa8",
+          "bytes": "00100051",
+          "instruction": "sub w0, w0, #4"
+        },
+        {
+          "address": "0x11ffaac",
+          "bytes": "1f040071",
+          "instruction": "cmp w0, #1"
+        },
+        {
+          "address": "0x11ffab0",
+          "bytes": "c9350054",
+          "instruction": "b.ls #0x1200168"
+        },
+        {
+          "address": "0x1200168",
+          "bytes": "802600f0",
+          "instruction": "adrp x0, #0x16d3000"
+        },
+        {
+          "address": "0x120016c",
+          "bytes": "00801e91",
+          "instruction": "add x0, x0, #0x7a0"
+        },
+        {
+          "address": "0x1200170",
+          "bytes": "c2320794",
+          "instruction": "bl #0x13ccc78"
+        },
+        {
+          "address": "0x1200174",
+          "bytes": "50feff17",
+          "instruction": "b #0x11ffab4"
+        }
+      ]
+    },
+    {
+      "name": "subject",
+      "start": "0x11ffac4",
+      "stack_offset": "0x2e0",
+      "error_path": "0x1200188",
+      "continuation": "0x11ffad4",
+      "diagnostic_address": "0x16d37e8",
+      "diagnostic": "UI:AUTOSET:ui_detect_subject_status_val Error",
+      "instructions": [
+        {
+          "address": "0x11ffac4",
+          "bytes": "e0e342b9",
+          "instruction": "ldr w0, [sp, #0x2e0]"
+        },
+        {
+          "address": "0x11ffac8",
+          "bytes": "00100051",
+          "instruction": "sub w0, w0, #4"
+        },
+        {
+          "address": "0x11ffacc",
+          "bytes": "1f040071",
+          "instruction": "cmp w0, #1"
+        },
+        {
+          "address": "0x11ffad0",
+          "bytes": "c9350054",
+          "instruction": "b.ls #0x1200188"
+        },
+        {
+          "address": "0x1200188",
+          "bytes": "802600f0",
+          "instruction": "adrp x0, #0x16d3000"
+        },
+        {
+          "address": "0x120018c",
+          "bytes": "00a01f91",
+          "instruction": "add x0, x0, #0x7e8"
+        },
+        {
+          "address": "0x1200190",
+          "bytes": "ba320794",
+          "instruction": "bl #0x13ccc78"
+        },
+        {
+          "address": "0x1200194",
+          "bytes": "50feff17",
+          "instruction": "b #0x11ffad4"
+        }
+      ]
+    }
+  ],
+  "executions": [
+    {
+      "case": "focus_mode",
+      "input": 4,
+      "stack_offset": "0xa0",
+      "call_count": 0,
+      "diagnostic": "",
+      "trace": [
+        "0x11ff784",
+        "0x11ff788",
+        "0x11ff78c",
+        "0x11ff790",
+        "0x11ff794"
+      ],
+      "calls": [],
+      "stop_pc": "0x11ff794"
+    },
+    {
+      "case": "focus_mode",
+      "input": 5,
+      "stack_offset": "0xa0",
+      "call_count": 1,
+      "diagnostic": "UI:AUTOSET:ui_focus_mode_val Error",
+      "trace": [
+        "0x11ff784",
+        "0x11ff788",
+        "0x11ff78c",
+        "0x11ff790",
+        "0x11ffe48",
+        "0x11ffe4c",
+        "0x11ffe50",
+        "0x13ccc78",
+        "0x11ffe54",
+        "0x11ff794"
+      ],
+      "calls": [
+        {
+          "target": "0x13ccc78",
+          "x0": "0x16d2fc0",
+          "text": "UI:AUTOSET:ui_focus_mode_val Error"
+        }
+      ],
+      "stop_pc": "0x11ff794"
+    },
+    {
+      "case": "focus_mode",
+      "input": 6,
+      "stack_offset": "0xa0",
+      "call_count": 1,
+      "diagnostic": "UI:AUTOSET:ui_focus_mode_val Error",
+      "trace": [
+        "0x11ff784",
+        "0x11ff788",
+        "0x11ff78c",
+        "0x11ff790",
+        "0x11ffe48",
+        "0x11ffe4c",
+        "0x11ffe50",
+        "0x13ccc78",
+        "0x11ffe54",
+        "0x11ff794"
+      ],
+      "calls": [
+        {
+          "target": "0x13ccc78",
+          "x0": "0x16d2fc0",
+          "text": "UI:AUTOSET:ui_focus_mode_val Error"
+        }
+      ],
+      "stop_pc": "0x11ff794"
+    },
+    {
+      "case": "focus_mode",
+      "input": 7,
+      "stack_offset": "0xa0",
+      "call_count": 0,
+      "diagnostic": "",
+      "trace": [
+        "0x11ff784",
+        "0x11ff788",
+        "0x11ff78c",
+        "0x11ff790",
+        "0x11ff794"
+      ],
+      "calls": [],
+      "stop_pc": "0x11ff794"
+    },
+    {
+      "case": "focus",
+      "input": 9,
+      "stack_offset": "0xa4",
+      "call_count": 0,
+      "diagnostic": "",
+      "trace": [
+        "0x11ff9c4",
+        "0x11ff9c8",
+        "0x11ff9cc",
+        "0x11ff9d0",
+        "0x11ff9d4"
+      ],
+      "calls": [],
+      "stop_pc": "0x11ff9d4"
+    },
+    {
+      "case": "focus",
+      "input": 10,
+      "stack_offset": "0xa4",
+      "call_count": 1,
+      "diagnostic": "UI:AUTOSET:ui_focus_val Error",
+      "trace": [
+        "0x11ff9c4",
+        "0x11ff9c8",
+        "0x11ff9cc",
+        "0x11ff9d0",
+        "0x1200088",
+        "0x120008c",
+        "0x1200090",
+        "0x13ccc78",
+        "0x1200094",
+        "0x11ff9d4"
+      ],
+      "calls": [
+        {
+          "target": "0x13ccc78",
+          "x0": "0x16d3590",
+          "text": "UI:AUTOSET:ui_focus_val Error"
+        }
+      ],
+      "stop_pc": "0x11ff9d4"
+    },
+    {
+      "case": "focus",
+      "input": 11,
+      "stack_offset": "0xa4",
+      "call_count": 1,
+      "diagnostic": "UI:AUTOSET:ui_focus_val Error",
+      "trace": [
+        "0x11ff9c4",
+        "0x11ff9c8",
+        "0x11ff9cc",
+        "0x11ff9d0",
+        "0x1200088",
+        "0x120008c",
+        "0x1200090",
+        "0x13ccc78",
+        "0x1200094",
+        "0x11ff9d4"
+      ],
+      "calls": [
+        {
+          "target": "0x13ccc78",
+          "x0": "0x16d3590",
+          "text": "UI:AUTOSET:ui_focus_val Error"
+        }
+      ],
+      "stop_pc": "0x11ff9d4"
+    },
+    {
+      "case": "focus",
+      "input": 12,
+      "stack_offset": "0xa4",
+      "call_count": 0,
+      "diagnostic": "",
+      "trace": [
+        "0x11ff9c4",
+        "0x11ff9c8",
+        "0x11ff9cc",
+        "0x11ff9d0",
+        "0x11ff9d4"
+      ],
+      "calls": [],
+      "stop_pc": "0x11ff9d4"
+    },
+    {
+      "case": "face",
+      "input": 3,
+      "stack_offset": "0x98",
+      "call_count": 0,
+      "diagnostic": "",
+      "trace": [
+        "0x11ffaa4",
+        "0x11ffaa8",
+        "0x11ffaac",
+        "0x11ffab0",
+        "0x11ffab4"
+      ],
+      "calls": [],
+      "stop_pc": "0x11ffab4"
+    },
+    {
+      "case": "face",
+      "input": 4,
+      "stack_offset": "0x98",
+      "call_count": 1,
+      "diagnostic": "UI:AUTOSET:ui_facedetect_val Error",
+      "trace": [
+        "0x11ffaa4",
+        "0x11ffaa8",
+        "0x11ffaac",
+        "0x11ffab0",
+        "0x1200168",
+        "0x120016c",
+        "0x1200170",
+        "0x13ccc78",
+        "0x1200174",
+        "0x11ffab4"
+      ],
+      "calls": [
+        {
+          "target": "0x13ccc78",
+          "x0": "0x16d37a0",
+          "text": "UI:AUTOSET:ui_facedetect_val Error"
+        }
+      ],
+      "stop_pc": "0x11ffab4"
+    },
+    {
+      "case": "face",
+      "input": 5,
+      "stack_offset": "0x98",
+      "call_count": 1,
+      "diagnostic": "UI:AUTOSET:ui_facedetect_val Error",
+      "trace": [
+        "0x11ffaa4",
+        "0x11ffaa8",
+        "0x11ffaac",
+        "0x11ffab0",
+        "0x1200168",
+        "0x120016c",
+        "0x1200170",
+        "0x13ccc78",
+        "0x1200174",
+        "0x11ffab4"
+      ],
+      "calls": [
+        {
+          "target": "0x13ccc78",
+          "x0": "0x16d37a0",
+          "text": "UI:AUTOSET:ui_facedetect_val Error"
+        }
+      ],
+      "stop_pc": "0x11ffab4"
+    },
+    {
+      "case": "face",
+      "input": 6,
+      "stack_offset": "0x98",
+      "call_count": 0,
+      "diagnostic": "",
+      "trace": [
+        "0x11ffaa4",
+        "0x11ffaa8",
+        "0x11ffaac",
+        "0x11ffab0",
+        "0x11ffab4"
+      ],
+      "calls": [],
+      "stop_pc": "0x11ffab4"
+    },
+    {
+      "case": "subject",
+      "input": 3,
+      "stack_offset": "0x2e0",
+      "call_count": 0,
+      "diagnostic": "",
+      "trace": [
+        "0x11ffac4",
+        "0x11ffac8",
+        "0x11ffacc",
+        "0x11ffad0",
+        "0x11ffad4"
+      ],
+      "calls": [],
+      "stop_pc": "0x11ffad4"
+    },
+    {
+      "case": "subject",
+      "input": 4,
+      "stack_offset": "0x2e0",
+      "call_count": 1,
+      "diagnostic": "UI:AUTOSET:ui_detect_subject_status_val Error",
+      "trace": [
+        "0x11ffac4",
+        "0x11ffac8",
+        "0x11ffacc",
+        "0x11ffad0",
+        "0x1200188",
+        "0x120018c",
+        "0x1200190",
+        "0x13ccc78",
+        "0x1200194",
+        "0x11ffad4"
+      ],
+      "calls": [
+        {
+          "target": "0x13ccc78",
+          "x0": "0x16d37e8",
+          "text": "UI:AUTOSET:ui_detect_subject_status_val Error"
+        }
+      ],
+      "stop_pc": "0x11ffad4"
+    },
+    {
+      "case": "subject",
+      "input": 5,
+      "stack_offset": "0x2e0",
+      "call_count": 1,
+      "diagnostic": "UI:AUTOSET:ui_detect_subject_status_val Error",
+      "trace": [
+        "0x11ffac4",
+        "0x11ffac8",
+        "0x11ffacc",
+        "0x11ffad0",
+        "0x1200188",
+        "0x120018c",
+        "0x1200190",
+        "0x13ccc78",
+        "0x1200194",
+        "0x11ffad4"
+      ],
+      "calls": [
+        {
+          "target": "0x13ccc78",
+          "x0": "0x16d37e8",
+          "text": "UI:AUTOSET:ui_detect_subject_status_val Error"
+        }
+      ],
+      "stop_pc": "0x11ffad4"
+    },
+    {
+      "case": "subject",
+      "input": 6,
+      "stack_offset": "0x2e0",
+      "call_count": 0,
+      "diagnostic": "",
+      "trace": [
+        "0x11ffac4",
+        "0x11ffac8",
+        "0x11ffacc",
+        "0x11ffad0",
+        "0x11ffad4"
+      ],
+      "calls": [],
+      "stop_pc": "0x11ffad4"
+    }
+  ]
+}

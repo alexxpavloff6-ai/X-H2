@@ -1,0 +1,96 @@
+{
+  "source_sha256_before": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "source_sha256_after": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "method": "Separate original UI converters, researcher writes outputs and gate 2 to artificial params. Original two metadata functions populate shared synthetic object. Builder independently receives same object from researcher. No real camera execution or complete UI-to-file path shown.",
+  "parameters": {
+    "shadow_input_offset": "0x3a90",
+    "highlight_input_offset": "0x3a8c",
+    "shadow_writer": "0x2e4f7bc",
+    "highlight_writer": "0x2e4f90c",
+    "shadow_object_offset": "0x124",
+    "highlight_object_offset": "0x128"
+  },
+  "cases": [
+    {
+      "ui_shadow": 7,
+      "ui_highlight": 5,
+      "input_shadow": 9,
+      "input_highlight": 11,
+      "ui_errors": [
+        0,
+        0
+      ],
+      "metadata_shadow": -8,
+      "metadata_highlight": -24,
+      "predicates": [
+        1,
+        1
+      ],
+      "records": {
+        "0x1040": "40 10 09 00 01 00 00 00 f8 ff ff ff",
+        "0x1041": "41 10 09 00 01 00 00 00 e8 ff ff ff"
+      }
+    },
+    {
+      "ui_shadow": 8,
+      "ui_highlight": 8,
+      "input_shadow": 8,
+      "input_highlight": 8,
+      "ui_errors": [
+        0,
+        0
+      ],
+      "metadata_shadow": 0,
+      "metadata_highlight": 0,
+      "predicates": [
+        1,
+        1
+      ],
+      "records": {
+        "0x1040": "40 10 09 00 01 00 00 00 00 00 00 00",
+        "0x1041": "41 10 09 00 01 00 00 00 00 00 00 00"
+      }
+    },
+    {
+      "ui_shadow": 8,
+      "ui_highlight": 5,
+      "input_shadow": 8,
+      "input_highlight": 11,
+      "ui_errors": [
+        0,
+        0
+      ],
+      "metadata_shadow": 0,
+      "metadata_highlight": -24,
+      "predicates": [
+        1,
+        1
+      ],
+      "records": {
+        "0x1040": "40 10 09 00 01 00 00 00 00 00 00 00",
+        "0x1041": "41 10 09 00 01 00 00 00 e8 ff ff ff"
+      }
+    },
+    {
+      "ui_shadow": 7,
+      "ui_highlight": 8,
+      "input_shadow": 9,
+      "input_highlight": 8,
+      "ui_errors": [
+        0,
+        0
+      ],
+      "metadata_shadow": -8,
+      "metadata_highlight": 0,
+      "predicates": [
+        1,
+        1
+      ],
+      "records": {
+        "0x1040": "40 10 09 00 01 00 00 00 f8 ff ff ff",
+        "0x1041": "41 10 09 00 01 00 00 00 00 00 00 00"
+      }
+    }
+  ],
+  "photo_comparison": "DSCF0300.JPG exact 12-byte IFD entries; metadata is not proof of original camera execution"
+}

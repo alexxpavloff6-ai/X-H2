@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-01",
+  "source": "<корень проекта>\\FIRMWARE\\ver 5.30\\FWUP0028.DAT",
+  "source_sha256": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "source_bytes": 110302544,
+  "version_bytes_at_204": "05 00 00 00 30 00 00 00",
+  "signature": {
+    "verified_on_computer": true,
+    "algorithm": "ECDSA",
+    "curve": "secp256r1",
+    "digest": "SHA-256",
+    "signature_offset": 110302472,
+    "signature_bytes": 72,
+    "signed_payload_bytes": 110302472,
+    "camera_verification_call_and_order_not_traced": true
+  },
+  "labels": {
+    "A_UPDATE_INIT": {
+      "module_address": "0x15fd238",
+      "module_offset": "0x4fc238"
+    },
+    "A_UPDATE_START": {
+      "module_address": "0x15fd248",
+      "module_offset": "0x4fc248"
+    },
+    "A_UPDATE_WRITE": {
+      "module_address": "0x15fd258",
+      "module_offset": "0x4fc258"
+    },
+    "A_UPDATE_DEINIT": {
+      "module_address": "0x15fd228",
+      "module_offset": "0x4fc228"
+    },
+    "UI_ERR_UPDATE_NO_FILE": {
+      "module_address": "0x16726b0",
+      "module_offset": "0x5716b0"
+    },
+    "UI_ERR_UPDATE_BROKEN_FILE": {
+      "module_address": "0x16726c8",
+      "module_offset": "0x5716c8"
+    },
+    "UI_ERR_UPDATE_OLD_FILE": {
+      "module_address": "0x16726e8",
+      "module_offset": "0x5716e8"
+    },
+    "UI_ERR_UPDATE_MODEDIFFER": {
+      "module_address": "0x1672700",
+      "module_offset": "0x571700"
+    },
+    "UI_ERR_UPDATE_FAILURE": {
+      "module_address": "0x1672778",
+      "module_offset": "0x571778"
+    }
+  },
+  "handlers_and_helpers": [
+    {
+      "stage": "INIT",
+      "handler": "0x02A4EF80",
+      "helper": "0x02D3C76C",
+      "diagnostic": ">> update_init()",
+      "diagnostic_address": "0x03236100"
+    },
+    {
+      "stage": "START",
+      "handler": "0x02A4F0E0",
+      "helper": "0x02D3C7B0",
+      "diagnostic": ">> update_start()",
+      "diagnostic_address": "0x03236118"
+    },
+    {
+      "stage": "WRITE",
+      "handler": "0x02A4F170",
+      "helper": "0x02D3C7D8",
+      "diagnostic": ">> update_write()",
+      "diagnostic_address": "0x03236130"
+    },
+    {
+      "stage": "DEINIT",
+      "handler": "0x02A4EED4",
+      "helper": "0x02D3C814",
+      "diagnostic": ">> update_deinit()",
+      "diagnostic_address": "0x032360E8"
+    }
+  ],
+  "request_preparation_virtual_runs": [
+    {
+      "stage": "INIT",
+      "entry": "0x2d3c76c",
+      "stop_before_call": "0x2d3c7a4",
+      "command": "0x600",
+      "payload_bytes": 16,
+      "synthetic_payload": "44 33 22 11 88 77 66 55 00 FF EE DD CC BB AA 99"
+    },
+    {
+      "stage": "START",
+      "entry": "0x2d3c7b0",
+      "stop_before_call": "0x2d3c7cc",
+      "command": "0x602",
+      "payload_bytes": 4,
+      "synthetic_payload": "44 33 22 11"
+    },
+    {
+      "stage": "WRITE",
+      "entry": "0x2d3c7f0",
+      "stop_before_call": "0x2d3c804",
+      "command": "0x603",
+      "payload_bytes": 4,
+      "synthetic_payload": "44 33 22 11"
+    },
+    {
+      "stage": "DEINIT",
+      "entry": "0x2d3c834",
+      "stop_before_call": "0x2d3c848",
+      "command": "0x601",
+      "payload_bytes": 4,
+      "synthetic_payload": "44 33 22 11"
+    }
+  ],
+  "message_packager": "0x02D3C724",
+  "message_transport_call": "0x014CF124",
+  "linux_scripts_read_only": {
+    "usr/local/bin/emmc-update.sh": "#!/bin/sh\n\nif [ -f /mnt/update/emmc_update.dat ]; then\n\trm -rf /mnt/usr/*\n\ttar -xzf /mnt/update/emmc_update.dat -C /mnt/usr\n\trm -rf /mnt/update/emmc_update.dat\n\tsync\n\n\techo OK\nelse\n\techo NG\nfi\n\n\n",
+    "usr/local/bin/ffsys-emmc-fwver.sh": "#!/bin/bash\nver=\"00.00\"\nif [ -f /mnt/usr/emmc_fw_version ]; then\n\tver=$(cat /mnt/usr/emmc_fw_version)\nfi\necho -en $ver'\\x00'\n"
+  },
+  "source_unchanged": true,
+  "not_established": [
+    "Exact installed updater version in the owners camera",
+    "Full path from memory-card file read to nonvolatile-memory controller",
+    "Ordering of signature checks, decompression, staging and writes",
+    "Physical address map of all installed components",
+    "A/B slots, automatic rollback, boot flags or exact power-failure recovery",
+    "Whether conditional emmc-update.sh is used in a normal body firmware update",
+    "Whether every component is decompressed during installation or during boot",
+    "Exact settings and calibration migration rules"
+  ],
+  "sources": [
+    "https://fujifilm-dsc.com/en-int/manual/x-h2/technical_notes/firmware_version/",
+    "https://www.fujifilm-x.com/global/support/download/procedure-x-interchangeable-ver2/",
+    "https://www.fujifilm-x.com/global/support/download/error-message/",
+    "https://www.kingston.com/en/blog/embedded-and-industrial/emmc-lifecycle"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "method": "Selected Fuji numeric tags taken from prior ExifTool JSON, checked against SHA-256 of existing files. Selected settings only, not all tags or hidden state. RAW identity based on owner report. A0 is a recommended repeat; one common control does not prove repeatability of each condition.",
+  "baseline_selected_tags": {
+    "FilmMode": 2048,
+    "Saturation": 128,
+    "HighlightTone": -24,
+    "ShadowTone": -8,
+    "ColorChromeEffect": 64,
+    "ColorChromeFXBlue": 64,
+    "ColorTemperature": 5750,
+    "WhiteBalanceFineTune": "20 -100",
+    "Clarity": 3000,
+    "Sharpness": 130,
+    "NoiseReduction": 736
+  },
+  "validated_single_factor_controls": {
+    "DSCF0301.JPG": {
+      "Saturation": 0
+    },
+    "DSCF0303.JPG": {
+      "HighlightTone": 0
+    },
+    "DSCF0304.JPG": {
+      "ShadowTone": 0
+    },
+    "DSCF0305.JPG": {
+      "ColorChromeEffect": 0
+    },
+    "DSCF0307.JPG": {
+      "ColorTemperature": 5000
+    },
+    "DSCF0308.JPG": {
+      "Clarity": 0
+    },
+    "DSCF0309.JPG": {
+      "Sharpness": 3
+    },
+    "DSCF0310.JPG": {
+      "NoiseReduction": 0
+    }
+  },
+  "old_source_sha256_before_after": {
+    "DSCF0300.JPG": "a508796353a62ec3d13ca72b4358d7c3779867a44bc02af951479623f04c8cae",
+    "DSCF0301.JPG": "17949ce0e8660675e86a61a817857470b9c264b411d863aebded9e27330e4c8a",
+    "DSCF0303.JPG": "43e28f46c508215e083d59981d32cfd6501d49f0b27bc4e6f8b8d80e35a5b684",
+    "DSCF0304.JPG": "8becae107a0154fb2a71efca0d6135089ea658fc09140bfe4f028ad717d094e5",
+    "DSCF0305.JPG": "a03c814d286ac3ef01a7986898466f5c559db95255a8b65259b0df93e44c1379",
+    "DSCF0307.JPG": "2b5c038f2d930b32418d0dc2ed932132fda0dc977210e71327d9f0246d3e4c89",
+    "DSCF0308.JPG": "008991cf530c22d10f584acfa5b15fc01a15f4c626310713dd9b6599977154f3",
+    "DSCF0309.JPG": "d592f13b678e29248fb955d5e610ae48d8aeb87100bf5ed4b67019aff8e2a070",
+    "DSCF0310.JPG": "23d23cc0309b2b5a5de94aa342f52fed3f4cbe6c50143777d0bda6c42e2496fa"
+  },
+  "new_0296_outputs": [
+    {
+      "id": "A0",
+      "purpose": "repeat baseline 0300",
+      "settings_changes": {},
+      "control_files": [
+        "DSCF0300.JPG"
+      ]
+    },
+    {
+      "id": "A1",
+      "purpose": "highlight × shadow",
+      "settings_changes": {
+        "HighlightTone": 0,
+        "ShadowTone": 0
+      },
+      "control_files": [
+        "DSCF0303.JPG",
+        "DSCF0304.JPG",
+        "DSCF0300.JPG"
+      ]
+    },
+    {
+      "id": "A2",
+      "purpose": "color × Color Chrome Effect",
+      "settings_changes": {
+        "Saturation": 0,
+        "ColorChromeEffect": 0
+      },
+      "control_files": [
+        "DSCF0301.JPG",
+        "DSCF0305.JPG",
+        "DSCF0300.JPG"
+      ]
+    },
+    {
+      "id": "A3",
+      "purpose": "WB × Color Chrome Effect",
+      "settings_changes": {
+        "ColorTemperature": 5000,
+        "ColorChromeEffect": 0
+      },
+      "control_files": [
+        "DSCF0307.JPG",
+        "DSCF0305.JPG",
+        "DSCF0300.JPG"
+      ]
+    },
+    {
+      "id": "A4",
+      "purpose": "clarity × sharpness",
+      "settings_changes": {
+        "Clarity": 0,
+        "Sharpness": 3
+      },
+      "control_files": [
+        "DSCF0308.JPG",
+        "DSCF0309.JPG",
+        "DSCF0300.JPG"
+      ]
+    },
+    {
+      "id": "A5",
+      "purpose": "sharpness × noise reduction",
+      "settings_changes": {
+        "Sharpness": 3,
+        "NoiseReduction": 0
+      },
+      "control_files": [
+        "DSCF0309.JPG",
+        "DSCF0310.JPG",
+        "DSCF0300.JPG"
+      ]
+    }
+  ],
+  "blue_scene_plan": {
+    "id": "B1-B5",
+    "design": "new or existing RAW with blue, four Chrome/FX Blue combinations plus repeat Strong/Strong; all other settings and same RAW held constant. No claim this RAW has yet been supplied."
+  }
+}

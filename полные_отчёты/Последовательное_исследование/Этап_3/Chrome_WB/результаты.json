@@ -1,0 +1,2991 @@
+{
+  "method": "Unpatched original per-camera ARM64; zero-filled artificial RAM, manually joined writer fragments, predicate and builder. No UI or JPEG pipeline.",
+  "cameras": {
+    "X-H2": {
+      "dat": "FIRMWARE/ver 5.30/FWUP0028.DAT",
+      "sha256_before": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+      "sha256_after": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+      "offsets": {
+        "gate": "0x3978",
+        "chrome": "0x3f10",
+        "blue": "0x3f14",
+        "wb_mode": "0x39a4",
+        "wb_shift": "0x39a8",
+        "kelvin": "0x3a94",
+        "discriminator": "0x396c",
+        "selector": "0x429c",
+        "alternate_kelvin": "0x4160"
+      },
+      "descriptors": {
+        "1002": {
+          "address": "0x18d3e90",
+          "bytes": "02 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 98 00 00 00 00 00 00 00",
+          "source_offset": "0x98"
+        },
+        "1005": {
+          "address": "0x18d3f08",
+          "bytes": "05 10 13 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 9e 00 00 00 00 00 00 00",
+          "source_offset": "0x9e"
+        },
+        "100a": {
+          "address": "0x18d3f30",
+          "bytes": "0a 10 13 00 09 00 02 00 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 a4 00 00 00 00 00 00 00",
+          "source_offset": "0xa4"
+        },
+        "1048": {
+          "address": "0x18d44d0",
+          "bytes": "48 10 13 00 09 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 4c 00 00 00 00 00 00 00",
+          "source_offset": "0x4c"
+        },
+        "104e": {
+          "address": "0x18d45c0",
+          "bytes": "4e 10 13 00 09 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 50 00 00 00 00 00 00 00",
+          "source_offset": "0x50"
+        }
+      },
+      "writer_start": "0x2e52ca4",
+      "chrome_start": "0x2e531d0",
+      "chrome_end": "0x2e53208",
+      "cases": [
+        {
+          "inputs": {
+            "chrome": 0,
+            "blue": 0,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 0,
+            "blue": 0,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3598,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3598,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 1,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 32,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3598,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 20 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 1,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 32,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3598,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 20 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 3,
+            "blue": 3,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 0,
+            "blue": 0,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3598,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 0,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 0,
+            "temperature": 0,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 0,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3586,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [],
+            "100a": [
+              {
+                "offset": 98,
+                "entry_hex": "0a 10 09 00 02 00 00 00 18 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 446,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 494,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 10,
+            "alternate_selector": 2
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5200,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3598,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 50 14 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 10,
+            "alternate_selector": 3
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5300,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3598,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 b4 14 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        }
+      ],
+      "shift_scan_minus10_to_10": [
+        [
+          0,
+          0
+        ],
+        [
+          -180,
+          -180
+        ],
+        [
+          -160,
+          -160
+        ],
+        [
+          -140,
+          -140
+        ],
+        [
+          -120,
+          -120
+        ],
+        [
+          -100,
+          -100
+        ],
+        [
+          -80,
+          -80
+        ],
+        [
+          -60,
+          -60
+        ],
+        [
+          -40,
+          -40
+        ],
+        [
+          -20,
+          -20
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          40,
+          40
+        ],
+        [
+          60,
+          60
+        ],
+        [
+          80,
+          80
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          120,
+          120
+        ],
+        [
+          140,
+          140
+        ],
+        [
+          160,
+          160
+        ],
+        [
+          180,
+          180
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "disassembly": {
+        "wb_writer": [
+          "02e52ca4 e0 03 13 aa mov x0, x19",
+          "02e52ca8 56 f8 ff 97 bl #0x2e50e00",
+          "02e52cac 80 32 01 79 strh w0, [x20, #0x98]",
+          "02e52cb0 e1 03 14 aa mov x1, x20",
+          "02e52cb4 e0 03 13 aa mov x0, x19",
+          "02e52cb8 30 f2 ff 97 bl #0x2e4f578",
+          "02e52cbc e0 03 13 aa mov x0, x19",
+          "02e52cc0 e9 f8 ff 97 bl #0x2e51064",
+          "02e52cc4 80 36 01 79 strh w0, [x20, #0x9a]",
+          "02e52cc8 e0 03 13 aa mov x0, x19",
+          "02e52ccc 96 f9 ff 97 bl #0x2e51324",
+          "02e52cd0 80 3a 01 79 strh w0, [x20, #0x9c]",
+          "02e52cd4 e0 03 13 aa mov x0, x19",
+          "02e52cd8 b7 f9 ff 97 bl #0x2e513b4",
+          "02e52cdc 80 3e 01 79 strh w0, [x20, #0x9e]",
+          "02e52ce0 01 00 80 52 mov w1, #0",
+          "02e52ce4 e0 03 13 aa mov x0, x19",
+          "02e52ce8 35 fa ff 97 bl #0x2e515bc",
+          "02e52cec 80 a6 00 b9 str w0, [x20, #0xa4]",
+          "02e52cf0 21 00 80 52 mov w1, #1",
+          "02e52cf4 e0 03 13 aa mov x0, x19",
+          "02e52cf8 31 fa ff 97 bl #0x2e515bc",
+          "02e52cfc 80 aa 00 b9 str w0, [x20, #0xa8]",
+          "02e52d00 61 7a 79 b9 ldr w1, [x19, #0x3978]",
+          "02e52d04 80 03 80 d2 mov x0, #0x1c",
+          "02e52d08 00 00 b4 f2 movk x0, #0xa000, lsl #16",
+          "02e52d0c c0 03 c2 f2 movk x0, #0x101e, lsl #32",
+          "02e52d10 00 24 c1 9a lsr x0, x0, x1",
+          "02e52d14 00 00 40 d2 eor x0, x0, #1",
+          "02e52d18 00 00 00 12 and w0, w0, #1",
+          "02e52d1c 3f b4 00 71 cmp w1, #0x2d",
+          "02e52d20 00 34 9f 1a csinc w0, w0, wzr, lo",
+          "02e52d24 00 00 00 52 eor w0, w0, #1",
+          "02e52d28 80 a2 00 b9 str w0, [x20, #0xa0]"
+        ],
+        "chrome_main": [
+          "02e531d0 60 12 7f b9 ldr w0, [x19, #0x3f10]",
+          "02e531d4 1f 04 00 71 cmp w0, #1",
+          "02e531d8 c0 0d 00 54 b.eq #0x2e53390",
+          "02e531dc 1f 08 00 71 cmp w0, #2",
+          "02e531e0 00 08 80 52 mov w0, #0x40",
+          "02e531e4 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02e531e8 80 4e 00 b9 str w0, [x20, #0x4c]",
+          "02e531ec 60 16 7f b9 ldr w0, [x19, #0x3f14]",
+          "02e531f0 1f 04 00 71 cmp w0, #1",
+          "02e531f4 40 0d 00 54 b.eq #0x2e5339c",
+          "02e531f8 1f 08 00 71 cmp w0, #2",
+          "02e531fc 00 08 80 52 mov w0, #0x40",
+          "02e53200 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02e53204 80 52 00 b9 str w0, [x20, #0x50]"
+        ]
+      }
+    },
+    "X-H2S": {
+      "dat": "Firmware на прочиеFuji/FWUP0027.DAT",
+      "sha256_before": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "sha256_after": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "offsets": {
+        "gate": "0x391c",
+        "chrome": "0x3ebc",
+        "blue": "0x3ec0",
+        "wb_mode": "0x3948",
+        "wb_shift": "0x394c",
+        "kelvin": "0x3a40",
+        "discriminator": "0x390c",
+        "selector": "0x424c",
+        "alternate_kelvin": "0x4114"
+      },
+      "descriptors": {
+        "1002": {
+          "address": "0x1bf1068",
+          "bytes": "02 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 98 00 00 00 00 00 00 00",
+          "source_offset": "0x98"
+        },
+        "1005": {
+          "address": "0x1bf10e0",
+          "bytes": "05 10 13 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 9e 00 00 00 00 00 00 00",
+          "source_offset": "0x9e"
+        },
+        "100a": {
+          "address": "0x1bf1108",
+          "bytes": "0a 10 13 00 09 00 02 00 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 a4 00 00 00 00 00 00 00",
+          "source_offset": "0xa4"
+        },
+        "1048": {
+          "address": "0x1bf16a8",
+          "bytes": "48 10 13 00 09 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 4c 00 00 00 00 00 00 00",
+          "source_offset": "0x4c"
+        },
+        "104e": {
+          "address": "0x1bf1798",
+          "bytes": "4e 10 13 00 09 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 50 00 00 00 00 00 00 00",
+          "source_offset": "0x50"
+        }
+      },
+      "writer_start": "0x3169f88",
+      "chrome_start": "0x316a4b4",
+      "chrome_end": "0x316a4ec",
+      "cases": [
+        {
+          "inputs": {
+            "chrome": 0,
+            "blue": 0,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 0,
+            "blue": 0,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3598,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3598,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 1,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 32,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3598,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 20 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 1,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 32,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3598,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 20 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 3,
+            "blue": 3,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 0,
+            "blue": 0,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3598,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 0,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 0,
+            "temperature": 0,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 0,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3586,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [],
+            "100a": [
+              {
+                "offset": 98,
+                "entry_hex": "0a 10 09 00 02 00 00 00 18 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 446,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 494,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 10,
+            "alternate_selector": 2
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5200,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3598,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 50 14 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 10,
+            "alternate_selector": 3
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5300,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3598,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 b4 14 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        }
+      ],
+      "shift_scan_minus10_to_10": [
+        [
+          0,
+          0
+        ],
+        [
+          -180,
+          -180
+        ],
+        [
+          -160,
+          -160
+        ],
+        [
+          -140,
+          -140
+        ],
+        [
+          -120,
+          -120
+        ],
+        [
+          -100,
+          -100
+        ],
+        [
+          -80,
+          -80
+        ],
+        [
+          -60,
+          -60
+        ],
+        [
+          -40,
+          -40
+        ],
+        [
+          -20,
+          -20
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          40,
+          40
+        ],
+        [
+          60,
+          60
+        ],
+        [
+          80,
+          80
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          120,
+          120
+        ],
+        [
+          140,
+          140
+        ],
+        [
+          160,
+          160
+        ],
+        [
+          180,
+          180
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "disassembly": {
+        "wb_writer": [
+          "03169f88 e0 03 13 aa mov x0, x19",
+          "03169f8c 59 f8 ff 97 bl #0x31680f0",
+          "03169f90 80 32 01 79 strh w0, [x20, #0x98]",
+          "03169f94 e1 03 14 aa mov x1, x20",
+          "03169f98 e0 03 13 aa mov x0, x19",
+          "03169f9c 37 f2 ff 97 bl #0x3166878",
+          "03169fa0 e0 03 13 aa mov x0, x19",
+          "03169fa4 e7 f8 ff 97 bl #0x3168340",
+          "03169fa8 80 36 01 79 strh w0, [x20, #0x9a]",
+          "03169fac e0 03 13 aa mov x0, x19",
+          "03169fb0 97 f9 ff 97 bl #0x316860c",
+          "03169fb4 80 3a 01 79 strh w0, [x20, #0x9c]",
+          "03169fb8 e0 03 13 aa mov x0, x19",
+          "03169fbc b8 f9 ff 97 bl #0x316869c",
+          "03169fc0 80 3e 01 79 strh w0, [x20, #0x9e]",
+          "03169fc4 01 00 80 52 mov w1, #0",
+          "03169fc8 e0 03 13 aa mov x0, x19",
+          "03169fcc 36 fa ff 97 bl #0x31688a4",
+          "03169fd0 80 a6 00 b9 str w0, [x20, #0xa4]",
+          "03169fd4 21 00 80 52 mov w1, #1",
+          "03169fd8 e0 03 13 aa mov x0, x19",
+          "03169fdc 32 fa ff 97 bl #0x31688a4",
+          "03169fe0 80 aa 00 b9 str w0, [x20, #0xa8]",
+          "03169fe4 61 1e 79 b9 ldr w1, [x19, #0x391c]",
+          "03169fe8 80 03 80 d2 mov x0, #0x1c",
+          "03169fec 00 00 b4 f2 movk x0, #0xa000, lsl #16",
+          "03169ff0 c0 03 c2 f2 movk x0, #0x101e, lsl #32",
+          "03169ff4 00 24 c1 9a lsr x0, x0, x1",
+          "03169ff8 00 00 40 d2 eor x0, x0, #1",
+          "03169ffc 00 00 00 12 and w0, w0, #1",
+          "0316a000 3f b4 00 71 cmp w1, #0x2d",
+          "0316a004 00 34 9f 1a csinc w0, w0, wzr, lo",
+          "0316a008 00 00 00 52 eor w0, w0, #1",
+          "0316a00c 80 a2 00 b9 str w0, [x20, #0xa0]"
+        ],
+        "chrome_main": [
+          "0316a4b4 60 be 7e b9 ldr w0, [x19, #0x3ebc]",
+          "0316a4b8 1f 04 00 71 cmp w0, #1",
+          "0316a4bc e0 0c 00 54 b.eq #0x316a658",
+          "0316a4c0 1f 08 00 71 cmp w0, #2",
+          "0316a4c4 00 08 80 52 mov w0, #0x40",
+          "0316a4c8 00 00 9f 1a csel w0, w0, wzr, eq",
+          "0316a4cc 80 4e 00 b9 str w0, [x20, #0x4c]",
+          "0316a4d0 60 c2 7e b9 ldr w0, [x19, #0x3ec0]",
+          "0316a4d4 1f 04 00 71 cmp w0, #1",
+          "0316a4d8 60 0c 00 54 b.eq #0x316a664",
+          "0316a4dc 1f 08 00 71 cmp w0, #2",
+          "0316a4e0 00 08 80 52 mov w0, #0x40",
+          "0316a4e4 00 00 9f 1a csel w0, w0, wzr, eq",
+          "0316a4e8 80 52 00 b9 str w0, [x20, #0x50]"
+        ]
+      }
+    },
+    "X-T5": {
+      "dat": "Firmware на прочиеFuji/FWUP0030.DAT",
+      "sha256_before": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "sha256_after": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "offsets": {
+        "gate": "0x39c0",
+        "chrome": "0x3f48",
+        "blue": "0x3f4c",
+        "wb_mode": "0x39ec",
+        "wb_shift": "0x39f0",
+        "kelvin": "0x3ad0",
+        "discriminator": "0x39b4",
+        "selector": "0x4418",
+        "alternate_kelvin": "0x42d0"
+      },
+      "descriptors": {
+        "1002": {
+          "address": "0x18d1718",
+          "bytes": "02 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 98 00 00 00 00 00 00 00",
+          "source_offset": "0x98"
+        },
+        "1005": {
+          "address": "0x18d1790",
+          "bytes": "05 10 13 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 9e 00 00 00 00 00 00 00",
+          "source_offset": "0x9e"
+        },
+        "100a": {
+          "address": "0x18d17b8",
+          "bytes": "0a 10 13 00 09 00 02 00 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 a4 00 00 00 00 00 00 00",
+          "source_offset": "0xa4"
+        },
+        "1048": {
+          "address": "0x18d1d58",
+          "bytes": "48 10 13 00 09 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 4c 00 00 00 00 00 00 00",
+          "source_offset": "0x4c"
+        },
+        "104e": {
+          "address": "0x18d1e48",
+          "bytes": "4e 10 13 00 09 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 50 00 00 00 00 00 00 00",
+          "source_offset": "0x50"
+        }
+      },
+      "writer_start": "0x2d90eec",
+      "chrome_start": "0x2d91410",
+      "chrome_end": "0x2d91468",
+      "cases": [
+        {
+          "inputs": {
+            "chrome": 0,
+            "blue": 0,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 0,
+            "blue": 0,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3618,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 30 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3618,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 30 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 1,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 32,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3618,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 30 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 20 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 1,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 32,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3618,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 30 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 20 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 3,
+            "blue": 3,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 0,
+            "blue": 0,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3618,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 30 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 0,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 0,
+            "temperature": 0,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 0,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3606,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [],
+            "100a": [
+              {
+                "offset": 98,
+                "entry_hex": "0a 10 09 00 02 00 00 00 24 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 446,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 494,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 10,
+            "alternate_selector": 2
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5200,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3618,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 50 14 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 30 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 10,
+            "alternate_selector": 3
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5300,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3618,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 b4 14 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 30 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        }
+      ],
+      "shift_scan_minus10_to_10": [
+        [
+          0,
+          0
+        ],
+        [
+          -180,
+          -180
+        ],
+        [
+          -160,
+          -160
+        ],
+        [
+          -140,
+          -140
+        ],
+        [
+          -120,
+          -120
+        ],
+        [
+          -100,
+          -100
+        ],
+        [
+          -80,
+          -80
+        ],
+        [
+          -60,
+          -60
+        ],
+        [
+          -40,
+          -40
+        ],
+        [
+          -20,
+          -20
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          40,
+          40
+        ],
+        [
+          60,
+          60
+        ],
+        [
+          80,
+          80
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          120,
+          120
+        ],
+        [
+          140,
+          140
+        ],
+        [
+          160,
+          160
+        ],
+        [
+          180,
+          180
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "disassembly": {
+        "wb_writer": [
+          "02d90eec e0 03 13 aa mov x0, x19",
+          "02d90ef0 12 f8 ff 97 bl #0x2d8ef38",
+          "02d90ef4 80 32 01 79 strh w0, [x20, #0x98]",
+          "02d90ef8 e1 03 14 aa mov x1, x20",
+          "02d90efc e0 03 13 aa mov x0, x19",
+          "02d90f00 c0 f1 ff 97 bl #0x2d8d600",
+          "02d90f04 e0 03 13 aa mov x0, x19",
+          "02d90f08 a5 f8 ff 97 bl #0x2d8f19c",
+          "02d90f0c 80 36 01 79 strh w0, [x20, #0x9a]",
+          "02d90f10 e0 03 13 aa mov x0, x19",
+          "02d90f14 66 f9 ff 97 bl #0x2d8f4ac",
+          "02d90f18 80 3a 01 79 strh w0, [x20, #0x9c]",
+          "02d90f1c e0 03 13 aa mov x0, x19",
+          "02d90f20 87 f9 ff 97 bl #0x2d8f53c",
+          "02d90f24 80 3e 01 79 strh w0, [x20, #0x9e]",
+          "02d90f28 01 00 80 52 mov w1, #0",
+          "02d90f2c e0 03 13 aa mov x0, x19",
+          "02d90f30 11 fa ff 97 bl #0x2d8f774",
+          "02d90f34 80 a6 00 b9 str w0, [x20, #0xa4]",
+          "02d90f38 21 00 80 52 mov w1, #1",
+          "02d90f3c e0 03 13 aa mov x0, x19",
+          "02d90f40 0d fa ff 97 bl #0x2d8f774",
+          "02d90f44 80 aa 00 b9 str w0, [x20, #0xa8]",
+          "02d90f48 61 c2 79 b9 ldr w1, [x19, #0x39c0]",
+          "02d90f4c 80 03 80 d2 mov x0, #0x1c",
+          "02d90f50 00 00 b4 f2 movk x0, #0xa000, lsl #16",
+          "02d90f54 c0 03 c2 f2 movk x0, #0x101e, lsl #32",
+          "02d90f58 00 24 c1 9a lsr x0, x0, x1",
+          "02d90f5c 00 00 40 d2 eor x0, x0, #1",
+          "02d90f60 00 00 00 12 and w0, w0, #1",
+          "02d90f64 3f b4 00 71 cmp w1, #0x2d",
+          "02d90f68 00 34 9f 1a csinc w0, w0, wzr, lo",
+          "02d90f6c 00 00 00 52 eor w0, w0, #1",
+          "02d90f70 80 a2 00 b9 str w0, [x20, #0xa0]"
+        ],
+        "chrome_main": [
+          "02d91410 60 c2 79 b9 ldr w0, [x19, #0x39c0]",
+          "02d91414 9b 62 9d 97 bl #0x14e9e80",
+          "02d91418 1f 04 00 71 cmp w0, #1",
+          "02d9141c a0 0e 00 54 b.eq #0x2d915f0",
+          "02d91420 60 4a 7f b9 ldr w0, [x19, #0x3f48]",
+          "02d91424 1f 04 00 71 cmp w0, #1",
+          "02d91428 80 0e 00 54 b.eq #0x2d915f8",
+          "02d9142c 1f 08 00 71 cmp w0, #2",
+          "02d91430 00 08 80 52 mov w0, #0x40",
+          "02d91434 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02d91438 80 4e 00 b9 str w0, [x20, #0x4c]",
+          "02d9143c 60 c2 79 b9 ldr w0, [x19, #0x39c0]",
+          "02d91440 90 62 9d 97 bl #0x14e9e80",
+          "02d91444 1f 04 00 71 cmp w0, #1",
+          "02d91448 e0 0d 00 54 b.eq #0x2d91604",
+          "02d9144c 60 4e 7f b9 ldr w0, [x19, #0x3f4c]",
+          "02d91450 1f 04 00 71 cmp w0, #1",
+          "02d91454 c0 0d 00 54 b.eq #0x2d9160c",
+          "02d91458 1f 08 00 71 cmp w0, #2",
+          "02d9145c 00 08 80 52 mov w0, #0x40",
+          "02d91460 00 00 9f 1a csel w0, w0, wzr, eq",
+          "02d91464 80 52 00 b9 str w0, [x20, #0x50]"
+        ]
+      }
+    },
+    "X100VI": {
+      "dat": "Firmware на прочиеFuji/FPUPDATE.DAT",
+      "sha256_before": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "sha256_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "offsets": {
+        "gate": "0x3fa8",
+        "chrome": "0x4538",
+        "blue": "0x453c",
+        "wb_mode": "0x3fd4",
+        "wb_shift": "0x3fd8",
+        "kelvin": "0x40c0",
+        "discriminator": "0x3f9c",
+        "selector": "0x4a50",
+        "alternate_kelvin": "0x48e8"
+      },
+      "descriptors": {
+        "1002": {
+          "address": "0x19ca770",
+          "bytes": "02 10 1b 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 1b 00 00 00 00 00 00 00 98 00 00 00 00 00 00 00",
+          "source_offset": "0x98"
+        },
+        "1005": {
+          "address": "0x19ca7e8",
+          "bytes": "05 10 13 00 03 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 9e 00 00 00 00 00 00 00",
+          "source_offset": "0x9e"
+        },
+        "100a": {
+          "address": "0x19ca810",
+          "bytes": "0a 10 13 00 09 00 02 00 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 a4 00 00 00 00 00 00 00",
+          "source_offset": "0xa4"
+        },
+        "1048": {
+          "address": "0x19cadb0",
+          "bytes": "48 10 13 00 09 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 4c 00 00 00 00 00 00 00",
+          "source_offset": "0x4c"
+        },
+        "104e": {
+          "address": "0x19caea0",
+          "bytes": "4e 10 13 00 09 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00 50 00 00 00 00 00 00 00",
+          "source_offset": "0x50"
+        }
+      },
+      "writer_start": "0x3060e24",
+      "chrome_start": "0x3061370",
+      "chrome_end": "0x30613d0",
+      "cases": [
+        {
+          "inputs": {
+            "chrome": 0,
+            "blue": 0,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 0,
+            "blue": 0,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3538,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 00 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3538,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 00 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 1,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 32,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3538,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 00 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 20 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 1,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 32,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3538,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 00 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 20 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 3,
+            "blue": 3,
+            "mode": 13,
+            "shift": [
+              0,
+              0
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 0,
+            "blue": 0,
+            "mode": 4080,
+            "temperature": 5750,
+            "shift": [
+              0,
+              0
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3538,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 76 16 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 00 05 00 00",
+                "pointed_data_hex": "00 00 00 00 00 00 00 00"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 0,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 0,
+            "alternate_selector": 0
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 0,
+            "temperature": 0,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 0,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3526,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 00 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [],
+            "100a": [
+              {
+                "offset": 98,
+                "entry_hex": "0a 10 09 00 02 00 00 00 f4 04 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 446,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 494,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 10,
+            "alternate_selector": 2
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5200,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3538,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 50 14 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 00 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        },
+        {
+          "inputs": {
+            "chrome": 2,
+            "blue": 2,
+            "mode": 13,
+            "shift": [
+              1,
+              -5
+            ],
+            "kelvin_field": 5750,
+            "gate": 2,
+            "discriminator": 10,
+            "alternate_selector": 3
+          },
+          "object": {
+            "chrome": 64,
+            "blue": 64,
+            "mode": 4080,
+            "temperature": 5300,
+            "shift": [
+              20,
+              -100
+            ]
+          },
+          "predicates": {
+            "1002": 1,
+            "1005": 1,
+            "100a": 1,
+            "1048": 1,
+            "104e": 1
+          },
+          "directory_length": 3538,
+          "records": {
+            "1002": [
+              {
+                "offset": 62,
+                "entry_hex": "02 10 03 00 01 00 00 00 f0 0f 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "1005": [
+              {
+                "offset": 98,
+                "entry_hex": "05 10 03 00 01 00 00 00 b4 14 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "100a": [
+              {
+                "offset": 110,
+                "entry_hex": "0a 10 09 00 02 00 00 00 00 05 00 00",
+                "pointed_data_hex": "14 00 00 00 9c ff ff ff"
+              }
+            ],
+            "1048": [
+              {
+                "offset": 458,
+                "entry_hex": "48 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ],
+            "104e": [
+              {
+                "offset": 506,
+                "entry_hex": "4e 10 09 00 01 00 00 00 40 00 00 00",
+                "pointed_data_hex": null
+              }
+            ]
+          }
+        }
+      ],
+      "shift_scan_minus10_to_10": [
+        [
+          0,
+          0
+        ],
+        [
+          -180,
+          -180
+        ],
+        [
+          -160,
+          -160
+        ],
+        [
+          -140,
+          -140
+        ],
+        [
+          -120,
+          -120
+        ],
+        [
+          -100,
+          -100
+        ],
+        [
+          -80,
+          -80
+        ],
+        [
+          -60,
+          -60
+        ],
+        [
+          -40,
+          -40
+        ],
+        [
+          -20,
+          -20
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          40,
+          40
+        ],
+        [
+          60,
+          60
+        ],
+        [
+          80,
+          80
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          120,
+          120
+        ],
+        [
+          140,
+          140
+        ],
+        [
+          160,
+          160
+        ],
+        [
+          180,
+          180
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "disassembly": {
+        "wb_writer": [
+          "03060e24 e0 03 13 aa mov x0, x19",
+          "03060e28 2e f8 ff 97 bl #0x305eee0",
+          "03060e2c 80 32 01 79 strh w0, [x20, #0x98]",
+          "03060e30 e1 03 14 aa mov x1, x20",
+          "03060e34 e0 03 13 aa mov x0, x19",
+          "03060e38 c2 f1 ff 97 bl #0x305d540",
+          "03060e3c e0 03 13 aa mov x0, x19",
+          "03060e40 c1 f8 ff 97 bl #0x305f144",
+          "03060e44 80 36 01 79 strh w0, [x20, #0x9a]",
+          "03060e48 e0 03 13 aa mov x0, x19",
+          "03060e4c 82 f9 ff 97 bl #0x305f454",
+          "03060e50 80 3a 01 79 strh w0, [x20, #0x9c]",
+          "03060e54 e0 03 13 aa mov x0, x19",
+          "03060e58 a4 f9 ff 97 bl #0x305f4e8",
+          "03060e5c 80 3e 01 79 strh w0, [x20, #0x9e]",
+          "03060e60 01 00 80 52 mov w1, #0",
+          "03060e64 e0 03 13 aa mov x0, x19",
+          "03060e68 30 fa ff 97 bl #0x305f728",
+          "03060e6c 80 a6 00 b9 str w0, [x20, #0xa4]",
+          "03060e70 21 00 80 52 mov w1, #1",
+          "03060e74 e0 03 13 aa mov x0, x19",
+          "03060e78 2c fa ff 97 bl #0x305f728",
+          "03060e7c 80 aa 00 b9 str w0, [x20, #0xa8]",
+          "03060e80 61 aa 7f b9 ldr w1, [x19, #0x3fa8]",
+          "03060e84 80 03 80 d2 mov x0, #0x1c",
+          "03060e88 00 00 b4 f2 movk x0, #0xa000, lsl #16",
+          "03060e8c c0 03 c2 f2 movk x0, #0x101e, lsl #32",
+          "03060e90 00 24 c1 9a lsr x0, x0, x1",
+          "03060e94 00 00 40 d2 eor x0, x0, #1",
+          "03060e98 00 00 00 12 and w0, w0, #1",
+          "03060e9c 3f b4 00 71 cmp w1, #0x2d",
+          "03060ea0 00 34 9f 1a csinc w0, w0, wzr, lo",
+          "03060ea4 00 00 00 52 eor w0, w0, #1",
+          "03060ea8 80 a2 00 b9 str w0, [x20, #0xa0]"
+        ],
+        "chrome_main": [
+          "03061370 60 aa 7f b9 ldr w0, [x19, #0x3fa8]",
+          "03061374 b2 6f 95 97 bl #0x15bd23c",
+          "03061378 1f 04 00 71 cmp w0, #1",
+          "0306137c 80 0f 00 54 b.eq #0x306156c",
+          "03061380 60 12 40 91 add x0, x19, #4, lsl #12",
+          "03061384 00 38 45 b9 ldr w0, [x0, #0x538]",
+          "03061388 1f 04 00 71 cmp w0, #1",
+          "0306138c 40 0f 00 54 b.eq #0x3061574",
+          "03061390 1f 08 00 71 cmp w0, #2",
+          "03061394 00 08 80 52 mov w0, #0x40",
+          "03061398 00 00 9f 1a csel w0, w0, wzr, eq",
+          "0306139c 80 4e 00 b9 str w0, [x20, #0x4c]",
+          "030613a0 60 aa 7f b9 ldr w0, [x19, #0x3fa8]",
+          "030613a4 a6 6f 95 97 bl #0x15bd23c",
+          "030613a8 1f 04 00 71 cmp w0, #1",
+          "030613ac a0 0e 00 54 b.eq #0x3061580",
+          "030613b0 60 12 40 91 add x0, x19, #4, lsl #12",
+          "030613b4 00 3c 45 b9 ldr w0, [x0, #0x53c]",
+          "030613b8 1f 04 00 71 cmp w0, #1",
+          "030613bc 60 0e 00 54 b.eq #0x3061588",
+          "030613c0 1f 08 00 71 cmp w0, #2",
+          "030613c4 00 08 80 52 mov w0, #0x40",
+          "030613c8 00 00 9f 1a csel w0, w0, wzr, eq",
+          "030613cc 80 52 00 b9 str w0, [x20, #0x50]"
+        ]
+      }
+    }
+  }
+}

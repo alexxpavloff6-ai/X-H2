@@ -1,0 +1,30 @@
+{
+  "method": "Exploratory, reduced area 966x644; JPEG EXIF sRGB assumed, OpenCV BGR2Lab float. C=sqrt(a^2+b^2), signed hue angle atan2(b,a). Mask RGB 6..249 for all three reduced images, reference 0301 L* 15..85 and C*>10, and C*(0302)-C*(0301)>1. No registration. Selection conditioned on observed outcome; not causal proof. 6/13 derives from previously measured synthetic gain differences (134-128)/(141-128), not an inferred camera formula.",
+  "source_sha256": {
+    "DSCF0300.JPG": "a508796353a62ec3d13ca72b4358d7c3779867a44bc02af951479623f04c8cae",
+    "DSCF0301.JPG": "17949ce0e8660675e86a61a817857470b9c264b411d863aebded9e27330e4c8a",
+    "DSCF0302.JPG": "20f3b6ef810d587e9c9f5f987b90035e0a76c59a774f8631fc2c8707c6984e87"
+  },
+  "opencv_version": "4.13.0",
+  "numpy_version": "2.4.6",
+  "mask_fraction": 0.5309562388282345,
+  "mask_pixels": 330310,
+  "fractional_step_median": 0.4631039500236511,
+  "fractional_step_mean": 0.4594275653362274,
+  "fractional_step_p10_p50_p90": [
+    0.31712472140789033,
+    0.46310393512248993,
+    0.6009723722934723
+  ],
+  "origin_constrained_ls_slope": 0.4609564244747162,
+  "mae_6_over_13": 0.2127099633216858,
+  "mae_half": 0.2264402210712433,
+  "signed_hue_diff_degrees_p05_p25_p50_p75_p95": [
+    -1.9591008067131042,
+    -0.9256545007228851,
+    -0.36716362833976746,
+    0.20314346253871918,
+    1.1397002875804898
+  ],
+  "median_absolute_hue_diff_degrees": 0.6243509650230408
+}

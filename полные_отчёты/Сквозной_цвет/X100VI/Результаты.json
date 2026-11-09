@@ -1,0 +1,2239 @@
+{
+  "source": "Firmware на прочиеFuji\\FPUPDATE.DAT",
+  "sha256_before_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+  "blocks": [
+    {
+      "dat": "0x9c02bc",
+      "base": "0x11c1000",
+      "size": "0x19dd5c8",
+      "sha256": "77456fe5c9808ce5e638b1a5f6f12d9e8e40c1751e1f9b4640134fde662e09d4"
+    },
+    {
+      "dat": "0x10e02bc",
+      "base": "0x2b8f000",
+      "size": "0x1539000",
+      "sha256": "14b0557bd724fa74b51ff641fcd5481da5b3ac64146d4fc69375086dafcfb174"
+    }
+  ],
+  "overlap": {
+    "start": "0x2b8f000",
+    "end_exclusive": "0x2b9e5c8",
+    "priority": "second block"
+  },
+  "dictionary": [
+    {
+      "name": "UI_FILM_SIM_CLASSIC_CHROME",
+      "string": "0x33e46e8",
+      "record": "0x3446c58",
+      "value": 14
+    },
+    {
+      "name": "UI_SETP_FILM_SIM",
+      "string": "0x340f958",
+      "record": "0x3432898",
+      "value": 1756
+    },
+    {
+      "name": "UI_SETP_STILLCOLOR",
+      "string": "0x340fd58",
+      "record": "0x3432ae8",
+      "value": 1793
+    },
+    {
+      "name": "UI_STILLCOLOR_EXTRA_DARK",
+      "string": "0x33e5150",
+      "record": "0x3447348",
+      "value": 0
+    },
+    {
+      "name": "UI_STILLCOLOR_SUPER_DARK",
+      "string": "0x33e5170",
+      "record": "0x3447358",
+      "value": 1
+    },
+    {
+      "name": "UI_STILLCOLOR_DARK",
+      "string": "0x33e5190",
+      "record": "0x3447368",
+      "value": 2
+    },
+    {
+      "name": "UI_STILLCOLOR_MID_DARK",
+      "string": "0x33e51a8",
+      "record": "0x3447378",
+      "value": 3
+    },
+    {
+      "name": "UI_STILLCOLOR_STANDARD",
+      "string": "0x33e51c0",
+      "record": "0x3447388",
+      "value": 4
+    },
+    {
+      "name": "UI_STILLCOLOR_MID_THIN",
+      "string": "0x33e51d8",
+      "record": "0x3447398",
+      "value": 5
+    },
+    {
+      "name": "UI_STILLCOLOR_THIN",
+      "string": "0x33e51f0",
+      "record": "0x34473a8",
+      "value": 6
+    },
+    {
+      "name": "UI_STILLCOLOR_SUPER_THIN",
+      "string": "0x33e5208",
+      "record": "0x34473b8",
+      "value": 7
+    },
+    {
+      "name": "UI_STILLCOLOR_EXTRA_THIN",
+      "string": "0x33e5228",
+      "record": "0x34473c8",
+      "value": 8
+    }
+  ],
+  "table_root": "0x1c60a50",
+  "tables": {
+    "1756": {
+      "pointer": "0x1863d90",
+      "rows": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          3
+        ],
+        [
+          3,
+          2147483646,
+          2,
+          2147483646
+        ],
+        [
+          4,
+          1,
+          3,
+          2
+        ],
+        [
+          5,
+          2147483646,
+          4,
+          2147483646
+        ],
+        [
+          6,
+          4,
+          5,
+          10
+        ],
+        [
+          7,
+          2147483646,
+          6,
+          2147483646
+        ],
+        [
+          2147483646,
+          2147483646,
+          2147483646,
+          2147483646
+        ],
+        [
+          9,
+          3,
+          7,
+          6
+        ],
+        [
+          10,
+          8,
+          8,
+          8
+        ],
+        [
+          11,
+          7,
+          9,
+          7
+        ],
+        [
+          12,
+          9,
+          10,
+          9
+        ],
+        [
+          13,
+          6,
+          11,
+          5
+        ],
+        [
+          14,
+          5,
+          12,
+          4
+        ],
+        [
+          15,
+          10,
+          13,
+          11
+        ],
+        [
+          16,
+          16,
+          19,
+          17
+        ],
+        [
+          17,
+          18,
+          21,
+          19
+        ],
+        [
+          18,
+          19,
+          22,
+          20
+        ],
+        [
+          19,
+          15,
+          18,
+          16
+        ],
+        [
+          20,
+          17,
+          20,
+          18
+        ],
+        [
+          2147483646,
+          2147483646,
+          2147483646,
+          2147483646
+        ],
+        [
+          22,
+          11,
+          14,
+          12
+        ],
+        [
+          23,
+          13,
+          15,
+          14
+        ],
+        [
+          24,
+          12,
+          16,
+          13
+        ],
+        [
+          25,
+          14,
+          17,
+          15
+        ],
+        [
+          0,
+          2147483646,
+          2147483646,
+          32768
+        ]
+      ]
+    },
+    "1793": {
+      "pointer": "0x1879600",
+      "rows": [
+        [
+          3,
+          2147483646,
+          0,
+          40
+        ],
+        [
+          4,
+          2147483646,
+          1,
+          30
+        ],
+        [
+          5,
+          2147483646,
+          2,
+          20
+        ],
+        [
+          6,
+          2147483646,
+          3,
+          10
+        ],
+        [
+          0,
+          2147483646,
+          4,
+          0
+        ],
+        [
+          8,
+          2147483646,
+          5,
+          4294967286
+        ],
+        [
+          7,
+          2147483646,
+          6,
+          4294967276
+        ],
+        [
+          9,
+          2147483646,
+          7,
+          4294967266
+        ],
+        [
+          10,
+          2147483646,
+          8,
+          4294967256
+        ]
+      ]
+    }
+  },
+  "color_conversion": [
+    {
+      "dictionary": "EXTRA_DARK",
+      "ui_code": 0,
+      "table_fourth_signed_tenths": 40,
+      "executed_0_to_4": 40,
+      "executed_4_to_3": 0,
+      "mode_code": 0,
+      "error": 0
+    },
+    {
+      "dictionary": "SUPER_DARK",
+      "ui_code": 1,
+      "table_fourth_signed_tenths": 30,
+      "executed_0_to_4": 30,
+      "executed_4_to_3": 1,
+      "mode_code": 1,
+      "error": 0
+    },
+    {
+      "dictionary": "DARK",
+      "ui_code": 2,
+      "table_fourth_signed_tenths": 20,
+      "executed_0_to_4": 20,
+      "executed_4_to_3": 2,
+      "mode_code": 2,
+      "error": 0
+    },
+    {
+      "dictionary": "MID_DARK",
+      "ui_code": 3,
+      "table_fourth_signed_tenths": 10,
+      "executed_0_to_4": 10,
+      "executed_4_to_3": 3,
+      "mode_code": 3,
+      "error": 0
+    },
+    {
+      "dictionary": "STANDARD",
+      "ui_code": 4,
+      "table_fourth_signed_tenths": 0,
+      "executed_0_to_4": 0,
+      "executed_4_to_3": 4,
+      "mode_code": 4,
+      "error": 0
+    },
+    {
+      "dictionary": "MID_THIN",
+      "ui_code": 5,
+      "table_fourth_signed_tenths": -10,
+      "executed_0_to_4": 4294967286,
+      "executed_4_to_3": 5,
+      "mode_code": 5,
+      "error": 0
+    },
+    {
+      "dictionary": "THIN",
+      "ui_code": 6,
+      "table_fourth_signed_tenths": -20,
+      "executed_0_to_4": 4294967276,
+      "executed_4_to_3": 6,
+      "mode_code": 6,
+      "error": 0
+    },
+    {
+      "dictionary": "SUPER_THIN",
+      "ui_code": 7,
+      "table_fourth_signed_tenths": -30,
+      "executed_0_to_4": 4294967266,
+      "executed_4_to_3": 7,
+      "mode_code": 7,
+      "error": 0
+    },
+    {
+      "dictionary": "EXTRA_THIN",
+      "ui_code": 8,
+      "table_fourth_signed_tenths": -40,
+      "executed_0_to_4": 4294967256,
+      "executed_4_to_3": 8,
+      "mode_code": 8,
+      "error": 0
+    }
+  ],
+  "state_execution": [
+    {
+      "ui": 0,
+      "compared_global": 99,
+      "entry": "0x1411a3c",
+      "stop": "0x1411fb4",
+      "state": 0,
+      "error": 0
+    },
+    {
+      "ui": 14,
+      "compared_global": 99,
+      "entry": "0x1411a3c",
+      "stop": "0x1411fb4",
+      "state": 13,
+      "error": 0
+    },
+    {
+      "ui": 17,
+      "compared_global": 99,
+      "entry": "0x1411a3c",
+      "stop": "0x1411fb4",
+      "state": 22,
+      "error": 0
+    },
+    {
+      "ui": 18,
+      "compared_global": 99,
+      "entry": "0x1411a3c",
+      "stop": "0x1411fb4",
+      "state": 18,
+      "error": 0
+    },
+    {
+      "ui": 14,
+      "compared_global": 14,
+      "entry": "0x1411a3c",
+      "stop": "0x1411a54",
+      "state": 305419896,
+      "error": 0
+    }
+  ],
+  "execution_cases": [
+    {
+      "ui_film": 0,
+      "mode": 0,
+      "frame_c0": 0,
+      "color_ui": 0,
+      "table_tenths": 40,
+      "native_color": 0,
+      "index": 8,
+      "processing_code": 0,
+      "selector": 1,
+      "coefficients": [
+        1372,
+        -15,
+        1828,
+        93
+      ],
+      "packed": [
+        1372,
+        8177,
+        1828,
+        93
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff1055c"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x5d0724"
+        }
+      ]
+    },
+    {
+      "ui_film": 0,
+      "mode": 0,
+      "frame_c0": 0,
+      "color_ui": 1,
+      "table_tenths": 30,
+      "native_color": 1,
+      "index": 7,
+      "processing_code": 0,
+      "selector": 1,
+      "coefficients": [
+        1310,
+        -14,
+        1745,
+        89
+      ],
+      "packed": [
+        1310,
+        8178,
+        1745,
+        89
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff2051e"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x5906d1"
+        }
+      ]
+    },
+    {
+      "ui_film": 0,
+      "mode": 0,
+      "frame_c0": 0,
+      "color_ui": 2,
+      "table_tenths": 20,
+      "native_color": 2,
+      "index": 6,
+      "processing_code": 0,
+      "selector": 1,
+      "coefficients": [
+        1256,
+        -14,
+        1674,
+        85
+      ],
+      "packed": [
+        1256,
+        8178,
+        1674,
+        85
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff204e8"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x55068a"
+        }
+      ]
+    },
+    {
+      "ui_film": 0,
+      "mode": 0,
+      "frame_c0": 0,
+      "color_ui": 3,
+      "table_tenths": 10,
+      "native_color": 3,
+      "index": 5,
+      "processing_code": 0,
+      "selector": 1,
+      "coefficients": [
+        1194,
+        -13,
+        1591,
+        81
+      ],
+      "packed": [
+        1194,
+        8179,
+        1591,
+        81
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff304aa"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x510637"
+        }
+      ]
+    },
+    {
+      "ui_film": 0,
+      "mode": 0,
+      "frame_c0": 0,
+      "color_ui": 4,
+      "table_tenths": 0,
+      "native_color": 4,
+      "index": 4,
+      "processing_code": 0,
+      "selector": 1,
+      "coefficients": [
+        1141,
+        -12,
+        1520,
+        78
+      ],
+      "packed": [
+        1141,
+        8180,
+        1520,
+        78
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff40475"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x4e05f0"
+        }
+      ]
+    },
+    {
+      "ui_film": 0,
+      "mode": 0,
+      "frame_c0": 0,
+      "color_ui": 5,
+      "table_tenths": -10,
+      "native_color": 5,
+      "index": 3,
+      "processing_code": 0,
+      "selector": 1,
+      "coefficients": [
+        1087,
+        -12,
+        1448,
+        74
+      ],
+      "packed": [
+        1087,
+        8180,
+        1448,
+        74
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff4043f"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x4a05a8"
+        }
+      ]
+    },
+    {
+      "ui_film": 0,
+      "mode": 0,
+      "frame_c0": 0,
+      "color_ui": 6,
+      "table_tenths": -20,
+      "native_color": 6,
+      "index": 2,
+      "processing_code": 0,
+      "selector": 1,
+      "coefficients": [
+        1025,
+        -11,
+        1365,
+        70
+      ],
+      "packed": [
+        1025,
+        8181,
+        1365,
+        70
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff50401"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x460555"
+        }
+      ]
+    },
+    {
+      "ui_film": 0,
+      "mode": 0,
+      "frame_c0": 0,
+      "color_ui": 7,
+      "table_tenths": -30,
+      "native_color": 7,
+      "index": 1,
+      "processing_code": 0,
+      "selector": 1,
+      "coefficients": [
+        971,
+        -11,
+        1294,
+        66
+      ],
+      "packed": [
+        971,
+        8181,
+        1294,
+        66
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff503cb"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x42050e"
+        }
+      ]
+    },
+    {
+      "ui_film": 0,
+      "mode": 0,
+      "frame_c0": 0,
+      "color_ui": 8,
+      "table_tenths": -40,
+      "native_color": 8,
+      "index": 0,
+      "processing_code": 0,
+      "selector": 1,
+      "coefficients": [
+        909,
+        -10,
+        1211,
+        62
+      ],
+      "packed": [
+        909,
+        8182,
+        1211,
+        62
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff6038d"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x3e04bb"
+        }
+      ]
+    },
+    {
+      "ui_film": 14,
+      "mode": 13,
+      "frame_c0": 13,
+      "color_ui": 0,
+      "table_tenths": 40,
+      "native_color": 0,
+      "index": 8,
+      "processing_code": 8,
+      "selector": 6,
+      "coefficients": [
+        1064,
+        -13,
+        1033,
+        -15
+      ],
+      "packed": [
+        1064,
+        8179,
+        1033,
+        8177
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff30428"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff10409"
+        }
+      ]
+    },
+    {
+      "ui_film": 14,
+      "mode": 13,
+      "frame_c0": 13,
+      "color_ui": 1,
+      "table_tenths": 30,
+      "native_color": 1,
+      "index": 7,
+      "processing_code": 8,
+      "selector": 6,
+      "coefficients": [
+        1016,
+        -12,
+        986,
+        -14
+      ],
+      "packed": [
+        1016,
+        8180,
+        986,
+        8178
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff403f8"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff203da"
+        }
+      ]
+    },
+    {
+      "ui_film": 14,
+      "mode": 13,
+      "frame_c0": 13,
+      "color_ui": 2,
+      "table_tenths": 20,
+      "native_color": 2,
+      "index": 6,
+      "processing_code": 8,
+      "selector": 6,
+      "coefficients": [
+        974,
+        -12,
+        946,
+        -14
+      ],
+      "packed": [
+        974,
+        8180,
+        946,
+        8178
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff403ce"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff203b2"
+        }
+      ]
+    },
+    {
+      "ui_film": 14,
+      "mode": 13,
+      "frame_c0": 13,
+      "color_ui": 3,
+      "table_tenths": 10,
+      "native_color": 3,
+      "index": 5,
+      "processing_code": 8,
+      "selector": 6,
+      "coefficients": [
+        926,
+        -11,
+        899,
+        -13
+      ],
+      "packed": [
+        926,
+        8181,
+        899,
+        8179
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff5039e"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff30383"
+        }
+      ]
+    },
+    {
+      "ui_film": 14,
+      "mode": 13,
+      "frame_c0": 13,
+      "color_ui": 4,
+      "table_tenths": 0,
+      "native_color": 4,
+      "index": 4,
+      "processing_code": 8,
+      "selector": 6,
+      "coefficients": [
+        885,
+        -10,
+        859,
+        -12
+      ],
+      "packed": [
+        885,
+        8182,
+        859,
+        8180
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff60375"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff4035b"
+        }
+      ]
+    },
+    {
+      "ui_film": 14,
+      "mode": 13,
+      "frame_c0": 13,
+      "color_ui": 5,
+      "table_tenths": -10,
+      "native_color": 5,
+      "index": 3,
+      "processing_code": 8,
+      "selector": 6,
+      "coefficients": [
+        843,
+        -10,
+        818,
+        -12
+      ],
+      "packed": [
+        843,
+        8182,
+        818,
+        8180
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff6034b"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff40332"
+        }
+      ]
+    },
+    {
+      "ui_film": 14,
+      "mode": 13,
+      "frame_c0": 13,
+      "color_ui": 6,
+      "table_tenths": -20,
+      "native_color": 6,
+      "index": 2,
+      "processing_code": 8,
+      "selector": 6,
+      "coefficients": [
+        795,
+        -9,
+        771,
+        -11
+      ],
+      "packed": [
+        795,
+        8183,
+        771,
+        8181
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff7031b"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff50303"
+        }
+      ]
+    },
+    {
+      "ui_film": 14,
+      "mode": 13,
+      "frame_c0": 13,
+      "color_ui": 7,
+      "table_tenths": -30,
+      "native_color": 7,
+      "index": 1,
+      "processing_code": 8,
+      "selector": 6,
+      "coefficients": [
+        753,
+        -9,
+        731,
+        -11
+      ],
+      "packed": [
+        753,
+        8183,
+        731,
+        8181
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff702f1"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff502db"
+        }
+      ]
+    },
+    {
+      "ui_film": 14,
+      "mode": 13,
+      "frame_c0": 13,
+      "color_ui": 8,
+      "table_tenths": -40,
+      "native_color": 8,
+      "index": 0,
+      "processing_code": 8,
+      "selector": 6,
+      "coefficients": [
+        705,
+        -8,
+        684,
+        -10
+      ],
+      "packed": [
+        705,
+        8184,
+        684,
+        8182
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff802c1"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff602ac"
+        }
+      ]
+    },
+    {
+      "ui_film": 17,
+      "mode": 22,
+      "frame_c0": 22,
+      "color_ui": 0,
+      "table_tenths": 40,
+      "native_color": 0,
+      "index": 8,
+      "processing_code": 13,
+      "selector": 16,
+      "coefficients": [
+        1292,
+        -26,
+        1769,
+        169
+      ],
+      "packed": [
+        1292,
+        8166,
+        1769,
+        169
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1fe6050c"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0xa906e9"
+        }
+      ]
+    },
+    {
+      "ui_film": 17,
+      "mode": 22,
+      "frame_c0": 22,
+      "color_ui": 1,
+      "table_tenths": 30,
+      "native_color": 1,
+      "index": 7,
+      "processing_code": 13,
+      "selector": 16,
+      "coefficients": [
+        1233,
+        -25,
+        1689,
+        161
+      ],
+      "packed": [
+        1233,
+        8167,
+        1689,
+        161
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1fe704d1"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0xa10699"
+        }
+      ]
+    },
+    {
+      "ui_film": 17,
+      "mode": 22,
+      "frame_c0": 22,
+      "color_ui": 2,
+      "table_tenths": 20,
+      "native_color": 2,
+      "index": 6,
+      "processing_code": 13,
+      "selector": 16,
+      "coefficients": [
+        1183,
+        -24,
+        1620,
+        155
+      ],
+      "packed": [
+        1183,
+        8168,
+        1620,
+        155
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1fe8049f"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x9b0654"
+        }
+      ]
+    },
+    {
+      "ui_film": 17,
+      "mode": 22,
+      "frame_c0": 22,
+      "color_ui": 3,
+      "table_tenths": 10,
+      "native_color": 3,
+      "index": 5,
+      "processing_code": 13,
+      "selector": 16,
+      "coefficients": [
+        1124,
+        -22,
+        1539,
+        147
+      ],
+      "packed": [
+        1124,
+        8170,
+        1539,
+        147
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1fea0464"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x930603"
+        }
+      ]
+    },
+    {
+      "ui_film": 17,
+      "mode": 22,
+      "frame_c0": 22,
+      "color_ui": 4,
+      "table_tenths": 0,
+      "native_color": 4,
+      "index": 4,
+      "processing_code": 13,
+      "selector": 16,
+      "coefficients": [
+        1074,
+        -21,
+        1471,
+        141
+      ],
+      "packed": [
+        1074,
+        8171,
+        1471,
+        141
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1feb0432"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x8d05bf"
+        }
+      ]
+    },
+    {
+      "ui_film": 17,
+      "mode": 22,
+      "frame_c0": 22,
+      "color_ui": 5,
+      "table_tenths": -10,
+      "native_color": 5,
+      "index": 3,
+      "processing_code": 13,
+      "selector": 16,
+      "coefficients": [
+        1023,
+        -21,
+        1402,
+        134
+      ],
+      "packed": [
+        1023,
+        8171,
+        1402,
+        134
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1feb03ff"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x86057a"
+        }
+      ]
+    },
+    {
+      "ui_film": 17,
+      "mode": 22,
+      "frame_c0": 22,
+      "color_ui": 6,
+      "table_tenths": -20,
+      "native_color": 6,
+      "index": 2,
+      "processing_code": 13,
+      "selector": 16,
+      "coefficients": [
+        964,
+        -19,
+        1321,
+        126
+      ],
+      "packed": [
+        964,
+        8173,
+        1321,
+        126
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1fed03c4"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x7e0529"
+        }
+      ]
+    },
+    {
+      "ui_film": 17,
+      "mode": 22,
+      "frame_c0": 22,
+      "color_ui": 7,
+      "table_tenths": -30,
+      "native_color": 7,
+      "index": 1,
+      "processing_code": 13,
+      "selector": 16,
+      "coefficients": [
+        914,
+        -18,
+        1252,
+        120
+      ],
+      "packed": [
+        914,
+        8174,
+        1252,
+        120
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1fee0392"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x7804e4"
+        }
+      ]
+    },
+    {
+      "ui_film": 17,
+      "mode": 22,
+      "frame_c0": 22,
+      "color_ui": 8,
+      "table_tenths": -40,
+      "native_color": 8,
+      "index": 0,
+      "processing_code": 13,
+      "selector": 16,
+      "coefficients": [
+        855,
+        -17,
+        1172,
+        112
+      ],
+      "packed": [
+        855,
+        8175,
+        1172,
+        112
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1fef0357"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x700494"
+        }
+      ]
+    },
+    {
+      "ui_film": 18,
+      "mode": 18,
+      "frame_c0": 18,
+      "color_ui": 0,
+      "table_tenths": 40,
+      "native_color": 0,
+      "index": 8,
+      "processing_code": 9,
+      "selector": 7,
+      "coefficients": [
+        1067,
+        58,
+        1074,
+        121
+      ],
+      "packed": [
+        1067,
+        58,
+        1074,
+        121
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x3a042b"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x790432"
+        }
+      ]
+    },
+    {
+      "ui_film": 18,
+      "mode": 18,
+      "frame_c0": 18,
+      "color_ui": 1,
+      "table_tenths": 30,
+      "native_color": 1,
+      "index": 7,
+      "processing_code": 9,
+      "selector": 7,
+      "coefficients": [
+        1018,
+        56,
+        1025,
+        115
+      ],
+      "packed": [
+        1018,
+        56,
+        1025,
+        115
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x3803fa"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x730401"
+        }
+      ]
+    },
+    {
+      "ui_film": 18,
+      "mode": 18,
+      "frame_c0": 18,
+      "color_ui": 2,
+      "table_tenths": 20,
+      "native_color": 2,
+      "index": 6,
+      "processing_code": 9,
+      "selector": 7,
+      "coefficients": [
+        977,
+        53,
+        983,
+        111
+      ],
+      "packed": [
+        977,
+        53,
+        983,
+        111
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x3503d1"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x6f03d7"
+        }
+      ]
+    },
+    {
+      "ui_film": 18,
+      "mode": 18,
+      "frame_c0": 18,
+      "color_ui": 3,
+      "table_tenths": 10,
+      "native_color": 3,
+      "index": 5,
+      "processing_code": 9,
+      "selector": 7,
+      "coefficients": [
+        928,
+        51,
+        934,
+        105
+      ],
+      "packed": [
+        928,
+        51,
+        934,
+        105
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x3303a0"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x6903a6"
+        }
+      ]
+    },
+    {
+      "ui_film": 18,
+      "mode": 18,
+      "frame_c0": 18,
+      "color_ui": 4,
+      "table_tenths": 0,
+      "native_color": 4,
+      "index": 4,
+      "processing_code": 9,
+      "selector": 7,
+      "coefficients": [
+        887,
+        49,
+        893,
+        101
+      ],
+      "packed": [
+        887,
+        49,
+        893,
+        101
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x310377"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x65037d"
+        }
+      ]
+    },
+    {
+      "ui_film": 18,
+      "mode": 18,
+      "frame_c0": 18,
+      "color_ui": 5,
+      "table_tenths": -10,
+      "native_color": 5,
+      "index": 3,
+      "processing_code": 9,
+      "selector": 7,
+      "coefficients": [
+        845,
+        46,
+        851,
+        96
+      ],
+      "packed": [
+        845,
+        46,
+        851,
+        96
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x2e034d"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x600353"
+        }
+      ]
+    },
+    {
+      "ui_film": 18,
+      "mode": 18,
+      "frame_c0": 18,
+      "color_ui": 6,
+      "table_tenths": -20,
+      "native_color": 6,
+      "index": 2,
+      "processing_code": 9,
+      "selector": 7,
+      "coefficients": [
+        796,
+        44,
+        802,
+        90
+      ],
+      "packed": [
+        796,
+        44,
+        802,
+        90
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x2c031c"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x5a0322"
+        }
+      ]
+    },
+    {
+      "ui_film": 18,
+      "mode": 18,
+      "frame_c0": 18,
+      "color_ui": 7,
+      "table_tenths": -30,
+      "native_color": 7,
+      "index": 1,
+      "processing_code": 9,
+      "selector": 7,
+      "coefficients": [
+        755,
+        41,
+        760,
+        86
+      ],
+      "packed": [
+        755,
+        41,
+        760,
+        86
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x2902f3"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x5602f8"
+        }
+      ]
+    },
+    {
+      "ui_film": 18,
+      "mode": 18,
+      "frame_c0": 18,
+      "color_ui": 8,
+      "table_tenths": -40,
+      "native_color": 8,
+      "index": 0,
+      "processing_code": 9,
+      "selector": 7,
+      "coefficients": [
+        706,
+        39,
+        711,
+        80
+      ],
+      "packed": [
+        706,
+        39,
+        711,
+        80
+      ],
+      "writes": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x2702c2"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x5002c7"
+        }
+      ]
+    }
+  ],
+  "disassembly": [
+    {
+      "pc": "0x1411a3c",
+      "bytes": "206500d0",
+      "instruction": "adrp x0, #0x20b7000"
+    },
+    {
+      "pc": "0x1411a40",
+      "bytes": "017841b9",
+      "instruction": "ldr w1, [x0, #0x178]"
+    },
+    {
+      "pc": "0x1411a44",
+      "bytes": "006500f0",
+      "instruction": "adrp x0, #0x20b4000"
+    },
+    {
+      "pc": "0x1411a48",
+      "bytes": "00c04eb9",
+      "instruction": "ldr w0, [x0, #0xec0]"
+    },
+    {
+      "pc": "0x1411a4c",
+      "bytes": "3f00006b",
+      "instruction": "cmp w1, w0"
+    },
+    {
+      "pc": "0x1411a50",
+      "bytes": "812a0054",
+      "instruction": "b.ne #0x1411fa0"
+    },
+    {
+      "pc": "0x1411a54",
+      "bytes": "209f00d0",
+      "instruction": "adrp x0, #0x27f7000"
+    },
+    {
+      "pc": "0x1411fa0",
+      "bytes": "63008052",
+      "instruction": "mov w3, #3"
+    },
+    {
+      "pc": "0x1411fa4",
+      "bytes": "02008052",
+      "instruction": "mov w2, #0"
+    },
+    {
+      "pc": "0x1411fa8",
+      "bytes": "80db8052",
+      "instruction": "mov w0, #0x6dc"
+    },
+    {
+      "pc": "0x1411fac",
+      "bytes": "a28ef797",
+      "instruction": "bl #0x11f5a34"
+    },
+    {
+      "pc": "0x1411fb0",
+      "bytes": "2400ff97",
+      "instruction": "bl #0x13d2040"
+    },
+    {
+      "pc": "0x1411fb4",
+      "bytes": "21008052",
+      "instruction": "mov w1, #1"
+    },
+    {
+      "pc": "0x11f5a34",
+      "bytes": "fd7bbfa9",
+      "instruction": "stp x29, x30, [sp, #-0x10]!"
+    },
+    {
+      "pc": "0x11f5a38",
+      "bytes": "fd030091",
+      "instruction": "mov x29, sp"
+    },
+    {
+      "pc": "0x11f5a3c",
+      "bytes": "bd4f0794",
+      "instruction": "bl #0x13c9930"
+    },
+    {
+      "pc": "0x11f5a40",
+      "bytes": "fd7bc1a8",
+      "instruction": "ldp x29, x30, [sp], #0x10"
+    },
+    {
+      "pc": "0x11f5a44",
+      "bytes": "c0035fd6",
+      "instruction": "ret "
+    },
+    {
+      "pc": "0x13d2040",
+      "bytes": "fd7bbea9",
+      "instruction": "stp x29, x30, [sp, #-0x20]!"
+    },
+    {
+      "pc": "0x13d2044",
+      "bytes": "fd030091",
+      "instruction": "mov x29, sp"
+    },
+    {
+      "pc": "0x13d2048",
+      "bytes": "f35301a9",
+      "instruction": "stp x19, x20, [sp, #0x10]"
+    },
+    {
+      "pc": "0x13d204c",
+      "bytes": "f303002a",
+      "instruction": "mov w19, w0"
+    },
+    {
+      "pc": "0x13d2050",
+      "bytes": "61a200b0",
+      "instruction": "adrp x1, #0x281f000"
+    },
+    {
+      "pc": "0x13d2054",
+      "bytes": "21c01e91",
+      "instruction": "add x1, x1, #0x7b0"
+    },
+    {
+      "pc": "0x13d2058",
+      "bytes": "21dc4191",
+      "instruction": "add x1, x1, #0x77, lsl #12"
+    },
+    {
+      "pc": "0x13d205c",
+      "bytes": "20907139",
+      "instruction": "ldrb w0, [x1, #0xc64]"
+    },
+    {
+      "pc": "0x13d2060",
+      "bytes": "a0010037",
+      "instruction": "tbnz w0, #0, #0x13d2094"
+    },
+    {
+      "pc": "0x13d2064",
+      "bytes": "20a100b0",
+      "instruction": "adrp x0, #0x27f7000"
+    },
+    {
+      "pc": "0x13d2068",
+      "bytes": "00544ab9",
+      "instruction": "ldr w0, [x0, #0xa54]"
+    },
+    {
+      "pc": "0x13d206c",
+      "bytes": "1f00136b",
+      "instruction": "cmp w0, w19"
+    },
+    {
+      "pc": "0x13d2070",
+      "bytes": "20010054",
+      "instruction": "b.eq #0x13d2094"
+    },
+    {
+      "pc": "0x13d2074",
+      "bytes": "21a10090",
+      "instruction": "adrp x1, #0x27f6000"
+    },
+    {
+      "pc": "0x13d2078",
+      "bytes": "21744039",
+      "instruction": "ldrb w1, [x1, #0x1d]"
+    },
+    {
+      "pc": "0x13d207c",
+      "bytes": "c1000036",
+      "instruction": "tbz w1, #0, #0x13d2094"
+    },
+    {
+      "pc": "0x13d2080",
+      "bytes": "61a200b0",
+      "instruction": "adrp x1, #0x281f000"
+    },
+    {
+      "pc": "0x13d2084",
+      "bytes": "21c01e91",
+      "instruction": "add x1, x1, #0x7b0"
+    },
+    {
+      "pc": "0x13d2088",
+      "bytes": "21d04191",
+      "instruction": "add x1, x1, #0x74, lsl #12"
+    },
+    {
+      "pc": "0x13d208c",
+      "bytes": "21607cb9",
+      "instruction": "ldr w1, [x1, #0x3c60]"
+    },
+    {
+      "pc": "0x13d2090",
+      "bytes": "c1000035",
+      "instruction": "cbnz w1, #0x13d20a8"
+    },
+    {
+      "pc": "0x13d2094",
+      "bytes": "20a100b0",
+      "instruction": "adrp x0, #0x27f7000"
+    },
+    {
+      "pc": "0x13d2098",
+      "bytes": "13540ab9",
+      "instruction": "str w19, [x0, #0xa54]"
+    },
+    {
+      "pc": "0x13d209c",
+      "bytes": "f35341a9",
+      "instruction": "ldp x19, x20, [sp, #0x10]"
+    },
+    {
+      "pc": "0x13d20a0",
+      "bytes": "fd7bc2a8",
+      "instruction": "ldp x29, x30, [sp], #0x20"
+    },
+    {
+      "pc": "0x13d20a4",
+      "bytes": "c0035fd6",
+      "instruction": "ret "
+    },
+    {
+      "pc": "0x162a408",
+      "bytes": "00c040b9",
+      "instruction": "ldr w0, [x0, #0xc0]"
+    },
+    {
+      "pc": "0x162a40c",
+      "bytes": "c0035fd6",
+      "instruction": "ret "
+    },
+    {
+      "pc": "0x162a410",
+      "bytes": "01c000b9",
+      "instruction": "str w1, [x0, #0xc0]"
+    },
+    {
+      "pc": "0x162a414",
+      "bytes": "c0035fd6",
+      "instruction": "ret "
+    },
+    {
+      "pc": "0x31501c0",
+      "bytes": "37008052",
+      "instruction": "mov w23, #1"
+    },
+    {
+      "pc": "0x31501c4",
+      "bytes": "772e01b9",
+      "instruction": "str w23, [x19, #0x12c]"
+    },
+    {
+      "pc": "0x31501c8",
+      "bytes": "812240b9",
+      "instruction": "ldr w1, [x20, #0x20]"
+    },
+    {
+      "pc": "0x31501cc",
+      "bytes": "60c20491",
+      "instruction": "add x0, x19, #0x130"
+    },
+    {
+      "pc": "0x31501d0",
+      "bytes": "45fbff97",
+      "instruction": "bl #0x314eee4"
+    },
+    {
+      "pc": "0x31501d4",
+      "bytes": "812240b9",
+      "instruction": "ldr w1, [x20, #0x20]"
+    },
+    {
+      "pc": "0x314f370",
+      "bytes": "fd7bbfa9",
+      "instruction": "stp x29, x30, [sp, #-0x10]!"
+    },
+    {
+      "pc": "0x314f374",
+      "bytes": "fd030091",
+      "instruction": "mov x29, sp"
+    },
+    {
+      "pc": "0x314f378",
+      "bytes": "00c00491",
+      "instruction": "add x0, x0, #0x130"
+    },
+    {
+      "pc": "0x314f37c",
+      "bytes": "dafeff97",
+      "instruction": "bl #0x314eee4"
+    },
+    {
+      "pc": "0x314f380",
+      "bytes": "fd7bc1a8",
+      "instruction": "ldp x29, x30, [sp], #0x10"
+    },
+    {
+      "pc": "0x314f384",
+      "bytes": "c0035fd6",
+      "instruction": "ret "
+    },
+    {
+      "pc": "0x314f388",
+      "bytes": "fd7bbea9",
+      "instruction": "stp x29, x30, [sp, #-0x20]!"
+    },
+    {
+      "pc": "0x314f38c",
+      "bytes": "fd030091",
+      "instruction": "mov x29, sp"
+    },
+    {
+      "pc": "0x314f390",
+      "bytes": "f35301a9",
+      "instruction": "stp x19, x20, [sp, #0x10]"
+    },
+    {
+      "pc": "0x314f394",
+      "bytes": "f40300aa",
+      "instruction": "mov x20, x0"
+    },
+    {
+      "pc": "0x314f398",
+      "bytes": "f303012a",
+      "instruction": "mov w19, w1"
+    },
+    {
+      "pc": "0x314f39c",
+      "bytes": "e103032a",
+      "instruction": "mov w1, w3"
+    },
+    {
+      "pc": "0x314f3a0",
+      "bytes": "e003022a",
+      "instruction": "mov w0, w2"
+    },
+    {
+      "pc": "0x314f3a4",
+      "bytes": "3990ff97",
+      "instruction": "bl #0x3133488"
+    },
+    {
+      "pc": "0x314f3a8",
+      "bytes": "82008052",
+      "instruction": "mov w2, #4"
+    },
+    {
+      "pc": "0x314f3ac",
+      "bytes": "40020034",
+      "instruction": "cbz w0, #0x314f3f4"
+    },
+    {
+      "pc": "0x314f3b0",
+      "bytes": "7f160071",
+      "instruction": "cmp w19, #5"
+    },
+    {
+      "pc": "0x314f3b4",
+      "bytes": "e0030054",
+      "instruction": "b.eq #0x314f430"
+    },
+    {
+      "pc": "0x314f3b8",
+      "bytes": "68020054",
+      "instruction": "b.hi #0x314f404"
+    },
+    {
+      "pc": "0x314f3bc",
+      "bytes": "c2008052",
+      "instruction": "mov w2, #6"
+    },
+    {
+      "pc": "0x314f3c0",
+      "bytes": "7f0a0071",
+      "instruction": "cmp w19, #2"
+    },
+    {
+      "pc": "0x314f3c4",
+      "bytes": "80010054",
+      "instruction": "b.eq #0x314f3f4"
+    },
+    {
+      "pc": "0x314f3c8",
+      "bytes": "a9000054",
+      "instruction": "b.ls #0x314f3dc"
+    },
+    {
+      "pc": "0x314f3cc",
+      "bytes": "7f0e0071",
+      "instruction": "cmp w19, #3"
+    },
+    {
+      "pc": "0x314f3d0",
+      "bytes": "e2179f1a",
+      "instruction": "cset w2, eq"
+    },
+    {
+      "pc": "0x314f3d4",
+      "bytes": "42100011",
+      "instruction": "add w2, w2, #4"
+    },
+    {
+      "pc": "0x314f3d8",
+      "bytes": "07000014",
+      "instruction": "b #0x314f3f4"
+    },
+    {
+      "pc": "0x314f3dc",
+      "bytes": "02018052",
+      "instruction": "mov w2, #8"
+    },
+    {
+      "pc": "0x314f3e0",
+      "bytes": "b3000034",
+      "instruction": "cbz w19, #0x314f3f4"
+    },
+    {
+      "pc": "0x314f3e4",
+      "bytes": "7f060071",
+      "instruction": "cmp w19, #1"
+    },
+    {
+      "pc": "0x314f3e8",
+      "bytes": "82008052",
+      "instruction": "mov w2, #4"
+    },
+    {
+      "pc": "0x314f3ec",
+      "bytes": "e0008052",
+      "instruction": "mov w0, #7"
+    },
+    {
+      "pc": "0x314f3f0",
+      "bytes": "4210801a",
+      "instruction": "csel w2, w2, w0, ne"
+    },
+    {
+      "pc": "0x314f3f4",
+      "bytes": "820200b9",
+      "instruction": "str w2, [x20]"
+    },
+    {
+      "pc": "0x314f3f8",
+      "bytes": "f35341a9",
+      "instruction": "ldp x19, x20, [sp, #0x10]"
+    },
+    {
+      "pc": "0x314f3fc",
+      "bytes": "fd7bc2a8",
+      "instruction": "ldp x29, x30, [sp], #0x20"
+    },
+    {
+      "pc": "0x314f400",
+      "bytes": "c0035fd6",
+      "instruction": "ret "
+    },
+    {
+      "pc": "0x314f404",
+      "bytes": "22008052",
+      "instruction": "mov w2, #1"
+    },
+    {
+      "pc": "0x314f408",
+      "bytes": "7f1e0071",
+      "instruction": "cmp w19, #7"
+    },
+    {
+      "pc": "0x314f40c",
+      "bytes": "40ffff54",
+      "instruction": "b.eq #0x314f3f4"
+    },
+    {
+      "pc": "0x314f410",
+      "bytes": "02008052",
+      "instruction": "mov w2, #0"
+    },
+    {
+      "pc": "0x314f414",
+      "bytes": "7f220071",
+      "instruction": "cmp w19, #8"
+    },
+    {
+      "pc": "0x314f418",
+      "bytes": "e0feff54",
+      "instruction": "b.eq #0x314f3f4"
+    },
+    {
+      "pc": "0x314f41c",
+      "bytes": "7f1a0071",
+      "instruction": "cmp w19, #6"
+    },
+    {
+      "pc": "0x314f420",
+      "bytes": "82008052",
+      "instruction": "mov w2, #4"
+    },
+    {
+      "pc": "0x314f424",
+      "bytes": "40008052",
+      "instruction": "mov w0, #2"
+    },
+    {
+      "pc": "0x314f428",
+      "bytes": "4210801a",
+      "instruction": "csel w2, w2, w0, ne"
+    },
+    {
+      "pc": "0x314f42c",
+      "bytes": "f2ffff17",
+      "instruction": "b #0x314f3f4"
+    },
+    {
+      "pc": "0x314f430",
+      "bytes": "62008052",
+      "instruction": "mov w2, #3"
+    },
+    {
+      "pc": "0x314f434",
+      "bytes": "f0ffff17",
+      "instruction": "b #0x314f3f4"
+    },
+    {
+      "pc": "0x314f438",
+      "bytes": "fd7bbfa9",
+      "instruction": "stp x29, x30, [sp, #-0x10]!"
+    }
+  ],
+  "limitations": [
+    "synthetic globals and structures",
+    "manual links state to frame and frame to processing",
+    "not physical registers or a camera"
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "source_sha256_before": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "source_sha256_after": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "method": "UI converter run separately; researcher writes output to artificial params+0x39b4 and artificial mode/gate; caller 0x2e552a4 invokes 0x2e51064 and stores output+0x9a. JPEG comparison is external correlation, not actual camera execution or proof of serializer.",
+  "input_mode": 19,
+  "input_gate": 2,
+  "rows": [
+    {
+      "ui_index": 0,
+      "table_fourth_field_tenths": 40,
+      "mode_representation_3": 0,
+      "converter_error": 0,
+      "output_0x9a": 224,
+      "output_0x9a_hex": "0x00e0"
+    },
+    {
+      "ui_index": 1,
+      "table_fourth_field_tenths": 30,
+      "mode_representation_3": 1,
+      "converter_error": 0,
+      "output_0x9a": 192,
+      "output_0x9a_hex": "0x00c0"
+    },
+    {
+      "ui_index": 2,
+      "table_fourth_field_tenths": 20,
+      "mode_representation_3": 2,
+      "converter_error": 0,
+      "output_0x9a": 256,
+      "output_0x9a_hex": "0x0100"
+    },
+    {
+      "ui_index": 3,
+      "table_fourth_field_tenths": 10,
+      "mode_representation_3": 3,
+      "converter_error": 0,
+      "output_0x9a": 128,
+      "output_0x9a_hex": "0x0080"
+    },
+    {
+      "ui_index": 4,
+      "table_fourth_field_tenths": 0,
+      "mode_representation_3": 4,
+      "converter_error": 0,
+      "output_0x9a": 0,
+      "output_0x9a_hex": "0x0000"
+    },
+    {
+      "ui_index": 5,
+      "table_fourth_field_tenths": -10,
+      "mode_representation_3": 5,
+      "converter_error": 0,
+      "output_0x9a": 384,
+      "output_0x9a_hex": "0x0180"
+    },
+    {
+      "ui_index": 6,
+      "table_fourth_field_tenths": -20,
+      "mode_representation_3": 6,
+      "converter_error": 0,
+      "output_0x9a": 1024,
+      "output_0x9a_hex": "0x0400"
+    },
+    {
+      "ui_index": 7,
+      "table_fourth_field_tenths": -30,
+      "mode_representation_3": 7,
+      "converter_error": 0,
+      "output_0x9a": 1216,
+      "output_0x9a_hex": "0x04c0"
+    },
+    {
+      "ui_index": 8,
+      "table_fourth_field_tenths": -40,
+      "mode_representation_3": 8,
+      "converter_error": 0,
+      "output_0x9a": 1248,
+      "output_0x9a_hex": "0x04e0"
+    }
+  ],
+  "negative_controls": [
+    {
+      "gate": 2,
+      "mode": 19,
+      "color": 3,
+      "output": 128
+    },
+    {
+      "gate": 2,
+      "mode": 19,
+      "color": 4,
+      "output": 0
+    },
+    {
+      "gate": 2,
+      "mode": 19,
+      "color": 2,
+      "output": 256
+    },
+    {
+      "gate": 2,
+      "mode": 4,
+      "color": 3,
+      "output": 768
+    },
+    {
+      "gate": 46,
+      "mode": 19,
+      "color": 3,
+      "output": 65535
+    },
+    {
+      "gate": 2,
+      "mode": 19,
+      "color": 9,
+      "output": 0
+    },
+    {
+      "gate": 45,
+      "mode": 19,
+      "color": 3,
+      "output": 128
+    }
+  ],
+  "camera_jpeg_tag_0x1003": {
+    "DSCF0300.JPG": 128,
+    "DSCF0301.JPG": 0,
+    "DSCF0302.JPG": 256
+  },
+  "metadata_source": "Последовательное_исследование\\Этап_1\\Байты_MakerNote\\байты.json"
+}

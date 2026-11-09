@@ -1,0 +1,355 @@
+{
+  "sha256_before": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "sha256_after": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "decoded_blocks": [
+    {
+      "fflz_file_offset": "0x300274",
+      "virtual_base": "0x1101000",
+      "length": 12042160,
+      "sha256": "3aacc331157312a03531266cd9aca0daea28597b9f3535bb6141105ad7354b4d"
+    },
+    {
+      "fflz_file_offset": "0x840274",
+      "virtual_base": "0x29ae000",
+      "length": 15515648,
+      "sha256": "a49b88c00d3724239207e6564f2dfbf9d0a59b41962012d44a05738455d2addd"
+    }
+  ],
+  "ui_to_representation_3": [
+    {
+      "ui": 14,
+      "mode": 13,
+      "error": 0
+    },
+    {
+      "ui": 15,
+      "mode": 19,
+      "error": 0
+    },
+    {
+      "ui": 17,
+      "mode": 22,
+      "error": 0
+    },
+    {
+      "ui": 0,
+      "mode": 0,
+      "error": 0
+    },
+    {
+      "ui": 25,
+      "mode": 0,
+      "error": 1
+    },
+    {
+      "ui": 26,
+      "mode": 0,
+      "error": 1
+    },
+    {
+      "ui": 100,
+      "mode": 0,
+      "error": 1
+    }
+  ],
+  "artificial_memory_cases": [
+    {
+      "field_3978": 2,
+      "field_39b8": 0,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x0"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 1,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x120"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 2,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x0"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 3,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x200"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 4,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0xffff"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 5,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0xffff"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 6,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x0"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 7,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0xffff"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 8,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0xffff"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 9,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0xffff"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 10,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0xffff"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 11,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x500"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 12,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x501"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 13,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x600"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 14,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0xffff"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 15,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0xffff"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 16,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0xffff"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 17,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0xffff"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 18,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x700"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 19,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x800"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 20,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x900"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 21,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0xa00"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 22,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0xb00"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 23,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x0"
+    },
+    {
+      "field_3978": 2,
+      "field_39b8": 24,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x0"
+    },
+    {
+      "field_3978": 0,
+      "field_39b8": 19,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x800"
+    },
+    {
+      "field_3978": 45,
+      "field_39b8": 19,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0x800"
+    },
+    {
+      "field_3978": 45,
+      "field_39b8": 19,
+      "field_3974": 1,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0xffff"
+    },
+    {
+      "field_3978": 45,
+      "field_39b8": 19,
+      "field_3974": 0,
+      "field_3f58": 1,
+      "field_3f88": 0,
+      "return": "0x0"
+    },
+    {
+      "field_3978": 45,
+      "field_39b8": 19,
+      "field_3974": 0,
+      "field_3f58": 1,
+      "field_3f88": 1,
+      "return": "0x800"
+    },
+    {
+      "field_3978": 46,
+      "field_39b8": 19,
+      "field_3974": 0,
+      "field_3f58": 0,
+      "field_3f88": 0,
+      "return": "0xffff"
+    }
+  ],
+  "direct_bl_calls": [
+    [
+      "0x29ae000",
+      "0x2e537cc"
+    ],
+    [
+      "0x29ae000",
+      "0x2e5540c"
+    ]
+  ],
+  "store_instruction_candidates_count": 82,
+  "scope": "Aligned BL and STR W immediate scanned in both decoded blocks, including data; indirect calls and other encodings not covered; candidates not automatically classified.",
+  "artificial_joined_chain": [
+    {
+      "ui": 14,
+      "mode": 13,
+      "frame_c0": 13,
+      "params_39b8": 13,
+      "gate_3978": 2,
+      "output_190": "0x600",
+      "valid_18c": 1
+    },
+    {
+      "ui": 15,
+      "mode": 19,
+      "frame_c0": 19,
+      "params_39b8": 19,
+      "gate_3978": 2,
+      "output_190": "0x800",
+      "valid_18c": 1
+    },
+    {
+      "ui": 17,
+      "mode": 22,
+      "frame_c0": 22,
+      "params_39b8": 22,
+      "gate_3978": 2,
+      "output_190": "0xb00",
+      "valid_18c": 1
+    },
+    {
+      "ui": 0,
+      "mode": 0,
+      "frame_c0": 0,
+      "params_39b8": 0,
+      "gate_3978": 2,
+      "output_190": "0x0",
+      "valid_18c": 1
+    }
+  ]
+}

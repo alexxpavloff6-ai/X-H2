@@ -1,0 +1,1254 @@
+{
+  "X-H2": {
+    "source_sha256_before": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+    "source_sha256_after": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+    "decoded_blocks_sha256": [
+      "3aacc331157312a03531266cd9aca0daea28597b9f3535bb6141105ad7354b4d",
+      "a49b88c00d3724239207e6564f2dfbf9d0a59b41962012d44a05738455d2addd"
+    ],
+    "selector_function": "0x2f24284",
+    "calculate_function": "0x2f24680",
+    "settings_image_dat_offset": "0xc0274",
+    "modes": [
+      {
+        "mode": 13,
+        "firmware_name": "CLASSIC_CHROME",
+        "translator": "0x2f38c30",
+        "translated_code": 8,
+        "selector_result": 6,
+        "context": {
+          "0x100": 0,
+          "0x12c": 1,
+          "0x130": 8,
+          "0x124": 18,
+          "0x128": 18,
+          "0x13c": 4,
+          "0x10c": 8,
+          "0x17c": 2
+        },
+        "values": [
+          {
+            "artificial_index": 0,
+            "four_signed16": [
+              705,
+              -8,
+              684,
+              -10
+            ]
+          },
+          {
+            "artificial_index": 1,
+            "four_signed16": [
+              753,
+              -9,
+              731,
+              -11
+            ]
+          },
+          {
+            "artificial_index": 2,
+            "four_signed16": [
+              795,
+              -9,
+              771,
+              -11
+            ]
+          },
+          {
+            "artificial_index": 3,
+            "four_signed16": [
+              843,
+              -10,
+              818,
+              -12
+            ]
+          },
+          {
+            "artificial_index": 4,
+            "four_signed16": [
+              885,
+              -10,
+              859,
+              -12
+            ]
+          },
+          {
+            "artificial_index": 5,
+            "four_signed16": [
+              926,
+              -11,
+              899,
+              -13
+            ]
+          },
+          {
+            "artificial_index": 6,
+            "four_signed16": [
+              974,
+              -12,
+              946,
+              -14
+            ]
+          },
+          {
+            "artificial_index": 7,
+            "four_signed16": [
+              1016,
+              -12,
+              986,
+              -14
+            ]
+          },
+          {
+            "artificial_index": 8,
+            "four_signed16": [
+              1064,
+              -13,
+              1033,
+              -15
+            ]
+          }
+        ]
+      },
+      {
+        "mode": 19,
+        "firmware_name": "SUPERIA",
+        "translator": "0x2f38c30",
+        "translated_code": 10,
+        "selector_result": 8,
+        "context": {
+          "0x100": 0,
+          "0x12c": 1,
+          "0x130": 10,
+          "0x124": 18,
+          "0x128": 18,
+          "0x13c": 4,
+          "0x10c": 8,
+          "0x17c": 2
+        },
+        "values": [
+          {
+            "artificial_index": 0,
+            "four_signed16": [
+              595,
+              32,
+              525,
+              -238
+            ]
+          },
+          {
+            "artificial_index": 1,
+            "four_signed16": [
+              636,
+              34,
+              562,
+              -254
+            ]
+          },
+          {
+            "artificial_index": 2,
+            "four_signed16": [
+              671,
+              36,
+              592,
+              -268
+            ]
+          },
+          {
+            "artificial_index": 3,
+            "four_signed16": [
+              711,
+              39,
+              629,
+              -285
+            ]
+          },
+          {
+            "artificial_index": 4,
+            "four_signed16": [
+              747,
+              41,
+              660,
+              -298
+            ]
+          },
+          {
+            "artificial_index": 5,
+            "four_signed16": [
+              782,
+              42,
+              690,
+              -312
+            ]
+          },
+          {
+            "artificial_index": 6,
+            "four_signed16": [
+              822,
+              45,
+              727,
+              -329
+            ]
+          },
+          {
+            "artificial_index": 7,
+            "four_signed16": [
+              857,
+              47,
+              757,
+              -343
+            ]
+          },
+          {
+            "artificial_index": 8,
+            "four_signed16": [
+              898,
+              49,
+              794,
+              -359
+            ]
+          }
+        ]
+      },
+      {
+        "mode": 22,
+        "firmware_name": "REALA",
+        "translator": "0x2f38c30",
+        "translated_code": 13,
+        "selector_result": 16,
+        "context": {
+          "0x100": 0,
+          "0x12c": 1,
+          "0x130": 13,
+          "0x124": 18,
+          "0x128": 18,
+          "0x13c": 4,
+          "0x10c": 8,
+          "0x17c": 2
+        },
+        "values": [
+          {
+            "artificial_index": 0,
+            "four_signed16": [
+              855,
+              -17,
+              1172,
+              112
+            ]
+          },
+          {
+            "artificial_index": 1,
+            "four_signed16": [
+              914,
+              -18,
+              1252,
+              120
+            ]
+          },
+          {
+            "artificial_index": 2,
+            "four_signed16": [
+              964,
+              -19,
+              1321,
+              126
+            ]
+          },
+          {
+            "artificial_index": 3,
+            "four_signed16": [
+              1023,
+              -21,
+              1402,
+              134
+            ]
+          },
+          {
+            "artificial_index": 4,
+            "four_signed16": [
+              1074,
+              -21,
+              1471,
+              141
+            ]
+          },
+          {
+            "artificial_index": 5,
+            "four_signed16": [
+              1124,
+              -22,
+              1539,
+              147
+            ]
+          },
+          {
+            "artificial_index": 6,
+            "four_signed16": [
+              1183,
+              -24,
+              1620,
+              155
+            ]
+          },
+          {
+            "artificial_index": 7,
+            "four_signed16": [
+              1233,
+              -25,
+              1689,
+              161
+            ]
+          },
+          {
+            "artificial_index": 8,
+            "four_signed16": [
+              1292,
+              -26,
+              1769,
+              169
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "X-H2S": {
+    "source_sha256_before": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+    "source_sha256_after": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+    "decoded_blocks_sha256": [
+      "a32a90b7efefaebcf3b9c3f076cb23f82c1f4dda45bf828a024487fc0fb06c16",
+      "86c8c9f01ae6840f791bffea050e8442ff9e967b6b7cbbb7f9d8141dd41d764f"
+    ],
+    "selector_function": "0x323b004",
+    "calculate_function": "0x323b400",
+    "settings_image_dat_offset": "0xc0274",
+    "modes": [
+      {
+        "mode": 13,
+        "firmware_name": "CLASSIC_CHROME",
+        "translator": "0x324f9a8",
+        "translated_code": 8,
+        "selector_result": 6,
+        "context": {
+          "0x100": 0,
+          "0x12c": 1,
+          "0x130": 8,
+          "0x124": 18,
+          "0x128": 18,
+          "0x13c": 4,
+          "0x10c": 8,
+          "0x17c": 2
+        },
+        "values": [
+          {
+            "artificial_index": 0,
+            "four_signed16": [
+              690,
+              -22,
+              793,
+              54
+            ]
+          },
+          {
+            "artificial_index": 1,
+            "four_signed16": [
+              737,
+              -23,
+              848,
+              58
+            ]
+          },
+          {
+            "artificial_index": 2,
+            "four_signed16": [
+              778,
+              -25,
+              894,
+              61
+            ]
+          },
+          {
+            "artificial_index": 3,
+            "four_signed16": [
+              825,
+              -26,
+              949,
+              65
+            ]
+          },
+          {
+            "artificial_index": 4,
+            "four_signed16": [
+              866,
+              -27,
+              996,
+              69
+            ]
+          },
+          {
+            "artificial_index": 5,
+            "four_signed16": [
+              906,
+              -29,
+              1042,
+              72
+            ]
+          },
+          {
+            "artificial_index": 6,
+            "four_signed16": [
+              953,
+              -30,
+              1097,
+              76
+            ]
+          },
+          {
+            "artificial_index": 7,
+            "four_signed16": [
+              994,
+              -32,
+              1143,
+              79
+            ]
+          },
+          {
+            "artificial_index": 8,
+            "four_signed16": [
+              1041,
+              -33,
+              1198,
+              83
+            ]
+          }
+        ]
+      },
+      {
+        "mode": 19,
+        "firmware_name": "SUPERIA",
+        "translator": "0x324f9a8",
+        "translated_code": 10,
+        "selector_result": 8,
+        "context": {
+          "0x100": 0,
+          "0x12c": 1,
+          "0x130": 10,
+          "0x124": 18,
+          "0x128": 18,
+          "0x13c": 4,
+          "0x10c": 8,
+          "0x17c": 2
+        },
+        "values": [
+          {
+            "artificial_index": 0,
+            "four_signed16": [
+              586,
+              21,
+              594,
+              -205
+            ]
+          },
+          {
+            "artificial_index": 1,
+            "four_signed16": [
+              626,
+              22,
+              635,
+              -219
+            ]
+          },
+          {
+            "artificial_index": 2,
+            "four_signed16": [
+              661,
+              24,
+              670,
+              -231
+            ]
+          },
+          {
+            "artificial_index": 3,
+            "four_signed16": [
+              701,
+              25,
+              711,
+              -245
+            ]
+          },
+          {
+            "artificial_index": 4,
+            "four_signed16": [
+              736,
+              27,
+              746,
+              -257
+            ]
+          },
+          {
+            "artificial_index": 5,
+            "four_signed16": [
+              770,
+              28,
+              780,
+              -270
+            ]
+          },
+          {
+            "artificial_index": 6,
+            "four_signed16": [
+              810,
+              29,
+              821,
+              -284
+            ]
+          },
+          {
+            "artificial_index": 7,
+            "four_signed16": [
+              845,
+              31,
+              856,
+              -296
+            ]
+          },
+          {
+            "artificial_index": 8,
+            "four_signed16": [
+              885,
+              32,
+              897,
+              -310
+            ]
+          }
+        ]
+      },
+      {
+        "mode": 22,
+        "firmware_name": "REALA",
+        "translator": "0x324f9a8",
+        "translated_code": 13,
+        "selector_result": 16,
+        "context": {
+          "0x100": 0,
+          "0x12c": 1,
+          "0x130": 13,
+          "0x124": 18,
+          "0x128": 18,
+          "0x13c": 4,
+          "0x10c": 8,
+          "0x17c": 2
+        },
+        "values": [
+          {
+            "artificial_index": 0,
+            "four_signed16": [
+              851,
+              -7,
+              1165,
+              120
+            ]
+          },
+          {
+            "artificial_index": 1,
+            "four_signed16": [
+              909,
+              -7,
+              1245,
+              128
+            ]
+          },
+          {
+            "artificial_index": 2,
+            "four_signed16": [
+              959,
+              -8,
+              1314,
+              135
+            ]
+          },
+          {
+            "artificial_index": 3,
+            "four_signed16": [
+              1017,
+              -8,
+              1394,
+              143
+            ]
+          },
+          {
+            "artificial_index": 4,
+            "four_signed16": [
+              1068,
+              -8,
+              1463,
+              151
+            ]
+          },
+          {
+            "artificial_index": 5,
+            "four_signed16": [
+              1118,
+              -9,
+              1531,
+              158
+            ]
+          },
+          {
+            "artificial_index": 6,
+            "four_signed16": [
+              1176,
+              -9,
+              1611,
+              166
+            ]
+          },
+          {
+            "artificial_index": 7,
+            "four_signed16": [
+              1226,
+              -10,
+              1680,
+              173
+            ]
+          },
+          {
+            "artificial_index": 8,
+            "four_signed16": [
+              1284,
+              -10,
+              1760,
+              181
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "X-T5": {
+    "source_sha256_before": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+    "source_sha256_after": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+    "decoded_blocks_sha256": [
+      "fd5f899217a833552f135d719d22e025aea2e0780b2fd1f8c66b353ead969724",
+      "d74dba337fe4078a6ee15ca5fddba7e502bdefb980825a09a15f9b13a01eb350"
+    ],
+    "selector_function": "0x2e5f410",
+    "calculate_function": "0x2e5f7dc",
+    "settings_image_dat_offset": "0xc0274",
+    "modes": [
+      {
+        "mode": 13,
+        "firmware_name": "CLASSIC_CHROME",
+        "translator": "0x2e73f2c",
+        "translated_code": 8,
+        "selector_result": 6,
+        "context": {
+          "0x100": 0,
+          "0x12c": 1,
+          "0x130": 8,
+          "0x124": 18,
+          "0x128": 18,
+          "0x13c": 4,
+          "0x10c": 8,
+          "0x17c": 2
+        },
+        "values": [
+          {
+            "artificial_index": 0,
+            "four_signed16": [
+              705,
+              -8,
+              684,
+              -10
+            ]
+          },
+          {
+            "artificial_index": 1,
+            "four_signed16": [
+              753,
+              -9,
+              731,
+              -11
+            ]
+          },
+          {
+            "artificial_index": 2,
+            "four_signed16": [
+              795,
+              -9,
+              771,
+              -11
+            ]
+          },
+          {
+            "artificial_index": 3,
+            "four_signed16": [
+              843,
+              -10,
+              818,
+              -12
+            ]
+          },
+          {
+            "artificial_index": 4,
+            "four_signed16": [
+              885,
+              -10,
+              859,
+              -12
+            ]
+          },
+          {
+            "artificial_index": 5,
+            "four_signed16": [
+              926,
+              -11,
+              899,
+              -13
+            ]
+          },
+          {
+            "artificial_index": 6,
+            "four_signed16": [
+              974,
+              -12,
+              946,
+              -14
+            ]
+          },
+          {
+            "artificial_index": 7,
+            "four_signed16": [
+              1016,
+              -12,
+              986,
+              -14
+            ]
+          },
+          {
+            "artificial_index": 8,
+            "four_signed16": [
+              1064,
+              -13,
+              1033,
+              -15
+            ]
+          }
+        ]
+      },
+      {
+        "mode": 19,
+        "firmware_name": "SUPERIA",
+        "translator": "0x2e73f2c",
+        "translated_code": 10,
+        "selector_result": 8,
+        "context": {
+          "0x100": 0,
+          "0x12c": 1,
+          "0x130": 10,
+          "0x124": 18,
+          "0x128": 18,
+          "0x13c": 4,
+          "0x10c": 8,
+          "0x17c": 2
+        },
+        "values": [
+          {
+            "artificial_index": 0,
+            "four_signed16": [
+              595,
+              32,
+              525,
+              -238
+            ]
+          },
+          {
+            "artificial_index": 1,
+            "four_signed16": [
+              636,
+              34,
+              562,
+              -254
+            ]
+          },
+          {
+            "artificial_index": 2,
+            "four_signed16": [
+              671,
+              36,
+              592,
+              -268
+            ]
+          },
+          {
+            "artificial_index": 3,
+            "four_signed16": [
+              711,
+              39,
+              629,
+              -285
+            ]
+          },
+          {
+            "artificial_index": 4,
+            "four_signed16": [
+              747,
+              41,
+              660,
+              -298
+            ]
+          },
+          {
+            "artificial_index": 5,
+            "four_signed16": [
+              782,
+              42,
+              690,
+              -312
+            ]
+          },
+          {
+            "artificial_index": 6,
+            "four_signed16": [
+              822,
+              45,
+              727,
+              -329
+            ]
+          },
+          {
+            "artificial_index": 7,
+            "four_signed16": [
+              857,
+              47,
+              757,
+              -343
+            ]
+          },
+          {
+            "artificial_index": 8,
+            "four_signed16": [
+              898,
+              49,
+              794,
+              -359
+            ]
+          }
+        ]
+      },
+      {
+        "mode": 22,
+        "firmware_name": "REALA",
+        "translator": "0x2e73f2c",
+        "translated_code": 13,
+        "selector_result": 16,
+        "context": {
+          "0x100": 0,
+          "0x12c": 1,
+          "0x130": 13,
+          "0x124": 18,
+          "0x128": 18,
+          "0x13c": 4,
+          "0x10c": 8,
+          "0x17c": 2
+        },
+        "values": [
+          {
+            "artificial_index": 0,
+            "four_signed16": [
+              855,
+              -17,
+              1172,
+              112
+            ]
+          },
+          {
+            "artificial_index": 1,
+            "four_signed16": [
+              914,
+              -18,
+              1252,
+              120
+            ]
+          },
+          {
+            "artificial_index": 2,
+            "four_signed16": [
+              964,
+              -19,
+              1321,
+              126
+            ]
+          },
+          {
+            "artificial_index": 3,
+            "four_signed16": [
+              1023,
+              -21,
+              1402,
+              134
+            ]
+          },
+          {
+            "artificial_index": 4,
+            "four_signed16": [
+              1074,
+              -21,
+              1471,
+              141
+            ]
+          },
+          {
+            "artificial_index": 5,
+            "four_signed16": [
+              1124,
+              -22,
+              1539,
+              147
+            ]
+          },
+          {
+            "artificial_index": 6,
+            "four_signed16": [
+              1183,
+              -24,
+              1620,
+              155
+            ]
+          },
+          {
+            "artificial_index": 7,
+            "four_signed16": [
+              1233,
+              -25,
+              1689,
+              161
+            ]
+          },
+          {
+            "artificial_index": 8,
+            "four_signed16": [
+              1292,
+              -26,
+              1769,
+              169
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "X100VI": {
+    "source_sha256_before": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+    "source_sha256_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+    "decoded_blocks_sha256": [
+      "77456fe5c9808ce5e638b1a5f6f12d9e8e40c1751e1f9b4640134fde662e09d4",
+      "14b0557bd724fa74b51ff641fcd5481da5b3ac64146d4fc69375086dafcfb174"
+    ],
+    "selector_function": "0x313a1c0",
+    "calculate_function": "0x313a590",
+    "settings_image_dat_offset": "0x6602bc",
+    "modes": [
+      {
+        "mode": 13,
+        "firmware_name": "CLASSIC_CHROME",
+        "translator": "0x314eee4",
+        "translated_code": 8,
+        "selector_result": 6,
+        "context": {
+          "0x100": 0,
+          "0x12c": 1,
+          "0x130": 8,
+          "0x124": 18,
+          "0x128": 18,
+          "0x13c": 4,
+          "0x10c": 8,
+          "0x17c": 2
+        },
+        "values": [
+          {
+            "artificial_index": 0,
+            "four_signed16": [
+              705,
+              -8,
+              684,
+              -10
+            ]
+          },
+          {
+            "artificial_index": 1,
+            "four_signed16": [
+              753,
+              -9,
+              731,
+              -11
+            ]
+          },
+          {
+            "artificial_index": 2,
+            "four_signed16": [
+              795,
+              -9,
+              771,
+              -11
+            ]
+          },
+          {
+            "artificial_index": 3,
+            "four_signed16": [
+              843,
+              -10,
+              818,
+              -12
+            ]
+          },
+          {
+            "artificial_index": 4,
+            "four_signed16": [
+              885,
+              -10,
+              859,
+              -12
+            ]
+          },
+          {
+            "artificial_index": 5,
+            "four_signed16": [
+              926,
+              -11,
+              899,
+              -13
+            ]
+          },
+          {
+            "artificial_index": 6,
+            "four_signed16": [
+              974,
+              -12,
+              946,
+              -14
+            ]
+          },
+          {
+            "artificial_index": 7,
+            "four_signed16": [
+              1016,
+              -12,
+              986,
+              -14
+            ]
+          },
+          {
+            "artificial_index": 8,
+            "four_signed16": [
+              1064,
+              -13,
+              1033,
+              -15
+            ]
+          }
+        ]
+      },
+      {
+        "mode": 19,
+        "firmware_name": "SUPERIA",
+        "translator": "0x314eee4",
+        "translated_code": 10,
+        "selector_result": 8,
+        "context": {
+          "0x100": 0,
+          "0x12c": 1,
+          "0x130": 10,
+          "0x124": 18,
+          "0x128": 18,
+          "0x13c": 4,
+          "0x10c": 8,
+          "0x17c": 2
+        },
+        "values": [
+          {
+            "artificial_index": 0,
+            "four_signed16": [
+              595,
+              32,
+              525,
+              -238
+            ]
+          },
+          {
+            "artificial_index": 1,
+            "four_signed16": [
+              636,
+              34,
+              562,
+              -254
+            ]
+          },
+          {
+            "artificial_index": 2,
+            "four_signed16": [
+              671,
+              36,
+              592,
+              -268
+            ]
+          },
+          {
+            "artificial_index": 3,
+            "four_signed16": [
+              711,
+              39,
+              629,
+              -285
+            ]
+          },
+          {
+            "artificial_index": 4,
+            "four_signed16": [
+              747,
+              41,
+              660,
+              -298
+            ]
+          },
+          {
+            "artificial_index": 5,
+            "four_signed16": [
+              782,
+              42,
+              690,
+              -312
+            ]
+          },
+          {
+            "artificial_index": 6,
+            "four_signed16": [
+              822,
+              45,
+              727,
+              -329
+            ]
+          },
+          {
+            "artificial_index": 7,
+            "four_signed16": [
+              857,
+              47,
+              757,
+              -343
+            ]
+          },
+          {
+            "artificial_index": 8,
+            "four_signed16": [
+              898,
+              49,
+              794,
+              -359
+            ]
+          }
+        ]
+      },
+      {
+        "mode": 22,
+        "firmware_name": "REALA",
+        "translator": "0x314eee4",
+        "translated_code": 13,
+        "selector_result": 16,
+        "context": {
+          "0x100": 0,
+          "0x12c": 1,
+          "0x130": 13,
+          "0x124": 18,
+          "0x128": 18,
+          "0x13c": 4,
+          "0x10c": 8,
+          "0x17c": 2
+        },
+        "values": [
+          {
+            "artificial_index": 0,
+            "four_signed16": [
+              855,
+              -17,
+              1172,
+              112
+            ]
+          },
+          {
+            "artificial_index": 1,
+            "four_signed16": [
+              914,
+              -18,
+              1252,
+              120
+            ]
+          },
+          {
+            "artificial_index": 2,
+            "four_signed16": [
+              964,
+              -19,
+              1321,
+              126
+            ]
+          },
+          {
+            "artificial_index": 3,
+            "four_signed16": [
+              1023,
+              -21,
+              1402,
+              134
+            ]
+          },
+          {
+            "artificial_index": 4,
+            "four_signed16": [
+              1074,
+              -21,
+              1471,
+              141
+            ]
+          },
+          {
+            "artificial_index": 5,
+            "four_signed16": [
+              1124,
+              -22,
+              1539,
+              147
+            ]
+          },
+          {
+            "artificial_index": 6,
+            "four_signed16": [
+              1183,
+              -24,
+              1620,
+              155
+            ]
+          },
+          {
+            "artificial_index": 7,
+            "four_signed16": [
+              1233,
+              -25,
+              1689,
+              161
+            ]
+          },
+          {
+            "artificial_index": 8,
+            "four_signed16": [
+              1292,
+              -26,
+              1769,
+              169
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

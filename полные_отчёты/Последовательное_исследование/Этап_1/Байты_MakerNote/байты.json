@@ -1,0 +1,975 @@
+{
+  "description": "JPEG APP1 EXIF -> TIFF IFD0 -> ExifIFD 0x927c -> Fuji MakerNote IFD. RAF metadata here is from embedded JPEG only. Values are stored bytes; tags do not prove execution path or pixel processing.",
+  "source": "https://exiftool.org/TagNames/FujiFilm.html",
+  "files": [
+    {
+      "file": "DSCF0292.RAF",
+      "kind": "RAF_embedded_JPEG",
+      "sha256_before": "e5a316d50d5c1f0ec3fd84d200bf82646090f9cd8ab55e29c7cbd1462f46bfb2",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000000000000",
+          "value": 0
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "401009000100000000000000",
+          "value": 0
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "411009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000020000000",
+          "value": 32
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "011403000100000000060000",
+          "value": 1536
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000000000000",
+          "value": 0
+        }
+      },
+      "sha256_after": "e5a316d50d5c1f0ec3fd84d200bf82646090f9cd8ab55e29c7cbd1462f46bfb2"
+    },
+    {
+      "file": "DSCF0292.JPG",
+      "kind": "camera_JPEG",
+      "sha256_before": "5cb365b79963fdfafb06d3383397e3e8201c30ab084ce539b69464c8518fc200",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000000000000",
+          "value": 0
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "401009000100000000000000",
+          "value": 0
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "411009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000020000000",
+          "value": 32
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "011403000100000000060000",
+          "value": 1536
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000000000000",
+          "value": 0
+        }
+      },
+      "sha256_after": "5cb365b79963fdfafb06d3383397e3e8201c30ab084ce539b69464c8518fc200"
+    },
+    {
+      "file": "DSCF0293.RAF",
+      "kind": "RAF_embedded_JPEG",
+      "sha256_before": "0a4a3acc20541f1c4b1b689130d365d948842331c5c157e64b6c0f65fc4b2dec",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000000010000",
+          "value": 256
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "401009000100000000000000",
+          "value": 0
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "411009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000020000000",
+          "value": 32
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "011403000100000000060000",
+          "value": 1536
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000000000000",
+          "value": 0
+        }
+      },
+      "sha256_after": "0a4a3acc20541f1c4b1b689130d365d948842331c5c157e64b6c0f65fc4b2dec"
+    },
+    {
+      "file": "DSCF0293.JPG",
+      "kind": "camera_JPEG",
+      "sha256_before": "59a333a484f4f5ed81decc930af67d600b2a379328c07669eced2fa7e987f88c",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000000010000",
+          "value": 256
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "401009000100000000000000",
+          "value": 0
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "411009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000020000000",
+          "value": 32
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "011403000100000000060000",
+          "value": 1536
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000000000000",
+          "value": 0
+        }
+      },
+      "sha256_after": "59a333a484f4f5ed81decc930af67d600b2a379328c07669eced2fa7e987f88c"
+    },
+    {
+      "file": "DSCF0294.RAF",
+      "kind": "RAF_embedded_JPEG",
+      "sha256_before": "e15dc41569eb54493eb9856cf624886efdbfa4be1798c44777c1df2adeaa8007",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000000010000",
+          "value": 256
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "401009000100000000000000",
+          "value": 0
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "411009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000020000000",
+          "value": 32
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "011403000100000000060000",
+          "value": 1536
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000000000000",
+          "value": 0
+        }
+      },
+      "sha256_after": "e15dc41569eb54493eb9856cf624886efdbfa4be1798c44777c1df2adeaa8007"
+    },
+    {
+      "file": "DSCF0294.JPG",
+      "kind": "camera_JPEG",
+      "sha256_before": "c63fb478d4b33a520cff689cabb51c5b386ed9b1eae60dcd1016447e5cdc5387",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000000010000",
+          "value": 256
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "401009000100000000000000",
+          "value": 0
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "411009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000020000000",
+          "value": 32
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "011403000100000000060000",
+          "value": 1536
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000000000000",
+          "value": 0
+        }
+      },
+      "sha256_after": "c63fb478d4b33a520cff689cabb51c5b386ed9b1eae60dcd1016447e5cdc5387"
+    },
+    {
+      "file": "DSCF0295.RAF",
+      "kind": "RAF_embedded_JPEG",
+      "sha256_before": "18e3ce61495be626e575144747fb694d66072b9129fdae65dadf2ff19f1cee4e",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000000000000",
+          "value": 0
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "401009000100000000000000",
+          "value": 0
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "411009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000020000000",
+          "value": 32
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "011403000100000000060000",
+          "value": 1536
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000000000000",
+          "value": 0
+        }
+      },
+      "sha256_after": "18e3ce61495be626e575144747fb694d66072b9129fdae65dadf2ff19f1cee4e"
+    },
+    {
+      "file": "DSCF0295.JPG",
+      "kind": "camera_JPEG",
+      "sha256_before": "d0f735c340fc849af6a81ad01918e3aab06ab1efcf177ab1e8f405a00d686be6",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000000000000",
+          "value": 0
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "401009000100000000000000",
+          "value": 0
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "411009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000020000000",
+          "value": 32
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "011403000100000000060000",
+          "value": 1536
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000000000000",
+          "value": 0
+        }
+      },
+      "sha256_after": "d0f735c340fc849af6a81ad01918e3aab06ab1efcf177ab1e8f405a00d686be6"
+    },
+    {
+      "file": "DSCF0296.RAF",
+      "kind": "RAF_embedded_JPEG",
+      "sha256_before": "adff97c88d4c12b097c79f69ff61d93e2cbd023bc751da1446c1b5bc0260e986",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000080000000",
+          "value": 128
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4010090001000000f8ffffff",
+          "value": -8
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4110090001000000e8ffffff",
+          "value": -24
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000040000000",
+          "value": 64
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000040000000",
+          "value": 64
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "011403000100000000080000",
+          "value": 2048
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000000000000",
+          "value": 0
+        }
+      },
+      "sha256_after": "adff97c88d4c12b097c79f69ff61d93e2cbd023bc751da1446c1b5bc0260e986"
+    },
+    {
+      "file": "DSCF0297.RAF",
+      "kind": "RAF_embedded_JPEG",
+      "sha256_before": "0657162370d2d7217ba15aa4f9c7d5a3978d1ae8132307fa0e9039d1740859ae",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000080000000",
+          "value": 128
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4010090001000000f8ffffff",
+          "value": -8
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4110090001000000e8ffffff",
+          "value": -24
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000040000000",
+          "value": 64
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000040000000",
+          "value": 64
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "011403000100000000080000",
+          "value": 2048
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000000000000",
+          "value": 0
+        }
+      },
+      "sha256_after": "0657162370d2d7217ba15aa4f9c7d5a3978d1ae8132307fa0e9039d1740859ae"
+    },
+    {
+      "file": "DSCF0298.RAF",
+      "kind": "RAF_embedded_JPEG",
+      "sha256_before": "b0a69b6a80e3314a8ea9e4381769752034fba92f25cbfb652d56379cba2e34bc",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000000000000",
+          "value": 0
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "401009000100000000000000",
+          "value": 0
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "411009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000020000000",
+          "value": 32
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "0114030001000000000b0000",
+          "value": 2816
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000000000000",
+          "value": 0
+        }
+      },
+      "sha256_after": "b0a69b6a80e3314a8ea9e4381769752034fba92f25cbfb652d56379cba2e34bc"
+    },
+    {
+      "file": "DSCF0298.JPG",
+      "kind": "camera_JPEG",
+      "sha256_before": "daac5f9280c0bc125a64d21f5219791477ed80d5a789de1a89c08d774d814d04",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000000000000",
+          "value": 0
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "401009000100000000000000",
+          "value": 0
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "411009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000020000000",
+          "value": 32
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "0114030001000000000b0000",
+          "value": 2816
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000000000000",
+          "value": 0
+        }
+      },
+      "sha256_after": "daac5f9280c0bc125a64d21f5219791477ed80d5a789de1a89c08d774d814d04"
+    },
+    {
+      "file": "DSCF0299.RAF",
+      "kind": "RAF_embedded_JPEG",
+      "sha256_before": "ff50d62f565fcc52f98eda82348ac804b74dffa7e0924228424b5b09d2c32313",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000000000000",
+          "value": 0
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "401009000100000000000000",
+          "value": 0
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "411009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000020000000",
+          "value": 32
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "0114030001000000000b0000",
+          "value": 2816
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000000000000",
+          "value": 0
+        }
+      },
+      "sha256_after": "ff50d62f565fcc52f98eda82348ac804b74dffa7e0924228424b5b09d2c32313"
+    },
+    {
+      "file": "DSCF0299.JPG",
+      "kind": "camera_JPEG",
+      "sha256_before": "8cfb2f3feccc3023262306911fa21df2644a26baf0b78b76b9e57645ab52b613",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000000000000",
+          "value": 0
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "401009000100000000000000",
+          "value": 0
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "411009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000000000000",
+          "value": 0
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000020000000",
+          "value": 32
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "0114030001000000000b0000",
+          "value": 2816
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000000000000",
+          "value": 0
+        }
+      },
+      "sha256_after": "8cfb2f3feccc3023262306911fa21df2644a26baf0b78b76b9e57645ab52b613"
+    },
+    {
+      "file": "DSCF0300.JPG",
+      "kind": "camera_redeveloped_JPEG",
+      "sha256_before": "a508796353a62ec3d13ca72b4358d7c3779867a44bc02af951479623f04c8cae",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000080000000",
+          "value": 128
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4010090001000000f8ffffff",
+          "value": -8
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4110090001000000e8ffffff",
+          "value": -24
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000040000000",
+          "value": 64
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000040000000",
+          "value": 64
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "011403000100000000080000",
+          "value": 2048
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000001000000",
+          "value": 1
+        }
+      },
+      "sha256_after": "a508796353a62ec3d13ca72b4358d7c3779867a44bc02af951479623f04c8cae"
+    },
+    {
+      "file": "DSCF0301.JPG",
+      "kind": "camera_redeveloped_JPEG",
+      "sha256_before": "17949ce0e8660675e86a61a817857470b9c264b411d863aebded9e27330e4c8a",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000000000000",
+          "value": 0
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4010090001000000f8ffffff",
+          "value": -8
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4110090001000000e8ffffff",
+          "value": -24
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000040000000",
+          "value": 64
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000040000000",
+          "value": 64
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "011403000100000000080000",
+          "value": 2048
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000001000000",
+          "value": 1
+        }
+      },
+      "sha256_after": "17949ce0e8660675e86a61a817857470b9c264b411d863aebded9e27330e4c8a"
+    },
+    {
+      "file": "DSCF0302.JPG",
+      "kind": "camera_redeveloped_JPEG",
+      "sha256_before": "20f3b6ef810d587e9c9f5f987b90035e0a76c59a774f8631fc2c8707c6984e87",
+      "tags": {
+        "Saturation": {
+          "tag": "0x1003",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "031003000100000000010000",
+          "value": 256
+        },
+        "ShadowTone": {
+          "tag": "0x1040",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4010090001000000f8ffffff",
+          "value": -8
+        },
+        "HighlightTone": {
+          "tag": "0x1041",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4110090001000000e8ffffff",
+          "value": -24
+        },
+        "ColorChromeEffect": {
+          "tag": "0x1048",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "481009000100000040000000",
+          "value": 64
+        },
+        "ColorChromeFXBlue": {
+          "tag": "0x104e",
+          "type": 9,
+          "count": 1,
+          "ifd_entry_hex": "4e1009000100000040000000",
+          "value": 64
+        },
+        "FilmMode": {
+          "tag": "0x1401",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "011403000100000000080000",
+          "value": 2048
+        },
+        "ImageGeneration": {
+          "tag": "0x1436",
+          "type": 3,
+          "count": 1,
+          "ifd_entry_hex": "361403000100000001000000",
+          "value": 1
+        }
+      },
+      "sha256_after": "20f3b6ef810d587e9c9f5f987b90035e0a76c59a774f8631fc2c8707c6984e87"
+    }
+  ]
+}

@@ -1,0 +1,780 @@
+{
+  "method": "LibRaw/rawpy raw_image_visible, one common CFA phase every 12 pixels; black-subtracted sample means; no demosaic, white balance, tone or film simulation. No alignment or lens/sensor spectral calibration. Input order from owner, matched to chronological filenames subject to metadata check.",
+  "limitations": [
+    "single CFA phase, not rendered green or independent full spectral channel",
+    "global or central averages affected by geometry, lighting and scene changes",
+    "do not interpret as JPEG color or precise exposure calibration"
+  ],
+  "records": {
+    "DSCF0292": {
+      "source": "DSCF0292.RAF",
+      "sha256_before": "e5a316d50d5c1f0ec3fd84d200bf82646090f9cd8ab55e29c7cbd1462f46bfb2",
+      "raw_dimensions_wh": [
+        7872,
+        5196
+      ],
+      "visible_dimensions_wh": [
+        7752,
+        5178
+      ],
+      "crop_left_top": [
+        0,
+        6
+      ],
+      "cfa_pattern": [
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          0,
+          1
+        ]
+      ],
+      "color_desc_ascii": "RGBG",
+      "phase_top_left_color_index": 1,
+      "stride_yx": [
+        12,
+        12
+      ],
+      "sample_shape_hw": [
+        432,
+        646
+      ],
+      "black_level": 1023,
+      "white_level": 16383,
+      "sample_mean_raw": 2410.49187664832,
+      "sample_median_raw": 1667.0,
+      "sample_mean_black_subtracted": 1387.4918766483202,
+      "central_mean_black_subtracted": 1110.7005217291594,
+      "sample_percentiles_raw": {
+        "1": 1062.0,
+        "5": 1104.0,
+        "50": 1667.0,
+        "95": 7234.0,
+        "99": 8751.0
+      },
+      "fraction_sample_greater_equal_white": 0.0,
+      "fraction_sample_greater_equal_99pct_white_above_black": 3.583304666895998e-06,
+      "sha256_after": "e5a316d50d5c1f0ec3fd84d200bf82646090f9cd8ab55e29c7cbd1462f46bfb2"
+    },
+    "DSCF0293": {
+      "source": "DSCF0293.RAF",
+      "sha256_before": "0a4a3acc20541f1c4b1b689130d365d948842331c5c157e64b6c0f65fc4b2dec",
+      "raw_dimensions_wh": [
+        7872,
+        5196
+      ],
+      "visible_dimensions_wh": [
+        7752,
+        5178
+      ],
+      "crop_left_top": [
+        0,
+        6
+      ],
+      "cfa_pattern": [
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          0,
+          1
+        ]
+      ],
+      "color_desc_ascii": "RGBG",
+      "phase_top_left_color_index": 1,
+      "stride_yx": [
+        12,
+        12
+      ],
+      "sample_shape_hw": [
+        432,
+        646
+      ],
+      "black_level": 1023,
+      "white_level": 16383,
+      "sample_mean_raw": 2429.684776688453,
+      "sample_median_raw": 1683.0,
+      "sample_mean_black_subtracted": 1406.6847766884532,
+      "central_mean_black_subtracted": 1214.8747563352827,
+      "sample_percentiles_raw": {
+        "1": 1062.0,
+        "5": 1105.0,
+        "50": 1683.0,
+        "95": 7273.0,
+        "99": 8801.0
+      },
+      "fraction_sample_greater_equal_white": 3.583304666895998e-06,
+      "fraction_sample_greater_equal_99pct_white_above_black": 3.583304666895998e-06,
+      "sha256_after": "0a4a3acc20541f1c4b1b689130d365d948842331c5c157e64b6c0f65fc4b2dec"
+    },
+    "DSCF0294": {
+      "source": "DSCF0294.RAF",
+      "sha256_before": "e15dc41569eb54493eb9856cf624886efdbfa4be1798c44777c1df2adeaa8007",
+      "raw_dimensions_wh": [
+        7872,
+        5196
+      ],
+      "visible_dimensions_wh": [
+        7752,
+        5178
+      ],
+      "crop_left_top": [
+        0,
+        6
+      ],
+      "cfa_pattern": [
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          0,
+          1
+        ]
+      ],
+      "color_desc_ascii": "RGBG",
+      "phase_top_left_color_index": 1,
+      "stride_yx": [
+        12,
+        12
+      ],
+      "sample_shape_hw": [
+        432,
+        646
+      ],
+      "black_level": 1023,
+      "white_level": 16383,
+      "sample_mean_raw": 2417.6375164832016,
+      "sample_median_raw": 1684.0,
+      "sample_mean_black_subtracted": 1394.6375164832016,
+      "central_mean_black_subtracted": 1304.598741543401,
+      "sample_percentiles_raw": {
+        "1": 1062.0,
+        "5": 1105.0,
+        "50": 1684.0,
+        "95": 7120.0,
+        "99": 8623.289999999979
+      },
+      "fraction_sample_greater_equal_white": 3.583304666895998e-06,
+      "fraction_sample_greater_equal_99pct_white_above_black": 3.583304666895998e-06,
+      "sha256_after": "e15dc41569eb54493eb9856cf624886efdbfa4be1798c44777c1df2adeaa8007"
+    },
+    "DSCF0295": {
+      "source": "DSCF0295.RAF",
+      "sha256_before": "18e3ce61495be626e575144747fb694d66072b9129fdae65dadf2ff19f1cee4e",
+      "raw_dimensions_wh": [
+        7872,
+        5196
+      ],
+      "visible_dimensions_wh": [
+        7752,
+        5178
+      ],
+      "crop_left_top": [
+        0,
+        6
+      ],
+      "cfa_pattern": [
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          0,
+          1
+        ]
+      ],
+      "color_desc_ascii": "RGBG",
+      "phase_top_left_color_index": 1,
+      "stride_yx": [
+        12,
+        12
+      ],
+      "sample_shape_hw": [
+        432,
+        646
+      ],
+      "black_level": 1023,
+      "white_level": 16383,
+      "sample_mean_raw": 2417.7360000286662,
+      "sample_median_raw": 1686.0,
+      "sample_mean_black_subtracted": 1394.7360000286665,
+      "central_mean_black_subtracted": 1293.288456025685,
+      "sample_percentiles_raw": {
+        "1": 1062.0,
+        "5": 1105.0,
+        "50": 1686.0,
+        "95": 7127.0,
+        "99": 8619.0
+      },
+      "fraction_sample_greater_equal_white": 3.583304666895998e-06,
+      "fraction_sample_greater_equal_99pct_white_above_black": 3.583304666895998e-06,
+      "sha256_after": "18e3ce61495be626e575144747fb694d66072b9129fdae65dadf2ff19f1cee4e"
+    },
+    "DSCF0296": {
+      "source": "DSCF0296.RAF",
+      "sha256_before": "adff97c88d4c12b097c79f69ff61d93e2cbd023bc751da1446c1b5bc0260e986",
+      "raw_dimensions_wh": [
+        7872,
+        5196
+      ],
+      "visible_dimensions_wh": [
+        7752,
+        5178
+      ],
+      "crop_left_top": [
+        0,
+        6
+      ],
+      "cfa_pattern": [
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          0,
+          1
+        ]
+      ],
+      "color_desc_ascii": "RGBG",
+      "phase_top_left_color_index": 1,
+      "stride_yx": [
+        12,
+        12
+      ],
+      "sample_shape_hw": [
+        432,
+        646
+      ],
+      "black_level": 1020,
+      "white_level": 16383,
+      "sample_mean_raw": 3196.852461013645,
+      "sample_median_raw": 2052.0,
+      "sample_mean_black_subtracted": 2176.852461013645,
+      "central_mean_black_subtracted": 1842.6517601192525,
+      "sample_percentiles_raw": {
+        "1": 1084.0,
+        "5": 1152.0,
+        "50": 2052.0,
+        "95": 10632.0,
+        "99": 12980.0
+      },
+      "fraction_sample_greater_equal_white": 0.0,
+      "fraction_sample_greater_equal_99pct_white_above_black": 0.00015049879600963193,
+      "sha256_after": "adff97c88d4c12b097c79f69ff61d93e2cbd023bc751da1446c1b5bc0260e986"
+    },
+    "DSCF0297": {
+      "source": "DSCF0297.RAF",
+      "sha256_before": "0657162370d2d7217ba15aa4f9c7d5a3978d1ae8132307fa0e9039d1740859ae",
+      "raw_dimensions_wh": [
+        7872,
+        5196
+      ],
+      "visible_dimensions_wh": [
+        7752,
+        5178
+      ],
+      "crop_left_top": [
+        0,
+        6
+      ],
+      "cfa_pattern": [
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          0,
+          1
+        ]
+      ],
+      "color_desc_ascii": "RGBG",
+      "phase_top_left_color_index": 1,
+      "stride_yx": [
+        12,
+        12
+      ],
+      "sample_shape_hw": [
+        432,
+        646
+      ],
+      "black_level": 1020,
+      "white_level": 16383,
+      "sample_mean_raw": 3214.342685758514,
+      "sample_median_raw": 2056.0,
+      "sample_mean_black_subtracted": 2194.342685758514,
+      "central_mean_black_subtracted": 1951.2147116156405,
+      "sample_percentiles_raw": {
+        "1": 1084.0,
+        "5": 1152.0,
+        "50": 2056.0,
+        "95": 10648.0,
+        "99": 13009.159999999916
+      },
+      "fraction_sample_greater_equal_white": 0.0,
+      "fraction_sample_greater_equal_99pct_white_above_black": 0.0002149982800137599,
+      "sha256_after": "0657162370d2d7217ba15aa4f9c7d5a3978d1ae8132307fa0e9039d1740859ae"
+    },
+    "DSCF0298": {
+      "source": "DSCF0298.RAF",
+      "sha256_before": "b0a69b6a80e3314a8ea9e4381769752034fba92f25cbfb652d56379cba2e34bc",
+      "raw_dimensions_wh": [
+        7872,
+        5196
+      ],
+      "visible_dimensions_wh": [
+        7752,
+        5178
+      ],
+      "crop_left_top": [
+        0,
+        6
+      ],
+      "cfa_pattern": [
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          0,
+          1
+        ]
+      ],
+      "color_desc_ascii": "RGBG",
+      "phase_top_left_color_index": 1,
+      "stride_yx": [
+        12,
+        12
+      ],
+      "sample_shape_hw": [
+        432,
+        646
+      ],
+      "black_level": 1023,
+      "white_level": 16383,
+      "sample_mean_raw": 2421.65705624355,
+      "sample_median_raw": 1703.0,
+      "sample_mean_black_subtracted": 1398.65705624355,
+      "central_mean_black_subtracted": 1367.393977181516,
+      "sample_percentiles_raw": {
+        "1": 1063.0,
+        "5": 1107.0,
+        "50": 1703.0,
+        "95": 7027.0,
+        "99": 8504.0
+      },
+      "fraction_sample_greater_equal_white": 3.583304666895998e-06,
+      "fraction_sample_greater_equal_99pct_white_above_black": 3.583304666895998e-06,
+      "sha256_after": "b0a69b6a80e3314a8ea9e4381769752034fba92f25cbfb652d56379cba2e34bc"
+    },
+    "DSCF0299": {
+      "source": "DSCF0299.RAF",
+      "sha256_before": "ff50d62f565fcc52f98eda82348ac804b74dffa7e0924228424b5b09d2c32313",
+      "raw_dimensions_wh": [
+        7872,
+        5196
+      ],
+      "visible_dimensions_wh": [
+        7752,
+        5178
+      ],
+      "crop_left_top": [
+        0,
+        6
+      ],
+      "cfa_pattern": [
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          0,
+          1
+        ]
+      ],
+      "color_desc_ascii": "RGBG",
+      "phase_top_left_color_index": 1,
+      "stride_yx": [
+        12,
+        12
+      ],
+      "sample_shape_hw": [
+        432,
+        646
+      ],
+      "black_level": 1023,
+      "white_level": 16383,
+      "sample_mean_raw": 2439.710271901158,
+      "sample_median_raw": 1705.0,
+      "sample_mean_black_subtracted": 1416.7102719011582,
+      "central_mean_black_subtracted": 1430.6305039559684,
+      "sample_percentiles_raw": {
+        "1": 1063.0,
+        "5": 1106.0,
+        "50": 1705.0,
+        "95": 7106.0,
+        "99": 8599.0
+      },
+      "fraction_sample_greater_equal_white": 3.583304666895998e-06,
+      "fraction_sample_greater_equal_99pct_white_above_black": 7.166609333791996e-06,
+      "sha256_after": "ff50d62f565fcc52f98eda82348ac804b74dffa7e0924228424b5b09d2c32313"
+    }
+  },
+  "groups": {
+    "classic_0": {
+      "stems": [
+        292,
+        295
+      ],
+      "whole_sample_black_subtracted": 1391.1139383384934,
+      "central_sample_black_subtracted": 1201.994488877422
+    },
+    "classic_plus2": {
+      "stems": [
+        293,
+        294
+      ],
+      "whole_sample_black_subtracted": 1400.6611465858273,
+      "central_sample_black_subtracted": 1259.7367489393419
+    },
+    "owner_recipe": {
+      "stems": [
+        296,
+        297
+      ],
+      "whole_sample_black_subtracted": 2185.5975733860796,
+      "central_sample_black_subtracted": 1896.9332358674465
+    },
+    "reala_0": {
+      "stems": [
+        298,
+        299
+      ],
+      "whole_sample_black_subtracted": 1407.683664072354,
+      "central_sample_black_subtracted": 1399.012240568742
+    }
+  }
+}

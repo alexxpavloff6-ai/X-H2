@@ -1,0 +1,1924 @@
+{
+  "source": "Firmware на прочиеFuji\\FWUP0030.DAT",
+  "sha256": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+  "block_sha256": {
+    "a": "fd5f899217a833552f135d719d22e025aea2e0780b2fd1f8c66b353ead969724",
+    "b": "d74dba337fe4078a6ee15ca5fddba7e502bdefb980825a09a15f9b13a01eb350"
+  },
+  "mapping": "модельные адреса FFLZ, шаблон DAT 0xc0274 по 0x27008000, MMIO — RAM",
+  "dictionary": {
+    "UI_SETP_FILM_SIM": {
+      "name": "UI_SETP_FILM_SIM",
+      "string_offset": "0x846ae0",
+      "record_offset": "0x869110",
+      "value": 1699,
+      "record_address": "0x3154110",
+      "string_address": "0x3131ae0"
+    },
+    "UI_SETP_STILLCOLOR": {
+      "name": "UI_SETP_STILLCOLOR",
+      "string_offset": "0x846f88",
+      "record_offset": "0x8693c0",
+      "value": 1742,
+      "record_address": "0x31543c0",
+      "string_address": "0x3131f88"
+    },
+    "UI_FILM_SIM_CLASSIC_CHROME": {
+      "name": "UI_FILM_SIM_CLASSIC_CHROME",
+      "string_offset": "0x81d150",
+      "record_offset": "0x87d0b0",
+      "value": 14,
+      "record_address": "0x31680b0",
+      "string_address": "0x3108150"
+    },
+    "UI_STILLCOLOR_EXTRA_DARK": {
+      "name": "UI_STILLCOLOR_EXTRA_DARK",
+      "string_offset": "0x81dbb8",
+      "record_offset": "0x87d7a0",
+      "value": 0,
+      "record_address": "0x31687a0",
+      "string_address": "0x3108bb8"
+    },
+    "UI_STILLCOLOR_SUPER_DARK": {
+      "name": "UI_STILLCOLOR_SUPER_DARK",
+      "string_offset": "0x81dbd8",
+      "record_offset": "0x87d7b0",
+      "value": 1,
+      "record_address": "0x31687b0",
+      "string_address": "0x3108bd8"
+    },
+    "UI_STILLCOLOR_DARK": {
+      "name": "UI_STILLCOLOR_DARK",
+      "string_offset": "0x81dbf8",
+      "record_offset": "0x87d7c0",
+      "value": 2,
+      "record_address": "0x31687c0",
+      "string_address": "0x3108bf8"
+    },
+    "UI_STILLCOLOR_MID_DARK": {
+      "name": "UI_STILLCOLOR_MID_DARK",
+      "string_offset": "0x81dc10",
+      "record_offset": "0x87d7d0",
+      "value": 3,
+      "record_address": "0x31687d0",
+      "string_address": "0x3108c10"
+    },
+    "UI_STILLCOLOR_STANDARD": {
+      "name": "UI_STILLCOLOR_STANDARD",
+      "string_offset": "0x81dc28",
+      "record_offset": "0x87d7e0",
+      "value": 4,
+      "record_address": "0x31687e0",
+      "string_address": "0x3108c28"
+    },
+    "UI_STILLCOLOR_MID_THIN": {
+      "name": "UI_STILLCOLOR_MID_THIN",
+      "string_offset": "0x81dc40",
+      "record_offset": "0x87d7f0",
+      "value": 5,
+      "record_address": "0x31687f0",
+      "string_address": "0x3108c40"
+    },
+    "UI_STILLCOLOR_THIN": {
+      "name": "UI_STILLCOLOR_THIN",
+      "string_offset": "0x81dc58",
+      "record_offset": "0x87d800",
+      "value": 6,
+      "record_address": "0x3168800",
+      "string_address": "0x3108c58"
+    },
+    "UI_STILLCOLOR_SUPER_THIN": {
+      "name": "UI_STILLCOLOR_SUPER_THIN",
+      "string_offset": "0x81dc70",
+      "record_offset": "0x87d810",
+      "value": 7,
+      "record_address": "0x3168810",
+      "string_address": "0x3108c70"
+    },
+    "UI_STILLCOLOR_EXTRA_THIN": {
+      "name": "UI_STILLCOLOR_EXTRA_THIN",
+      "string_offset": "0x81dc90",
+      "record_offset": "0x87d820",
+      "value": 8,
+      "record_address": "0x3168820",
+      "string_address": "0x3108c90"
+    }
+  },
+  "table_root": "0x1bb1a30",
+  "film_table": "0x1759c70",
+  "film_rows": [
+    [
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      2,
+      2,
+      1,
+      3
+    ],
+    [
+      3,
+      2147483646,
+      2,
+      2147483646
+    ],
+    [
+      4,
+      1,
+      3,
+      2
+    ],
+    [
+      5,
+      2147483646,
+      4,
+      2147483646
+    ],
+    [
+      6,
+      4,
+      5,
+      10
+    ],
+    [
+      7,
+      2147483646,
+      6,
+      2147483646
+    ],
+    [
+      2147483646,
+      2147483646,
+      2147483646,
+      2147483646
+    ],
+    [
+      9,
+      3,
+      7,
+      6
+    ],
+    [
+      10,
+      8,
+      8,
+      8
+    ],
+    [
+      11,
+      7,
+      9,
+      7
+    ],
+    [
+      12,
+      9,
+      10,
+      9
+    ],
+    [
+      13,
+      6,
+      11,
+      5
+    ],
+    [
+      14,
+      5,
+      12,
+      4
+    ],
+    [
+      15,
+      10,
+      13,
+      11
+    ],
+    [
+      16,
+      16,
+      19,
+      17
+    ],
+    [
+      17,
+      18,
+      21,
+      19
+    ],
+    [
+      25,
+      19,
+      22,
+      20
+    ],
+    [
+      18,
+      15,
+      18,
+      16
+    ],
+    [
+      19,
+      17,
+      20,
+      18
+    ],
+    [
+      2147483646,
+      2147483646,
+      2147483646,
+      2147483646
+    ],
+    [
+      21,
+      11,
+      14,
+      12
+    ],
+    [
+      22,
+      13,
+      15,
+      14
+    ],
+    [
+      23,
+      12,
+      16,
+      13
+    ],
+    [
+      24,
+      14,
+      17,
+      15
+    ],
+    [
+      0,
+      2147483646,
+      255,
+      32768
+    ]
+  ],
+  "color_table": "0x176eb80",
+  "color_rows": [
+    [
+      3,
+      2147483646,
+      0,
+      40
+    ],
+    [
+      4,
+      2147483646,
+      1,
+      30
+    ],
+    [
+      5,
+      2147483646,
+      2,
+      20
+    ],
+    [
+      6,
+      2147483646,
+      3,
+      10
+    ],
+    [
+      0,
+      2147483646,
+      4,
+      0
+    ],
+    [
+      8,
+      2147483646,
+      5,
+      4294967286
+    ],
+    [
+      7,
+      2147483646,
+      6,
+      4294967276
+    ],
+    [
+      9,
+      2147483646,
+      7,
+      4294967266
+    ],
+    [
+      10,
+      2147483646,
+      8,
+      4294967256
+    ]
+  ],
+  "comparison": {
+    "new_global": "0x2003300",
+    "old_global": "0x2001080",
+    "equal_preserves_state": true,
+    "different_14_state": 13
+  },
+  "runs": [
+    {
+      "film": "STANDARD",
+      "film_ui": 0,
+      "mode_state": 0,
+      "frame_c0": 0,
+      "params_3a00": 0,
+      "ui_color": 0,
+      "color_name": "EXTRA_DARK",
+      "representation_4_signed": 40,
+      "nominal_display": 4,
+      "color_native": 0,
+      "intermediate_mode_20": 0,
+      "intermediate_color_c": 0,
+      "color_mode_130": 0,
+      "color_index_13c": 8,
+      "selector": 1,
+      "gain": 154,
+      "coefficients": [
+        1372,
+        -15,
+        1828,
+        93
+      ],
+      "packed": [
+        1372,
+        8177,
+        1828,
+        93
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff1055c",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x5d0724",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "STANDARD",
+      "film_ui": 0,
+      "mode_state": 0,
+      "frame_c0": 0,
+      "params_3a00": 0,
+      "ui_color": 1,
+      "color_name": "SUPER_DARK",
+      "representation_4_signed": 30,
+      "nominal_display": 3,
+      "color_native": 1,
+      "intermediate_mode_20": 0,
+      "intermediate_color_c": 1,
+      "color_mode_130": 0,
+      "color_index_13c": 7,
+      "selector": 1,
+      "gain": 147,
+      "coefficients": [
+        1310,
+        -14,
+        1745,
+        89
+      ],
+      "packed": [
+        1310,
+        8178,
+        1745,
+        89
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff2051e",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x5906d1",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "STANDARD",
+      "film_ui": 0,
+      "mode_state": 0,
+      "frame_c0": 0,
+      "params_3a00": 0,
+      "ui_color": 2,
+      "color_name": "DARK",
+      "representation_4_signed": 20,
+      "nominal_display": 2,
+      "color_native": 2,
+      "intermediate_mode_20": 0,
+      "intermediate_color_c": 2,
+      "color_mode_130": 0,
+      "color_index_13c": 6,
+      "selector": 1,
+      "gain": 141,
+      "coefficients": [
+        1256,
+        -14,
+        1674,
+        85
+      ],
+      "packed": [
+        1256,
+        8178,
+        1674,
+        85
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff204e8",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x55068a",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "STANDARD",
+      "film_ui": 0,
+      "mode_state": 0,
+      "frame_c0": 0,
+      "params_3a00": 0,
+      "ui_color": 3,
+      "color_name": "MID_DARK",
+      "representation_4_signed": 10,
+      "nominal_display": 1,
+      "color_native": 3,
+      "intermediate_mode_20": 0,
+      "intermediate_color_c": 3,
+      "color_mode_130": 0,
+      "color_index_13c": 5,
+      "selector": 1,
+      "gain": 134,
+      "coefficients": [
+        1194,
+        -13,
+        1591,
+        81
+      ],
+      "packed": [
+        1194,
+        8179,
+        1591,
+        81
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff304aa",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x510637",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "STANDARD",
+      "film_ui": 0,
+      "mode_state": 0,
+      "frame_c0": 0,
+      "params_3a00": 0,
+      "ui_color": 4,
+      "color_name": "STANDARD",
+      "representation_4_signed": 0,
+      "nominal_display": 0,
+      "color_native": 4,
+      "intermediate_mode_20": 0,
+      "intermediate_color_c": 4,
+      "color_mode_130": 0,
+      "color_index_13c": 4,
+      "selector": 1,
+      "gain": 128,
+      "coefficients": [
+        1141,
+        -12,
+        1520,
+        78
+      ],
+      "packed": [
+        1141,
+        8180,
+        1520,
+        78
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff40475",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x4e05f0",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "STANDARD",
+      "film_ui": 0,
+      "mode_state": 0,
+      "frame_c0": 0,
+      "params_3a00": 0,
+      "ui_color": 5,
+      "color_name": "MID_THIN",
+      "representation_4_signed": -10,
+      "nominal_display": -1,
+      "color_native": 5,
+      "intermediate_mode_20": 0,
+      "intermediate_color_c": 5,
+      "color_mode_130": 0,
+      "color_index_13c": 3,
+      "selector": 1,
+      "gain": 122,
+      "coefficients": [
+        1087,
+        -12,
+        1448,
+        74
+      ],
+      "packed": [
+        1087,
+        8180,
+        1448,
+        74
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff4043f",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x4a05a8",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "STANDARD",
+      "film_ui": 0,
+      "mode_state": 0,
+      "frame_c0": 0,
+      "params_3a00": 0,
+      "ui_color": 6,
+      "color_name": "THIN",
+      "representation_4_signed": -20,
+      "nominal_display": -2,
+      "color_native": 6,
+      "intermediate_mode_20": 0,
+      "intermediate_color_c": 6,
+      "color_mode_130": 0,
+      "color_index_13c": 2,
+      "selector": 1,
+      "gain": 115,
+      "coefficients": [
+        1025,
+        -11,
+        1365,
+        70
+      ],
+      "packed": [
+        1025,
+        8181,
+        1365,
+        70
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff50401",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x460555",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "STANDARD",
+      "film_ui": 0,
+      "mode_state": 0,
+      "frame_c0": 0,
+      "params_3a00": 0,
+      "ui_color": 7,
+      "color_name": "SUPER_THIN",
+      "representation_4_signed": -30,
+      "nominal_display": -3,
+      "color_native": 7,
+      "intermediate_mode_20": 0,
+      "intermediate_color_c": 7,
+      "color_mode_130": 0,
+      "color_index_13c": 1,
+      "selector": 1,
+      "gain": 109,
+      "coefficients": [
+        971,
+        -11,
+        1294,
+        66
+      ],
+      "packed": [
+        971,
+        8181,
+        1294,
+        66
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff503cb",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x42050e",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "STANDARD",
+      "film_ui": 0,
+      "mode_state": 0,
+      "frame_c0": 0,
+      "params_3a00": 0,
+      "ui_color": 8,
+      "color_name": "EXTRA_THIN",
+      "representation_4_signed": -40,
+      "nominal_display": -4,
+      "color_native": 8,
+      "intermediate_mode_20": 0,
+      "intermediate_color_c": 8,
+      "color_mode_130": 0,
+      "color_index_13c": 0,
+      "selector": 1,
+      "gain": 102,
+      "coefficients": [
+        909,
+        -10,
+        1211,
+        62
+      ],
+      "packed": [
+        909,
+        8182,
+        1211,
+        62
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff6038d",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x3e04bb",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "CLASSIC_CHROME",
+      "film_ui": 14,
+      "mode_state": 13,
+      "frame_c0": 13,
+      "params_3a00": 13,
+      "ui_color": 0,
+      "color_name": "EXTRA_DARK",
+      "representation_4_signed": 40,
+      "nominal_display": 4,
+      "color_native": 0,
+      "intermediate_mode_20": 13,
+      "intermediate_color_c": 0,
+      "color_mode_130": 8,
+      "color_index_13c": 8,
+      "selector": 6,
+      "gain": 154,
+      "coefficients": [
+        1064,
+        -13,
+        1033,
+        -15
+      ],
+      "packed": [
+        1064,
+        8179,
+        1033,
+        8177
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff30428",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff10409",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "CLASSIC_CHROME",
+      "film_ui": 14,
+      "mode_state": 13,
+      "frame_c0": 13,
+      "params_3a00": 13,
+      "ui_color": 1,
+      "color_name": "SUPER_DARK",
+      "representation_4_signed": 30,
+      "nominal_display": 3,
+      "color_native": 1,
+      "intermediate_mode_20": 13,
+      "intermediate_color_c": 1,
+      "color_mode_130": 8,
+      "color_index_13c": 7,
+      "selector": 6,
+      "gain": 147,
+      "coefficients": [
+        1016,
+        -12,
+        986,
+        -14
+      ],
+      "packed": [
+        1016,
+        8180,
+        986,
+        8178
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff403f8",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff203da",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "CLASSIC_CHROME",
+      "film_ui": 14,
+      "mode_state": 13,
+      "frame_c0": 13,
+      "params_3a00": 13,
+      "ui_color": 2,
+      "color_name": "DARK",
+      "representation_4_signed": 20,
+      "nominal_display": 2,
+      "color_native": 2,
+      "intermediate_mode_20": 13,
+      "intermediate_color_c": 2,
+      "color_mode_130": 8,
+      "color_index_13c": 6,
+      "selector": 6,
+      "gain": 141,
+      "coefficients": [
+        974,
+        -12,
+        946,
+        -14
+      ],
+      "packed": [
+        974,
+        8180,
+        946,
+        8178
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff403ce",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff203b2",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "CLASSIC_CHROME",
+      "film_ui": 14,
+      "mode_state": 13,
+      "frame_c0": 13,
+      "params_3a00": 13,
+      "ui_color": 3,
+      "color_name": "MID_DARK",
+      "representation_4_signed": 10,
+      "nominal_display": 1,
+      "color_native": 3,
+      "intermediate_mode_20": 13,
+      "intermediate_color_c": 3,
+      "color_mode_130": 8,
+      "color_index_13c": 5,
+      "selector": 6,
+      "gain": 134,
+      "coefficients": [
+        926,
+        -11,
+        899,
+        -13
+      ],
+      "packed": [
+        926,
+        8181,
+        899,
+        8179
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff5039e",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff30383",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "CLASSIC_CHROME",
+      "film_ui": 14,
+      "mode_state": 13,
+      "frame_c0": 13,
+      "params_3a00": 13,
+      "ui_color": 4,
+      "color_name": "STANDARD",
+      "representation_4_signed": 0,
+      "nominal_display": 0,
+      "color_native": 4,
+      "intermediate_mode_20": 13,
+      "intermediate_color_c": 4,
+      "color_mode_130": 8,
+      "color_index_13c": 4,
+      "selector": 6,
+      "gain": 128,
+      "coefficients": [
+        885,
+        -10,
+        859,
+        -12
+      ],
+      "packed": [
+        885,
+        8182,
+        859,
+        8180
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff60375",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff4035b",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "CLASSIC_CHROME",
+      "film_ui": 14,
+      "mode_state": 13,
+      "frame_c0": 13,
+      "params_3a00": 13,
+      "ui_color": 5,
+      "color_name": "MID_THIN",
+      "representation_4_signed": -10,
+      "nominal_display": -1,
+      "color_native": 5,
+      "intermediate_mode_20": 13,
+      "intermediate_color_c": 5,
+      "color_mode_130": 8,
+      "color_index_13c": 3,
+      "selector": 6,
+      "gain": 122,
+      "coefficients": [
+        843,
+        -10,
+        818,
+        -12
+      ],
+      "packed": [
+        843,
+        8182,
+        818,
+        8180
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff6034b",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff40332",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "CLASSIC_CHROME",
+      "film_ui": 14,
+      "mode_state": 13,
+      "frame_c0": 13,
+      "params_3a00": 13,
+      "ui_color": 6,
+      "color_name": "THIN",
+      "representation_4_signed": -20,
+      "nominal_display": -2,
+      "color_native": 6,
+      "intermediate_mode_20": 13,
+      "intermediate_color_c": 6,
+      "color_mode_130": 8,
+      "color_index_13c": 2,
+      "selector": 6,
+      "gain": 115,
+      "coefficients": [
+        795,
+        -9,
+        771,
+        -11
+      ],
+      "packed": [
+        795,
+        8183,
+        771,
+        8181
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff7031b",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff50303",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "CLASSIC_CHROME",
+      "film_ui": 14,
+      "mode_state": 13,
+      "frame_c0": 13,
+      "params_3a00": 13,
+      "ui_color": 7,
+      "color_name": "SUPER_THIN",
+      "representation_4_signed": -30,
+      "nominal_display": -3,
+      "color_native": 7,
+      "intermediate_mode_20": 13,
+      "intermediate_color_c": 7,
+      "color_mode_130": 8,
+      "color_index_13c": 1,
+      "selector": 6,
+      "gain": 109,
+      "coefficients": [
+        753,
+        -9,
+        731,
+        -11
+      ],
+      "packed": [
+        753,
+        8183,
+        731,
+        8181
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff702f1",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff502db",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "CLASSIC_CHROME",
+      "film_ui": 14,
+      "mode_state": 13,
+      "frame_c0": 13,
+      "params_3a00": 13,
+      "ui_color": 8,
+      "color_name": "EXTRA_THIN",
+      "representation_4_signed": -40,
+      "nominal_display": -4,
+      "color_native": 8,
+      "intermediate_mode_20": 13,
+      "intermediate_color_c": 8,
+      "color_mode_130": 8,
+      "color_index_13c": 0,
+      "selector": 6,
+      "gain": 102,
+      "coefficients": [
+        705,
+        -8,
+        684,
+        -10
+      ],
+      "packed": [
+        705,
+        8184,
+        684,
+        8182
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1ff802c1",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x1ff602ac",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "ETERNA",
+      "film_ui": 18,
+      "mode_state": 18,
+      "frame_c0": 18,
+      "params_3a00": 18,
+      "ui_color": 0,
+      "color_name": "EXTRA_DARK",
+      "representation_4_signed": 40,
+      "nominal_display": 4,
+      "color_native": 0,
+      "intermediate_mode_20": 18,
+      "intermediate_color_c": 0,
+      "color_mode_130": 9,
+      "color_index_13c": 8,
+      "selector": 7,
+      "gain": 154,
+      "coefficients": [
+        1067,
+        58,
+        1074,
+        121
+      ],
+      "packed": [
+        1067,
+        58,
+        1074,
+        121
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x3a042b",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x790432",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "ETERNA",
+      "film_ui": 18,
+      "mode_state": 18,
+      "frame_c0": 18,
+      "params_3a00": 18,
+      "ui_color": 1,
+      "color_name": "SUPER_DARK",
+      "representation_4_signed": 30,
+      "nominal_display": 3,
+      "color_native": 1,
+      "intermediate_mode_20": 18,
+      "intermediate_color_c": 1,
+      "color_mode_130": 9,
+      "color_index_13c": 7,
+      "selector": 7,
+      "gain": 147,
+      "coefficients": [
+        1018,
+        56,
+        1025,
+        115
+      ],
+      "packed": [
+        1018,
+        56,
+        1025,
+        115
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x3803fa",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x730401",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "ETERNA",
+      "film_ui": 18,
+      "mode_state": 18,
+      "frame_c0": 18,
+      "params_3a00": 18,
+      "ui_color": 2,
+      "color_name": "DARK",
+      "representation_4_signed": 20,
+      "nominal_display": 2,
+      "color_native": 2,
+      "intermediate_mode_20": 18,
+      "intermediate_color_c": 2,
+      "color_mode_130": 9,
+      "color_index_13c": 6,
+      "selector": 7,
+      "gain": 141,
+      "coefficients": [
+        977,
+        53,
+        983,
+        111
+      ],
+      "packed": [
+        977,
+        53,
+        983,
+        111
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x3503d1",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x6f03d7",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "ETERNA",
+      "film_ui": 18,
+      "mode_state": 18,
+      "frame_c0": 18,
+      "params_3a00": 18,
+      "ui_color": 3,
+      "color_name": "MID_DARK",
+      "representation_4_signed": 10,
+      "nominal_display": 1,
+      "color_native": 3,
+      "intermediate_mode_20": 18,
+      "intermediate_color_c": 3,
+      "color_mode_130": 9,
+      "color_index_13c": 5,
+      "selector": 7,
+      "gain": 134,
+      "coefficients": [
+        928,
+        51,
+        934,
+        105
+      ],
+      "packed": [
+        928,
+        51,
+        934,
+        105
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x3303a0",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x6903a6",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "ETERNA",
+      "film_ui": 18,
+      "mode_state": 18,
+      "frame_c0": 18,
+      "params_3a00": 18,
+      "ui_color": 4,
+      "color_name": "STANDARD",
+      "representation_4_signed": 0,
+      "nominal_display": 0,
+      "color_native": 4,
+      "intermediate_mode_20": 18,
+      "intermediate_color_c": 4,
+      "color_mode_130": 9,
+      "color_index_13c": 4,
+      "selector": 7,
+      "gain": 128,
+      "coefficients": [
+        887,
+        49,
+        893,
+        101
+      ],
+      "packed": [
+        887,
+        49,
+        893,
+        101
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x310377",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x65037d",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "ETERNA",
+      "film_ui": 18,
+      "mode_state": 18,
+      "frame_c0": 18,
+      "params_3a00": 18,
+      "ui_color": 5,
+      "color_name": "MID_THIN",
+      "representation_4_signed": -10,
+      "nominal_display": -1,
+      "color_native": 5,
+      "intermediate_mode_20": 18,
+      "intermediate_color_c": 5,
+      "color_mode_130": 9,
+      "color_index_13c": 3,
+      "selector": 7,
+      "gain": 122,
+      "coefficients": [
+        845,
+        46,
+        851,
+        96
+      ],
+      "packed": [
+        845,
+        46,
+        851,
+        96
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x2e034d",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x600353",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "ETERNA",
+      "film_ui": 18,
+      "mode_state": 18,
+      "frame_c0": 18,
+      "params_3a00": 18,
+      "ui_color": 6,
+      "color_name": "THIN",
+      "representation_4_signed": -20,
+      "nominal_display": -2,
+      "color_native": 6,
+      "intermediate_mode_20": 18,
+      "intermediate_color_c": 6,
+      "color_mode_130": 9,
+      "color_index_13c": 2,
+      "selector": 7,
+      "gain": 115,
+      "coefficients": [
+        796,
+        44,
+        802,
+        90
+      ],
+      "packed": [
+        796,
+        44,
+        802,
+        90
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x2c031c",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x5a0322",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "ETERNA",
+      "film_ui": 18,
+      "mode_state": 18,
+      "frame_c0": 18,
+      "params_3a00": 18,
+      "ui_color": 7,
+      "color_name": "SUPER_THIN",
+      "representation_4_signed": -30,
+      "nominal_display": -3,
+      "color_native": 7,
+      "intermediate_mode_20": 18,
+      "intermediate_color_c": 7,
+      "color_mode_130": 9,
+      "color_index_13c": 1,
+      "selector": 7,
+      "gain": 109,
+      "coefficients": [
+        755,
+        41,
+        760,
+        86
+      ],
+      "packed": [
+        755,
+        41,
+        760,
+        86
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x2902f3",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x5602f8",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "ETERNA",
+      "film_ui": 18,
+      "mode_state": 18,
+      "frame_c0": 18,
+      "params_3a00": 18,
+      "ui_color": 8,
+      "color_name": "EXTRA_THIN",
+      "representation_4_signed": -40,
+      "nominal_display": -4,
+      "color_native": 8,
+      "intermediate_mode_20": 18,
+      "intermediate_color_c": 8,
+      "color_mode_130": 9,
+      "color_index_13c": 0,
+      "selector": 7,
+      "gain": 102,
+      "coefficients": [
+        706,
+        39,
+        711,
+        80
+      ],
+      "packed": [
+        706,
+        39,
+        711,
+        80
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x2702c2",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x5002c7",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "REALA",
+      "film_ui": 17,
+      "mode_state": 22,
+      "frame_c0": 22,
+      "params_3a00": 22,
+      "ui_color": 0,
+      "color_name": "EXTRA_DARK",
+      "representation_4_signed": 40,
+      "nominal_display": 4,
+      "color_native": 0,
+      "intermediate_mode_20": 22,
+      "intermediate_color_c": 0,
+      "color_mode_130": 13,
+      "color_index_13c": 8,
+      "selector": 16,
+      "gain": 154,
+      "coefficients": [
+        1292,
+        -26,
+        1769,
+        169
+      ],
+      "packed": [
+        1292,
+        8166,
+        1769,
+        169
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1fe6050c",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0xa906e9",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "REALA",
+      "film_ui": 17,
+      "mode_state": 22,
+      "frame_c0": 22,
+      "params_3a00": 22,
+      "ui_color": 1,
+      "color_name": "SUPER_DARK",
+      "representation_4_signed": 30,
+      "nominal_display": 3,
+      "color_native": 1,
+      "intermediate_mode_20": 22,
+      "intermediate_color_c": 1,
+      "color_mode_130": 13,
+      "color_index_13c": 7,
+      "selector": 16,
+      "gain": 147,
+      "coefficients": [
+        1233,
+        -25,
+        1689,
+        161
+      ],
+      "packed": [
+        1233,
+        8167,
+        1689,
+        161
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1fe704d1",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0xa10699",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "REALA",
+      "film_ui": 17,
+      "mode_state": 22,
+      "frame_c0": 22,
+      "params_3a00": 22,
+      "ui_color": 2,
+      "color_name": "DARK",
+      "representation_4_signed": 20,
+      "nominal_display": 2,
+      "color_native": 2,
+      "intermediate_mode_20": 22,
+      "intermediate_color_c": 2,
+      "color_mode_130": 13,
+      "color_index_13c": 6,
+      "selector": 16,
+      "gain": 141,
+      "coefficients": [
+        1183,
+        -24,
+        1620,
+        155
+      ],
+      "packed": [
+        1183,
+        8168,
+        1620,
+        155
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1fe8049f",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x9b0654",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "REALA",
+      "film_ui": 17,
+      "mode_state": 22,
+      "frame_c0": 22,
+      "params_3a00": 22,
+      "ui_color": 3,
+      "color_name": "MID_DARK",
+      "representation_4_signed": 10,
+      "nominal_display": 1,
+      "color_native": 3,
+      "intermediate_mode_20": 22,
+      "intermediate_color_c": 3,
+      "color_mode_130": 13,
+      "color_index_13c": 5,
+      "selector": 16,
+      "gain": 134,
+      "coefficients": [
+        1124,
+        -22,
+        1539,
+        147
+      ],
+      "packed": [
+        1124,
+        8170,
+        1539,
+        147
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1fea0464",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x930603",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "REALA",
+      "film_ui": 17,
+      "mode_state": 22,
+      "frame_c0": 22,
+      "params_3a00": 22,
+      "ui_color": 4,
+      "color_name": "STANDARD",
+      "representation_4_signed": 0,
+      "nominal_display": 0,
+      "color_native": 4,
+      "intermediate_mode_20": 22,
+      "intermediate_color_c": 4,
+      "color_mode_130": 13,
+      "color_index_13c": 4,
+      "selector": 16,
+      "gain": 128,
+      "coefficients": [
+        1074,
+        -21,
+        1471,
+        141
+      ],
+      "packed": [
+        1074,
+        8171,
+        1471,
+        141
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1feb0432",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x8d05bf",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "REALA",
+      "film_ui": 17,
+      "mode_state": 22,
+      "frame_c0": 22,
+      "params_3a00": 22,
+      "ui_color": 5,
+      "color_name": "MID_THIN",
+      "representation_4_signed": -10,
+      "nominal_display": -1,
+      "color_native": 5,
+      "intermediate_mode_20": 22,
+      "intermediate_color_c": 5,
+      "color_mode_130": 13,
+      "color_index_13c": 3,
+      "selector": 16,
+      "gain": 122,
+      "coefficients": [
+        1023,
+        -21,
+        1402,
+        134
+      ],
+      "packed": [
+        1023,
+        8171,
+        1402,
+        134
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1feb03ff",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x86057a",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "REALA",
+      "film_ui": 17,
+      "mode_state": 22,
+      "frame_c0": 22,
+      "params_3a00": 22,
+      "ui_color": 6,
+      "color_name": "THIN",
+      "representation_4_signed": -20,
+      "nominal_display": -2,
+      "color_native": 6,
+      "intermediate_mode_20": 22,
+      "intermediate_color_c": 6,
+      "color_mode_130": 13,
+      "color_index_13c": 2,
+      "selector": 16,
+      "gain": 115,
+      "coefficients": [
+        964,
+        -19,
+        1321,
+        126
+      ],
+      "packed": [
+        964,
+        8173,
+        1321,
+        126
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1fed03c4",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x7e0529",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "REALA",
+      "film_ui": 17,
+      "mode_state": 22,
+      "frame_c0": 22,
+      "params_3a00": 22,
+      "ui_color": 7,
+      "color_name": "SUPER_THIN",
+      "representation_4_signed": -30,
+      "nominal_display": -3,
+      "color_native": 7,
+      "intermediate_mode_20": 22,
+      "intermediate_color_c": 7,
+      "color_mode_130": 13,
+      "color_index_13c": 1,
+      "selector": 16,
+      "gain": 109,
+      "coefficients": [
+        914,
+        -18,
+        1252,
+        120
+      ],
+      "packed": [
+        914,
+        8174,
+        1252,
+        120
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1fee0392",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x7804e4",
+          "pc": "0x5dd28"
+        }
+      ]
+    },
+    {
+      "film": "REALA",
+      "film_ui": 17,
+      "mode_state": 22,
+      "frame_c0": 22,
+      "params_3a00": 22,
+      "ui_color": 8,
+      "color_name": "EXTRA_THIN",
+      "representation_4_signed": -40,
+      "nominal_display": -4,
+      "color_native": 8,
+      "intermediate_mode_20": 22,
+      "intermediate_color_c": 8,
+      "color_mode_130": 13,
+      "color_index_13c": 0,
+      "selector": 16,
+      "gain": 102,
+      "coefficients": [
+        855,
+        -17,
+        1172,
+        112
+      ],
+      "packed": [
+        855,
+        8175,
+        1172,
+        112
+      ],
+      "mmio": [
+        {
+          "address": "0xff96c634",
+          "size": 4,
+          "value": "0x1fef0357",
+          "pc": "0x5dd28"
+        },
+        {
+          "address": "0xff96c638",
+          "size": 4,
+          "value": "0x700494",
+          "pc": "0x5dd28"
+        }
+      ]
+    }
+  ],
+  "zero_mask_writes": 0,
+  "caveats": [
+    "Ручной перенос state в setter кадра и color во входную запись +0x50",
+    "Для X-T5 поле film +0x3a00, не X-H2 +0x39b8",
+    "Номинальное меню = representation 4 / 10; независимого чтения экрана нет",
+    "MMIO виртуально, съёмка и фактическая достижимость не проверены"
+  ],
+  "source_unchanged": true
+}

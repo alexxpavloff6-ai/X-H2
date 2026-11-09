@@ -1,0 +1,541 @@
+{
+  "method": "Original JPEGs decoded as BGR, fixed pixels [::8,::8] sampled before float sRGB-to-CIELAB OpenCV conversion, no registration, no colorimetric calibration; differences are candidate minus DSCF0300. No repeated identical development baseline available, so small differences are not a noise floor or proof of causality. C* is not percent or firmware gain. Brightness bins assigned using 0300; hue counts limited to C* >=10.",
+  "sampling_shape": [
+    644,
+    966,
+    3
+  ],
+  "source_sha256": {
+    "DSCF0300.JPG": "a508796353a62ec3d13ca72b4358d7c3779867a44bc02af951479623f04c8cae",
+    "DSCF0303.JPG": "43e28f46c508215e083d59981d32cfd6501d49f0b27bc4e6f8b8d80e35a5b684",
+    "DSCF0304.JPG": "8becae107a0154fb2a71efca0d6135089ea658fc09140bfe4f028ad717d094e5",
+    "DSCF0305.JPG": "a03c814d286ac3ef01a7986898466f5c559db95255a8b65259b0df93e44c1379",
+    "DSCF0306.JPG": "a8c91a651cd2855b7682b550b12a862e5731cf1512c20d4c0393cc6908126352",
+    "DSCF0307.JPG": "2b5c038f2d930b32418d0dc2ed932132fda0dc977210e71327d9f0246d3e4c89",
+    "DSCF0308.JPG": "008991cf530c22d10f584acfa5b15fc01a15f4c626310713dd9b6599977154f3",
+    "DSCF0309.JPG": "d592f13b678e29248fb955d5e610ae48d8aeb87100bf5ed4b67019aff8e2a070",
+    "DSCF0310.JPG": "23d23cc0309b2b5a5de94aa342f52fed3f4cbe6c50143777d0bda6c42e2496fa"
+  },
+  "opencv_version": "4.13.0",
+  "numpy_version": "2.4.6",
+  "hue_bin_counts_C_ge_10": [
+    473,
+    62994,
+    300727,
+    42769,
+    2140,
+    746,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "comparisons": [
+    {
+      "file": "DSCF0303.JPG",
+      "delta_lab_mean": [
+        -0.4725272059440613,
+        0.08584155887365341,
+        0.23692630231380463
+      ],
+      "delta_C_mean": 0.235702246427536,
+      "delta_C_median": 0.042293548583984375,
+      "delta_E76_mean": 1.2718098163604736,
+      "delta_E76_p50_p95": [
+        1.2053871154785156,
+        2.878000545501709
+      ],
+      "identical_rgb_fraction": 0.11873738153106234,
+      "delta_L_bins": [
+        {
+          "L_range": [
+            0,
+            20
+          ],
+          "samples": 190089,
+          "mean_delta_L": 0.01714744046330452,
+          "mean_delta_C": 0.005574985407292843
+        },
+        {
+          "L_range": [
+            20,
+            40
+          ],
+          "samples": 113958,
+          "mean_delta_L": 0.00856033619493246,
+          "mean_delta_C": 0.0010407251538708806
+        },
+        {
+          "L_range": [
+            40,
+            60
+          ],
+          "samples": 66043,
+          "mean_delta_L": -0.027117175981402397,
+          "mean_delta_C": -0.013899759389460087
+        },
+        {
+          "L_range": [
+            60,
+            80
+          ],
+          "samples": 100488,
+          "mean_delta_L": -0.9914188981056213,
+          "mean_delta_C": 0.3815220892429352
+        },
+        {
+          "L_range": [
+            80,
+            101
+          ],
+          "samples": 151526,
+          "mean_delta_L": -1.2987138032913208,
+          "mean_delta_C": 0.7129639387130737
+        }
+      ]
+    },
+    {
+      "file": "DSCF0304.JPG",
+      "delta_lab_mean": [
+        0.5903342962265015,
+        0.2096676379442215,
+        0.4052478075027466
+      ],
+      "delta_C_mean": 0.47015130519866943,
+      "delta_C_median": 0.18304061889648438,
+      "delta_E76_mean": 1.3592602014541626,
+      "delta_E76_p50_p95": [
+        1.2700576782226562,
+        3.02036714553833
+      ],
+      "identical_rgb_fraction": 0.11333635533608528,
+      "delta_L_bins": [
+        {
+          "L_range": [
+            0,
+            20
+          ],
+          "samples": 190089,
+          "mean_delta_L": 0.8454293012619019,
+          "mean_delta_C": 0.8019828796386719
+        },
+        {
+          "L_range": [
+            20,
+            40
+          ],
+          "samples": 113958,
+          "mean_delta_L": 1.4707560539245605,
+          "mean_delta_C": 1.0718377828598022
+        },
+        {
+          "L_range": [
+            40,
+            60
+          ],
+          "samples": 66043,
+          "mean_delta_L": 0.5995988249778748,
+          "mean_delta_C": 0.2608303129673004
+        },
+        {
+          "L_range": [
+            60,
+            80
+          ],
+          "samples": 100488,
+          "mean_delta_L": -0.000768284488003701,
+          "mean_delta_C": 0.004978138487786055
+        },
+        {
+          "L_range": [
+            80,
+            101
+          ],
+          "samples": 151526,
+          "mean_delta_L": -0.0038644536398351192,
+          "mean_delta_C": 0.0010831602849066257
+        }
+      ]
+    },
+    {
+      "file": "DSCF0305.JPG",
+      "delta_lab_mean": [
+        1.4964702129364014,
+        -0.17956480383872986,
+        -0.017190102487802505
+      ],
+      "delta_C_mean": -0.10716962814331055,
+      "delta_C_median": -0.0181121826171875,
+      "delta_E76_mean": 2.0381271839141846,
+      "delta_E76_p50_p95": [
+        1.6661747694015503,
+        4.6392126083374015
+      ],
+      "identical_rgb_fraction": 0.08915711842392912,
+      "delta_L_bins": [
+        {
+          "L_range": [
+            0,
+            20
+          ],
+          "samples": 190089,
+          "mean_delta_L": 1.919194221496582,
+          "mean_delta_C": 0.24922053515911102
+        },
+        {
+          "L_range": [
+            20,
+            40
+          ],
+          "samples": 113958,
+          "mean_delta_L": 3.1172804832458496,
+          "mean_delta_C": -0.605204164981842
+        },
+        {
+          "L_range": [
+            40,
+            60
+          ],
+          "samples": 66043,
+          "mean_delta_L": 2.5049781799316406,
+          "mean_delta_C": -0.5378398299217224
+        },
+        {
+          "L_range": [
+            60,
+            80
+          ],
+          "samples": 100488,
+          "mean_delta_L": 0.4573898911476135,
+          "mean_delta_C": -0.09654001891613007
+        },
+        {
+          "L_range": [
+            80,
+            101
+          ],
+          "samples": 151526,
+          "mean_delta_L": -0.003403525799512863,
+          "mean_delta_C": 0.0009555426076985896
+        }
+      ]
+    },
+    {
+      "file": "DSCF0306.JPG",
+      "delta_lab_mean": [
+        0.004620677791535854,
+        -0.001573867630213499,
+        -0.000743972253985703
+      ],
+      "delta_C_mean": 0.0004191132902633399,
+      "delta_C_median": 0.0,
+      "delta_E76_mean": 0.8507910966873169,
+      "delta_E76_p50_p95": [
+        0.8664453327655792,
+        1.9445434689521774
+      ],
+      "identical_rgb_fraction": 0.20552351375332742,
+      "delta_L_bins": [
+        {
+          "L_range": [
+            0,
+            20
+          ],
+          "samples": 190089,
+          "mean_delta_L": 0.015866495668888092,
+          "mean_delta_C": 0.0016770650399848819
+        },
+        {
+          "L_range": [
+            20,
+            40
+          ],
+          "samples": 113958,
+          "mean_delta_L": -0.0002572990779299289,
+          "mean_delta_C": -0.001900481409393251
+        },
+        {
+          "L_range": [
+            40,
+            60
+          ],
+          "samples": 66043,
+          "mean_delta_L": 0.0010632610647007823,
+          "mean_delta_C": 0.0035588773898780346
+        },
+        {
+          "L_range": [
+            60,
+            80
+          ],
+          "samples": 100488,
+          "mean_delta_L": 0.0020123354624956846,
+          "mean_delta_C": 0.00020141030836384743
+        },
+        {
+          "L_range": [
+            80,
+            101
+          ],
+          "samples": 151526,
+          "mean_delta_L": -0.002538304543122649,
+          "mean_delta_C": -0.0006385880406014621
+        }
+      ]
+    },
+    {
+      "file": "DSCF0307.JPG",
+      "delta_lab_mean": [
+        -0.21192888915538788,
+        -2.210780382156372,
+        -4.306102275848389
+      ],
+      "delta_C_mean": -4.157304286956787,
+      "delta_C_median": -4.7239089012146,
+      "delta_E76_mean": 5.164772987365723,
+      "delta_E76_p50_p95": [
+        5.2415971755981445,
+        9.11530876159668
+      ],
+      "identical_rgb_fraction": 0.006264225917209984,
+      "delta_L_bins": [
+        {
+          "L_range": [
+            0,
+            20
+          ],
+          "samples": 190089,
+          "mean_delta_L": -0.026905953884124756,
+          "mean_delta_C": -2.0346386432647705
+        },
+        {
+          "L_range": [
+            20,
+            40
+          ],
+          "samples": 113958,
+          "mean_delta_L": -0.38149458169937134,
+          "mean_delta_C": -5.505505084991455
+        },
+        {
+          "L_range": [
+            40,
+            60
+          ],
+          "samples": 66043,
+          "mean_delta_L": -0.4757680892944336,
+          "mean_delta_C": -7.625208377838135
+        },
+        {
+          "L_range": [
+            60,
+            80
+          ],
+          "samples": 100488,
+          "mean_delta_L": -0.28482508659362793,
+          "mean_delta_C": -6.841798305511475
+        },
+        {
+          "L_range": [
+            80,
+            101
+          ],
+          "samples": 151526,
+          "mean_delta_L": -0.15318267047405243,
+          "mean_delta_C": -2.514463186264038
+        }
+      ]
+    },
+    {
+      "file": "DSCF0308.JPG",
+      "delta_lab_mean": [
+        0.4045311212539673,
+        -0.006667369045317173,
+        0.12744605541229248
+      ],
+      "delta_C_mean": 0.11518482118844986,
+      "delta_C_median": 0.0,
+      "delta_E76_mean": 1.412947177886963,
+      "delta_E76_p50_p95": [
+        1.2361037731170654,
+        3.4592139124870243
+      ],
+      "identical_rgb_fraction": 0.09748209302624641,
+      "delta_L_bins": [
+        {
+          "L_range": [
+            0,
+            20
+          ],
+          "samples": 190089,
+          "mean_delta_L": 1.2027267217636108,
+          "mean_delta_C": 0.36590811610221863
+        },
+        {
+          "L_range": [
+            20,
+            40
+          ],
+          "samples": 113958,
+          "mean_delta_L": 0.37825435400009155,
+          "mean_delta_C": -0.008210769854485989
+        },
+        {
+          "L_range": [
+            40,
+            60
+          ],
+          "samples": 66043,
+          "mean_delta_L": -0.10649965703487396,
+          "mean_delta_C": 0.026759875938296318
+        },
+        {
+          "L_range": [
+            60,
+            80
+          ],
+          "samples": 100488,
+          "mean_delta_L": -0.10783837735652924,
+          "mean_delta_C": 0.009815084747970104
+        },
+        {
+          "L_range": [
+            80,
+            101
+          ],
+          "samples": 151526,
+          "mean_delta_L": -0.014523995108902454,
+          "mean_delta_C": 0.0018737072823569179
+        }
+      ]
+    },
+    {
+      "file": "DSCF0309.JPG",
+      "delta_lab_mean": [
+        0.004286374896764755,
+        0.0006670408183708787,
+        -0.012725414708256721
+      ],
+      "delta_C_mean": -0.00942125916481018,
+      "delta_C_median": 0.0,
+      "delta_E76_mean": 0.8682270050048828,
+      "delta_E76_p50_p95": [
+        0.8856470584869385,
+        1.976898896694183
+      ],
+      "identical_rgb_fraction": 0.1970201123927832,
+      "delta_L_bins": [
+        {
+          "L_range": [
+            0,
+            20
+          ],
+          "samples": 190089,
+          "mean_delta_L": -0.015705404803156853,
+          "mean_delta_C": -0.019139407202601433
+        },
+        {
+          "L_range": [
+            20,
+            40
+          ],
+          "samples": 113958,
+          "mean_delta_L": 0.013977221213281155,
+          "mean_delta_C": -0.013381637632846832
+        },
+        {
+          "L_range": [
+            40,
+            60
+          ],
+          "samples": 66043,
+          "mean_delta_L": 0.02845011092722416,
+          "mean_delta_C": -0.009165746159851551
+        },
+        {
+          "L_range": [
+            60,
+            80
+          ],
+          "samples": 100488,
+          "mean_delta_L": 0.01625891402363777,
+          "mean_delta_C": -0.0034765100572258234
+        },
+        {
+          "L_range": [
+            80,
+            101
+          ],
+          "samples": 151526,
+          "mean_delta_L": 0.003606135956943035,
+          "mean_delta_C": 0.0016948443371802568
+        }
+      ]
+    },
+    {
+      "file": "DSCF0310.JPG",
+      "delta_lab_mean": [
+        -0.013182421214878559,
+        0.009136736392974854,
+        0.03170435503125191
+      ],
+      "delta_C_mean": 0.037075430154800415,
+      "delta_C_median": 0.0,
+      "delta_E76_mean": 0.8933284282684326,
+      "delta_E76_p50_p95": [
+        0.9141712784767151,
+        1.9941707849502563
+      ],
+      "identical_rgb_fraction": 0.1795873358795314,
+      "delta_L_bins": [
+        {
+          "L_range": [
+            0,
+            20
+          ],
+          "samples": 190089,
+          "mean_delta_L": -0.009818335063755512,
+          "mean_delta_C": 0.040451593697071075
+        },
+        {
+          "L_range": [
+            20,
+            40
+          ],
+          "samples": 113958,
+          "mean_delta_L": -0.027634693309664726,
+          "mean_delta_C": 0.0547780878841877
+        },
+        {
+          "L_range": [
+            40,
+            60
+          ],
+          "samples": 66043,
+          "mean_delta_L": -0.008152222260832787,
+          "mean_delta_C": 0.04139721021056175
+        },
+        {
+          "L_range": [
+            60,
+            80
+          ],
+          "samples": 100488,
+          "mean_delta_L": -0.01128355972468853,
+          "mean_delta_C": 0.03464623540639877
+        },
+        {
+          "L_range": [
+            80,
+            101
+          ],
+          "samples": 151526,
+          "mean_delta_L": -0.009984362870454788,
+          "mean_delta_C": 0.019253743812441826
+        }
+      ]
+    }
+  ]
+}

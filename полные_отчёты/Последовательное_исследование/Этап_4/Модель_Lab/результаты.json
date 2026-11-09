@@ -1,0 +1,34 @@
+{
+  "method": "Exploratory hypothesis only: apply g to a*,b* of the reduced decoded sRGB Lab reference; compare to actual a*,b* at same coordinates, ignoring L*. g=134/128 or 141/128 comes from a previous synthetic Classic Chrome coefficient calculation, not a measured ISP mapping. All RGB channels of all three reduced JPEGs in 6..249, reference L* 15..85 and C*>10. One scene, no registration, no independent validation, JPEG and Lab nonlinearities included.",
+  "source_sha256": {
+    "DSCF0300.JPG": "a508796353a62ec3d13ca72b4358d7c3779867a44bc02af951479623f04c8cae",
+    "DSCF0301.JPG": "17949ce0e8660675e86a61a817857470b9c264b411d863aebded9e27330e4c8a",
+    "DSCF0302.JPG": "20f3b6ef810d587e9c9f5f987b90035e0a76c59a774f8631fc2c8707c6984e87"
+  },
+  "opencv_version": "4.13.0",
+  "numpy_version": "2.4.6",
+  "mask_fraction": 0.5437820685930327,
+  "mask_pixels": 338289,
+  "comparisons": [
+    {
+      "target": "DSCF0300.JPG",
+      "hypothetical_gain": 1.046875,
+      "residual_mean_ab": 0.46149584650993347,
+      "residual_median_ab": 0.43960297107696533,
+      "residual_p90_ab": 0.8124149441719055,
+      "residual_fraction_ab_gt1": 0.025164873820904612,
+      "no_change_mean_ab": 1.2799381017684937,
+      "no_change_median_ab": 1.220151424407959
+    },
+    {
+      "target": "DSCF0302.JPG",
+      "hypothetical_gain": 1.1015625,
+      "residual_mean_ab": 0.5361589193344116,
+      "residual_median_ab": 0.4952961802482605,
+      "residual_p90_ab": 0.9356715083122253,
+      "residual_fraction_ab_gt1": 0.07561877566222963,
+      "no_change_mean_ab": 2.6588940620422363,
+      "no_change_median_ab": 2.5353939533233643
+    }
+  ]
+}

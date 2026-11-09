@@ -1,0 +1,3178 @@
+{
+  "X-H2": {
+    "dat": "FIRMWARE/ver 5.30/FWUP0028.DAT",
+    "sha256_before": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+    "sha256_after": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+    "decoded_blocks_sha256": [
+      "3aacc331157312a03531266cd9aca0daea28597b9f3535bb6141105ad7354b4d",
+      "a49b88c00d3724239207e6564f2dfbf9d0a59b41962012d44a05738455d2addd"
+    ],
+    "template_dat_offset": "0xc0274",
+    "translator": "0x2f38c30",
+    "selector": "0x2f24284",
+    "calculator": "0x2f24680",
+    "packer": "0x13777d0",
+    "dispatcher": "0x2d2f4f8",
+    "context": {
+      "0x100": 0,
+      "0x12c": 1,
+      "0x130": 10,
+      "0x124": 18,
+      "0x128": 18,
+      "0x13c": 4,
+      "0x10c": 8,
+      "0x17c": 2
+    },
+    "mode": 19,
+    "translated_code": 10,
+    "selected": 8,
+    "runs": [
+      {
+        "index": 4,
+        "four_signed16": [
+          747,
+          41,
+          660,
+          -298
+        ],
+        "upper_cases": [
+          {
+            "initial_upper_each": "0x0",
+            "packed_u16": [
+              "0x2eb",
+              "0x29",
+              "0x294",
+              "0x1ed6"
+            ],
+            "packed_words": [
+              "0x2902eb",
+              "0x1ed60294"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2902eb"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ed60294"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2902eb"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ed60294"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xa000",
+            "packed_u16": [
+              "0xa2eb",
+              "0xa029",
+              "0xa294",
+              "0xbed6"
+            ],
+            "packed_words": [
+              "0xa029a2eb",
+              "0xbed6a294"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa029a2eb"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbed6a294"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa029a2eb"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbed6a294"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xe000",
+            "packed_u16": [
+              "0xe2eb",
+              "0xe029",
+              "0xe294",
+              "0xfed6"
+            ],
+            "packed_words": [
+              "0xe029e2eb",
+              "0xfed6e294"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe029e2eb"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfed6e294"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe029e2eb"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfed6e294"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "four_signed16": [
+          782,
+          42,
+          690,
+          -312
+        ],
+        "upper_cases": [
+          {
+            "initial_upper_each": "0x0",
+            "packed_u16": [
+              "0x30e",
+              "0x2a",
+              "0x2b2",
+              "0x1ec8"
+            ],
+            "packed_words": [
+              "0x2a030e",
+              "0x1ec802b2"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2a030e"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ec802b2"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2a030e"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ec802b2"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xa000",
+            "packed_u16": [
+              "0xa30e",
+              "0xa02a",
+              "0xa2b2",
+              "0xbec8"
+            ],
+            "packed_words": [
+              "0xa02aa30e",
+              "0xbec8a2b2"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa02aa30e"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbec8a2b2"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa02aa30e"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbec8a2b2"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xe000",
+            "packed_u16": [
+              "0xe30e",
+              "0xe02a",
+              "0xe2b2",
+              "0xfec8"
+            ],
+            "packed_words": [
+              "0xe02ae30e",
+              "0xfec8e2b2"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe02ae30e"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfec8e2b2"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe02ae30e"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfec8e2b2"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "four_signed16": [
+          822,
+          45,
+          727,
+          -329
+        ],
+        "upper_cases": [
+          {
+            "initial_upper_each": "0x0",
+            "packed_u16": [
+              "0x336",
+              "0x2d",
+              "0x2d7",
+              "0x1eb7"
+            ],
+            "packed_words": [
+              "0x2d0336",
+              "0x1eb702d7"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2d0336"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1eb702d7"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2d0336"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1eb702d7"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xa000",
+            "packed_u16": [
+              "0xa336",
+              "0xa02d",
+              "0xa2d7",
+              "0xbeb7"
+            ],
+            "packed_words": [
+              "0xa02da336",
+              "0xbeb7a2d7"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa02da336"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbeb7a2d7"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa02da336"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbeb7a2d7"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xe000",
+            "packed_u16": [
+              "0xe336",
+              "0xe02d",
+              "0xe2d7",
+              "0xfeb7"
+            ],
+            "packed_words": [
+              "0xe02de336",
+              "0xfeb7e2d7"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe02de336"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfeb7e2d7"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe02de336"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfeb7e2d7"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sign_saturation_controls": [
+      {
+        "input_signed16": [
+          0,
+          -1,
+          4095,
+          -4096
+        ],
+        "initial_upper_each": "0x0",
+        "packed_u16": [
+          "0x0",
+          "0x1fff",
+          "0xfff",
+          "0x1000"
+        ]
+      },
+      {
+        "input_signed16": [
+          0,
+          -1,
+          4095,
+          -4096
+        ],
+        "initial_upper_each": "0xa000",
+        "packed_u16": [
+          "0xa000",
+          "0xbfff",
+          "0xafff",
+          "0xb000"
+        ]
+      },
+      {
+        "input_signed16": [
+          0,
+          -1,
+          4095,
+          -4096
+        ],
+        "initial_upper_each": "0xe000",
+        "packed_u16": [
+          "0xe000",
+          "0xffff",
+          "0xefff",
+          "0xf000"
+        ]
+      },
+      {
+        "input_signed16": [
+          -4097,
+          4096,
+          -32768,
+          32767
+        ],
+        "initial_upper_each": "0x0",
+        "packed_u16": [
+          "0x1000",
+          "0xfff",
+          "0x1000",
+          "0xfff"
+        ]
+      },
+      {
+        "input_signed16": [
+          -4097,
+          4096,
+          -32768,
+          32767
+        ],
+        "initial_upper_each": "0xa000",
+        "packed_u16": [
+          "0xb000",
+          "0xafff",
+          "0xb000",
+          "0xafff"
+        ]
+      },
+      {
+        "input_signed16": [
+          -4097,
+          4096,
+          -32768,
+          32767
+        ],
+        "initial_upper_each": "0xe000",
+        "packed_u16": [
+          "0xf000",
+          "0xefff",
+          "0xf000",
+          "0xefff"
+        ]
+      }
+    ]
+  },
+  "X-H2S": {
+    "dat": "Firmware на прочиеFuji/FWUP0027.DAT",
+    "sha256_before": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+    "sha256_after": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+    "decoded_blocks_sha256": [
+      "a32a90b7efefaebcf3b9c3f076cb23f82c1f4dda45bf828a024487fc0fb06c16",
+      "86c8c9f01ae6840f791bffea050e8442ff9e967b6b7cbbb7f9d8141dd41d764f"
+    ],
+    "template_dat_offset": "0xc0274",
+    "translator": "0x324f9a8",
+    "selector": "0x323b004",
+    "calculator": "0x323b400",
+    "packer": "0x16953b0",
+    "dispatcher": "0x3045b98",
+    "context": {
+      "0x100": 0,
+      "0x12c": 1,
+      "0x130": 10,
+      "0x124": 18,
+      "0x128": 18,
+      "0x13c": 4,
+      "0x10c": 8,
+      "0x17c": 2
+    },
+    "mode": 19,
+    "translated_code": 10,
+    "selected": 8,
+    "runs": [
+      {
+        "index": 4,
+        "four_signed16": [
+          736,
+          27,
+          746,
+          -257
+        ],
+        "upper_cases": [
+          {
+            "initial_upper_each": "0x0",
+            "packed_u16": [
+              "0x2e0",
+              "0x1b",
+              "0x2ea",
+              "0x1eff"
+            ],
+            "packed_words": [
+              "0x1b02e0",
+              "0x1eff02ea"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x1b02e0"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1eff02ea"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x1b02e0"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1eff02ea"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xa000",
+            "packed_u16": [
+              "0xa2e0",
+              "0xa01b",
+              "0xa2ea",
+              "0xbeff"
+            ],
+            "packed_words": [
+              "0xa01ba2e0",
+              "0xbeffa2ea"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa01ba2e0"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbeffa2ea"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa01ba2e0"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbeffa2ea"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xe000",
+            "packed_u16": [
+              "0xe2e0",
+              "0xe01b",
+              "0xe2ea",
+              "0xfeff"
+            ],
+            "packed_words": [
+              "0xe01be2e0",
+              "0xfeffe2ea"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe01be2e0"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfeffe2ea"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe01be2e0"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfeffe2ea"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "four_signed16": [
+          770,
+          28,
+          780,
+          -270
+        ],
+        "upper_cases": [
+          {
+            "initial_upper_each": "0x0",
+            "packed_u16": [
+              "0x302",
+              "0x1c",
+              "0x30c",
+              "0x1ef2"
+            ],
+            "packed_words": [
+              "0x1c0302",
+              "0x1ef2030c"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x1c0302"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ef2030c"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x1c0302"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ef2030c"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xa000",
+            "packed_u16": [
+              "0xa302",
+              "0xa01c",
+              "0xa30c",
+              "0xbef2"
+            ],
+            "packed_words": [
+              "0xa01ca302",
+              "0xbef2a30c"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa01ca302"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbef2a30c"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa01ca302"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbef2a30c"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xe000",
+            "packed_u16": [
+              "0xe302",
+              "0xe01c",
+              "0xe30c",
+              "0xfef2"
+            ],
+            "packed_words": [
+              "0xe01ce302",
+              "0xfef2e30c"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe01ce302"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfef2e30c"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe01ce302"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfef2e30c"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "four_signed16": [
+          810,
+          29,
+          821,
+          -284
+        ],
+        "upper_cases": [
+          {
+            "initial_upper_each": "0x0",
+            "packed_u16": [
+              "0x32a",
+              "0x1d",
+              "0x335",
+              "0x1ee4"
+            ],
+            "packed_words": [
+              "0x1d032a",
+              "0x1ee40335"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x1d032a"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ee40335"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x1d032a"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ee40335"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xa000",
+            "packed_u16": [
+              "0xa32a",
+              "0xa01d",
+              "0xa335",
+              "0xbee4"
+            ],
+            "packed_words": [
+              "0xa01da32a",
+              "0xbee4a335"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa01da32a"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbee4a335"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa01da32a"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbee4a335"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xe000",
+            "packed_u16": [
+              "0xe32a",
+              "0xe01d",
+              "0xe335",
+              "0xfee4"
+            ],
+            "packed_words": [
+              "0xe01de32a",
+              "0xfee4e335"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe01de32a"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfee4e335"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe01de32a"
+                  },
+                  {
+                    "pc": "0x5de10",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfee4e335"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sign_saturation_controls": [
+      {
+        "input_signed16": [
+          0,
+          -1,
+          4095,
+          -4096
+        ],
+        "initial_upper_each": "0x0",
+        "packed_u16": [
+          "0x0",
+          "0x1fff",
+          "0xfff",
+          "0x1000"
+        ]
+      },
+      {
+        "input_signed16": [
+          0,
+          -1,
+          4095,
+          -4096
+        ],
+        "initial_upper_each": "0xa000",
+        "packed_u16": [
+          "0xa000",
+          "0xbfff",
+          "0xafff",
+          "0xb000"
+        ]
+      },
+      {
+        "input_signed16": [
+          0,
+          -1,
+          4095,
+          -4096
+        ],
+        "initial_upper_each": "0xe000",
+        "packed_u16": [
+          "0xe000",
+          "0xffff",
+          "0xefff",
+          "0xf000"
+        ]
+      },
+      {
+        "input_signed16": [
+          -4097,
+          4096,
+          -32768,
+          32767
+        ],
+        "initial_upper_each": "0x0",
+        "packed_u16": [
+          "0x1000",
+          "0xfff",
+          "0x1000",
+          "0xfff"
+        ]
+      },
+      {
+        "input_signed16": [
+          -4097,
+          4096,
+          -32768,
+          32767
+        ],
+        "initial_upper_each": "0xa000",
+        "packed_u16": [
+          "0xb000",
+          "0xafff",
+          "0xb000",
+          "0xafff"
+        ]
+      },
+      {
+        "input_signed16": [
+          -4097,
+          4096,
+          -32768,
+          32767
+        ],
+        "initial_upper_each": "0xe000",
+        "packed_u16": [
+          "0xf000",
+          "0xefff",
+          "0xf000",
+          "0xefff"
+        ]
+      }
+    ]
+  },
+  "X-T5": {
+    "dat": "Firmware на прочиеFuji/FWUP0030.DAT",
+    "sha256_before": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+    "sha256_after": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+    "decoded_blocks_sha256": [
+      "fd5f899217a833552f135d719d22e025aea2e0780b2fd1f8c66b353ead969724",
+      "d74dba337fe4078a6ee15ca5fddba7e502bdefb980825a09a15f9b13a01eb350"
+    ],
+    "template_dat_offset": "0xc0274",
+    "translator": "0x2e73f2c",
+    "selector": "0x2e5f410",
+    "calculator": "0x2e5f7dc",
+    "packer": "0x13747a0",
+    "dispatcher": "0x2c6e1c4",
+    "context": {
+      "0x100": 0,
+      "0x12c": 1,
+      "0x130": 10,
+      "0x124": 18,
+      "0x128": 18,
+      "0x13c": 4,
+      "0x10c": 8,
+      "0x17c": 2
+    },
+    "mode": 19,
+    "translated_code": 10,
+    "selected": 8,
+    "runs": [
+      {
+        "index": 4,
+        "four_signed16": [
+          747,
+          41,
+          660,
+          -298
+        ],
+        "upper_cases": [
+          {
+            "initial_upper_each": "0x0",
+            "packed_u16": [
+              "0x2eb",
+              "0x29",
+              "0x294",
+              "0x1ed6"
+            ],
+            "packed_words": [
+              "0x2902eb",
+              "0x1ed60294"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2902eb"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ed60294"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2902eb"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ed60294"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xa000",
+            "packed_u16": [
+              "0xa2eb",
+              "0xa029",
+              "0xa294",
+              "0xbed6"
+            ],
+            "packed_words": [
+              "0xa029a2eb",
+              "0xbed6a294"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa029a2eb"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbed6a294"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa029a2eb"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbed6a294"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xe000",
+            "packed_u16": [
+              "0xe2eb",
+              "0xe029",
+              "0xe294",
+              "0xfed6"
+            ],
+            "packed_words": [
+              "0xe029e2eb",
+              "0xfed6e294"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe029e2eb"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfed6e294"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe029e2eb"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfed6e294"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "four_signed16": [
+          782,
+          42,
+          690,
+          -312
+        ],
+        "upper_cases": [
+          {
+            "initial_upper_each": "0x0",
+            "packed_u16": [
+              "0x30e",
+              "0x2a",
+              "0x2b2",
+              "0x1ec8"
+            ],
+            "packed_words": [
+              "0x2a030e",
+              "0x1ec802b2"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2a030e"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ec802b2"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2a030e"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ec802b2"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xa000",
+            "packed_u16": [
+              "0xa30e",
+              "0xa02a",
+              "0xa2b2",
+              "0xbec8"
+            ],
+            "packed_words": [
+              "0xa02aa30e",
+              "0xbec8a2b2"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa02aa30e"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbec8a2b2"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa02aa30e"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbec8a2b2"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xe000",
+            "packed_u16": [
+              "0xe30e",
+              "0xe02a",
+              "0xe2b2",
+              "0xfec8"
+            ],
+            "packed_words": [
+              "0xe02ae30e",
+              "0xfec8e2b2"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe02ae30e"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfec8e2b2"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe02ae30e"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfec8e2b2"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "four_signed16": [
+          822,
+          45,
+          727,
+          -329
+        ],
+        "upper_cases": [
+          {
+            "initial_upper_each": "0x0",
+            "packed_u16": [
+              "0x336",
+              "0x2d",
+              "0x2d7",
+              "0x1eb7"
+            ],
+            "packed_words": [
+              "0x2d0336",
+              "0x1eb702d7"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2d0336"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1eb702d7"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2d0336"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1eb702d7"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xa000",
+            "packed_u16": [
+              "0xa336",
+              "0xa02d",
+              "0xa2d7",
+              "0xbeb7"
+            ],
+            "packed_words": [
+              "0xa02da336",
+              "0xbeb7a2d7"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa02da336"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbeb7a2d7"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa02da336"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbeb7a2d7"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xe000",
+            "packed_u16": [
+              "0xe336",
+              "0xe02d",
+              "0xe2d7",
+              "0xfeb7"
+            ],
+            "packed_words": [
+              "0xe02de336",
+              "0xfeb7e2d7"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe02de336"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfeb7e2d7"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe02de336"
+                  },
+                  {
+                    "pc": "0x5dd28",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfeb7e2d7"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sign_saturation_controls": [
+      {
+        "input_signed16": [
+          0,
+          -1,
+          4095,
+          -4096
+        ],
+        "initial_upper_each": "0x0",
+        "packed_u16": [
+          "0x0",
+          "0x1fff",
+          "0xfff",
+          "0x1000"
+        ]
+      },
+      {
+        "input_signed16": [
+          0,
+          -1,
+          4095,
+          -4096
+        ],
+        "initial_upper_each": "0xa000",
+        "packed_u16": [
+          "0xa000",
+          "0xbfff",
+          "0xafff",
+          "0xb000"
+        ]
+      },
+      {
+        "input_signed16": [
+          0,
+          -1,
+          4095,
+          -4096
+        ],
+        "initial_upper_each": "0xe000",
+        "packed_u16": [
+          "0xe000",
+          "0xffff",
+          "0xefff",
+          "0xf000"
+        ]
+      },
+      {
+        "input_signed16": [
+          -4097,
+          4096,
+          -32768,
+          32767
+        ],
+        "initial_upper_each": "0x0",
+        "packed_u16": [
+          "0x1000",
+          "0xfff",
+          "0x1000",
+          "0xfff"
+        ]
+      },
+      {
+        "input_signed16": [
+          -4097,
+          4096,
+          -32768,
+          32767
+        ],
+        "initial_upper_each": "0xa000",
+        "packed_u16": [
+          "0xb000",
+          "0xafff",
+          "0xb000",
+          "0xafff"
+        ]
+      },
+      {
+        "input_signed16": [
+          -4097,
+          4096,
+          -32768,
+          32767
+        ],
+        "initial_upper_each": "0xe000",
+        "packed_u16": [
+          "0xf000",
+          "0xefff",
+          "0xf000",
+          "0xefff"
+        ]
+      }
+    ]
+  },
+  "X100VI": {
+    "dat": "Firmware на прочиеFuji/FPUPDATE.DAT",
+    "sha256_before": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+    "sha256_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+    "decoded_blocks_sha256": [
+      "77456fe5c9808ce5e638b1a5f6f12d9e8e40c1751e1f9b4640134fde662e09d4",
+      "14b0557bd724fa74b51ff641fcd5481da5b3ac64146d4fc69375086dafcfb174"
+    ],
+    "template_dat_offset": "0x6602bc",
+    "translator": "0x314eee4",
+    "selector": "0x313a1c0",
+    "calculator": "0x313a590",
+    "packer": "0x145fb28",
+    "dispatcher": "0x2f34cd8",
+    "context": {
+      "0x100": 0,
+      "0x12c": 1,
+      "0x130": 10,
+      "0x124": 18,
+      "0x128": 18,
+      "0x13c": 4,
+      "0x10c": 8,
+      "0x17c": 2
+    },
+    "mode": 19,
+    "translated_code": 10,
+    "selected": 8,
+    "runs": [
+      {
+        "index": 4,
+        "four_signed16": [
+          747,
+          41,
+          660,
+          -298
+        ],
+        "upper_cases": [
+          {
+            "initial_upper_each": "0x0",
+            "packed_u16": [
+              "0x2eb",
+              "0x29",
+              "0x294",
+              "0x1ed6"
+            ],
+            "packed_words": [
+              "0x2902eb",
+              "0x1ed60294"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2902eb"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ed60294"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2902eb"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ed60294"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xa000",
+            "packed_u16": [
+              "0xa2eb",
+              "0xa029",
+              "0xa294",
+              "0xbed6"
+            ],
+            "packed_words": [
+              "0xa029a2eb",
+              "0xbed6a294"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa029a2eb"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbed6a294"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa029a2eb"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbed6a294"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xe000",
+            "packed_u16": [
+              "0xe2eb",
+              "0xe029",
+              "0xe294",
+              "0xfed6"
+            ],
+            "packed_words": [
+              "0xe029e2eb",
+              "0xfed6e294"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe029e2eb"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfed6e294"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe029e2eb"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfed6e294"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "four_signed16": [
+          782,
+          42,
+          690,
+          -312
+        ],
+        "upper_cases": [
+          {
+            "initial_upper_each": "0x0",
+            "packed_u16": [
+              "0x30e",
+              "0x2a",
+              "0x2b2",
+              "0x1ec8"
+            ],
+            "packed_words": [
+              "0x2a030e",
+              "0x1ec802b2"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2a030e"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ec802b2"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2a030e"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1ec802b2"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xa000",
+            "packed_u16": [
+              "0xa30e",
+              "0xa02a",
+              "0xa2b2",
+              "0xbec8"
+            ],
+            "packed_words": [
+              "0xa02aa30e",
+              "0xbec8a2b2"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa02aa30e"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbec8a2b2"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa02aa30e"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbec8a2b2"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xe000",
+            "packed_u16": [
+              "0xe30e",
+              "0xe02a",
+              "0xe2b2",
+              "0xfec8"
+            ],
+            "packed_words": [
+              "0xe02ae30e",
+              "0xfec8e2b2"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe02ae30e"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfec8e2b2"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe02ae30e"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfec8e2b2"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "four_signed16": [
+          822,
+          45,
+          727,
+          -329
+        ],
+        "upper_cases": [
+          {
+            "initial_upper_each": "0x0",
+            "packed_u16": [
+              "0x336",
+              "0x2d",
+              "0x2d7",
+              "0x1eb7"
+            ],
+            "packed_words": [
+              "0x2d0336",
+              "0x1eb702d7"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2d0336"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1eb702d7"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0x2d0336"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0x1eb702d7"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xa000",
+            "packed_u16": [
+              "0xa336",
+              "0xa02d",
+              "0xa2d7",
+              "0xbeb7"
+            ],
+            "packed_words": [
+              "0xa02da336",
+              "0xbeb7a2d7"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa02da336"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbeb7a2d7"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xa02da336"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xbeb7a2d7"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          },
+          {
+            "initial_upper_each": "0xe000",
+            "packed_u16": [
+              "0xe336",
+              "0xe02d",
+              "0xe2d7",
+              "0xfeb7"
+            ],
+            "packed_words": [
+              "0xe02de336",
+              "0xfeb7e2d7"
+            ],
+            "masks": [
+              {
+                "mask": "0x0",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              },
+              {
+                "mask": "0x40",
+                "target_writes": [],
+                "all_virtual_writes_count": 26
+              },
+              {
+                "mask": "0x80",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe02de336"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfeb7e2d7"
+                  }
+                ],
+                "all_virtual_writes_count": 27
+              },
+              {
+                "mask": "0x81",
+                "target_writes": [
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c634",
+                    "size": 4,
+                    "value": "0xe02de336"
+                  },
+                  {
+                    "pc": "0x9ed60",
+                    "address": "0xff96c638",
+                    "size": 4,
+                    "value": "0xfeb7e2d7"
+                  }
+                ],
+                "all_virtual_writes_count": 29
+              },
+              {
+                "mask": "0x100",
+                "target_writes": [],
+                "all_virtual_writes_count": 53
+              },
+              {
+                "mask": "0x100000",
+                "target_writes": [],
+                "all_virtual_writes_count": 20
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sign_saturation_controls": [
+      {
+        "input_signed16": [
+          0,
+          -1,
+          4095,
+          -4096
+        ],
+        "initial_upper_each": "0x0",
+        "packed_u16": [
+          "0x0",
+          "0x1fff",
+          "0xfff",
+          "0x1000"
+        ]
+      },
+      {
+        "input_signed16": [
+          0,
+          -1,
+          4095,
+          -4096
+        ],
+        "initial_upper_each": "0xa000",
+        "packed_u16": [
+          "0xa000",
+          "0xbfff",
+          "0xafff",
+          "0xb000"
+        ]
+      },
+      {
+        "input_signed16": [
+          0,
+          -1,
+          4095,
+          -4096
+        ],
+        "initial_upper_each": "0xe000",
+        "packed_u16": [
+          "0xe000",
+          "0xffff",
+          "0xefff",
+          "0xf000"
+        ]
+      },
+      {
+        "input_signed16": [
+          -4097,
+          4096,
+          -32768,
+          32767
+        ],
+        "initial_upper_each": "0x0",
+        "packed_u16": [
+          "0x1000",
+          "0xfff",
+          "0x1000",
+          "0xfff"
+        ]
+      },
+      {
+        "input_signed16": [
+          -4097,
+          4096,
+          -32768,
+          32767
+        ],
+        "initial_upper_each": "0xa000",
+        "packed_u16": [
+          "0xb000",
+          "0xafff",
+          "0xb000",
+          "0xafff"
+        ]
+      },
+      {
+        "input_signed16": [
+          -4097,
+          4096,
+          -32768,
+          32767
+        ],
+        "initial_upper_each": "0xe000",
+        "packed_u16": [
+          "0xf000",
+          "0xefff",
+          "0xf000",
+          "0xefff"
+        ]
+      }
+    ]
+  }
+}

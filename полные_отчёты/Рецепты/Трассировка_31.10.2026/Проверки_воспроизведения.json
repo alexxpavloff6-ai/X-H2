@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-31",
+  "source": "<корень проекта>\\FIRMWARE\\ver 5.30\\FWUP0028.DAT",
+  "source_sha256": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "module_a_sha256": "3aacc331157312a03531266cd9aca0daea28597b9f3535bb6141105ad7354b4d",
+  "module_b_sha256": "a49b88c00d3724239207e6564f2dfbf9d0a59b41962012d44a05738455d2addd",
+  "bounded_instruction_limit_per_call": 10000,
+  "virtual_processor_runs": 457,
+  "conversion_checks_against_raw_table": 130,
+  "template": {
+    "file_offset": "0xc0274",
+    "size": 814080,
+    "sha256": "5e14efa198ffafedf42527ce8a5285c1518515418cb94e989be43b16cd41ffbe",
+    "identification": [
+      "X-H2 model marker",
+      "55 AA signature",
+      "exact copy length and following FF padding"
+    ],
+    "runtime_mapping": "Inferred correspondence to fallback source 0x07500000; actual device contents not read"
+  },
+  "addresses": {
+    "conversion_function": "0x12e67ac",
+    "conversion_table": "0x1758bd0",
+    "native_state_setter": "0x12eefc0",
+    "state_field": "0x2680414",
+    "hdr_function": "0x2df72c8",
+    "hdr_key_table": "0x3856a68",
+    "settings_byte_reader": "0x149ae2c",
+    "settings_buffer_pointer": "0x20c1458",
+    "frame_film_setter": "0x1562e18",
+    "frame_to_processing_copy": "0x2e57320",
+    "develop_pack_field_offset": "0x21d"
+  },
+  "stages": [
+    {
+      "name": "Стандартный",
+      "ui": 0,
+      "mode": 0,
+      "develop": 1,
+      "hdr_group": 0
+    },
+    {
+      "name": "Classic Chrome",
+      "ui": 14,
+      "mode": 13,
+      "develop": 11,
+      "hdr_group": 5
+    },
+    {
+      "name": "ETERNA",
+      "ui": 18,
+      "mode": 18,
+      "develop": 16,
+      "hdr_group": 7
+    },
+    {
+      "name": "REALA",
+      "ui": 17,
+      "mode": 22,
+      "develop": 20,
+      "hdr_group": 11
+    }
+  ],
+  "neutral_hdr_output": {
+    "Стандартный": [
+      36,
+      63,
+      91,
+      118,
+      160,
+      170,
+      180,
+      190,
+      89,
+      97,
+      170,
+      212
+    ],
+    "Classic Chrome": [
+      36,
+      63,
+      91,
+      118,
+      160,
+      170,
+      180,
+      190,
+      112,
+      108,
+      170,
+      212
+    ],
+    "ETERNA": [
+      48,
+      71,
+      95,
+      118,
+      160,
+      170,
+      180,
+      190,
+      94,
+      100,
+      170,
+      212
+    ],
+    "REALA": [
+      36,
+      63,
+      91,
+      118,
+      160,
+      170,
+      180,
+      190,
+      89,
+      97,
+      170,
+      212
+    ]
+  },
+  "hdr_case_count": 116,
+  "hdr_key_table_rows": 324,
+  "input_unchanged": true,
+  "limits": [
+    "Baseline template and constructed inputs, not measurements from the camera.",
+    "One HDR processing path; not the complete RGB rendering algorithm.",
+    "Byte meanings B0..B11 and physical scales are not established.",
+    "Other enum representations have not been assigned public protocol names."
+  ]
+}

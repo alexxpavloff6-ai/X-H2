@@ -1,0 +1,127 @@
+{
+  "source": "<корень проекта>\\FIRMWARE\\ver 5.30\\FWUP0028.DAT",
+  "size_bytes": 110302544,
+  "size_MiB": 105.19270324707031,
+  "sha256": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+  "header": {
+    "format_field_u32_at_0": 6,
+    "version": "5.30",
+    "model_strings_file_offsets": [
+      "0xc037a",
+      "0xc03d0"
+    ]
+  },
+  "transformation": "byte XOR 0xff; original retained",
+  "signature": {
+    "algorithm": "ECDSA",
+    "curve": "secp256r1",
+    "digest": "SHA-256",
+    "offset": 110302472,
+    "length": 72,
+    "covered_start": 0,
+    "covered_length": 110302472,
+    "verified": true,
+    "r_bits": 256,
+    "s_bits": 256,
+    "public_key_source": "https://github.com/tiredboffin/fffw/blob/main/ffun/ports/xh2/pubkey.pem",
+    "public_key_blob_sha": "de2acfd797e1c70e32e0e48eecf27931b93e07e6",
+    "public_key_point_file_offset_after_inversion": 14412439
+  },
+  "fflz_blocks": [
+    {
+      "file_offset": "0x300274",
+      "packed_size_including_header": 5415597,
+      "unpacked_size": 12042160,
+      "pages": 331,
+      "page_size": 16384,
+      "alignment": 4,
+      "decoded_sha256": "3aacc331157312a03531266cd9aca0daea28597b9f3535bb6141105ad7354b4d",
+      "size_verified": true
+    },
+    {
+      "file_offset": "0x840274",
+      "packed_size_including_header": 7333229,
+      "unpacked_size": 15515648,
+      "pages": 448,
+      "page_size": 16384,
+      "alignment": 4,
+      "decoded_sha256": "a49b88c00d3724239207e6564f2dfbf9d0a59b41962012d44a05738455d2addd",
+      "size_verified": true
+    },
+    {
+      "file_offset": "0xf40274",
+      "packed_size_including_header": 7670115,
+      "unpacked_size": 14876672,
+      "pages": 469,
+      "page_size": 16384,
+      "alignment": 4,
+      "decoded_sha256": "4a643ca7d6a90036c9a8c5e20abba9b2108b303fdb54c147dda70f7c9c040cf6",
+      "size_verified": true
+    },
+    {
+      "file_offset": "0x24a0274",
+      "packed_size_including_header": 3814632,
+      "unpacked_size": 7394632,
+      "pages": 233,
+      "page_size": 16384,
+      "alignment": 4,
+      "decoded_sha256": "5ef015111ec8e50fda4d17570add47d032723af2a3d3ff2c4cf1c1992a4e87c0",
+      "size_verified": true
+    }
+  ],
+  "string_match_counts": {
+    "побитово_преобразованный_образ_от_0x214": {
+      "автофокус": 19,
+      "меню_управление": 1,
+      "имитации_пленки": 9,
+      "система_язык": 43
+    },
+    "распакованный_блок_0x300274": {
+      "автофокус": 546,
+      "меню_управление": 651,
+      "имитации_пленки": 269,
+      "система_язык": 22
+    },
+    "распакованный_блок_0x840274": {
+      "автофокус": 369,
+      "меню_управление": 1034,
+      "имитации_пленки": 64,
+      "система_язык": 17
+    },
+    "распакованный_блок_0xf40274": {
+      "автофокус": 4,
+      "меню_управление": 3,
+      "имитации_пленки": 0,
+      "система_язык": 3
+    },
+    "распакованный_блок_0x24a0274": {
+      "автофокус": 0,
+      "меню_управление": 0,
+      "имитации_пленки": 0,
+      "система_язык": 0
+    }
+  },
+  "source_line_count": null,
+  "source_line_count_reason": "Compiled firmware image; original source files are absent",
+  "capstone_version": "5.0.7",
+  "total_fflz_unpacked_bytes": 49829112,
+  "embedded_elf": {
+    "file_offset": "0x4137274",
+    "class": 2,
+    "data_encoding": 1,
+    "machine": 183
+  },
+  "device_tree": {
+    "file_offset": "0x3c40274",
+    "size": 11425,
+    "cortex_a53_string_offsets": [
+      "0x3c406ec",
+      "0x3c40774",
+      "0x3c407fc",
+      "0x3c40884",
+      "0x4136664"
+    ]
+  },
+  "selected_utf16_resource_strings": 1707,
+  "input_unchanged": true
+}

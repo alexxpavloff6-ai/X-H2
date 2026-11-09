@@ -1,0 +1,3091 @@
+{
+  "method": "Original decoded firmware instructions in Unicorn, no code patches. Artificial parameter RAM at 0x60000000 and output object at 0x60010000, zeroed params; writer cases object initialized to a5; builder cases object zeroed. Synthetic stack and return. Researcher separately invokes each writer, predicate and this camera builder; zero-filled mapped globals, no UI conversion or real file path exercised.",
+  "cameras": {
+    "X-H2": {
+      "dat": "FIRMWARE/ver 5.30/FWUP0028.DAT",
+      "sha256_before": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+      "sha256_after": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+      "decoded_blocks_sha256": [
+        "3aacc331157312a03531266cd9aca0daea28597b9f3535bb6141105ad7354b4d",
+        "a49b88c00d3724239207e6564f2dfbf9d0a59b41962012d44a05738455d2addd"
+      ],
+      "writer_shadow": "0x2e4f7bc",
+      "writer_highlight": "0x2e4f90c",
+      "parameter_offsets": {
+        "gate": "0x3978",
+        "shadow": "0x3a90",
+        "highlight": "0x3a8c",
+        "disable": "0x3f00",
+        "selector": "0x3f58",
+        "override": "0x3f88"
+      },
+      "output_offsets": {
+        "shadow": "0x124",
+        "highlight": "0x128"
+      },
+      "builder": "0x13503e4",
+      "predicate": "0x134df8c",
+      "builder_cases": [
+        {
+          "input": [
+            8,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "shadow_i32": 0,
+          "highlight_i32": 0,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3566,
+          "directory_sha256": "2e8ffbd7770848533cd4b1e995e8817dcd2dd90faac7e605ce7030f5c7692a48",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 f8 ff ff ff e8 ff ff ff 00 00 00 00",
+          "shadow_i32": -8,
+          "highlight_i32": -24,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3566,
+          "directory_sha256": "ab1121e63405b1042ed09e2c91268f1a10a222a6c3b96da9945287635423d9d7",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 f8 ff ff ff"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 e8 ff ff ff"
+              }
+            ]
+          }
+        },
+        {
+          "input": [
+            8,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 00 00 00 00 e8 ff ff ff 00 00 00 00",
+          "shadow_i32": 0,
+          "highlight_i32": -24,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3566,
+          "directory_sha256": "51306ea03e76294d3b34df7a3a4335130b8d3f38d953fb3e4bd97e4e85d46203",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 e8 ff ff ff"
+              }
+            ]
+          }
+        },
+        {
+          "input": [
+            9,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 f8 ff ff ff 00 00 00 00 00 00 00 00",
+          "shadow_i32": -8,
+          "highlight_i32": 0,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3566,
+          "directory_sha256": "ddbf23c2dcaa763b2a4d8509c8cc82f59e46a2a98aaa9c719f270901ab34c406",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 f8 ff ff ff"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ]
+          }
+        }
+      ],
+      "cases": [
+        {
+          "input": [
+            8,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            8,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": 0
+        }
+      ],
+      "boundary_cases": [
+        {
+          "input": [
+            0,
+            0
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            1,
+            1
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            2,
+            2
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            3,
+            3
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            4,
+            4
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 20 00 00 00 20 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 32,
+          "highlight_i32": 32
+        },
+        {
+          "input": [
+            5,
+            5
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 18 00 00 00 18 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 24,
+          "highlight_i32": 24
+        },
+        {
+          "input": [
+            6,
+            6
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 10 00 00 00 10 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 16,
+          "highlight_i32": 16
+        },
+        {
+          "input": [
+            7,
+            7
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 08 00 00 00 08 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 8,
+          "highlight_i32": 8
+        },
+        {
+          "input": [
+            8,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            9
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff f8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -8
+        },
+        {
+          "input": [
+            10,
+            10
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f0 ff ff ff f0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -16,
+          "highlight_i32": -16
+        },
+        {
+          "input": [
+            11,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 e8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -24,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            12,
+            12
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 e0 ff ff ff e0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -32,
+          "highlight_i32": -32
+        },
+        {
+          "input": [
+            13,
+            13
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 d8 ff ff ff d8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -40,
+          "highlight_i32": -40
+        },
+        {
+          "input": [
+            14,
+            14
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 d0 ff ff ff d0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -48,
+          "highlight_i32": -48
+        },
+        {
+          "input": [
+            15,
+            15
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 c8 ff ff ff c8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -56,
+          "highlight_i32": -56
+        },
+        {
+          "input": [
+            16,
+            16
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 c0 ff ff ff c0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -64,
+          "highlight_i32": -64
+        },
+        {
+          "input": [
+            17,
+            17
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            4294967295,
+            4294967295
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        }
+      ],
+      "condition_cases": [
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 44,
+          "disable": 0,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 2,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 3,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 46,
+          "disable": 0,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 1,
+          "override": 1,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 2,
+          "disable": 1,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 1,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 1,
+          "selector": 3,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        }
+      ],
+      "disassembly": {
+        "shadow": [
+          "02e4f7bc 02 78 79 b9 ldr w2, [x0, #0x3978]",
+          "02e4f7c0 5f b4 00 71 cmp w2, #0x2d",
+          "02e4f7c4 60 02 00 54 b.eq #0x2e4f810",
+          "02e4f7c8 02 00 7f b9 ldr w2, [x0, #0x3f00]",
+          "02e4f7cc c2 09 00 35 cbnz w2, #0x2e4f904",
+          "02e4f7d0 00 90 7a b9 ldr w0, [x0, #0x3a90]",
+          "02e4f7d4 1f 2c 00 71 cmp w0, #0xb",
+          "02e4f7d8 e0 07 00 54 b.eq #0x2e4f8d4",
+          "02e4f7dc 1f 2c 00 71 cmp w0, #0xb",
+          "02e4f7e0 48 04 00 54 b.hi #0x2e4f868",
+          "02e4f7e4 1f 1c 00 71 cmp w0, #7",
+          "02e4f7e8 20 08 00 54 b.eq #0x2e4f8ec",
+          "02e4f7ec 1f 1c 00 71 cmp w0, #7",
+          "02e4f7f0 e8 02 00 54 b.hi #0x2e4f84c",
+          "02e4f7f4 1f 14 00 71 cmp w0, #5",
+          "02e4f7f8 00 08 00 54 b.eq #0x2e4f8f8",
+          "02e4f7fc 1f 18 00 71 cmp w0, #6",
+          "02e4f800 c1 01 00 54 b.ne #0x2e4f838",
+          "02e4f804 00 02 80 52 mov w0, #0x10",
+          "02e4f808 20 24 01 b9 str w0, [x1, #0x124]",
+          "02e4f80c 3f 00 00 14 b #0x2e4f908",
+          "02e4f810 02 58 7f b9 ldr w2, [x0, #0x3f58]",
+          "02e4f814 42 04 00 51 sub w2, w2, #1",
+          "02e4f818 5f 04 00 71 cmp w2, #1",
+          "02e4f81c 68 fd ff 54 b.hi #0x2e4f7c8",
+          "02e4f820 02 88 7f b9 ldr w2, [x0, #0x3f88]",
+          "02e4f824 22 fd ff 35 cbnz w2, #0x2e4f7c8",
+          "02e4f828 00 00 7f b9 ldr w0, [x0, #0x3f00]",
+          "02e4f82c c0 06 00 35 cbnz w0, #0x2e4f904",
+          "02e4f830 3f 24 01 b9 str wzr, [x1, #0x124]",
+          "02e4f834 35 00 00 14 b #0x2e4f908",
+          "02e4f838 1f 10 00 71 cmp w0, #4",
+          "02e4f83c a1 ff ff 54 b.ne #0x2e4f830",
+          "02e4f840 00 04 80 52 mov w0, #0x20",
+          "02e4f844 20 24 01 b9 str w0, [x1, #0x124]",
+          "02e4f848 30 00 00 14 b #0x2e4f908",
+          "02e4f84c 1f 24 00 71 cmp w0, #9",
+          "02e4f850 80 04 00 54 b.eq #0x2e4f8e0",
+          "02e4f854 1f 28 00 71 cmp w0, #0xa",
+          "02e4f858 c1 fe ff 54 b.ne #0x2e4f830",
+          "02e4f85c e0 01 80 12 mov w0, #-0x10",
+          "02e4f860 20 24 01 b9 str w0, [x1, #0x124]",
+          "02e4f864 29 00 00 14 b #0x2e4f908",
+          "02e4f868 1f 38 00 71 cmp w0, #0xe",
+          "02e4f86c 80 02 00 54 b.eq #0x2e4f8bc",
+          "02e4f870 1f 38 00 71 cmp w0, #0xe",
+          "02e4f874 09 01 00 54 b.ls #0x2e4f894",
+          "02e4f878 1f 3c 00 71 cmp w0, #0xf",
+          "02e4f87c a0 01 00 54 b.eq #0x2e4f8b0",
+          "02e4f880 1f 40 00 71 cmp w0, #0x10",
+          "02e4f884 61 fd ff 54 b.ne #0x2e4f830",
+          "02e4f888 e0 07 80 12 mov w0, #-0x40",
+          "02e4f88c 20 24 01 b9 str w0, [x1, #0x124]",
+          "02e4f890 1e 00 00 14 b #0x2e4f908",
+          "02e4f894 1f 30 00 71 cmp w0, #0xc",
+          "02e4f898 80 01 00 54 b.eq #0x2e4f8c8",
+          "02e4f89c 1f 34 00 71 cmp w0, #0xd",
+          "02e4f8a0 81 fc ff 54 b.ne #0x2e4f830",
+          "02e4f8a4 e0 04 80 12 mov w0, #-0x28",
+          "02e4f8a8 20 24 01 b9 str w0, [x1, #0x124]",
+          "02e4f8ac 17 00 00 14 b #0x2e4f908",
+          "02e4f8b0 e0 06 80 12 mov w0, #-0x38",
+          "02e4f8b4 20 24 01 b9 str w0, [x1, #0x124]",
+          "02e4f8b8 14 00 00 14 b #0x2e4f908",
+          "02e4f8bc e0 05 80 12 mov w0, #-0x30",
+          "02e4f8c0 20 24 01 b9 str w0, [x1, #0x124]",
+          "02e4f8c4 11 00 00 14 b #0x2e4f908",
+          "02e4f8c8 e0 03 80 12 mov w0, #-0x20",
+          "02e4f8cc 20 24 01 b9 str w0, [x1, #0x124]",
+          "02e4f8d0 0e 00 00 14 b #0x2e4f908",
+          "02e4f8d4 e0 02 80 12 mov w0, #-0x18",
+          "02e4f8d8 20 24 01 b9 str w0, [x1, #0x124]",
+          "02e4f8dc 0b 00 00 14 b #0x2e4f908",
+          "02e4f8e0 e0 00 80 12 mov w0, #-8",
+          "02e4f8e4 20 24 01 b9 str w0, [x1, #0x124]",
+          "02e4f8e8 08 00 00 14 b #0x2e4f908",
+          "02e4f8ec 00 01 80 52 mov w0, #8",
+          "02e4f8f0 20 24 01 b9 str w0, [x1, #0x124]",
+          "02e4f8f4 05 00 00 14 b #0x2e4f908",
+          "02e4f8f8 00 03 80 52 mov w0, #0x18",
+          "02e4f8fc 20 24 01 b9 str w0, [x1, #0x124]",
+          "02e4f900 02 00 00 14 b #0x2e4f908",
+          "02e4f904 3f 24 01 b9 str wzr, [x1, #0x124]",
+          "02e4f908 c0 03 5f d6 ret "
+        ],
+        "highlight": [
+          "02e4f90c 02 78 79 b9 ldr w2, [x0, #0x3978]",
+          "02e4f910 5f b4 00 71 cmp w2, #0x2d",
+          "02e4f914 60 02 00 54 b.eq #0x2e4f960",
+          "02e4f918 02 00 7f b9 ldr w2, [x0, #0x3f00]",
+          "02e4f91c c2 09 00 35 cbnz w2, #0x2e4fa54",
+          "02e4f920 00 8c 7a b9 ldr w0, [x0, #0x3a8c]",
+          "02e4f924 1f 2c 00 71 cmp w0, #0xb",
+          "02e4f928 e0 07 00 54 b.eq #0x2e4fa24",
+          "02e4f92c 1f 2c 00 71 cmp w0, #0xb",
+          "02e4f930 48 04 00 54 b.hi #0x2e4f9b8",
+          "02e4f934 1f 1c 00 71 cmp w0, #7",
+          "02e4f938 20 08 00 54 b.eq #0x2e4fa3c",
+          "02e4f93c 1f 1c 00 71 cmp w0, #7",
+          "02e4f940 e8 02 00 54 b.hi #0x2e4f99c",
+          "02e4f944 1f 14 00 71 cmp w0, #5",
+          "02e4f948 00 08 00 54 b.eq #0x2e4fa48",
+          "02e4f94c 1f 18 00 71 cmp w0, #6",
+          "02e4f950 c1 01 00 54 b.ne #0x2e4f988",
+          "02e4f954 00 02 80 52 mov w0, #0x10",
+          "02e4f958 20 28 01 b9 str w0, [x1, #0x128]",
+          "02e4f95c 3f 00 00 14 b #0x2e4fa58",
+          "02e4f960 02 58 7f b9 ldr w2, [x0, #0x3f58]",
+          "02e4f964 42 04 00 51 sub w2, w2, #1",
+          "02e4f968 5f 04 00 71 cmp w2, #1",
+          "02e4f96c 68 fd ff 54 b.hi #0x2e4f918",
+          "02e4f970 02 88 7f b9 ldr w2, [x0, #0x3f88]",
+          "02e4f974 22 fd ff 35 cbnz w2, #0x2e4f918",
+          "02e4f978 00 00 7f b9 ldr w0, [x0, #0x3f00]",
+          "02e4f97c c0 06 00 35 cbnz w0, #0x2e4fa54",
+          "02e4f980 3f 28 01 b9 str wzr, [x1, #0x128]",
+          "02e4f984 35 00 00 14 b #0x2e4fa58",
+          "02e4f988 1f 10 00 71 cmp w0, #4",
+          "02e4f98c a1 ff ff 54 b.ne #0x2e4f980",
+          "02e4f990 00 04 80 52 mov w0, #0x20",
+          "02e4f994 20 28 01 b9 str w0, [x1, #0x128]",
+          "02e4f998 30 00 00 14 b #0x2e4fa58",
+          "02e4f99c 1f 24 00 71 cmp w0, #9",
+          "02e4f9a0 80 04 00 54 b.eq #0x2e4fa30",
+          "02e4f9a4 1f 28 00 71 cmp w0, #0xa",
+          "02e4f9a8 c1 fe ff 54 b.ne #0x2e4f980",
+          "02e4f9ac e0 01 80 12 mov w0, #-0x10",
+          "02e4f9b0 20 28 01 b9 str w0, [x1, #0x128]",
+          "02e4f9b4 29 00 00 14 b #0x2e4fa58",
+          "02e4f9b8 1f 38 00 71 cmp w0, #0xe",
+          "02e4f9bc 80 02 00 54 b.eq #0x2e4fa0c",
+          "02e4f9c0 1f 38 00 71 cmp w0, #0xe",
+          "02e4f9c4 09 01 00 54 b.ls #0x2e4f9e4",
+          "02e4f9c8 1f 3c 00 71 cmp w0, #0xf",
+          "02e4f9cc a0 01 00 54 b.eq #0x2e4fa00",
+          "02e4f9d0 1f 40 00 71 cmp w0, #0x10",
+          "02e4f9d4 61 fd ff 54 b.ne #0x2e4f980",
+          "02e4f9d8 e0 07 80 12 mov w0, #-0x40",
+          "02e4f9dc 20 28 01 b9 str w0, [x1, #0x128]",
+          "02e4f9e0 1e 00 00 14 b #0x2e4fa58",
+          "02e4f9e4 1f 30 00 71 cmp w0, #0xc",
+          "02e4f9e8 80 01 00 54 b.eq #0x2e4fa18",
+          "02e4f9ec 1f 34 00 71 cmp w0, #0xd",
+          "02e4f9f0 81 fc ff 54 b.ne #0x2e4f980",
+          "02e4f9f4 e0 04 80 12 mov w0, #-0x28",
+          "02e4f9f8 20 28 01 b9 str w0, [x1, #0x128]",
+          "02e4f9fc 17 00 00 14 b #0x2e4fa58",
+          "02e4fa00 e0 06 80 12 mov w0, #-0x38",
+          "02e4fa04 20 28 01 b9 str w0, [x1, #0x128]",
+          "02e4fa08 14 00 00 14 b #0x2e4fa58",
+          "02e4fa0c e0 05 80 12 mov w0, #-0x30",
+          "02e4fa10 20 28 01 b9 str w0, [x1, #0x128]",
+          "02e4fa14 11 00 00 14 b #0x2e4fa58",
+          "02e4fa18 e0 03 80 12 mov w0, #-0x20",
+          "02e4fa1c 20 28 01 b9 str w0, [x1, #0x128]",
+          "02e4fa20 0e 00 00 14 b #0x2e4fa58",
+          "02e4fa24 e0 02 80 12 mov w0, #-0x18",
+          "02e4fa28 20 28 01 b9 str w0, [x1, #0x128]",
+          "02e4fa2c 0b 00 00 14 b #0x2e4fa58",
+          "02e4fa30 e0 00 80 12 mov w0, #-8",
+          "02e4fa34 20 28 01 b9 str w0, [x1, #0x128]",
+          "02e4fa38 08 00 00 14 b #0x2e4fa58",
+          "02e4fa3c 00 01 80 52 mov w0, #8",
+          "02e4fa40 20 28 01 b9 str w0, [x1, #0x128]",
+          "02e4fa44 05 00 00 14 b #0x2e4fa58",
+          "02e4fa48 00 03 80 52 mov w0, #0x18",
+          "02e4fa4c 20 28 01 b9 str w0, [x1, #0x128]",
+          "02e4fa50 02 00 00 14 b #0x2e4fa58",
+          "02e4fa54 3f 28 01 b9 str wzr, [x1, #0x128]",
+          "02e4fa58 c0 03 5f d6 ret "
+        ]
+      }
+    },
+    "X-H2S": {
+      "dat": "Firmware на прочиеFuji/FWUP0027.DAT",
+      "sha256_before": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "sha256_after": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "decoded_blocks_sha256": [
+        "a32a90b7efefaebcf3b9c3f076cb23f82c1f4dda45bf828a024487fc0fb06c16",
+        "86c8c9f01ae6840f791bffea050e8442ff9e967b6b7cbbb7f9d8141dd41d764f"
+      ],
+      "writer_shadow": "0x3166ab8",
+      "writer_highlight": "0x3166c08",
+      "parameter_offsets": {
+        "gate": "0x391c",
+        "shadow": "0x3a3c",
+        "highlight": "0x3a38",
+        "disable": "0x3eac",
+        "selector": "0x3f04",
+        "override": "0x3f34"
+      },
+      "output_offsets": {
+        "shadow": "0x124",
+        "highlight": "0x128"
+      },
+      "builder": "0x166dfc4",
+      "predicate": "0x166bb6c",
+      "builder_cases": [
+        {
+          "input": [
+            8,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "shadow_i32": 0,
+          "highlight_i32": 0,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3566,
+          "directory_sha256": "2e8ffbd7770848533cd4b1e995e8817dcd2dd90faac7e605ce7030f5c7692a48",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 f8 ff ff ff e8 ff ff ff 00 00 00 00",
+          "shadow_i32": -8,
+          "highlight_i32": -24,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3566,
+          "directory_sha256": "ab1121e63405b1042ed09e2c91268f1a10a222a6c3b96da9945287635423d9d7",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 f8 ff ff ff"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 e8 ff ff ff"
+              }
+            ]
+          }
+        },
+        {
+          "input": [
+            8,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 00 00 00 00 e8 ff ff ff 00 00 00 00",
+          "shadow_i32": 0,
+          "highlight_i32": -24,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3566,
+          "directory_sha256": "51306ea03e76294d3b34df7a3a4335130b8d3f38d953fb3e4bd97e4e85d46203",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 e8 ff ff ff"
+              }
+            ]
+          }
+        },
+        {
+          "input": [
+            9,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 f8 ff ff ff 00 00 00 00 00 00 00 00",
+          "shadow_i32": -8,
+          "highlight_i32": 0,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3566,
+          "directory_sha256": "ddbf23c2dcaa763b2a4d8509c8cc82f59e46a2a98aaa9c719f270901ab34c406",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 f8 ff ff ff"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ]
+          }
+        }
+      ],
+      "cases": [
+        {
+          "input": [
+            8,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            8,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": 0
+        }
+      ],
+      "boundary_cases": [
+        {
+          "input": [
+            0,
+            0
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            1,
+            1
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            2,
+            2
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            3,
+            3
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            4,
+            4
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 20 00 00 00 20 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 32,
+          "highlight_i32": 32
+        },
+        {
+          "input": [
+            5,
+            5
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 18 00 00 00 18 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 24,
+          "highlight_i32": 24
+        },
+        {
+          "input": [
+            6,
+            6
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 10 00 00 00 10 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 16,
+          "highlight_i32": 16
+        },
+        {
+          "input": [
+            7,
+            7
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 08 00 00 00 08 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 8,
+          "highlight_i32": 8
+        },
+        {
+          "input": [
+            8,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            9
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff f8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -8
+        },
+        {
+          "input": [
+            10,
+            10
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f0 ff ff ff f0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -16,
+          "highlight_i32": -16
+        },
+        {
+          "input": [
+            11,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 e8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -24,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            12,
+            12
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 e0 ff ff ff e0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -32,
+          "highlight_i32": -32
+        },
+        {
+          "input": [
+            13,
+            13
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 d8 ff ff ff d8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -40,
+          "highlight_i32": -40
+        },
+        {
+          "input": [
+            14,
+            14
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 d0 ff ff ff d0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -48,
+          "highlight_i32": -48
+        },
+        {
+          "input": [
+            15,
+            15
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 c8 ff ff ff c8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -56,
+          "highlight_i32": -56
+        },
+        {
+          "input": [
+            16,
+            16
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 c0 ff ff ff c0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -64,
+          "highlight_i32": -64
+        },
+        {
+          "input": [
+            17,
+            17
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            4294967295,
+            4294967295
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        }
+      ],
+      "condition_cases": [
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 44,
+          "disable": 0,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 2,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 3,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 46,
+          "disable": 0,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 1,
+          "override": 1,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 2,
+          "disable": 1,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 1,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 1,
+          "selector": 3,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        }
+      ],
+      "disassembly": {
+        "shadow": [
+          "03166ab8 02 1c 79 b9 ldr w2, [x0, #0x391c]",
+          "03166abc 5f b4 00 71 cmp w2, #0x2d",
+          "03166ac0 60 02 00 54 b.eq #0x3166b0c",
+          "03166ac4 02 ac 7e b9 ldr w2, [x0, #0x3eac]",
+          "03166ac8 c2 09 00 35 cbnz w2, #0x3166c00",
+          "03166acc 00 3c 7a b9 ldr w0, [x0, #0x3a3c]",
+          "03166ad0 1f 2c 00 71 cmp w0, #0xb",
+          "03166ad4 e0 07 00 54 b.eq #0x3166bd0",
+          "03166ad8 1f 2c 00 71 cmp w0, #0xb",
+          "03166adc 48 04 00 54 b.hi #0x3166b64",
+          "03166ae0 1f 1c 00 71 cmp w0, #7",
+          "03166ae4 20 08 00 54 b.eq #0x3166be8",
+          "03166ae8 1f 1c 00 71 cmp w0, #7",
+          "03166aec e8 02 00 54 b.hi #0x3166b48",
+          "03166af0 1f 14 00 71 cmp w0, #5",
+          "03166af4 00 08 00 54 b.eq #0x3166bf4",
+          "03166af8 1f 18 00 71 cmp w0, #6",
+          "03166afc c1 01 00 54 b.ne #0x3166b34",
+          "03166b00 00 02 80 52 mov w0, #0x10",
+          "03166b04 20 24 01 b9 str w0, [x1, #0x124]",
+          "03166b08 3f 00 00 14 b #0x3166c04",
+          "03166b0c 02 04 7f b9 ldr w2, [x0, #0x3f04]",
+          "03166b10 42 04 00 51 sub w2, w2, #1",
+          "03166b14 5f 04 00 71 cmp w2, #1",
+          "03166b18 68 fd ff 54 b.hi #0x3166ac4",
+          "03166b1c 02 34 7f b9 ldr w2, [x0, #0x3f34]",
+          "03166b20 22 fd ff 35 cbnz w2, #0x3166ac4",
+          "03166b24 00 ac 7e b9 ldr w0, [x0, #0x3eac]",
+          "03166b28 c0 06 00 35 cbnz w0, #0x3166c00",
+          "03166b2c 3f 24 01 b9 str wzr, [x1, #0x124]",
+          "03166b30 35 00 00 14 b #0x3166c04",
+          "03166b34 1f 10 00 71 cmp w0, #4",
+          "03166b38 a1 ff ff 54 b.ne #0x3166b2c",
+          "03166b3c 00 04 80 52 mov w0, #0x20",
+          "03166b40 20 24 01 b9 str w0, [x1, #0x124]",
+          "03166b44 30 00 00 14 b #0x3166c04",
+          "03166b48 1f 24 00 71 cmp w0, #9",
+          "03166b4c 80 04 00 54 b.eq #0x3166bdc",
+          "03166b50 1f 28 00 71 cmp w0, #0xa",
+          "03166b54 c1 fe ff 54 b.ne #0x3166b2c",
+          "03166b58 e0 01 80 12 mov w0, #-0x10",
+          "03166b5c 20 24 01 b9 str w0, [x1, #0x124]",
+          "03166b60 29 00 00 14 b #0x3166c04",
+          "03166b64 1f 38 00 71 cmp w0, #0xe",
+          "03166b68 80 02 00 54 b.eq #0x3166bb8",
+          "03166b6c 1f 38 00 71 cmp w0, #0xe",
+          "03166b70 09 01 00 54 b.ls #0x3166b90",
+          "03166b74 1f 3c 00 71 cmp w0, #0xf",
+          "03166b78 a0 01 00 54 b.eq #0x3166bac",
+          "03166b7c 1f 40 00 71 cmp w0, #0x10",
+          "03166b80 61 fd ff 54 b.ne #0x3166b2c",
+          "03166b84 e0 07 80 12 mov w0, #-0x40",
+          "03166b88 20 24 01 b9 str w0, [x1, #0x124]",
+          "03166b8c 1e 00 00 14 b #0x3166c04",
+          "03166b90 1f 30 00 71 cmp w0, #0xc",
+          "03166b94 80 01 00 54 b.eq #0x3166bc4",
+          "03166b98 1f 34 00 71 cmp w0, #0xd",
+          "03166b9c 81 fc ff 54 b.ne #0x3166b2c",
+          "03166ba0 e0 04 80 12 mov w0, #-0x28",
+          "03166ba4 20 24 01 b9 str w0, [x1, #0x124]",
+          "03166ba8 17 00 00 14 b #0x3166c04",
+          "03166bac e0 06 80 12 mov w0, #-0x38",
+          "03166bb0 20 24 01 b9 str w0, [x1, #0x124]",
+          "03166bb4 14 00 00 14 b #0x3166c04",
+          "03166bb8 e0 05 80 12 mov w0, #-0x30",
+          "03166bbc 20 24 01 b9 str w0, [x1, #0x124]",
+          "03166bc0 11 00 00 14 b #0x3166c04",
+          "03166bc4 e0 03 80 12 mov w0, #-0x20",
+          "03166bc8 20 24 01 b9 str w0, [x1, #0x124]",
+          "03166bcc 0e 00 00 14 b #0x3166c04",
+          "03166bd0 e0 02 80 12 mov w0, #-0x18",
+          "03166bd4 20 24 01 b9 str w0, [x1, #0x124]",
+          "03166bd8 0b 00 00 14 b #0x3166c04",
+          "03166bdc e0 00 80 12 mov w0, #-8",
+          "03166be0 20 24 01 b9 str w0, [x1, #0x124]",
+          "03166be4 08 00 00 14 b #0x3166c04",
+          "03166be8 00 01 80 52 mov w0, #8",
+          "03166bec 20 24 01 b9 str w0, [x1, #0x124]",
+          "03166bf0 05 00 00 14 b #0x3166c04",
+          "03166bf4 00 03 80 52 mov w0, #0x18",
+          "03166bf8 20 24 01 b9 str w0, [x1, #0x124]",
+          "03166bfc 02 00 00 14 b #0x3166c04",
+          "03166c00 3f 24 01 b9 str wzr, [x1, #0x124]",
+          "03166c04 c0 03 5f d6 ret "
+        ],
+        "highlight": [
+          "03166c08 02 1c 79 b9 ldr w2, [x0, #0x391c]",
+          "03166c0c 5f b4 00 71 cmp w2, #0x2d",
+          "03166c10 60 02 00 54 b.eq #0x3166c5c",
+          "03166c14 02 ac 7e b9 ldr w2, [x0, #0x3eac]",
+          "03166c18 c2 09 00 35 cbnz w2, #0x3166d50",
+          "03166c1c 00 38 7a b9 ldr w0, [x0, #0x3a38]",
+          "03166c20 1f 2c 00 71 cmp w0, #0xb",
+          "03166c24 e0 07 00 54 b.eq #0x3166d20",
+          "03166c28 1f 2c 00 71 cmp w0, #0xb",
+          "03166c2c 48 04 00 54 b.hi #0x3166cb4",
+          "03166c30 1f 1c 00 71 cmp w0, #7",
+          "03166c34 20 08 00 54 b.eq #0x3166d38",
+          "03166c38 1f 1c 00 71 cmp w0, #7",
+          "03166c3c e8 02 00 54 b.hi #0x3166c98",
+          "03166c40 1f 14 00 71 cmp w0, #5",
+          "03166c44 00 08 00 54 b.eq #0x3166d44",
+          "03166c48 1f 18 00 71 cmp w0, #6",
+          "03166c4c c1 01 00 54 b.ne #0x3166c84",
+          "03166c50 00 02 80 52 mov w0, #0x10",
+          "03166c54 20 28 01 b9 str w0, [x1, #0x128]",
+          "03166c58 3f 00 00 14 b #0x3166d54",
+          "03166c5c 02 04 7f b9 ldr w2, [x0, #0x3f04]",
+          "03166c60 42 04 00 51 sub w2, w2, #1",
+          "03166c64 5f 04 00 71 cmp w2, #1",
+          "03166c68 68 fd ff 54 b.hi #0x3166c14",
+          "03166c6c 02 34 7f b9 ldr w2, [x0, #0x3f34]",
+          "03166c70 22 fd ff 35 cbnz w2, #0x3166c14",
+          "03166c74 00 ac 7e b9 ldr w0, [x0, #0x3eac]",
+          "03166c78 c0 06 00 35 cbnz w0, #0x3166d50",
+          "03166c7c 3f 28 01 b9 str wzr, [x1, #0x128]",
+          "03166c80 35 00 00 14 b #0x3166d54",
+          "03166c84 1f 10 00 71 cmp w0, #4",
+          "03166c88 a1 ff ff 54 b.ne #0x3166c7c",
+          "03166c8c 00 04 80 52 mov w0, #0x20",
+          "03166c90 20 28 01 b9 str w0, [x1, #0x128]",
+          "03166c94 30 00 00 14 b #0x3166d54",
+          "03166c98 1f 24 00 71 cmp w0, #9",
+          "03166c9c 80 04 00 54 b.eq #0x3166d2c",
+          "03166ca0 1f 28 00 71 cmp w0, #0xa",
+          "03166ca4 c1 fe ff 54 b.ne #0x3166c7c",
+          "03166ca8 e0 01 80 12 mov w0, #-0x10",
+          "03166cac 20 28 01 b9 str w0, [x1, #0x128]",
+          "03166cb0 29 00 00 14 b #0x3166d54",
+          "03166cb4 1f 38 00 71 cmp w0, #0xe",
+          "03166cb8 80 02 00 54 b.eq #0x3166d08",
+          "03166cbc 1f 38 00 71 cmp w0, #0xe",
+          "03166cc0 09 01 00 54 b.ls #0x3166ce0",
+          "03166cc4 1f 3c 00 71 cmp w0, #0xf",
+          "03166cc8 a0 01 00 54 b.eq #0x3166cfc",
+          "03166ccc 1f 40 00 71 cmp w0, #0x10",
+          "03166cd0 61 fd ff 54 b.ne #0x3166c7c",
+          "03166cd4 e0 07 80 12 mov w0, #-0x40",
+          "03166cd8 20 28 01 b9 str w0, [x1, #0x128]",
+          "03166cdc 1e 00 00 14 b #0x3166d54",
+          "03166ce0 1f 30 00 71 cmp w0, #0xc",
+          "03166ce4 80 01 00 54 b.eq #0x3166d14",
+          "03166ce8 1f 34 00 71 cmp w0, #0xd",
+          "03166cec 81 fc ff 54 b.ne #0x3166c7c",
+          "03166cf0 e0 04 80 12 mov w0, #-0x28",
+          "03166cf4 20 28 01 b9 str w0, [x1, #0x128]",
+          "03166cf8 17 00 00 14 b #0x3166d54",
+          "03166cfc e0 06 80 12 mov w0, #-0x38",
+          "03166d00 20 28 01 b9 str w0, [x1, #0x128]",
+          "03166d04 14 00 00 14 b #0x3166d54",
+          "03166d08 e0 05 80 12 mov w0, #-0x30",
+          "03166d0c 20 28 01 b9 str w0, [x1, #0x128]",
+          "03166d10 11 00 00 14 b #0x3166d54",
+          "03166d14 e0 03 80 12 mov w0, #-0x20",
+          "03166d18 20 28 01 b9 str w0, [x1, #0x128]",
+          "03166d1c 0e 00 00 14 b #0x3166d54",
+          "03166d20 e0 02 80 12 mov w0, #-0x18",
+          "03166d24 20 28 01 b9 str w0, [x1, #0x128]",
+          "03166d28 0b 00 00 14 b #0x3166d54",
+          "03166d2c e0 00 80 12 mov w0, #-8",
+          "03166d30 20 28 01 b9 str w0, [x1, #0x128]",
+          "03166d34 08 00 00 14 b #0x3166d54",
+          "03166d38 00 01 80 52 mov w0, #8",
+          "03166d3c 20 28 01 b9 str w0, [x1, #0x128]",
+          "03166d40 05 00 00 14 b #0x3166d54",
+          "03166d44 00 03 80 52 mov w0, #0x18",
+          "03166d48 20 28 01 b9 str w0, [x1, #0x128]",
+          "03166d4c 02 00 00 14 b #0x3166d54",
+          "03166d50 3f 28 01 b9 str wzr, [x1, #0x128]",
+          "03166d54 c0 03 5f d6 ret "
+        ]
+      }
+    },
+    "X-T5": {
+      "dat": "Firmware на прочиеFuji/FWUP0030.DAT",
+      "sha256_before": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "sha256_after": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "decoded_blocks_sha256": [
+        "fd5f899217a833552f135d719d22e025aea2e0780b2fd1f8c66b353ead969724",
+        "d74dba337fe4078a6ee15ca5fddba7e502bdefb980825a09a15f9b13a01eb350"
+      ],
+      "writer_shadow": "0x2d8d844",
+      "writer_highlight": "0x2d8d99c",
+      "parameter_offsets": {
+        "gate": "0x39c0",
+        "shadow": "0x3acc",
+        "highlight": "0x3ac8",
+        "disable": "0x3f38",
+        "selector": "0x40bc",
+        "override": "0x40ec"
+      },
+      "output_offsets": {
+        "shadow": "0x124",
+        "highlight": "0x128"
+      },
+      "builder": "0x134d3b4",
+      "predicate": "0x134af5c",
+      "builder_cases": [
+        {
+          "input": [
+            8,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "shadow_i32": 0,
+          "highlight_i32": 0,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3586,
+          "directory_sha256": "36ec206efc4d8aa3d0e243c817b06695ba09afd6ca7552982e26bdbbed43706f",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 f8 ff ff ff e8 ff ff ff 00 00 00 00",
+          "shadow_i32": -8,
+          "highlight_i32": -24,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3586,
+          "directory_sha256": "3cbab3659995562e5b43a5d3a833c397ec56847d8a25bc1ec272f86cd6d6e802",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 f8 ff ff ff"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 e8 ff ff ff"
+              }
+            ]
+          }
+        },
+        {
+          "input": [
+            8,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 00 00 00 00 e8 ff ff ff 00 00 00 00",
+          "shadow_i32": 0,
+          "highlight_i32": -24,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3586,
+          "directory_sha256": "a1c8307315349df0e7a6d5bec2e879d084185ab71bd021296bd6ab32e31f25c6",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 e8 ff ff ff"
+              }
+            ]
+          }
+        },
+        {
+          "input": [
+            9,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 f8 ff ff ff 00 00 00 00 00 00 00 00",
+          "shadow_i32": -8,
+          "highlight_i32": 0,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3586,
+          "directory_sha256": "5f6162c0aea2a6d029666692c9233c0a9041d0e0b48a8821b7cd0187d1bc1f1b",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 f8 ff ff ff"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ]
+          }
+        }
+      ],
+      "cases": [
+        {
+          "input": [
+            8,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            8,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": 0
+        }
+      ],
+      "boundary_cases": [
+        {
+          "input": [
+            0,
+            0
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            1,
+            1
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            2,
+            2
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            3,
+            3
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            4,
+            4
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 20 00 00 00 20 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 32,
+          "highlight_i32": 32
+        },
+        {
+          "input": [
+            5,
+            5
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 18 00 00 00 18 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 24,
+          "highlight_i32": 24
+        },
+        {
+          "input": [
+            6,
+            6
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 10 00 00 00 10 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 16,
+          "highlight_i32": 16
+        },
+        {
+          "input": [
+            7,
+            7
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 08 00 00 00 08 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 8,
+          "highlight_i32": 8
+        },
+        {
+          "input": [
+            8,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            9
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff f8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -8
+        },
+        {
+          "input": [
+            10,
+            10
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f0 ff ff ff f0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -16,
+          "highlight_i32": -16
+        },
+        {
+          "input": [
+            11,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 e8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -24,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            12,
+            12
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 e0 ff ff ff e0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -32,
+          "highlight_i32": -32
+        },
+        {
+          "input": [
+            13,
+            13
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 d8 ff ff ff d8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -40,
+          "highlight_i32": -40
+        },
+        {
+          "input": [
+            14,
+            14
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 d0 ff ff ff d0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -48,
+          "highlight_i32": -48
+        },
+        {
+          "input": [
+            15,
+            15
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 c8 ff ff ff c8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -56,
+          "highlight_i32": -56
+        },
+        {
+          "input": [
+            16,
+            16
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 c0 ff ff ff c0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -64,
+          "highlight_i32": -64
+        },
+        {
+          "input": [
+            17,
+            17
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            4294967295,
+            4294967295
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        }
+      ],
+      "condition_cases": [
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 44,
+          "disable": 0,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 2,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 3,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 46,
+          "disable": 0,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 1,
+          "override": 1,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 2,
+          "disable": 1,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 1,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 1,
+          "selector": 3,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        }
+      ],
+      "disassembly": {
+        "shadow": [
+          "02d8d844 02 c0 79 b9 ldr w2, [x0, #0x39c0]",
+          "02d8d848 5f b4 00 71 cmp w2, #0x2d",
+          "02d8d84c 60 02 00 54 b.eq #0x2d8d898",
+          "02d8d850 02 38 7f b9 ldr w2, [x0, #0x3f38]",
+          "02d8d854 02 0a 00 35 cbnz w2, #0x2d8d994",
+          "02d8d858 00 cc 7a b9 ldr w0, [x0, #0x3acc]",
+          "02d8d85c 1f 2c 00 71 cmp w0, #0xb",
+          "02d8d860 20 08 00 54 b.eq #0x2d8d964",
+          "02d8d864 1f 2c 00 71 cmp w0, #0xb",
+          "02d8d868 88 04 00 54 b.hi #0x2d8d8f8",
+          "02d8d86c 1f 1c 00 71 cmp w0, #7",
+          "02d8d870 60 08 00 54 b.eq #0x2d8d97c",
+          "02d8d874 1f 1c 00 71 cmp w0, #7",
+          "02d8d878 28 03 00 54 b.hi #0x2d8d8dc",
+          "02d8d87c 1f 14 00 71 cmp w0, #5",
+          "02d8d880 40 08 00 54 b.eq #0x2d8d988",
+          "02d8d884 1f 18 00 71 cmp w0, #6",
+          "02d8d888 01 02 00 54 b.ne #0x2d8d8c8",
+          "02d8d88c 00 02 80 52 mov w0, #0x10",
+          "02d8d890 20 24 01 b9 str w0, [x1, #0x124]",
+          "02d8d894 41 00 00 14 b #0x2d8d998",
+          "02d8d898 02 10 40 91 add x2, x0, #4, lsl #12",
+          "02d8d89c 42 bc 40 b9 ldr w2, [x2, #0xbc]",
+          "02d8d8a0 42 04 00 51 sub w2, w2, #1",
+          "02d8d8a4 5f 04 00 71 cmp w2, #1",
+          "02d8d8a8 48 fd ff 54 b.hi #0x2d8d850",
+          "02d8d8ac 02 10 40 91 add x2, x0, #4, lsl #12",
+          "02d8d8b0 42 ec 40 b9 ldr w2, [x2, #0xec]",
+          "02d8d8b4 e2 fc ff 35 cbnz w2, #0x2d8d850",
+          "02d8d8b8 00 38 7f b9 ldr w0, [x0, #0x3f38]",
+          "02d8d8bc c0 06 00 35 cbnz w0, #0x2d8d994",
+          "02d8d8c0 3f 24 01 b9 str wzr, [x1, #0x124]",
+          "02d8d8c4 35 00 00 14 b #0x2d8d998",
+          "02d8d8c8 1f 10 00 71 cmp w0, #4",
+          "02d8d8cc a1 ff ff 54 b.ne #0x2d8d8c0",
+          "02d8d8d0 00 04 80 52 mov w0, #0x20",
+          "02d8d8d4 20 24 01 b9 str w0, [x1, #0x124]",
+          "02d8d8d8 30 00 00 14 b #0x2d8d998",
+          "02d8d8dc 1f 24 00 71 cmp w0, #9",
+          "02d8d8e0 80 04 00 54 b.eq #0x2d8d970",
+          "02d8d8e4 1f 28 00 71 cmp w0, #0xa",
+          "02d8d8e8 c1 fe ff 54 b.ne #0x2d8d8c0",
+          "02d8d8ec e0 01 80 12 mov w0, #-0x10",
+          "02d8d8f0 20 24 01 b9 str w0, [x1, #0x124]",
+          "02d8d8f4 29 00 00 14 b #0x2d8d998",
+          "02d8d8f8 1f 38 00 71 cmp w0, #0xe",
+          "02d8d8fc 80 02 00 54 b.eq #0x2d8d94c",
+          "02d8d900 1f 38 00 71 cmp w0, #0xe",
+          "02d8d904 09 01 00 54 b.ls #0x2d8d924",
+          "02d8d908 1f 3c 00 71 cmp w0, #0xf",
+          "02d8d90c a0 01 00 54 b.eq #0x2d8d940",
+          "02d8d910 1f 40 00 71 cmp w0, #0x10",
+          "02d8d914 61 fd ff 54 b.ne #0x2d8d8c0",
+          "02d8d918 e0 07 80 12 mov w0, #-0x40",
+          "02d8d91c 20 24 01 b9 str w0, [x1, #0x124]",
+          "02d8d920 1e 00 00 14 b #0x2d8d998",
+          "02d8d924 1f 30 00 71 cmp w0, #0xc",
+          "02d8d928 80 01 00 54 b.eq #0x2d8d958",
+          "02d8d92c 1f 34 00 71 cmp w0, #0xd",
+          "02d8d930 81 fc ff 54 b.ne #0x2d8d8c0",
+          "02d8d934 e0 04 80 12 mov w0, #-0x28",
+          "02d8d938 20 24 01 b9 str w0, [x1, #0x124]",
+          "02d8d93c 17 00 00 14 b #0x2d8d998",
+          "02d8d940 e0 06 80 12 mov w0, #-0x38",
+          "02d8d944 20 24 01 b9 str w0, [x1, #0x124]",
+          "02d8d948 14 00 00 14 b #0x2d8d998",
+          "02d8d94c e0 05 80 12 mov w0, #-0x30",
+          "02d8d950 20 24 01 b9 str w0, [x1, #0x124]",
+          "02d8d954 11 00 00 14 b #0x2d8d998",
+          "02d8d958 e0 03 80 12 mov w0, #-0x20",
+          "02d8d95c 20 24 01 b9 str w0, [x1, #0x124]",
+          "02d8d960 0e 00 00 14 b #0x2d8d998",
+          "02d8d964 e0 02 80 12 mov w0, #-0x18",
+          "02d8d968 20 24 01 b9 str w0, [x1, #0x124]",
+          "02d8d96c 0b 00 00 14 b #0x2d8d998",
+          "02d8d970 e0 00 80 12 mov w0, #-8",
+          "02d8d974 20 24 01 b9 str w0, [x1, #0x124]",
+          "02d8d978 08 00 00 14 b #0x2d8d998",
+          "02d8d97c 00 01 80 52 mov w0, #8",
+          "02d8d980 20 24 01 b9 str w0, [x1, #0x124]",
+          "02d8d984 05 00 00 14 b #0x2d8d998",
+          "02d8d988 00 03 80 52 mov w0, #0x18",
+          "02d8d98c 20 24 01 b9 str w0, [x1, #0x124]",
+          "02d8d990 02 00 00 14 b #0x2d8d998",
+          "02d8d994 3f 24 01 b9 str wzr, [x1, #0x124]",
+          "02d8d998 c0 03 5f d6 ret "
+        ],
+        "highlight": [
+          "02d8d99c 02 c0 79 b9 ldr w2, [x0, #0x39c0]",
+          "02d8d9a0 5f b4 00 71 cmp w2, #0x2d",
+          "02d8d9a4 60 02 00 54 b.eq #0x2d8d9f0",
+          "02d8d9a8 02 38 7f b9 ldr w2, [x0, #0x3f38]",
+          "02d8d9ac 02 0a 00 35 cbnz w2, #0x2d8daec",
+          "02d8d9b0 00 c8 7a b9 ldr w0, [x0, #0x3ac8]",
+          "02d8d9b4 1f 2c 00 71 cmp w0, #0xb",
+          "02d8d9b8 20 08 00 54 b.eq #0x2d8dabc",
+          "02d8d9bc 1f 2c 00 71 cmp w0, #0xb",
+          "02d8d9c0 88 04 00 54 b.hi #0x2d8da50",
+          "02d8d9c4 1f 1c 00 71 cmp w0, #7",
+          "02d8d9c8 60 08 00 54 b.eq #0x2d8dad4",
+          "02d8d9cc 1f 1c 00 71 cmp w0, #7",
+          "02d8d9d0 28 03 00 54 b.hi #0x2d8da34",
+          "02d8d9d4 1f 14 00 71 cmp w0, #5",
+          "02d8d9d8 40 08 00 54 b.eq #0x2d8dae0",
+          "02d8d9dc 1f 18 00 71 cmp w0, #6",
+          "02d8d9e0 01 02 00 54 b.ne #0x2d8da20",
+          "02d8d9e4 00 02 80 52 mov w0, #0x10",
+          "02d8d9e8 20 28 01 b9 str w0, [x1, #0x128]",
+          "02d8d9ec 41 00 00 14 b #0x2d8daf0",
+          "02d8d9f0 02 10 40 91 add x2, x0, #4, lsl #12",
+          "02d8d9f4 42 bc 40 b9 ldr w2, [x2, #0xbc]",
+          "02d8d9f8 42 04 00 51 sub w2, w2, #1",
+          "02d8d9fc 5f 04 00 71 cmp w2, #1",
+          "02d8da00 48 fd ff 54 b.hi #0x2d8d9a8",
+          "02d8da04 02 10 40 91 add x2, x0, #4, lsl #12",
+          "02d8da08 42 ec 40 b9 ldr w2, [x2, #0xec]",
+          "02d8da0c e2 fc ff 35 cbnz w2, #0x2d8d9a8",
+          "02d8da10 00 38 7f b9 ldr w0, [x0, #0x3f38]",
+          "02d8da14 c0 06 00 35 cbnz w0, #0x2d8daec",
+          "02d8da18 3f 28 01 b9 str wzr, [x1, #0x128]",
+          "02d8da1c 35 00 00 14 b #0x2d8daf0",
+          "02d8da20 1f 10 00 71 cmp w0, #4",
+          "02d8da24 a1 ff ff 54 b.ne #0x2d8da18",
+          "02d8da28 00 04 80 52 mov w0, #0x20",
+          "02d8da2c 20 28 01 b9 str w0, [x1, #0x128]",
+          "02d8da30 30 00 00 14 b #0x2d8daf0",
+          "02d8da34 1f 24 00 71 cmp w0, #9",
+          "02d8da38 80 04 00 54 b.eq #0x2d8dac8",
+          "02d8da3c 1f 28 00 71 cmp w0, #0xa",
+          "02d8da40 c1 fe ff 54 b.ne #0x2d8da18",
+          "02d8da44 e0 01 80 12 mov w0, #-0x10",
+          "02d8da48 20 28 01 b9 str w0, [x1, #0x128]",
+          "02d8da4c 29 00 00 14 b #0x2d8daf0",
+          "02d8da50 1f 38 00 71 cmp w0, #0xe",
+          "02d8da54 80 02 00 54 b.eq #0x2d8daa4",
+          "02d8da58 1f 38 00 71 cmp w0, #0xe",
+          "02d8da5c 09 01 00 54 b.ls #0x2d8da7c",
+          "02d8da60 1f 3c 00 71 cmp w0, #0xf",
+          "02d8da64 a0 01 00 54 b.eq #0x2d8da98",
+          "02d8da68 1f 40 00 71 cmp w0, #0x10",
+          "02d8da6c 61 fd ff 54 b.ne #0x2d8da18",
+          "02d8da70 e0 07 80 12 mov w0, #-0x40",
+          "02d8da74 20 28 01 b9 str w0, [x1, #0x128]",
+          "02d8da78 1e 00 00 14 b #0x2d8daf0",
+          "02d8da7c 1f 30 00 71 cmp w0, #0xc",
+          "02d8da80 80 01 00 54 b.eq #0x2d8dab0",
+          "02d8da84 1f 34 00 71 cmp w0, #0xd",
+          "02d8da88 81 fc ff 54 b.ne #0x2d8da18",
+          "02d8da8c e0 04 80 12 mov w0, #-0x28",
+          "02d8da90 20 28 01 b9 str w0, [x1, #0x128]",
+          "02d8da94 17 00 00 14 b #0x2d8daf0",
+          "02d8da98 e0 06 80 12 mov w0, #-0x38",
+          "02d8da9c 20 28 01 b9 str w0, [x1, #0x128]",
+          "02d8daa0 14 00 00 14 b #0x2d8daf0",
+          "02d8daa4 e0 05 80 12 mov w0, #-0x30",
+          "02d8daa8 20 28 01 b9 str w0, [x1, #0x128]",
+          "02d8daac 11 00 00 14 b #0x2d8daf0",
+          "02d8dab0 e0 03 80 12 mov w0, #-0x20",
+          "02d8dab4 20 28 01 b9 str w0, [x1, #0x128]",
+          "02d8dab8 0e 00 00 14 b #0x2d8daf0",
+          "02d8dabc e0 02 80 12 mov w0, #-0x18",
+          "02d8dac0 20 28 01 b9 str w0, [x1, #0x128]",
+          "02d8dac4 0b 00 00 14 b #0x2d8daf0",
+          "02d8dac8 e0 00 80 12 mov w0, #-8",
+          "02d8dacc 20 28 01 b9 str w0, [x1, #0x128]",
+          "02d8dad0 08 00 00 14 b #0x2d8daf0",
+          "02d8dad4 00 01 80 52 mov w0, #8",
+          "02d8dad8 20 28 01 b9 str w0, [x1, #0x128]",
+          "02d8dadc 05 00 00 14 b #0x2d8daf0",
+          "02d8dae0 00 03 80 52 mov w0, #0x18",
+          "02d8dae4 20 28 01 b9 str w0, [x1, #0x128]",
+          "02d8dae8 02 00 00 14 b #0x2d8daf0",
+          "02d8daec 3f 28 01 b9 str wzr, [x1, #0x128]",
+          "02d8daf0 c0 03 5f d6 ret "
+        ]
+      }
+    },
+    "X100VI": {
+      "dat": "Firmware на прочиеFuji/FPUPDATE.DAT",
+      "sha256_before": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "sha256_after": "0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "decoded_blocks_sha256": [
+        "77456fe5c9808ce5e638b1a5f6f12d9e8e40c1751e1f9b4640134fde662e09d4",
+        "14b0557bd724fa74b51ff641fcd5481da5b3ac64146d4fc69375086dafcfb174"
+      ],
+      "writer_shadow": "0x305d79c",
+      "writer_highlight": "0x305d900",
+      "parameter_offsets": {
+        "gate": "0x3fa8",
+        "shadow": "0x40bc",
+        "highlight": "0x40b8",
+        "disable": "0x4528",
+        "selector": "0x46bc",
+        "override": "0x46ec"
+      },
+      "output_offsets": {
+        "shadow": "0x124",
+        "highlight": "0x128"
+      },
+      "builder": "0x14376ac",
+      "predicate": "0x14350f8",
+      "builder_cases": [
+        {
+          "input": [
+            8,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "shadow_i32": 0,
+          "highlight_i32": 0,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3506,
+          "directory_sha256": "8ef3d7eefbc88a0b7f072842259432420d50b326b6fbd2f497b7905eb677ab02",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ]
+          }
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 f8 ff ff ff e8 ff ff ff 00 00 00 00",
+          "shadow_i32": -8,
+          "highlight_i32": -24,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3506,
+          "directory_sha256": "dc0e51389336d243352c6ff450d6ebc0aa4c18b95c6851928cc6add0585e3a01",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 f8 ff ff ff"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 e8 ff ff ff"
+              }
+            ]
+          }
+        },
+        {
+          "input": [
+            8,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 00 00 00 00 e8 ff ff ff 00 00 00 00",
+          "shadow_i32": 0,
+          "highlight_i32": -24,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3506,
+          "directory_sha256": "1c89c98893fa46e31255817b9d3745344412584585bfa396e771c894018f8cb6",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 e8 ff ff ff"
+              }
+            ]
+          }
+        },
+        {
+          "input": [
+            9,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "00 00 00 00 f8 ff ff ff 00 00 00 00 00 00 00 00",
+          "shadow_i32": -8,
+          "highlight_i32": 0,
+          "predicates": [
+            1,
+            1
+          ],
+          "directory_length": 3506,
+          "directory_sha256": "6bc2f0e850e230366a39bb4af3abc264c15909cabfce10894593fdc5ebf1a485",
+          "records": {
+            "0x1040": [
+              {
+                "offset": 362,
+                "bytes": "40 10 09 00 01 00 00 00 f8 ff ff ff"
+              }
+            ],
+            "0x1041": [
+              {
+                "offset": 374,
+                "bytes": "41 10 09 00 01 00 00 00 00 00 00 00"
+              }
+            ]
+          }
+        }
+      ],
+      "cases": [
+        {
+          "input": [
+            8,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            8,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": 0
+        }
+      ],
+      "boundary_cases": [
+        {
+          "input": [
+            0,
+            0
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            1,
+            1
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            2,
+            2
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            3,
+            3
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            4,
+            4
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 20 00 00 00 20 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 32,
+          "highlight_i32": 32
+        },
+        {
+          "input": [
+            5,
+            5
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 18 00 00 00 18 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 24,
+          "highlight_i32": 24
+        },
+        {
+          "input": [
+            6,
+            6
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 10 00 00 00 10 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 16,
+          "highlight_i32": 16
+        },
+        {
+          "input": [
+            7,
+            7
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 08 00 00 00 08 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 8,
+          "highlight_i32": 8
+        },
+        {
+          "input": [
+            8,
+            8
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            9
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff f8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -8
+        },
+        {
+          "input": [
+            10,
+            10
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f0 ff ff ff f0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -16,
+          "highlight_i32": -16
+        },
+        {
+          "input": [
+            11,
+            11
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 e8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -24,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            12,
+            12
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 e0 ff ff ff e0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -32,
+          "highlight_i32": -32
+        },
+        {
+          "input": [
+            13,
+            13
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 d8 ff ff ff d8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -40,
+          "highlight_i32": -40
+        },
+        {
+          "input": [
+            14,
+            14
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 d0 ff ff ff d0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -48,
+          "highlight_i32": -48
+        },
+        {
+          "input": [
+            15,
+            15
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 c8 ff ff ff c8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -56,
+          "highlight_i32": -56
+        },
+        {
+          "input": [
+            16,
+            16
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 c0 ff ff ff c0 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -64,
+          "highlight_i32": -64
+        },
+        {
+          "input": [
+            17,
+            17
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            4294967295,
+            4294967295
+          ],
+          "gate": 2,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        }
+      ],
+      "condition_cases": [
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 44,
+          "disable": 0,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 2,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 3,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 46,
+          "disable": 0,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 0,
+          "selector": 1,
+          "override": 1,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 f8 ff ff ff e8 ff ff ff a5 a5 a5 a5",
+          "shadow_i32": -8,
+          "highlight_i32": -24
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 2,
+          "disable": 1,
+          "selector": 0,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 1,
+          "selector": 1,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        },
+        {
+          "input": [
+            9,
+            11
+          ],
+          "gate": 45,
+          "disable": 1,
+          "selector": 3,
+          "override": 0,
+          "object_0x120_0x12f_hex": "a5 a5 a5 a5 00 00 00 00 00 00 00 00 a5 a5 a5 a5",
+          "shadow_i32": 0,
+          "highlight_i32": 0
+        }
+      ],
+      "disassembly": {
+        "shadow": [
+          "0305d79c 02 a8 7f b9 ldr w2, [x0, #0x3fa8]",
+          "0305d7a0 5f b4 00 71 cmp w2, #0x2d",
+          "0305d7a4 a0 02 00 54 b.eq #0x305d7f8",
+          "0305d7a8 02 10 40 91 add x2, x0, #4, lsl #12",
+          "0305d7ac 42 28 45 b9 ldr w2, [x2, #0x528]",
+          "0305d7b0 42 0a 00 35 cbnz w2, #0x305d8f8",
+          "0305d7b4 00 10 40 91 add x0, x0, #4, lsl #12",
+          "0305d7b8 00 bc 40 b9 ldr w0, [x0, #0xbc]",
+          "0305d7bc 1f 2c 00 71 cmp w0, #0xb",
+          "0305d7c0 40 08 00 54 b.eq #0x305d8c8",
+          "0305d7c4 1f 2c 00 71 cmp w0, #0xb",
+          "0305d7c8 a8 04 00 54 b.hi #0x305d85c",
+          "0305d7cc 1f 1c 00 71 cmp w0, #7",
+          "0305d7d0 80 08 00 54 b.eq #0x305d8e0",
+          "0305d7d4 1f 1c 00 71 cmp w0, #7",
+          "0305d7d8 48 03 00 54 b.hi #0x305d840",
+          "0305d7dc 1f 14 00 71 cmp w0, #5",
+          "0305d7e0 60 08 00 54 b.eq #0x305d8ec",
+          "0305d7e4 1f 18 00 71 cmp w0, #6",
+          "0305d7e8 21 02 00 54 b.ne #0x305d82c",
+          "0305d7ec 00 02 80 52 mov w0, #0x10",
+          "0305d7f0 20 24 01 b9 str w0, [x1, #0x124]",
+          "0305d7f4 42 00 00 14 b #0x305d8fc",
+          "0305d7f8 02 10 40 91 add x2, x0, #4, lsl #12",
+          "0305d7fc 42 bc 46 b9 ldr w2, [x2, #0x6bc]",
+          "0305d800 42 04 00 51 sub w2, w2, #1",
+          "0305d804 5f 04 00 71 cmp w2, #1",
+          "0305d808 08 fd ff 54 b.hi #0x305d7a8",
+          "0305d80c 02 10 40 91 add x2, x0, #4, lsl #12",
+          "0305d810 42 ec 46 b9 ldr w2, [x2, #0x6ec]",
+          "0305d814 a2 fc ff 35 cbnz w2, #0x305d7a8",
+          "0305d818 00 10 40 91 add x0, x0, #4, lsl #12",
+          "0305d81c 00 28 45 b9 ldr w0, [x0, #0x528]",
+          "0305d820 c0 06 00 35 cbnz w0, #0x305d8f8",
+          "0305d824 3f 24 01 b9 str wzr, [x1, #0x124]",
+          "0305d828 35 00 00 14 b #0x305d8fc",
+          "0305d82c 1f 10 00 71 cmp w0, #4",
+          "0305d830 a1 ff ff 54 b.ne #0x305d824",
+          "0305d834 00 04 80 52 mov w0, #0x20",
+          "0305d838 20 24 01 b9 str w0, [x1, #0x124]",
+          "0305d83c 30 00 00 14 b #0x305d8fc",
+          "0305d840 1f 24 00 71 cmp w0, #9",
+          "0305d844 80 04 00 54 b.eq #0x305d8d4",
+          "0305d848 1f 28 00 71 cmp w0, #0xa",
+          "0305d84c c1 fe ff 54 b.ne #0x305d824",
+          "0305d850 e0 01 80 12 mov w0, #-0x10",
+          "0305d854 20 24 01 b9 str w0, [x1, #0x124]",
+          "0305d858 29 00 00 14 b #0x305d8fc",
+          "0305d85c 1f 38 00 71 cmp w0, #0xe",
+          "0305d860 80 02 00 54 b.eq #0x305d8b0",
+          "0305d864 1f 38 00 71 cmp w0, #0xe",
+          "0305d868 09 01 00 54 b.ls #0x305d888",
+          "0305d86c 1f 3c 00 71 cmp w0, #0xf",
+          "0305d870 a0 01 00 54 b.eq #0x305d8a4",
+          "0305d874 1f 40 00 71 cmp w0, #0x10",
+          "0305d878 61 fd ff 54 b.ne #0x305d824",
+          "0305d87c e0 07 80 12 mov w0, #-0x40",
+          "0305d880 20 24 01 b9 str w0, [x1, #0x124]",
+          "0305d884 1e 00 00 14 b #0x305d8fc",
+          "0305d888 1f 30 00 71 cmp w0, #0xc",
+          "0305d88c 80 01 00 54 b.eq #0x305d8bc",
+          "0305d890 1f 34 00 71 cmp w0, #0xd",
+          "0305d894 81 fc ff 54 b.ne #0x305d824",
+          "0305d898 e0 04 80 12 mov w0, #-0x28",
+          "0305d89c 20 24 01 b9 str w0, [x1, #0x124]",
+          "0305d8a0 17 00 00 14 b #0x305d8fc",
+          "0305d8a4 e0 06 80 12 mov w0, #-0x38",
+          "0305d8a8 20 24 01 b9 str w0, [x1, #0x124]",
+          "0305d8ac 14 00 00 14 b #0x305d8fc",
+          "0305d8b0 e0 05 80 12 mov w0, #-0x30",
+          "0305d8b4 20 24 01 b9 str w0, [x1, #0x124]",
+          "0305d8b8 11 00 00 14 b #0x305d8fc",
+          "0305d8bc e0 03 80 12 mov w0, #-0x20",
+          "0305d8c0 20 24 01 b9 str w0, [x1, #0x124]",
+          "0305d8c4 0e 00 00 14 b #0x305d8fc",
+          "0305d8c8 e0 02 80 12 mov w0, #-0x18",
+          "0305d8cc 20 24 01 b9 str w0, [x1, #0x124]",
+          "0305d8d0 0b 00 00 14 b #0x305d8fc",
+          "0305d8d4 e0 00 80 12 mov w0, #-8",
+          "0305d8d8 20 24 01 b9 str w0, [x1, #0x124]",
+          "0305d8dc 08 00 00 14 b #0x305d8fc",
+          "0305d8e0 00 01 80 52 mov w0, #8",
+          "0305d8e4 20 24 01 b9 str w0, [x1, #0x124]",
+          "0305d8e8 05 00 00 14 b #0x305d8fc",
+          "0305d8ec 00 03 80 52 mov w0, #0x18",
+          "0305d8f0 20 24 01 b9 str w0, [x1, #0x124]",
+          "0305d8f4 02 00 00 14 b #0x305d8fc",
+          "0305d8f8 3f 24 01 b9 str wzr, [x1, #0x124]",
+          "0305d8fc c0 03 5f d6 ret "
+        ],
+        "highlight": [
+          "0305d900 02 a8 7f b9 ldr w2, [x0, #0x3fa8]",
+          "0305d904 5f b4 00 71 cmp w2, #0x2d",
+          "0305d908 a0 02 00 54 b.eq #0x305d95c",
+          "0305d90c 02 10 40 91 add x2, x0, #4, lsl #12",
+          "0305d910 42 28 45 b9 ldr w2, [x2, #0x528]",
+          "0305d914 42 0a 00 35 cbnz w2, #0x305da5c",
+          "0305d918 00 10 40 91 add x0, x0, #4, lsl #12",
+          "0305d91c 00 b8 40 b9 ldr w0, [x0, #0xb8]",
+          "0305d920 1f 2c 00 71 cmp w0, #0xb",
+          "0305d924 40 08 00 54 b.eq #0x305da2c",
+          "0305d928 1f 2c 00 71 cmp w0, #0xb",
+          "0305d92c a8 04 00 54 b.hi #0x305d9c0",
+          "0305d930 1f 1c 00 71 cmp w0, #7",
+          "0305d934 80 08 00 54 b.eq #0x305da44",
+          "0305d938 1f 1c 00 71 cmp w0, #7",
+          "0305d93c 48 03 00 54 b.hi #0x305d9a4",
+          "0305d940 1f 14 00 71 cmp w0, #5",
+          "0305d944 60 08 00 54 b.eq #0x305da50",
+          "0305d948 1f 18 00 71 cmp w0, #6",
+          "0305d94c 21 02 00 54 b.ne #0x305d990",
+          "0305d950 00 02 80 52 mov w0, #0x10",
+          "0305d954 20 28 01 b9 str w0, [x1, #0x128]",
+          "0305d958 42 00 00 14 b #0x305da60",
+          "0305d95c 02 10 40 91 add x2, x0, #4, lsl #12",
+          "0305d960 42 bc 46 b9 ldr w2, [x2, #0x6bc]",
+          "0305d964 42 04 00 51 sub w2, w2, #1",
+          "0305d968 5f 04 00 71 cmp w2, #1",
+          "0305d96c 08 fd ff 54 b.hi #0x305d90c",
+          "0305d970 02 10 40 91 add x2, x0, #4, lsl #12",
+          "0305d974 42 ec 46 b9 ldr w2, [x2, #0x6ec]",
+          "0305d978 a2 fc ff 35 cbnz w2, #0x305d90c",
+          "0305d97c 00 10 40 91 add x0, x0, #4, lsl #12",
+          "0305d980 00 28 45 b9 ldr w0, [x0, #0x528]",
+          "0305d984 c0 06 00 35 cbnz w0, #0x305da5c",
+          "0305d988 3f 28 01 b9 str wzr, [x1, #0x128]",
+          "0305d98c 35 00 00 14 b #0x305da60",
+          "0305d990 1f 10 00 71 cmp w0, #4",
+          "0305d994 a1 ff ff 54 b.ne #0x305d988",
+          "0305d998 00 04 80 52 mov w0, #0x20",
+          "0305d99c 20 28 01 b9 str w0, [x1, #0x128]",
+          "0305d9a0 30 00 00 14 b #0x305da60",
+          "0305d9a4 1f 24 00 71 cmp w0, #9",
+          "0305d9a8 80 04 00 54 b.eq #0x305da38",
+          "0305d9ac 1f 28 00 71 cmp w0, #0xa",
+          "0305d9b0 c1 fe ff 54 b.ne #0x305d988",
+          "0305d9b4 e0 01 80 12 mov w0, #-0x10",
+          "0305d9b8 20 28 01 b9 str w0, [x1, #0x128]",
+          "0305d9bc 29 00 00 14 b #0x305da60",
+          "0305d9c0 1f 38 00 71 cmp w0, #0xe",
+          "0305d9c4 80 02 00 54 b.eq #0x305da14",
+          "0305d9c8 1f 38 00 71 cmp w0, #0xe",
+          "0305d9cc 09 01 00 54 b.ls #0x305d9ec",
+          "0305d9d0 1f 3c 00 71 cmp w0, #0xf",
+          "0305d9d4 a0 01 00 54 b.eq #0x305da08",
+          "0305d9d8 1f 40 00 71 cmp w0, #0x10",
+          "0305d9dc 61 fd ff 54 b.ne #0x305d988",
+          "0305d9e0 e0 07 80 12 mov w0, #-0x40",
+          "0305d9e4 20 28 01 b9 str w0, [x1, #0x128]",
+          "0305d9e8 1e 00 00 14 b #0x305da60",
+          "0305d9ec 1f 30 00 71 cmp w0, #0xc",
+          "0305d9f0 80 01 00 54 b.eq #0x305da20",
+          "0305d9f4 1f 34 00 71 cmp w0, #0xd",
+          "0305d9f8 81 fc ff 54 b.ne #0x305d988",
+          "0305d9fc e0 04 80 12 mov w0, #-0x28",
+          "0305da00 20 28 01 b9 str w0, [x1, #0x128]",
+          "0305da04 17 00 00 14 b #0x305da60",
+          "0305da08 e0 06 80 12 mov w0, #-0x38",
+          "0305da0c 20 28 01 b9 str w0, [x1, #0x128]",
+          "0305da10 14 00 00 14 b #0x305da60",
+          "0305da14 e0 05 80 12 mov w0, #-0x30",
+          "0305da18 20 28 01 b9 str w0, [x1, #0x128]",
+          "0305da1c 11 00 00 14 b #0x305da60",
+          "0305da20 e0 03 80 12 mov w0, #-0x20",
+          "0305da24 20 28 01 b9 str w0, [x1, #0x128]",
+          "0305da28 0e 00 00 14 b #0x305da60",
+          "0305da2c e0 02 80 12 mov w0, #-0x18",
+          "0305da30 20 28 01 b9 str w0, [x1, #0x128]",
+          "0305da34 0b 00 00 14 b #0x305da60",
+          "0305da38 e0 00 80 12 mov w0, #-8",
+          "0305da3c 20 28 01 b9 str w0, [x1, #0x128]",
+          "0305da40 08 00 00 14 b #0x305da60",
+          "0305da44 00 01 80 52 mov w0, #8",
+          "0305da48 20 28 01 b9 str w0, [x1, #0x128]",
+          "0305da4c 05 00 00 14 b #0x305da60",
+          "0305da50 00 03 80 52 mov w0, #0x18",
+          "0305da54 20 28 01 b9 str w0, [x1, #0x128]",
+          "0305da58 02 00 00 14 b #0x305da60",
+          "0305da5c 3f 28 01 b9 str wzr, [x1, #0x128]",
+          "0305da60 c0 03 5f d6 ret "
+        ]
+      }
+    }
+  }
+}
