@@ -1,0 +1,279 @@
+№	код	тип	доступ	форма	по_умолчанию	внутренний_номер	имя_настройки_в_прошивке
+0	5003	STR	чтение и запись	список	4896x3264	0x66A	UI_SETP_PIXEL
+1	5005	UINT16	чтение и запись	список	0x0002	0x5F5	UI_SETP_WB
+2	5007	UINT16	чтение и запись	список	200	0x990	UI_SETP_PC_FNUMBER
+3	500A	UINT16	чтение и запись	список	0x0001	0x8C0	UI_SETP_FOCUS_MODE
+4	500B	UINT16	чтение и запись	список	0x0001	0x628	UI_SETP_PHOTOMETRYMODE
+5	500D	UINT32	чтение и запись	список	244	0x991	UI_SETP_PC_EXPOSURETIME
+6	500E	UINT16	чтение и запись	список	0x0001	0x5F3	UI_SETP_REC_M_MODE_CUSTAM1
+7	500F	INT32	чтение и запись	список	200	0x753	UI_SETP_ISO
+8	5010	INT16	чтение и запись	список	0	0x883	UI_SETP_EXPOSURE
+9	5011	STR	чтение и запись	нет			
+10	5012	UINT16	чтение и запись	список	10000	0x74B	UI_SETP_SELFTIMER
+11	5015	INT16	чтение и запись	диапазон	0/-40/40/10	0x6B5	UI_SETP_SHARPNESS
+12	501C	UINT16	чтение и запись	список	0x8001	0x6FB	UI_SETP_FOCUS
+13	D001	UINT16	чтение и запись	список	0x0001	0x68E	UI_SETP_FILM_SIM
+14	D007	UINT16	чтение и запись	список	100	0x6A6	UI_SETP_DRANGE
+15	D008	INT16	чтение и запись	диапазон	0/-40/40/10	0x6B3	UI_SETP_STILLCOLOR
+16	D00A	UINT16	чтение и запись	список	0x0001	0x104	UI_SETP_COLOR_SPACE
+17	D00B	INT16	чтение и запись	диапазон	0/-9/9/1	0x6BF	UI_SETP_WB_TUNING_R
+18	D00C	INT16	чтение и запись	диапазон	0/-9/9/1	0x6DD	UI_SETP_WB_TUNING_B
+19	D017	UINT16	чтение и запись	список	10000	0x5F7	UI_SETP_WB_KELVIN
+20	D018	UINT16	чтение и запись	список	0x0002	0x670	UI_SETP_QUALITY
+21	D01B	UINT16	чтение и запись	список	0x0001	0x8E0	UI_SETP_AFMFEXPANDMAG
+22	D01C	UINT16	чтение и запись	список	0x2000	0x603	UI_SETP_NR
+23	D020	UINT16	чтение и запись	список	0x0002	0x618	UI_SETP_FACEDETECT
+24	D022	UINT16	чтение и запись	список	0x0001	0x82D	UI_SETP_COMPRESS
+25	D023	UINT16	чтение и запись	список	0x0001	0x108	UI_SETP_Q_GRAIN
+26	D024	UINT16	чтение и запись	список	0x0001	0x61C	UI_SETP_EYE_AF
+27	D025	UINT16	чтение и запись	список	0x0001	0x727	UI_SETP_FOCUSPOINT
+28	D026	UINT16	чтение и запись	список	0x0001	0x7AB	UI_SETP_MF_ASSIST_AND_PEAKING
+29	D027	UINT16	чтение и запись	список	0x0001	0x62A	UI_SETP_AF_AREA_LINK
+30	D028	UINT16	чтение и запись	список	0x0001	0x831	UI_SETP_CIR_CONFUSION
+31	D029	UINT16	чтение и запись	список	0x0001	0x109	UI_SETP_SHADOWING
+32	D02A	UINT16	чтение и запись	список	0x8001	0x6FB	UI_SETP_FOCUS
+33	D02B	UINT16	чтение и запись	список	0x8001	0x6FB	UI_SETP_FOCUS
+34	D02D	UINT16	чтение и запись	список	0x0000	0x6FB	UI_SETP_FOCUS
+35	D02E	UINT16	чтение и запись	список	0x0000	0x6B0	UI_SETP_WIDEDRANGE
+36	D02F	UINT16	чтение и запись	список	0x0000		
+37	D030	UINT16	чтение и запись	список	0x0001	0x10A	UI_SETP_BLUE_EFFECT
+38	D031	INT16	чтение и запись	диапазон	0/-180/180/10	0x6A4	UI_SETP_BLACK_TONE_RG
+39	D032	INT16	чтение и запись	диапазон	0/-50/50/10	0x605	UI_SETP_CLARITY
+40	D033	UINT16	чтение	список	0x0001		
+41	D034	UINT16	чтение	список	0x0001		
+42	D035	UINT16	чтение	список	0x0001		
+43	D036	UINT16	чтение	список	0x0001		
+44	D037	UINT16	чтение и запись	список	0x0001		
+45	D038	UINT32	чтение	диапазон	0x00000000		
+46	D039	UINT32	чтение и запись	список	0x00010000		
+47	D040	UINT32	чтение и запись	диапазон	0x00000000/0x00000000/0xFFFFFFFF/1		
+48	D100	STR	чтение и запись	нет			
+49	D104	INT16	чтение и запись	диапазон	0/-180/180/10	0x6A2	UI_SETP_BLACK_TONE
+50	D106	UINT16	чтение и запись	список	0x0001	0x46F	UI_SETP_OSD_FRAME
+51	D10A	UINT16	чтение и запись	список	0x0001	0x7DA	UI_SETP_AF_C
+52	D10B	UINT16	чтение и запись	список	0x0001	0x7D9	UI_SETP_AF_S
+53	D112	UINT16	чтение и запись	список	0x0002	0xCB	UI_SETP_AF_LED
+54	D136	UINT16	чтение и запись	список	0x0000	0x4CD	UI_SETP_FUNCLOCK_KIND
+55	D145	STR	чтение и запись	нет			
+56	D153	UINT16	чтение	нет	0x100		
+57	D154	UINT32	чтение и запись	диапазон	0/0/4294967295/1		
+58	D155	UINT32	чтение	диапазон	0/0/4294967295/1		
+59	D156	UINT16	чтение	нет	0x100		
+60	D157	UINT16	чтение и запись	список	0x0001	0x14E	UI_SETP_WORLDSELECT
+61	D158	INT16	чтение и запись	диапазон	0/-23/23/1	0x15A	UI_SETP_HOMETIME_HOURS
+62	D159	UINT16	чтение и запись	список	0	0x15C	UI_SETP_HOMETIME_MINUTES
+63	D15A	UINT16	чтение и запись	список	0x0000	0x140	UI_SETP_LANGUAGE
+64	D15B	UINT16	чтение и запись	список	0x0001	0xD	UI_SETP_FRAME_NO_MEM
+65	D16D	UINT32	чтение и запись	диапазон	0/0/4294967295/1		
+66	D16E	UINT16	чтение	диапазон	0x01		
+67	D16F	UINT16	чтение и запись	список	0x8000	0x749	UI_SETP_CROP_MODE
+68	D170	UINT16	чтение и запись	диапазон	**/**/**/**		
+69	D171	INT16	чтение и запись	список	0x0000		
+70	D173	UINT16	чтение и запись	список	0x0003	0x99A	UI_SETP_PC_LIVEVIEW_IMAGE_QUALITY
+71	D174	UINT16	чтение и запись	список	0x0003	0x99B	UI_SETP_PC_LIVEVIEW_IMAGE_SIZE
+72	D17B	UINT16	запись?	список	0x0001		
+73	D17E	STR	чтение	нет			
+74	D17F	UINT16	запись?	список	0x0001		
+75	D180	—	чтение и запись	нет	-		
+76	D181	—	чтение	нет	-		
+77	D182	INT16	запись?	диапазон	0/-1/999/1		
+78	D189	UINT16	чтение и запись	список	0x0001	0x10B	UI_SETP_SMOOTH_SKIN
+79	D18A	STR	чтение и запись	список			
+80	D18B	STR	чтение и запись	нет			
+81	D18C	UINT16	чтение и запись	список	0x0001	0xDC	UI_SETP_CUSTOM_SET_SAVE
+82	D18D	STR	чтение и запись	нет	0x0000	0x730	UI_SETP_CUSTOM_SAVE_NAME
+83	D1B0	STR	чтение и запись	нет			
+84	D1B1	STR	чтение и запись	нет			
+85	D1B2	UINT16	чтение и запись	список	0x0007	0x82F	UI_SETP_JPEG_HEIF_CHANGE
+86	D1B3	UINT32	чтение и запись	список	**	0x1D	UI_SETP_STILL_DIGITAL_TELECONV
+87	D1B4	—	чтение и запись	нет	-		
+88	D1B5	—	чтение	нет	-		
+89	D1B6	UINT16	чтение и запись	список	0x0002	0x15E	UI_SETP_SUMMERTIME_HOME
+90	D1B7	UINT16	чтение и запись	список	0x0001	0x667	UI_SETP_EXT_FAN
+91	D1B8	UINT32	запись?	диапазон	**/0x00000001/0x00000108/1		
+92	D1B9	UINT16	запись?	список	**		
+93	D1BA	UINT32	запись?	диапазон	**/0x00000001/0x00000108/1		
+94	D1BB	UINT16	запись?	список	**		
+95	D1BC	UINT16	чтение и запись	список	0x0001	0xA21	UI_SETP_PCSH_LIVEVIEW_TYPE
+96	D1BD	UINT16	чтение и запись	список	0x0001	0x622	UI_SETP_DETECT_SUBJECT_QMENU
+97	D1BE	UINT16	чтение	список	0x0001		
+98	D1BF	UINT16	чтение и запись	диапазон	0/10/80/10	0x4C2	UI_SETP_ZOOM_FN_OPERATING_SPEED
+99	D1C0	UINT16	чтение и запись	диапазон	0/10/80/10	0x4C1	UI_SETP_FOCUS_FN_OPERATING_SPEED_MF
+100	D1C5	STR	чтение	нет			
+101	D1C6	UINT16	чтение	список	0x0001		
+102	D201	UINT16	чтение и запись	список	0x0004	0x875	UI_SETP_DRV_MENU_BKT
+103	D207	UINT16	чтение и запись	список	0x0001	0x98C	UI_SETP_PC_PRIORITY
+104	D208	UINT16	чтение и запись	список	0x0304		
+105	D209	UINT16	чтение	список	0x0001		
+106	D20A	UINT16	чтение	список	0x0001		
+107	D20B	STR	чтение и запись	нет			
+108	D20C	UINT16	чтение и запись	список	0x0004	0x98D	UI_SETP_PC_MEDIAWRITE
+109	D20D	STR	чтение	нет			
+110	D20E	UINT16	чтение	диапазон	0/0/472/1		
+111	D211	UINT16	чтение	диапазон	0x0101/0x0000/0xFFFF/1		
+112	D212	—	чтение	нет	-		
+113	D215	STR	чтение и запись	нет			
+114	D216	STR	чтение и запись	нет			
+115	D21C	UINT16	чтение и запись	список	0x0000		
+116	D21D	UINT16	чтение	диапазон	0/0/101/1		
+117	D222	UINT16	чтение и запись	диапазон	0x2000/0x0000/0xFFFF/1		
+118	D223	UINT16	чтение и запись	диапазон	0x2000/0x0000/0xFFFF/1		
+119	D224	UINT16	чтение	диапазон	0/0x0000/0xEF00/1		
+120	D225	STR	чтение и запись	список			
+121	D226	STR	чтение	нет			
+122	D227	STR	чтение	список			
+123	D228	UINT16	чтение и запись	список	0x0000	0x7CB	UI_SETP_FOCUS_LIMIT
+124	D229	UINT16	чтение и запись	список	0x0001		
+125	D22A	INT16	чтение и запись	диапазон	0/**/**/1		
+126	D22B	INT16	чтение и запись	диапазон	0/**/**/1		
+127	D22C	UINT16	чтение и запись	диапазон	4/**/**/1		
+128	D22D	UINT16	чтение	список	0x0001		
+129	D22E	UINT16	чтение	список	**		
+130	D22F	—	чтение	нет	-		
+131	D230	UINT16	запись?	список	0x0001		
+132	D231	UINT16	чтение и запись	список	**	0x87B	UI_SETP_PIXELSHIFT
+133	D232	UINT16	чтение и запись	список	**	0x70D	UI_SETP_AFC_SET_CALL
+134	D233	STR	чтение и запись	диапазон	***/a,b,c(NULL)/x,y,z(NULL)/1,1,1(NULL)		
+135	D234	UINT16	чтение и запись	список	0x0002	0x82A	UI_SETP_HIFREQ_FLICKERLESS
+136	D235	—	чтение и запись	нет	-		
+137	D236	UINT16	чтение	список	**		
+138	D237	STR	чтение и запись	нет	**	0x72E	UI_SETP_ARTIST
+139	D238	UINT16	чтение и запись	список	**	0x46D	UI_SETP_LEVEL_CHANGE
+140	D239	UINT16	чтение и запись	список	**	0x4C6	UI_SETP_F_NUMBER_UNIT
+141	D23A	UINT32	чтение и запись	диапазон	**		
+142	D23B	UINT16	чтение и запись	список	**	0x983	UI_SETP_PLAY_SELECT_SLOT
+143	D23C	UINT16	чтение и запись	список	0x0001	0xA22	UI_SETP_PCSH_LIVEVIEW_DRAWBLACK
+144	D23E	UINT16	чтение и запись	список	0x0002	0xA20	UI_SETP_CAMERA_OPE_LOCK
+145	D23F	UINT32	чтение	диапазон	/0x00000000/0x0000FFFF/1		
+146	D240	UINT16	чтение и запись	список	120		
+147	D241	STR	чтение и запись	список			
+148	D242	INT32	чтение и запись	список	-10		
+149	D243	INT16	чтение и запись	список	0		
+150	D244	STR	чтение	нет	0x0000		
+151	D245	STR	чтение	нет	0x0000		
+152	D246	UINT16	чтение и запись	список	**	0x62E	UI_SETP_MOVIE_PIXEL
+153	D247	UINT16	чтение и запись	список	**	0x634	UI_SETP_MOVIE_FPS
+154	D248	UINT16	чтение и запись	список	**	0x637	UI_SETP_MOVIE_BITRATE
+155	D249	UINT16	чтение и запись	список	**	0x83C	UI_SETP_MOVIE_RECORED_COMPRESS
+156	D24A	UINT16	чтение и запись	список	**	0x63E	UI_SETP_HS_MOVIE_MODE
+157	D24B	UINT16	чтение и запись	список	**	0x630	UI_SETP_HS_MOVIE_HDMIONLY_PIXEL
+158	D24C	UINT16	чтение и запись	список	**	0x642	UI_SETP_HS_MOVIE_HDMIONLY_FPS_REC
+159	D24D	UINT16	чтение и запись	список	**	0x643	UI_SETP_HS_MOVIE_FPS_PLAY
+160	D24E	UINT16	чтение и запись	список	**	0x83A	UI_SETP_MOVIE_RECORED_MEDIA
+161	D24F	UINT16	чтение	список	**	0xBA7	UI_SETP_COMM_MENU_BROWSER_REMOTE_COMM_METHOD_SET
+162	D250	UINT16	чтение и запись	список	**	0x83D	UI_SETP_PRORES_PROXY
+163	D251	UINT16	чтение и запись	список	**	0x841	UI_SETP_HDMI_RAW
+164	D252	UINT16	чтение и запись	список	**	0x846	UI_SETP_HDMI_RAW_SIZE_BLACKMAGIC
+165	D253	UINT16	чтение и запись	список	**	0x849	UI_SETP_HDMI_RAW_FPS_BLACKMAGIC
+166	D254	UINT16	чтение и запись	список	**	0x7E0	UI_SETP_FLOGHLG_SETTING
+167	D255	UINT16	чтение	диапазон	**		
+168	D256	UINT16	чтение и запись	список	**	0x647	UI_SETP_CROP_MOVIE
+169	D257	UINT16	чтение и запись	список	**	0x167	UI_SETP_HDMI_OUT
+170	D258	UINT16	чтение и запись	список	**	0x669	UI_SETP_REC_TRIGGER
+171	D259	UINT16	чтение и запись	список	**	0x10	UI_SETP_BLURRING_MOVIE
+172	D25A	UINT16	чтение и запись	список	**	0x11	UI_SETP_BLUR_CORRECTION_MOVIE
+173	D25B	UINT16	чтение и запись	список	**	0x63C	UI_SETP_MOVIE_ZEBRA_SETTING
+174	D25C	UINT16	чтение и запись	список	**	0x63D	UI_SETP_MOVIE_ZEBRA_LEVEL
+175	D25D	UINT16	чтение и запись	список	**	0x832	UI_SETP_MOVIE_SILENT
+176	D25E	UINT16	чтение и запись	список	**	0x666	UI_SETP_TALLY_LIGHT
+177	D260	UINT16	запись?	список	**		
+178	D261	UINT16	запись?	список	**		
+179	D262	UINT16	запись?	диапазон	**/0x0101/0x0707/1		
+180	D263	STR	чтение и запись	нет	0x0000	0x731	UI_SETP_CUSTOM_SAVE_NAME_MOVIE
+181	D264	STR	чтение и запись	диапазон	***/a,b(NULL)/x,y(NULL)/1,1(NULL)		
+182	D265	UINT16	чтение и запись	список	0x0002	0x82B	UI_SETP_HIFREQ_FLICKERLESS_MOVIE
+183	D266	STR	чтение и запись	нет	0x0000		
+184	D267	UINT16	чтение и запись	список	**	0x658	UI_SETP_TIMECODE_DISP
+185	D268	UINT16	запись?	список	**		
+186	D269	UINT16	чтение и запись	список	**	0x663	UI_SETP_TIMECODE_COUNTUP
+187	D26A	UINT16	чтение и запись	список	**	0x664	UI_SETP_TIMECODE_DROPFRAME
+188	D26B	UINT16	чтение и запись	список	**	0x665	UI_SETP_TIMECODE_HDMI
+189	D26C	UINT16	чтение и запись	список	**	0x5F6	UI_SETP_WB_MOVIE
+190	D26D	INT16	чтение и запись	диапазон	**/-9/9/1	0x6CE	UI_SETP_WB_TUNING_R_MOVIE
+191	D26E	INT16	чтение и запись	диапазон	**/-9/9/1	0x6EC	UI_SETP_WB_TUNING_B_MOVIE
+192	D26F	UINT16	чтение и запись	список	**	0x5F8	UI_SETP_WB_KELVIN_MOVIE
+193	D270	UINT16	чтение и запись	список	**	0x691	UI_SETP_FILM_SIM_MOVIE
+194	D271	UINT16	чтение и запись	список	**	0x6AF	UI_SETP_DRANGE_MOVIE
+195	D272	UINT16	чтение и запись	список	**	0x629	UI_SETP_PHOTOMETRYMODE_MOVIE
+196	D273	INT16	чтение и запись	диапазон	**/-180/180/10	0x6A3	UI_SETP_BLACK_TONE_MOVIE
+197	D274	INT16	чтение и запись	диапазон	**/-180/180/10	0x6A5	UI_SETP_BLACK_TONE_RG_MOVIE
+198	D275	UINT16	чтение и запись	список	**	0x668	UI_SETP_DATA_LEVEL
+199	D276	INT16	чтение и запись	диапазон	**/-20/40/5	0x6BA	UI_SETP_HIGHLIGHT_MOVIE
+200	D277	INT16	чтение и запись	диапазон	**/-20/40/5	0x6BC	UI_SETP_SHADOW_MOVIE
+201	D278	INT16	чтение и запись	диапазон	**/-40/40/10	0x6B4	UI_SETP_STILLCOLOR_MOVIE
+202	D279	INT16	чтение и запись	диапазон	**/-40/40/10	0x6B6	UI_SETP_SHARPNESS_MOVIE
+203	D27A	UINT16	чтение и запись	список	**	0x604	UI_SETP_NR_MOVIE
+204	D27B	UINT16	чтение и запись	список	**	0x606	UI_SETP_MOVIE_4KTNR
+205	D27C	UINT16	чтение и запись	список	**	0x657	UI_SETP_VIGNT_CORRECT
+206	D27D	UINT16	чтение и запись	список	**	0x619	UI_SETP_FACEDETECT_MOVIE
+207	D27E	UINT16	чтение и запись	список	**	0x61D	UI_SETP_EYE_AF_MOVIE
+208	D27F	UINT16	чтение и запись	список	**	0x623	UI_SETP_DETECT_SUBJECT_QMENU_MOVIE
+209	D280	STR	чтение	нет	**		
+210	D281	UINT16	чтение и запись	список	**	0x7AC	UI_SETP_MF_ASSIST_AND_PEAKING_MOVIE
+211	D282	UINT16	чтение и запись	список	**	0xD7	UI_SETP_FOCUS_CHECK_MOVIE
+212	D283	UINT16	чтение и запись	список	**	0xD8	UI_SETP_KEEP_FOCUS_EXPANSION_MOVIE
+213	D284	STR	чтение	нет	**		
+214	D285	STR	чтение	нет	**		
+215	D286	STR	чтение	диапазон	/a,b,c/a,b,c/1,1,1		
+216	D287	UINT16	чтение и запись	список	**	0x64B	UI_SETP_MIC_LEVEL_SETTING
+217	D288	INT16	чтение и запись	список	**	0x64D	UI_SETP_MIC_LEVEL
+218	D289	UINT16	чтение и запись	список	**	0x64C	UI_SETP_EXT_MIC_LEVEL_SETTING
+219	D28A	INT16	чтение и запись	список	**	0x64E	UI_SETP_EXT_MIC_LEVEL
+220	D28B	UINT16	чтение и запись	список	**	0x650	UI_SETP_AUDIO_LIMITER
+221	D28C	UINT16	чтение и запись	список	**	0x651	UI_SETP_AUDIO_WIND_NOISE_REDUCTION
+222	D28D	UINT16	чтение и запись	список	**	0x652	UI_SETP_AUDIO_LOW_CUT
+223	D28E	INT16	чтение и запись	диапазон	**/0/100/10	0x119	UI_SETP_HEADPHONE_VOLUME
+224	D28F	UINT16	чтение и запись	список	**	0x654	UI_SETP_XLR_ADAPTER_SETTING_INPUT
+225	D290	UINT16	чтение и запись	список	**	0x656	UI_SETP_XLR_ADAPTER_SETTING_MONITORING
+226	D291	UINT16	чтение и запись	список	**	0x655	UI_SETP_XLR_ADAPTER_SETTING_HDMI_OUTPUT
+227	D292	STR	чтение	нет	0x0000		
+228	D293	UINT16	чтение	диапазон	**/1000/1380/10		
+229	D294	UINT16	чтение и запись	список	0x0002	0x7DD	UI_SETP_FULLTIME_MF_MOVIE
+230	D295	UINT16	чтение и запись	список	0x0002	0xCC	UI_SETP_DIGIZOOM
+231	D296	—	чтение	нет	-		
+232	D297	UINT16	чтение и запись	список	0x0001	0x117	UI_SETP_BEEP_LEVEL_MOVIE_REC
+233	D2A4	UINT16	чтение и запись	список	0x0001	0xD54	UI_SETP_MOVIE_TALLY
+234	D2A5	UINT16	чтение и запись	список	0	0x84E	UI_SETP_SELFTIMER_MOVIE
+235	D2B2	UINT16	чтение и запись	список	0x0002		
+236	D2B3	UINT16	чтение	список	0x0001	0x855	UI_SETP_TIMECODE_STATUS
+237	D2C9	UINT16	чтение и запись	список	0x0001	0x850	UI_SETP_EXT_TIMECODE_SYNC
+238	D304	UINT16	чтение и запись	список	0x0001	0x5BE	UI_SETP_FUNC_PERFORMANCE
+239	D305	UINT16	чтение и запись	список	0x0001	0x64F	UI_SETP_AUDIO_SWITCH
+240	D306	UINT32	чтение и запись	диапазон	0x00000000		
+241	D307	UINT16	чтение и запись	список	0x0001	0xEB	UI_SETP_CUSTOM_EDIT_AUTO_SAVE
+242	D310	UINT32	чтение и запись	диапазон	0/0/4294967295/1		
+243	D320	INT16	чтение и запись	диапазон	0/-20/40/5	0x6B9	UI_SETP_HIGHLIGHT
+244	D321	INT16	чтение и запись	диапазон	0/-20/40/5	0x6BB	UI_SETP_SHADOW
+245	D322	UINT16	чтение и запись	список	0x0001	0xD9	UI_SETP_R_NOISE_DEC
+246	D323	UINT16	чтение и запись	список	0x0002	0x7DC	UI_SETP_FULLTIME_MF
+247	D33F	UINT16	чтение и запись	список	0x0008	0x8ED	UI_SETP_DISPLAY_REC
+248	D346	UINT16	чтение и запись	список	0x0001		
+249	D347	STR	чтение и запись	диапазон	/a,b,c/x,y,z/1,1,1		
+250	D34A	UINT16	чтение и запись	список	0x0001	0x7DB	UI_SETP_REC_AUTO_FOCUS_ONE_PUSH_AF
+251	D34B	UINT16	чтение и запись	список	0x0001	0x1E2	UI_SETP_PRE_AF
+252	D34D	UINT16	чтение и запись	список	0x0002	0x615	UI_SETP_LEQ
+253	D34E	UINT16	чтение и запись	список	0x0001	0xD2	UI_SETP_AELOCK_TYPE
+254	D351	UINT16	чтение и запись	список	0x0001	0xF	UI_SETP_BLURRING_CORRECT_MODE
+255	D352	UINT16	чтение и запись	список	0x0001	0x148	UI_SETP_DATE_FORMAT
+256	D359	UINT16	чтение и запись	список	0x0001	0x123	UI_SETP_THROUGH_PREV
+257	D35E	UINT16	чтение и запись	список	0x0002	0xD6	UI_SETP_FOCUS_CHECK
+258	D35F	UINT16	чтение и запись	список	0x0001	0x4C5	UI_SETP_SCALE_UNIT
+259	D364	UINT16	чтение и запись	диапазон	120/0/255/1		
+260	D365	STR	чтение и запись	нет	DSCF	0x9E3	UI_SETP_FILE_NAME_SRGB
+261	D366	STR	чтение и запись	нет	DSF	0x9E2	UI_SETP_FILE_NAME_ADOBERGB
+262	D36A	UINT32	чтение	диапазон	0x00000000/0x00000000/0xFFFFFFFF/1		
+263	D36B	STR	чтение	нет			
+264	D36D	STR	чтение	нет			
+265	D36E	UINT32	чтение и запись	диапазон	0x00FFFFFF	0x7E2	UI_SETP_LCD_CUSTOM
+266	D36F	UINT32	чтение и запись	диапазон	0x00000000		
+267	D370	UINT32	чтение и запись	диапазон	0x00000000		
+268	D372	STR	чтение и запись	диапазон	/a,b,c/x,y,z/1,1,1		
+269	D374	STR	чтение и запись	диапазон	/a,b,c/x,y,z/1,1,1		
+270	D375	STR	чтение и запись	нет	0,0,0,0,850,0,0,0,0,850,0,0,0,0,		
+271	D376	STR	чтение и запись	нет	0,0,0,0,850,0,0,0,0,850,0,0,0,0,		
+272	D38A	UINT16	чтение	список	0x0001		
+273	D38B	UINT16	чтение	список	0x0001		
+274	D38C	UINT16	чтение и запись	диапазон	1/1/0xFFFF/1		
+275	D38D	STR	чтение	нет			
+276	D38E	STR	чтение	нет			
+277	D395	STR	чтение и запись	диапазон	/a,b,c/x,y,z/1,1,1		
