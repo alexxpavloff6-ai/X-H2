@@ -1,0 +1,11 @@
+{
+  "film": "classic_neg",
+  "wb": "kelvin",
+  "kelvin": 5600,
+  "wb_r": 1,
+  "wb_b": -3,
+  "color": 1,
+  "highlight": -1,
+  "grain": "weak_small",
+  "nr": -4
+}
