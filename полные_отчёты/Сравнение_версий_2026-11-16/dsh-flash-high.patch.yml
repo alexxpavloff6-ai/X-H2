@@ -1,0 +1,12 @@
+# Orchestration workers: DeepSeek-V4.1-Flash, reasoning effort high
+- id: agent-default-model
+  config:
+    provider: deepseek-official
+    model: deepseek-flash
+- id: llm-deepseek
+  config:
+    thinking: enabled
+    reasoningEffort: high
+- id: dsh-tui
+  config:
+    effort: high
