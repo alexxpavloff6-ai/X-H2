@@ -1,0 +1,142 @@
+{
+ "dispatch_table": [
+  {
+   "entry_off": "0x2de90",
+   "id": "0x86",
+   "handler": "0x4529",
+   "aux": "0x0"
+  },
+  {
+   "entry_off": "0x2de9c",
+   "id": "0x87",
+   "handler": "0x4565",
+   "aux": "0x0"
+  },
+  {
+   "entry_off": "0x2dea8",
+   "id": "0x181",
+   "handler": "0x4b6d",
+   "aux": "0x0"
+  },
+  {
+   "entry_off": "0x2deb4",
+   "id": "0x182",
+   "handler": "0x4bf1",
+   "aux": "0x0"
+  },
+  {
+   "entry_off": "0x2dec0",
+   "id": "0x183",
+   "handler": "0x4cd5",
+   "aux": "0x0"
+  },
+  {
+   "entry_off": "0x2decc",
+   "id": "0x184",
+   "handler": "0x4d31",
+   "aux": "0x0"
+  },
+  {
+   "entry_off": "0x2ded8",
+   "id": "0x185",
+   "handler": "0x4e31",
+   "aux": "0x0"
+  },
+  {
+   "entry_off": "0x2dee4",
+   "id": "0x186",
+   "handler": "0x4e79",
+   "aux": "0x0"
+  },
+  {
+   "entry_off": "0x2def0",
+   "id": "0x187",
+   "handler": "0x4f11",
+   "aux": "0x0"
+  },
+  {
+   "entry_off": "0x2defc",
+   "id": "0x188",
+   "handler": "0x508d",
+   "aux": "0x0"
+  },
+  {
+   "entry_off": "0x2df08",
+   "id": "0x189",
+   "handler": "0x51d1",
+   "aux": "0x0"
+  },
+  {
+   "entry_off": "0x2df14",
+   "id": "0xa8",
+   "handler": "0x4591",
+   "aux": "0x0"
+  },
+  {
+   "entry_off": "0x2df20",
+   "id": "0xa9",
+   "handler": "0x4641",
+   "aux": "0x46c1"
+  },
+  {
+   "entry_off": "0x2df2c",
+   "id": "0xb1",
+   "handler": "0x46f5",
+   "aux": "0x0"
+  },
+  {
+   "entry_off": "0x2df38",
+   "id": "0xb2",
+   "handler": "0x4745",
+   "aux": "0x0"
+  },
+  {
+   "entry_off": "0x2df44",
+   "id": "0xd0",
+   "handler": "0x4771",
+   "aux": "0x0"
+  }
+ ],
+ "threadx_area_strings": [
+  [
+   "0x2dd02",
+   "#F)F"
+  ],
+  [
+   "0x2dd60",
+   "<L?-C"
+  ],
+  [
+   "0x2dde0",
+   "uiTSK"
+  ],
+  [
+   "0x2dde8",
+   "uiSYSM"
+  ],
+  [
+   "0x2ddf0",
+   "uiSYSQ"
+  ],
+  [
+   "0x2ddf8",
+   "uiSYST"
+  ],
+  [
+   "0x2de00",
+   "System Timer Thread"
+  ],
+  [
+   "0x2de14",
+   "idle"
+  ],
+  [
+   "0x2de1c",
+   "comm"
+  ],
+  [
+   "0x2e038",
+   "imgstabi"
+  ]
+ ]
+}

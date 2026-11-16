@@ -1,0 +1,34 @@
+{
+ "streams": [],
+ "adrp_pages": {},
+ "keywords": {
+  "prefix": {
+   "m4": 3
+  },
+  "block0": {
+   "CM4": 1,
+   "M4": 72,
+   "m4": 8
+  },
+  "block1": {
+   "M4": 43,
+   "m4": 13
+  },
+  "block2": {
+   "M4": 87,
+   "m4": 99
+  },
+  "block3": {
+   "M4": 7,
+   "m4": 9
+  },
+  "raw_tail": {
+   "CM4": 2,
+   "remoteproc": 3,
+   "rproc": 23,
+   "M4": 328,
+   "m4": 427
+  }
+ },
+ "keyword_context": "напечатано выше"
+}

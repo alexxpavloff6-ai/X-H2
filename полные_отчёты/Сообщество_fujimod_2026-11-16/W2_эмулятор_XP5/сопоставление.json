@@ -1,0 +1,447 @@
+{
+  "схема": 1,
+  "задача": "W2: эмулятор X-Processor 5 — что сообщество знает о железе и работе прошивки",
+  "источник": {
+    "репозиторий": "https://github.com/justjake/fujimod",
+    "клон": "<корень проекта>\\Внешние_репозитории\\fujimod",
+    "ревизия": "c61fa145",
+    "дата_ревизии": "2026-11-15",
+    "лицензия": "GPL-2.0",
+    "как_читал": "только чтение; код fujimod не запускался, зависимости не ставились"
+  },
+  "уровни": {
+    "Д": "доказано: прямо сказано в коде/данных fujimod и/или проверено нами на наших DAT/блоках",
+    "К": "сильный кандидат: согласуется с нашими данными, но прямой проверки нет",
+    "Г": "гипотеза (интерпретация автора отчёта)"
+  },
+  "проверки": [
+    {
+      "что": "идентичность DAT X-T5 4.31",
+      "наш": "109365284 / 790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+      "fujimod": "catalog/firmware/xt5/4.31/firmware.json update.size/sha256",
+      "итог": "совпало",
+      "уровень": "Д"
+    },
+    {
+      "что": "идентичность DAT X-H2S 7.30",
+      "наш": "110302568 / 87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+      "fujimod": "catalog/firmware/xh2s/7.30/firmware.json update.size/sha256",
+      "итог": "совпало",
+      "уровень": "Д"
+    },
+    {
+      "что": "идентичность DAT X100VI 1.31",
+      "наш": "109251576 / 0d48d2ae26ac7ebab9b0e4cac56324807ec1ea8ae30df06b0b9e79066dc0a14a",
+      "fujimod": "crates/emulator-xp5-bringup/data/x100vi-131/streams.json update_sha256",
+      "итог": "совпало",
+      "уровень": "Д"
+    },
+    {
+      "что": "наши блоки против их декодера (X-T5 4.31)",
+      "наш": "blocks/X-T5_4.31_b0 (11743456, fd5f8992…), b1 (15446016, d74dba33…)",
+      "fujimod": "stream-00300274 → 0x1101000; stream-00820274 → 0x28eb000",
+      "итог": "SHA и адреса совпали",
+      "уровень": "Д"
+    },
+    {
+      "что": "их code_checks против наших блоков",
+      "наш": "блоки X-T5 4.31, X-H2 5.30, X-H2S 7.30",
+      "fujimod": "catalog/firmware/*/*/bulk.generated.json code_checks",
+      "итог": "51 из 51 совпало (17+17+17)",
+      "уровень": "Д"
+    },
+    {
+      "что": "сырые разделы X100VI (boot-setup, loader)",
+      "наш": "DAT 0xABC / 0xC02BC после инверсии",
+      "fujimod": "boot-setup → 0xff800000 (73728); loader-000c02bc → 0x81000 (123584)",
+      "итог": "SHA совпали; заголовок loader {0,0,base,0,size}",
+      "уровень": "Д"
+    },
+    {
+      "что": "отображение flash↔DAT (DAT = flash + 0x274, XOR 0xFF)",
+      "наш": "inverted(DAT)[0x60274:0x68274]",
+      "fujimod": "catalog/firmware/xt5/4.31/flash.generated.json control {offset:0x60000, size:0x8000, sha256:3867c1a8…}; xh2s/7.30: 886e711e…",
+      "итог": "SHA совпали на обеих моделях",
+      "уровень": "Д"
+    },
+    {
+      "что": "таблица компонентных дескрипторов (прелоад 0x10C0000)",
+      "наш": "DAT 0x1A0274, SHA 8fbd84f3dbe3ab4ad5a468f40611827e1bab7030827f610c6929bdb96a4933c2 (X-T5)",
+      "fujimod": "data/xt5-431/manifest.toml:26–31 preload 0x10C0000 из DAT 0x1A0274, тот же SHA",
+      "итог": "совпало",
+      "уровень": "Д"
+    },
+    {
+      "что": "записи таблицы id=0/4/5 против streams.json и наших блоков",
+      "наш": "X-H2 b0 0x1101000, b1 0x29AE000; loader 0x40000",
+      "fujimod": "дескрипторы id=4 (0x1101000, flash 0x300000), id=5 (0x29AE000, flash 0x840000), id=0 (0x40000, flash 0x60000)",
+      "итог": "адреса, flash-смещения и размер id=5 (0xECC000 = 15 515 648) совпали",
+      "уровень": "Д"
+    },
+    {
+      "что": "образ M4 по дескриптору id=3",
+      "наш": "DAT 0x1C0274, 0x31A80 Б, SHA 85d29ade613aa01c… (X-H2 5.30 и 5.33)",
+      "fujimod": "manifest X-T5 «flash f01c0000 перед reset release»; X100VI «section5 … SRAM 0xFA200000»",
+      "итог": "образ найден, сигнатура векторов и литералы mailbox подтверждают Cortex-M4",
+      "уровень": "Д"
+    },
+    {
+      "что": "сигнатура векторов M4 в наших четырёх FFLZ-блоках",
+      "наш": "00 0a 00 00 01 0a 00 00 dd 18 00 00 35 0a 00 00 …",
+      "fujimod": "—",
+      "итог": "отсутствует во всех блоках X-H2/X-H2S/X-T5: M4 не входит в FFLZ-блоки",
+      "уровень": "Д"
+    },
+    {
+      "что": "неизменность образа M4 между версиями",
+      "наш": "X-H2 5.30 = 5.33, X-T5 4.31 = 4.32, X-H2S 7.30 = 7.31 (SHA равны)",
+      "fujimod": "—",
+      "итог": "companion-прошивка в этих обновлениях не менялась",
+      "уровень": "Д"
+    }
+  ],
+  "сопоставление": [
+    {
+      "id": 1,
+      "наш_вопрос": "Подтверждается ли схема «две ОС»: ThreadX (главная) и Linux (связь)?",
+      "наш_вывод": "Две ОС; четыре FFLZ-блока",
+      "fujimod": "RTOS в нижних 1 ГиБ; Linux с 0x40000000 (X-T5 256 МиБ по DTB mem=256M; X100VI/X-E5 366 МиБ); выше общие арены AMP/rpmsg/ISGC и «virtio/IPC»",
+      "уровень": "Д для раскладки памяти, К для «двух ОС» как исполняемых",
+      "ссылка": "catalog/bodies/xt5/body.json:73-82; crates/emulator-xp5-bringup/data/x100vi-131/manifest.toml:12-16; configurations/emulator/xe5-112/run.json:11-14"
+    },
+    {
+      "id": 2,
+      "наш_вопрос": "Что грузится из DAT и по каким адресам?",
+      "наш_вывод": "Четыре FFLZ-блока; блок 1 — высокоуровневый ARM64, блок 2 — низкоуровневый",
+      "fujimod": "В загрузке X-T5 три образа: 0x300274→0x1101000, 0x820274→0x28eb000, loader 0x60274→0x40000; блоки 0xf20274 и 0x24a0274 не грузятся",
+      "уровень": "Д для состава загрузки; К для назначения неиспользуемых блоков (ресурсы/оверлеи)",
+      "ссылка": "crates/emulator-xp5-bringup/data/xt5-431/streams.json:4-32"
+    },
+    {
+      "id": 3,
+      "наш_вопрос": "Правильно ли мы распаковали блоки?",
+      "наш_вывод": "Наши blocks/*.bin и base_guess",
+      "fujimod": "Их method4-декодер даёт те же байты; 51/51 code_checks совпали",
+      "уровень": "Д",
+      "ссылка": "сверка_с_fujimod.py; сверка_вывод.txt"
+    },
+    {
+      "id": 4,
+      "наш_вопрос": "Сколько ядер/процессоров у XP5?",
+      "наш_вывод": "Не установлено точно (два мира: ThreadX/Linux)",
+      "fujimod": "4× Cortex-A53 (core0..3) + 1× Cortex-M4 (core4, companion 600 МГц); GICv3 512 линий; MIDR 0x410fd034",
+      "уровень": "Д",
+      "ссылка": "catalog/soc/xp5/soc.json:6-47, 978-1013"
+    },
+    {
+      "id": 5,
+      "наш_вопрос": "Что такое блок 0 (первый FFLZ)?",
+      "наш_вывод": "Код/данные, в нём резолвер MODE_RECORD",
+      "fujimod": "«settings/configuration bank»: flash 0x300000 → 0x1101000; SHA == наш b0 (X-H2S: 0x1421000)",
+      "уровень": "Д",
+      "ссылка": "catalog/firmware/xt5/4.31/settings.generated.json:6-12; catalog/firmware/xh2s/7.30/settings.generated.json:6-12"
+    },
+    {
+      "id": 6,
+      "наш_вопрос": "Что такое блок 1 (второй FFLZ)?",
+      "наш_вывод": "Высокоуровневый ARM64 (0x29ae000 X-H2 old)",
+      "fujimod": "«bulk read window»: X-T5 0x28eb000 (15446016); X-H2 0x29ae000 (15515648) — совпадает с нашими",
+      "уровень": "Д",
+      "ссылка": "catalog/firmware/xt5/4.31/bulk.generated.json:18-21; catalog/firmware/xh2/5.30/bulk.generated.json:18-21"
+    },
+    {
+      "id": 7,
+      "наш_вопрос": "Как именно прошивка грузится из DAT (формат, XOR, LZ)?",
+      "наш_вывод": "DAT с XOR 0xff и FFLZ-контейнеры",
+      "fujimod": "NOR-апертура 0xF0000000, dat_origin 0x274, xor 0xFF; сжатие method4 (LZ, страница 0x4000) + SHA всех разделов",
+      "уровень": "Д",
+      "ссылка": "crates/firmware/src/lib.rs:96-131, 276-307; crates/emulator-xp5-bringup/data/xt5-431/manifest.d/20-storage.toml:1-10"
+    },
+    {
+      "id": 8,
+      "наш_вопрос": "Есть ли межпроцессорный обмен (очереди/mailbox)?",
+      "наш_вывод": "Задание [0x4daa6e8] приходит извне",
+      "fujimod": "Mailbox 0xFF90E100: 8 слов payload + cause W1C; INTID 55/58 → M4, 141/142/143 → A53; payload непрозрачен",
+      "уровень": "Д для протокола, Г для связи с заданием съёмки",
+      "ссылка": "crates/emulator-xp5-io/src/mailbox.rs:1-4, 70-120; catalog/soc/xp5/soc.json:1001-1013"
+    },
+    {
+      "id": 9,
+      "наш_вопрос": "Обмен между ОС идёт через очереди?",
+      "наш_вывод": "Гипотеза «другое ядро»",
+      "fujimod": "Вендорский DTB X-E5: AMP 0x56E00000, rpmsg 0x66D00000, ISGC 0x66E00000; X100VI — virtio/IPC/shared arenas до 0x68000000",
+      "уровень": "К",
+      "ссылка": "configurations/emulator/xe5-112/run.json:11-14; crates/emulator-xp5-bringup/data/x100vi-131/manifest.toml:12-13"
+    },
+    {
+      "id": 10,
+      "наш_вопрос": "Что такое модуль MOVDC?",
+      "наш_вывод": "Модуль MOVDC с guard-флагом, дескриптор {h,w,stride}",
+      "fujimod": "MOVDC = packed422 output DMA: +0x18 size, +0xD0 stride, +0xF0 mode 0xB, +0xD8 0x10030001, IRQ 171/172/173",
+      "уровень": "Д",
+      "ссылка": "crates/emulator-xp5-imaging/src/imaging_work.rs:1-3, 106-127"
+    },
+    {
+      "id": 11,
+      "наш_вопрос": "Почему stride дескриптора = 2×640 = 1280?",
+      "наш_вывод": "Связь с кадром 640×480 (детекция/АФ) — гипотеза",
+      "fujimod": "Выход packed 4:2:2: 640 пикселей × 2 байта = 1280 байт/строку; stride — отдельный регистр +0xD0",
+      "уровень": "К (гипотеза усилилась)",
+      "ссылка": "crates/emulator-xp5-imaging/src/imaging_work.rs:106-127; Анализ_прошивки/Сравнение_версий_2026-11-16/A_LCD_MOVDC/отчёт.md:33-48"
+    },
+    {
+      "id": 12,
+      "наш_вопрос": "MOVDC связан с LCD (горизонтальные линии)?",
+      "наш_вывод": "Пересмотрено: скорее кадр детекции/АФ",
+      "fujimod": "MOVDC — отдельный imaging-блок, не LCDC; панели LCD/EVF висят на SSP5 как write-only регистры",
+      "уровень": "К",
+      "ссылка": "catalog/soc/xp5/soc.json:1222-1310; .../manifest.d/43-panel-serial.toml:1-40"
+    },
+    {
+      "id": 13,
+      "наш_вопрос": "Откуда берётся флаг MOVDC (X-H2 0x4c2ff14)?",
+      "наш_вывод": "Писателя в блоках 0–2 нет, приходит извне",
+      "fujimod": "Такого флага нет; режим MOVDC задаётся регистрами +0xF0/+0xD8. Знание о флаге — наше",
+      "уровень": "не найдено",
+      "ссылка": "crates/emulator-xp5-imaging/src/imaging_work.rs:106-127"
+    },
+    {
+      "id": 14,
+      "наш_вопрос": "Кольцевой буфер H.265 pm_dec (3×64 МиБ, базы 0x3C999000/0x40999000/0x44999000)",
+      "наш_вывод": "Кольцо 192 МиБ, исправление 5.33",
+      "fujimod": "Не найдено: у XP5 нет видеокодеков; H.264/JPEG смоделированы только для старых процессоров",
+      "уровень": "не найдено",
+      "ссылка": "grep по crates/emulator-xp5-*: 0 совпадений; crates/emulator-ip/src/jpeg.rs:1-3"
+    },
+    {
+      "id": 15,
+      "наш_вопрос": "Блок OFFSET/уровень чёрного (CSDROB)",
+      "наш_вывод": "0x19155 — нижняя граница CSDROB в тракте RAW",
+      "fujimod": "Не найдено; black level — данные тела/RAF (FujiIFD тег 0xf00a), для X30 «still black 0x400»",
+      "уровень": "не найдено",
+      "ссылка": "crates/emulator-image-processing/src/scene/raf.rs:100-252; crates/emulator-image-processing/src/raw.rs:42-44"
+    },
+    {
+      "id": 16,
+      "наш_вопрос": "Заглушки 0x155bde0/0x155bde8 в блоке 0 — подменяются ли при загрузке?",
+      "наш_вывод": "Гипотеза: подмена при загрузке",
+      "fujimod": "Адресов нет; есть аналог подхода: bringup-stub (скриптовые регистры), --emulator-patch (RAM одного прогона с проверкой байтов), RAM-загрузчик модов",
+      "уровень": "Г",
+      "ссылка": "crates/emulator-xp5-bringup/src/emulator_patch.rs:1-6, 99-125; src/mod_loader.rs:1-6; data/rom-start.toml:14-46"
+    },
+    {
+      "id": 17,
+      "наш_вопрос": "Кто формирует задание съёмки [0x4daa6e8]?",
+      "наш_вывод": "К: приходит извне (очередь/другое ядро)",
+      "fujimod": "Адреса нет; канал «другая ОС» назван (rpmsg/shared arenas), но структура задания неизвестна",
+      "уровень": "Г",
+      "ссылка": "configurations/emulator/xe5-112/run.json:11-14"
+    },
+    {
+      "id": 18,
+      "наш_вопрос": "Протокол связи с объективом",
+      "наш_вывод": "Не установлен",
+      "fujimod": "X-mount: SPI mode 3, 8-битные кадры, 4-байтные пакеты payload16|family9|ack|checksum5; семейства 0xFF/0x18/0x14/0x20/0x30/0x32/0x26/0xC0/0x80; контрольная сумма по битам 27/22/17/12/7+6",
+      "уровень": "Д",
+      "ссылка": "crates/emulator-parts-lens/src/x_mount_link.rs:16-71, 105-124, 247-300"
+    },
+    {
+      "id": 19,
+      "наш_вопрос": "Есть ли таблица ID → модель объектива? 0x411 = XF30mm?",
+      "наш_вывод": "Таблицы в прошивке нет, 0x411 = XF30mm (К)",
+      "fujimod": "Таблицы нет; identification — внешние 128 байт; 0x411 в клоне отсутствует",
+      "уровень": "не найдено",
+      "ссылка": "crates/emulator-parts-lens/src/x_mount_link.rs:109-110"
+    },
+    {
+      "id": 20,
+      "наш_вопрос": "MF / LINEAR / кольцо фокуса",
+      "наш_вывод": "флаг request+0x50 = (lens==0x411) переключает источник шага",
+      "fujimod": "Не найдено; focus_ring — только поле протокола (0x32)",
+      "уровень": "не найдено",
+      "ссылка": "crates/emulator-parts-lens/src/x_mount_link.rs:21, 115"
+    },
+    {
+      "id": 21,
+      "наш_вопрос": "Как устроена фокусировка (встроенный объектив)?",
+      "наш_вывод": "Не установлено",
+      "fujimod": "Импульсы: слово 0x2Cxx в регистр +8 (enable бит 11, dir бит 10, count 0..9) на SPI4; home GPIO0.8; IRQ 127; диафрагма — SPI5, IRQ 125",
+      "уровень": "Д",
+      "ссылка": "crates/emulator-xp5-imaging/src/imaging_focus.rs:69-133; src/imaging_iris.rs:45-95"
+    },
+    {
+      "id": 22,
+      "наш_вопрос": "Алгоритм AF (фаза/контраст, зоны, tracking, глаз/лицо)",
+      "наш_вывод": "Не установлен",
+      "fujimod": "Не эмулируется: PAF — только reset/ready (+0x00 бит 16), «not a phase-detection algorithm»",
+      "уровень": "Д (отрицание)",
+      "ссылка": "crates/emulator-xp5-imaging/src/imaging_paf.rs:1-2"
+    },
+    {
+      "id": 23,
+      "наш_вопрос": "Live view: какие данные/частоты",
+      "наш_вывод": "Не установлено",
+      "fujimod": "Синтетика: RAW14-LE16 рампа, source_luma, preview/movdc/rifp, statistics; период объявлен (в манифесте 1 Гц); реальный ISP — только у EXR II (X70)",
+      "уровень": "Д",
+      "ссылка": "crates/emulator-xp5-bringup/data/x100vi-131/manifest.d/50-imaging.toml:10-36, 85-109; crates/emulator-imaging/src/LIVE_VIEW.md:1-8"
+    },
+    {
+      "id": 24,
+      "наш_вопрос": "Что меняет Boost/Normal/Economy?",
+      "наш_вывод": "Не установлено; есть имена UI_PERFORMANCE_*",
+      "fujimod": "Только имена/ID настроек (PERFORMANCE 1466, _AC 1467, _LEVER 1468, _MODE 1469, FUNC_PERFORMANCE 1470, LCD_CUSTOM_BOOST 2048), без частот и ветвей",
+      "уровень": "не найдено",
+      "ссылка": "catalog/firmware/xh2/5.30/ui-setting-names.generated.json:1039, 1745, 2135, 2591-2595"
+    },
+    {
+      "id": 25,
+      "наш_вопрос": "Реальный ISP и его регистры",
+      "наш_вывод": "Не установлены",
+      "fujimod": "Для XP5 — только MOVDC/resize/PAF/preview/statistics/rifp; полноценный ISP-конвейер — только у EXR II",
+      "уровень": "Д (граница)",
+      "ссылка": "crates/emulator/CRATES.md:31-41; catalog/soc/xp5/soc.json:1222-1310"
+    },
+    {
+      "id": 26,
+      "наш_вопрос": "Дисплей/EVF/LCD: формат кадров и канал",
+      "наш_вывод": "LCD/EVF — отдельные задачи, кадр MOVDC 640×480",
+      "fujimod": "Два LCDC 0xFF990000/0xFF9A0000 (4 picture + 2 OSD, YUV422, stride +0x14, Q12); панели на SSP5 (LCD клиент 4, EVF 8/9); «нативный формат конвертера не разрешён»",
+      "уровень": "Д",
+      "ссылка": "crates/framebuffer-xp5/src/lib.rs:10-224, 230-243; .../manifest.d/43-panel-serial.toml:1-40"
+    },
+    {
+      "id": 27,
+      "наш_вопрос": "USB: контроллер и точки наблюдения",
+      "наш_вывод": "USB — отдельный слой (PTP/FF80)",
+      "fujimod": "В карте XP5 нет USB-контроллера; только защёлка usb-connection-status 0xFF90E300 (событие 0x3047)",
+      "уровень": "Д",
+      "ссылка": ".../manifest.d/60-mcore.toml:65-71; catalog/soc/xp5/soc.json:76-581"
+    },
+    {
+      "id": 28,
+      "наш_вопрос": "Запись на карту",
+      "наш_вывод": "Не доказана цепь до файловой системы",
+      "fujimod": "SD-модель: 2×SDHCI (0xFF9B0000/0xFF9B4000) + UHS-II PHY (+0x2000), IRQ 262; FAT32 формируется в памяти; запись в образ карты",
+      "уровень": "Д (модель)",
+      "ссылка": ".../manifest.d/25-sd.toml:1-70; crates/emulator-storage/src/fat.rs"
+    },
+    {
+      "id": 29,
+      "наш_вопрос": "Можно ли изменить DAT и прошить?",
+      "наш_вывод": "Нельзя: подпись ECDSA P-256",
+      "fujimod": "Тот же вывод по-своему: DAT — только вход, а изменения делаются RAM-патчами/модами одного прогона, «never write a firmware update file»",
+      "уровень": "Д",
+      "ссылка": "crates/emulator-xp5-bringup/src/mod_loader.rs:1-6; src/emulator_patch.rs:1-6"
+    },
+    {
+      "id": 30,
+      "наш_вопрос": "Наш «указатель шаблона» X-H2 5.30 = 0x20c1458",
+      "наш_вывод": "0x20c1458 (в 5.33 сдвинулся на 0x20bf458)",
+      "fujimod": "Их configuration_pointer для xh2-530 = 0x20c1458 (совпало); bulk-window = 0x29ae000/15515648 (наш блок 1)",
+      "уровень": "Д",
+      "ссылка": "catalog/firmware/xh2/5.30/bulk.generated.json:9-21"
+    }
+  ],
+  "покрытие_пунктов": {
+    "1_запуск_прошивки": "отчёт §2.1; streams.json, manifest.toml, firmware.rs, soc.json, rom_start.rs, recovery/README.md",
+    "2_карта_периферии_MMIO": "отчёт §1.4 и §2.2; soc.json, manifest.d/*.toml, framebuffer-xp5, imaging_work.rs, display.rs",
+    "3_объектив": "отчёт §2.3; x_mount_link.rs, lens/mechanics.rs, imaging_focus.rs, imaging_iris.rs",
+    "4_AF_live_view_Boost": "отчёт §2.4; imaging_paf.rs, 50-imaging.toml, LIVE_VIEW.md, ui-setting-names.generated.json",
+    "5_что_не_работает": "отчёт §2.5; progress.generated.json, rom-start.toml, soc.json limits, framebuffer-xp5, CRATES.md",
+    "6_companion_M4": "companion_M4.md; companion_M4.py; companion_M4_вывод.txt: таблица компонентных дескрипторов (DAT 0x1A0274), образ M4 (DAT 0x1C0274, 0x31A80), A53 0x13FB194, release бит 21 0xFF90C928, mailbox 0xFF90E100"
+  },
+  "не_найдено_проверено": [
+    "pm_dec / DEC_STA / H.265-кольцо",
+    "CSDROB / 0x19155 / OFFSET-блок",
+    "[0x4daa6e8] (задание съёмки)",
+    "0x155bde0 / 0x155bde8 (заглушки)",
+    "MODE_RECORD (наш enum)",
+    "таблица ID объективов и 0x411",
+    "MF/LINEAR",
+    "Boost/Performance как механизм",
+    "USB-контроллер XP5",
+    "JPEG/H.264/H.265/ProRes для XP5"
+  ],
+  "companion_M4_сопоставление": [
+    {
+      "id": 31,
+      "вопрос": "Откуда companion Cortex-M4 берёт свой код?",
+      "вывод": "код копируется A53 из flash 0x1C0000 в SRAM 0xFA200000",
+      "fujimod": "X-T5: «stock 13f7b58 копирует flash f01c0000 в SRAM перед reset release»; X100VI: «A53 14d3f14 копирует/зануляет Section5»",
+      "уровень": "Д",
+      "ссылка": "crates/emulator-xp5-bringup/data/xt5-431/manifest.toml:21–24; .../x100vi-131/manifest.d/60-mcore.toml:1–3"
+    },
+    {
+      "id": 32,
+      "вопрос": "Есть ли образ M4 внутри DAT?",
+      "вывод": "да: DAT 0x1C0274, длина 0x31A80, raw без сжатия, вне FFLZ-блоков",
+      "fujimod": "адрес flash 0x1C0000 (X-T5) + наша таблица компонентных дескрипторов (id=3)",
+      "уровень": "Д",
+      "ссылка": "companion_M4.md §2, §5; companion_M4_вывод.txt"
+    },
+    {
+      "id": 33,
+      "вопрос": "Это «пятый FFLZ-блок»?",
+      "вывод": "нет: образ не имеет FFLZ-заголовка и адресуется таблицей компонентов по flash 0x1A0000",
+      "fujimod": "таблица компонентных дескрипторов (запись id=3) — аналог их «section5»",
+      "уровень": "Д",
+      "ссылка": "companion_M4.md §2, §5"
+    },
+    {
+      "id": 34,
+      "вопрос": "Размер образа и BSS",
+      "вывод": "X-H2 0x31A80 + BSS 0x19340; X-T5 0x32470 + 0x193C0; X-H2S 0x22900 + 0x167E4; SRAM 0xFA200000, vector_base 0",
+      "fujimod": "SRAM 1 МиБ по 0xFA200000, vector_base 0 (soc.json companion)",
+      "уровень": "Д",
+      "ссылка": "catalog/soc/xp5/soc.json:58–64, 1001–1013; companion_M4.md §2"
+    },
+    {
+      "id": 35,
+      "вопрос": "Формат образа: архитектура, карта памяти, reset",
+      "вывод": "ARMv7-M Thumb: SP=0xA00, reset=0xA01, 179 IRQ-векторов, CCR 0xE000ED14=0x210, SHCSR=0; локальный 0 = SRAM, периферия через +0x60000000",
+      "fujimod": "M-profile Cortex-M4 (Unicorn), vector_base 0, clock 600 МГц; mailbox локально 0x5F90E100",
+      "уровень": "Д",
+      "ссылка": "crates/emulator-boot/src/graph.rs:301–341; catalog/soc/xp5/soc.json:1001–1013; companion_M4.md §3"
+    },
+    {
+      "id": 36,
+      "вопрос": "Где A53 берёт адрес/размер образа M4?",
+      "вывод": "дескриптор id=3 в таблице по flash 0x1A0000 (DAT 0x1A0274): +0x10 size, +0x20 bss, +0x28 flash; геттер 0x14E1BB0",
+      "fujimod": "«Cold component descriptor table read through reset 0x2fa4», прелоад 0x10C0000 из DAT 0x1A0274",
+      "уровень": "Д",
+      "ссылка": "crates/emulator-xp5-bringup/data/xt5-431/manifest.toml:26–31; companion_M4.md §2"
+    },
+    {
+      "id": 37,
+      "вопрос": "Как и когда A53 запускает M4?",
+      "вывод": "холодный старт: если бит 21 регистра 0xFF90C928 = 0 → GPIO 9.8/9.9, копия, BSS, mailbox=0, cause=0x7F, затем SET бит 21",
+      "fujimod": "mailbox 0xFF90E100 (8 слов + cause W1C); «before reset release»",
+      "уровень": "Д для последовательности, К для смысла GPIO",
+      "ссылка": "crates/emulator-xp5-io/src/mailbox.rs:70–120; companion_M4.md §4"
+    },
+    {
+      "id": 38,
+      "вопрос": "Кто инициатор mailbox?",
+      "вывод": "A53: обнуляет payload и пишет 0x7F в cause до спуска M4; далее M4 пишет reply/status/fault (INTID 141/142/143)",
+      "fujimod": "модель mailbox: cause 0/3 → M4 INTID 55/58, 4/5/6 → A53 141/142/143; payload непрозрачен",
+      "уровень": "Д для порядка, К для семантики битов",
+      "ссылка": "crates/emulator-xp5-io/src/mailbox.rs:1–4, 70–120"
+    },
+    {
+      "id": 39,
+      "вопрос": "Карта памяти M4 (flash/SRAM/периферия)",
+      "вывод": "своего flash нет; local 0..0xFFFFF = SRAM 0xFA200000; local = phys + 0x60000000 (mod 2^32) для периферии и DRAM-окон companion-map-1/2",
+      "fujimod": "companion-map-0/1/2, vector_base 0, companion-sram 0xFA200000 1 МиБ",
+      "уровень": "Д",
+      "ссылка": "catalog/soc/xp5/soc.json:58–64, 605–640"
+    },
+    {
+      "id": 40,
+      "вопрос": "Где образ M4 у X100VI?",
+      "вывод": "не локализован: у X100VI другая таблица (flash 0x40000/0x40800, DAT 0x6402BC/0x1202BC), записи id=3 нет",
+      "fujimod": "A53 0x14D3F14 копирует section5, но flash-смещение не зафиксировано",
+      "уровень": "не найдено",
+      "ссылка": "companion_M4.md §7"
+    }
+  ]
+}

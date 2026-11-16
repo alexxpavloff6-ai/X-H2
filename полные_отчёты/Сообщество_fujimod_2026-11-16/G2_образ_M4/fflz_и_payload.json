@@ -1,0 +1,37 @@
+{
+ "fflz_all_align": [
+  {
+   "off": 3146356,
+   "usize": 12033968,
+   "csize": 5419890,
+   "pages": 331,
+   "dec_sha256": "4cf46a8ba6af3881e998e3eb89d3c584b0a28777bd4ec1a790ce294189901f0a"
+  },
+  {
+   "off": 8651380,
+   "usize": 15515648,
+   "csize": 7333291,
+   "pages": 448,
+   "dec_sha256": "43c2f52fa0ace6829feb1dae8bc9278f8636bb00652dfdfdad35bfb8bed060fa"
+  },
+  {
+   "off": 15991412,
+   "usize": 14876672,
+   "csize": 7670583,
+   "pages": 469,
+   "dec_sha256": "1ff25946d4c1baf8d45c358480f4bae3a78a8ff932a4c5673c2bb5aea1340048"
+  },
+  {
+   "off": 38404724,
+   "usize": 7394632,
+   "csize": 3814632,
+   "pages": 233,
+   "dec_sha256": "5ef015111ec8e50fda4d17570add47d032723af2a3d3ff2c4cf1c1992a4e87c0"
+  }
+ ],
+ "payload": {
+  "start": "0x16a0274",
+  "end": "0x24a0274",
+  "len": 14680064
+ }
+}

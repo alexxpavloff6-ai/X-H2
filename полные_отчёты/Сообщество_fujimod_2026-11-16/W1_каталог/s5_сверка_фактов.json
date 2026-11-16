@@ -1,0 +1,314 @@
+{
+  "случаи": [
+    {
+      "модель": "X-H2",
+      "каталог": "xh2/5.30",
+      "проверки": [
+        {
+          "что": "bulk.window == база/размер блока 1",
+          "окно": [
+            43704320,
+            15515648
+          ],
+          "блок1": [
+            43704320,
+            15515648
+          ],
+          "совпало": true
+        }
+      ],
+      "bulk_source": {
+        "mechanism": "pattern_zero_base",
+        "registered_buffer": 59704560,
+        "source_state": 66314296,
+        "configuration_pointer": 34346072,
+        "configuration_bytes": 8257536,
+        "system_mode_address": 41091696,
+        "capacity": 65536
+      }
+    },
+    {
+      "модель": "X-H2S",
+      "каталог": "xh2s/7.30",
+      "проверки": [
+        {
+          "что": "update.sha256 == sha256 нашего DAT",
+          "ожидалось": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+          "получено": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+          "совпало": true
+        },
+        {
+          "что": "settings.source.sha256 == sha256 нашего блока 0",
+          "ожидалось": "a32a90b7efefaebcf3b9c3f076cb23f82c1f4dda45bf828a024487fc0fb06c16",
+          "получено": "a32a90b7efefaebcf3b9c3f076cb23f82c1f4dda45bf828a024487fc0fb06c16",
+          "совпало": true,
+          "адрес": 21106688,
+          "база_b0": 21106688,
+          "размер": 12015376,
+          "размер_b0": 12015376
+        },
+        {
+          "что": "bulk.window == база/размер блока 1",
+          "окно": [
+            16384,
+            2147467264
+          ],
+          "блок1": [
+            46964736,
+            14843904
+          ],
+          "совпало": false
+        },
+        {
+          "что": "flash: control-чанк из (DAT[628:] xor FF)",
+          "ожидалось": "886e711edb9715a373f001f3700c9af0f28479602aa50d4bdaaf17454fb960cc",
+          "получено": "886e711edb9715a373f001f3700c9af0f28479602aa50d4bdaaf17454fb960cc",
+          "совпало": true
+        }
+      ],
+      "bulk_source": {
+        "mechanism": "pattern_zero_base",
+        "registered_buffer": 62301232,
+        "source_state": 68905560,
+        "configuration_pointer": 37600304,
+        "configuration_bytes": 8257536,
+        "system_mode_address": 44351264,
+        "capacity": 65536
+      },
+      "code_ranges": [
+        {
+          "name": "flash_read",
+          "address": 23743312,
+          "size": 48,
+          "block": "b0",
+          "sha256": "8da5ece0b78ce598e7c98ddb55183ec3bd51700552afdfffb3681737d132b08d"
+        },
+        {
+          "name": "flash read request",
+          "address": 23742628,
+          "size": 684,
+          "block": "b0",
+          "sha256": "8416d93369ac06a96e21faf21d7490f48bfd2f46dd3e3816d9255de241a6e864"
+        },
+        {
+          "name": "flash read dispatcher",
+          "address": 23740860,
+          "size": 312,
+          "block": "b0",
+          "sha256": "9d9c5f573f07a54e723ce5b0a5986cbe42418e14b704a3df2dc91a56e0f434dc"
+        },
+        {
+          "name": "flash queued DMA read (not live-verified)",
+          "address": 23738428,
+          "size": 448,
+          "block": "b0",
+          "sha256": "ef53fdf9bbd975fbd3f3c7e558911be69ac0377ad1bf30d49065c90bf0259fdd"
+        },
+        {
+          "name": "destination cache maintenance",
+          "address": 25106036,
+          "size": 64,
+          "block": "b0",
+          "sha256": "a3a95fe8bf7e788d2ccae84c084c98068af0b025fcfc751adec1372117a6521a"
+        },
+        {
+          "name": "flash bank selection",
+          "address": 23745416,
+          "size": 60,
+          "block": "b0",
+          "sha256": "b06741bb64111f2d98a44a743929b1b6b7b2fada0d859974ea9b8ebce24e03b9"
+        },
+        {
+          "name": "flash CPU tail copy",
+          "address": 23739004,
+          "size": 168,
+          "block": "b0",
+          "sha256": "f54e0c9e1d808ce752d8d3b594726ddfa183c6365d07e3bf7f6dcd8d23d88188"
+        }
+      ],
+      "flash_device": {
+        "kind": "serial-nor",
+        "jedec_id": "2c5b1b",
+        "part": "Micron MT35XU01GBBA"
+      },
+      "flash_window": {
+        "address": 4026531840,
+        "size": 134217728
+      },
+      "restart_checks": [
+        {
+          "name": "power_off_sender",
+          "address": 50659316,
+          "size": 248,
+          "block": "b1",
+          "их_sha256": "fc75305db4c3a8feabd9a00d3dca52425e0f18c7ceb48fe76561bb1b899dc66a",
+          "наш_sha256": "fc75305db4c3a8feabd9a00d3dca52425e0f18c7ceb48fe76561bb1b899dc66a",
+          "совпало": true
+        },
+        {
+          "name": "power_off",
+          "address": 52037080,
+          "size": 604,
+          "block": "b1",
+          "их_sha256": "268c430cb20f8c49a1b6a2dacd135c7e43dd8da95a095e3a1784518141ee8b11",
+          "наш_sha256": "268c430cb20f8c49a1b6a2dacd135c7e43dd8da95a095e3a1784518141ee8b11",
+          "совпало": true
+        },
+        {
+          "name": "power_cut",
+          "address": 23723984,
+          "size": 252,
+          "block": "b0",
+          "их_sha256": "f6808f15bc08d5bc08e3854f1229163123c6f1173e60600cf91b8f19c438e101",
+          "наш_sha256": "f6808f15bc08d5bc08e3854f1229163123c6f1173e60600cf91b8f19c438e101",
+          "совпало": true
+        },
+        {
+          "name": "console_handler",
+          "address": 23441188,
+          "size": 300,
+          "block": "b0",
+          "их_sha256": "a6df09ad8adf5e17d4ac6e96274520a5d4f06e1a805114841bb901ae45c43840",
+          "наш_sha256": "a6df09ad8adf5e17d4ac6e96274520a5d4f06e1a805114841bb901ae45c43840",
+          "совпало": true
+        },
+        {
+          "name": "console_callback",
+          "address": 50205480,
+          "size": 768,
+          "block": "b1",
+          "их_sha256": "94c9747a995f056e273e467b2721e672e285d462ad8bb5f7d453ea633e559e4f",
+          "наш_sha256": "94c9747a995f056e273e467b2721e672e285d462ad8bb5f7d453ea633e559e4f",
+          "совпало": true
+        },
+        {
+          "name": "data_cache_clean",
+          "address": 25105216,
+          "size": 264,
+          "block": "b0",
+          "их_sha256": "fcb6fda8d70d6a43749d701c94e7520184c9a06717e256164811e68b19bc3eae",
+          "наш_sha256": "fcb6fda8d70d6a43749d701c94e7520184c9a06717e256164811e68b19bc3eae",
+          "совпало": true
+        },
+        {
+          "name": "instruction_cache_sync",
+          "address": 374904,
+          "size": 380,
+          "block": "b2",
+          "их_sha256": "da344f492ec3bd2a4a75c92be95d1a1e36b0977a233f63c12163047201bfedcf",
+          "наш_sha256": "6a6a5120a6a1177daacf50f69ca7e6ff9483b371db23a182326df5eefe380c3e",
+          "совпало": false
+        }
+      ]
+    },
+    {
+      "модель": "X-T5",
+      "каталог": "xt5/4.31",
+      "проверки": [
+        {
+          "что": "update.sha256 == sha256 нашего DAT",
+          "ожидалось": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+          "получено": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+          "совпало": true
+        },
+        {
+          "что": "settings.source.sha256 == sha256 нашего блока 0",
+          "ожидалось": "fd5f899217a833552f135d719d22e025aea2e0780b2fd1f8c66b353ead969724",
+          "получено": "fd5f899217a833552f135d719d22e025aea2e0780b2fd1f8c66b353ead969724",
+          "совпало": true,
+          "адрес": 17829888,
+          "база_b0": 17829888,
+          "размер": 11743456,
+          "размер_b0": 11743456
+        },
+        {
+          "что": "bulk.window == база/размер блока 1",
+          "окно": [
+            42905600,
+            15446016
+          ],
+          "блок1": [
+            42905600,
+            15446016
+          ],
+          "совпало": true
+        },
+        {
+          "что": "flash: control-чанк из (DAT[628:] xor FF)",
+          "ожидалось": "3867c1a8752cc5feecaa41b8102ce9ee5450976b0f5846117d3718ea0478bb70",
+          "получено": "3867c1a8752cc5feecaa41b8102ce9ee5450976b0f5846117d3718ea0478bb70",
+          "совпало": true
+        }
+      ],
+      "bulk_source": {
+        "mechanism": "pattern_zero_base",
+        "registered_buffer": 58819744,
+        "source_state": 64749216,
+        "configuration_pointer": 33975696,
+        "configuration_bytes": 8257536,
+        "system_mode_address": 40290960,
+        "capacity": 65536
+      },
+      "code_ranges": [
+        {
+          "name": "flash_read",
+          "address": 20467688,
+          "size": 48,
+          "block": "b0",
+          "sha256": "8da5ece0b78ce598e7c98ddb55183ec3bd51700552afdfffb3681737d132b08d"
+        },
+        {
+          "name": "flash read request",
+          "address": 20467004,
+          "size": 684,
+          "block": "b0",
+          "sha256": "057cc675e2f09efe8ae745c6b758feae61dc5ff67129b71786a8e12eebf33642"
+        },
+        {
+          "name": "flash read dispatcher",
+          "address": 20465236,
+          "size": 312,
+          "block": "b0",
+          "sha256": "ae1bfb22f388f75637097093b3043b6338d1fe97ee34c42959e0509e35cbd80f"
+        },
+        {
+          "name": "flash queued DMA read (not live-verified)",
+          "address": 20462792,
+          "size": 448,
+          "block": "b0",
+          "sha256": "87fe36a2c33f7762c69cb0c0e52c9500fd7d35bb3cda36f61fc81cf6fb788f29"
+        },
+        {
+          "name": "destination cache maintenance",
+          "address": 21797336,
+          "size": 64,
+          "block": "b0",
+          "sha256": "8534b334918939b53a267bf05269e5366a685ed25b629bf019e6c793287402d3"
+        },
+        {
+          "name": "flash bank selection",
+          "address": 20469832,
+          "size": 60,
+          "block": "b0",
+          "sha256": "02d1f241d73ac43f44b9ada026f6b95b44db62b8f5ca43b558c33e639af0f7be"
+        },
+        {
+          "name": "flash CPU tail copy",
+          "address": 20463368,
+          "size": 168,
+          "block": "b0",
+          "sha256": "ae0c113f516f5660c35f76459d061b61b860f140fffe66f1829073867b8c823a"
+        }
+      ],
+      "flash_device": {
+        "kind": "serial-nor",
+        "jedec_id": "20bb20",
+        "part": "Micron MT25QU512ABB"
+      },
+      "flash_window": {
+        "address": 4026531840,
+        "size": 134217728
+      }
+    }
+  ]
+}

@@ -1,0 +1,612 @@
+{
+ "old": {
+  "mem_hits": [
+   {
+    "va": "0x29b9fb8",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x29ba064",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x29f1dc0",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2bcfdb0",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2bda3d4",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2bda5a4",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2bda78c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2bdab50",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2bdb004",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2c2b518",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2c94014",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2cee680",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2cfae30",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2cfccc0",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d082b4",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d14b0c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d23fb4",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d27998",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d2ad38",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d2e7ec",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d2eb04",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d435dc",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d4500c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d4e014",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d4e258",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dd3b7c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dd4dec",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dd7540",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dd75d8",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dd9e10",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dda4a8",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2de8464",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dec40c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dedccc",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2df0aa8",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2df232c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2df2634",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2df34ec",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2df6110",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2df88fc",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e17a60",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e21ab8",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e21bac",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e21cb8",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e4107c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e41174",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e41614",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e43b94",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e443fc",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e44a20",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e48008",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e484ac",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e56f9c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e5c93c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e5cd24",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e5cdd8",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e5cdf4",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e60364",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e6046c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e79500",
+    "off": "0xd0",
+    "kind": "str w"
+   }
+  ],
+  "movk_1003": []
+ },
+ "new": {
+  "mem_hits": [
+   {
+    "va": "0x29b5fb8",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x29b6064",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x29eddc0",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2bcbdb0",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2bd63d4",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2bd65a4",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2bd678c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2bd6b50",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2bd7004",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2c27518",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2c90014",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2cea6f0",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2cf6ea0",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2cf8d30",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d04324",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d10b7c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d20024",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d23a08",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d26da8",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d2a85c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d2ab74",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d3f64c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d4107c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d4a084",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2d4a2c8",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dcfbec",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dd0e5c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dd35c0",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dd3658",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dd5e90",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dd6528",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2de44e4",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2de849c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2de9d5c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2decb48",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dee3cc",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2dee6d4",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2def5a0",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2df21c4",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2df49b0",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e13b14",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e1db58",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e1dc4c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e1dd58",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e3d11c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e3d214",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e3d6b4",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e3fc34",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e4049c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e40ac0",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e440a8",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e4454c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e5303c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e589dc",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e58dc4",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e58e78",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e58e94",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e5c404",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e5c50c",
+    "off": "0xd0",
+    "kind": "str w"
+   },
+   {
+    "va": "0x2e755a0",
+    "off": "0xd0",
+    "kind": "str w"
+   }
+  ],
+  "movk_1003": []
+ }
+}

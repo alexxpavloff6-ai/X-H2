@@ -1,0 +1,23 @@
+{
+ "X-H2 5.33": {
+  "sp": "0xa00",
+  "reset": "0xa01",
+  "slice_0x31a80": "85d29ade613aa01c",
+  "slice_0x22900": "c4ea918f51df558c",
+  "slice_0x32470": "8779ed690ac9fcef"
+ },
+ "X-H2S 7.31": {
+  "sp": "0xa00",
+  "reset": "0xa01",
+  "slice_0x31a80": "eceab17179d11749",
+  "slice_0x22900": "85476217f55a6774",
+  "slice_0x32470": "6b5a1b4d89b97880"
+ },
+ "X-T5 4.32": {
+  "sp": "0xa00",
+  "reset": "0xa01",
+  "slice_0x31a80": "acf5f12d22a56e96",
+  "slice_0x22900": "8151487173b1dade",
+  "slice_0x32470": "5854107f8c951c2b"
+ }
+}

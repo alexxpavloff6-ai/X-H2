@@ -1,0 +1,60 @@
+{
+ "old": {
+  "ff970000": [
+   "0x386217c",
+   "0x3862a94"
+  ]
+ },
+ "new": {
+  "ff970000": [
+   "0x385e17c",
+   "0x385ea94"
+  ]
+ },
+ "table_refs": {
+  "old": [
+   {
+    "adrp": "0x2ebb4e0",
+    "add": "0x2ebb4e4",
+    "target": "0x385e010"
+   },
+   {
+    "adrp": "0x2ebb534",
+    "add": "0x2ebb538",
+    "target": "0x385e010"
+   },
+   {
+    "adrp": "0x2ebb6b0",
+    "add": "0x2ebb6b4",
+    "target": "0x385e130"
+   },
+   {
+    "adrp": "0x2ebb704",
+    "add": "0x2ebb708",
+    "target": "0x385e130"
+   },
+   {
+    "adrp": "0x2ebbbfc",
+    "add": "0x2ebbc00",
+    "target": "0x385e3b0"
+   },
+   {
+    "adrp": "0x2ebbc48",
+    "add": "0x2ebbc4c",
+    "target": "0x385e3b0"
+   },
+   {
+    "adrp": "0x2ebbcb0",
+    "add": "0x2ebbcb4",
+    "target": "0x385e1b0"
+   },
+   {
+    "adrp": "0x2ebbd04",
+    "add": "0x2ebbd08",
+    "target": "0x385e1b0"
+   }
+  ],
+  "new": []
+ },
+ "table_equal": false
+}

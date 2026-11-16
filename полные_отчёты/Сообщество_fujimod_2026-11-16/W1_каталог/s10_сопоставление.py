@@ -1,0 +1,223 @@
+# -*- coding: utf-8 -*-
+"""Собирает сопоставление.json — машиночитаемую таблицу пункта 2 отчёта
+(наш вопрос/вывод -> что говорит fujimod -> уровень -> ссылка).
+Числа в записях получены скриптами s3–s9 этой папки и проверены на наших DAT.
+"""
+import json, os, sys
+sys.stdout.reconfigure(encoding="utf-8")
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+R = []
+def add(**kw):
+    R.append(kw)
+
+# --- 1. базовые факты о файлах и идентичности ---
+add(id="F1", тема="идентичность прошивок",
+    наш_вывод="Мы работаем с теми же DAT, что и каталог fujimod: X-H2 5.30, X-H2S 7.30, X-T5 4.31",
+    fujimod="firmware.json update.sha256 и ui-*-names.firmware_sha256 равны SHA-256 наших DAT: be47168c… (X-H2 5.30), 87c566c1… (X-H2S 7.30), 790d6dee… (X-T5 4.31); размеры 110302544 / 110302568 / 109365284",
+    уровень="Д", итог="подтверждено",
+    ссылка="catalog/firmware/xh2s/7.30/firmware.json:8-9; catalog/firmware/xt5/4.31/firmware.json:8-9; catalog/firmware/xh2/5.30/ui-setting-names.generated.json:5",
+    проверка="s5_сверка_фактов.py; Get-FileHash по DAT")
+
+add(id="F2", тема="структура блоков",
+    наш_вывод="4 блока FFLZ: b0 (0x1101000 / X-H2S 0x1421000), b1 высокоуровневый ARM64 (0x29ae000 / 0x2cca000 / 0x28eb000), b2 низкоуровневый (база 0), b3 Linux",
+    fujimod="settings.source.address == база нашего b0, size == размер b0 и sha256 == SHA-256 нашего b0 (X-H2S, X-T5); bulk.window == база+размер нашего b1 (X-H2: 0x29AE000+0xECC000, X-T5: 0x28EB000+0xEBB000)",
+    уровень="Д", итог="подтверждено",
+    ссылка="catalog/firmware/xh2s/7.30/settings.generated.json:6-11; catalog/firmware/xh2/5.30/bulk.generated.json:18-21; catalog/firmware/xt5/4.31/bulk.generated.json",
+    проверка="s5_сверка_фактов.py")
+
+add(id="F3", тема="где живёт чтение флеша",
+    наш_вывод="Низкоуровневый код — b2 (база 0); мы искали драйверы флеша в b2",
+    fujimod="Драйвер чтения флеша (flash_read, запрос, диспетчер, DMA, обслуживание кэша, выбор банка, хвостовое копирование) — В БЛОКЕ 0 (напр. X-H2S: 0x16A4B50, 0x16A48A4, 0x16A41BC, 0x16A383C, 0x17F1674, 0x16A5388, 0x16A3A7C)",
+    уровень="Д", итог="новое (уточняет нашу карту блоков)",
+    ссылка="catalog/firmware/xh2s/7.30/flash.generated.json:28-64; crates/corpus/src/locators/flash.rs:250-333",
+    проверка="s7_сигнатуры_flash.py — дизассемблер совпал")
+
+add(id="F4", тема="образ флеша из DAT",
+    наш_вывод="DAT распаковывается XOR 0xFF, FFLZ-блоки на 0x300274/0x840274/…",
+    fujimod="flash.update_image: dat_offset 628 (0x274), xor 255; flash.control (offset 0x60000, size 0x8000) и settings.configuration (0xC0000, 814080 Б) — SHA-256 совпали с (DAT[0x274:] XOR 0xFF)",
+    уровень="Д", итог="подтверждено (наш декодер == их)",
+    ссылка="catalog/firmware/xh2s/7.30/flash.generated.json:19-22,73-77; settings.generated.json:12-17",
+    проверка="s5_сверка_фактов.py, s8_config_progress.py")
+
+# --- 2. UI_SETP: имена и ID ---
+add(id="U1", тема="таблица имён UI_SETP",
+    наш_вывод="У нас есть таблица имён UI_SETP и отдельные ID (FILM_SIM 1678 для X-H2, 1699 для X-T5; STILLCOLOR 1715/1714; GRAIN 262)",
+    fujimod="Опубликован полный словарь имя->ID для каждой прошивки: X-H2 5.30 — 3435 имён (ID 0..3434 без пропусков), X-H2S 7.30 — 3398 (ID 0..3432, 35 пропусков), X-T5 4.31 — 3536 (ID 0..3570, 35 пропусков). Наши значения совпали: FILM_SIM 1678 (X-H2) / 1699 (X-T5) / 1677 (X-H2S), STILLCOLOR 1715 (X-H2) / 1714 (X-H2S) / 1742 (X-T5), GRAIN 262 (X-H2), PERFORMANCE 1466 (X-H2/H2S) / 1426 (X-T5)",
+    уровень="Д", итог="подтверждено + новое (полный именованный словарь и ID для всех трёх камер)",
+    ссылка="catalog/firmware/xh2/5.30/ui-setting-names.generated.json; xh2s/7.30/…; xt5/4.31/…",
+    проверка="s3_сверка_имён.py")
+
+add(id="U2", тема="как извлечены имена",
+    наш_вывод="Не знали, как получить ID->имя статически",
+    fujimod="ID = порядок строк в .rodata блока 0: адреса наших строк, отсортированные по ID fujimod, монотонны на 3433/3434 (X-H2), 3396/3397 (X-H2S), 3534/3535 (X-T5); пропуски ID — слоты, для которых функция имени ничего не вернула. Коммит 3e8d8926 'Publish stock setting names…', 413be4a9 '…located by running the firmware's own scene-name function'",
+    уровень="Д", итог="новое (механизм и структура таблицы)",
+    ссылка="catalog/firmware/*/ui-setting-names.generated.json; git 3e8d8926, 413be4a9",
+    проверка="s4_порядок_id.py")
+
+add(id="U3", тема="набор имён сверх словаря",
+    наш_вывод="—",
+    fujimod="В наших DAT есть 76 (X-H2) / 111 (X-H2S, X-T5) имён UI_SETP_*, которых нет в словаре: это имена перечислений операций над свойствами (UI_SETP_CONT_AF_CHASE_*, UI_SETP_INTERVAL_EXE_*, UI_SETP_KIND_REC/PLAY/MENU/PCSH/PEER/OTHER, UI_SETP_DIRECTION_SYSTEM/UI_VALUE/REC_INPUT/PCSH/BACKUP, *_VAL_MAX / *_VAL_PREV_GET / *_VAL_BACKUP_GET / *_VAL_IGNORE_SET) — т.е. у настроек есть вид/направление и операции max/prev/backup/ignore",
+    уровень="К", итог="новое (модель метаданных свойств)",
+    ссылка="наши DAT, блоки b0/b1 (адреса в s4_порядок_id.py)",
+    проверка="s4_порядок_id.py")
+
+add(id="U4", тема="ID свойства 0x2B9 из отчёта E",
+    наш_вывод="Свойство 0x2B9 — 'ubNetmaskSettingManual1octet8' (из строки лога), смысл ID не был установлен",
+    fujimod="UI_SETP ID 0x2B9 = 697 = UI_SETP_NETMASK_SETTING_MANUAL_1OCTET_8 — имя совпадает дословно; весь семейство 0x2AC..0x2C0 — октеты IP/маски (события 0x34B..0x361, id = код − 0x9F, подтверждается)",
+    уровень="Д", итог="подтверждено + закрывает наш открытый вопрос",
+    ссылка="catalog/firmware/xh2/5.30/ui-setting-names.generated.json (ID 697); E_сеттер_0x2B9/отчёт.md:500",
+    проверка="s3/s9 + выгрузка ID")
+
+add(id="U5", тема="свойство 0x876 (рядом с режимом 0x2C)",
+    наш_вывод="E: 'ветка cmp w0,#0x2c читает свойство 0x876, сравнивает с 4' — имя неизвестно",
+    fujimod="ID 0x876 в X-H2 5.30 = UI_SETP_DRV_MENU_HDR ('меню HDR'), в X-H2S 7.30 — UI_SETP_ADV_MODE, в X-T5 — UI_SETP_HIFREQ_FLICKERLESS (ID не переносимы между моделями)",
+    уровень="К", итог="новое (имя) и косвенно поддерживает 0x2C = MODE_RECORD_HDR",
+    ссылка="catalog/firmware/xh2/5.30/ui-setting-names.generated.json (ID 2166)",
+    проверка="s9_различия_моделей.py / точечная выгрузка")
+
+add(id="U6", тема="enum MODE_RECORD",
+    наш_вывод="0x2C = MODE_RECORD_HDR (совпало с 105-значным enum MODE_RECORD в b0)",
+    fujimod="Перечислений MODE_RECORD / MODE_CONTINUOUS / DRIVEMODE_BKUP в каталоге нет: grep по всему репозиторию (catalog, crates, apps) не находит MODE_RECORD_HDR. Каталог публикует только имена UI-настроек и экранов",
+    уровень="—", итог="не найдено (проверено: grep repo-wide)",
+    ссылка="поиск 'MODE_RECORD|DRIVEMODE|MODE_CONTINUOUS' по клону c61fa145",
+    проверка="Select-String по клону")
+
+# --- 3. флеш, запись, моды ---
+add(id="W1", тема="«прошивку нельзя переписать»",
+    наш_вывод="DAT подписан ECDSA P-256; изменённый файл камера не примет",
+    fujimod="В каталоге нет ни одного факта о записи/перепрошивке: flash.generated.json описывает только ЧТЕНИЕ (stock flash-read contract). Моды ставятся иначе: bulk.upload — штатный приём загружает буфер вызывающего в RAM (pointer 0x38F04F0 для X-H2, piece 65536, align 32, проверяется код E0), а restart — перезагрузка через консольный callback (X-H2S: слот 0x236F460, request 135). В progress/xt5 стадия 'camera-mods: FujiMod runs from RAM' = not-run",
+    уровень="Д (для чтения/загрузки в RAM), Г (для самой модификации прошивки)",
+    итог="наш вывод не опровергнут; fujimod добавляет путь «код в RAM», а не «запись во флеш»",
+    ссылка="catalog/firmware/xh2/5.30/bulk.generated.json:155-200; xh2s/7.30/restart.generated.json:53-130; progress/xt5/4.31/progress.generated.json (трек camera)",
+    проверка="чтение файлов")
+
+add(id="W2", тема="восстановление XP5",
+    наш_вывод="Открытый вопрос, есть ли путь восстановления/двойной загрузки",
+    fujimod="recovery/processors.json содержит xp4, exr, exrpro, xpp — но НЕ xp5; green-led.generated.json покрывает 40 прошивок, среди них нет X-H2/X-H2S/X-T5; generation: 'no service-workflow locator for X-Processor 5', 'XP5 has no card mechanism'",
+    уровень="Д", итог="не найдено: для наших трёх камер путь восстановления у них не описан",
+    ссылка="catalog/recovery/processors.json:1-52; catalog/recovery/green-led.generated.json; catalog/generation.generated.json:4718+",
+    проверка="s9_различия_моделей.py")
+
+# --- 4. MOVDC, SoC, память ---
+add(id="S1", тема="потребитель дескриптора MOVDC",
+    наш_вывод="Потребителя дескриптора {height,width,stride} в блоках 0–2 нет; флаг 0x4c2ff14 пишется извне",
+    fujimod="В карте XP5 есть три аппаратных блока MOVDC: 0xFF970000, 0xFF971000, 0xFF972000 (+ movdc-reset 0xFF973000), kind='movdc'; в эмуляторе MOVDC — 'XP4 MOVDC output DMA' (packed422, регистры +0xd4 бит 28, +0xd4[18:16], +0xd8[17:16])",
+    уровень="К", итог="объясняет, почему потребителя нет в коде: это аппаратный DMA-блок по MMIO",
+    ссылка="catalog/soc/xp5/soc.json:323-346,1253-1272; crates/emulator-xp4-display/src/movdc.rs:1-2,60-63",
+    проверка="s1_soc_карта.py + чтение movdc.rs")
+
+add(id="S2", тема="карта памяти / периферия XP5",
+    наш_вывод="Глобалы 0x4c2ff14, 0x4daa6e8, блоб 0x27008000, кольцо видео 0x3C999000…0x44999000 — вне блоков, в DRAM; MMIO мы не картировали",
+    fujimod="soc/xp5: 4×Cortex-A53 + сопроцессор Cortex-M4 (companion, 600 МГц, mailbox 0xFF90E100, IRQ 55/58/141/142/143); GICv3 (distributor 0xFA000000, redistributor 0xFA080000, 512 линий); DRAM 0..размер тела; SRAM: companion 0xFA200000, boot 0xFF800000; 72 блока MMIO (flash 0xF0000000, flash-контроллер 0xFF90A000, clock-gates 0xFF90C000, display0/1 0xFF990000/0xFF9A0000, sensor 0xFF948000, statistics 0xFF800000, mailboxes, I2C/SPI/GPIO…)",
+    уровень="Д (для карты), К (для привязки наших адресов)",
+    итог="новое: полная карта MMIO и наличие M4-компаньона",
+    ссылка="catalog/soc/xp5/soc.json:48-75,76-460,595-640,1001-1010",
+    проверка="s1_soc_карта.py")
+
+add(id="S3", тема="размер DRAM",
+    наш_вывод="Размер DRAM не был установлен; кольцо видео требует >1.15 ГиБ",
+    fujimod="X-H2S: body.dram_bytes = 2 ГиБ (первая область кончается на 0x80000000, выше — debug-gated тест памяти 0x306b1d4); X-T5: 1.5 ГиБ (по memory map прошивки и Linux device tree: Linux 256 МиБ с 1 ГиБ); X-H2: записи тела нет",
+    уровень="К", итог="новое (X-T5 — из Linux DT в b3)",
+    ссылка="catalog/bodies/xh2s/body.json:6,23-38; catalog/bodies/xt5/body.json:6,73-83",
+    проверка="чтение body.json")
+
+add(id="S4", тема="флеш-чипы",
+    наш_вывод="Модель/ёмкость установленной NOR не устанавливалась",
+    fujimod="X-H2S: JEDEC 0x2C5B1B, Micron MT35XU01GBBA (1 Гбит); X-T5: JEDEC 0x20BB20, Micron MT25QU512ABB (512 Мбит); окно CPU 0xF0000000, 128 МиБ; reader flash_read, alignment 64, transport xp5-cmd-callback",
+    уровень="К", итог="новое (JEDEC берётся из таблицы поддерживаемых чипов в прошивке)",
+    ссылка="catalog/firmware/xh2s/7.30/flash.generated.json:6-28; catalog/parts/xh2s-serial-nor/part.json",
+    проверка="s7 (адреса/сигнатуры), s5")
+
+add(id="S5", тема="boot ROM / 0xFF800000",
+    наш_вывод="—",
+    fujimod="state.generated.json: регион boot-rom 0xFF800000 размером 0x40000, constant=true; но generation: 'xp5: no established safely readable boot ROM extent' — т.е. это объявленный регион, а не снятый дамп. В soc.json по 0xFF800000 лежит imaging-блок 'statistics' (0xEB40)",
+    уровень="Г", итог="противоречие внутри каталога — проверить у нас",
+    ссылка="catalog/firmware/xh2s/7.30/state.generated.json:13-18; catalog/soc/xp5/soc.json (statistics); generation.generated.json",
+    проверка="s5/s1")
+
+add(id="S6", тема="резервирования памяти",
+    наш_вывод="Карты резервирований DRAM у нас не было",
+    fujimod="X-H2S: main_heap 44 866 640 (2 МиБ), font_library 663 347 200 (1 МиБ), language_fonts 16 121 856 (1.4 МиБ); dram_size 1 ГиБ — противоречит body.dram_bytes 2 ГиБ в том же каталоге; у X-T5 файла нет",
+    уровень="К", итог="новое + внутреннее расхождение каталога",
+    ссылка="catalog/firmware/xh2s/7.30/memory-reservations.generated.json:6-23; bodies/xh2s/body.json:6",
+    проверка="чтение файлов")
+
+# --- 5. управление/свойства ---
+add(id="C1", тема="органы управления: ID и события",
+    наш_вывод="Своей таблицы кнопок/сканеров у нас не было (изучали события свойств 0x34B..0x361)",
+    fujimod="control-ids: таблица сканера base/count/stride 40 + lookup; таблица перевода physical_key->event (stride 12); 264 имени debug-команд (EXE_M/UP/DOWN/…); X-H2S — 94 входа (33 привязаны к органам, 61 unclaimed), X-T5 — 120 (47 привязаны); 1 недоставленная строка у X-H2S",
+    уровень="Д (данные), К (семантика)",
+    итог="новое: именованный слой «орган -> ключ -> событие», не пересекается с событиями свойств",
+    ссылка="catalog/firmware/xh2s/7.30/control-ids.generated.json:4-10,18-…; xt5/4.31/…",
+    проверка="s2_control_ids.py")
+
+add(id="C2", тема="CONTROL_MECHANISMS.md",
+    наш_вывод="Ожидали систему «меню -> настройка -> код»",
+    fujimod="Документ — обзор МЕХАНИКИ относительных дисков/качалок по 49 телам и 108 органам (страницы мануалов, классификация dial/rocker, связи GPIO/энкодеров). Для X-H2/X-H2S/X-T5 все диски 'No located connection'; про меню/настройки/свойства там ничего нет",
+    уровень="Д", итог="не найдено: к пути «меню -> настройка -> код» не добавляет; добавляет только классификацию и страницы мануала",
+    ссылка="catalog/CONTROL_MECHANISMS.md:1-25,75-80,131-133",
+    проверка="чтение файла")
+
+add(id="C3", тема="сцены UI",
+    наш_вывод="—",
+    fujimod="ui-scene-names — это имена ЭКРАНОВ UI (UILIB_SUB_SCR_AFAREA, BULB_COUNTDOWN…), а не сюжетные программы SP: X-H2 5.30 — 793, X-H2S — 785, X-T5 — 783; ID тоже идут по порядку строк",
+    уровень="Д", итог="новое (уточнение терминологии)",
+    ссылка="catalog/firmware/xh2/5.30/ui-scene-names.generated.json",
+    проверка="s4_порядок_id.py (сцены)")
+
+# --- 6. версии и различия ---
+add(id="V1", тема="новые версии 5.33 / 7.31 / 4.32",
+    наш_вывод="У нас есть DAT 5.33 / 7.31 / 4.32 и разбор их исправлений",
+    fujimod="Не поддерживаются: firmware-versions.generated.json (57 релизов) заканчивается на X-H2 5.30 (internal 3.51), X-H2S 7.30 (3.64), X-T5 4.31 (2.14); git log --all --grep по '5.33/7.31/4.32' пуст; SHA наших новых DAT (6f9d3d86…, 098270b2…, 99b8b716…) в каталоге отсутствуют",
+    уровень="Д", итог="не найдено: новых версий у них нет",
+    ссылка="catalog/firmware-versions.generated.json:301-311,551-557",
+    проверка="s9_различия_моделей.py (список версий)")
+
+add(id="V2", тема="чем X-H2S/X-T5 отличаются от X-H2",
+    наш_вывод="—",
+    fujimod="X-H2 5.30: только bulk + два словаря имён; нет firmware.json, нет body.json (только controls.json), нет control-ids/settings/state/flash/restart; generation: controls 'No catalog firmware, body, and physical-control records', restart 'no verified family match (0x13823f0)'. X-H2S: + state/flash/memory-reservations/restart/control-ids/settings. X-T5: + питание (SPI8, GPIO 15:15), thermal ADC, serial NOR; НЕТ restart и memory-reservations; 8 дисков/29 позиций против 4/15 у X-H2/X-H2S. Имена X-H2S ⊂ X-H2 (0 уникальных), у X-T5 +197 имён (в основном *_VLOG, BOKEH, CROP_VLOG)",
+    уровень="Д", итог="новое",
+    ссылка="catalog/firmware/{xh2/5.30,xh2s/7.30,xt5/4.31}/; bodies/; generation.generated.json:4600,4718,8093",
+    проверка="s9_различия_моделей.py, s1")
+
+add(id="V3", тема="restart (перезагрузка по USB)",
+    наш_вывод="Мы не изучали штатный restart по USB",
+    fujimod="Только X-H2S: внутренняя версия 3.64, консольный callback, request 135, слот 0x236F460, stub 0x210000, будильник power-controller (37/38 с), boot flag 0x2882C9C бит 5; code_checks — 7 фрагментов. 6 из 7 SHA-256 совпали с нашими блоками байт-в-байт; instruction_cache_sync (0x5B878, 380 Б) не найден ни в b0, ни в b1, ни в b2",
+    уровень="Д (6/7), Г (7-й фрагмент)",
+    итог="новое; один факт требует проверки",
+    ссылка="catalog/firmware/xh2s/7.30/restart.generated.json:6-52",
+    проверка="s5_сверка_фактов.py")
+
+add(id="V4", тема="покрытие работ (progress)",
+    наш_вывод="—",
+    fujimod="progress/xt5/4.31: фактов 17/18; статические стадии bulk-source/flash-reader/state-regions/restart-facts/card-files/controls/settings-layout — 'stale'; в треке camera пройдена только идентификация по FF80, остальное (загрузка кода в RAM, bulk >=1 МиБ/с, дамп RAM/флеша, моды из RAM) — not-run; сборки модов — not-run",
+    уровень="Д", итог="новое: сообщество ещё не запускало моды на X-T5",
+    ссылка="catalog/progress/xt5/4.31/progress.generated.json:1-…",
+    проверка="s8_config_progress.py")
+
+add(id="V5", тема="как строятся generated-файлы",
+    наш_вывод="—",
+    fujimod="Схемы порождены из Rust-структур (doc-комментарии = описания); валидаторы — crates/catalog-*; для XP5 в репозитории есть только локатор флеша (crates/corpus/src/locators/flash.rs) и boot ROM; локаторы настроек/restart/bulk/control-ids/ui-имён в публичный репозиторий не входят — файлы публикуются внешним конвейером (коммиты 'Publish …', generation.generated.json — журнал прогона)",
+    уровень="Д", итог="новое (границы открытости)",
+    ссылка="catalog/README.md:61-76; crates/corpus/src/locators/flash.rs; catalog/generation.generated.json",
+    проверка="поиск по crates, git log")
+
+json.dump({
+    "версия": 1,
+    "дата": "2026-11-16",
+    "источник_fujimod": {"клон": r"<корень проекта>\Внешние_репозитории\fujimod",
+                          "ревизия": "c61fa145", "дата_ревизии": "2026-11-15", "лицензия": "GPL-2.0"},
+    "наши_dat": {
+        "X-H2 5.30": "be47168cb075ef726e67cb4bb08175a896047a3b0de2bcb6e65333b22cfcb203",
+        "X-H2 5.33": "6f9d3d86e5a93ffc3666712e31c9bb83cb798bfaec581fa27fc5a21882546d58",
+        "X-H2S 7.30": "87c566c1ff6343e4c7463a4ef968183f41d1f24cc63d610433d3a387b13f731b",
+        "X-H2S 7.31": "098270b2675b877a6f1c87e01398523598551677e7d1ba0c9cb7dbd67553fc67",
+        "X-T5 4.31": "790d6deecf26766188b0e506e40645e6b816addfeba39a52334349405421724e",
+        "X-T5 4.32": "99b8b71607b5cc94435447b704427c780669b94758e8cc8ffbc136f0ced885f9"
+    },
+    "уровни": {"Д": "доказано (прямо сказано и/или проверено на наших DAT)",
+                "К": "сильный кандидат", "Г": "гипотеза"},
+    "записи": R
+}, open(os.path.join(HERE, "сопоставление.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+print("записей:", len(R))

@@ -1,0 +1,443 @@
+{
+ "header": {
+  "head_dec": "f9ffffffcccfcccfcccfcccaccc9ccc8cccfcccecccfcccfcccfcccaccc9ccc8cccfcccdcccfcccfcccfcccaccc9ccc8cccfcccccccfcccfcccfcccaccc9ccc8cccfcccbcccfcccfcccfcccaccc9ccc8cccfcccacccfcccfcccfcccaccc9ccc8cccfccc9cccfcccfcccfcccaccc8cccbcccfcccecccfcccfcccfcccaccc8cccbcccfcccdcccfcccfcccfcccaccc8cccbcccfcccccccfcccfcccfcccaccc8cccbcccfcccbcccfcccfcccfcccaccc8cccbcccfcccacccfcccfcccfcccaccc8cccbcccfccc9cccfcccfcccfcccaccc8cccbcccfccc8cccfcccfcccfcccaccc8cccbcccfccc7cccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccfcccffaffffffccfffffff9ed40ce3f0fb300426c7109feffffff564f73006bad6df9ff3fffff0000000000000000ffffffff0000000000000000ffffffffb3a7cbc8ffffffff3fff7bf93fff7bf9fffffeff3fff7af9afb2f2ffefb16df98bfeffff054900007bb06df9effcffffe36f0000ffffffff00000000aaaaaaaa555555550020010003000000007590ff78e178e150c190ff1f00000054c190ff1f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "pairs": [],
+  "version": [
+   5,
+   51
+  ]
+ },
+ "exact_refs": {
+  "КОНТРОЛЬ MOVDC 0xFF970000": {
+   "target": "0xff970000",
+   "per_buffer": {
+    "prefix": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block0": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block1": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block2": {
+     "adrp_pages": [],
+     "refs": []
+    }
+   }
+  },
+  "КОНТРОЛЬ MOVDC-регистр 0xFF9700D8": {
+   "target": "0xff9700d8",
+   "per_buffer": {
+    "prefix": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block0": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block1": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block2": {
+     "adrp_pages": [],
+     "refs": []
+    }
+   }
+  },
+  "КОНТРОЛЬ флаг MOVDC 0x4c2ff14": {
+   "target": "0x4c2ff14",
+   "per_buffer": {
+    "prefix": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block0": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block1": {
+     "adrp_pages": [
+      "0x2f50608",
+      "0x2f55090",
+      "0x2fbb920",
+      "0x2fbb988",
+      "0x30e0ac0",
+      "0x30e58dc",
+      "0x30e6f14",
+      "0x30ec6f8",
+      "0x30ecb9c",
+      "0x30ed968",
+      "0x30eede8",
+      "0x3101114",
+      "0x3101130",
+      "0x3101164",
+      "0x310117c",
+      "0x3101194",
+      "0x31011ac",
+      "0x31011c0",
+      "0x31012b4",
+      "0x31012f4"
+     ],
+     "refs": [
+      "310247c: ldr w0, [x0, #0xf14]",
+      "31024cc: ldr w0, [x0, #0x43c]",
+      "31025a8: ldr w0, [x0, #0xf14]",
+      "3104210: ldr w1, [x1, #0xf14]",
+      "3104278: ldr w0, [x0, #0xf14]",
+      "3104384: ldr w0, [x0, #0xf14]",
+      "3104424: ldr w0, [x0, #0xf14]",
+      "3104814: ldr w0, [x0, #0xf14]",
+      "310489c: ldr w0, [x0, #0xf14]",
+      "3104918: ldr w0, [x0, #0xf14]"
+     ]
+    },
+    "block2": {
+     "adrp_pages": [],
+     "refs": []
+    }
+   }
+  },
+  "КОНТРОЛЬ задание 0x4daa6e8": {
+   "target": "0x4daa6e8",
+   "per_buffer": {
+    "prefix": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block0": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block1": {
+     "adrp_pages": [
+      "0x2f389d8",
+      "0x2f3f7f8",
+      "0x2f5eb98",
+      "0x30171a4",
+      "0x30171ac",
+      "0x30171b4",
+      "0x30171d4",
+      "0x30171e4",
+      "0x301721c",
+      "0x3017228",
+      "0x3017260",
+      "0x30172ac",
+      "0x30172c4",
+      "0x3017328",
+      "0x3017344",
+      "0x3017384",
+      "0x30173a0",
+      "0x30173d0",
+      "0x3017410",
+      "0x3017500"
+     ],
+     "refs": [
+      "30172b0: ldr x0, [x0, #0x6e8]",
+      "30172d0: ldr x0, [x19, #0x28]",
+      "301732c: ldr x0, [x0, #0x6e8]",
+      "3017624: ldr x2, [x0, #0x28]"
+     ]
+    },
+    "block2": {
+     "adrp_pages": [],
+     "refs": []
+    }
+   }
+  },
+  "companion-SRAM 0xFA200000": {
+   "target": "0xfa200000",
+   "per_buffer": {
+    "prefix": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block0": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block1": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block2": {
+     "adrp_pages": [],
+     "refs": []
+    }
+   }
+  },
+  "companion-SRAM верх 0xFA300000": {
+   "target": "0xfa300000",
+   "per_buffer": {
+    "prefix": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block0": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block1": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block2": {
+     "adrp_pages": [],
+     "refs": []
+    }
+   }
+  },
+  "mailbox 0xFF90E100": {
+   "target": "0xff90e100",
+   "per_buffer": {
+    "prefix": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block0": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block1": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block2": {
+     "adrp_pages": [],
+     "refs": []
+    }
+   }
+  },
+  "reset-handshake 0xFF91C000": {
+   "target": "0xff91c000",
+   "per_buffer": {
+    "prefix": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block0": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block1": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block2": {
+     "adrp_pages": [],
+     "refs": []
+    }
+   }
+  },
+  "reset-handshake триггер 0xFF91C00C": {
+   "target": "0xff91c00c",
+   "per_buffer": {
+    "prefix": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block0": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block1": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block2": {
+     "adrp_pages": [],
+     "refs": []
+    }
+   }
+  },
+  "boot-sram 0xFF800000": {
+   "target": "0xff800000",
+   "per_buffer": {
+    "prefix": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block0": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block1": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block2": {
+     "adrp_pages": [],
+     "refs": []
+    }
+   }
+  },
+  "GIC 0xFA000000": {
+   "target": "0xfa000000",
+   "per_buffer": {
+    "prefix": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block0": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block1": {
+     "adrp_pages": [],
+     "refs": []
+    },
+    "block2": {
+     "adrp_pages": [],
+     "refs": []
+    }
+   }
+  }
+ },
+ "exact_values": {
+  "raw_all:FA200000": {
+   "u32": 61,
+   "u64": 0
+  },
+  "raw_all:FA300000": {
+   "u32": 64,
+   "u64": 0
+  },
+  "raw_all:FF90E100": {
+   "u32": 0,
+   "u64": 0
+  },
+  "raw_all:FF91C000": {
+   "u32": 0,
+   "u64": 0
+  },
+  "raw_all:FF91C00C": {
+   "u32": 1,
+   "u64": 0
+  },
+  "raw_all:FF970000": {
+   "u32": 0,
+   "u64": 0
+  },
+  "raw_all:F0F0F0F0": {
+   "u32": 49,
+   "u64": 1
+  },
+  "block0:FA200000": {
+   "u32": 39,
+   "u64": 0
+  },
+  "block0:FA300000": {
+   "u32": 10,
+   "u64": 0
+  },
+  "block0:FF90E100": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block0:FF91C000": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block0:FF91C00C": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block0:FF970000": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block0:F0F0F0F0": {
+   "u32": 56,
+   "u64": 0
+  },
+  "block1:FA200000": {
+   "u32": 8,
+   "u64": 0
+  },
+  "block1:FA300000": {
+   "u32": 7,
+   "u64": 0
+  },
+  "block1:FF90E100": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block1:FF91C000": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block1:FF91C00C": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block1:FF970000": {
+   "u32": 5,
+   "u64": 0
+  },
+  "block1:F0F0F0F0": {
+   "u32": 55,
+   "u64": 0
+  },
+  "block2:FA200000": {
+   "u32": 1,
+   "u64": 0
+  },
+  "block2:FA300000": {
+   "u32": 24,
+   "u64": 0
+  },
+  "block2:FF90E100": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block2:FF91C000": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block2:FF91C00C": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block2:FF970000": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block2:F0F0F0F0": {
+   "u32": 32,
+   "u64": 0
+  },
+  "block3:FA200000": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block3:FA300000": {
+   "u32": 1,
+   "u64": 0
+  },
+  "block3:FF90E100": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block3:FF91C000": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block3:FF91C00C": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block3:FF970000": {
+   "u32": 0,
+   "u64": 0
+  },
+  "block3:F0F0F0F0": {
+   "u32": 0,
+   "u64": 0
+  }
+ }
+}

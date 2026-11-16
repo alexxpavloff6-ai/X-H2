@@ -1,0 +1,355 @@
+{
+ "elf": {
+  "off": "0x4137274",
+  "class": 2,
+  "data": 1,
+  "type": 3,
+  "machine": 183,
+  "entry": "0x300",
+  "phoff": "0x40",
+  "phnum": 4,
+  "shoff": "0x908",
+  "shnum": 14,
+  "shstrndx": 13,
+  "sections": [
+   ".hash",
+   ".dynsym",
+   ".dynstr",
+   ".gnu.version",
+   ".gnu.version_d",
+   ".note",
+   ".text",
+   ".eh_frame_hdr",
+   ".eh_frame",
+   ".dynamic",
+   ".got",
+   ".got.plt",
+   ".shstrtab"
+  ]
+ },
+ "dtb": {
+  "off": "0x3c40274",
+  "size": 11425,
+  "struct": "0x48",
+  "strings": "0x294c",
+  "strings_sample": [
+   "model",
+   "compatible",
+   "interrupt-parent",
+   "#address-cells",
+   "#size-cells",
+   "serial0",
+   "serial1",
+   "serial2",
+   "serial3",
+   "stdout-path",
+   "bootargs",
+   "device_type",
+   "reg",
+   "target-cpu",
+   "vring0",
+   "vring1",
+   "num-descs",
+   "dev-feature",
+   "gen-feature",
+   "num-vrings",
+   "alignment",
+   "ring-tx",
+   "ring-rx",
+   "enable-method",
+   "cpu-release-addr",
+   "cache-level",
+   "ranges",
+   "#redistributor-regions",
+   "interrupt-controller",
+   "#interrupt-cells",
+   "interrupts",
+   "linux,phandle",
+   "clock-frequency",
+   "#clock-cells",
+   "clock-div",
+   "clock-mult",
+   "clocks",
+   "socionext,pll-type",
+   "socionext,clock-mult",
+   "socionext,clock-bypass",
+   "socionext,clock-div",
+   "socionext,clock-en",
+   "xdmac_req_ch",
+   "interrupt-names",
+   "#dma-cells",
+   "dma-channels",
+   "clock-names",
+   "groups",
+   "function",
+   "pinctrl-names",
+   "pinctrl-0",
+   "status",
+   "socionext,sd-id",
+   "bus-width",
+   "no-sdio",
+   "cap-sd-highspeed",
+   "sd-uhs-sdr50",
+   "cap-mmc-highspeed",
+   "mmc-hs200-1_8v",
+   "non-removable",
+   "disable-wp",
+   "no-sd",
+   "wifi-host",
+   "cap-sdio-irq",
+   "reg-names",
+   "num-lanes",
+   "num-viewport",
+   "bus-range",
+   "phy-names",
+   "phys",
+   "#phy-cells"
+  ],
+  "model": [
+   "model"
+  ],
+  "compatible": []
+ },
+ "tail_keyword_strings": [
+  {
+   "off": "0x4136668",
+   "s": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000arm,cortex-a53-pmu\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+  },
+  {
+   "off": "0x4136730",
+   "s": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000arm,cortex-a57-pmu\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+  },
+  {
+   "off": "0x41367f8",
+   "s": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000arm,cortex-a72-pmu\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+  },
+  {
+   "off": "0x413749c",
+   "s": "l_gettimeofday\u0000__kernel_clock_gettime\u0000__kernel_clock_getres\u0000__kernel_rt_sigreturn\u0000linux-vdso.so.1\u0000LI"
+  },
+  {
+   "off": "0x4162278",
+   "s": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000ti,am437-padconf\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+  },
+  {
+   "off": "0x4224f38",
+   "s": "nit found.  Try passing init= option to kernel. See Linux Documentation/init.txt for guidance.\u0000\u0000\u0000\u0000\u0000\u0000"
+  },
+  {
+   "off": "0x4227b42",
+   "s": "can\u0000\u0000\u0000\u0000\u0000\u0000\u0000armv8_cavium_thunder\u0000\u0000\u0000\u0000armv8_cortex_a72\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000armv8_cortex_a57\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000armv8_cortex_a53\u0000\u0000"
+  },
+  {
+   "off": "0x4227b5a",
+   "s": "hunder\u0000\u0000\u0000\u0000armv8_cortex_a72\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000armv8_cortex_a57\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000armv8_cortex_a53\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000armv8_pmuv3\u0000\u0000\u0000\u0000\u0000ar"
+  },
+  {
+   "off": "0x4227b72",
+   "s": "72\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000armv8_cortex_a57\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000armv8_cortex_a53\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000armv8_pmuv3\u0000\u0000\u0000\u0000\u0000armv8-pmu\u0000\u0000\u0000\u0000\u0000\u0000\u0000format\u0000\u0000ev"
+  },
+  {
+   "off": "0x4228420",
+   "s": "\u0000\u0000\u0000\u0000Accessing user space memory with fs=KERNEL_DS\u0000\u0000\u0000Attempting to execute userspace memory\u0000\u0000Accessin"
+  },
+  {
+   "off": "0x4230cdf",
+   "s": "eclaimable\u0000\u0000\u0000nr_page_table_pages\u0000\u0000\u0000\u0000\u0000nr_kernel_stack\u0000nr_overhead\u0000\u0000\u0000\u0000\u0000nr_bounce\u0000\u0000\u0000\u0000\u0000\u0000\u0000nr_free_cma\u0000\u0000\u0000\u0000"
+  },
+  {
+   "off": "0x42320d0",
+   "s": "\u0000\u0000\u0000\u0000GFP_USER\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000GFP_TEMPORARY\u0000\u0000\u0000GFP_KERNEL_ACCOUNT\u0000\u0000\u0000\u0000\u0000\u0000GFP_KERNEL\u0000\u0000\u0000\u0000\u0000\u0000GFP_NOFS\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000GFP_ATOM"
+  },
+  {
+   "off": "0x42320e8",
+   "s": "TEMPORARY\u0000\u0000\u0000GFP_KERNEL_ACCOUNT\u0000\u0000\u0000\u0000\u0000\u0000GFP_KERNEL\u0000\u0000\u0000\u0000\u0000\u0000GFP_NOFS\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000GFP_ATOMIC\u0000\u0000\u0000\u0000\u0000\u0000GFP_NOIO\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+  },
+  {
+   "off": "0x4233ac1",
+   "s": "\u0000\u0000\u0000Can't find rootfs type\u0000\u0000Can't create rootfs\u0000\u0000\u0000\u0000\u0000Can't allocate initial namespace\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Expected "
+  },
+  {
+   "off": "0x423408d",
+   "s": "s not support dax\u0000\u0000\u0000\u0000\u0000\u0000error: unaligned partition for dax\u0000\u0000\u0000\u0000\u0000\u0000error: dax access failed (%d)\u0000\u0000\u0000dio/%"
+  },
+  {
+   "off": "0x4243e79",
+   "s": "\u0000\u0000\u0000VPD access failed.  This is likely a firmware bug on this device.  Contact the card vendor for a "
+  },
+  {
+   "off": "0x424d324",
+   "s": "Failed to register CPU subsystem\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000kernel_max\u0000\u0000\u0000\u0000\u0000\u0000possible\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000present\u0000crash_notes_size\u0000\u0000\u0000\u0000"
+  },
+  {
+   "off": "0x424e9f9",
+   "s": "\u0000\u0000\u0000/lib/firmware/updates/4.9.92\u0000\u0000\u0000\u0000/lib/firmware/updates\u0000\u0000\u0000/lib/firmware/4.9.92\u0000\u0000\u0000\u0000/lib/firmware\u0000\u0000\u0000i"
+  },
+  {
+   "off": "0x424ea11",
+   "s": "/4.9.92\u0000\u0000\u0000\u0000/lib/firmware/updates\u0000\u0000\u0000/lib/firmware/4.9.92\u0000\u0000\u0000\u0000/lib/firmware\u0000\u0000\u0000idle\u0000\u0000\u0000\u0000Incompatible msi_"
+  },
+  {
+   "off": "0x42574d1",
+   "s": "end\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000bootargs\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000console=none rootfstype=ramfs rdinit=/sbin/init maxcpus=1 uio_pdrv_genirq"
+  },
+  {
+   "off": "0x425acfd",
+   "s": "kernel-source//net/core/ethtool.c\u0000\u0000\u0000\u0000\u0000\u0000/kernel-source//net/core/dev_addr_lists.c\u0000\u0000\u0000\u0000\u0000\u0000\u0000Attempting to"
+  },
+  {
+   "off": "0x426173d",
+   "s": "anycast.c\u0000\u0000\u0000\u0000\u0000\u0000anycast6\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000%pI6\u0000\u0000\u0000\u0000/kernel-source//net/ipv6/addrconf.c\u0000\u0000\u0000\u0000\u0000if_inet6\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000%pi6 "
+  },
+  {
+   "off": "0x4263565",
+   "s": "kernel-source//net/wireless/util.c\u0000\u0000\u0000\u0000\u0000/kernel-source//net/wireless/reg.c\u0000\u0000\u0000\u0000\u0000\u0000country IE\u0000\u0000\u0000\u0000\u0000\u0000bug\u0000\u0000"
+  },
+  {
+   "off": "0x42637dd",
+   "s": "kernel-source//net/wireless/scan.c\u0000\u0000\u0000\u0000\u0000/kernel-source//net/wireless/nl80211.c\u0000\u0000/kernel-source//net/w"
+  },
+  {
+   "off": "0x4263805",
+   "s": "kernel-source//net/wireless/nl80211.c\u0000\u0000/kernel-source//net/wireless/mlme.c\u0000\u0000\u0000\u0000\u0000/kernel-source//net/w"
+  },
+  {
+   "off": "0x426382d",
+   "s": "kernel-source//net/wireless/mlme.c\u0000\u0000\u0000\u0000\u0000/kernel-source//net/wireless/ibss.c\u0000\u0000\u0000\u0000\u0000/kernel-source//net/w"
+  },
+  {
+   "off": "0x4263855",
+   "s": "kernel-source//net/wireless/ibss.c\u0000\u0000\u0000\u0000\u0000/kernel-source//net/wireless/sme.c\u0000\u0000\u0000\u0000\u0000\u0000/kernel-source//net/w"
+  },
+  {
+   "off": "0x426387d",
+   "s": "kernel-source//net/wireless/sme.c\u0000\u0000\u0000\u0000\u0000\u0000/kernel-source//net/wireless/chan.c\u0000\u0000\u0000\u0000\u0000/kernel-source//net/w"
+  },
+  {
+   "off": "0x4284802",
+   "s": "ate\u0000init_uts_ns\u0000name_to_dev_t\u0000init_task\u0000kernel_neon_end\u0000kernel_neon_begin_partial\u0000pm_power_off\u0000save_"
+  },
+  {
+   "off": "0x4284812",
+   "s": "name_to_dev_t\u0000init_task\u0000kernel_neon_end\u0000kernel_neon_begin_partial\u0000pm_power_off\u0000save_stack_trace\u0000walk"
+  },
+  {
+   "off": "0x42850b7",
+   "s": "_set\u0000task_user_regset_view\u0000init_user_ns\u0000kernel_sigaction\u0000sigprocmask\u0000send_sig_info\u0000send_sig\u0000force_si"
+  },
+  {
+   "off": "0x42854ac",
+   "s": "nd_vpid\u0000find_pid_ns\u0000put_pid\u0000init_pid_ns\u0000kernel_param_unlock\u0000kernel_param_lock\u0000param_ops_string\u0000param"
+  },
+  {
+   "off": "0x42854c0",
+   "s": "put_pid\u0000init_pid_ns\u0000kernel_param_unlock\u0000kernel_param_lock\u0000param_ops_string\u0000param_get_string\u0000param_se"
+  },
+  {
+   "off": "0x4285ba3",
+   "s": "register\u0000atomic_notifier_chain_register\u0000kernel_kobj\u0000set_create_files_as\u0000set_security_override_from_c"
+  },
+  {
+   "off": "0x4285c00",
+   "s": "_from_ctx\u0000set_security_override\u0000prepare_kernel_cred\u0000revert_creds\u0000override_creds\u0000abort_creds\u0000commit_c"
+  },
+  {
+   "off": "0x4285c7a",
+   "s": "ut_cred\u0000orderly_reboot\u0000orderly_poweroff\u0000kernel_power_off\u0000kernel_halt\u0000kernel_restart\u0000unregister_resta"
+  },
+  {
+   "off": "0x4285c8b",
+   "s": "eboot\u0000orderly_poweroff\u0000kernel_power_off\u0000kernel_halt\u0000kernel_restart\u0000unregister_restart_handler\u0000regist"
+  },
+  {
+   "off": "0x4285c97",
+   "s": "y_poweroff\u0000kernel_power_off\u0000kernel_halt\u0000kernel_restart\u0000unregister_restart_handler\u0000register_restart_h"
+  },
+  {
+   "off": "0x4285f9a",
+   "s": "edule_notrace\u0000preempt_schedule\u0000schedule\u0000kernel_cpustat\u0000kstat\u0000single_task_running\u0000wake_up_process\u0000kic"
+  },
+  {
+   "off": "0x4287d1a",
+   "s": "er_event\u0000get_monotonic_coarse64\u0000current_kernel_time64\u0000get_seconds\u0000getboottime64\u0000getrawmonotonic64\u0000ti"
+  },
+  {
+   "off": "0x428862d",
+   "s": "f_pmu_migrate_context\u0000perf_event_create_kernel_counter\u0000perf_pmu_unregister\u0000perf_pmu_register\u0000perf_sw"
+  },
+  {
+   "off": "0x42886f6",
+   "s": "erf_event_read_value\u0000perf_event_release_kernel\u0000perf_event_refresh\u0000perf_event_addr_filters_sync\u0000perf_"
+  },
+  {
+   "off": "0x4288cb8",
+   "s": "om_notifier\u0000register_oom_notifier\u0000probe_kernel_write\u0000probe_kernel_read\u0000free_reserved_area\u0000adjust_man"
+  },
+  {
+   "off": "0x4288ccb",
+   "s": "r_oom_notifier\u0000probe_kernel_write\u0000probe_kernel_read\u0000free_reserved_area\u0000adjust_managed_page_count\u0000si_"
+  },
+  {
+   "off": "0x4289066",
+   "s": "u_cache_add_file\u0000mark_page_accessed\u0000get_kernel_page\u0000get_kernel_pages\u0000put_pages_list\u0000__put_page\u0000trunc"
+  },
+  {
+   "off": "0x4289076",
+   "s": "\u0000mark_page_accessed\u0000get_kernel_page\u0000get_kernel_pages\u0000put_pages_list\u0000__put_page\u0000truncate_pagecache_ra"
+  },
+  {
+   "off": "0x4289970",
+   "s": "p\u0000vfree\u0000__get_vm_area\u0000map_vm_area\u0000unmap_kernel_range\u0000unmap_kernel_range_noflush\u0000vm_map_ram\u0000vm_unmap_"
+  },
+  {
+   "off": "0x4289983",
+   "s": "ea\u0000map_vm_area\u0000unmap_kernel_range\u0000unmap_kernel_range_noflush\u0000vm_map_ram\u0000vm_unmap_ram\u0000vm_unmap_aliase"
+  },
+  {
+   "off": "0x4289cad",
+   "s": "ritev\u0000vfs_readv\u0000iov_shorten\u0000vfs_write\u0000__kernel_write\u0000__vfs_write\u0000vfs_read\u0000__vfs_read\u0000vfs_iter_write\u0000"
+  },
+  {
+   "off": "0x428a10d",
+   "s": "\u0000flush_old_exec\u0000get_task_comm\u0000read_code\u0000kernel_read_file_from_fd\u0000kernel_read_file_from_path\u0000kernel_r"
+  },
+  {
+   "off": "0x428a126",
+   "s": "comm\u0000read_code\u0000kernel_read_file_from_fd\u0000kernel_read_file_from_path\u0000kernel_read_file\u0000kernel_read\u0000open"
+  },
+  {
+   "off": "0x428a141",
+   "s": "file_from_fd\u0000kernel_read_file_from_path\u0000kernel_read_file\u0000kernel_read\u0000open_exec\u0000setup_arg_pages\u0000copy_"
+  },
+  {
+   "off": "0x428a152",
+   "s": "el_read_file_from_path\u0000kernel_read_file\u0000kernel_read\u0000open_exec\u0000setup_arg_pages\u0000copy_strings_kernel\u0000un"
+  },
+  {
+   "off": "0x428a185",
+   "s": "\u0000open_exec\u0000setup_arg_pages\u0000copy_strings_kernel\u0000unregister_binfmt\u0000__register_binfmt\u0000generic_pipe_buf_"
+  },
+  {
+   "off": "0x428b3c4",
+   "s": "er_file_splice_write\u0000__splice_from_pipe\u0000kernel_write\u0000nosteal_pipe_buf_ops\u0000generic_file_splice_read\u0000a"
+  },
+  {
+   "off": "0x428e70e",
+   "s": "ad_part\u0000__blkdev_reread_part\u0000invalidate_partition\u0000bdev_read_only\u0000set_disk_ro\u0000set_device_ro\u0000put_disk\u0000"
+  },
+  {
+   "off": "0x4294b08",
+   "s": "device_create\u0000get_cpu_device\u0000cpu_subsys\u0000firmware_kobj\u0000devm_free_pages\u0000devm_get_free_pages\u0000devm_kmemd"
+  },
+  {
+   "off": "0x4295ecf",
+   "s": "ory\u0000dma_declare_coherent_memory\u0000request_firmware_nowait\u0000release_firmware\u0000request_firmware_into_buf\u0000r"
+  },
+  {
+   "off": "0x4295ee7",
+   "s": "_memory\u0000request_firmware_nowait\u0000release_firmware\u0000request_firmware_into_buf\u0000request_firmware_direct\u0000r"
+  },
+  {
+   "off": "0x4295ef8",
+   "s": "irmware_nowait\u0000release_firmware\u0000request_firmware_into_buf\u0000request_firmware_direct\u0000request_firmware\u0000p"
+  }
+ ]
+}
