@@ -1,0 +1,20 @@
+{
+  "all_checks_passed": true,
+  "real_camera_blob_used": false,
+  "checks": [
+    "CLI single decode from a one-blob directory",
+    "CLI diff of two blobs",
+    "current Drive raw 0x450/file 0x4F8 and DOTLCD row labels",
+    "current Shutter Type raw 0x592/file 0x63A",
+    "current M shutter index raw 0x50A/file 0x5B2",
+    "IMAGE DISP raw 0x1F3 and serialized values 2/3",
+    "legacy mode0 high fields excluded from export",
+    "X-BACKUP0100 at header+8 and 0xA8 payload offset",
+    "raw payload input",
+    "named settings and two service-field diffs",
+    "unknown-byte diff and changed-byte accounting",
+    "record 0x4C signature and both flag candidates",
+    "0xF6D4 and 0x112D4 checksum variants"
+  ],
+  "note": "Synthetic markers verify decoder mechanics only. Real-camera verification is in 08_проверка_реальных.py and реальные_блобы.json."
+}

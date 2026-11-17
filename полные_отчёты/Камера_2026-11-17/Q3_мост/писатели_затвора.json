@@ -1,0 +1,23 @@
+{
+  "actual_shutter_src": {
+    "block0": [],
+    "block1": []
+  },
+  "speed_output_src": {
+    "block0": [],
+    "block1": [
+      {
+        "site": 46106252,
+        "insn": "2bf868c: ldr w1, [x0, #0xe2c]"
+      },
+      {
+        "site": 46148052,
+        "insn": "2c029d4: ldr w0, [x0, #0xe2c]"
+      },
+      {
+        "site": 46768376,
+        "insn": "2c9a0f8: ldr w5, [x0, #0xe2c]"
+      }
+    ]
+  }
+}

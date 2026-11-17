@@ -1,0 +1,466 @@
+{
+  "all_checks_passed": true,
+  "real_camera_blob_used": true,
+  "camera_accessed_by_this_script": false,
+  "diff": "02_CH_ES_8000_CONT → 02B_CH_MSES_16000_CONT_успех",
+  "layout_mode": "current",
+  "totals": {
+    "changed_bytes": 19,
+    "explained_changed_bytes": 19,
+    "unexplained_changed_bytes": 0,
+    "changed_ui_fields": 13,
+    "changed_service_fields": 2,
+    "ui_bytes": 16,
+    "service_bytes": 3
+  },
+  "changed_fields": [
+    {
+      "name": "UI_SETP_STILL_MENU_POS_TAB",
+      "kind": "UI_SETP",
+      "id": "0x9CD",
+      "category": "menu_navigation",
+      "raw_offset": 36,
+      "file_offset": 204,
+      "size": 4,
+      "old": 293,
+      "new": 282,
+      "new_labels": [],
+      "instruction_address": "0x12C64D4",
+      "changed_bytes": [
+        {
+          "raw_offset": 36,
+          "file_offset": 204,
+          "old": "0x25",
+          "new": "0x1A"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_STILL_MENU_POS_ITEM",
+      "kind": "UI_SETP",
+      "id": "0x9CE",
+      "category": "menu_navigation",
+      "raw_offset": 40,
+      "file_offset": 208,
+      "size": 4,
+      "old": 163,
+      "new": 221,
+      "new_labels": [],
+      "instruction_address": "0x12C64FC",
+      "changed_bytes": [
+        {
+          "raw_offset": 40,
+          "file_offset": 208,
+          "old": "0xA3",
+          "new": "0xDD"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_SETUP_MENU_POS_ITEM_1",
+      "kind": "UI_SETP",
+      "id": "0x9D1",
+      "category": "menu_navigation",
+      "raw_offset": 52,
+      "file_offset": 220,
+      "size": 4,
+      "old": 163,
+      "new": 240,
+      "new_labels": [],
+      "instruction_address": "0x12C6574",
+      "changed_bytes": [
+        {
+          "raw_offset": 52,
+          "file_offset": 220,
+          "old": "0xA3",
+          "new": "0xF0"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_SETUP_MENU_POS_ITEM_2",
+      "kind": "UI_SETP",
+      "id": "0x9D2",
+      "category": "menu_navigation",
+      "raw_offset": 56,
+      "file_offset": 224,
+      "size": 4,
+      "old": 335,
+      "new": 185,
+      "new_labels": [],
+      "instruction_address": "0x12C659C",
+      "changed_bytes": [
+        {
+          "raw_offset": 56,
+          "file_offset": 224,
+          "old": "0x4F",
+          "new": "0xB9"
+        },
+        {
+          "raw_offset": 57,
+          "file_offset": 225,
+          "old": "0x01",
+          "new": "0x00"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_SETTING_CHKSUM",
+      "kind": "UI_SETP",
+      "id": "0x9FA",
+      "category": "checksum",
+      "raw_offset": 60,
+      "file_offset": 228,
+      "size": 4,
+      "old": 74192,
+      "new": 74649,
+      "new_labels": [],
+      "instruction_address": "0x12C67EC",
+      "changed_bytes": [
+        {
+          "raw_offset": 60,
+          "file_offset": 228,
+          "old": "0xD0",
+          "new": "0x99"
+        },
+        {
+          "raw_offset": 61,
+          "file_offset": 229,
+          "old": "0x21",
+          "new": "0x23"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_DOTLCD_SHUTERSPEED_OUTPUT",
+      "kind": "UI_SETP",
+      "id": "0xAAB",
+      "category": "shutter_derivative",
+      "raw_offset": 228,
+      "file_offset": 396,
+      "size": 4,
+      "old": 800000,
+      "new": 1600000,
+      "new_labels": [],
+      "instruction_address": "0x12C83BC",
+      "changed_bytes": [
+        {
+          "raw_offset": 229,
+          "file_offset": 397,
+          "old": "0x35",
+          "new": "0x6A"
+        },
+        {
+          "raw_offset": 230,
+          "file_offset": 398,
+          "old": "0x0C",
+          "new": "0x18"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_DOTLCD_ISO_OUTPUT",
+      "kind": "UI_SETP",
+      "id": "0xAAF",
+      "category": "iso_display_output",
+      "raw_offset": 232,
+      "file_offset": 400,
+      "size": 4,
+      "old": 0,
+      "new": 125,
+      "new_labels": [
+        "ISO 125 (display output)"
+      ],
+      "instruction_address": "0x12C8434",
+      "changed_bytes": [
+        {
+          "raw_offset": 232,
+          "file_offset": 400,
+          "old": "0x00",
+          "new": "0x7D"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_DOTLCD_SHUTTERTYPE_OUTPUT",
+      "kind": "UI_SETP",
+      "id": "0xAB8",
+      "category": "actual_shutter_output",
+      "raw_offset": 256,
+      "file_offset": 424,
+      "size": 4,
+      "old": 3,
+      "new": 1,
+      "new_labels": [],
+      "instruction_address": "0x12C859C",
+      "changed_bytes": [
+        {
+          "raw_offset": 256,
+          "file_offset": 424,
+          "old": "0x03",
+          "new": "0x01"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_DOTLCD_SHUTTERTYPE",
+      "kind": "UI_SETP",
+      "id": "0xAC7",
+      "category": "shutter_type_dotlcd",
+      "raw_offset": 304,
+      "file_offset": 472,
+      "size": 4,
+      "old": 3,
+      "new": 2,
+      "new_labels": [
+        "MS+ES"
+      ],
+      "instruction_address": "0x12C87F4",
+      "changed_bytes": [
+        {
+          "raw_offset": 304,
+          "file_offset": 472,
+          "old": "0x03",
+          "new": "0x02"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_SHUTTER_SPEED_M",
+      "kind": "UI_SETP",
+      "id": "0x8A0",
+      "category": "shutter_current",
+      "raw_offset": 1290,
+      "file_offset": 1458,
+      "size": 1,
+      "old": 67,
+      "new": 70,
+      "new_labels": [
+        "1/16000 s"
+      ],
+      "instruction_address": "0x12C1F84",
+      "changed_bytes": [
+        {
+          "raw_offset": 1290,
+          "file_offset": 1458,
+          "old": "0x43",
+          "new": "0x46"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_SHUTTER_TYPE",
+      "kind": "UI_SETP",
+      "id": "0x827",
+      "category": "shutter_type_current",
+      "raw_offset": 1426,
+      "file_offset": 1594,
+      "size": 1,
+      "old": 3,
+      "new": 2,
+      "new_labels": [
+        "MS+ES"
+      ],
+      "instruction_address": "0x12C6074",
+      "changed_bytes": [
+        {
+          "raw_offset": 1426,
+          "file_offset": 1594,
+          "old": "0x03",
+          "new": "0x02"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_DOTLCD_EXTFLASHEMITTESTPERMIT",
+      "kind": "UI_SETP",
+      "id": "0xAA8",
+      "category": "flash_emit_test_permit",
+      "raw_offset": 1491,
+      "file_offset": 1659,
+      "size": 1,
+      "old": 1,
+      "new": 0,
+      "new_labels": [],
+      "instruction_address": "0x12C8344",
+      "changed_bytes": [
+        {
+          "raw_offset": 1491,
+          "file_offset": 1659,
+          "old": "0x01",
+          "new": "0x00"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_DOTLCD_SHUTTERSPEED",
+      "kind": "UI_SETP",
+      "id": "0xABB",
+      "category": "shutter_derivative",
+      "raw_offset": 1497,
+      "file_offset": 1665,
+      "size": 1,
+      "old": 69,
+      "new": 72,
+      "new_labels": [
+        "1/16000 s (display index)"
+      ],
+      "instruction_address": "0x12C8614",
+      "changed_bytes": [
+        {
+          "raw_offset": 1497,
+          "file_offset": 1665,
+          "old": "0x45",
+          "new": "0x48"
+        }
+      ]
+    },
+    {
+      "name": "SERVICE_SHUTCOUNT_CANDIDATE",
+      "kind": "service_metadata",
+      "id": "0x172 UI_SETP_SHUTCOUNT",
+      "category": "probable_shutter_count",
+      "status": "probable_monotonic_service_counter_not_statically_bound",
+      "reason": "Real 01/02/02B/03 values 7429/8611/9158/9586 increase with shooting; exact UI_SETP binding remains a hypothesis.",
+      "raw_offset": 62996,
+      "file_offset": 63164,
+      "size": 2,
+      "old": 8611,
+      "new": 9158,
+      "changed_bytes": [
+        {
+          "raw_offset": 62996,
+          "file_offset": 63164,
+          "old": "0xA3",
+          "new": "0xC6"
+        },
+        {
+          "raw_offset": 62997,
+          "file_offset": 63165,
+          "old": "0x21",
+          "new": "0x23"
+        }
+      ]
+    },
+    {
+      "name": "SERVICE_VOLATILE_U16_F67C",
+      "kind": "service_metadata",
+      "id": null,
+      "category": "unidentified_volatile_metadata",
+      "status": "unidentified_volatile_service_metadata",
+      "reason": "Real 01/02/02B/03 values 64776/72/170/70 change with shooting and differ even at repeated 1/8000; outside the first checksum span ending at raw 0xF66D.",
+      "raw_offset": 63100,
+      "file_offset": 63268,
+      "size": 2,
+      "old": 72,
+      "new": 170,
+      "changed_bytes": [
+        {
+          "raw_offset": 63100,
+          "file_offset": 63268,
+          "old": "0x48",
+          "new": "0xAA"
+        }
+      ]
+    }
+  ],
+  "shutter_type_calibration": {
+    "current_menu": {
+      "id": "0x827",
+      "file": "0x63A",
+      "raw": "0x592",
+      "change": "3=EF → 2=MS+ES"
+    },
+    "dotlcd_menu": {
+      "id": "0xAC7",
+      "file": "0x1D8",
+      "raw": "0x130",
+      "change": "3=EF → 2=MS+ES"
+    },
+    "actual_output": {
+      "id": "0xAB8",
+      "file": "0x1A8",
+      "raw": "0x100",
+      "change": "3→1",
+      "meaning": "1 occurs for MS+ES at 1/16000 and ES at 1/8000; consistent with actual electronic shutter"
+    },
+    "legacy_custom_copy": {
+      "file": "0xF91D",
+      "raw": "0xF875",
+      "value_in_both": 1,
+      "warning": "This is not the current shutter type and must not be used for calibration."
+    }
+  },
+  "field_explanations": {
+    "0x190": "UI_SETP_DOTLCD_ISO_OUTPUT u32: 0→125, i.e. ISO 125 display output; not exposure time or MOVDC. Manual/auto cause is not established by these blobs.",
+    "0x67B": "UI_SETP_DOTLCD_EXTFLASHEMITTESTPERMIT u8: 1→0; values 0/1/0/1 across 01/02/02B/03, so not a stable MS+ES or MOVDC marker. Exact cause requires flash-specific controls."
+  },
+  "checksum_proof": {
+    "old": 74192,
+    "new": 74649,
+    "delta": 457,
+    "sum_of_other_byte_deltas": 457
+  },
+  "series": {
+    "01": {
+      "shutter_type": 3,
+      "shutter_type_labels": [
+        "EF"
+      ],
+      "dotlcd_shutter_type": 3,
+      "actual_shutter_output": 3,
+      "iso_output": 0,
+      "flash_emit_test_permit": 0,
+      "shutter_speed_m": 38,
+      "shutter_denominator_x100": 2500,
+      "service_f614": 7429,
+      "service_f67c": 64776
+    },
+    "02": {
+      "shutter_type": 3,
+      "shutter_type_labels": [
+        "EF"
+      ],
+      "dotlcd_shutter_type": 3,
+      "actual_shutter_output": 3,
+      "iso_output": 0,
+      "flash_emit_test_permit": 1,
+      "shutter_speed_m": 67,
+      "shutter_denominator_x100": 800000,
+      "service_f614": 8611,
+      "service_f67c": 72
+    },
+    "02B": {
+      "shutter_type": 2,
+      "shutter_type_labels": [
+        "MS+ES"
+      ],
+      "dotlcd_shutter_type": 2,
+      "actual_shutter_output": 1,
+      "iso_output": 125,
+      "flash_emit_test_permit": 0,
+      "shutter_speed_m": 70,
+      "shutter_denominator_x100": 1600000,
+      "service_f614": 9158,
+      "service_f67c": 170
+    },
+    "03": {
+      "shutter_type": 1,
+      "shutter_type_labels": [
+        "ES"
+      ],
+      "dotlcd_shutter_type": 1,
+      "actual_shutter_output": 1,
+      "iso_output": 0,
+      "flash_emit_test_permit": 1,
+      "shutter_speed_m": 67,
+      "shutter_denominator_x100": 800000,
+      "service_f614": 9586,
+      "service_f67c": 70
+    }
+  },
+  "record_0x4c": {
+    "full_signature_in_both_blobs": false,
+    "unexplained_changed_bytes": 0
+  }
+}

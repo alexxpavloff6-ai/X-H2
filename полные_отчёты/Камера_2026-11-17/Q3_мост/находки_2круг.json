@@ -1,0 +1,95 @@
+{
+  "round": 2,
+  "task": "Q3 2-й круг: runtime-база сервисного модуля и обработчик set-записи 0x4C (источник payload+0x64)",
+  "firmware": "X-H2 5.30",
+  "date": "2026-11-17",
+  "method": "fujimod (streams.json) + префикс DAT + статический анализ блоков. Без камеры/отладочного канала.",
+  "levels": {"Д": "доказано кодом/таблицами", "К": "сильный кандидат (семантика)", "Г": "гипотеза"},
+  "short_answer": "Сервисный модуль — boot-loader (raw, DAT 0x60274 -> VA 0x40000, размер 0x1E340), НЕ блок 2. Мост настройки->флаг прослежен полностью: построитель параметров 0x2FE38E4 -> функция флага 0x2FE35D4 -> оценщик 0x30256EC/0x30308A0 -> табличный lookup 0x2F85F3C по таблице 0x3456B20. Флаг=1 ТОЛЬКО при shutter_type==1 (ES) и индексе выдержки >=6 (быстрая, ~1/8000 и короче), при гейте fieldA==1 (режим CH+CONTINUOUS). Payload записи 0x4C пишется через set-data API 0x14CF124 (86 вызовов id=0x4C), полный payload — 0x311B6B8.",
+  "service_module_base": {
+    "level": "Д",
+    "correction_of_round1": "резолвер 0x5460C/диспетчер 0x4A458 находятся в boot-loader модуле @ VA 0x40000, а не в блоке 2 (база 0 блока 2 давала посторонний код)",
+    "loader_dat_offset": "0x60274",
+    "loader_runtime_va": "0x40000",
+    "loader_size": "0x1E340",
+    "loader_entry": "0x58420",
+    "mapping": "VA = DAT_offset - 0x20274",
+    "evidence": [
+      "fujimod data/xt5-431/streams.json: loader-00060274 address=262144(0x40000) size=123520 encoding=raw; блоки 2/3 не в boot-секциях (verification=[])",
+      "DAT X-H2 заголовок loader @0x60274: +0x08=0x40000, +0x10=0x1E340, +0x18=0x58420",
+      "DAT компонентная таблица 0x1A0274: +0x58=0x40000,+0x60=0x1E340,+0x68=0x5E340; 0x1A0484: id3=M4 size 0x31A80 flash 0x1C0000, блок2 size 0xE30000 @0x1A057C",
+      "прологи сервисов по mapping: resolver 0x5460C->DAT 0x74880, dispatcher 0x4A458->0x6A6CC, logger 0x57670->0x778E4, scalar 0x50D94->0x71008"
+    ],
+    "helper": "q3common.loader() (base 0x40000)"
+  },
+  "record_store_loader": {
+    "level": "Д",
+    "resolver": "0x5460C -> worker 0x54354",
+    "get_table": "0x63170[id-1] (record-объекты stride 0x38 @ 0x99DB0); obj+0x30->+0x18->+0x1D0 = дескриптор",
+    "dispatcher_type_lt8": "0x4A458, таблица подписок 0x6CF80[id-1] (stride 0xA8 @ 0x9D460), handler 0x4B9B0",
+    "dispatcher_type_lt2": "0x4A588, handler регистрации 0x4BBD4",
+    "set_entry_create": "0x4BC90 (если записи нет -> 0x4BBD4)",
+    "set_worker": "0x4C090 (дескриптор в 0x9FE68[(id-1)*0x40])",
+    "update_entry": "0x4C148",
+    "counts": {"get_count": "0x5E2F8", "sub_count": "0x5E2F4"}
+  },
+  "bridge_settings_to_flag": {
+    "level": "Д",
+    "chain": [
+      "per-mode struct 0x229E3A0 + index*0x2748 (настройки съёмки)",
+      "построитель параметров 0x2FE38E4 (block1): локальный флаг sp+0x184 = результат 0x2FE35D4 (@0x2FE3A9C); copy-out @0x2FE3DD8 out1<-sp+0x120 (0xA8) => payload+0x64 = out1+0x64",
+      "0x311B6B8 (block1): пишет весь payload записи 0x4C size 0x158 через set-data API 0x14CF124; src1=x0 (0xA8 байт, флаг +0x64); команды 0x1636/0x1637 (врапперы 0x311BA94/0x311BAB0); вызывающие 0x2FD8648/0x2FE3F10/0x2FE7DA0",
+      "set-data API 0x14CF124 (block0) -> loader set-путь -> хранилище 0x4C",
+      "get_record(0x4C) 0x31053F8 -> memcpy 0x3105440 -> apply 0x31085A8/0x3108AA8 -> state+0x43C = 0x4C33F14"
+    ],
+    "record_init": "0x311B7C4 (set-враппер 0x14CEDAC id=0x4C @0x311B7E8, callback 0x3105390), вызов из 0x2F86024 @0x2F860F0",
+    "record_update_handler": "0x311B848 (копирует поля payload в state)",
+    "set_data_api": "0x14CF124",
+    "set_calls_id_0x4C_count": 86,
+    "set_commands": "0x1633..0x16A1 (полный payload 0x158 — команда 0x1636/0x1637)"
+  },
+  "flag_function": {
+    "level": "Д",
+    "va": "0x2FE35D4",
+    "logic": "ctx=0x4D35708, flags=[0x4D35710]; если bit12(0x1000) -> 0; если 0x2FE18DC()=flags&0x4010 !=0 -> 0; если 0x2FD8DE0()=bit13 !=0 -> 0; иначе флаг=0x30256EC([0x4DBB400])",
+    "gates": {"bit12": "0x1000", "gateA_0x2FE18DC": "flags & 0x4010 (биты 4,14)", "gateB_0x2FD8DE0": "flags bit13 (0x2000)"}
+  },
+  "condition_evaluator": {
+    "level": "Д",
+    "0x30256EC": "6 геттеров -> 0x30308A0; флаг=(результат!=0)",
+    "getters": {
+      "getter0_0x154CEC8": "fieldA=[struct+0xCC], должен ==1 (гейт режима)",
+      "getter1_0x3030A18": "тип затвора (0/1/2/3)",
+      "getter2_0x154CF6C": "fieldB=[struct+0xD4] u8 = индекс выдержки",
+      "getter3_0x155B8EC": "fieldC (0x1563D20)",
+      "getter4_0x30246D8": "(drive-getter 0x3024664 ∈ {3,4}) = серийный привод CH/CL",
+      "getter5_0x1552658": "fieldD=[struct+0x1CC]"
+    },
+    "0x30308A0": "при getter0==1 -> 0x2F84C48(fieldB, shutter_type,...); флаг=(==1)",
+    "0x2F84C48": "флаг=(0x2F85F3C == 2)",
+    "0x2F85F3C": "table_0x3456B20[6*min(fieldB,40) + shutter_type] (u32)"
+  },
+  "condition_table": {
+    "level": "Д",
+    "va": "0x3456B20 (block1)",
+    "shape": "41 строка (speed_index 0..40) x 6 колонок (shutter_type 0..5), u32",
+    "cells_equal_2": "shutter_type==1 AND speed_index in [6..40] (35 ячеек)",
+    "other": "shutter_type==1 speed 0..5 -> 0; shutter_type!=1 -> 0 или 1 (никогда 2)",
+    "conclusion": "флаг=1 ⟺ shutter_type==1 И speed_index>=6, при гейте fieldA==1 и сброшенных битах 12/13/14/4 [0x4D35710]"
+  },
+  "semantics": {
+    "level": "К",
+    "shutter_type_1": "электронный затвор ES (фактический)",
+    "speed_index_ge_6": "выдержка 1/8000 и короче (порог индекса 6; точная привязка индекса к выдержке — К)",
+    "fieldA_gate": "режим CH + IMAGE DISP CONTINUOUS (писатель поля struct+0xCC не прослежен — К)",
+    "drive_getter_3_4": "серийный привод CH/CL",
+    "matches_fuji_defect": "CH + MS+ES (фактический ES) + <=1/8000 + IMAGE DISP CONTINUOUS -> guard-флаг=1",
+    "note_5_30_vs_5_33": "в 5.30 флаг вычисляется и пишется в запись 0x4C, но MOVDC не использует его как guard (stride наследуется); исправление (принудительный stride из геометрии) — в 5.33"
+  },
+  "remaining": [
+    "Точная привязка speed_index к выдержке (таблица кодирования выдержек) — подтвердить порог 6 = 1/8000.",
+    "Писатель поля fieldA (struct+0xCC) и выбор per-mode index — подтвердить гейт CH+CONTINUOUS статически.",
+    "Семантика колонок shutter_type 0..5 (0=MS,1=ES,2=EF,...) — подтвердить по геттеру 0x3030A18/свойству SHUTTER_TYPE."
+  ],
+  "scripts_round2": ["21_компоненты_loader.py", "22_резолвер_диспетчер.py", "23_worker_обработчики.py", "24_set_путь.py", "25_set_врапперы.py", "26_построитель_0x4C.py", "27_set_data_0x4C.py", "28_полный_payload.py", "29_источник_src1.py", "30_построитель_параметров.py", "31_функция_флага.py", "32_условие_дефекта.py", "33_оценщик_условия.py", "34_финальный_оценщик.py", "35_глубинный_оценщик.py", "36_таблица_условия.py"]
+}

@@ -1,0 +1,104 @@
+{
+  "task": "Q3: мост настройки CH/ES/1-8000/CONTINUOUS -> guard-флаг MOVDC (запись 0x4C, поле +0x74)",
+  "firmware": "X-H2 5.30",
+  "date": "2026-11-17",
+  "method": "Только статический анализ блоков 0/1/2 + префикса DAT и Unicorn. Камера не использовалась.",
+  "levels": {"Д": "доказано кодом/VM", "К": "сильный кандидат", "Г": "гипотеза"},
+  "short_answer": "В проанализированном коде 5.30 (блоки 0-1, частично 2) НЕТ кода, вычисляющего guard-флаг из настроек. Флаг MOVDC 0x4C33F14 — чистая копия поля payload+0x64 сервисной записи 0x4C (VM-доказано). Писатель записи 0x4C находится в сервисном модуле за резолвером 0x5460C/диспетчером 0x4A458, runtime-база которого не установлена по имеющимся блокам; это доказанная граница.",
+  "flag_chain_5_30": {
+    "level": "Д",
+    "record_getter": "0x14CF354 (block0)",
+    "get_record_id_4c_call": "0x31053F8 (block1), mov w0,#0x4C @ 0x31053F4",
+    "memcpy_pending_current": "0x3105440 (0x168 байт)",
+    "apply_flag_writes": ["0x31085A8", "0x3108AA8"],
+    "flag_ldr": ["0x31085A4", "0x3108AA4"],
+    "job": "0x4C3F088",
+    "pending_container": "0x4C3F090",
+    "pending_payload": "0x4C3F0A0",
+    "current_container": "0x4C3F1F8",
+    "current_payload": "0x4C3F208",
+    "flag_field": "container+0x74 = payload+0x64 (u32 LE)",
+    "pending_flag": "0x4C3F104",
+    "current_flag": "0x4C3F26C",
+    "state_base": "0x4C33AD8",
+    "state_flag": "0x4C33F14 (state+0x43C)",
+    "record_change_dispatch_loop": "0x3105390 (реестр обработчиков 0x3876208, индекс state+0x1C)",
+    "other_apply_functions": ["0x3105468", "0x311A1EC", "0x311A2B8"]
+  },
+  "rpc_wrapper_is_subscription_not_writer": {
+    "level": "Д",
+    "wrapper": "0x14CF45C (block0)",
+    "request": "{type=2, callback=x2 (code ptr), id=w0, id}; результат пишется в *x3",
+    "dispatcher_call": "0x14CF4C8 -> 0x4A458",
+    "callers_count": 11,
+    "caller_ids_observed": ["0x3E8 (0x14DECFC/0x14DED28)", "6 (0x14E1FE4)", "0x1E (0x14E2478)", "прочие в 0x13E0AD4/0x13E108C/0x140F2E0"],
+    "id_0x4C_present": false,
+    "conclusion": "Это асинхронная подписка/колбэк на запись, не сеттер. Запись 0x4C через него не публикуется."
+  },
+  "vm_flag_propagation": {
+    "level": "Д",
+    "script": "18_vm_флаг.py",
+    "result_file": "vm_флаг.json",
+    "memcpy": "0x3105440",
+    "flag_ldr_str": ["0x31085A4", "0x31085A8"],
+    "inputs": ["0x0", "0x1", "0x2", "0xFFFFFFFF"],
+    "all_pure_copy": true,
+    "conclusion": "pending+0x74 -> current+0x74 -> state+0x43C переносится без изменения и без участия настроек. В apply-пути флаг не вычисляется."
+  },
+  "property_system": {
+    "level": "Д",
+    "set_api": "0x11335C4 -> 0x12AA680 (банк UI-настроек)",
+    "get_api": "0x1135930 -> 0x12E67AC; также 0x11335EC -> 0x12D6BC8",
+    "bank_getter_map": "0x12AA788 (карта K2)",
+    "property_change_dispatcher": "0x2C88E98 (block1), jump-table 0x33A77E8, диапазон id 0xB..0xD63 (3417)",
+    "dotlcd_sync_function": "0x2BD5114 (block1): копирует внутреннее состояние в DOTLCD-свойства",
+    "actual_shutter_source": "структура 0x2299498 + 0x19AC -> свойство 0xAB8 (DOTLCD_SHUTTERTYPE_OUTPUT)",
+    "speed_output_source": "структура 0x2299498 + 0x1994 -> свойство 0xAAB",
+    "actual_shutter_writer": "Не найден по абсолютному адресу в блоках 0/1: поле +0x19AC пишется через указатель на структуру (К). Абсолютных ADRP+ADD+STR к 0x229AE34 нет."
+  },
+  "defect_condition_search": {
+    "level": "Д (отрицательный результат)",
+    "movz_scenario_id_sites": 1929,
+    "functions_with_multiple_ids": {
+      "block0_0x113D9E0": "generic-хелпер чтения свойств в структуру через колбэк (CONTINUOUS/REC_VIEW/SHUTTER_TYPE/SPEED); вызывается 150+ раз, не специфичен для записи 0x4C",
+      "block0_0x12DA08C": "bank-трансформация (backup/restore), итерация многих id",
+      "block1_0x2BD5114": "DOTLCD-синхронизация output-свойств",
+      "block1_0x2C54750": "меню-инвалидация (sentinel 0x1AFFFFFF)",
+      "block1_0x2C8EDC8": "меню-обработчик (свойства 0x63E/0x63F/0x62F/0x632)"
+    },
+    "dedicated_3factor_get_api_function": "Нет (кроме generic-хелпера 0x113D9E0). Выделенной функции, одновременно проверяющей CH + электронный затвор + CONTINUOUS-показ через get-API, в блоках 0/1 не обнаружено.",
+    "note": "Условие дефекта (CH + фактический ES + <=1/8000 + IMAGE DISP CONTINUOUS) в 5.30 не реализовано как guard (K2: MOVDC наследует stride без guard 5.33). Решение формируется в сервисе записи 0x4C / shooting-control через указатели."
+  },
+  "service_module_boundary": {
+    "level": "Д для границы, Г для конкретного писателя",
+    "service_vas": {"resolver": "0x5460C", "dispatcher": "0x4A458", "logger": "0x57670", "scalar_resolver": "0x50D94"},
+    "problem": "fwcommon задаёт блоку 2 базу 0, но по этим VA в блоке 2 лежит посторонний код (0x5460C — экспозиционные вычисления; 0x4A458 — середина функции проверки состояния сервиса). Префикс DAT — hardware-init (регистры 0xFF90xxxx), код только в 0x0..0x3FFFF и 0x60000..0x7FFFF; по VA 0x5460C/0x4A458 — erased 0xFF.",
+    "hypotheses_tested": [
+      "block2 base=0: неверный код в целях вызовов",
+      "block2 base B2 in [0..0x54000] шаг 0x1000: ни один не даёт прологи resolver+dispatcher+logger+scalar одновременно (лучший 1/4)",
+      "prefix region1 base B in [0x10000..0x54000]: лучший 1/4, код hardware-init",
+      "prefix region2 (off=VA+0x20000): середины функций, не входы"
+    ],
+    "conclusion": "Сервисный модуль хранилища записей (писатель 0x4C) не картируется однозначно имеющимися блоками. Прямых записей в pending+0x74/current+0x74 в блоках 0-2 нет (K2 + scan_address). Писатель — за резолвером/диспетчером, вне проанализированного кода.",
+    "next_step": "Определить runtime-базу сервисного модуля (по карте загрузки ThreadX/линковке) либо рантайм-watchpoint на 0x4C3F104/0x4C3F26C/0x4C33F14 и перехват 0x4A458 с id=0x4C (требует камеру/отладочный канал — вне Q3)."
+  },
+  "checked_list": [
+    "Все прямые BL к геттеру 0x14CF354 (97), RPC-врапперу 0x14CF45C (11), скаляру 0x14CF404 (4), диспетчеру 0x4A458 (3)",
+    "Аргументы id всех 11 вызовов RPC-враппера — 0x4C отсутствует",
+    "Обращения к pending/current/state/флаг (scan_address + adrp_refs): писателей payload+0x64 нет",
+    "movz-иммедиаты UI_SETP сценария в блоках 0/1 (1929 сайтов), группировка по функциям",
+    "get-API вызовы с id сценария, поиск >=3 факторов в одной функции",
+    "Писатели структуры 0x2299498 (источник фактического затвора) по ADRP+ADD",
+    "Обращения к job 0x4C3F088 / state 0x4C33AD8 / params-контейнерам",
+    "Дизасм построителя params 0x3105390, apply 0x3105468/0x311A1EC/0x311A2B8, DOTLCD-sync 0x2BD5114, property-dispatcher 0x2C88E98",
+    "База сервисного модуля: block2 base-скан, prefix region1/region2",
+    "Unicorn: memcpy 0x3105440 + apply-запись флага для 4 входов"
+  ],
+  "scripts": [
+    "q3common.py", "01_разведка_API.py", "02_врапперы.py", "03_резолвер.py", "04_база_блока2.py",
+    "05_префикс_сервисы.py", "06_диагностика_адресов.py", "07_подбор_базы.py", "08_база_префикса.py",
+    "09_rpc_аргументы.py", "10_гипотеза_регион2.py", "11_свойства_сценария.py", "12_кандидаты_условия.py",
+    "13_писатели_затвора.py", "14_property_api.py", "15_писатели_факт_затвора.py", "16_params_писатели.py",
+    "17_структура_затвора.py", "18_vm_флаг.py", "19_условие_дефекта.py", "20_кандидаты_2.py"
+  ]
+}

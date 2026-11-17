@@ -1,0 +1,280 @@
+{
+  "firmware": "xh2-530",
+  "labels": [
+    "01_база",
+    "02_CH_ES_8000_CONT",
+    "02B_CH_MSES_16000_CONT_успех",
+    "02C_CH_ES_8000_CONT",
+    "03_S",
+    "04_MS",
+    "04_MS_CH",
+    "05_1-250",
+    "06_DISP_OFF",
+    "07_база_повтор",
+    "07B_база_повтор",
+    "07C_база_повтор"
+  ],
+  "export": {
+    "memcpy_bank": "0x11DA714 (0x12768 bytes, settings_bank 0x2628A88 -> destination_bank 0x2578A18)",
+    "transform_dispatcher": "0x12E5AD4",
+    "export_wrapper": "0x12E5B44",
+    "addressing": "file_offset = bank_offset + 0xA0 (main segment); transformations write at destination_bank offset == bank_offset",
+    "scenario_fields_rewritten_during_export": [
+      {
+        "site": "0x12DE3A4",
+        "name": "UI_SETP_REC_VIEW",
+        "bank_offset": "0x1FB",
+        "file_offset": "0x29B"
+      },
+      {
+        "site": "0x12DFE44",
+        "name": "UI_SETP_REC_VIEW",
+        "bank_offset": "0x1FB",
+        "file_offset": "0x29B"
+      }
+    ],
+    "note": "DOTLCD-поля не перезаписываются при экспорте — в блобе живые значения банка; перезаписывается только REC_VIEW."
+  },
+  "setter_stores": {
+    "UI_SETP_DOTLCD_SHUTTERTYPE_OUTPUT": [
+      {
+        "store": "0x1272DD8",
+        "instruction": "str w19, [x0, #0x108]"
+      }
+    ],
+    "UI_SETP_DOTLCD_ISO_OUTPUT": [
+      {
+        "store": "0x1272640",
+        "instruction": "str w19, [x0, #0xf0]"
+      }
+    ],
+    "UI_SETP_DOTLCD_EXTFLASHEMITTESTPERMIT": [
+      {
+        "store": "0x120543C",
+        "instruction": "strb w19, [x0, #0x5db]"
+      },
+      {
+        "store": "0x1272130",
+        "instruction": "strb w19, [x0, #0x5db]"
+      }
+    ]
+  },
+  "constant_settings_proof": {
+    "ISO": {
+      "fields": {
+        "UI_SETP_ISO_PSAM": {
+          "values": [
+            38,
+            38,
+            38,
+            38,
+            38,
+            38,
+            38,
+            38,
+            38,
+            38,
+            38,
+            38
+          ],
+          "constant": true
+        },
+        "UI_SETP_ISOAUTO_SET_BASE_PSAM": {
+          "values": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "constant": true
+        },
+        "UI_SETP_DOTLCD_ISO_OUTPUT": {
+          "values": [
+            0,
+            0,
+            125,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "constant": false
+        }
+      },
+      "output": "UI_SETP_DOTLCD_ISO_OUTPUT",
+      "settings_all_constant": true,
+      "output_varies": true,
+      "conclusion": "вычисляемый display-выход (настройки постоянны, выход меняется)"
+    },
+    "FLASH": {
+      "fields": {
+        "UI_SETP_EXT_FLASH": {
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "constant": true
+        },
+        "UI_SETP_BUILT_IN_FLASH": {
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "constant": true
+        },
+        "UI_SETP_DOTLCD_EXTFLASHEMITTESTPERMIT": {
+          "values": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "constant": false
+        }
+      },
+      "output": "UI_SETP_DOTLCD_EXTFLASHEMITTESTPERMIT",
+      "settings_all_constant": true,
+      "output_varies": true,
+      "conclusion": "вычисляемый display-выход (настройки постоянны, выход меняется)"
+    }
+  },
+  "shutter_type_resolution": [
+    {
+      "label": "01_база",
+      "menu": 3,
+      "mirror": 3,
+      "actual_output": 3,
+      "speed_denominator_x100": 2500,
+      "computed": false
+    },
+    {
+      "label": "02_CH_ES_8000_CONT",
+      "menu": 3,
+      "mirror": 3,
+      "actual_output": 3,
+      "speed_denominator_x100": 800000,
+      "computed": false
+    },
+    {
+      "label": "02B_CH_MSES_16000_CONT_успех",
+      "menu": 2,
+      "mirror": 2,
+      "actual_output": 1,
+      "speed_denominator_x100": 1600000,
+      "computed": true
+    },
+    {
+      "label": "02C_CH_ES_8000_CONT",
+      "menu": 1,
+      "mirror": 1,
+      "actual_output": 1,
+      "speed_denominator_x100": 800000,
+      "computed": false
+    },
+    {
+      "label": "03_S",
+      "menu": 1,
+      "mirror": 1,
+      "actual_output": 1,
+      "speed_denominator_x100": 800000,
+      "computed": false
+    },
+    {
+      "label": "04_MS",
+      "menu": 0,
+      "mirror": 0,
+      "actual_output": 0,
+      "speed_denominator_x100": 800000,
+      "computed": false
+    },
+    {
+      "label": "04_MS_CH",
+      "menu": 0,
+      "mirror": 0,
+      "actual_output": 0,
+      "speed_denominator_x100": 800000,
+      "computed": false
+    },
+    {
+      "label": "05_1-250",
+      "menu": 1,
+      "mirror": 1,
+      "actual_output": 1,
+      "speed_denominator_x100": 25000,
+      "computed": false
+    },
+    {
+      "label": "06_DISP_OFF",
+      "menu": 1,
+      "mirror": 1,
+      "actual_output": 1,
+      "speed_denominator_x100": 800000,
+      "computed": false
+    },
+    {
+      "label": "07_база_повтор",
+      "menu": 1,
+      "mirror": 1,
+      "actual_output": 1,
+      "speed_denominator_x100": 800000,
+      "computed": false
+    },
+    {
+      "label": "07B_база_повтор",
+      "menu": 3,
+      "mirror": 1,
+      "actual_output": 1,
+      "speed_denominator_x100": 800000,
+      "computed": true
+    },
+    {
+      "label": "07C_база_повтор",
+      "menu": 3,
+      "mirror": 3,
+      "actual_output": 3,
+      "speed_denominator_x100": 2500,
+      "computed": false
+    }
+  ]
+}

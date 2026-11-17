@@ -1,0 +1,551 @@
+{
+  "firmware": "X-H2 5.30",
+  "property_list": {
+    "address": "0x32AEBA0",
+    "count": 278
+  },
+  "settings": [
+    {
+      "name": "DRIVE MODE",
+      "ui_setp": {
+        "id": "0x858",
+        "name": "UI_SETP_CONTINUOUS"
+      },
+      "usb_code": "0xD201",
+      "usb_advertised": true,
+      "values": {
+        "S": {
+          "ui_row": 0,
+          "ui_name": "UI_CONTINUOUS_OFF",
+          "usb": "0x0004"
+        },
+        "CH_HIGH_SPEED_BURST": {
+          "ui_row": 21,
+          "ui_name": "UI_CONTINUOUS_ON_SPEED_H",
+          "usb": "0x0002"
+        },
+        "CL_LOW_SPEED_BURST": {
+          "ui_row": 23,
+          "ui_name": "UI_CONTINUOUS_ON_SPEED_L",
+          "usb": "0x0003"
+        }
+      },
+      "proof": {
+        "setting_id": "0x858",
+        "table": "0x17572a0",
+        "rows": [
+          {
+            "row": 0,
+            "values": [
+              "0x0",
+              "0x7ffffffe",
+              "0x0",
+              "0x4"
+            ]
+          },
+          {
+            "row": 1,
+            "values": [
+              "0x1",
+              "0x7ffffffe",
+              "0x1",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "0xe",
+              "0x7ffffffe",
+              "0x4",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "0xf",
+              "0x7ffffffe",
+              "0xd",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "0x6",
+              "0x7ffffffe",
+              "0x7",
+              "0xe"
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "0x4",
+              "0x7ffffffe",
+              "0x6",
+              "0xc"
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "0x2",
+              "0x7ffffffe",
+              "0x5",
+              "0xa"
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "0x3",
+              "0x7ffffffe",
+              "0x9",
+              "0xb"
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "0x12",
+              "0x7ffffffe",
+              "0xb",
+              "0xf"
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "0x5",
+              "0x7ffffffe",
+              "0xa",
+              "0xd"
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "0x10",
+              "0x7ffffffe",
+              "0x8",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x2",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "0xc",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x5"
+            ]
+          },
+          {
+            "row": 14,
+            "values": [
+              "0xb",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7"
+            ]
+          },
+          {
+            "row": 15,
+            "values": [
+              "0x8",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 16,
+            "values": [
+              "0x11",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 17,
+            "values": [
+              "0x7",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 18,
+            "values": [
+              "0xa",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 19,
+            "values": [
+              "0x9",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x9"
+            ]
+          },
+          {
+            "row": 20,
+            "values": [
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 21,
+            "values": [
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x2"
+            ]
+          },
+          {
+            "row": 22,
+            "values": [
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 23,
+            "values": [
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x3"
+            ]
+          },
+          {
+            "row": 24,
+            "values": [
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 25,
+            "values": [
+              "0x13",
+              "0x7ffffffe",
+              "0xc",
+              "0x10"
+            ]
+          },
+          {
+            "row": 26,
+            "values": [
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 27,
+            "values": [
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 28,
+            "values": [
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe"
+            ]
+          }
+        ]
+      },
+      "note": "The published dictionary maps only bracketing submodes to D201; the complete UI_SETP_CONTINUOUS table proves that D201 is the whole drive property."
+    },
+    {
+      "name": "SHUTTER TYPE",
+      "ui_setp": {
+        "id": "0x827",
+        "name": "UI_SETP_SHUTTER_TYPE"
+      },
+      "usb_code": "0xD03C",
+      "usb_advertised": false,
+      "values": {
+        "MS": {
+          "ui_row": 0,
+          "ui_name": "UI_SHUTTER_TYPE_MECHA",
+          "usb": null
+        },
+        "ES": {
+          "ui_row": 1,
+          "ui_name": "UI_SHUTTER_TYPE_ELE",
+          "usb": null
+        },
+        "EF": {
+          "ui_row": 2,
+          "ui_name": "UI_SHUTTER_TYPE_SME",
+          "usb": null
+        },
+        "MS+ES": {
+          "ui_row": 3,
+          "ui_name": "UI_SHUTTER_TYPE_AUTO",
+          "usb": null
+        },
+        "EF+MS": {
+          "ui_row": 4,
+          "ui_name": "UI_SHUTTER_TYPE_SME_MECHA",
+          "usb": null
+        },
+        "EF+MS+ES": {
+          "ui_row": 5,
+          "ui_name": "UI_SHUTTER_TYPE_SME_MECHA_ELE",
+          "usb": null
+        }
+      },
+      "proof": {
+        "setting_id": "0x827",
+        "table": "0x176d340",
+        "rows": [
+          {
+            "row": 0,
+            "values": [
+              "0x0",
+              "0x7ffffffe",
+              "0x0",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 1,
+            "values": [
+              "0x1",
+              "0x7ffffffe",
+              "0x1",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "0x3",
+              "0x7ffffffe",
+              "0x3",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "0x2",
+              "0x7ffffffe",
+              "0x2",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "0x4",
+              "0x7ffffffe",
+              "0x4",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "0x5",
+              "0x7ffffffe",
+              "0x5",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "0x6",
+              "0x7ffffffe",
+              "0x7ffffffe",
+              "0x7ffffffe"
+            ]
+          }
+        ]
+      },
+      "note": "D03C is named ShutterType by the X-T5 SDK plugin and occurs in the generic registry at 0x3443048, but is absent from the X-H2 5.30 PTP descriptor list and has no MOVZ handler in block1. USB values must not be invented; the owner must verify the menu."
+    },
+    {
+      "name": "SHUTTER SPEED",
+      "ui_setp": {
+        "id": "0x89E",
+        "name": "UI_SETP_SHUTTER_SPEED"
+      },
+      "usb_ui_setp": {
+        "id": "0x991",
+        "name": "UI_SETP_PC_EXPOSURETIME"
+      },
+      "usb_code": "0x500D",
+      "usb_advertised": true,
+      "values": {
+        "1/8000": {
+          "usb": "125",
+          "units": "microseconds",
+          "datatype": "UINT32"
+        },
+        "1/250": {
+          "usb": "4000",
+          "units": "microseconds",
+          "datatype": "UINT32"
+        }
+      },
+      "proof": {
+        "descriptor_record": "0x32B6C14",
+        "descriptor_ui_id": "0x991",
+        "table": "0x32A9EF0",
+        "row": [
+          3100,
+          32000,
+          55
+        ],
+        "scaled_value": "0x7D00 / 256 = 125",
+        "descriptor_function": "0x2C02A0C"
+      },
+      "note": "0x500D is the advertised UINT32 exposure time in microseconds; the UI menu setting and its PTP bridge have separate UI_SETP numbers 0x89E and 0x991."
+    },
+    {
+      "name": "IMAGE DISP / PreviewTime",
+      "ui_setp": {
+        "id": "0xB",
+        "name": "UI_SETP_REC_VIEW"
+      },
+      "usb_code": "0xD103",
+      "usb_advertised": false,
+      "values": {
+        "CONTINUOUS": {
+          "ui_row": 0,
+          "ui_name": "UI_REC_VIEW_PREVIEW",
+          "usb": "0xFFFF"
+        },
+        "0.5 SEC": {
+          "ui_row": 2,
+          "ui_name": "UI_REC_VIEW_S",
+          "usb": "0x0005"
+        },
+        "1.5 SEC": {
+          "ui_row": 3,
+          "ui_name": "UI_REC_VIEW_L",
+          "usb": "0x000F"
+        },
+        "OFF": {
+          "ui_row": 5,
+          "ui_name": "UI_REC_VIEW_OFF",
+          "usb": "0x0000"
+        }
+      },
+      "proof": {
+        "setting_id": "0xb",
+        "table": "0x176c090",
+        "rows": [
+          {
+            "row": 0,
+            "values": [
+              "0x2",
+              "0x7ffffffe",
+              "0x9d",
+              "0xffff"
+            ]
+          },
+          {
+            "row": 1,
+            "values": [
+              "0x5",
+              "0x7ffffffe",
+              "0x9e",
+              "0x7ffffffe"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "0x1",
+              "0x7ffffffe",
+              "0x9c",
+              "0x5"
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "0x0",
+              "0x7ffffffe",
+              "0x9c",
+              "0xf"
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "0x4",
+              "0x7ffffffe",
+              "0x9c",
+              "0xfff1"
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "0x3",
+              "0x7ffffffe",
+              "0x87",
+              "0x0"
+            ]
+          }
+        ]
+      },
+      "note": "USB values come from official XAPIOpt.h SDK_PREVIEWTIME_* and match the fourth column of the UI_SETP_REC_VIEW table. D103 is absent from the X-H2 5.30 PTP descriptor list and occurs only in the generic registry at 0x34432EC."
+    }
+  ],
+  "sources": {
+    "catalog": "<корень проекта>\\Внешние_репозитории\\fujimod\\catalog\\firmware\\xh2\\5.30\\ui-setting-names.generated.json",
+    "official_xh2_header": "https://github.com/Scdouglas1999/Fujicom/blob/main/Fuji/RequiredHeaders/X-H2.h",
+    "official_sdk_values": "https://github.com/Scdouglas1999/Fujicom/blob/main/Fuji/RequiredHeaders/XAPIOpt.h",
+    "sdk_property_names": "https://github.com/mikefsq/ptp/blob/main/fuji/names_xt5_gen.go",
+    "published_dictionary": "https://github.com/alexxpavloff6-ai/X-H2/blob/main/полные_отчёты/Чтение_камеры_по_USB/Словарь_значений.md"
+  }
+}

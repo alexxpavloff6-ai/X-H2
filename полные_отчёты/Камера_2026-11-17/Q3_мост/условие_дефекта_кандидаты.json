@@ -1,0 +1,232 @@
+{
+  "multi_factor_functions": [],
+  "all_functions": [
+    {
+      "block": 0,
+      "func": "0x11359d4",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x1135a28",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x1135a48",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x1135a74",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x1319960",
+      "factors": [
+        "REC_VIEW"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x131d12c",
+      "factors": [
+        "SHUTTER_TYPE"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x13219a0",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x1321a0c",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x13274a8",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x1327e30",
+      "factors": [
+        "REC_VIEW",
+        "SHUTTER_TYPE"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x132afa8",
+      "factors": [
+        "REC_VIEW"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x132c620",
+      "factors": [
+        "SHUTTER_TYPE"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x1330238",
+      "factors": [
+        "REC_VIEW",
+        "SHUTTER_TYPE"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x1332404",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x1315028",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x13320d4",
+      "factors": [
+        "SPEED_M"
+      ]
+    },
+    {
+      "block": 0,
+      "func": "0x133304c",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 1,
+      "func": "0x2be0108",
+      "factors": [
+        "REC_VIEW"
+      ]
+    },
+    {
+      "block": 1,
+      "func": "0x2bfbcac",
+      "factors": [
+        "REC_VIEW"
+      ]
+    },
+    {
+      "block": 1,
+      "func": "0x2bfd5b0",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 1,
+      "func": "0x2c88e98",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 1,
+      "func": null,
+      "factors": [
+        "CONTINUOUS",
+        "SHUTTER_TYPE"
+      ]
+    },
+    {
+      "block": 1,
+      "func": "0x2c8edc8",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 1,
+      "func": "0x2bba738",
+      "factors": [
+        "REC_VIEW"
+      ]
+    },
+    {
+      "block": 1,
+      "func": "0x2bc0fa0",
+      "factors": [
+        "REC_VIEW"
+      ]
+    },
+    {
+      "block": 1,
+      "func": "0x2bc1910",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 1,
+      "func": "0x2bed470",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 1,
+      "func": "0x2bfbc60",
+      "factors": [
+        "REC_VIEW"
+      ]
+    },
+    {
+      "block": 1,
+      "func": "0x2c50f08",
+      "factors": [
+        "SHUTTER_SPEED"
+      ]
+    },
+    {
+      "block": 1,
+      "func": "0x2c53990",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 1,
+      "func": "0x2c6295c",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    },
+    {
+      "block": 1,
+      "func": "0x2c630f0",
+      "factors": [
+        "CONTINUOUS"
+      ]
+    }
+  ]
+}

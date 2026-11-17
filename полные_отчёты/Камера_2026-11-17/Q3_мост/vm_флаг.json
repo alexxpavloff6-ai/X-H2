@@ -1,0 +1,36 @@
+{
+  "firmware": "X-H2 5.30",
+  "claim": "В анализируемом коде (блоки 0-1) флаг MOVDC переносится копированием payload+0x64 -> current+0x74 -> state+0x43C без вычисления из настроек.",
+  "memcpy": "0x3105440",
+  "flag_ldr_str": [
+    "0x31085a4",
+    "0x31085a8"
+  ],
+  "cases": [
+    {
+      "input_pending_flag": "0x0",
+      "current_flag_after_memcpy": "0x0",
+      "state_flag_after_apply": "0x0",
+      "pure_copy": true
+    },
+    {
+      "input_pending_flag": "0x1",
+      "current_flag_after_memcpy": "0x1",
+      "state_flag_after_apply": "0x1",
+      "pure_copy": true
+    },
+    {
+      "input_pending_flag": "0x2",
+      "current_flag_after_memcpy": "0x2",
+      "state_flag_after_apply": "0x2",
+      "pure_copy": true
+    },
+    {
+      "input_pending_flag": "0xffffffff",
+      "current_flag_after_memcpy": "0xffffffff",
+      "state_flag_after_apply": "0xffffffff",
+      "pure_copy": true
+    }
+  ],
+  "all_pure_copy": true
+}

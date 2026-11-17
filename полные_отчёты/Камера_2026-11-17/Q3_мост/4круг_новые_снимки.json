@@ -1,0 +1,67 @@
+[
+  {
+    "label": "07_база_повтор",
+    "shutter_menu": 1,
+    "shutter_actual": 1,
+    "continuous": 0,
+    "drive_ch": 0,
+    "speed_m_index": 38,
+    "speed_output": 800000,
+    "rec_view": 3,
+    "menu_lbl": "ES",
+    "actual_lbl": "ES",
+    "speed_text": "1/8000"
+  },
+  {
+    "label": "07B_база_повтор",
+    "shutter_menu": 3,
+    "shutter_actual": 1,
+    "continuous": 0,
+    "drive_ch": 0,
+    "speed_m_index": 38,
+    "speed_output": 800000,
+    "rec_view": 3,
+    "menu_lbl": "EF",
+    "actual_lbl": "ES",
+    "speed_text": "1/8000"
+  },
+  {
+    "label": "07C_база_повтор",
+    "shutter_menu": 3,
+    "shutter_actual": 3,
+    "continuous": 0,
+    "drive_ch": 0,
+    "speed_m_index": 38,
+    "speed_output": 2500,
+    "rec_view": 3,
+    "menu_lbl": "EF",
+    "actual_lbl": "EF",
+    "speed_text": "1/25"
+  },
+  {
+    "label": "08_1-500",
+    "shutter_menu": 3,
+    "shutter_actual": 3,
+    "continuous": 1,
+    "drive_ch": 21,
+    "speed_m_index": 55,
+    "speed_output": 50000,
+    "rec_view": 2,
+    "menu_lbl": "EF",
+    "actual_lbl": "EF",
+    "speed_text": "1/500"
+  },
+  {
+    "label": "08B_1-500",
+    "shutter_menu": 1,
+    "shutter_actual": 1,
+    "continuous": 1,
+    "drive_ch": 21,
+    "speed_m_index": 55,
+    "speed_output": 50000,
+    "rec_view": 2,
+    "menu_lbl": "ES",
+    "actual_lbl": "ES",
+    "speed_text": "1/500"
+  }
+]

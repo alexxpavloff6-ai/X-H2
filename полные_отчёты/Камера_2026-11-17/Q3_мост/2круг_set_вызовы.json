@@ -1,0 +1,60 @@
+{
+  "set_entry_0x4BC90": [
+    {
+      "src": "block0",
+      "site": "0x14cedf8",
+      "func": "0x14cedac"
+    },
+    {
+      "src": "block0",
+      "site": "0x14d09cc",
+      "func": "0x14d098c"
+    },
+    {
+      "src": "block0",
+      "site": "0x14d0a30",
+      "func": "0x14d0a08"
+    }
+  ],
+  "set_worker_0x4C090": [
+    {
+      "src": "loader",
+      "site": "0x4a860",
+      "func": "0x4a85c"
+    },
+    {
+      "src": "loader",
+      "site": "0x4c248",
+      "func": "0x4c240"
+    }
+  ],
+  "reg_handler_0x4BBD4": [
+    {
+      "src": "loader",
+      "site": "0x4a648",
+      "func": "0x4a644"
+    },
+    {
+      "src": "loader",
+      "site": "0x4bd70",
+      "func": "0x4bd68"
+    }
+  ],
+  "resolve_worker_0x54354": [
+    {
+      "src": "loader",
+      "site": "0x50300",
+      "func": "0x502a0"
+    },
+    {
+      "src": "loader",
+      "site": "0x50614",
+      "func": "0x505b4"
+    },
+    {
+      "src": "loader",
+      "site": "0x5467c",
+      "func": "0x5460c"
+    }
+  ]
+}

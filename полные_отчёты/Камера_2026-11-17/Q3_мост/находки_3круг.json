@@ -1,0 +1,77 @@
+{
+  "round": 3,
+  "task": "Q3 3-й круг: перекрёстная проверка оценщика 0x30256EC/0x30308A0 (таблица 0x3456B20) и предиката 0x2FE35D4 в Unicorn на входах реальных BACKUP-снимков владельца",
+  "firmware": "X-H2 5.30",
+  "date": "2026-11-17",
+  "method": "Чтение BACKUP-блобов серии (decode_backup K2, layout current) + Unicorn-эмуляция кода прошивки. Камера не использовалась.",
+  "levels": {"Д": "доказано кодом/VM", "К": "сильный кандидат (семантика)", "Г": "гипотеза"},
+  "short_answer": "VM-оценщик и предикат воспроизводят BACKUP-условие дефекта: флаг=1 ТОЛЬКО для 02B (CH, MS+ES->факт.ES, 1/16000, CONT) и 02C (CH, ES, 1/8000, CONT). Все 7 контролов дают 0. Кодировка fieldB = знаменатель выдержки/100 (категории кодировщика 0x14F396C точно совпадают: 1/8000->80, 1/16000->160); порог таблицы fieldB>=6 = выдержка <=1/600 (шире калиброванного K2 <=1/8000). Снимок 02 фактически EF (не ES), поэтому не дефектный.",
+  "real_inputs_from_blobs": {
+    "level": "Д",
+    "script": "37_входы_снимков.py",
+    "fields": {"shutter_menu": "0x63A", "shutter_actual": "0x1A8", "continuous": "0x4F8", "drive_ch": "0x68C (21=CH)", "speed_m_index": "0x5B2", "speed_output": "0x18C (знаменатель x100)", "rec_view": "0x29B (2=CONT,3=OFF)"},
+    "note_02": "02_CH_ES_8000_CONT: блоб меню=EF факт=EF (не ES); не дефектный",
+    "defect_backup_labels": ["02B_CH_MSES_16000_CONT_успех", "02C_CH_ES_8000_CONT"]
+  },
+  "input_encoding": {
+    "level": "Д механизм + К семантика",
+    "evaluator": "0x30256EC -> 0x30308A0 -> 0x2F84C48 -> 0x2F85F3C (table 0x3456B20)",
+    "getters": {
+      "getter0_0x154CEC8": "fieldA=[struct+0xCC], гейт режима (==1)",
+      "getter1_0x3030A18": "тип затвора = фактический затвор 0x1A8 (0 MS,1 ES,2 MS+ES,3 EF)",
+      "getter2_0x154CF6C": "fieldB=[struct+0xD4] u8 = категория выдержки",
+      "getter4_0x30246D8": "drive-getter 0x3024664 ∈ {3,4} = CH/CL"
+    },
+    "fieldB_encoder": {
+      "va": "0x14F396C",
+      "called_from": "диспетчер 0x14F72C0, case head 0x14F68E4: fieldB=0x14F396C(source[0],source[0x10],source[0x5A8])",
+      "jump_table": "0x1AE2F14 (код выдержки 0..17), гейт mode==0x1D",
+      "code_to_fieldB": {"0": 3, "1": 4, "2": 5, "3": 6, "4": 7, "5": 8, "6": 9, "7": 10, "8": 11, "9": 12, "10": 13, "11": 15, "12": 20, "13": 30, "14": 40, "15": 60, "16": 80, "17": 160},
+      "vm_verified": "42_vm_кодировка_таблица.py"
+    },
+    "fieldB_semantics": {
+      "level": "К",
+      "formula": "fieldB = знаменатель выдержки / 100 = speed_output(0x18C)//10000",
+      "evidence": "18 категорий кодировщика точно совпадают со знаменатель/100: 1/300->3 ... 1/8000->80, 1/16000->160",
+      "relation_to_M_index": "индексы M (38=1/25,52=1/250,67=1/8000,70=1/16000) — шкала 1/3-стопа; fieldB — не индекс M, а знаменатель/100",
+      "gap": "связь выдержка->code source[0x5A8] статически не прослежена до блоба"
+    },
+    "threshold": {
+      "level": "Д из таблицы + К семантика",
+      "table_rule": "table_0x3456B20[6*min(fieldB,40)+shutter_type]==2 только при shutter_type==1 и fieldB>=6",
+      "speed_threshold": "fieldB>=6 = знаменатель>=600 = выдержка <=1/600",
+      "refinement_of_K2": "K2 BACKUP-условие <=1/8000 — слишком конкретный вывод из снимков 1/250(нет) и 1/8000(да); реальный порог прошивки <=1/600; все 9 снимков согласуются; 1/600..1/8000 не снимались"
+    }
+  },
+  "vm_configuration_table": {
+    "level": "Д",
+    "script": "43_vm_конфигурации.py",
+    "emulated": ["0x30308A0 (оценщик)", "0x2F84C48/0x2F85F3C (таблица 0x3456B20)", "0x2FE35D4 (предикат, гейты ctx 0x4D35710)"],
+    "inputs_mapping": "shutter_type=фактический затвор 0x1A8; fieldB=знаменатель/100; fieldA=гейт CH(0x68C==21)+CONT(0x29B==2) (К); drive∈{3,4} для CH",
+    "rows": [
+      {"label": "01_база", "shutter_actual": "EF", "st_in": 3, "CH": false, "CONT": false, "speed": "1/25", "fieldB": 0, "fieldA": 0, "flag_vm": 0, "defect_backup": false},
+      {"label": "02_CH_ES_8000_CONT", "shutter_actual": "EF", "st_in": 3, "CH": true, "CONT": true, "speed": "1/8000", "fieldB": 80, "fieldA": 1, "flag_vm": 0, "defect_backup": false},
+      {"label": "02B_CH_MSES_16000_CONT_успех", "shutter_actual": "ES", "st_in": 1, "CH": true, "CONT": true, "speed": "1/16000", "fieldB": 160, "fieldA": 1, "flag_vm": 1, "defect_backup": true},
+      {"label": "02C_CH_ES_8000_CONT", "shutter_actual": "ES", "st_in": 1, "CH": true, "CONT": true, "speed": "1/8000", "fieldB": 80, "fieldA": 1, "flag_vm": 1, "defect_backup": true},
+      {"label": "03_S", "shutter_actual": "ES", "st_in": 1, "CH": false, "CONT": true, "speed": "1/8000", "fieldB": 80, "fieldA": 0, "flag_vm": 0, "defect_backup": false},
+      {"label": "04_MS", "shutter_actual": "MS", "st_in": 0, "CH": false, "CONT": true, "speed": "1/8000", "fieldB": 80, "fieldA": 0, "flag_vm": 0, "defect_backup": false},
+      {"label": "04_MS_CH", "shutter_actual": "MS", "st_in": 0, "CH": true, "CONT": true, "speed": "1/8000", "fieldB": 80, "fieldA": 1, "flag_vm": 0, "defect_backup": false},
+      {"label": "05_1-250", "shutter_actual": "ES", "st_in": 1, "CH": true, "CONT": true, "speed": "1/250", "fieldB": 2, "fieldA": 1, "flag_vm": 0, "defect_backup": false},
+      {"label": "06_DISP_OFF", "shutter_actual": "ES", "st_in": 1, "CH": true, "CONT": false, "speed": "1/8000", "fieldB": 80, "fieldA": 0, "flag_vm": 0, "defect_backup": false}
+    ],
+    "flag_1_labels": ["02B_CH_MSES_16000_CONT_успех", "02C_CH_ES_8000_CONT"],
+    "matches_expectation": true,
+    "matches_backup_defect": true
+  },
+  "predicate_gates_vm": {
+    "level": "Д",
+    "ctx_0x4D35710": {"0": 1, "bit4_0x10": 0, "bit12_0x1000": 0, "bit13_0x2000": 0, "bit14_0x4000": 0},
+    "gate_functions": {"0x2FE18DC": "flags & 0x4010 (биты 4,14)", "0x2FD8DE0": "flags bit13 (0x2000)", "bit12": "0x1000"}
+  },
+  "remaining": [
+    "Статически проследить писателя fieldA struct+0xCC (гейт CH+CONTINUOUS) — сейчас К.",
+    "Проследить отображение выдержка->code source[0x5A8] до блоба — сейчас К (семантика fieldB=знаменатель/100 из точного совпадения категорий).",
+    "Снять промежуточные выдержки 1/600..1/8000 для уточнения порога (вне Q3, нужна камера)."
+  ],
+  "scripts_round3": ["37_входы_снимков.py", "38_кодировка_полей.py", "39_диспетчер_struct.py", "40_цикл_диспетчер.py", "41_кодировка_fieldB.py", "42_vm_кодировка_таблица.py", "43_vm_конфигурации.py"]
+}

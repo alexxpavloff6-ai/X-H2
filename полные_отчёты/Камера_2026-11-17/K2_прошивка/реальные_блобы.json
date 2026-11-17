@@ -1,0 +1,536 @@
+{
+  "all_checks_passed": true,
+  "real_camera_blob_used": true,
+  "camera_accessed_by_this_script": false,
+  "layout_mode": "current",
+  "custom_slot": 7,
+  "required_inputs": {
+    "01_база": {
+      "path": "<корень проекта>\\Анализ_прошивки\\Камера_2026-11-17\\K1_камера\\снимки_серия\\01_база\\backup.bin",
+      "sha256": "e52c4dd8f4cec79703717f0f7031c23220714f1ca5fff6dd0e6a3e7e4017c946",
+      "bytes": 70524,
+      "payload_bytes": 70356,
+      "checksum_valid": true
+    },
+    "02_CH_ES_8000_CONT": {
+      "path": "<корень проекта>\\Анализ_прошивки\\Камера_2026-11-17\\K1_камера\\снимки_серия\\02_CH_ES_8000_CONT\\backup.bin",
+      "sha256": "2c44dd69f85cbadde690d95c9524384520fa43f5cc7864cb222f47e5ef798604",
+      "bytes": 70524,
+      "payload_bytes": 70356,
+      "checksum_valid": true
+    }
+  },
+  "totals": {
+    "changed_bytes": 27,
+    "explained_changed_bytes": 27,
+    "unexplained_changed_bytes": 0,
+    "changed_ui_fields": 17,
+    "changed_service_fields": 2,
+    "ui_bytes": 23,
+    "service_bytes": 4
+  },
+  "changed_fields": [
+    {
+      "name": "UI_SETP_HIFREQ_FLKLESS_SHUTTER_SPEED_M",
+      "kind": "UI_SETP",
+      "id": "0x8A9",
+      "category": "shutter_derivative",
+      "raw_offset": 24,
+      "file_offset": 192,
+      "size": 4,
+      "old": 1,
+      "new": 600,
+      "new_labels": [],
+      "instruction_address": "0x12C2340",
+      "changed_bytes": [
+        {
+          "raw_offset": 24,
+          "file_offset": 192,
+          "old": "0x01",
+          "new": "0x58"
+        },
+        {
+          "raw_offset": 25,
+          "file_offset": 193,
+          "old": "0x00",
+          "new": "0x02"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_STILL_MENU_POS_TAB",
+      "kind": "UI_SETP",
+      "id": "0x9CD",
+      "category": "menu_navigation",
+      "raw_offset": 36,
+      "file_offset": 204,
+      "size": 4,
+      "old": 294,
+      "new": 293,
+      "new_labels": [],
+      "instruction_address": "0x12C64D4",
+      "changed_bytes": [
+        {
+          "raw_offset": 36,
+          "file_offset": 204,
+          "old": "0x26",
+          "new": "0x25"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_STILL_MENU_POS_ITEM",
+      "kind": "UI_SETP",
+      "id": "0x9CE",
+      "category": "menu_navigation",
+      "raw_offset": 40,
+      "file_offset": 208,
+      "size": 4,
+      "old": 570,
+      "new": 163,
+      "new_labels": [],
+      "instruction_address": "0x12C64FC",
+      "changed_bytes": [
+        {
+          "raw_offset": 40,
+          "file_offset": 208,
+          "old": "0x3A",
+          "new": "0xA3"
+        },
+        {
+          "raw_offset": 41,
+          "file_offset": 209,
+          "old": "0x02",
+          "new": "0x00"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_SETUP_MENU_POS_ITEM_1",
+      "kind": "UI_SETP",
+      "id": "0x9D1",
+      "category": "menu_navigation",
+      "raw_offset": 52,
+      "file_offset": 220,
+      "size": 4,
+      "old": 162,
+      "new": 163,
+      "new_labels": [],
+      "instruction_address": "0x12C6574",
+      "changed_bytes": [
+        {
+          "raw_offset": 52,
+          "file_offset": 220,
+          "old": "0xA2",
+          "new": "0xA3"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_SETUP_MENU_POS_ITEM_2",
+      "kind": "UI_SETP",
+      "id": "0x9D2",
+      "category": "menu_navigation",
+      "raw_offset": 56,
+      "file_offset": 224,
+      "size": 4,
+      "old": 167,
+      "new": 335,
+      "new_labels": [],
+      "instruction_address": "0x12C659C",
+      "changed_bytes": [
+        {
+          "raw_offset": 56,
+          "file_offset": 224,
+          "old": "0xA7",
+          "new": "0x4F"
+        },
+        {
+          "raw_offset": 57,
+          "file_offset": 225,
+          "old": "0x00",
+          "new": "0x01"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_SETTING_CHKSUM",
+      "kind": "UI_SETP",
+      "id": "0x9FA",
+      "category": "checksum",
+      "raw_offset": 60,
+      "file_offset": 228,
+      "size": 4,
+      "old": 73963,
+      "new": 74192,
+      "new_labels": [],
+      "instruction_address": "0x12C67EC",
+      "changed_bytes": [
+        {
+          "raw_offset": 60,
+          "file_offset": 228,
+          "old": "0xEB",
+          "new": "0xD0"
+        },
+        {
+          "raw_offset": 61,
+          "file_offset": 229,
+          "old": "0x20",
+          "new": "0x21"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_DOTLCD_CONTMODE",
+      "kind": "UI_SETP",
+      "id": "0xA70",
+      "category": "drive_derivative",
+      "raw_offset": 68,
+      "file_offset": 236,
+      "size": 4,
+      "old": 0,
+      "new": 1,
+      "new_labels": [],
+      "instruction_address": "0x12C7A84",
+      "changed_bytes": [
+        {
+          "raw_offset": 68,
+          "file_offset": 236,
+          "old": "0x00",
+          "new": "0x01"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_DOTLCD_SHUTERSPEED_OUTPUT",
+      "kind": "UI_SETP",
+      "id": "0xAAB",
+      "category": "shutter_derivative",
+      "raw_offset": 228,
+      "file_offset": 396,
+      "size": 4,
+      "old": 2500,
+      "new": 800000,
+      "new_labels": [],
+      "instruction_address": "0x12C83BC",
+      "changed_bytes": [
+        {
+          "raw_offset": 228,
+          "file_offset": 396,
+          "old": "0xC4",
+          "new": "0x00"
+        },
+        {
+          "raw_offset": 229,
+          "file_offset": 397,
+          "old": "0x09",
+          "new": "0x35"
+        },
+        {
+          "raw_offset": 230,
+          "file_offset": 398,
+          "old": "0x00",
+          "new": "0x0C"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_REC_VIEW",
+      "kind": "UI_SETP",
+      "id": "0xB",
+      "category": "scenario_setting",
+      "raw_offset": 499,
+      "file_offset": 667,
+      "size": 1,
+      "old": 3,
+      "new": 2,
+      "new_labels": [
+        "CONTINUOUS"
+      ],
+      "instruction_address": "0x12AA8C4",
+      "changed_bytes": [
+        {
+          "raw_offset": 499,
+          "file_offset": 667,
+          "old": "0x03",
+          "new": "0x02"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_DRV_MENU",
+      "kind": "UI_SETP",
+      "id": "0x874",
+      "category": "drive_derivative",
+      "raw_offset": 1061,
+      "file_offset": 1229,
+      "size": 1,
+      "old": 0,
+      "new": 1,
+      "new_labels": [],
+      "instruction_address": "0x12B847C",
+      "changed_bytes": [
+        {
+          "raw_offset": 1061,
+          "file_offset": 1229,
+          "old": "0x00",
+          "new": "0x01"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_CONTINUOUS",
+      "kind": "UI_SETP",
+      "id": "0x858",
+      "category": "drive_current",
+      "raw_offset": 1104,
+      "file_offset": 1272,
+      "size": 1,
+      "old": 0,
+      "new": 1,
+      "new_labels": [],
+      "instruction_address": "0x12BA480",
+      "changed_bytes": [
+        {
+          "raw_offset": 1104,
+          "file_offset": 1272,
+          "old": "0x00",
+          "new": "0x01"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_SHUTTER_SPEED_M",
+      "kind": "UI_SETP",
+      "id": "0x8A0",
+      "category": "shutter_current",
+      "raw_offset": 1290,
+      "file_offset": 1458,
+      "size": 1,
+      "old": 38,
+      "new": 67,
+      "new_labels": [
+        "1/8000 s"
+      ],
+      "instruction_address": "0x12C1F84",
+      "changed_bytes": [
+        {
+          "raw_offset": 1290,
+          "file_offset": 1458,
+          "old": "0x26",
+          "new": "0x43"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_DOTLCD_EXTFLASHEMITTESTPERMIT",
+      "kind": "UI_SETP",
+      "id": "0xAA8",
+      "category": "dependent_output",
+      "raw_offset": 1491,
+      "file_offset": 1659,
+      "size": 1,
+      "old": 0,
+      "new": 1,
+      "new_labels": [],
+      "instruction_address": "0x12C8344",
+      "changed_bytes": [
+        {
+          "raw_offset": 1491,
+          "file_offset": 1659,
+          "old": "0x00",
+          "new": "0x01"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_DOTLCD_SHUTTERSPEED",
+      "kind": "UI_SETP",
+      "id": "0xABB",
+      "category": "shutter_derivative",
+      "raw_offset": 1497,
+      "file_offset": 1665,
+      "size": 1,
+      "old": 40,
+      "new": 69,
+      "new_labels": [
+        "1/8000 s (display index)"
+      ],
+      "instruction_address": "0x12C8614",
+      "changed_bytes": [
+        {
+          "raw_offset": 1497,
+          "file_offset": 1665,
+          "old": "0x28",
+          "new": "0x45"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_DOTLCD_CONTINUOUS",
+      "kind": "UI_SETP",
+      "id": "0xACE",
+      "category": "drive_display_row",
+      "raw_offset": 1508,
+      "file_offset": 1676,
+      "size": 1,
+      "old": 0,
+      "new": 21,
+      "new_labels": [
+        "CH HIGH SPEED BURST"
+      ],
+      "instruction_address": "0x12C895C",
+      "changed_bytes": [
+        {
+          "raw_offset": 1508,
+          "file_offset": 1676,
+          "old": "0x00",
+          "new": "0x15"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_DOTLCD_CONTINUOUS2",
+      "kind": "UI_SETP",
+      "id": "0xACF",
+      "category": "drive_display_row_duplicate",
+      "raw_offset": 1509,
+      "file_offset": 1677,
+      "size": 1,
+      "old": 0,
+      "new": 21,
+      "new_labels": [
+        "CH HIGH SPEED BURST"
+      ],
+      "instruction_address": "0x12C8984",
+      "changed_bytes": [
+        {
+          "raw_offset": 1509,
+          "file_offset": 1677,
+          "old": "0x00",
+          "new": "0x15"
+        }
+      ]
+    },
+    {
+      "name": "UI_SETP_SETUP_COMM_MENU_POS_ITEM",
+      "kind": "UI_SETP",
+      "id": "0x9D3",
+      "category": "menu_navigation",
+      "raw_offset": 3764,
+      "file_offset": 3932,
+      "size": 4,
+      "old": 570,
+      "new": 569,
+      "new_labels": [],
+      "instruction_address": "0x12C65C4",
+      "changed_bytes": [
+        {
+          "raw_offset": 3764,
+          "file_offset": 3932,
+          "old": "0x3A",
+          "new": "0x39"
+        }
+      ]
+    },
+    {
+      "name": "SERVICE_SHUTCOUNT_CANDIDATE",
+      "kind": "service_metadata",
+      "id": "0x172 UI_SETP_SHUTCOUNT",
+      "category": "probable_shutter_count",
+      "status": "probable_monotonic_service_counter_not_statically_bound",
+      "reason": "Real 01/02/02B/03 values 7429/8611/9158/9586 increase with shooting; exact UI_SETP binding remains a hypothesis.",
+      "raw_offset": 62996,
+      "file_offset": 63164,
+      "size": 2,
+      "old": 7429,
+      "new": 8611,
+      "changed_bytes": [
+        {
+          "raw_offset": 62996,
+          "file_offset": 63164,
+          "old": "0x05",
+          "new": "0xA3"
+        },
+        {
+          "raw_offset": 62997,
+          "file_offset": 63165,
+          "old": "0x1D",
+          "new": "0x21"
+        }
+      ]
+    },
+    {
+      "name": "SERVICE_VOLATILE_U16_F67C",
+      "kind": "service_metadata",
+      "id": null,
+      "category": "unidentified_volatile_metadata",
+      "status": "unidentified_volatile_service_metadata",
+      "reason": "Real 01/02/02B/03 values 64776/72/170/70 change with shooting and differ even at repeated 1/8000; outside the first checksum span ending at raw 0xF66D.",
+      "raw_offset": 63100,
+      "file_offset": 63268,
+      "size": 2,
+      "old": 64776,
+      "new": 72,
+      "changed_bytes": [
+        {
+          "raw_offset": 63100,
+          "file_offset": 63268,
+          "old": "0x08",
+          "new": "0x48"
+        },
+        {
+          "raw_offset": 63101,
+          "file_offset": 63269,
+          "old": "0xFD",
+          "new": "0x00"
+        }
+      ]
+    }
+  ],
+  "checksum_proof": {
+    "old": 73963,
+    "new": 74192,
+    "delta": 229,
+    "sum_of_other_byte_deltas": 229,
+    "f67c_covered": false
+  },
+  "controls": {
+    "02B_CH_MSES_16000_CONT_успех": {
+      "sha256": "cd0b365c5a23f0f1ad3a4696aa6c47462d2f4d542f1d565a95715d45b3f95b5a",
+      "shutter_type": 2,
+      "shutter_type_labels": [
+        "MS+ES"
+      ],
+      "shutter_speed_m": 70,
+      "shutter_denominator_x100": 1600000,
+      "drive_display_row": 21,
+      "image_disp": 2,
+      "service_f614": 9158,
+      "service_f67c": 170
+    },
+    "03_S": {
+      "sha256": "abfe26aff4e0d86fbdfc149df521a123a2ab4314627770ebe0beb772a4aa3ac7",
+      "shutter_type": 1,
+      "shutter_type_labels": [
+        "ES"
+      ],
+      "shutter_speed_m": 67,
+      "shutter_denominator_x100": 800000,
+      "drive_display_row": 0,
+      "image_disp": 2,
+      "service_f614": 9586,
+      "service_f67c": 70
+    }
+  },
+  "owner_label_mismatch": "Current UI_SETP_SHUTTER_TYPE is 3=EF in both required blobs, not ES=1. 02B has 2=MS+ES; 03_S has 1=ES.",
+  "record_0x4c": {
+    "full_signature_in_required_blobs": false,
+    "unexplained_changed_bytes": 0,
+    "conclusion": "No full record 0x4C and no unexplained guard-flag candidate are observed in these BACKUP blobs. A theoretical service projection of a scalar into the UI bank is not categorically excluded, but there is no evidence for MOVDC guard persistence here."
+  },
+  "cli_verified": [
+    "python decode_backup.py <backup.bin>",
+    "python decode_backup.py --diff <01/backup.bin> <02/backup.bin>"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "fieldB_setter_0x1561DB8 (+0xD4)": [
+    {
+      "block": 0,
+      "site": "0x14f73b0",
+      "func": "0x14f72c0"
+    },
+    {
+      "block": 0,
+      "site": "0x154d008",
+      "func": "0x154cfe8"
+    }
+  ],
+  "fieldA_setter_0x1561D94 (+0xCC)": [
+    {
+      "block": 0,
+      "site": "0x14f6314",
+      "func": "0x14f5b88"
+    },
+    {
+      "block": 0,
+      "site": "0x154cf64",
+      "func": "0x154cf44"
+    }
+  ],
+  "fieldD_setter_0x15632F4 (+0x1CC)": [
+    {
+      "block": 0,
+      "site": "0x14f77a0",
+      "func": "0x14f72c0"
+    },
+    {
+      "block": 0,
+      "site": "0x15526f4",
+      "func": "0x15526d4"
+    }
+  ]
+}
