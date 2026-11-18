@@ -1,0 +1,1442 @@
+{
+  "title": "Карта фокуса X-H2 5.30",
+  "sources": {
+    "firmware_block": "<корень проекта>\\Анализ_прошивки\\Сравнение_версий_2026-11-16\\blocks\\X-H2_5.30_b1_0x840274.bin",
+    "bank_map": "<корень проекта>\\Анализ_прошивки\\Камера_2026-11-17\\K2_прошивка\\карта_банка.json",
+    "backup": "<корень проекта>\\Анализ_прошивки\\Зерно_2026-11-18\\опыт_камера\\04_C7_D1A5_18_копия\\backup.bin",
+    "backup_payload_offset": "0xA8",
+    "backup_warnings": [],
+    "usb_reference": "Автофокус_по_USB.md и Таблица_278_свойств_из_прошивки.tsv; снимки USB от 10.11.2026"
+  },
+  "dispatch": {
+    "setter_function": "0x2C88E98",
+    "setter_table": "0x33A77E8",
+    "setter_index": "id - 0xB",
+    "getter_function": "0x2C93FD4",
+    "getter_table": "0x33A929C",
+    "getter_index": "id - 0xF",
+    "relative_base_getter": "0x2C9403C"
+  },
+  "topics": [
+    {
+      "topic": "режим фокуса",
+      "usb": [
+        "0x500A"
+      ],
+      "usb_values": {
+        "1": "MF",
+        "0x8001": "AF-S",
+        "0x8002": "AF-C"
+      },
+      "setting_ids": [
+        2240
+      ],
+      "note": "Подтверждено наблюдениями USB и таблицей 278 свойств."
+    },
+    {
+      "topic": "режим и геометрия зоны AF",
+      "usb": [
+        "0x501C",
+        "0xD02A",
+        "0xD02B",
+        "0xD02D",
+        "0xD347",
+        "0xD372",
+        "0xD374",
+        "0xD395"
+      ],
+      "usb_values": {
+        "0x501C": {
+          "0x8001": "одна точка",
+          "0x8002": "зона",
+          "0x8003": "широкая область/слежение"
+        },
+        "D347/D372/D374/D395": "строка x,y,тип; x от -12 до +12, y от -8 до +8; типы включают точку, широкую область и варианты зоны"
+      },
+      "setting_ids": [
+        1787,
+        1788,
+        1789,
+        1791,
+        1792,
+        1831
+      ],
+      "note": "501C и три копии D02A/D02B/D02D имеют общий UI_SETP_FOCUS. Координатные строки отдельно не связаны с одним UI_SETP в таблице 278 свойств; UI_SETP_FOCUSPOINT и поля ориентации остаются кандидатами."
+    },
+    {
+      "topic": "лица и глаза",
+      "usb": [
+        "0xD020",
+        "0xD024"
+      ],
+      "usb_values": {
+        "D020": {
+          "1": "вкл.",
+          "2": "выкл."
+        },
+        "D024": {
+          "1": "выкл.",
+          "2": "авто",
+          "3": "приоритет правого глаза",
+          "4": "вероятно левый, не подтверждено"
+        }
+      },
+      "setting_ids": [
+        1560,
+        1564
+      ],
+      "note": "При распознавании объектов или MF камера сама отключала лица и глаза по наблюдениям USB."
+    },
+    {
+      "topic": "распознавание объекта",
+      "usb": [
+        "0xD1BD"
+      ],
+      "usb_values": {
+        "1": "выкл.",
+        "2": "животные",
+        "3": "птицы",
+        "4–7": "ещё четыре вида, точные подписи не установлены"
+      },
+      "setting_ids": [
+        1560,
+        1568,
+        1570,
+        1572,
+        1573
+      ],
+      "note": "Ветка D1BD/UI_SETP_DETECT_SUBJECT_QMENU (0x622) переводит выбор в UI_SETP_DETECT_SUBJECT (0x620), обновляет статусные поля 0x624/0x625 и при значениях, отличных от 6, принудительно выключает UI_SETP_FACEDETECT (0x618)."
+    },
+    {
+      "topic": "набор AF-C и три параметра",
+      "usb": [
+        "0xD232",
+        "0xD233"
+      ],
+      "usb_values": {
+        "D232": "набор 1–6",
+        "D233": "тройка значений: слежение 0–4, реакция на смену скорости 0–2, выбор зоны 0–2"
+      },
+      "setting_ids": [
+        1805,
+        1808,
+        1809,
+        1810,
+        1811,
+        1812,
+        1813,
+        1815,
+        1816,
+        1817,
+        1818,
+        1819,
+        1820,
+        1822,
+        1823,
+        1824,
+        1825,
+        1826,
+        1827
+      ],
+      "note": "Связка D233 → TARGET_CHASE1–6 / TARGET_SPEED1–6 / TARGET_PRIORITY1–6 выведена по внутренним именам и порядку полей; MOVIE-поля отдельны."
+    },
+    {
+      "topic": "PRE-AF",
+      "usb": [
+        "0xD34B"
+      ],
+      "usb_values": {
+        "1": "вкл. по умолчанию",
+        "другие": "список допустимых кодов USB в снимках не проверен"
+      },
+      "setting_ids": [
+        482
+      ],
+      "note": "Соседнее кино-поле 0x1E3."
+    },
+    {
+      "topic": "приоритет спуска/фокуса",
+      "usb": [],
+      "usb_values": null,
+      "setting_ids": [],
+      "note": "В USB-таблице 278 свойств отдельного свойства приоритета AF-S/AF-C нет. Символы MODE_RELEASE_FOCUS_PRIORITY_RELEASE/FOCUS не являются UI_SETP-идентификаторами; сопоставление не установлено."
+    },
+    {
+      "topic": "Boost / производительность",
+      "usb": [
+        "0xD304"
+      ],
+      "usb_values": {
+        "1": "Normal",
+        "2": "Economy",
+        "3": "Boost со слабым освещением",
+        "4": "Boost + разрешение",
+        "5": "Boost 120P",
+        "7": "Boost 240P"
+      },
+      "setting_ids": [
+        1466,
+        1467,
+        1468,
+        1469,
+        1470
+      ],
+      "note": "Таблица свойства называет 0x5BE UI_SETP_FUNC_PERFORMANCE; ветка использует соседние PERFORMANCE/PERFORMANCE_MODE поля. USB-значения не тождественны внутреннему словарю performance."
+    }
+  ],
+  "settings": [
+    {
+      "id": "0x1E2",
+      "name": "UI_SETP_PRE_AF",
+      "setter": {
+        "table_entry": "0x33A7B96",
+        "relative_words": 7200,
+        "branch": "0x2C8FFD0"
+      },
+      "getter": {
+        "table_entry": "0x33A9642",
+        "relative_words": 193,
+        "branch": "0x2C94340"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_PRE_AF",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF7D7",
+          "file_offset": "0xF87F",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5BA",
+      "name": "UI_SETP_PERFORMANCE",
+      "setter": {
+        "table_entry": "0x33A8346",
+        "relative_words": 4794,
+        "branch": "0x2C8DA38"
+      },
+      "getter": {
+        "table_entry": "0x33A9DF2",
+        "relative_words": 3323,
+        "branch": "0x2C97428"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_PERFORMANCE",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF736",
+          "file_offset": "0xF7DE",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5BB",
+      "name": "UI_SETP_PERFORMANCE_AC",
+      "setter": {
+        "table_entry": "0x33A8348",
+        "relative_words": 10966,
+        "branch": "0x2C93AA8"
+      },
+      "getter": {
+        "table_entry": "0x33A9DF4",
+        "relative_words": 7150,
+        "branch": "0x2C9AFF4"
+      },
+      "bank_fields_in_C1_C7_backup": []
+    },
+    {
+      "id": "0x5BC",
+      "name": "UI_SETP_PERFORMANCE_LEVER",
+      "setter": {
+        "table_entry": "0x33A834A",
+        "relative_words": 10966,
+        "branch": "0x2C93AA8"
+      },
+      "getter": {
+        "table_entry": "0x33A9DF6",
+        "relative_words": 7150,
+        "branch": "0x2C9AFF4"
+      },
+      "bank_fields_in_C1_C7_backup": []
+    },
+    {
+      "id": "0x5BD",
+      "name": "UI_SETP_PERFORMANCE_MODE",
+      "setter": {
+        "table_entry": "0x33A834C",
+        "relative_words": 4817,
+        "branch": "0x2C8DA94"
+      },
+      "getter": {
+        "table_entry": "0x33A9DF8",
+        "relative_words": 3332,
+        "branch": "0x2C9744C"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_PERFORMANCE_MODE",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF735",
+          "file_offset": "0xF7DD",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5BE",
+      "name": "UI_SETP_FUNC_PERFORMANCE",
+      "setter": {
+        "table_entry": "0x33A834E",
+        "relative_words": 4834,
+        "branch": "0x2C8DAD8"
+      },
+      "getter": {
+        "table_entry": "0x33A9DFA",
+        "relative_words": 3342,
+        "branch": "0x2C97474"
+      },
+      "bank_fields_in_C1_C7_backup": []
+    },
+    {
+      "id": "0x618",
+      "name": "UI_SETP_FACEDETECT",
+      "setter": {
+        "table_entry": "0x33A8402",
+        "relative_words": 244,
+        "branch": "0x2C89320"
+      },
+      "getter": {
+        "table_entry": "0x33A9EAE",
+        "relative_words": 3626,
+        "branch": "0x2C978E4"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_FACEDETECT",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF84E",
+          "file_offset": "0xF8F6",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x61C",
+      "name": "UI_SETP_EYE_AF",
+      "setter": {
+        "table_entry": "0x33A840A",
+        "relative_words": 352,
+        "branch": "0x2C894D0"
+      },
+      "getter": {
+        "table_entry": "0x33A9EB6",
+        "relative_words": 3666,
+        "branch": "0x2C97984"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_EYE_AF",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF850",
+          "file_offset": "0xF8F8",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            0,
+            3,
+            3,
+            3,
+            3,
+            0,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x620",
+      "name": "UI_SETP_DETECT_SUBJECT",
+      "setter": {
+        "table_entry": "0x33A8412",
+        "relative_words": 565,
+        "branch": "0x2C89824"
+      },
+      "getter": {
+        "table_entry": "0x33A9EBE",
+        "relative_words": 3864,
+        "branch": "0x2C97C9C"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_DETECT_SUBJECT",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF852",
+          "file_offset": "0xF8FA",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            2,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x622",
+      "name": "UI_SETP_DETECT_SUBJECT_QMENU",
+      "setter": {
+        "table_entry": "0x33A8416",
+        "relative_words": 374,
+        "branch": "0x2C89528"
+      },
+      "getter": {
+        "table_entry": "0x33A9EC2",
+        "relative_words": 3758,
+        "branch": "0x2C97AF4"
+      },
+      "bank_fields_in_C1_C7_backup": []
+    },
+    {
+      "id": "0x624",
+      "name": "UI_SETP_DETECT_SUBJECT_STATUS",
+      "setter": {
+        "table_entry": "0x33A841A",
+        "relative_words": 477,
+        "branch": "0x2C896C4"
+      },
+      "getter": {
+        "table_entry": "0x33A9EC6",
+        "relative_words": 3824,
+        "branch": "0x2C97BFC"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_DETECT_SUBJECT_STATUS",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF854",
+          "file_offset": "0xF8FC",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x625",
+      "name": "UI_SETP_DETECT_SUBJECT_STATUS_MOVIE",
+      "setter": {
+        "table_entry": "0x33A841C",
+        "relative_words": 477,
+        "branch": "0x2C896C4"
+      },
+      "getter": {
+        "table_entry": "0x33A9EC8",
+        "relative_words": 3824,
+        "branch": "0x2C97BFC"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_DETECT_SUBJECT_STATUS_MOVIE",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF855",
+          "file_offset": "0xF8FD",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x6FB",
+      "name": "UI_SETP_FOCUS",
+      "setter": {
+        "table_entry": "0x33A85C8",
+        "relative_words": 1722,
+        "branch": "0x2C8AA38"
+      },
+      "getter": {
+        "table_entry": "0x33AA074",
+        "relative_words": 233,
+        "branch": "0x2C943E0"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_FOCUS",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF7BB",
+          "file_offset": "0xF863",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x6FC",
+      "name": "UI_SETP_FOCUS_90",
+      "setter": {
+        "table_entry": "0x33A85CA",
+        "relative_words": 10966,
+        "branch": "0x2C93AA8"
+      },
+      "getter": {
+        "table_entry": "0x33AA076",
+        "relative_words": 7150,
+        "branch": "0x2C9AFF4"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_FOCUS_90",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF7BC",
+          "file_offset": "0xF864",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x6FD",
+      "name": "UI_SETP_FOCUS_270",
+      "setter": {
+        "table_entry": "0x33A85CC",
+        "relative_words": 10966,
+        "branch": "0x2C93AA8"
+      },
+      "getter": {
+        "table_entry": "0x33AA078",
+        "relative_words": 7150,
+        "branch": "0x2C9AFF4"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_FOCUS_270",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF7BD",
+          "file_offset": "0xF865",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x6FF",
+      "name": "UI_SETP_AFALL_FOCUS_90",
+      "setter": {
+        "table_entry": "0x33A85D0",
+        "relative_words": 10966,
+        "branch": "0x2C93AA8"
+      },
+      "getter": {
+        "table_entry": "0x33AA07C",
+        "relative_words": 7150,
+        "branch": "0x2C9AFF4"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_AFALL_FOCUS_90",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF7C3",
+          "file_offset": "0xF86B",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x700",
+      "name": "UI_SETP_AFALL_FOCUS_270",
+      "setter": {
+        "table_entry": "0x33A85D2",
+        "relative_words": 10966,
+        "branch": "0x2C93AA8"
+      },
+      "getter": {
+        "table_entry": "0x33AA07E",
+        "relative_words": 7150,
+        "branch": "0x2C9AFF4"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_AFALL_FOCUS_270",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF7C4",
+          "file_offset": "0xF86C",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x70D",
+      "name": "UI_SETP_AFC_SET_CALL",
+      "setter": {
+        "table_entry": "0x33A85EC",
+        "relative_words": 8211,
+        "branch": "0x2C90F9C"
+      },
+      "getter": {
+        "table_entry": "0x33AA098",
+        "relative_words": 6045,
+        "branch": "0x2C99EB0"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_AFC_SET_CALL",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF858",
+          "file_offset": "0xF900",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            5,
+            5,
+            0,
+            5,
+            0,
+            5,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x710",
+      "name": "UI_SETP_TARGET_CHASE1",
+      "setter": {
+        "table_entry": "0x33A85F2",
+        "relative_words": 8224,
+        "branch": "0x2C90FD0"
+      },
+      "getter": {
+        "table_entry": "0x33AA09E",
+        "relative_words": 6055,
+        "branch": "0x2C99ED8"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_CHASE1",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF859",
+          "file_offset": "0xF901",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x711",
+      "name": "UI_SETP_TARGET_CHASE2",
+      "setter": {
+        "table_entry": "0x33A85F4",
+        "relative_words": 8224,
+        "branch": "0x2C90FD0"
+      },
+      "getter": {
+        "table_entry": "0x33AA0A0",
+        "relative_words": 6055,
+        "branch": "0x2C99ED8"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_CHASE2",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF85A",
+          "file_offset": "0xF902",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x712",
+      "name": "UI_SETP_TARGET_CHASE3",
+      "setter": {
+        "table_entry": "0x33A85F6",
+        "relative_words": 8224,
+        "branch": "0x2C90FD0"
+      },
+      "getter": {
+        "table_entry": "0x33AA0A2",
+        "relative_words": 6055,
+        "branch": "0x2C99ED8"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_CHASE3",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF85B",
+          "file_offset": "0xF903",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x713",
+      "name": "UI_SETP_TARGET_CHASE4",
+      "setter": {
+        "table_entry": "0x33A85F8",
+        "relative_words": 8224,
+        "branch": "0x2C90FD0"
+      },
+      "getter": {
+        "table_entry": "0x33AA0A4",
+        "relative_words": 6055,
+        "branch": "0x2C99ED8"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_CHASE4",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF85C",
+          "file_offset": "0xF904",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x714",
+      "name": "UI_SETP_TARGET_CHASE5",
+      "setter": {
+        "table_entry": "0x33A85FA",
+        "relative_words": 8224,
+        "branch": "0x2C90FD0"
+      },
+      "getter": {
+        "table_entry": "0x33AA0A6",
+        "relative_words": 6055,
+        "branch": "0x2C99ED8"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_CHASE5",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF85D",
+          "file_offset": "0xF905",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x715",
+      "name": "UI_SETP_TARGET_CHASE6",
+      "setter": {
+        "table_entry": "0x33A85FC",
+        "relative_words": 8224,
+        "branch": "0x2C90FD0"
+      },
+      "getter": {
+        "table_entry": "0x33AA0A8",
+        "relative_words": 6055,
+        "branch": "0x2C99ED8"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_CHASE6",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF85E",
+          "file_offset": "0xF906",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            2,
+            3,
+            2,
+            3,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x717",
+      "name": "UI_SETP_TARGET_SPEED1",
+      "setter": {
+        "table_entry": "0x33A8600",
+        "relative_words": 8231,
+        "branch": "0x2C90FEC"
+      },
+      "getter": {
+        "table_entry": "0x33AA0AC",
+        "relative_words": 6063,
+        "branch": "0x2C99EF8"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_SPEED1",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF860",
+          "file_offset": "0xF908",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x718",
+      "name": "UI_SETP_TARGET_SPEED2",
+      "setter": {
+        "table_entry": "0x33A8602",
+        "relative_words": 8231,
+        "branch": "0x2C90FEC"
+      },
+      "getter": {
+        "table_entry": "0x33AA0AE",
+        "relative_words": 6063,
+        "branch": "0x2C99EF8"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_SPEED2",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF861",
+          "file_offset": "0xF909",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x719",
+      "name": "UI_SETP_TARGET_SPEED3",
+      "setter": {
+        "table_entry": "0x33A8604",
+        "relative_words": 8231,
+        "branch": "0x2C90FEC"
+      },
+      "getter": {
+        "table_entry": "0x33AA0B0",
+        "relative_words": 6063,
+        "branch": "0x2C99EF8"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_SPEED3",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF862",
+          "file_offset": "0xF90A",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x71A",
+      "name": "UI_SETP_TARGET_SPEED4",
+      "setter": {
+        "table_entry": "0x33A8606",
+        "relative_words": 8231,
+        "branch": "0x2C90FEC"
+      },
+      "getter": {
+        "table_entry": "0x33AA0B2",
+        "relative_words": 6063,
+        "branch": "0x2C99EF8"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_SPEED4",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF863",
+          "file_offset": "0xF90B",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x71B",
+      "name": "UI_SETP_TARGET_SPEED5",
+      "setter": {
+        "table_entry": "0x33A8608",
+        "relative_words": 8231,
+        "branch": "0x2C90FEC"
+      },
+      "getter": {
+        "table_entry": "0x33AA0B4",
+        "relative_words": 6063,
+        "branch": "0x2C99EF8"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_SPEED5",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF864",
+          "file_offset": "0xF90C",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x71C",
+      "name": "UI_SETP_TARGET_SPEED6",
+      "setter": {
+        "table_entry": "0x33A860A",
+        "relative_words": 8231,
+        "branch": "0x2C90FEC"
+      },
+      "getter": {
+        "table_entry": "0x33AA0B6",
+        "relative_words": 6063,
+        "branch": "0x2C99EF8"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_SPEED6",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF865",
+          "file_offset": "0xF90D",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x71E",
+      "name": "UI_SETP_TARGET_PRIORITY1",
+      "setter": {
+        "table_entry": "0x33A860E",
+        "relative_words": 8238,
+        "branch": "0x2C91008"
+      },
+      "getter": {
+        "table_entry": "0x33AA0BA",
+        "relative_words": 6071,
+        "branch": "0x2C99F18"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_PRIORITY1",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF866",
+          "file_offset": "0xF90E",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x71F",
+      "name": "UI_SETP_TARGET_PRIORITY2",
+      "setter": {
+        "table_entry": "0x33A8610",
+        "relative_words": 8238,
+        "branch": "0x2C91008"
+      },
+      "getter": {
+        "table_entry": "0x33AA0BC",
+        "relative_words": 6071,
+        "branch": "0x2C99F18"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_PRIORITY2",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF867",
+          "file_offset": "0xF90F",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x720",
+      "name": "UI_SETP_TARGET_PRIORITY3",
+      "setter": {
+        "table_entry": "0x33A8612",
+        "relative_words": 8238,
+        "branch": "0x2C91008"
+      },
+      "getter": {
+        "table_entry": "0x33AA0BE",
+        "relative_words": 6071,
+        "branch": "0x2C99F18"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_PRIORITY3",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF868",
+          "file_offset": "0xF910",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x721",
+      "name": "UI_SETP_TARGET_PRIORITY4",
+      "setter": {
+        "table_entry": "0x33A8614",
+        "relative_words": 8238,
+        "branch": "0x2C91008"
+      },
+      "getter": {
+        "table_entry": "0x33AA0C0",
+        "relative_words": 6071,
+        "branch": "0x2C99F18"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_PRIORITY4",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF869",
+          "file_offset": "0xF911",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x722",
+      "name": "UI_SETP_TARGET_PRIORITY5",
+      "setter": {
+        "table_entry": "0x33A8616",
+        "relative_words": 8238,
+        "branch": "0x2C91008"
+      },
+      "getter": {
+        "table_entry": "0x33AA0C2",
+        "relative_words": 6071,
+        "branch": "0x2C99F18"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_PRIORITY5",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF86A",
+          "file_offset": "0xF912",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x723",
+      "name": "UI_SETP_TARGET_PRIORITY6",
+      "setter": {
+        "table_entry": "0x33A8618",
+        "relative_words": 8238,
+        "branch": "0x2C91008"
+      },
+      "getter": {
+        "table_entry": "0x33AA0C4",
+        "relative_words": 6071,
+        "branch": "0x2C99F18"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_TARGET_PRIORITY6",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF86B",
+          "file_offset": "0xF913",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x727",
+      "name": "UI_SETP_FOCUSPOINT",
+      "setter": {
+        "table_entry": "0x33A8620",
+        "relative_words": 10966,
+        "branch": "0x2C93AA8"
+      },
+      "getter": {
+        "table_entry": "0x33AA0CC",
+        "relative_words": 314,
+        "branch": "0x2C94524"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_FOCUSPOINT",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF857",
+          "file_offset": "0xF8FF",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x8C0",
+      "name": "UI_SETP_FOCUS_MODE",
+      "setter": {
+        "table_entry": "0x33A8952",
+        "relative_words": 0,
+        "branch": "0x2C88F50"
+      },
+      "getter": {
+        "table_entry": "0x33AA3FE",
+        "relative_words": 309,
+        "branch": "0x2C94510"
+      },
+      "bank_fields_in_C1_C7_backup": [
+        {
+          "name": "UI_SETP_FOCUS_MODE",
+          "segment": "custom_0x1C00",
+          "C1_payload_offset": "0xF7C5",
+          "file_offset": "0xF86D",
+          "type": "u8",
+          "size": 1,
+          "C1_to_C7_values": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "reader_candidates_outside_general_getter": [
+    {
+      "setting_ids": [
+        "0x618"
+      ],
+      "call_site": "0x2BD56D0",
+      "also_at": [
+        "0x2BD56E8",
+        "0x2BD5700"
+      ],
+      "evidence": "Непосредственно перед BL 0x2C93FD4 загружается id 0x618; далее результат используется при записи соседних 0xACC/0xACD и id 0x624.",
+      "confidence": "Кандидат: потребитель и полный смысл полей не установлены."
+    },
+    {
+      "setting_ids": [
+        "0x618"
+      ],
+      "call_site": "0x2BF948C",
+      "evidence": "Отдельный прямой вызов общего геттера с id 0x618.",
+      "confidence": "Кандидат на логику распознавания лиц."
+    },
+    {
+      "setting_ids": [
+        "0x61C"
+      ],
+      "call_site": "0x2BFBB44",
+      "evidence": "Отдельный прямой вызов общего геттера с id 0x61C.",
+      "confidence": "Кандидат на логику выбора глаза."
+    },
+    {
+      "setting_ids": [
+        "0x5BE"
+      ],
+      "call_site": "0x2BFEEBC",
+      "evidence": "Отдельный прямой вызов общего геттера с id 0x5BE.",
+      "confidence": "Кандидат на потребление режима производительности."
+    },
+    {
+      "setting_ids": [
+        "0x622"
+      ],
+      "call_site": "0x2BFEFCC",
+      "evidence": "Отдельный прямой вызов общего геттера с id 0x622.",
+      "confidence": "Кандидат на распознавание объекта."
+    },
+    {
+      "setting_ids": [
+        "0x715",
+        "0x71C",
+        "0x723"
+      ],
+      "call_sites": [
+        "0x2BF87A8",
+        "0x2BF87D8",
+        "0x2BF8808"
+      ],
+      "evidence": "Соседние вызовы читают по одному полю чувствительности каждого из трёх наборов 5/6.",
+      "confidence": "Кандидат на сборку параметров AF-C; функция выше по стеку не идентифицирована."
+    }
+  ],
+  "dependencies": [
+    "USB-наблюдение: распознавание объектов или MF сопровождается автоматическим отключением лиц/глаз.",
+    "USB-наблюдение: позиция объектива D171 выдаётся только в MF.",
+    "Сеттер D232 сохраняет выбранный набор и вызывает несколько обслуживающих функций; изменение D233 относится к трём параметрам выбранного набора.",
+    "Для AF-S/AF-C приоритетов, точных вызовов подсистемы AF и связи с фазовыми данными данных пока нет."
+  ],
+  "limits": [
+    "Числа банка ниже относятся к сохранённым профилям C1–C7; их нельзя автоматически считать текущими live-настройками.",
+    "Статическая адресация общего сеттера/геттера подтверждена по таблицам переходов. Ветви D233 и координатных строк не сведены полностью к конкретным меню-состояниям.",
+    "Поля вне сегментов экспортируемого резервного снимка и отдельные состояния не трактуются как отсутствующие в устройстве."
+  ]
+}

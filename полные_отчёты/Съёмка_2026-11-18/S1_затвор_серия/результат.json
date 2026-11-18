@@ -1,0 +1,334 @@
+{
+  "task": "S1 затвор, серия, экспозиция и связь с LCD-флагом",
+  "firmware": "X-H2 5.30",
+  "camera_touched": false,
+  "sources": [
+    "Анализ_прошивки/Камера_2026-11-17/K2_прошивка/карта_банка.tsv",
+    "Анализ_прошивки/Камера_2026-11-17/K2_прошивка/отчёт.md",
+    "Анализ_прошивки/Камера_2026-11-17/Q3_мост/отчёт.md",
+    "Анализ_прошивки/PTP_чтение_2026-11-10/Связь_USB_и_прошивки.md",
+    "Анализ_прошивки/Сравнение_версий_2026-11-16/F_режим_съёмки/отчёт.md"
+  ],
+  "dispatcher": {
+    "set": {
+      "address": "0x2C88E98",
+      "table": "0x33A77E8",
+      "index": "id - 0xB"
+    },
+    "get": {
+      "address": "0x2C93FD4",
+      "table": "0x33A929C",
+      "index": "id - 0xF"
+    },
+    "transform": "0x1135930",
+    "bank_write": "0x11335C4"
+  },
+  "settings": [
+    {
+      "name": "тип затвора",
+      "id": "0x827",
+      "ui_setp": "UI_SETP_SHUTTER_TYPE",
+      "setter_branch": "0x2C9154C",
+      "getter_branch": "0x2C99744",
+      "bank_file_offset": "0x63A",
+      "type": "u8",
+      "values": {
+        "0": "MS",
+        "1": "ES",
+        "2": "MS+ES",
+        "3": "EF"
+      },
+      "usb": {
+        "sdk_code": "D03C",
+        "camera_property_confirmed": false
+      },
+      "side_effects": [
+        "call 0x12ECE24",
+        "call 0x132FFC8",
+        "common postprocessing 0x2C8ECF8"
+      ],
+      "actual_output": {
+        "id": "0xAB8",
+        "ui_setp": "UI_SETP_DOTLCD_SHUTTERTYPE_OUTPUT",
+        "file_offset": "0x1A8",
+        "writer": "0x2BD5114 copies source struct field +0x19AC",
+        "source_field_writer": "not located in blocks 0/1"
+      },
+      "confidence": "Д for storage and menu codes; К for deferred actual-output writer chain"
+    },
+    {
+      "name": "серийный режим",
+      "id": "0x858",
+      "ui_setp": "UI_SETP_CONTINUOUS",
+      "setter_branch": "0x2C8F508",
+      "getter_branch": "0x2C97ED8",
+      "bank_file_offset": "0x4F8",
+      "type": "u8",
+      "mirror_ids": [
+        "0xACE",
+        "0xACF"
+      ],
+      "mirror_offsets": [
+        "0x68C",
+        "0x68D"
+      ],
+      "mirror_values": {
+        "S": 0,
+        "CH": 21,
+        "CL": 23
+      },
+      "usb": {
+        "property": "0xD201",
+        "values": {
+          "S": 4,
+          "CH": 2,
+          "CL": 3
+        }
+      },
+      "side_effects": [
+        "related UI_SETP_CONTINUOUS2 update through 0x13273D0",
+        "calls 0x1321B28 and 0x1321D00",
+        "common postprocessing 0x2C8ECF8"
+      ],
+      "confidence": "Д for path and observed codes; К for meaning of subordinate calls"
+    },
+    {
+      "name": "скорость серийной съёмки",
+      "ids": [
+        "0x864",
+        "0x866"
+      ],
+      "ui_setp": [
+        "UI_SETP_CONTINUOUS_SPEED_H",
+        "UI_SETP_CONTINUOUS_SPEED_L"
+      ],
+      "setter_branch": "0x2C8FCB8",
+      "getter_branch": "0x2C98198",
+      "bank_file_offsets": [
+        "0x4D3",
+        "0x4D4"
+      ],
+      "type": "u8",
+      "values_in_series": [
+        13,
+        3
+      ],
+      "side_effects": [
+        "mode-state checks",
+        "some branches write UI_SETP 0x874",
+        "shared postprocessing"
+      ],
+      "confidence": "Д for code path and checks; К for full value semantics"
+    },
+    {
+      "name": "выдержка M",
+      "id": "0x8A0",
+      "ui_setp": "UI_SETP_SHUTTER_SPEED_M",
+      "setter_branch": "0x2C93AA8 generic store path",
+      "getter_branch": "0x2C9801C onward",
+      "bank_file_offset": "0x5B2",
+      "type": "u8 index",
+      "calibration": {
+        "38": "1/25",
+        "52": "1/250",
+        "67": "1/8000",
+        "70": "1/16000"
+      },
+      "output": {
+        "id": "0xAAB",
+        "file_offset": "0x18C",
+        "encoding": "denominator x 100",
+        "writer": "0x2BD5114 copies source struct field +0x1994"
+      },
+      "usb": {
+        "internal_id": "0x4D1",
+        "property": "0x500D",
+        "unit": "microseconds"
+      },
+      "confidence": "Д for bank bytes and output calibration; К for complete source writer"
+    },
+    {
+      "name": "экран просмотра",
+      "id": "0xB",
+      "ui_setp": "UI_SETP_REC_VIEW",
+      "setter_branch": "0x2C927AC",
+      "getter_branch": "generic transformed get",
+      "bank_file_offset": "0x29B",
+      "type": "u8",
+      "values": {
+        "2": "CONTINUOUS",
+        "3": "OFF"
+      },
+      "usb": {
+        "property": null
+      },
+      "confidence": "Д"
+    },
+    {
+      "name": "ISO, диафрагма, экспокоррекция",
+      "ptp_mapping": [
+        {
+          "internal_id": "0x4D0",
+          "property": "0x5007",
+          "name": "диафрагма"
+        },
+        {
+          "internal_id": "0x4D1",
+          "property": "0x500D",
+          "name": "выдержка"
+        },
+        {
+          "internal_id": "0x4D2",
+          "property": "0x500F",
+          "name": "ISO"
+        },
+        {
+          "internal_id": "0x4D3",
+          "property": "0x5010",
+          "name": "экспокоррекция"
+        }
+      ],
+      "bank_fields": [
+        {
+          "id": "0x755",
+          "name": "UI_SETP_ISO_PSAM",
+          "file_offset": "0x4EA",
+          "type": "u8"
+        },
+        {
+          "id": "0x88F",
+          "name": "UI_SETP_FNUMBER",
+          "file_offset": "0x228",
+          "type": "u16"
+        },
+        {
+          "id": "0x898",
+          "name": "UI_SETP_FNUMBER_M",
+          "file_offset": "0x22C",
+          "type": "u16"
+        },
+        {
+          "id": "0x899",
+          "name": "UI_SETP_FNUMBER_A",
+          "file_offset": "0x22A",
+          "type": "u16"
+        },
+        {
+          "id": "0x883",
+          "name": "UI_SETP_EXPOSURE",
+          "file_offset": "0x5BF",
+          "type": "u8",
+          "ptp_equivalence": "not proven"
+        },
+        {
+          "id": "0xAAF",
+          "name": "UI_SETP_DOTLCD_ISO_OUTPUT",
+          "file_offset": "0x190",
+          "type": "u32",
+          "is_computed_output": true
+        }
+      ],
+      "confidence": "Д for PTP mapping and bank layout; К/unknown for exact equivalence and conversions"
+    },
+    {
+      "name": "режим P/S/A/M",
+      "enum": "MODE_RECORD",
+      "resolver": "0x1141EE0",
+      "values": {
+        "0x21": "P",
+        "0x22": "S",
+        "0x23": "A",
+        "0x24": "M",
+        "0x2C": "HDR"
+      },
+      "selector": "0x2E18340",
+      "reCF_copy_field": "[ctx+0x3978]",
+      "caveat": "не доказано, что RECF-поле тождественно коду MODE_RECORD",
+      "confidence": "К"
+    },
+    {
+      "name": "производительность",
+      "ids": [
+        "0x5BA",
+        "0x5BC",
+        "0x5BD"
+      ],
+      "ui_setp": [
+        "UI_SETP_PERFORMANCE",
+        "UI_SETP_PERFORMANCE_LEVER",
+        "UI_SETP_PERFORMANCE_MODE"
+      ],
+      "setter_branches": {
+        "0x5BA": "0x2C8DA38",
+        "0x5BC": "0x2C8DA70",
+        "0x5BD": "0x2C8DA94"
+      },
+      "bank_file_offsets": {
+        "0x5BA": "0x410",
+        "0x5BC": "0x412",
+        "0x5BD": "0x31B"
+      },
+      "usb": {
+        "property": "0xD304",
+        "normal": 1,
+        "boost": 5
+      },
+      "observed_bank_values": {
+        "0x5BA": 2,
+        "0x5BC": 4,
+        "0x5BD": 0
+      },
+      "side_effects": [
+        "calls 0x1337DFC and 0x2BAC6D8",
+        "conditional calls 0x2BB0268 or 0x13199E0",
+        "special context 0xF002 can also store 0x5BC"
+      ],
+      "confidence": "Д for mapping and branch behavior; К for semantic interpretation of all stored codes"
+    }
+  ],
+  "lcd_flag": {
+    "collector": "0x30256EC",
+    "evaluator": "0x30308A0",
+    "table": "0x3456B20",
+    "table_formula": "table[6*min(fieldB,40)+shutter_type] == 2",
+    "fieldA": {
+      "getter": "0x154CEC8",
+      "struct_offset": "0xCC",
+      "required": 1,
+      "semantic_candidate": "CH + REC_VIEW CONTINUOUS"
+    },
+    "shutter_type": {
+      "getter": "0x3030A18",
+      "ui_setp": "0xAB8",
+      "file_offset": "0x1A8",
+      "required": 1
+    },
+    "fieldB": {
+      "getter": "0x154CF6C",
+      "struct_offset": "0xD4",
+      "condition": ">= 6",
+      "semantic_candidate": "shutter denominator / 100; threshold <=1/600"
+    },
+    "drive_getter": {
+      "address": "0x3024664",
+      "accepted_internal_codes": [
+        3,
+        4
+      ]
+    },
+    "other_inputs": [
+      "0x155B8EC fieldC",
+      "0x1552658 struct+0x1CC"
+    ],
+    "additional_gates": "bits 4, 12, 13, 14 in [0x4D35710] suppress the result",
+    "tested_discrete_boundary": "1/500 off, 1/640 on",
+    "confidence": "Д for evaluator/table behavior; К for mapping fieldA/fieldB to camera semantics"
+  },
+  "artifacts": [
+    "отчёт.md",
+    "результат.json",
+    "сверка_снимков.json",
+    "сверка_снимков.py",
+    "разобрать_ветки.py"
+  ]
+}\n
