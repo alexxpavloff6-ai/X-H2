@@ -1,0 +1,1972 @@
+{
+  "прошивка": "Fujifilm X-H2 5.30",
+  "дата": "2026-11-18",
+  "назначение": "назначение пяти активных записей хранилища",
+  "источник_каталога": "<корень проекта>\\Анализ_прошивки\\Записи_2026-11-18\\U2_каталог_записей\\результат.json",
+  "метод": "сопоставление статических регистраций, прямых вызовов публикации/чтения и разбор выбранных функций ARM64 в блоках 0–1; исходные DAT и блоки не изменялись",
+  "запись": "Только в папку V1_записи. Камера не использовалась.",
+  "границы": [
+    "Смысл кода события не выводился только из его номера.",
+    "Отсутствие прямых вызовов относится к разобранным блокам и статическим ссылкам; косвенные и динамические маршруты не исключены.",
+    "Поля, не прослеженные до именованной настройки или конечного потребителя, отмечены как неустановленные."
+  ],
+  "records": [
+    {
+      "id": "0x88",
+      "уровень_вывода": "Д",
+      "подсистема": {
+        "название": "lenscom",
+        "уровень": "Д",
+        "основание": "строковая метка в конфигурации потока 0x13e6420; запуск из последовательности 0x14e2634"
+      },
+      "содержимое": "Пакеты уведомлений: 16-битный код события, байт состояния из 0x14ce514, тип 0x88, длина и указатель на данные. Длина в наблюдавшихся функциях 8, 16 или 56 байт. Содержимое собирается из аргументов и полей переданных структур; отдельные функции вписывают константы и битовые поля через 0x14d2704.",
+      "писатели": "112 вызовов публикации в блоке 0, 112 функций; общий низкоуровневый вызов 0x14cf124. Отдельного единого смыслового построителя для всех событий не видно.",
+      "читатели": "Прямых вызовов чтения 0x14cf354 и подписки 0x14cf45c с постоянным ID 0x88 в каталоге не найдено.",
+      "кандидат_назначения": "Обмен с объективом по метке lenscom. Это делает связь с фокусировкой и состоянием объектива правдоподобной, но конкретные AF-поля по именам UI_SETP в пакетах не доказаны.",
+      "пример_пакета": {
+        "функция": "0x13e683c",
+        "код": "0x18de",
+        "размер": "0x38",
+        "наблюдение": "первые 16 бит берутся из [x19]; биты полей [x19+4] и [x19+8] вписываются в байт заголовка; остаётся непрозрачная структура события."
+      },
+      "параметры_съёмки": "Точного поля режима фокуса, точки AF, экспозиции, выдержки, серии или дисплея не установлено.",
+      "регистрация_и_вызовы": {
+        "регистрация": [
+          {
+            "block": 0,
+            "site": "0x13e646c",
+            "function": "0x13e6420",
+            "id": {
+              "value": 136,
+              "expression": null
+            },
+            "descriptor_stack_offset": "0x48",
+            "count": {
+              "value": 48,
+              "expression": null
+            },
+            "element_size": {
+              "value": 72,
+              "expression": null
+            },
+            "context": "13e642c: add x0, x0, #0x328\n13e6430: bl #0x14d150c\n13e6434: mov w2, #0x1c0\n13e6438: mov w1, #0\n13e643c: adrp x0, #0x2274000\n13e6440: add x0, x0, #0x3b0\n13e6444: bl #0x14d2724\n13e6448: adrp x0, #0x2613000\n13e644c: mov w1, #1\n13e6450: str w1, [x0, #0xd78]\n13e6454: mov w0, #0x30\n13e6458: str w0, [sp, #0x48]\n13e645c: mov w0, #0x48\n13e6460: str w0, [sp, #0x4c]\n13e6464: add x1, sp, #0x48\n13e6468: mov w0, #0x88"
+          }
+        ],
+        "число_публикаций": 112,
+        "публикации": [
+          {
+            "block": 0,
+            "site": "0x13e6538",
+            "function": "0x13e64ec"
+          },
+          {
+            "block": 0,
+            "site": "0x13e65a4",
+            "function": "0x13e6560"
+          },
+          {
+            "block": 0,
+            "site": "0x13e6638",
+            "function": "0x13e65cc"
+          },
+          {
+            "block": 0,
+            "site": "0x13e66cc",
+            "function": "0x13e6660"
+          },
+          {
+            "block": 0,
+            "site": "0x13e6760",
+            "function": "0x13e66f4"
+          },
+          {
+            "block": 0,
+            "site": "0x13e6804",
+            "function": "0x13e6798"
+          },
+          {
+            "block": 0,
+            "site": "0x13e68e4",
+            "function": "0x13e683c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e69b4",
+            "function": "0x13e690c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e6a48",
+            "function": "0x13e69dc"
+          },
+          {
+            "block": 0,
+            "site": "0x13e6adc",
+            "function": "0x13e6a70"
+          },
+          {
+            "block": 0,
+            "site": "0x13e6b80",
+            "function": "0x13e6b14"
+          },
+          {
+            "block": 0,
+            "site": "0x13e6c14",
+            "function": "0x13e6ba8"
+          },
+          {
+            "block": 0,
+            "site": "0x13e6cd4",
+            "function": "0x13e6c3c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e6d9c",
+            "function": "0x13e6cfc"
+          },
+          {
+            "block": 0,
+            "site": "0x13e6e5c",
+            "function": "0x13e6dc4"
+          },
+          {
+            "block": 0,
+            "site": "0x13e6f24",
+            "function": "0x13e6e84"
+          },
+          {
+            "block": 0,
+            "site": "0x13e6fec",
+            "function": "0x13e6f4c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7080",
+            "function": "0x13e7014"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7114",
+            "function": "0x13e70a8"
+          },
+          {
+            "block": 0,
+            "site": "0x13e71bc",
+            "function": "0x13e713c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7250",
+            "function": "0x13e71e4"
+          },
+          {
+            "block": 0,
+            "site": "0x13e72e4",
+            "function": "0x13e7278"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7378",
+            "function": "0x13e730c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e740c",
+            "function": "0x13e73a0"
+          },
+          {
+            "block": 0,
+            "site": "0x13e74a0",
+            "function": "0x13e7434"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7534",
+            "function": "0x13e74c8"
+          },
+          {
+            "block": 0,
+            "site": "0x13e75c8",
+            "function": "0x13e755c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7678",
+            "function": "0x13e75f0"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7720",
+            "function": "0x13e76a0"
+          },
+          {
+            "block": 0,
+            "site": "0x13e77c0",
+            "function": "0x13e7748"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7854",
+            "function": "0x13e77e8"
+          },
+          {
+            "block": 0,
+            "site": "0x13e79dc",
+            "function": "0x13e787c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7a84",
+            "function": "0x13e7a04"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7b2c",
+            "function": "0x13e7aac"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7c24",
+            "function": "0x13e7b54"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7cb8",
+            "function": "0x13e7c4c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7da8",
+            "function": "0x13e7ce0"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7e78",
+            "function": "0x13e7dd0"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7f20",
+            "function": "0x13e7ea0"
+          },
+          {
+            "block": 0,
+            "site": "0x13e7fb4",
+            "function": "0x13e7f48"
+          },
+          {
+            "block": 0,
+            "site": "0x13e806c",
+            "function": "0x13e7fdc"
+          },
+          {
+            "block": 0,
+            "site": "0x13e813c",
+            "function": "0x13e8094"
+          },
+          {
+            "block": 0,
+            "site": "0x13e8244",
+            "function": "0x13e8164"
+          },
+          {
+            "block": 0,
+            "site": "0x13e8300",
+            "function": "0x13e8270"
+          },
+          {
+            "block": 0,
+            "site": "0x13e83c0",
+            "function": "0x13e8328"
+          },
+          {
+            "block": 0,
+            "site": "0x13e8468",
+            "function": "0x13e83e8"
+          },
+          {
+            "block": 0,
+            "site": "0x13e84fc",
+            "function": "0x13e8490"
+          },
+          {
+            "block": 0,
+            "site": "0x13e85ac",
+            "function": "0x13e8524"
+          },
+          {
+            "block": 0,
+            "site": "0x13e8664",
+            "function": "0x13e85d4"
+          },
+          {
+            "block": 0,
+            "site": "0x13e871c",
+            "function": "0x13e868c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e87cc",
+            "function": "0x13e8744"
+          },
+          {
+            "block": 0,
+            "site": "0x13e8874",
+            "function": "0x13e87f4"
+          },
+          {
+            "block": 0,
+            "site": "0x13e8964",
+            "function": "0x13e889c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e8a54",
+            "function": "0x13e898c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e8b2c",
+            "function": "0x13e8a7c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e8bd4",
+            "function": "0x13e8b54"
+          },
+          {
+            "block": 0,
+            "site": "0x13e8c68",
+            "function": "0x13e8bfc"
+          },
+          {
+            "block": 0,
+            "site": "0x13e8d90",
+            "function": "0x13e8c90"
+          },
+          {
+            "block": 0,
+            "site": "0x13e8eb8",
+            "function": "0x13e8db8"
+          },
+          {
+            "block": 0,
+            "site": "0x13e8f68",
+            "function": "0x13e8ee0"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9018",
+            "function": "0x13e8f90"
+          },
+          {
+            "block": 0,
+            "site": "0x13e90e0",
+            "function": "0x13e9040"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9188",
+            "function": "0x13e9108"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9238",
+            "function": "0x13e91b0"
+          },
+          {
+            "block": 0,
+            "site": "0x13e92e0",
+            "function": "0x13e9260"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9398",
+            "function": "0x13e9308"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9450",
+            "function": "0x13e93c0"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9538",
+            "function": "0x13e9478"
+          },
+          {
+            "block": 0,
+            "site": "0x13e95dc",
+            "function": "0x13e9560"
+          },
+          {
+            "block": 0,
+            "site": "0x13e968c",
+            "function": "0x13e9604"
+          },
+          {
+            "block": 0,
+            "site": "0x13e976c",
+            "function": "0x13e96b4"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9824",
+            "function": "0x13e9794"
+          },
+          {
+            "block": 0,
+            "site": "0x13e98cc",
+            "function": "0x13e984c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9974",
+            "function": "0x13e98f4"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9a14",
+            "function": "0x13e999c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9abc",
+            "function": "0x13e9a3c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9b64",
+            "function": "0x13e9ae4"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9c0c",
+            "function": "0x13e9b8c"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9ca0",
+            "function": "0x13e9c34"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9d50",
+            "function": "0x13e9cc8"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9e00",
+            "function": "0x13e9d78"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9ea0",
+            "function": "0x13e9e28"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9f58",
+            "function": "0x13e9ec8"
+          },
+          {
+            "block": 0,
+            "site": "0x13e9ff8",
+            "function": "0x13e9f80"
+          },
+          {
+            "block": 0,
+            "site": "0x13ea0a8",
+            "function": "0x13ea020"
+          },
+          {
+            "block": 0,
+            "site": "0x13ea148",
+            "function": "0x13ea0d0"
+          },
+          {
+            "block": 0,
+            "site": "0x13ea1f8",
+            "function": "0x13ea170"
+          },
+          {
+            "block": 0,
+            "site": "0x13ea2b0",
+            "function": "0x13ea220"
+          },
+          {
+            "block": 0,
+            "site": "0x13ea344",
+            "function": "0x13ea2d8"
+          },
+          {
+            "block": 0,
+            "site": "0x13ea434",
+            "function": "0x13ea36c"
+          },
+          {
+            "block": 0,
+            "site": "0x13ea4d8",
+            "function": "0x13ea45c"
+          },
+          {
+            "block": 0,
+            "site": "0x13ea558",
+            "function": "0x13ea500"
+          },
+          {
+            "block": 0,
+            "site": "0x13ea5d0",
+            "function": "0x13ea580"
+          },
+          {
+            "block": 0,
+            "site": "0x13ea664",
+            "function": "0x13ea5f8"
+          },
+          {
+            "block": 0,
+            "site": "0x13ea734",
+            "function": "0x13ea68c"
+          },
+          {
+            "block": 0,
+            "site": "0x13ea804",
+            "function": "0x13ea75c"
+          },
+          {
+            "block": 0,
+            "site": "0x13ea8f4",
+            "function": "0x13ea82c"
+          },
+          {
+            "block": 0,
+            "site": "0x13ea9c4",
+            "function": "0x13ea91c"
+          },
+          {
+            "block": 0,
+            "site": "0x13eaa94",
+            "function": "0x13ea9ec"
+          },
+          {
+            "block": 0,
+            "site": "0x13eab64",
+            "function": "0x13eaabc"
+          },
+          {
+            "block": 0,
+            "site": "0x13eac24",
+            "function": "0x13eab8c"
+          },
+          {
+            "block": 0,
+            "site": "0x13eacc4",
+            "function": "0x13eac4c"
+          },
+          {
+            "block": 0,
+            "site": "0x13ead58",
+            "function": "0x13eacec"
+          },
+          {
+            "block": 0,
+            "site": "0x13eae10",
+            "function": "0x13ead80"
+          },
+          {
+            "block": 0,
+            "site": "0x13eaea4",
+            "function": "0x13eae38"
+          },
+          {
+            "block": 0,
+            "site": "0x13eaf4c",
+            "function": "0x13eaecc"
+          },
+          {
+            "block": 0,
+            "site": "0x13eaff8",
+            "function": "0x13eaf74"
+          },
+          {
+            "block": 0,
+            "site": "0x13eb0b0",
+            "function": "0x13eb020"
+          },
+          {
+            "block": 0,
+            "site": "0x13eb1d0",
+            "function": "0x13eb0d8"
+          },
+          {
+            "block": 0,
+            "site": "0x13eb254",
+            "function": "0x13eb1f8"
+          },
+          {
+            "block": 0,
+            "site": "0x13eb330",
+            "function": "0x13eb2dc"
+          },
+          {
+            "block": 0,
+            "site": "0x13eb3ac",
+            "function": "0x13eb358"
+          }
+        ],
+        "читатели_каталога": [],
+        "подписчики_каталога": []
+      },
+      "дизассемблированные_участки": {
+        "регистратор": {
+          "блок": 0,
+          "адрес": "0x13e6420",
+          "код": "13e6420: stp x29, x30, [sp, #-0x50]!\n13e6424: mov x29, sp\n13e6428: adrp x0, #0x207a000\n13e642c: add x0, x0, #0x328\n13e6430: bl #0x14d150c\n13e6434: mov w2, #0x1c0\n13e6438: mov w1, #0\n13e643c: adrp x0, #0x2274000\n13e6440: add x0, x0, #0x3b0\n13e6444: bl #0x14d2724\n13e6448: adrp x0, #0x2613000\n13e644c: mov w1, #1\n13e6450: str w1, [x0, #0xd78]\n13e6454: mov w0, #0x30\n13e6458: str w0, [sp, #0x48]\n13e645c: mov w0, #0x48\n13e6460: str w0, [sp, #0x4c]\n13e6464: add x1, sp, #0x48\n13e6468: mov w0, #0x88\n13e646c: bl #0x14cedac\n13e6470: cbnz w0, #0x13e64bc\n13e6474: mov w0, #0x88\n13e6478: str w0, [sp, #0x18]\n13e647c: adrp x0, #0x1912000\n13e6480: add x0, x0, #0x3c8\n13e6484: str x0, [sp, #0x20]\n13e6488: mov w0, #5\n13e648c: str w0, [sp, #0x28]\n13e6490: mov w0, #0x1800\n13e6494: str w0, [sp, #0x2c]\n13e6498: adrp x0, #0x13eb000\n13e649c: add x0, x0, #0x4dc\n13e64a0: str x0, [sp, #0x30]\n13e64a4: str xzr, [sp, #0x38]\n13e64a8: add x0, sp, #0x18\n13e64ac: bl #0x14ce004"
+        },
+        "публикация": {
+          "блок": 0,
+          "адрес": "0x13e683c",
+          "код": "13e683c: stp x29, x30, [sp, #-0x70]!\n13e6840: mov x29, sp\n13e6844: stp x19, x20, [sp, #0x10]\n13e6848: mov x19, x0\n13e684c: mov x20, x1\n13e6850: mov w0, #0x18de\n13e6854: strh w0, [sp, #0x60]\n13e6858: bl #0x14ce514\n13e685c: strb w0, [sp, #0x62]\n13e6860: mov w0, #-0x78\n13e6864: strb w0, [sp, #0x63]\n13e6868: mov w0, #0x38\n13e686c: str w0, [sp, #0x64]\n13e6870: add x0, sp, #0x28\n13e6874: str x0, [sp, #0x68]\n13e6878: str x20, [sp, #0x28]\n13e687c: mov w1, #2\n13e6880: strb w1, [sp, #0x58]\n13e6884: mov w2, #2\n13e6888: mov w1, #0\n13e688c: add x0, sp, #0x30\n13e6890: bl #0x14d2704\n13e6894: ldrh w0, [sp, #0x30]\n13e6898: mov w1, #0x18\n13e689c: bfi w0, w1, #6, #0xa\n13e68a0: strh w0, [sp, #0x30]\n13e68a4: ldrh w0, [sp, #0x32]\n13e68a8: ldrh w1, [x19]\n13e68ac: bfxil w0, w1, #0, #0xb\n13e68b0: strh w0, [sp, #0x32]\n13e68b4: ldrb w1, [sp, #0x33]\n13e68b8: ldr w0, [x19, #4]\n13e68bc: bfi w1, w0, #3, #4\n13e68c0: ldr w0, [x19, #8]\n13e68c4: bfi w1, w0, #7, #1\n13e68c8: strb w1, [sp, #0x33]"
+        }
+      },
+      "исходная_категория_U2": "не установлена"
+    },
+    {
+      "id": "0x4f",
+      "уровень_вывода": "К",
+      "подсистема": {
+        "название": "не установлена; поток событий блока 0",
+        "уровень": "К",
+        "основание": "регистрация 0x1576aa8; отправители и циклический читатель сгруппированы в коде блока 0, метка задачи не восстановлена"
+      },
+      "содержимое": "Пакеты с 16-битным кодом события, байтом состояния из 0x14ce514, типом 0x4f, длиной и указателем на данные. По прямым отправителям встречаются данные длиной 0, 4, 8 и 16 байт; значения берутся из аргументов, констант и глобального состояния. Кодовые значения включают 0x16c3–0x1729.",
+      "писатели": "88 вызовов публикации в блоке 0, 87 функций. Общий вызов API 0x14cf124; унифицированного построителя прикладного пакета не обнаружено.",
+      "читатели": "0x15669e0 читает ID 0x4f через 0x14cf354 с индексом -1, затем раздаёт сообщения обработчикам. Сверяет категории/коды событий и передаёт данные через функции 0x153ce8c, 0x156f1e8, 0x1572e24 и другие обработчики.",
+      "кандидат_назначения": "Канал событий с циклической обработкой в блоке 0; назначение отдельных кодов и конечные адресаты пока не названы. Кодовый ряд, проходящий через 0x1702–0x1711 после вычитания смещения, является маршрутизацией событий, а не доказанным номером пользовательской настройки.",
+      "пример_пакета": {
+        "функция": "0x156e95c",
+        "код": "0x1726",
+        "размер": "4",
+        "наблюдение": "одно 32-битное значение берётся из входного аргумента."
+      },
+      "параметры_съёмки": "Прямого переноса известных UI_SETP_FOCUS_MODE (0x8c0), UI_SETP_FOCUS (0x6fb), экспозиции, выдержки, серии или дисплея не установлено.",
+      "регистрация_и_вызовы": {
+        "регистрация": [
+          {
+            "block": 0,
+            "site": "0x1576ba4",
+            "function": "0x1576aa8",
+            "id": {
+              "value": 79,
+              "expression": null
+            },
+            "descriptor_stack_offset": "0x38",
+            "count": {
+              "value": 48,
+              "expression": null
+            },
+            "element_size": {
+              "value": 56,
+              "expression": null
+            },
+            "context": "1576b64: str wzr, [x19, #0x420]\n1576b68: strh wzr, [x19, #0x424]\n1576b6c: str wzr, [x19, #0x428]\n1576b70: strh wzr, [x19, #0x430]\n1576b74: str wzr, [x19, #0x434]\n1576b78: str wzr, [x19, #0x42c]\n1576b7c: str wzr, [x19, #0xdbc]\n1576b80: str wzr, [x19, #0xdc0]\n1576b84: strh wzr, [x19, #0xdc4]\n1576b88: str wzr, [x19, #0xdc8]\n1576b8c: mov w0, #0x30\n1576b90: str w0, [sp, #0x38]\n1576b94: mov w0, #0x38\n1576b98: str w0, [sp, #0x3c]\n1576b9c: add x1, sp, #0x38\n1576ba0: mov w0, #0x4f"
+          }
+        ],
+        "число_публикаций": 88,
+        "публикации": [
+          {
+            "block": 0,
+            "site": "0x156e9b8",
+            "function": "0x156e95c"
+          },
+          {
+            "block": 0,
+            "site": "0x156ea24",
+            "function": "0x156e9c8"
+          },
+          {
+            "block": 0,
+            "site": "0x1572b00",
+            "function": "0x1572ac8"
+          },
+          {
+            "block": 0,
+            "site": "0x1573f10",
+            "function": "0x1573ed8"
+          },
+          {
+            "block": 0,
+            "site": "0x1573f58",
+            "function": "0x1573f20"
+          },
+          {
+            "block": 0,
+            "site": "0x1574174",
+            "function": "0x1574104"
+          },
+          {
+            "block": 0,
+            "site": "0x15742e4",
+            "function": "0x157424c"
+          },
+          {
+            "block": 0,
+            "site": "0x1574388",
+            "function": "0x157430c"
+          },
+          {
+            "block": 0,
+            "site": "0x157441c",
+            "function": "0x15743ac"
+          },
+          {
+            "block": 0,
+            "site": "0x15744ac",
+            "function": "0x157443c"
+          },
+          {
+            "block": 0,
+            "site": "0x157453c",
+            "function": "0x15744cc"
+          },
+          {
+            "block": 0,
+            "site": "0x15745ec",
+            "function": "0x157455c"
+          },
+          {
+            "block": 0,
+            "site": "0x1574684",
+            "function": "0x1574614"
+          },
+          {
+            "block": 0,
+            "site": "0x1574714",
+            "function": "0x15746a4"
+          },
+          {
+            "block": 0,
+            "site": "0x157476c",
+            "function": "0x1574734"
+          },
+          {
+            "block": 0,
+            "site": "0x1574834",
+            "function": "0x1574784"
+          },
+          {
+            "block": 0,
+            "site": "0x15748c8",
+            "function": "0x1574860"
+          },
+          {
+            "block": 0,
+            "site": "0x1574994",
+            "function": "0x15748dc"
+          },
+          {
+            "block": 0,
+            "site": "0x1574a70",
+            "function": "0x15749bc"
+          },
+          {
+            "block": 0,
+            "site": "0x1574ad0",
+            "function": "0x1574a98"
+          },
+          {
+            "block": 0,
+            "site": "0x1574bb4",
+            "function": "0x1574ae8"
+          },
+          {
+            "block": 0,
+            "site": "0x1574cd4",
+            "function": "0x1574c04"
+          },
+          {
+            "block": 0,
+            "site": "0x1574d8c",
+            "function": "0x1574d24"
+          },
+          {
+            "block": 0,
+            "site": "0x1574dfc",
+            "function": "0x1574dc4"
+          },
+          {
+            "block": 0,
+            "site": "0x1574e78",
+            "function": "0x1574e14"
+          },
+          {
+            "block": 0,
+            "site": "0x1574efc",
+            "function": "0x1574e94"
+          },
+          {
+            "block": 0,
+            "site": "0x1574f7c",
+            "function": "0x1574e94"
+          },
+          {
+            "block": 0,
+            "site": "0x15750ac",
+            "function": "0x1575020"
+          },
+          {
+            "block": 0,
+            "site": "0x157512c",
+            "function": "0x15750d0"
+          },
+          {
+            "block": 0,
+            "site": "0x1575238",
+            "function": "0x1575170"
+          },
+          {
+            "block": 0,
+            "site": "0x15752f0",
+            "function": "0x1575260"
+          },
+          {
+            "block": 0,
+            "site": "0x15753c8",
+            "function": "0x1575318"
+          },
+          {
+            "block": 0,
+            "site": "0x1575444",
+            "function": "0x157540c"
+          },
+          {
+            "block": 0,
+            "site": "0x15754e8",
+            "function": "0x1575474"
+          },
+          {
+            "block": 0,
+            "site": "0x1575570",
+            "function": "0x15754fc"
+          },
+          {
+            "block": 0,
+            "site": "0x15755ec",
+            "function": "0x1575584"
+          },
+          {
+            "block": 0,
+            "site": "0x1575680",
+            "function": "0x1575600"
+          },
+          {
+            "block": 0,
+            "site": "0x1575710",
+            "function": "0x15756a8"
+          },
+          {
+            "block": 0,
+            "site": "0x15757a0",
+            "function": "0x1575724"
+          },
+          {
+            "block": 0,
+            "site": "0x15757f8",
+            "function": "0x15757b4"
+          },
+          {
+            "block": 0,
+            "site": "0x1575864",
+            "function": "0x1575818"
+          },
+          {
+            "block": 0,
+            "site": "0x15758fc",
+            "function": "0x1575874"
+          },
+          {
+            "block": 0,
+            "site": "0x1575998",
+            "function": "0x1575930"
+          },
+          {
+            "block": 0,
+            "site": "0x1575a14",
+            "function": "0x15759ac"
+          },
+          {
+            "block": 0,
+            "site": "0x1575a90",
+            "function": "0x1575a28"
+          },
+          {
+            "block": 0,
+            "site": "0x1575b2c",
+            "function": "0x1575aa0"
+          },
+          {
+            "block": 0,
+            "site": "0x1575bb0",
+            "function": "0x1575b54"
+          },
+          {
+            "block": 0,
+            "site": "0x1575c40",
+            "function": "0x1575bc0"
+          },
+          {
+            "block": 0,
+            "site": "0x1575cc4",
+            "function": "0x1575c68"
+          },
+          {
+            "block": 0,
+            "site": "0x1575d30",
+            "function": "0x1575cd4"
+          },
+          {
+            "block": 0,
+            "site": "0x1575d84",
+            "function": "0x1575d40"
+          },
+          {
+            "block": 0,
+            "site": "0x1575dc8",
+            "function": "0x1575d90"
+          },
+          {
+            "block": 0,
+            "site": "0x1575e18",
+            "function": "0x1575dd4"
+          },
+          {
+            "block": 0,
+            "site": "0x1575e5c",
+            "function": "0x1575e24"
+          },
+          {
+            "block": 0,
+            "site": "0x1575ea0",
+            "function": "0x1575e68"
+          },
+          {
+            "block": 0,
+            "site": "0x157608c",
+            "function": "0x1576010"
+          },
+          {
+            "block": 0,
+            "site": "0x1576190",
+            "function": "0x1576134"
+          },
+          {
+            "block": 0,
+            "site": "0x15761fc",
+            "function": "0x15761a0"
+          },
+          {
+            "block": 0,
+            "site": "0x1576268",
+            "function": "0x157620c"
+          },
+          {
+            "block": 0,
+            "site": "0x15762e0",
+            "function": "0x1576278"
+          },
+          {
+            "block": 0,
+            "site": "0x1576368",
+            "function": "0x1576300"
+          },
+          {
+            "block": 0,
+            "site": "0x15763d8",
+            "function": "0x157637c"
+          },
+          {
+            "block": 0,
+            "site": "0x1576454",
+            "function": "0x15763ec"
+          },
+          {
+            "block": 0,
+            "site": "0x15764d0",
+            "function": "0x1576468"
+          },
+          {
+            "block": 0,
+            "site": "0x1576550",
+            "function": "0x15764e8"
+          },
+          {
+            "block": 0,
+            "site": "0x1576628",
+            "function": "0x15765cc"
+          },
+          {
+            "block": 0,
+            "site": "0x1576670",
+            "function": "0x1576638"
+          },
+          {
+            "block": 0,
+            "site": "0x15766d8",
+            "function": "0x157667c"
+          },
+          {
+            "block": 0,
+            "site": "0x1576720",
+            "function": "0x15766e8"
+          },
+          {
+            "block": 0,
+            "site": "0x1576ca8",
+            "function": "0x1576c10"
+          },
+          {
+            "block": 0,
+            "site": "0x1576d2c",
+            "function": "0x1576cd0"
+          },
+          {
+            "block": 0,
+            "site": "0x157705c",
+            "function": "0x1577024"
+          },
+          {
+            "block": 0,
+            "site": "0x15770a0",
+            "function": "0x1577068"
+          },
+          {
+            "block": 0,
+            "site": "0x1577108",
+            "function": "0x15770ac"
+          },
+          {
+            "block": 0,
+            "site": "0x15771bc",
+            "function": "0x1577138"
+          },
+          {
+            "block": 0,
+            "site": "0x1577218",
+            "function": "0x15771e0"
+          },
+          {
+            "block": 0,
+            "site": "0x15774fc",
+            "function": "0x1577478"
+          },
+          {
+            "block": 0,
+            "site": "0x1577644",
+            "function": "0x15775e8"
+          },
+          {
+            "block": 0,
+            "site": "0x15776c8",
+            "function": "0x1577658"
+          },
+          {
+            "block": 0,
+            "site": "0x1577c9c",
+            "function": "0x1577c40"
+          },
+          {
+            "block": 0,
+            "site": "0x1577d10",
+            "function": "0x1577cac"
+          },
+          {
+            "block": 0,
+            "site": "0x1577e60",
+            "function": "0x1577ddc"
+          },
+          {
+            "block": 0,
+            "site": "0x1577ed4",
+            "function": "0x1577e78"
+          },
+          {
+            "block": 0,
+            "site": "0x15781c4",
+            "function": "0x1578160"
+          },
+          {
+            "block": 0,
+            "site": "0x1578ab4",
+            "function": "0x1578a64"
+          },
+          {
+            "block": 0,
+            "site": "0x1578e0c",
+            "function": "0x1578dd4"
+          },
+          {
+            "block": 0,
+            "site": "0x157d804",
+            "function": "0x157d7cc"
+          },
+          {
+            "block": 0,
+            "site": "0x157d870",
+            "function": "0x157d838"
+          }
+        ],
+        "читатели_каталога": [
+          {
+            "block": 0,
+            "site": "0x1566c00",
+            "function": "0x15669e0"
+          }
+        ],
+        "подписчики_каталога": []
+      },
+      "дизассемблированные_участки": {
+        "регистратор": {
+          "блок": 0,
+          "адрес": "0x1576aa8",
+          "код": "1576aa8: stp x29, x30, [sp, #-0x70]!\n1576aac: mov x29, sp\n1576ab0: stp x19, x20, [sp, #0x10]\n1576ab4: str x21, [sp, #0x20]\n1576ab8: adrp x19, #0x2297000\n1576abc: add x19, x19, #0x8d8\n1576ac0: mov w2, #0xdd8\n1576ac4: mov w1, #0\n1576ac8: mov x0, x19\n1576acc: bl #0x153ceb0\n1576ad0: mov w2, #0xa10\n1576ad4: mov w1, #0\n1576ad8: adrp x0, #0x2296000\n1576adc: add x0, x0, #0xe90\n1576ae0: bl #0x153ceb0\n1576ae4: adrp x20, #0x25d4000\n1576ae8: add x20, x20, #0xe8\n1576aec: mov w2, #0x48\n1576af0: mov w1, #0\n1576af4: mov x0, x20\n1576af8: bl #0x153ceb0\n1576afc: bl #0x157b210\n1576b00: mov w0, #0x2e\n1576b04: str w0, [x19, #0x1fc]\n1576b08: mov w0, #0x1729\n1576b0c: strh w0, [x20, #8]\n1576b10: mov w0, #0\n1576b14: bl #0x156f8ec\n1576b18: mov w0, #0\n1576b1c: bl #0x156f918\n1576b20: str wzr, [x19, #0x438]\n1576b24: bl #0x15702fc\n1576b28: mov w21, #-0x8000\n1576b2c: strh w21, [x19, #0x3c0]\n1576b30: str wzr, [x19, #0x3c4]\n1576b34: str wzr, [x19, #0x3c8]"
+        },
+        "публикация": {
+          "блок": 0,
+          "адрес": "0x156e95c",
+          "код": "156e95c: stp x29, x30, [sp, #-0x40]!\n156e960: mov x29, sp\n156e964: stp x19, x20, [sp, #0x10]\n156e968: mov w19, w0\n156e96c: add x20, sp, #0x28\n156e970: mov w2, #4\n156e974: mov w1, #0\n156e978: mov x0, x20\n156e97c: bl #0x153ceb0\n156e980: str w19, [sp, #0x28]\n156e984: mov w0, #0x1726\n156e988: strh w0, [sp, #0x30]\n156e98c: bl #0x14ce514\n156e990: mov w1, #0x4f\n156e994: strb w1, [sp, #0x33]\n156e998: mov w1, #4\n156e99c: str w1, [sp, #0x34]\n156e9a0: str x20, [sp, #0x38]\n156e9a4: ands w0, w0, #0xff\n156e9a8: csinv w0, w0, wzr, ne\n156e9ac: strb w0, [sp, #0x32]\n156e9b0: add x1, sp, #0x30\n156e9b4: mov w0, #0x4f\n156e9b8: bl #0x14cf124\n156e9bc: ldp x19, x20, [sp, #0x10]\n156e9c0: ldp x29, x30, [sp], #0x40\n156e9c4: ret \n156e9c8: stp x29, x30, [sp, #-0x40]!\n156e9cc: mov x29, sp\n156e9d0: stp x19, x20, [sp, #0x10]\n156e9d4: mov w19, w0\n156e9d8: add x20, sp, #0x28\n156e9dc: mov w2, #4\n156e9e0: mov w1, #0\n156e9e4: mov x0, x20\n156e9e8: bl #0x153ceb0"
+        },
+        "читатель": {
+          "блок": 0,
+          "адрес": "0x15669e0",
+          "код": "15669e0: stp x29, x30, [sp, #-0x80]!\n15669e4: mov x29, sp\n15669e8: stp x19, x20, [sp, #0x10]\n15669ec: stp x21, x22, [sp, #0x20]\n15669f0: stp x23, x24, [sp, #0x30]\n15669f4: stp x25, x26, [sp, #0x40]\n15669f8: stp x27, x28, [sp, #0x50]\n15669fc: bl #0x156698c\n1566a00: adrp x21, #0x25d4000\n1566a04: add x21, x21, #0xe8\n1566a08: adrp x0, #0x25d4000\n1566a0c: add x28, x0, #0x100\n1566a10: mov w26, #-0x16c3\n1566a14: adrp x27, #0x2297000\n1566a18: add x27, x27, #0x8d8\n1566a1c: b #0x1566bdc\n1566a20: add w0, w0, w26\n1566a24: bl #0x1572e5c\n1566a28: cbnz w0, #0x1566bf0\n1566a2c: ldrh w0, [x21, #8]\n1566a30: mov w1, #0\n1566a34: add w0, w0, w26\n1566a38: bl #0x156f1e8\n1566a3c: ldrh w0, [x21, #8]\n1566a40: add w0, w0, w26\n1566a44: ldr w1, [x27, #0x1fc]\n1566a48: cmp w1, w0\n1566a4c: b.ne #0x1566bf0\n1566a50: mov w0, #0x66\n1566a54: str w0, [x27, #0x1fc]\n1566a58: b #0x1566bf0\n1566a5c: bl #0x156ec90\n1566a60: b #0x1566c08\n1566a64: mov w3, w19\n1566a68: mov x0, #0x38\n1566a6c: mul x3, x3, x0"
+        }
+      },
+      "исходная_категория_U2": "не установлена"
+    },
+    {
+      "id": "0x8b",
+      "уровень_вывода": "Д для метки; К для назначения",
+      "подсистема": {
+        "название": "biscom",
+        "уровень": "Д для метки; К для назначения",
+        "основание": "строковая метка в конфигурации потока 0x13fcab0; расшифровка сокращения и роль потока не установлены"
+      },
+      "содержимое": "Пакеты уведомлений: 16-битный код события, байт состояния из 0x14ce514, тип 0x8b, длина и указатель на данные. В наблюдавшихся публикациях длина 8, 16 или 56 байт; значения и битовые поля берутся из аргументов/структур и собираются отдельными функциями.",
+      "писатели": "51 вызов публикации в блоке 0; общий низкоуровневый вызов 0x14cf124. Коды событий наблюдаются в диапазоне 0x19af–0x19df.",
+      "читатели": "Прямых вызовов чтения 0x14cf354 и подписки 0x14cf45c с постоянным ID 0x8b не найдено.",
+      "кандидат_назначения": "Поток с меткой biscom. Более узкую подсистему нельзя назначить по одной строковой метке и нерасшифрованным кодам событий.",
+      "пример_пакета": {
+        "функция": "0x13fcb7c",
+        "код": "0x19af",
+        "размер": "16",
+        "наблюдение": "пара машинных слов из аргументов помещается в пакет типа 0x8b."
+      },
+      "параметры_съёмки": "Конкретные параметры фокуса, экспозиции, затвора, серии или дисплея не установлены.",
+      "регистрация_и_вызовы": {
+        "регистрация": [
+          {
+            "block": 0,
+            "site": "0x13fcafc",
+            "function": "0x13fcab0",
+            "id": {
+              "value": 139,
+              "expression": null
+            },
+            "descriptor_stack_offset": "0x48",
+            "count": {
+              "value": 48,
+              "expression": null
+            },
+            "element_size": {
+              "value": 72,
+              "expression": null
+            },
+            "context": "13fcabc: add x0, x0, #0x458\n13fcac0: bl #0x14d150c\n13fcac4: mov w2, #0x1b0\n13fcac8: mov w1, #0\n13fcacc: adrp x0, #0x2612000\n13fcad0: add x0, x0, #0xea8\n13fcad4: bl #0x14d2724\n13fcad8: adrp x0, #0x2620000\n13fcadc: mov w1, #1\n13fcae0: str w1, [x0, #0xa78]\n13fcae4: mov w0, #0x30\n13fcae8: str w0, [sp, #0x48]\n13fcaec: mov w0, #0x48\n13fcaf0: str w0, [sp, #0x4c]\n13fcaf4: add x1, sp, #0x48\n13fcaf8: mov w0, #0x8b"
+          }
+        ],
+        "число_публикаций": 51,
+        "публикации": [
+          {
+            "block": 0,
+            "site": "0x13fcbc8",
+            "function": "0x13fcb7c"
+          },
+          {
+            "block": 0,
+            "site": "0x13fcc34",
+            "function": "0x13fcbf0"
+          },
+          {
+            "block": 0,
+            "site": "0x13fccc8",
+            "function": "0x13fcc5c"
+          },
+          {
+            "block": 0,
+            "site": "0x13fcd70",
+            "function": "0x13fccf0"
+          },
+          {
+            "block": 0,
+            "site": "0x13fce04",
+            "function": "0x13fcd98"
+          },
+          {
+            "block": 0,
+            "site": "0x13fceac",
+            "function": "0x13fce2c"
+          },
+          {
+            "block": 0,
+            "site": "0x13fcf6c",
+            "function": "0x13fced4"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd000",
+            "function": "0x13fcf94"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd0b8",
+            "function": "0x13fd028"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd160",
+            "function": "0x13fd0e0"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd1f4",
+            "function": "0x13fd188"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd29c",
+            "function": "0x13fd21c"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd354",
+            "function": "0x13fd2c4"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd3fc",
+            "function": "0x13fd37c"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd4ac",
+            "function": "0x13fd424"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd57c",
+            "function": "0x13fd4d4"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd640",
+            "function": "0x13fd5a4"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd6f4",
+            "function": "0x13fd67c"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd7ac",
+            "function": "0x13fd71c"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd854",
+            "function": "0x13fd7d4"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd8fc",
+            "function": "0x13fd87c"
+          },
+          {
+            "block": 0,
+            "site": "0x13fd9d4",
+            "function": "0x13fd924"
+          },
+          {
+            "block": 0,
+            "site": "0x13fda7c",
+            "function": "0x13fd9fc"
+          },
+          {
+            "block": 0,
+            "site": "0x13fdb10",
+            "function": "0x13fdaa4"
+          },
+          {
+            "block": 0,
+            "site": "0x13fdc38",
+            "function": "0x13fdb38"
+          },
+          {
+            "block": 0,
+            "site": "0x13fdd60",
+            "function": "0x13fdc60"
+          },
+          {
+            "block": 0,
+            "site": "0x13fde10",
+            "function": "0x13fdd88"
+          },
+          {
+            "block": 0,
+            "site": "0x13fdec0",
+            "function": "0x13fde38"
+          },
+          {
+            "block": 0,
+            "site": "0x13fdf78",
+            "function": "0x13fdee8"
+          },
+          {
+            "block": 0,
+            "site": "0x13fe028",
+            "function": "0x13fdfa0"
+          },
+          {
+            "block": 0,
+            "site": "0x13fe0e0",
+            "function": "0x13fe050"
+          },
+          {
+            "block": 0,
+            "site": "0x13fe1cc",
+            "function": "0x13fe108"
+          },
+          {
+            "block": 0,
+            "site": "0x13fe278",
+            "function": "0x13fe1f4"
+          },
+          {
+            "block": 0,
+            "site": "0x13fe328",
+            "function": "0x13fe2a0"
+          },
+          {
+            "block": 0,
+            "site": "0x13fe3f0",
+            "function": "0x13fe350"
+          },
+          {
+            "block": 0,
+            "site": "0x13fe490",
+            "function": "0x13fe418"
+          },
+          {
+            "block": 0,
+            "site": "0x13fe548",
+            "function": "0x13fe4b8"
+          },
+          {
+            "block": 0,
+            "site": "0x13fe5e8",
+            "function": "0x13fe570"
+          },
+          {
+            "block": 0,
+            "site": "0x13fe6a0",
+            "function": "0x13fe610"
+          },
+          {
+            "block": 0,
+            "site": "0x13fe740",
+            "function": "0x13fe6c8"
+          },
+          {
+            "block": 0,
+            "site": "0x13fe7f8",
+            "function": "0x13fe768"
+          },
+          {
+            "block": 0,
+            "site": "0x13fe8b0",
+            "function": "0x13fe820"
+          },
+          {
+            "block": 0,
+            "site": "0x13fe944",
+            "function": "0x13fe8d8"
+          },
+          {
+            "block": 0,
+            "site": "0x13fea34",
+            "function": "0x13fe96c"
+          },
+          {
+            "block": 0,
+            "site": "0x13feaec",
+            "function": "0x13fea5c"
+          },
+          {
+            "block": 0,
+            "site": "0x13feb90",
+            "function": "0x13feb14"
+          },
+          {
+            "block": 0,
+            "site": "0x13fec10",
+            "function": "0x13febb8"
+          },
+          {
+            "block": 0,
+            "site": "0x13fec88",
+            "function": "0x13fec38"
+          },
+          {
+            "block": 0,
+            "site": "0x13fed0c",
+            "function": "0x13fecb0"
+          },
+          {
+            "block": 0,
+            "site": "0x13fed88",
+            "function": "0x13fed34"
+          },
+          {
+            "block": 0,
+            "site": "0x13fee04",
+            "function": "0x13fedb0"
+          }
+        ],
+        "читатели_каталога": [],
+        "подписчики_каталога": []
+      },
+      "дизассемблированные_участки": {
+        "регистратор": {
+          "блок": 0,
+          "адрес": "0x13fcab0",
+          "код": "13fcab0: stp x29, x30, [sp, #-0x50]!\n13fcab4: mov x29, sp\n13fcab8: adrp x0, #0x207a000\n13fcabc: add x0, x0, #0x458\n13fcac0: bl #0x14d150c\n13fcac4: mov w2, #0x1b0\n13fcac8: mov w1, #0\n13fcacc: adrp x0, #0x2612000\n13fcad0: add x0, x0, #0xea8\n13fcad4: bl #0x14d2724\n13fcad8: adrp x0, #0x2620000\n13fcadc: mov w1, #1\n13fcae0: str w1, [x0, #0xa78]\n13fcae4: mov w0, #0x30\n13fcae8: str w0, [sp, #0x48]\n13fcaec: mov w0, #0x48\n13fcaf0: str w0, [sp, #0x4c]\n13fcaf4: add x1, sp, #0x48\n13fcaf8: mov w0, #0x8b\n13fcafc: bl #0x14cedac\n13fcb00: cbnz w0, #0x13fcb4c\n13fcb04: mov w0, #0x8b\n13fcb08: str w0, [sp, #0x18]\n13fcb0c: adrp x0, #0x196b000\n13fcb10: add x0, x0, #0x138\n13fcb14: str x0, [sp, #0x20]\n13fcb18: mov w0, #4\n13fcb1c: str w0, [sp, #0x28]\n13fcb20: mov w0, #0x1800\n13fcb24: str w0, [sp, #0x2c]\n13fcb28: adrp x0, #0x13fe000\n13fcb2c: add x0, x0, #0xf34\n13fcb30: str x0, [sp, #0x30]\n13fcb34: str xzr, [sp, #0x38]\n13fcb38: add x0, sp, #0x18\n13fcb3c: bl #0x14ce004"
+        },
+        "публикация": {
+          "блок": 0,
+          "адрес": "0x13fcb7c",
+          "код": "13fcb7c: stp x29, x30, [sp, #-0x40]!\n13fcb80: mov x29, sp\n13fcb84: stp x19, x20, [sp, #0x10]\n13fcb88: mov x20, x0\n13fcb8c: mov x19, x1\n13fcb90: mov w0, #0x19af\n13fcb94: strh w0, [sp, #0x30]\n13fcb98: bl #0x14ce514\n13fcb9c: strb w0, [sp, #0x32]\n13fcba0: mov w0, #-0x75\n13fcba4: strb w0, [sp, #0x33]\n13fcba8: mov w0, #0x10\n13fcbac: str w0, [sp, #0x34]\n13fcbb0: add x0, sp, #0x20\n13fcbb4: str x0, [sp, #0x38]\n13fcbb8: str x20, [sp, #0x20]\n13fcbbc: str x19, [sp, #0x28]\n13fcbc0: add x1, sp, #0x30\n13fcbc4: mov w0, #0x8b\n13fcbc8: bl #0x14cf124\n13fcbcc: cbnz w0, #0x13fcbdc\n13fcbd0: ldp x19, x20, [sp, #0x10]\n13fcbd4: ldp x29, x30, [sp], #0x40\n13fcbd8: ret \n13fcbdc: mov w2, #0\n13fcbe0: mov w1, #1\n13fcbe4: mov w0, #0\n13fcbe8: bl #0x13fc9fc\n13fcbec: b #0x13fcbd0\n13fcbf0: stp x29, x30, [sp, #-0x40]!\n13fcbf4: mov x29, sp\n13fcbf8: str x19, [sp, #0x10]\n13fcbfc: mov x19, x0\n13fcc00: mov w0, #0x19b0\n13fcc04: strh w0, [sp, #0x30]\n13fcc08: bl #0x14ce514"
+        }
+      },
+      "исходная_категория_U2": "не установлена"
+    },
+    {
+      "id": "0x3",
+      "уровень_вывода": "Д для метки и подписки; К для смыслового назначения сообщений",
+      "подсистема": {
+        "название": "reccont",
+        "уровень": "Д для метки и подписки; К для смыслового назначения сообщений",
+        "основание": "строковая метка конфигурации потока 0x2d5a998; его функция запускает обработчик 0x2d67134 через 0x14ce004"
+      },
+      "содержимое": "Сообщения типа 3 с кодом события, байтом состояния, длиной и указателем на данные. Есть пустые уведомления (например, коды 0x1212–0x1214), сообщение 0x205 с одним 32-битным словом (4 байта), 0x204 с тремя словами (12 байт), и пакет 0x206 длиной 0x2c, копирующий поля исходной структуры.",
+      "писатели": "47 вызовов: 4 в блоке 0 и 43 в блоке 1. Большинство строят оболочку через 0x14cf124; данные копируются из аргументных структур либо передаются указателем.",
+      "читатели": "Обработчик 0x2d67134 в задаче reccont читает ID 3 через 0x14cf354 с индексом -1, передаёт запись обработчикам 0x2d9a060/0x2d5b36c и сверяет пару значений через 0x2e00d18. Подписка зарегистрирована с размером стека 0x2000 и указателем на этот обработчик.",
+      "кандидат_назначения": "Управление записью/съёмочный контур (reccont по строковой метке и месту кода). Конечная семантика отдельных кодов 0x204–0x215 за пределами разобранного маршрута.",
+      "пример_пакета": {
+        "функция": "0x2d380e8",
+        "код": "0x205",
+        "размер": "4",
+        "наблюдение": "32-битное поле [x0] переносится в данные; обработчик находится в блоке 1."
+      },
+      "параметры_съёмки": "Пакеты идут в съёмочный контур, но прямое соответствие полей настройкам фокуса, экспозиции, фактической выдержки, серийной съёмки или дисплея не восстановлено.",
+      "регистрация_и_вызовы": {
+        "регистрация": [
+          {
+            "block": 1,
+            "site": "0x2d5a9dc",
+            "function": "0x2d5a998",
+            "id": {
+              "value": 3,
+              "expression": null
+            },
+            "descriptor_stack_offset": "0x58",
+            "count": {
+              "value": 48,
+              "expression": null
+            },
+            "element_size": {
+              "value": 80,
+              "expression": null
+            },
+            "context": "2d5a99c: mov w19, w0\n2d5a9a0: cbnz w0, #0x2d5a988\n2d5a9a4: bl #0x2d96f28\n2d5a9a8: adrp x0, #0x3bc2000\n2d5a9ac: add x0, x0, #0xb48\n2d5a9b0: mov w1, #0x40\n2d5a9b4: str w1, [x0, #4]\n2d5a9b8: adrp x1, #0x3bc2000\n2d5a9bc: add x1, x1, #0xb58\n2d5a9c0: str x1, [x0, #8]\n2d5a9c4: mov w0, #0x30\n2d5a9c8: str w0, [sp, #0x58]\n2d5a9cc: mov w0, #0x50\n2d5a9d0: str w0, [sp, #0x5c]\n2d5a9d4: add x1, sp, #0x58\n2d5a9d8: mov w0, #3"
+          }
+        ],
+        "число_публикаций": 47,
+        "публикации": [
+          {
+            "block": 0,
+            "site": "0x14e60c8",
+            "function": "0x14e6098"
+          },
+          {
+            "block": 0,
+            "site": "0x14e610c",
+            "function": "0x14e60dc"
+          },
+          {
+            "block": 0,
+            "site": "0x14e6184",
+            "function": "0x14e614c"
+          },
+          {
+            "block": 0,
+            "site": "0x14e61cc",
+            "function": "0x14e619c"
+          },
+          {
+            "block": 1,
+            "site": "0x2d37ec0",
+            "function": "0x2d37e3c"
+          },
+          {
+            "block": 1,
+            "site": "0x2d37f40",
+            "function": "0x2d37ed0"
+          },
+          {
+            "block": 1,
+            "site": "0x2d37f98",
+            "function": "0x2d37f50"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38020",
+            "function": "0x2d37fa4"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38080",
+            "function": "0x2d38030"
+          },
+          {
+            "block": 1,
+            "site": "0x2d380dc",
+            "function": "0x2d3808c"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38128",
+            "function": "0x2d380e8"
+          },
+          {
+            "block": 1,
+            "site": "0x2d381c4",
+            "function": "0x2d38134"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38258",
+            "function": "0x2d381d0"
+          },
+          {
+            "block": 1,
+            "site": "0x2d382a4",
+            "function": "0x2d38264"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38308",
+            "function": "0x2d382b0"
+          },
+          {
+            "block": 1,
+            "site": "0x2d3836c",
+            "function": "0x2d38314"
+          },
+          {
+            "block": 1,
+            "site": "0x2d383c0",
+            "function": "0x2d38378"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38414",
+            "function": "0x2d383cc"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38474",
+            "function": "0x2d38420"
+          },
+          {
+            "block": 1,
+            "site": "0x2d384d0",
+            "function": "0x2d38480"
+          },
+          {
+            "block": 1,
+            "site": "0x2d3852c",
+            "function": "0x2d384dc"
+          },
+          {
+            "block": 1,
+            "site": "0x2d385f8",
+            "function": "0x2d385b0"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38654",
+            "function": "0x2d3860c"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38828",
+            "function": "0x2d387e0"
+          },
+          {
+            "block": 1,
+            "site": "0x2d3888c",
+            "function": "0x2d38834"
+          },
+          {
+            "block": 1,
+            "site": "0x2d388e0",
+            "function": "0x2d38898"
+          },
+          {
+            "block": 1,
+            "site": "0x2d3892c",
+            "function": "0x2d388ec"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38978",
+            "function": "0x2d38938"
+          },
+          {
+            "block": 1,
+            "site": "0x2d389d4",
+            "function": "0x2d38984"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38a20",
+            "function": "0x2d389e0"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38a74",
+            "function": "0x2d38a2c"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38ac8",
+            "function": "0x2d38a80"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38b24",
+            "function": "0x2d38ad4"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38c04",
+            "function": "0x2d38bbc"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38c58",
+            "function": "0x2d38c10"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38cac",
+            "function": "0x2d38c64"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38d30",
+            "function": "0x2d38ce0"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38d98",
+            "function": "0x2d38d50"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38e00",
+            "function": "0x2d38db8"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38ea4",
+            "function": "0x2d38e34"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38f9c",
+            "function": "0x2d38f3c"
+          },
+          {
+            "block": 1,
+            "site": "0x2d38ff8",
+            "function": "0x2d38fa8"
+          },
+          {
+            "block": 1,
+            "site": "0x2d3904c",
+            "function": "0x2d39004"
+          },
+          {
+            "block": 1,
+            "site": "0x2d5a390",
+            "function": "0x2d5a34c"
+          },
+          {
+            "block": 1,
+            "site": "0x2d5a3dc",
+            "function": "0x2d5a39c"
+          },
+          {
+            "block": 1,
+            "site": "0x2d5a428",
+            "function": "0x2d5a3e8"
+          },
+          {
+            "block": 1,
+            "site": "0x2d97858",
+            "function": "0x2d97820"
+          }
+        ],
+        "читатели_каталога": [
+          {
+            "block": 1,
+            "site": "0x2d67198",
+            "function": "0x2d67134"
+          }
+        ],
+        "подписчики_каталога": []
+      },
+      "дизассемблированные_участки": {
+        "регистратор": {
+          "блок": 1,
+          "адрес": "0x2d5a998",
+          "код": "2d5a998: bl #0x2e67d18\n2d5a99c: mov w19, w0\n2d5a9a0: cbnz w0, #0x2d5a988\n2d5a9a4: bl #0x2d96f28\n2d5a9a8: adrp x0, #0x3bc2000\n2d5a9ac: add x0, x0, #0xb48\n2d5a9b0: mov w1, #0x40\n2d5a9b4: str w1, [x0, #4]\n2d5a9b8: adrp x1, #0x3bc2000\n2d5a9bc: add x1, x1, #0xb58\n2d5a9c0: str x1, [x0, #8]\n2d5a9c4: mov w0, #0x30\n2d5a9c8: str w0, [sp, #0x58]\n2d5a9cc: mov w0, #0x50\n2d5a9d0: str w0, [sp, #0x5c]\n2d5a9d4: add x1, sp, #0x58\n2d5a9d8: mov w0, #3\n2d5a9dc: bl #0x14cedac\n2d5a9e0: mov w19, w0\n2d5a9e4: cbnz w0, #0x2d5a988\n2d5a9e8: mov w0, #3\n2d5a9ec: str w0, [sp, #0x28]\n2d5a9f0: adrp x0, #0x33c4000\n2d5a9f4: add x0, x0, #0xb10\n2d5a9f8: str x0, [sp, #0x30]\n2d5a9fc: mov w0, #6\n2d5aa00: str w0, [sp, #0x38]\n2d5aa04: mov w0, #0x2000\n2d5aa08: str w0, [sp, #0x3c]\n2d5aa0c: adrp x0, #0x2d67000\n2d5aa10: add x0, x0, #0x134\n2d5aa14: str x0, [sp, #0x40]\n2d5aa18: str xzr, [sp, #0x48]\n2d5aa1c: add x0, sp, #0x28\n2d5aa20: bl #0x14ce004\n2d5aa24: mov w19, w0"
+        },
+        "публикация": {
+          "блок": 1,
+          "адрес": "0x2d380e8",
+          "код": "2d380e8: stp x29, x30, [sp, #-0x30]!\n2d380ec: mov x29, sp\n2d380f0: ldr w0, [x0]\n2d380f4: str w0, [sp, #0x18]\n2d380f8: mov w0, #0x205\n2d380fc: strh w0, [sp, #0x20]\n2d38100: bl #0x14ce514\n2d38104: strb w0, [sp, #0x22]\n2d38108: mov w0, #3\n2d3810c: strb w0, [sp, #0x23]\n2d38110: mov w0, #4\n2d38114: str w0, [sp, #0x24]\n2d38118: add x0, sp, #0x18\n2d3811c: str x0, [sp, #0x28]\n2d38120: add x1, sp, #0x20\n2d38124: mov w0, #3\n2d38128: bl #0x14cf124\n2d3812c: ldp x29, x30, [sp], #0x30\n2d38130: ret \n2d38134: stp x29, x30, [sp, #-0x50]!\n2d38138: mov x29, sp\n2d3813c: ldr w1, [x0]\n2d38140: str w1, [sp, #0x10]\n2d38144: ldr w1, [x0, #4]\n2d38148: str w1, [sp, #0x14]\n2d3814c: ldr w1, [x0, #8]\n2d38150: str w1, [sp, #0x18]\n2d38154: ldr w1, [x0, #0xc]\n2d38158: str w1, [sp, #0x1c]\n2d3815c: ldr w1, [x0, #0x10]\n2d38160: str w1, [sp, #0x20]\n2d38164: ldr w1, [x0, #0x14]\n2d38168: str w1, [sp, #0x24]\n2d3816c: ldr w1, [x0, #0x18]\n2d38170: str w1, [sp, #0x28]\n2d38174: ldrb w1, [x0, #0x1c]"
+        },
+        "читатель": {
+          "блок": 1,
+          "адрес": "0x2d67134",
+          "код": "2d67134: stp x29, x30, [sp, #-0x40]!\n2d67138: mov x29, sp\n2d6713c: stp x19, x20, [sp, #0x10]\n2d67140: str x21, [sp, #0x20]\n2d67144: bl #0x2d66f54\n2d67148: adrp x19, #0x3bc2000\n2d6714c: add x19, x19, #0xb48\n2d67150: mov w20, #-1\n2d67154: adrp x21, #0x3bc2000\n2d67158: add x21, x21, #0xb58\n2d6715c: b #0x2d6718c\n2d67160: mov w2, #0x10\n2d67164: mov x1, x19\n2d67168: mov x0, x19\n2d6716c: bl #0x14d2534\n2d67170: ldr w2, [x19, #4]\n2d67174: ldr x1, [x19, #8]\n2d67178: mov x0, x21\n2d6717c: bl #0x14d2534\n2d67180: mov x0, x19\n2d67184: bl #0x2d9a060\n2d67188: bl #0x2d5b36c\n2d6718c: mov w2, w20\n2d67190: mov x1, x19\n2d67194: mov w0, #3\n2d67198: bl #0x14cf354\n2d6719c: cbnz w0, #0x2d67188\n2d671a0: ldp x0, x1, [x19]\n2d671a4: stp x0, x1, [sp, #0x30]\n2d671a8: add x0, sp, #0x30\n2d671ac: bl #0x2e00d18\n2d671b0: cmp w0, #1\n2d671b4: b.ne #0x2d67160\n2d671b8: b #0x2d6718c\n2d671bc: mov w0, #1\n2d671c0: ret "
+        }
+      },
+      "исходная_категория_U2": "не установлена"
+    },
+    {
+      "id": "0x2",
+      "уровень_вывода": "К",
+      "подсистема": {
+        "название": "не установлена; вероятная связь со съёмочным трактом",
+        "уровень": "К",
+        "основание": "регистрация и отправители находятся в блоке 1, в области кода, отнесённой контекстом к съёмочному тракту; прямого читающего вызова не найдено"
+      },
+      "содержимое": "Пакеты типа 2 с 16-битным кодом события, байтом состояния, длиной и указателем. В большинстве коротких отправителей данные нулевые (коды 0x1101, 0x1103, 0x1105 и другие); встречаются также структуры и поля из аргументов. Зарегистрированный предел данных равен 0x1c8 байт, но фактические длины каждого пакета требуют отдельной проверки.",
+      "писатели": "28 вызовов публикации, все в блоке 1; функции находятся группами около 0x2d39058, 0x2d3c724, 0x2d3c93c, 0x2e89xxx и 0x2e8fxxx. Общий вызов API 0x14cf124.",
+      "читатели": "Прямой вызов 0x14cf354 и подписка 0x14cf45c по постоянному ID 0x2 не найдены в просмотренном каталоге. У функции регистрации 0x2e89120 нет найденного прямого BL-вызывающего; возможен запуск через таблицу/косвенный вызов.",
+      "кандидат_назначения": "Вероятный обмен в съёмочном тракте, но фактическая роль записи и получатель не подтверждены. Нельзя считать соседство в блоке доказательством применения в алгоритме экспонирования/затвора.",
+      "пример_пакета": {
+        "функция": "0x2e891c8",
+        "код": "0x1101",
+        "размер": "0",
+        "наблюдение": "пустое уведомление типа 2; соседние функции публикуют коды 0x1103, 0x1105 и другие."
+      },
+      "параметры_съёмки": "По прямым публикациям не установлены именованные поля фокуса, экспозиции, затвора, серии или дисплея.",
+      "регистрация_и_вызовы": {
+        "регистрация": [
+          {
+            "block": 1,
+            "site": "0x2e89140",
+            "function": "0x2e89120",
+            "id": {
+              "value": 2,
+              "expression": null
+            },
+            "descriptor_stack_offset": "0x48",
+            "count": {
+              "value": 48,
+              "expression": null
+            },
+            "element_size": {
+              "value": 464,
+              "expression": null
+            },
+            "context": "2e89100: adrp x0, #0x2e89000\n2e89104: add x0, x0, #0xb7c\n2e89108: bl #0x13e1740\n2e8910c: cmp w0, #0\n2e89110: mov w0, #0xff\n2e89114: csel w0, w0, wzr, ne\n2e89118: ldp x29, x30, [sp], #0x10\n2e8911c: ret \n2e89120: stp x29, x30, [sp, #-0x50]!\n2e89124: mov x29, sp\n2e89128: mov w0, #0x30\n2e8912c: str w0, [sp, #0x48]\n2e89130: mov w0, #0x1d0\n2e89134: str w0, [sp, #0x4c]\n2e89138: add x1, sp, #0x48\n2e8913c: mov w0, #2"
+          }
+        ],
+        "число_публикаций": 28,
+        "публикации": [
+          {
+            "block": 1,
+            "site": "0x2d39090",
+            "function": "0x2d39058"
+          },
+          {
+            "block": 1,
+            "site": "0x2d3c75c",
+            "function": "0x2d3c724"
+          },
+          {
+            "block": 1,
+            "site": "0x2d3c974",
+            "function": "0x2d3c93c"
+          },
+          {
+            "block": 1,
+            "site": "0x2e891f8",
+            "function": "0x2e891c8"
+          },
+          {
+            "block": 1,
+            "site": "0x2e89248",
+            "function": "0x2e89218"
+          },
+          {
+            "block": 1,
+            "site": "0x2e89284",
+            "function": "0x2e89254"
+          },
+          {
+            "block": 1,
+            "site": "0x2e899f4",
+            "function": "0x2e899c4"
+          },
+          {
+            "block": 1,
+            "site": "0x2e89a38",
+            "function": "0x2e89a00"
+          },
+          {
+            "block": 1,
+            "site": "0x2e89a80",
+            "function": "0x2e89a50"
+          },
+          {
+            "block": 1,
+            "site": "0x2e89abc",
+            "function": "0x2e89a8c"
+          },
+          {
+            "block": 1,
+            "site": "0x2e89af8",
+            "function": "0x2e89ac8"
+          },
+          {
+            "block": 1,
+            "site": "0x2e89b34",
+            "function": "0x2e89b04"
+          },
+          {
+            "block": 1,
+            "site": "0x2e89b70",
+            "function": "0x2e89b40"
+          },
+          {
+            "block": 1,
+            "site": "0x2e89bac",
+            "function": "0x2e89b7c"
+          },
+          {
+            "block": 1,
+            "site": "0x2e89be8",
+            "function": "0x2e89bb8"
+          },
+          {
+            "block": 1,
+            "site": "0x2e89c24",
+            "function": "0x2e89bf4"
+          },
+          {
+            "block": 1,
+            "site": "0x2e8b0a4",
+            "function": "0x2e8b01c"
+          },
+          {
+            "block": 1,
+            "site": "0x2e8b0e4",
+            "function": "0x2e8b0b4"
+          },
+          {
+            "block": 1,
+            "site": "0x2e8b120",
+            "function": "0x2e8b0f0"
+          },
+          {
+            "block": 1,
+            "site": "0x2e8b344",
+            "function": "0x2e8b308"
+          },
+          {
+            "block": 1,
+            "site": "0x2e8ce90",
+            "function": "0x2e8ce60"
+          },
+          {
+            "block": 1,
+            "site": "0x2e8cec8",
+            "function": "0x2e8ce9c"
+          },
+          {
+            "block": 1,
+            "site": "0x2e8f840",
+            "function": "0x2e8f810"
+          },
+          {
+            "block": 1,
+            "site": "0x2e8f87c",
+            "function": "0x2e8f84c"
+          },
+          {
+            "block": 1,
+            "site": "0x2e8f8b8",
+            "function": "0x2e8f888"
+          },
+          {
+            "block": 1,
+            "site": "0x2e8f8f4",
+            "function": "0x2e8f8c4"
+          },
+          {
+            "block": 1,
+            "site": "0x2e8f930",
+            "function": "0x2e8f900"
+          },
+          {
+            "block": 1,
+            "site": "0x2e8f96c",
+            "function": "0x2e8f93c"
+          }
+        ],
+        "читатели_каталога": [],
+        "подписчики_каталога": []
+      },
+      "дизассемблированные_участки": {
+        "регистратор": {
+          "блок": 1,
+          "адрес": "0x2e89120",
+          "код": "2e89120: stp x29, x30, [sp, #-0x50]!\n2e89124: mov x29, sp\n2e89128: mov w0, #0x30\n2e8912c: str w0, [sp, #0x48]\n2e89130: mov w0, #0x1d0\n2e89134: str w0, [sp, #0x4c]\n2e89138: add x1, sp, #0x48\n2e8913c: mov w0, #2\n2e89140: bl #0x14cedac\n2e89144: cbz w0, #0x2e89150\n2e89148: ldp x29, x30, [sp], #0x50\n2e8914c: ret \n2e89150: mov w0, #2\n2e89154: str w0, [sp, #0x18]\n2e89158: adrp x0, #0x3413000\n2e8915c: add x0, x0, #0x7e0\n2e89160: str x0, [sp, #0x20]\n2e89164: mov w0, #6\n2e89168: str w0, [sp, #0x28]\n2e8916c: mov w0, #0x2000\n2e89170: str w0, [sp, #0x2c]\n2e89174: adrp x0, #0x2e87000\n2e89178: add x0, x0, #0x31c\n2e8917c: str x0, [sp, #0x30]\n2e89180: str xzr, [sp, #0x38]\n2e89184: add x0, sp, #0x18\n2e89188: bl #0x14ce004\n2e8918c: b #0x2e89148\n2e89190: stp x29, x30, [sp, #-0x10]!\n2e89194: mov x29, sp\n2e89198: bl #0x2e8bae8\n2e8919c: cmp w0, #1\n2e891a0: cset w0, eq\n2e891a4: ldp x29, x30, [sp], #0x10\n2e891a8: ret \n2e891ac: stp x29, x30, [sp, #-0x10]!"
+        },
+        "публикация": {
+          "блок": 1,
+          "адрес": "0x2e891c8",
+          "код": "2e891c8: stp x29, x30, [sp, #-0x20]!\n2e891cc: mov x29, sp\n2e891d0: mov w0, #0x1101\n2e891d4: strh w0, [sp, #0x10]\n2e891d8: mov w0, #0x42\n2e891dc: strb w0, [sp, #0x12]\n2e891e0: mov w0, #2\n2e891e4: strb w0, [sp, #0x13]\n2e891e8: str wzr, [sp, #0x14]\n2e891ec: str xzr, [sp, #0x18]\n2e891f0: add x1, sp, #0x10\n2e891f4: mov w0, #2\n2e891f8: bl #0x14cf124\n2e891fc: ldp x29, x30, [sp], #0x20\n2e89200: ret \n2e89204: stp x29, x30, [sp, #-0x10]!\n2e89208: mov x29, sp\n2e8920c: bl #0x2e891c8\n2e89210: ldp x29, x30, [sp], #0x10\n2e89214: ret \n2e89218: stp x29, x30, [sp, #-0x20]!\n2e8921c: mov x29, sp\n2e89220: mov w0, #0x1103\n2e89224: strh w0, [sp, #0x10]\n2e89228: bl #0x14ce514\n2e8922c: strb w0, [sp, #0x12]\n2e89230: mov w0, #2\n2e89234: strb w0, [sp, #0x13]\n2e89238: str wzr, [sp, #0x14]\n2e8923c: str xzr, [sp, #0x18]\n2e89240: add x1, sp, #0x10\n2e89244: mov w0, #2\n2e89248: bl #0x14cf124\n2e8924c: ldp x29, x30, [sp], #0x20\n2e89250: ret \n2e89254: stp x29, x30, [sp, #-0x20]!"
+        }
+      },
+      "исходная_категория_U2": "не установлена"
+    }
+  ]
+}
