@@ -22,7 +22,8 @@ RAF = os.path.join(PTP, 'кадры_слотов', 'DSCF0324.RAF')
 MODE, OUT = sys.argv[1], sys.argv[2]
 assert MODE in ('render', 'recipe', 'grain', 'set')
 if MODE == 'set':
-    SET_SLOT, SET_PROP, SET_VAL = int(sys.argv[3]), int(sys.argv[4], 16), int(sys.argv[5])
+    SET_SLOT, SET_PROP = int(sys.argv[3]), int(sys.argv[4], 16)
+    SET_VAL = bytes.fromhex(sys.argv[5][4:]) if sys.argv[5].startswith('hex:') else struct.pack('<H', int(sys.argv[5], 0) & 0xFFFF)
 
 src = open(os.path.join(PTP, 'xh2_convert_usb.py'), encoding='utf-8').read().split('# ---- main ----')[0]
 sys.argv = [sys.argv[0], os.path.join(PTP, 'xh2_read.py'), RAF, OUT]
@@ -35,7 +36,7 @@ if MODE == 'recipe':
 elif MODE == 'grain':
     WRITE_PROPS.clear(); WRITE_PROPS.update({0xD18C, 0xD195})
 elif MODE == 'set':
-    assert SET_PROP in (0xD195, 0xD1A5) and 1 <= SET_SLOT <= 7
+    assert SET_PROP in (0xD195, 0xD1A5, 0xD1A1, 0xD1A2, 0xD18E, 0xD199, 0xD18D) and 1 <= SET_SLOT <= 7
     WRITE_PROPS.clear(); WRITE_PROPS.update({0xD18C, SET_PROP})
 else:
     WRITE_PROPS.clear(); WRITE_PROPS.update({0xD185, 0xD183})
@@ -115,9 +116,9 @@ try:
         resp, d = rd(0x1015, (0xD18C,)); log('D18C now = %s' % d.hex())
         if u16(d) != SET_SLOT: raise Stop('слот не подтвердился')
         resp, v0 = rd(0x1015, (SET_PROP,)); log('0x%04X before = %s' % (SET_PROP, v0.hex()))
-        r = wr_soft(0x1016, [SET_PROP], struct.pack('<H', SET_VAL))
+        r = wr_soft(0x1016, [SET_PROP], SET_VAL)
         resp, v1 = rd(0x1015, (SET_PROP,)); log('0x%04X after = %s' % (SET_PROP, v1.hex()))
-        result.update(slot=SET_SLOT, prop='0x%04X' % SET_PROP, value=SET_VAL, before=v0.hex(), write=r, after=v1.hex())
+        result.update(slot=SET_SLOT, prop='0x%04X' % SET_PROP, value=SET_VAL.hex(), before=v0.hex(), write=r, after=v1.hex())
     elif MODE == 'grain':
         if wr_soft(0x1016, [0xD18C], struct.pack('<H', SLOT)) != 0x2001: raise Stop('слот не выбран')
         resp, d = rd(0x1015, (0xD18C,)); log('D18C now = %s' % d.hex())
