@@ -1,0 +1,1549 @@
+{
+  "firmware": "X-H2 5.30",
+  "block": "1",
+  "base": "0x29ae000",
+  "general_setter": "0x2c88e98",
+  "setter_table": "0x33a77e8",
+  "general_getter": "0x2c93fd4",
+  "getter_table": "0x33a929c",
+  "settings": [
+    {
+      "id": "0x604",
+      "name": "UI_SETP_NR_MOVIE",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8bdf4",
+      "getter_branch": "0x2c948f8",
+      "translation_table": "0x1bd8ad8",
+      "translation_raw_hex": "706f760100000000",
+      "current_bank_container_offset": "0x452",
+      "current_bank_offset": "0x3B2",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF81E",
+      "custom_C1_bank_offset": "0xF87E",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf81e",
+          "bytes": "04"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf81e",
+          "bytes": "04"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf81e",
+          "bytes": "04"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x606",
+      "name": "UI_SETP_MOVIE_4KTNR",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8be3c",
+      "getter_branch": "0x2c94998",
+      "translation_table": "0x1bd8ae8",
+      "translation_raw_hex": "f04c760100000000",
+      "current_bank_container_offset": "0x453",
+      "current_bank_offset": "0x3B3",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF81F",
+      "custom_C1_bank_offset": "0xF87F",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf81f",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf81f",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf81f",
+          "bytes": "00"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x62e",
+      "name": "UI_SETP_MOVIE_PIXEL",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8e49c",
+      "getter_branch": "0x2c9592c",
+      "translation_table": "0x1bd8c28",
+      "translation_raw_hex": "b057760100000000",
+      "current_bank_container_offset": "0x458",
+      "current_bank_offset": "0x3B8",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF824",
+      "custom_C1_bank_offset": "0xF884",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf824",
+          "bytes": "0c"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf824",
+          "bytes": "0c"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf824",
+          "bytes": "0c"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x62f",
+      "name": "UI_SETP_HS_MOVIE_PIXEL",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8ee94",
+      "getter_branch": "0x2c95fe8",
+      "translation_table": "0x1bd8c30",
+      "translation_raw_hex": "a0f3750100000000",
+      "current_bank_container_offset": "0x45D",
+      "current_bank_offset": "0x3BD",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF827",
+      "custom_C1_bank_offset": "0xF887",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf827",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf827",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf827",
+          "bytes": "02"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x630",
+      "name": "UI_SETP_HS_MOVIE_HDMIONLY_PIXEL",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8ef38",
+      "getter_branch": "0x2c96000",
+      "translation_table": "0x1bd8c38",
+      "translation_raw_hex": "a0f3750100000000",
+      "current_bank_container_offset": "0x461",
+      "current_bank_offset": "0x3C1",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF829",
+      "custom_C1_bank_offset": "0xF889",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf829",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf829",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf829",
+          "bytes": "02"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x631",
+      "name": "UI_SETP_MOVIE_ASPECT",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c93aa8",
+      "getter_branch": "0x2c9aff4",
+      "translation_table": "0x1bd8c40",
+      "translation_raw_hex": "204d760100000000",
+      "current_bank_container_offset": "0x459",
+      "current_bank_offset": "0x3B9",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF825",
+      "custom_C1_bank_offset": "0xF885",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf825",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf825",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf825",
+          "bytes": "00"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x632",
+      "name": "UI_SETP_HS_MOVIE_ASPECT",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c93aa8",
+      "getter_branch": "0x2c9aff4",
+      "translation_table": "0x1bd8c48",
+      "translation_raw_hex": "204d760100000000",
+      "current_bank_container_offset": "0x45E",
+      "current_bank_offset": "0x3BE",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF828",
+      "custom_C1_bank_offset": "0xF888",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf828",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf828",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf828",
+          "bytes": "00"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x633",
+      "name": "UI_SETP_HS_MOVIE_HDMIONLY_ASPECT",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c93aa8",
+      "getter_branch": "0x2c9aff4",
+      "translation_table": "0x1bd8c50",
+      "translation_raw_hex": "204d760100000000",
+      "current_bank_container_offset": "0x462",
+      "current_bank_offset": "0x3C2",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF82A",
+      "custom_C1_bank_offset": "0xF88A",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf82a",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf82a",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf82a",
+          "bytes": "00"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x634",
+      "name": "UI_SETP_MOVIE_FPS",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8e65c",
+      "getter_branch": "0x2c95a0c",
+      "translation_table": "0x1bd8c58",
+      "translation_raw_hex": "004f760100000000",
+      "current_bank_container_offset": "0x464",
+      "current_bank_offset": "0x3C4",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF82C",
+      "custom_C1_bank_offset": "0xF88C",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf82c",
+          "bytes": "03"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf82c",
+          "bytes": "03"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf82c",
+          "bytes": "03"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x635",
+      "name": "UI_SETP_MOVIE_PLAY_FPS",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c93aa8",
+      "getter_branch": "0x2c9aff4",
+      "translation_table": "0x1bd8c60",
+      "translation_raw_hex": "b058760100000000",
+      "current_bank_container_offset": "0x465",
+      "current_bank_offset": "0x3C5",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF82D",
+      "custom_C1_bank_offset": "0xF88D",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf82d",
+          "bytes": "03"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf82d",
+          "bytes": "03"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf82d",
+          "bytes": "03"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x637",
+      "name": "UI_SETP_MOVIE_BITRATE",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8e758",
+      "getter_branch": "0x2c95b48",
+      "translation_table": "0x1bd8c70",
+      "translation_raw_hex": "604d760100000000",
+      "current_bank_container_offset": "0x471",
+      "current_bank_offset": "0x3D1",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF839",
+      "custom_C1_bank_offset": "0xF899",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf839",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf839",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf839",
+          "bytes": "02"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x638",
+      "name": "UI_SETP_MOVIE_CODEC",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8e99c",
+      "getter_branch": "0x2c95c58",
+      "translation_table": "0x1bd8c78",
+      "translation_raw_hex": "e04d760100000000",
+      "current_bank_container_offset": null,
+      "current_bank_offset": null,
+      "current_segment": "outside_exported_segments",
+      "custom_C1_container_offset": null,
+      "custom_C1_bank_offset": null,
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x639",
+      "name": "UI_SETP_MOVIE_FILE_FORMAT",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8e9c0",
+      "getter_branch": "0x2c95cb0",
+      "translation_table": "0x1bd8c80",
+      "translation_raw_hex": "a04e760100000000",
+      "current_bank_container_offset": "0x472",
+      "current_bank_offset": "0x3D2",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF83A",
+      "custom_C1_bank_offset": "0xF89A",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf83a",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf83a",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf83a",
+          "bytes": "00"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x63b",
+      "name": "UI_SETP_MOVIE_COMPRESSION",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8e9fc",
+      "getter_branch": "0x2c95dac",
+      "translation_table": "0x1bd8c90",
+      "translation_raw_hex": "104e760100000000",
+      "current_bank_container_offset": "0x473",
+      "current_bank_offset": "0x3D3",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF83B",
+      "custom_C1_bank_offset": "0xF89B",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf83b",
+          "bytes": "01"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf83b",
+          "bytes": "01"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf83b",
+          "bytes": "01"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x63e",
+      "name": "UI_SETP_HS_MOVIE_MODE",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8ee14",
+      "getter_branch": "0x2c95fd0",
+      "translation_table": "0x1bd8ca8",
+      "translation_raw_hex": "60f3750100000000",
+      "current_bank_container_offset": "0x45B",
+      "current_bank_offset": "0x3BB",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF9F4",
+      "custom_C1_bank_offset": "0xFA54",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf9f4",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf9f4",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf9f4",
+          "bytes": "00"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x63f",
+      "name": "UI_SETP_HS_MOVIE_MODE_QMENU",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c93aa8",
+      "getter_branch": "0x2c9aff4",
+      "translation_table": "0x1bd8cb0",
+      "translation_raw_hex": "60f3750100000000",
+      "current_bank_container_offset": "0x45C",
+      "current_bank_offset": "0x3BC",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF826",
+      "custom_C1_bank_offset": "0xF886",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf826",
+          "bytes": "01"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf826",
+          "bytes": "01"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf826",
+          "bytes": "01"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x641",
+      "name": "UI_SETP_HS_MOVIE_FPS_REC",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8efdc",
+      "getter_branch": "0x2c96018",
+      "translation_table": "0x1bd8cc0",
+      "translation_raw_hex": "10f3750100000000",
+      "current_bank_container_offset": "0x45F",
+      "current_bank_offset": "0x3BF",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF9F5",
+      "custom_C1_bank_offset": "0xFA55",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf9f5",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf9f5",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf9f5",
+          "bytes": "00"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x642",
+      "name": "UI_SETP_HS_MOVIE_HDMIONLY_FPS_REC",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8f020",
+      "getter_branch": "0x2c960e8",
+      "translation_table": "0x1bd8cc8",
+      "translation_raw_hex": "10f3750100000000",
+      "current_bank_container_offset": "0x463",
+      "current_bank_offset": "0x3C3",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF82B",
+      "custom_C1_bank_offset": "0xF88B",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf82b",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf82b",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf82b",
+          "bytes": "02"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x643",
+      "name": "UI_SETP_HS_MOVIE_FPS_PLAY",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8f064",
+      "getter_branch": "0x2c96100",
+      "translation_table": "0x1bd8cd0",
+      "translation_raw_hex": "a0f2750100000000",
+      "current_bank_container_offset": "0x460",
+      "current_bank_offset": "0x3C0",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF9F6",
+      "custom_C1_bank_offset": "0xFA56",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf9f6",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf9f6",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf9f6",
+          "bytes": "02"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x691",
+      "name": "UI_SETP_FILM_SIM_MOVIE",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c89b98",
+      "getter_branch": "0x2c96ac8",
+      "translation_table": "0x1bd8f40",
+      "translation_raw_hex": "d08b750100000000",
+      "current_bank_container_offset": "0x489",
+      "current_bank_offset": "0x3E9",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF844",
+      "custom_C1_bank_offset": "0xF8A4",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf844",
+          "bytes": "01"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf844",
+          "bytes": "01"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf844",
+          "bytes": "01"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x693",
+      "name": "UI_SETP_FILM_SIM_ACROS_MOVIE",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c89f58",
+      "getter_branch": "0x2c9aff4",
+      "translation_table": "0x1bd8f50",
+      "translation_raw_hex": "d08b750100000000",
+      "current_bank_container_offset": "0x48C",
+      "current_bank_offset": "0x3EC",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF847",
+      "custom_C1_bank_offset": "0xF8A7",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf847",
+          "bytes": "15"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf847",
+          "bytes": "15"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf847",
+          "bytes": "15"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x694",
+      "name": "UI_SETP_FILM_SIM_MONO_MOVIE",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c89e98",
+      "getter_branch": "0x2c9aff4",
+      "translation_table": "0x1bd8f58",
+      "translation_raw_hex": "d08b750100000000",
+      "current_bank_container_offset": "0x48F",
+      "current_bank_offset": "0x3EF",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF84A",
+      "custom_C1_bank_offset": "0xF8AA",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf84a",
+          "bytes": "09"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf84a",
+          "bytes": "09"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf84a",
+          "bytes": "09"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x6a3",
+      "name": "UI_SETP_BLACK_TONE_MOVIE",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8a09c",
+      "getter_branch": "0x2c96be4",
+      "translation_table": "0x1bd8fd0",
+      "translation_raw_hex": "2057750100000000",
+      "current_bank_container_offset": "0x498",
+      "current_bank_offset": "0x3F8",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF850",
+      "custom_C1_bank_offset": "0xF8B0",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf850",
+          "bytes": "12"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf850",
+          "bytes": "12"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf850",
+          "bytes": "12"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x6a5",
+      "name": "UI_SETP_BLACK_TONE_RG_MOVIE",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8a0c0",
+      "getter_branch": "0x2c96c84",
+      "translation_table": "0x1bd8fe0",
+      "translation_raw_hex": "c054750100000000",
+      "current_bank_container_offset": "0x49A",
+      "current_bank_offset": "0x3FA",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF852",
+      "custom_C1_bank_offset": "0xF8B2",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf852",
+          "bytes": "12"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf852",
+          "bytes": "12"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf852",
+          "bytes": "12"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x6af",
+      "name": "UI_SETP_DRANGE_MOVIE",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8a3ec",
+      "getter_branch": "0x2c96e24",
+      "translation_table": "0x1bd9030",
+      "translation_raw_hex": "807c750100000000",
+      "current_bank_container_offset": "0x49C",
+      "current_bank_offset": "0x3FC",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF854",
+      "custom_C1_bank_offset": "0xF8B4",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf854",
+          "bytes": "01"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf854",
+          "bytes": "01"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf854",
+          "bytes": "01"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x6b4",
+      "name": "UI_SETP_STILLCOLOR_MOVIE",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8e174",
+      "getter_branch": "0x2c96a28",
+      "translation_table": "0x1bd9058",
+      "translation_raw_hex": "b0d7760100000000",
+      "current_bank_container_offset": "0x49F",
+      "current_bank_offset": "0x3FF",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF857",
+      "custom_C1_bank_offset": "0xF8B7",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf857",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf857",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf857",
+          "bytes": "00"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x6b6",
+      "name": "UI_SETP_SHARPNESS_MOVIE",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8bc18",
+      "getter_branch": "0x2c947b8",
+      "translation_table": "0x1bd9068",
+      "translation_raw_hex": "80c7760100000000",
+      "current_bank_container_offset": "0x4A2",
+      "current_bank_offset": "0x402",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF859",
+      "custom_C1_bank_offset": "0xF8B9",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf859",
+          "bytes": "04"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf859",
+          "bytes": "04"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf859",
+          "bytes": "04"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x6ba",
+      "name": "UI_SETP_HIGHLIGHT_MOVIE",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8bc68",
+      "getter_branch": "0x2c94858",
+      "translation_table": "0x1bd9088",
+      "translation_raw_hex": "80ef750100000000",
+      "current_bank_container_offset": "0x4A4",
+      "current_bank_offset": "0x404",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF85B",
+      "custom_C1_bank_offset": "0xF8BB",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf85b",
+          "bytes": "04"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf85b",
+          "bytes": "04"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf85b",
+          "bytes": "04"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x6bc",
+      "name": "UI_SETP_SHADOW_MOVIE",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8bd20",
+      "getter_branch": "0x2c96988",
+      "translation_table": "0x1bd9098",
+      "translation_raw_hex": "60c6760100000000",
+      "current_bank_container_offset": "0x4A6",
+      "current_bank_offset": "0x406",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF85D",
+      "custom_C1_bank_offset": "0xF8BD",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf85d",
+          "bytes": "04"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf85d",
+          "bytes": "04"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf85d",
+          "bytes": "04"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x7e0",
+      "name": "UI_SETP_FLOGHLG_SETTING",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c92ae4",
+      "getter_branch": "0x2c99a60",
+      "translation_table": "0x1bd99b8",
+      "translation_raw_hex": "e09e750100000000",
+      "current_bank_container_offset": "0x2ED",
+      "current_bank_offset": "0x24D",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF7C4",
+      "custom_C1_bank_offset": "0xF824",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf7c4",
+          "bytes": "01"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf7c4",
+          "bytes": "01"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf7c4",
+          "bytes": "01"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x83a",
+      "name": "UI_SETP_MOVIE_RECORED_MEDIA",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8ea20",
+      "getter_branch": "0x2c95eb4",
+      "translation_table": "0x1bd9c88",
+      "translation_raw_hex": "305a760100000000",
+      "current_bank_container_offset": "0x466",
+      "current_bank_offset": "0x3C6",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF82E",
+      "custom_C1_bank_offset": "0xF88E",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf82e",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf82e",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf82e",
+          "bytes": "02"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x83b",
+      "name": "UI_SETP_PROXY_RECORD_MEDIA",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c93aa8",
+      "getter_branch": "0x2c95fb0",
+      "translation_table": "0x1bd9c90",
+      "translation_raw_hex": "305a760100000000",
+      "current_bank_container_offset": "0x468",
+      "current_bank_offset": "0x3C8",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF830",
+      "custom_C1_bank_offset": "0xF890",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf830",
+          "bytes": "06"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf830",
+          "bytes": "06"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf830",
+          "bytes": "06"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x83d",
+      "name": "UI_SETP_PRORES_PROXY",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c8ec6c",
+      "getter_branch": "0x2c95f74",
+      "translation_table": "0x1bd9ca0",
+      "translation_raw_hex": "c092760100000000",
+      "current_bank_container_offset": "0x467",
+      "current_bank_offset": "0x3C7",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF82F",
+      "custom_C1_bank_offset": "0xF88F",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf82f",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf82f",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf82f",
+          "bytes": "02"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x83f",
+      "name": "UI_SETP_PRORES_QUALTY",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c93aa8",
+      "getter_branch": "0x2c95e5c",
+      "translation_table": "0x1bd9cb0",
+      "translation_raw_hex": "0093760100000000",
+      "current_bank_container_offset": "0x46A",
+      "current_bank_offset": "0x3CA",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF832",
+      "custom_C1_bank_offset": "0xF892",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf832",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf832",
+          "bytes": "00"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf832",
+          "bytes": "00"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x841",
+      "name": "UI_SETP_HDMI_RAW",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c92b58",
+      "getter_branch": "0x2c99b70",
+      "translation_table": "0x1bd9cc0",
+      "translation_raw_hex": "b0c8750100000000",
+      "current_bank_container_offset": "0x46B",
+      "current_bank_offset": "0x3CB",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF833",
+      "custom_C1_bank_offset": "0xF893",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf833",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf833",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf833",
+          "bytes": "02"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x845",
+      "name": "UI_SETP_HDMI_RAW_SIZE_ATOMOS",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c92c04",
+      "getter_branch": "0x2c99bc8",
+      "translation_table": "0x1bd9ce0",
+      "translation_raw_hex": "70c8750100000000",
+      "current_bank_container_offset": "0x46C",
+      "current_bank_offset": "0x3CC",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF834",
+      "custom_C1_bank_offset": "0xF894",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf834",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf834",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf834",
+          "bytes": "02"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x846",
+      "name": "UI_SETP_HDMI_RAW_SIZE_BLACKMAGIC",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c92c74",
+      "getter_branch": "0x2c99ce0",
+      "translation_table": "0x1bd9ce8",
+      "translation_raw_hex": "70c8750100000000",
+      "current_bank_container_offset": "0x46D",
+      "current_bank_offset": "0x3CD",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF835",
+      "custom_C1_bank_offset": "0xF895",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf835",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf835",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf835",
+          "bytes": "02"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x848",
+      "name": "UI_SETP_HDMI_RAW_FPS_ATOMOS",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c92c40",
+      "getter_branch": "0x2c99c30",
+      "translation_table": "0x1bd9cf8",
+      "translation_raw_hex": "00c8750100000000",
+      "current_bank_container_offset": "0x46E",
+      "current_bank_offset": "0x3CE",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF836",
+      "custom_C1_bank_offset": "0xF896",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf836",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf836",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf836",
+          "bytes": "02"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x849",
+      "name": "UI_SETP_HDMI_RAW_FPS_BLACKMAGIC",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c92cb0",
+      "getter_branch": "0x2c99d48",
+      "translation_table": "0x1bd9d00",
+      "translation_raw_hex": "00c8750100000000",
+      "current_bank_container_offset": "0x46F",
+      "current_bank_offset": "0x3CF",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF837",
+      "custom_C1_bank_offset": "0xF897",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf837",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf837",
+          "bytes": "02"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf837",
+          "bytes": "02"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    },
+    {
+      "id": "0x84a",
+      "name": "UI_SETP_CROP_B4",
+      "size": 1,
+      "type": "u8",
+      "setter_branch": "0x2c93aa8",
+      "getter_branch": "0x2c9aff4",
+      "translation_table": "0x1bd9d08",
+      "translation_raw_hex": "e074750100000000",
+      "current_bank_container_offset": "0x470",
+      "current_bank_offset": "0x3D0",
+      "current_segment": "main_0xF6D4",
+      "custom_C1_container_offset": "0xF838",
+      "custom_C1_bank_offset": "0xF898",
+      "custom_slot_step": "0x400",
+      "decoder": "0x1135930; bank write 0x11335c4; bank read 0x11335ec",
+      "sample_backup_bytes": [
+        {
+          "sample": "baseline",
+          "offset": "0xf838",
+          "bytes": "01"
+        },
+        {
+          "sample": "series_ES",
+          "offset": "0xf838",
+          "bytes": "01"
+        },
+        {
+          "sample": "series_MS",
+          "offset": "0xf838",
+          "bytes": "01"
+        }
+      ],
+      "confidence": "К: общая ветка и поле банка; перевод значений зависит от таблицы id"
+    }
+  ],
+  "string_anchors": [
+    "31b22e8\tUI_MENUCOM_ITEM_MOVIE_PIXEL",
+    "31b66c8\tUI_MENUCOM_ITEM_RECMENU_MOVIE_PIXEL",
+    "31b6870\tUI_MENUCOM_ITEM_QMENU_HS_MOVIE_SIZE",
+    "31b6898\tUI_MENUCOM_ITEM_QMENU_HS_MOVIE_HDMIONLY_SIZE",
+    "31b68c8\tUI_MENUCOM_ITEM_QMENU_HDMI_RAW_SIZE_ATOMOS",
+    "31b68f8\tUI_MENUCOM_ITEM_QMENU_HDMI_RAW_SIZE_BLACKMAGIC",
+    "31b6c38\tUI_MENUCOM_ITEM_MOVIE_SET_MOVIE_PIXEL",
+    "31c17e0\tUI_MYMENU_MOVIE_PIXEL",
+    "31c21b0\tUI_MYMENU_RECMENU_MOVIE_PIXEL",
+    "31c50a0\tUI_MOVIE_PIXEL_4K",
+    "31c50b8\tUI_MOVIE_PIXEL_4K_17_9",
+    "31c50d0\tUI_MOVIE_PIXEL_FULLHD",
+    "31c50e8\tUI_MOVIE_PIXEL_FULLHD_17_9",
+    "31c5108\tUI_MOVIE_PIXEL_HD",
+    "31c5120\tUI_MOVIE_PIXEL_6K_3_2",
+    "31c5138\tUI_MOVIE_PIXEL_8K",
+    "31c5150\tUI_MOVIE_PIXEL_6K",
+    "31c5168\tUI_MOVIE_PIXEL_4KHQ",
+    "31c5180\tUI_MOVIE_PIXEL_4KHQ_17_9",
+    "31c51a0\tUI_MOVIE_PIXEL_VGA",
+    "31c51b8\tUI_MOVIE_PIXEL_HS_VGA",
+    "31c51d0\tUI_MOVIE_PIXEL_QVGA",
+    "31c51e8\tUI_MOVIE_PIXEL_320X112",
+    "31c5200\tUI_MOVIE_PIXEL_NONREF",
+    "31c5218\tUI_HS_MOVIE_PIXEL_4K",
+    "31c5230\tUI_HS_MOVIE_PIXEL_4K_17_9",
+    "31c5250\tUI_HS_MOVIE_PIXEL_FULLHD",
+    "31c5270\tUI_HS_MOVIE_PIXEL_FULLHD_17_9",
+    "31c52d8\tUI_MOVIE_FPS_23_98",
+    "31c52f0\tUI_MOVIE_FPS_24",
+    "31c5300\tUI_MOVIE_FPS_25",
+    "31c5310\tUI_MOVIE_FPS_29_97",
+    "31c5328\tUI_MOVIE_FPS_50",
+    "31c5338\tUI_MOVIE_FPS_59_94",
+    "31c5350\tUI_MOVIE_FPS_80",
+    "31c5360\tUI_MOVIE_FPS_100",
+    "31c5378\tUI_MOVIE_FPS_120",
+    "31c5390\tUI_MOVIE_FPS_150",
+    "31c53a8\tUI_MOVIE_FPS_160",
+    "31c53c0\tUI_MOVIE_FPS_200",
+    "31c53d8\tUI_MOVIE_FPS_240",
+    "31c53f0\tUI_MOVIE_FPS_250",
+    "31c5408\tUI_MOVIE_FPS_320",
+    "31c5710\tUI_HS_MOVIE_MODE_ON",
+    "31c5728\tUI_HS_MOVIE_MODE_OFF",
+    "31c5740\tUI_HS_MOVIE_MODE_ON_HDMI_ONLY",
+    "31c5760\tUI_HS_MOVIE_MENU_REC_FPS",
+    "31c5780\tUI_HS_MOVIE_MENU_PLAY_FPS",
+    "31c57a0\tUI_HS_MOVIE_MENU_PIXEL_ASPECT",
+    "31c57c0\tUI_HS_MOVIE_FPS_REC_240P",
+    "31c57e0\tUI_HS_MOVIE_FPS_REC_200P",
+    "31c5800\tUI_HS_MOVIE_FPS_REC_120P",
+    "31c5820\tUI_HS_MOVIE_FPS_REC_100P",
+    "31c5840\tUI_HS_MOVIE_FPS_PLAY_59_94P",
+    "31c5860\tUI_HS_MOVIE_FPS_PLAY_50P",
+    "31c5880\tUI_HS_MOVIE_FPS_PLAY_29_97P",
+    "31c58a0\tUI_HS_MOVIE_FPS_PLAY_25P",
+    "31c58c0\tUI_HS_MOVIE_FPS_PLAY_24P",
+    "31c58e0\tUI_HS_MOVIE_FPS_PLAY_23_98P",
+    "31c5900\tUI_HS_MOVIE_QMENU_4x_59_94P_240P",
+    "31c5928\tUI_HS_MOVIE_QMENU_2x_59_94P_120P",
+    "31c5950\tUI_HS_MOVIE_QMENU_4x_50P_200P",
+    "31c5970\tUI_HS_MOVIE_QMENU_2x_50P_100P",
+    "31c5990\tUI_HS_MOVIE_QMENU_8x_29_97P_240P",
+    "31c59b8\tUI_HS_MOVIE_QMENU_4x_29_97P_120P",
+    "31c59e0\tUI_HS_MOVIE_QMENU_8x_25P_200P",
+    "31c5a00\tUI_HS_MOVIE_QMENU_4x_25P_100P",
+    "31c5a20\tUI_HS_MOVIE_QMENU_10x_24P_240P",
+    "31c5a40\tUI_HS_MOVIE_QMENU_5x_24P_120P",
+    "31c5a60\tUI_HS_MOVIE_QMENU_10x_23_98P_240P",
+    "31c5a88\tUI_HS_MOVIE_QMENU_5x_23_98P_120P",
+    "31c5ab0\tUI_HS_MOVIE_QMENU_OFF",
+    "31c5ac8\tUI_HS_MOVIE_QMENU_HDMI_ONLY_120P",
+    "31c5af0\tUI_HS_MOVIE_QMENU_HDMI_ONLY_100P",
+    "31c5b18\tUI_HS_MOVIE_QMENU_HDMI_ONLY_OFF",
+    "31ce130\tUI_FLOGHLG_FLOG_FLOG",
+    "31ce148\tUI_FLOGHLG_FS_FS",
+    "31ce160\tUI_FLOGHLG_HLG_HLG",
+    "31ce178\tUI_FLOGHLG_FLOG_FS",
+    "31ce190\tUI_FLOGHLG_FS_FLOG ",
+    "31ce1a8\tUI_FLOGHLG_FLOG2_FLOG2",
+    "31ce1c0\tUI_FLOGHLG_FS_FLOG2",
+    "31ce1d8\tUI_FLOGHLG_FLOG2_FS",
+    "31ce1f0\tUI_FLOGHLG_FLOG2WIDE_FLOG2WIDE",
+    "31ce210\tUI_FLOGHLG_FS_FLOG2WIDE",
+    "31ce228\tUI_FLOGHLG_FLOG2WIDE_FS",
+    "31ce240\tUI_FLOGHLG_NONREF",
+    "31d5c10\tUI_MOVIE_RECORED_COMPRESS_H264_ALLI_MOV",
+    "31d5c38\tUI_MOVIE_RECORED_COMPRESS_H264_LONGGOP_MOV",
+    "31d5c68\tUI_MOVIE_RECORED_COMPRESS_H264_LONGGOP_MP4",
+    "31d5c98\tUI_MOVIE_RECORED_COMPRESS_H265_420_ALLI",
+    "31d5cc0\tUI_MOVIE_RECORED_COMPRESS_H265_420_LONGGOP",
+    "31d5cf0\tUI_MOVIE_RECORED_COMPRESS_H265_422_ALLI",
+    "31d5d18\tUI_MOVIE_RECORED_COMPRESS_H265_422_LONGGOP",
+    "31d5d48\tUI_MOVIE_RECORED_COMPRESS_PRORES_HQ",
+    "31d5d70\tUI_MOVIE_RECORED_COMPRESS_PRORES",
+    "31d5d98\tUI_MOVIE_RECORED_COMPRESS_PRORES_LT",
+    "31d5dc0\tUI_MOVIE_RECORED_COMPRESS_NONREF",
+    "31d5de8\tUI_PRORES_PROXY_H264",
+    "31d5e00\tUI_PRORES_PROXY_PRORES",
+    "31d5e18\tUI_PRORES_PROXY_OFF",
+    "31d5e90\tUI_PRORES_QUALTY_STD",
+    "31d5ea8\tUI_PRORES_QUALTY_HQ",
+    "31d5ec0\tUI_PRORES_QUALTY_LT",
+    "31d5ed8\tUI_PRORES_QUALTY_PROXY",
+    "31d5fb0\tUI_HDMI_RAW_SIZE_6K",
+    "31d5fc8\tUI_HDMI_RAW_SIZE_4K",
+    "31d5fe0\tUI_HDMI_RAW_SIZE_8K",
+    "31d5ff8\tUI_HDMI_RAW_FPS_60LOW",
+    "31d6010\tUI_HDMI_RAW_FPS_50",
+    "31d6028\tUI_HDMI_RAW_FPS_30LOW",
+    "31d6040\tUI_HDMI_RAW_FPS_25",
+    "31d6058\tUI_HDMI_RAW_FPS_24",
+    "31d6070\tUI_HDMI_RAW_FPS_24LOW",
+    "31f1ae8\tUI_SETP_MOVIE_PIXEL_MODE",
+    "31f1b08\tUI_SETP_MOVIE_PIXEL",
+    "31f1b20\tUI_SETP_HS_MOVIE_PIXEL",
+    "31f1b38\tUI_SETP_HS_MOVIE_HDMIONLY_PIXEL",
+    "31f1b70\tUI_SETP_HS_MOVIE_ASPECT",
+    "31f1b88\tUI_SETP_HS_MOVIE_HDMIONLY_ASPECT",
+    "31f1bb0\tUI_SETP_MOVIE_FPS",
+    "31f1cd8\tUI_SETP_HS_MOVIE_MODE",
+    "31f1cf0\tUI_SETP_HS_MOVIE_MODE_QMENU",
+    "31f1d10\tUI_SETP_HS_MOVIE_MENU",
+    "31f1d28\tUI_SETP_HS_MOVIE_FPS_REC",
+    "31f1d48\tUI_SETP_HS_MOVIE_HDMIONLY_FPS_REC",
+    "31f1d70\tUI_SETP_HS_MOVIE_FPS_PLAY",
+    "31f1d90\tUI_SETP_HS_MOVIE_QMENU",
+    "31f1da8\tUI_SETP_HS_MOVIE_QMENU_HDMI_ONLY",
+    "31f4d58\tUI_SETP_FLOGHLG_SETTING",
+    "31f5878\tUI_SETP_MOVIE_RECORED_COMPRESS",
+    "31f5898\tUI_SETP_PRORES_PROXY",
+    "31f58c8\tUI_SETP_PRORES_QUALTY",
+    "31f5958\tUI_SETP_HDMI_RAW_SIZE",
+    "31f5970\tUI_SETP_HDMI_RAW_SIZE_ATOMOS",
+    "31f5990\tUI_SETP_HDMI_RAW_SIZE_BLACKMAGIC",
+    "31f59b8\tUI_SETP_HDMI_RAW_FPS",
+    "31f59d0\tUI_SETP_HDMI_RAW_FPS_ATOMOS",
+    "31f59f0\tUI_SETP_HDMI_RAW_FPS_BLACKMAGIC",
+    "31fa450\tUI_SETP_DOTLCD_MOVIE_PIXEL_MODE",
+    "31fa470\tUI_SETP_DOTLCD_HISPEED_MOVIE_FPS",
+    "31fa778\tUI_SETP_DOTLCD_MODE_PRORES_QUALTY"
+  ],
+  "backup_check": {
+    "samples": [
+      "K1/01_база",
+      "K1/02_CH_ES_8000_CONT",
+      "K1/04_MS"
+    ],
+    "all_present_and_equal": true,
+    "checked_count": 39,
+    "outside_bank_count": 1,
+    "failed": []
+  }
+}
