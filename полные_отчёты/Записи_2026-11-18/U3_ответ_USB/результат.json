@@ -1,0 +1,107 @@
+{
+  "задача": "U3 — ответ USB-слоя и чтение свойств",
+  "прошивка": "X-H2 5.30",
+  "камера_трогалась": false,
+  "адреса": {
+    "error_handler": "0x2C05748",
+    "status_classifier": "0x2BF2248",
+    "d195_set_handler": "0x2C0B970",
+    "property_value_validation_conversion": "0x2C0B844",
+    "converter": "0x12E67AC",
+    "internal_getter_dispatcher": "0x2C93FD4",
+    "grain_case_getter": "0x2C94A78",
+    "grain_setter_branch": "0x2C8A2A8",
+    "error_status_global": "0x26BDF70"
+  },
+  "internal_error_categories": [
+    {
+      "internal": "0x80000040",
+      "category": 3,
+      "evidence": "Д"
+    },
+    {
+      "internal": "0x80000008",
+      "category": 4,
+      "evidence": "Д"
+    },
+    {
+      "internal": "0x80000010",
+      "category": 6,
+      "evidence": "Д"
+    },
+    {
+      "internal": "0x80000080",
+      "category": 1,
+      "conditional_categories": [
+        5,
+        9,
+        10,
+        8,
+        7,
+        11
+      ],
+      "evidence": "Д"
+    },
+    {
+      "internal": "0x80000100",
+      "category": 2,
+      "evidence": "Д"
+    },
+    {
+      "internal": "0x80002000",
+      "category": 12,
+      "evidence": "Д"
+    }
+  ],
+  "ptp_observations": [
+    {
+      "condition": "успешная запись свойства",
+      "response": "0x2001",
+      "evidence": "К"
+    },
+    {
+      "condition": "три отказа проверки значений",
+      "internal": "0x80000080",
+      "response": "0x201C",
+      "evidence": "К; прямой преобразователь не установлен"
+    },
+    {
+      "condition": "GetDevicePropDesc D195",
+      "response": "0x2002",
+      "evidence": "К"
+    }
+  ],
+  "unresolved_ptp_responses": [
+    "0x200A",
+    "0x2019",
+    "другие 0x20xx"
+  ],
+  "grain_write": {
+    "handler": "0x2C0B970",
+    "validator": "0x2C0B844",
+    "translation": "0x1135930(id, value, 4, 0)",
+    "result": "номер строки таблицы передаётся через 0x2BDFBA4 как событие 0xF8",
+    "USB4_table_row": 2,
+    "branch_2_expected": "Weak/Small",
+    "camera_observed_USB4": "байты GRAIN=1, GRAIN_SIZE=1",
+    "size_flip_in_D195_wrapper": false,
+    "final_explanation": "не установлено; проверить потребителя 0xF8 и затем гипотезу D023"
+  },
+  "get_device_prop_value": {
+    "dispatcher": "не установлен",
+    "operation": "0x1015",
+    "D195_reader": "не установлен",
+    "D18E_reader": "не установлен",
+    "D1A5_reader": "не установлен",
+    "D18C_slot_selection_in_USB_reader": "не установлено",
+    "internal_getter": "0x2C93FD4",
+    "grain_internal_getter_branch": "0x2C94A78",
+    "limitation": "внутренний геттер 0x108 возвращает 0..4 и не собирает D195 6/7"
+  },
+  "evidence_levels": {
+    "Д": "прямой дизассемблированный путь/значения",
+    "К": "сопоставление кода с наблюдением",
+    "Г": "гипотеза или незавершённый путь"
+  },
+  "status": "частично выполнено: конечный PTP-преобразователь ответа и парный GetDevicePropValue не восстановлены"
+}
