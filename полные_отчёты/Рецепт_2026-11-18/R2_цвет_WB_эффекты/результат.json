@@ -1,0 +1,1849 @@
+{
+  "task": "R2 — баланс белого, тона, цвет, эффекты, шумоподавление",
+  "firmware": "Fujifilm X-H2 5.30; блок 1 base 0x29AE000; блок 0 base 0x1101000",
+  "sources": {
+    "bank_map": "<корень проекта>\\Анализ_прошивки\\Камера_2026-11-17\\K2_прошивка\\карта_банка.json",
+    "backup": "<корень проекта>\\Анализ_прошивки\\fujicli_2026-11-18\\совместимость\\снимки\\04_после_set_c7\\backup.bin",
+    "slots_usb_observation": "<корень проекта>\\Анализ_прошивки\\PTP_чтение_2026-11-10\\xh2_slots_C1-C7_072426.txt",
+    "fujicli_option": "Внешние_репозитории/fujicli/fml/option.cue"
+  },
+  "backup": {
+    "sha256": "acd741056f8be2a8388bd275afd257bfd520eae0777939f1d4d313f9269d0d59",
+    "payload_bytes": 70356,
+    "payload_offset": "0xa8",
+    "slot_stride": "0x400",
+    "segment": "custom_0x1C00"
+  },
+  "dispatch": {
+    "setter_function": "0x2C88E98",
+    "setter_table": "0x33A77E8",
+    "getter_function": "0x2C93FD4",
+    "getter_table": "0x33A929C",
+    "value_converter": "0x1135930 -> 0x12E67AC",
+    "converter_table": "0x1BD5AB8 + 8 * UI_SETP_ID"
+  },
+  "special_findings": {
+    "wb_shifts": "0x6BF (R) / 0x6DD (B) are aggregate selectors. Setter branch 0x2C8A498 / 0x2C8A4F4 stages R/B values then calls 0x1334748 / 0x13349EC with current WB mode; helpers select a per-mode WB_TUNING_R/B field. Getter 0x13340C0 / 0x1334404 selects corresponding family. Families include Auto, Auto White, Auto Atmosphere, Custom 1-3, Kelvin, Daylight/Clear, Shade/Cloudy, Fluorescent 1-3, Incandescent/Bulb, Underwater.",
+    "kelvin": "0x5F7 is stored as u16 UI_SETP_WB_KELVIN at C1 custom-slot offset 0xF78C, field uses +0x400 per slot. In setter branch 0x2C8A738, value passes through 0x12EB010 and the branch writes UI_SETP 0x5F7 without checking current 0x5F5/WB mode; when value differs from current, it also resets/stages WB shift fields. No Kelvin-only setter guard was found.",
+    "nr": "Slot UI_SETP_NR 0x603 converter pointer 0x1766F70 yields internal bank indexes 0..8 paired with USB codes [0x8000,0x7000,0x4000,0x3000,0x2000,0x1000,0,0x6000,0x5000]. The RAW develop parameter id 0x943 points at 0x176AAB0 and stores internal indexes [8,6,0,4,2,3,1,5,7]; same index domain, distinct table/consumer.",
+    "wb_as_shot_gap": "fujicli declares USB 0x0000 As Shot, but the bank values in the seven observed slots map to 0x0002 Auto, 0x8007 Temperature, 0x0004 Daylight, and 0x0006 Incandescent. The complete wire-to-bank treatment of 0x0000 was not established here; do not treat the 14 observed bank indices as a proof of a 15-value bijection.",
+    "half_steps": "Highlight and Shadow bank codes 0..12 map to USB -20,-15,...,+40 in increments of 5 (=0.5 in displayed units times 10).",
+    "camera_touched": false
+  },
+  "properties": [
+    {
+      "usb_code": "0xd196",
+      "label": "Цветовой хром",
+      "usb_encoding": "байт банка 0/1/2 -> USB 1/2/3",
+      "usb_domain_from_fujicli": "enum: USB 0x03=сильный, 0x02=слабый, 0x01=выкл.",
+      "internal_setting": {
+        "id": "0x109",
+        "name": "UI_SETP_SHADOWING",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a79e4",
+          "target": "0x2c8a350",
+          "relative_words": 1280
+        },
+        "write_summary": "ветвь 0x2C8A350: преобразование и запись UI_SETP_SHADOWING"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33a9490",
+          "target": "0x2c94ae0",
+          "relative_words": 681
+        },
+        "read_summary": "ветвь 0x2C94AE0; преобразование SHADOWING"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd6300",
+        "table_pointer": "0x176c740",
+        "formula": "байт банка 0/1/2 -> USB 1/2/3",
+        "bank_to_usb": {
+          "0": 1,
+          "1": 2,
+          "2": 3
+        }
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_SHADOWING",
+            "container_offset": "0xF85E",
+            "values_C1_C7": [
+              2,
+              2,
+              0,
+              2,
+              1,
+              0,
+              2
+            ],
+            "payload_offsets_C1_C7": [
+              "0xf7b6",
+              "0xfbb6",
+              "0xffb6",
+              "0x103b6",
+              "0x107b6",
+              "0x10bb6",
+              "0x10fb6"
+            ]
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf7b6",
+          "0xfbb6",
+          "0xffb6",
+          "0x103b6",
+          "0x107b6",
+          "0x10bb6",
+          "0x10fb6"
+        ],
+        "raw_bank_values_C1_C7": [
+          2,
+          2,
+          0,
+          2,
+          1,
+          0,
+          2
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "3",
+          "C2": "3",
+          "C3": "1",
+          "C4": "3",
+          "C5": "2",
+          "C6": "1",
+          "C7": "3"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "3",
+          "C2": "3",
+          "C3": "1",
+          "C4": "3",
+          "C5": "2",
+          "C6": "1",
+          "C7": "3"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    },
+    {
+      "usb_code": "0xd197",
+      "label": "Синий эффект",
+      "usb_encoding": "байт банка 0/1/2 -> USB 1/2/3",
+      "usb_domain_from_fujicli": "enum: USB 0x03=сильный, 0x02=слабый, 0x01=выкл.",
+      "internal_setting": {
+        "id": "0x10a",
+        "name": "UI_SETP_BLUE_EFFECT",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a79e6",
+          "target": "0x2c8a38c",
+          "relative_words": 1295
+        },
+        "write_summary": "ветвь 0x2C8A38C: преобразование и запись UI_SETP_BLUE_EFFECT"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33a9492",
+          "target": "0x2c94b00",
+          "relative_words": 689
+        },
+        "read_summary": "ветвь 0x2C94B00; преобразование BLUE_EFFECT"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd6308",
+        "table_pointer": "0x1755980",
+        "formula": "байт банка 0/1/2 -> USB 1/2/3",
+        "bank_to_usb": {
+          "0": 1,
+          "1": 2,
+          "2": 3
+        }
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_BLUE_EFFECT",
+            "container_offset": "0xF85F",
+            "values_C1_C7": [
+              1,
+              2,
+              0,
+              2,
+              1,
+              1,
+              1
+            ],
+            "payload_offsets_C1_C7": [
+              "0xf7b7",
+              "0xfbb7",
+              "0xffb7",
+              "0x103b7",
+              "0x107b7",
+              "0x10bb7",
+              "0x10fb7"
+            ]
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf7b7",
+          "0xfbb7",
+          "0xffb7",
+          "0x103b7",
+          "0x107b7",
+          "0x10bb7",
+          "0x10fb7"
+        ],
+        "raw_bank_values_C1_C7": [
+          1,
+          2,
+          0,
+          2,
+          1,
+          1,
+          1
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "2",
+          "C2": "3",
+          "C3": "1",
+          "C4": "3",
+          "C5": "2",
+          "C6": "2",
+          "C7": "2"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "2",
+          "C2": "3",
+          "C3": "1",
+          "C4": "3",
+          "C5": "2",
+          "C6": "2",
+          "C7": "2"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    },
+    {
+      "usb_code": "0xd198",
+      "label": "Смягчение кожи",
+      "usb_encoding": "байт банка 0/1/2 -> USB 1/2/3",
+      "usb_domain_from_fujicli": "enum: USB 0x03=сильный, 0x02=слабый, 0x01=выкл.",
+      "internal_setting": {
+        "id": "0x10b",
+        "name": "UI_SETP_SMOOTH_SKIN",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a79e8",
+          "target": "0x2c8a3c8",
+          "relative_words": 1310
+        },
+        "write_summary": "ветвь 0x2C8A3C8: преобразование и запись UI_SETP_SMOOTH_SKIN"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33a9494",
+          "target": "0x2c94b20",
+          "relative_words": 697
+        },
+        "read_summary": "ветвь 0x2C94B20; преобразование SMOOTH_SKIN"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd6310",
+        "table_pointer": "0x176d4a0",
+        "formula": "байт банка 0/1/2 -> USB 1/2/3",
+        "bank_to_usb": {
+          "0": 1,
+          "1": 2,
+          "2": 3
+        }
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_SMOOTH_SKIN",
+            "container_offset": "0xF862",
+            "values_C1_C7": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "payload_offsets_C1_C7": [
+              "0xf7ba",
+              "0xfbba",
+              "0xffba",
+              "0x103ba",
+              "0x107ba",
+              "0x10bba",
+              "0x10fba"
+            ]
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf7ba",
+          "0xfbba",
+          "0xffba",
+          "0x103ba",
+          "0x107ba",
+          "0x10bba",
+          "0x10fba"
+        ],
+        "raw_bank_values_C1_C7": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "1",
+          "C2": "1",
+          "C3": "1",
+          "C4": "1",
+          "C5": "1",
+          "C6": "1",
+          "C7": "1"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "1",
+          "C2": "1",
+          "C3": "1",
+          "C4": "1",
+          "C5": "1",
+          "C6": "1",
+          "C7": "1"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    },
+    {
+      "usb_code": "0xd199",
+      "label": "Баланс белого",
+      "usb_encoding": "внутренний индекс WB -> код USB из таблицы 0x1BD5AB8 + 8*0x5F5",
+      "usb_domain_from_fujicli": "15 кодов WB из option.cue; см. таблицу преобразования",
+      "internal_setting": {
+        "id": "0x5f5",
+        "name": "UI_SETP_WB",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a83bc",
+          "target": "0x2c8a658",
+          "relative_words": 1474
+        },
+        "write_summary": "ветвь 0x2C8A658: преобразует код WB и записывает UI_SETP_WB"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33a9e68",
+          "target": "0x2c94238",
+          "relative_words": 127
+        },
+        "read_summary": "ветвь 0x2C94238; внутренний код WB в код USB"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd8a60",
+        "table_pointer": "0x176f6e0",
+        "formula": "внутренний индекс WB -> код USB из таблицы 0x1BD5AB8 + 8*0x5F5",
+        "bank_to_usb": {
+          "0": 2,
+          "1": 32800,
+          "2": 32801,
+          "3": 4,
+          "4": 32774,
+          "5": 32769,
+          "6": 32770,
+          "7": 32771,
+          "8": 6,
+          "9": 8,
+          "10": 32775,
+          "11": 32776,
+          "12": 32777,
+          "13": 32778
+        }
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_WB",
+            "container_offset": "0xF7E3",
+            "values_C1_C7": [
+              0,
+              10,
+              3,
+              0,
+              3,
+              10,
+              8
+            ],
+            "payload_offsets_C1_C7": [
+              "0xf73b",
+              "0xfb3b",
+              "0xff3b",
+              "0x1033b",
+              "0x1073b",
+              "0x10b3b",
+              "0x10f3b"
+            ]
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf73b",
+          "0xfb3b",
+          "0xff3b",
+          "0x1033b",
+          "0x1073b",
+          "0x10b3b",
+          "0x10f3b"
+        ],
+        "raw_bank_values_C1_C7": [
+          0,
+          10,
+          3,
+          0,
+          3,
+          10,
+          8
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "0x0002",
+          "C2": "0x8007",
+          "C3": "0x0004",
+          "C4": "0x0002",
+          "C5": "0x0004",
+          "C6": "0x8007",
+          "C7": "0x0006"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "0x0002",
+          "C2": "0x8007",
+          "C3": "0x0004",
+          "C4": "0x0002",
+          "C5": "0x0004",
+          "C6": "0x8007",
+          "C7": "0x0006"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    },
+    {
+      "usb_code": "0xd19a",
+      "label": "Сдвиг WB по красному",
+      "usb_encoding": "для выбранного семейства: USB = 9 − байт поля",
+      "usb_domain_from_fujicli": "−9…+9, шаг 1",
+      "internal_setting": {
+        "id": "0x6bf",
+        "name": "UI_SETP_WB_TUNING_R",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a8550",
+          "target": "0x2c8a498",
+          "relative_words": 1362
+        },
+        "write_summary": "ветвь 0x2C8A498: по режиму WB выбирает семейство красного сдвига"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33a9ffc",
+          "target": "0x2c972d8",
+          "relative_words": 3239
+        },
+        "read_summary": "ветвь 0x2C972D8; выдаёт активное поле красного сдвига по семейству WB"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd90b0",
+        "table_pointer": "0x176f910",
+        "formula": "для выбранного семейства: USB = 9 − байт поля",
+        "bank_to_usb": null
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_WB_TUNING_R_AUTO",
+            "value": 9,
+            "payload_offset": "0xf73d",
+            "container_offset": "0xF7E5"
+          },
+          {
+            "name": "UI_SETP_WB_TUNING_R_KELVIN",
+            "value": 8,
+            "payload_offset": "0xfb55",
+            "container_offset": "0xF7FD"
+          },
+          {
+            "name": "UI_SETP_WB_TUNING_R_CLEAR",
+            "value": 5,
+            "payload_offset": "0xff59",
+            "container_offset": "0xF801"
+          },
+          {
+            "name": "UI_SETP_WB_TUNING_R_AUTO",
+            "value": 8,
+            "payload_offset": "0x1033d",
+            "container_offset": "0xF7E5"
+          },
+          {
+            "name": "UI_SETP_WB_TUNING_R_CLEAR",
+            "value": 5,
+            "payload_offset": "0x10759",
+            "container_offset": "0xF801"
+          },
+          {
+            "name": "UI_SETP_WB_TUNING_R_KELVIN",
+            "value": 9,
+            "payload_offset": "0x10b55",
+            "container_offset": "0xF7FD"
+          },
+          {
+            "name": "UI_SETP_WB_TUNING_R_BULB",
+            "value": 7,
+            "payload_offset": "0x10f6d",
+            "container_offset": "0xF815"
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf73d",
+          "0xfb55",
+          "0xff59",
+          "0x1033d",
+          "0x10759",
+          "0x10b55",
+          "0x10f6d"
+        ],
+        "raw_bank_values_C1_C7": [
+          9,
+          8,
+          5,
+          8,
+          5,
+          9,
+          7
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "0",
+          "C2": "1",
+          "C3": "4",
+          "C4": "1",
+          "C5": "4",
+          "C6": "0",
+          "C7": "2"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "0",
+          "C2": "1",
+          "C3": "4",
+          "C4": "1",
+          "C5": "4",
+          "C6": "0",
+          "C7": "2"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    },
+    {
+      "usb_code": "0xd19b",
+      "label": "Сдвиг WB по синему",
+      "usb_encoding": "для выбранного семейства: USB = 9 − байт поля",
+      "usb_domain_from_fujicli": "−9…+9, шаг 1",
+      "internal_setting": {
+        "id": "0x6dd",
+        "name": "UI_SETP_WB_TUNING_B",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a858c",
+          "target": "0x2c8a4f4",
+          "relative_words": 1385
+        },
+        "write_summary": "ветвь 0x2C8A4F4: по режиму WB выбирает семейство синего сдвига"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33aa038",
+          "target": "0x2c97380",
+          "relative_words": 3281
+        },
+        "read_summary": "ветвь 0x2C97380; выдаёт активное поле синего сдвига по семейству WB"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd91a0",
+        "table_pointer": "0x176f7d0",
+        "formula": "для выбранного семейства: USB = 9 − байт поля",
+        "bank_to_usb": null
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_WB_TUNING_B_AUTO",
+            "value": 13,
+            "payload_offset": "0xf73f",
+            "container_offset": "0xF7E7"
+          },
+          {
+            "name": "UI_SETP_WB_TUNING_B_KELVIN",
+            "value": 14,
+            "payload_offset": "0xfb57",
+            "container_offset": "0xF7FF"
+          },
+          {
+            "name": "UI_SETP_WB_TUNING_B_CLEAR",
+            "value": 14,
+            "payload_offset": "0xff5b",
+            "container_offset": "0xF803"
+          },
+          {
+            "name": "UI_SETP_WB_TUNING_B_AUTO",
+            "value": 14,
+            "payload_offset": "0x1033f",
+            "container_offset": "0xF7E7"
+          },
+          {
+            "name": "UI_SETP_WB_TUNING_B_CLEAR",
+            "value": 14,
+            "payload_offset": "0x1075b",
+            "container_offset": "0xF803"
+          },
+          {
+            "name": "UI_SETP_WB_TUNING_B_KELVIN",
+            "value": 9,
+            "payload_offset": "0x10b57",
+            "container_offset": "0xF7FF"
+          },
+          {
+            "name": "UI_SETP_WB_TUNING_B_BULB",
+            "value": 12,
+            "payload_offset": "0x10f6f",
+            "container_offset": "0xF817"
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf73f",
+          "0xfb57",
+          "0xff5b",
+          "0x1033f",
+          "0x1075b",
+          "0x10b57",
+          "0x10f6f"
+        ],
+        "raw_bank_values_C1_C7": [
+          13,
+          14,
+          14,
+          14,
+          14,
+          9,
+          12
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "-4",
+          "C2": "-5",
+          "C3": "-5",
+          "C4": "-5",
+          "C5": "-5",
+          "C6": "0",
+          "C7": "-3"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "-4",
+          "C2": "-5",
+          "C3": "-5",
+          "C4": "-5",
+          "C5": "-5",
+          "C6": "0",
+          "C7": "-3"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    },
+    {
+      "usb_code": "0xd19c",
+      "label": "Температура баланса белого",
+      "usb_encoding": "USB = значение u16 в банке; запись не обусловлена режимом WB",
+      "usb_domain_from_fujicli": "2500…10000 K, шаг 10 K",
+      "internal_setting": {
+        "id": "0x5f7",
+        "name": "UI_SETP_WB_KELVIN",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a83c0",
+          "target": "0x2c8a738",
+          "relative_words": 1530
+        },
+        "write_summary": "ветвь 0x2C8A738: запись u16 без проверки WB=Kelvin; при изменении вызывает помощники сдвигов"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33a9e6c",
+          "target": "0x2c942d8",
+          "relative_words": 167
+        },
+        "read_summary": "ветвь 0x2C942D8; читает u16 температуры без проверки режима WB"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd8a70",
+        "table_pointer": null,
+        "formula": "USB = значение u16 в банке; запись не обусловлена режимом WB",
+        "bank_to_usb": null
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_WB_KELVIN",
+            "container_offset": "0xF78C",
+            "values_C1_C7": [
+              5200,
+              5750,
+              5200,
+              5200,
+              5200,
+              5900,
+              5200
+            ],
+            "payload_offsets_C1_C7": [
+              "0xf6e4",
+              "0xfae4",
+              "0xfee4",
+              "0x102e4",
+              "0x106e4",
+              "0x10ae4",
+              "0x10ee4"
+            ]
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf6e4",
+          "0xfae4",
+          "0xfee4",
+          "0x102e4",
+          "0x106e4",
+          "0x10ae4",
+          "0x10ee4"
+        ],
+        "raw_bank_values_C1_C7": [
+          5200,
+          5750,
+          5200,
+          5200,
+          5200,
+          5900,
+          5200
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "0x1450",
+          "C2": "0x1676",
+          "C3": "0x1450",
+          "C4": "0x1450",
+          "C5": "0x1450",
+          "C6": "0x170C",
+          "C7": "0x1450"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "0x1450",
+          "C2": "0x1676",
+          "C3": "0x1450",
+          "C4": "0x1450",
+          "C5": "0x1450",
+          "C6": "0x170C",
+          "C7": "0x1450"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    },
+    {
+      "usb_code": "0xd19d",
+      "label": "Светлые тона",
+      "usb_encoding": "USB = (байт банка − 4) × 5; шкала USB ×10, шаг настройки 0,5",
+      "usb_domain_from_fujicli": "−20…+40 по USB, шаг 5 (−2,0…+4,0 с шагом 0,5)",
+      "internal_setting": {
+        "id": "0x6b9",
+        "name": "UI_SETP_HIGHLIGHT",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a8544",
+          "target": "0x2c8bc68",
+          "relative_words": 2886
+        },
+        "write_summary": "ветвь 0x2C8BC68: таблица преобразования и запись UI_SETP_HIGHLIGHT"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33a9ff0",
+          "target": "0x2c94858",
+          "relative_words": 519
+        },
+        "read_summary": "ветвь 0x2C94858; преобразует светлые тона"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd9080",
+        "table_pointer": "0x175ef80",
+        "formula": "USB = (байт банка − 4) × 5; шкала USB ×10, шаг настройки 0,5",
+        "bank_to_usb": null
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_HIGHLIGHT",
+            "container_offset": "0xF85A",
+            "values_C1_C7": [
+              2,
+              7,
+              4,
+              0,
+              4,
+              0,
+              4
+            ],
+            "payload_offsets_C1_C7": [
+              "0xf7b2",
+              "0xfbb2",
+              "0xffb2",
+              "0x103b2",
+              "0x107b2",
+              "0x10bb2",
+              "0x10fb2"
+            ]
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf7b2",
+          "0xfbb2",
+          "0xffb2",
+          "0x103b2",
+          "0x107b2",
+          "0x10bb2",
+          "0x10fb2"
+        ],
+        "raw_bank_values_C1_C7": [
+          2,
+          7,
+          4,
+          0,
+          4,
+          0,
+          4
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "-10",
+          "C2": "15",
+          "C3": "0",
+          "C4": "-20",
+          "C5": "0",
+          "C6": "-20",
+          "C7": "0"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "-10",
+          "C2": "15",
+          "C3": "0",
+          "C4": "-20",
+          "C5": "0",
+          "C6": "-20",
+          "C7": "0"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    },
+    {
+      "usb_code": "0xd19e",
+      "label": "Тёмные тона",
+      "usb_encoding": "USB = (байт банка − 4) × 5; шкала USB ×10, шаг настройки 0,5",
+      "usb_domain_from_fujicli": "−20…+40 по USB, шаг 5 (−2,0…+4,0 с шагом 0,5)",
+      "internal_setting": {
+        "id": "0x6bb",
+        "name": "UI_SETP_SHADOW",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a8548",
+          "target": "0x2c8bd20",
+          "relative_words": 2932
+        },
+        "write_summary": "ветвь 0x2C8BD20: таблица преобразования и запись UI_SETP_SHADOW"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33a9ff4",
+          "target": "0x2c96988",
+          "relative_words": 2643
+        },
+        "read_summary": "ветвь 0x2C96988; преобразует тёмные тона"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd9090",
+        "table_pointer": "0x176c660",
+        "formula": "USB = (байт банка − 4) × 5; шкала USB ×10, шаг настройки 0,5",
+        "bank_to_usb": null
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_SHADOW",
+            "container_offset": "0xF85C",
+            "values_C1_C7": [
+              2,
+              5,
+              4,
+              6,
+              4,
+              2,
+              6
+            ],
+            "payload_offsets_C1_C7": [
+              "0xf7b4",
+              "0xfbb4",
+              "0xffb4",
+              "0x103b4",
+              "0x107b4",
+              "0x10bb4",
+              "0x10fb4"
+            ]
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf7b4",
+          "0xfbb4",
+          "0xffb4",
+          "0x103b4",
+          "0x107b4",
+          "0x10bb4",
+          "0x10fb4"
+        ],
+        "raw_bank_values_C1_C7": [
+          2,
+          5,
+          4,
+          6,
+          4,
+          2,
+          6
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "-10",
+          "C2": "5",
+          "C3": "0",
+          "C4": "10",
+          "C5": "0",
+          "C6": "-10",
+          "C7": "10"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "-10",
+          "C2": "5",
+          "C3": "0",
+          "C4": "10",
+          "C5": "0",
+          "C6": "-10",
+          "C7": "10"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    },
+    {
+      "usb_code": "0xd19f",
+      "label": "Цвет",
+      "usb_encoding": "таблица: байт банка -> значение USB; шкала ×10",
+      "usb_domain_from_fujicli": "−40…+40 по USB, шаг 10 (−4…+4)",
+      "internal_setting": {
+        "id": "0x6b3",
+        "name": "UI_SETP_STILLCOLOR",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a8538",
+          "target": "0x2c8e174",
+          "relative_words": 5257
+        },
+        "write_summary": "ветвь 0x2C8E174: таблица преобразования и запись UI_SETP_STILLCOLOR"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33a9fe4",
+          "target": "0x2c96a28",
+          "relative_words": 2683
+        },
+        "read_summary": "ветвь 0x2C96A28; табличное преобразование цвета"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd9050",
+        "table_pointer": "0x176d7b0",
+        "formula": "таблица: байт банка -> значение USB; шкала ×10",
+        "bank_to_usb": {
+          "3": 40,
+          "4": 30,
+          "5": 20,
+          "6": 10,
+          "0": 0,
+          "8": -10,
+          "7": -20,
+          "9": -30,
+          "10": -40
+        }
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_STILLCOLOR",
+            "container_offset": "0xF856",
+            "values_C1_C7": [
+              5,
+              6,
+              4,
+              3,
+              0,
+              7,
+              10
+            ],
+            "payload_offsets_C1_C7": [
+              "0xf7ae",
+              "0xfbae",
+              "0xffae",
+              "0x103ae",
+              "0x107ae",
+              "0x10bae",
+              "0x10fae"
+            ]
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf7ae",
+          "0xfbae",
+          "0xffae",
+          "0x103ae",
+          "0x107ae",
+          "0x10bae",
+          "0x10fae"
+        ],
+        "raw_bank_values_C1_C7": [
+          5,
+          6,
+          4,
+          3,
+          0,
+          7,
+          10
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "20",
+          "C2": "10",
+          "C3": "30",
+          "C4": "40",
+          "C5": "0",
+          "C6": "-20",
+          "C7": "-40"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "20",
+          "C2": "10",
+          "C3": "30",
+          "C4": "40",
+          "C5": "0",
+          "C6": "-20",
+          "C7": "-40"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    },
+    {
+      "usb_code": "0xd1a0",
+      "label": "Резкость",
+      "usb_encoding": "таблица: байт банка -> значение USB; шкала ×10",
+      "usb_domain_from_fujicli": "−40…+40 по USB, шаг 10 (−4…+4)",
+      "internal_setting": {
+        "id": "0x6b5",
+        "name": "UI_SETP_SHARPNESS",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a853c",
+          "target": "0x2c8bc18",
+          "relative_words": 2866
+        },
+        "write_summary": "ветвь 0x2C8BC18: таблица преобразования и запись UI_SETP_SHARPNESS"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33a9fe8",
+          "target": "0x2c947b8",
+          "relative_words": 479
+        },
+        "read_summary": "ветвь 0x2C947B8; табличное преобразование резкости"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd9060",
+        "table_pointer": "0x176c780",
+        "formula": "таблица: байт банка -> значение USB; шкала ×10",
+        "bank_to_usb": {
+          "0": 40,
+          "1": 30,
+          "2": 20,
+          "3": 10,
+          "4": 0,
+          "5": -10,
+          "6": -20,
+          "7": -30,
+          "8": -40
+        }
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_SHARPNESS",
+            "container_offset": "0xF858",
+            "values_C1_C7": [
+              4,
+              5,
+              6,
+              4,
+              5,
+              6,
+              4
+            ],
+            "payload_offsets_C1_C7": [
+              "0xf7b0",
+              "0xfbb0",
+              "0xffb0",
+              "0x103b0",
+              "0x107b0",
+              "0x10bb0",
+              "0x10fb0"
+            ]
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf7b0",
+          "0xfbb0",
+          "0xffb0",
+          "0x103b0",
+          "0x107b0",
+          "0x10bb0",
+          "0x10fb0"
+        ],
+        "raw_bank_values_C1_C7": [
+          4,
+          5,
+          6,
+          4,
+          5,
+          6,
+          4
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "0",
+          "C2": "-10",
+          "C3": "-20",
+          "C4": "0",
+          "C5": "-10",
+          "C6": "-20",
+          "C7": "0"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "0",
+          "C2": "-10",
+          "C3": "-20",
+          "C4": "0",
+          "C5": "-10",
+          "C6": "-20",
+          "C7": "0"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    },
+    {
+      "usb_code": "0xd1a1",
+      "label": "Шумоподавление",
+      "usb_encoding": "байт банка 0…8 -> USB: 8000,7000,4000,3000,2000,1000,0000,6000,5000",
+      "usb_domain_from_fujicli": "9 кодов: 0x5000,0x6000,0x0000,0x1000,0x2000,0x3000,0x4000,0x7000,0x8000",
+      "internal_setting": {
+        "id": "0x603",
+        "name": "UI_SETP_NR",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a83d8",
+          "target": "0x2c8bdf4",
+          "relative_words": 2985
+        },
+        "write_summary": "ветвь 0x2C8BDF4: перевод USB-кода в индекс шумоподавления и запись в банк"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33a9e84",
+          "target": "0x2c948f8",
+          "relative_words": 559
+        },
+        "read_summary": "ветвь 0x2C948F8; преобразование кода и индекса шумоподавления"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd8ad0",
+        "table_pointer": "0x1766f70",
+        "formula": "байт банка 0…8 -> USB: 8000,7000,4000,3000,2000,1000,0000,6000,5000",
+        "bank_to_usb": {
+          "0": 32768,
+          "1": 28672,
+          "2": 16384,
+          "3": 12288,
+          "4": 8192,
+          "5": 4096,
+          "6": 0,
+          "7": 24576,
+          "8": 20480
+        }
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_NR",
+            "container_offset": "0xF81D",
+            "values_C1_C7": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "payload_offsets_C1_C7": [
+              "0xf775",
+              "0xfb75",
+              "0xff75",
+              "0x10375",
+              "0x10775",
+              "0x10b75",
+              "0x10f75"
+            ]
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf775",
+          "0xfb75",
+          "0xff75",
+          "0x10375",
+          "0x10775",
+          "0x10b75",
+          "0x10f75"
+        ],
+        "raw_bank_values_C1_C7": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "0x8000",
+          "C2": "0x8000",
+          "C3": "0x8000",
+          "C4": "0x8000",
+          "C5": "0x8000",
+          "C6": "0x8000",
+          "C7": "0x8000"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "0x8000",
+          "C2": "0x8000",
+          "C3": "0x8000",
+          "C4": "0x8000",
+          "C5": "0x8000",
+          "C6": "0x8000",
+          "C7": "0x8000"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    },
+    {
+      "usb_code": "0xd1a2",
+      "label": "Чёткость",
+      "usb_encoding": "USB = (байт банка − 6) × 10",
+      "usb_domain_from_fujicli": "−50…+50 по USB, шаг 10 (−5…+5)",
+      "internal_setting": {
+        "id": "0x605",
+        "name": "UI_SETP_CLARITY",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a83dc",
+          "target": "0x2c8bedc",
+          "relative_words": 3043
+        },
+        "write_summary": "ветвь 0x2C8BEDC: таблица преобразования и запись UI_SETP_CLARITY"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33a9e88",
+          "target": "0x2c949f8",
+          "relative_words": 623
+        },
+        "read_summary": "ветвь 0x2C949F8; табличное преобразование чёткости"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd8ae0",
+        "table_pointer": "0x1756280",
+        "formula": "USB = (байт банка − 6) × 10",
+        "bank_to_usb": null
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_CLARITY",
+            "container_offset": "0xF820",
+            "values_C1_C7": [
+              6,
+              9,
+              4,
+              6,
+              6,
+              4,
+              5
+            ],
+            "payload_offsets_C1_C7": [
+              "0xf778",
+              "0xfb78",
+              "0xff78",
+              "0x10378",
+              "0x10778",
+              "0x10b78",
+              "0x10f78"
+            ]
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf778",
+          "0xfb78",
+          "0xff78",
+          "0x10378",
+          "0x10778",
+          "0x10b78",
+          "0x10f78"
+        ],
+        "raw_bank_values_C1_C7": [
+          6,
+          9,
+          4,
+          6,
+          6,
+          4,
+          5
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "0",
+          "C2": "30",
+          "C3": "-20",
+          "C4": "0",
+          "C5": "0",
+          "C6": "-20",
+          "C7": "-10"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "0",
+          "C2": "30",
+          "C3": "-20",
+          "C4": "0",
+          "C5": "0",
+          "C6": "-20",
+          "C7": "-10"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    },
+    {
+      "usb_code": "0xd1a3",
+      "label": "Оптимизатор модуляции объектива",
+      "usb_encoding": "байт банка 0/1 -> USB 1/2",
+      "usb_domain_from_fujicli": "USB 0x01=вкл., 0x02=выкл.",
+      "internal_setting": {
+        "id": "0x615",
+        "name": "UI_SETP_LEQ",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a83fc",
+          "target": "0x2c90080",
+          "relative_words": 7244
+        },
+        "write_summary": "ветвь 0x2C90080: преобразование и запись UI_SETP_LEQ"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33a9ea8",
+          "target": "0x2c96528",
+          "relative_words": 2363
+        },
+        "read_summary": "ветвь 0x2C96528; преобразование LEQ"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd8b60",
+        "table_pointer": "0x1761f40",
+        "formula": "байт банка 0/1 -> USB 1/2",
+        "bank_to_usb": {
+          "0": 1,
+          "1": 2
+        }
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_LEQ",
+            "container_offset": "0xF7B8",
+            "values_C1_C7": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "payload_offsets_C1_C7": [
+              "0xf710",
+              "0xfb10",
+              "0xff10",
+              "0x10310",
+              "0x10710",
+              "0x10b10",
+              "0x10f10"
+            ]
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf710",
+          "0xfb10",
+          "0xff10",
+          "0x10310",
+          "0x10710",
+          "0x10b10",
+          "0x10f10"
+        ],
+        "raw_bank_values_C1_C7": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "1",
+          "C2": "1",
+          "C3": "1",
+          "C4": "1",
+          "C5": "1",
+          "C6": "1",
+          "C7": "1"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "1",
+          "C2": "1",
+          "C3": "1",
+          "C4": "1",
+          "C5": "1",
+          "C6": "1",
+          "C7": "1"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    },
+    {
+      "usb_code": "0xd1a4",
+      "label": "Цветовое пространство",
+      "usb_encoding": "байт банка 0/1 -> USB 1/2",
+      "usb_domain_from_fujicli": "USB 0x01=sRGB, 0x02=Adobe RGB",
+      "internal_setting": {
+        "id": "0x104",
+        "name": "UI_SETP_COLOR_SPACE",
+        "association_level": "К"
+      },
+      "setter": {
+        "function": "0x2C88E98",
+        "jump_table": "0x33a77e8",
+        "branch": {
+          "table_entry": "0x33a79da",
+          "target": "0x2c925b0",
+          "relative_words": 9624
+        },
+        "write_summary": "ветвь 0x2C925B0: преобразование и запись UI_SETP_COLOR_SPACE"
+      },
+      "getter": {
+        "function": "0x2C93FD4",
+        "jump_table": "0x33a929c",
+        "branch": {
+          "table_entry": "0x33a9486",
+          "target": "0x2c94a18",
+          "relative_words": 631
+        },
+        "read_summary": "ветвь 0x2C94A18; преобразование COLOR_SPACE"
+      },
+      "translation": {
+        "function": "0x1135930 -> 0x12E67AC",
+        "table_address": "0x1bd62d8",
+        "table_pointer": "0x1756710",
+        "formula": "байт банка 0/1 -> USB 1/2",
+        "bank_to_usb": {
+          "0": 1,
+          "1": 2
+        }
+      },
+      "bank": {
+        "fields": [
+          {
+            "name": "UI_SETP_COLOR_SPACE",
+            "container_offset": "0xF7B6",
+            "values_C1_C7": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            "payload_offsets_C1_C7": [
+              "0xf70e",
+              "0xfb0e",
+              "0xff0e",
+              "0x1030e",
+              "0x1070e",
+              "0x10b0e",
+              "0x10f0e"
+            ]
+          }
+        ],
+        "slot_stride": "0x400",
+        "slot_payload_offsets_C1_C7": [
+          "0xf70e",
+          "0xfb0e",
+          "0xff0e",
+          "0x1030e",
+          "0x1070e",
+          "0x10b0e",
+          "0x10f0e"
+        ],
+        "raw_bank_values_C1_C7": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "slot_check": {
+        "predicted_usb_C1_C7": {
+          "C1": "1",
+          "C2": "1",
+          "C3": "2",
+          "C4": "1",
+          "C5": "1",
+          "C6": "1",
+          "C7": "2"
+        },
+        "observed_usb_C1_C7": {
+          "C1": "1",
+          "C2": "1",
+          "C3": "2",
+          "C4": "1",
+          "C5": "1",
+          "C6": "1",
+          "C7": "2"
+        },
+        "matches_C1_C7": {
+          "C1": true,
+          "C2": true,
+          "C3": true,
+          "C4": true,
+          "C5": true,
+          "C6": true,
+          "C7": true
+        },
+        "all_match": true
+      },
+      "level": "К; машинные переходы, таблица преобразования, карта банка и снимок слотов согласуются; имя USB-свойства сопоставлено по fujicli."
+    }
+  ],
+  "slot_check_all_match": true
+}

@@ -1,0 +1,487 @@
+{
+  "task": "Z1 — USB-свойство зерна слота D195",
+  "firmware": "X-H2 5.30",
+  "source_backup": "<корень проекта>\\Анализ_прошивки\\fujicli_2026-11-18\\совместимость\\снимки\\04_после_set_c7\\backup.bin",
+  "backup_sha256": "acd741056f8be2a8388bd275afd257bfd520eae0777939f1d4d313f9269d0d59",
+  "backup_bytes": 70524,
+  "payload_bytes": 70356,
+  "payload_offset_in_file": "0xa8",
+  "layout_mode": "mode1; legacy custom-slot projection used only to read seven custom blocks",
+  "custom_segment": {
+    "payload_start": "0xF6D4",
+    "bytes": "0x1C00",
+    "slot_stride": "0x400"
+  },
+  "map_fields": {
+    "UI_SETP_GRAIN": {
+      "id": "0x106",
+      "getter": "0x12B71C4",
+      "first_payload_offset": "0xf7b8"
+    },
+    "UI_SETP_GRAIN_SIZE": {
+      "id": "0x107",
+      "getter": "0x12B727C",
+      "first_payload_offset": "0xf7b9"
+    }
+  },
+  "read_formula": {
+    "bank_encoding": {
+      "GRAIN_0": "Strong",
+      "GRAIN_1": "Weak",
+      "GRAIN_2": "Off",
+      "GRAIN_SIZE_0": "Small",
+      "GRAIN_SIZE_1": "Large"
+    },
+    "expression": "if GRAIN == 2: D195 = 6 + GRAIN_SIZE; else: D195 = 3 + 2*GRAIN_SIZE - GRAIN"
+  },
+  "write_rules": [
+    {
+      "D195": 1,
+      "label": "Off",
+      "GRAIN": 2,
+      "GRAIN_SIZE": "preserve",
+      "evidence": "model; consistent with the observed accepted write 1, unchanged read 6, and unchanged backup bytes"
+    },
+    {
+      "D195": 2,
+      "label": "Weak/Small",
+      "GRAIN": 1,
+      "GRAIN_SIZE": 0,
+      "evidence": "inferred inverse mapping; not tested on camera"
+    },
+    {
+      "D195": 3,
+      "label": "Strong/Small",
+      "GRAIN": 0,
+      "GRAIN_SIZE": 0,
+      "evidence": "inferred inverse mapping; not tested on camera"
+    },
+    {
+      "D195": 4,
+      "label": "Weak/Large",
+      "GRAIN": 1,
+      "GRAIN_SIZE": 1,
+      "evidence": "inferred inverse mapping; not tested on camera"
+    },
+    {
+      "D195": 5,
+      "label": "Strong/Large",
+      "GRAIN": 0,
+      "GRAIN_SIZE": 1,
+      "evidence": "inferred inverse mapping; not tested on camera"
+    }
+  ],
+  "write_range_evidence": {
+    "observed_accepted": [
+      1
+    ],
+    "observed_rejected": [
+      6
+    ],
+    "not_tested": [
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "rejection_response": "0x201C Invalid_DeviceProp_Value",
+    "note": "The 1..5 input range is inferred from the read mapping; only 1 accepted and 6 rejected were observed. GetDevicePropDesc (0x1014) for D195 returned 0x2002 in the recorded RAW CONV session; the static instruction that emits 0x201C was not isolated."
+  },
+  "slot_check": {
+    "expected": [
+      6,
+      6,
+      3,
+      7,
+      6,
+      6,
+      6
+    ],
+    "actual": [
+      6,
+      6,
+      3,
+      7,
+      6,
+      6,
+      6
+    ],
+    "all_match": true,
+    "slots": [
+      {
+        "slot": "C1",
+        "slot_index_zero_based": 0,
+        "bank_field_offset": "0xf8c0",
+        "payload_offsets": {
+          "GRAIN": "0xf7b8",
+          "GRAIN_SIZE": "0xf7b9"
+        },
+        "values": {
+          "GRAIN": 2,
+          "GRAIN_SIZE": 0
+        },
+        "decoded_D195": 6,
+        "matches_observation": true
+      },
+      {
+        "slot": "C2",
+        "slot_index_zero_based": 1,
+        "bank_field_offset": "0xfcc0",
+        "payload_offsets": {
+          "GRAIN": "0xfbb8",
+          "GRAIN_SIZE": "0xfbb9"
+        },
+        "values": {
+          "GRAIN": 2,
+          "GRAIN_SIZE": 0
+        },
+        "decoded_D195": 6,
+        "matches_observation": true
+      },
+      {
+        "slot": "C3",
+        "slot_index_zero_based": 2,
+        "bank_field_offset": "0x100c0",
+        "payload_offsets": {
+          "GRAIN": "0xffb8",
+          "GRAIN_SIZE": "0xffb9"
+        },
+        "values": {
+          "GRAIN": 0,
+          "GRAIN_SIZE": 0
+        },
+        "decoded_D195": 3,
+        "matches_observation": true
+      },
+      {
+        "slot": "C4",
+        "slot_index_zero_based": 3,
+        "bank_field_offset": "0x104c0",
+        "payload_offsets": {
+          "GRAIN": "0x103b8",
+          "GRAIN_SIZE": "0x103b9"
+        },
+        "values": {
+          "GRAIN": 2,
+          "GRAIN_SIZE": 1
+        },
+        "decoded_D195": 7,
+        "matches_observation": true
+      },
+      {
+        "slot": "C5",
+        "slot_index_zero_based": 4,
+        "bank_field_offset": "0x108c0",
+        "payload_offsets": {
+          "GRAIN": "0x107b8",
+          "GRAIN_SIZE": "0x107b9"
+        },
+        "values": {
+          "GRAIN": 2,
+          "GRAIN_SIZE": 0
+        },
+        "decoded_D195": 6,
+        "matches_observation": true
+      },
+      {
+        "slot": "C6",
+        "slot_index_zero_based": 5,
+        "bank_field_offset": "0x10cc0",
+        "payload_offsets": {
+          "GRAIN": "0x10bb8",
+          "GRAIN_SIZE": "0x10bb9"
+        },
+        "values": {
+          "GRAIN": 2,
+          "GRAIN_SIZE": 0
+        },
+        "decoded_D195": 6,
+        "matches_observation": true
+      },
+      {
+        "slot": "C7",
+        "slot_index_zero_based": 6,
+        "bank_field_offset": "0x110c0",
+        "payload_offsets": {
+          "GRAIN": "0x10fb8",
+          "GRAIN_SIZE": "0x10fb9"
+        },
+        "values": {
+          "GRAIN": 2,
+          "GRAIN_SIZE": 0
+        },
+        "decoded_D195": 6,
+        "matches_observation": true
+      }
+    ]
+  },
+  "code_addresses": {
+    "property_group_table_start": "0x3443590",
+    "property_group_table_end_inclusive": "0x34435DC",
+    "D195_entry": "0x34435AC",
+    "property_group_metadata_builder": "0x2F2CDE0",
+    "group_member_helper": "0x2F2C838",
+    "bank_getter_dispatcher": "0x12AA788",
+    "slot_selector_helper": "0x11DA370",
+    "grain_case": "0x12B71C4",
+    "grain_size_case": "0x12B727C",
+    "grain_setter_dispatcher": "0x2C88E98",
+    "grain_setter_transition_table": "0x33A77E8",
+    "grain_setter_branch_base": "0x2C88F50",
+    "grain_composite_handler_id": "0x108",
+    "grain_composite_handler": "0x2C8A2A8",
+    "grain_composite_reader": "0x2C94A78",
+    "grain_value_converter": "0x12E67AC",
+    "grain_id_0x108_conversion_table": "0x1769350"
+  },
+  "unicorn": {
+    "run": true,
+    "component": "Ветвь 0x2C8A2A8 исполнялась для внутренних индексов w20=0..4; вызовы 0x2C88E98 перехватывались и не исполнялись.",
+    "results": {
+      "0": [
+        [
+          "0x106",
+          0
+        ],
+        [
+          "0x107",
+          0
+        ]
+      ],
+      "1": [
+        [
+          "0x106",
+          0
+        ],
+        [
+          "0x107",
+          1
+        ]
+      ],
+      "2": [
+        [
+          "0x106",
+          1
+        ],
+        [
+          "0x107",
+          0
+        ]
+      ],
+      "3": [
+        [
+          "0x106",
+          1
+        ],
+        [
+          "0x107",
+          1
+        ]
+      ],
+      "4": [
+        [
+          "0x106",
+          2
+        ]
+      ]
+    },
+    "script": "эмуляция_ветки_108.py",
+    "not_emulated": "Вызов сеттера, PTP-обработчик D195, проверка 0x201C и кодирование обратного чтения D195."
+  },
+  "camera_touched": false,
+  "write_path_analysis": {
+    "internal_dispatcher": "0x2C88E98",
+    "function_entry_evidence": {
+      "identifier_from": "w0 -> w19 at 0x2C88EB0",
+      "value_from": "w1 -> w20 at 0x2C88EB4"
+    },
+    "transition_table": {
+      "address": "0x33A77E8",
+      "lookup_at": "0x2C88F38",
+      "index_expression": "id - 0xB",
+      "branch_base": "0x2C88F50",
+      "id_0x108_target": "0x2C8A2A8",
+      "evidence_level": "Д"
+    },
+    "internal_selector_cases": [
+      {
+        "index": 0,
+        "writes": [
+          {
+            "id": "0x106",
+            "value": 0
+          },
+          {
+            "id": "0x107",
+            "value": 0
+          }
+        ],
+        "meaning": "Strong/Small"
+      },
+      {
+        "index": 1,
+        "writes": [
+          {
+            "id": "0x106",
+            "value": 0
+          },
+          {
+            "id": "0x107",
+            "value": 1
+          }
+        ],
+        "meaning": "Strong/Large"
+      },
+      {
+        "index": 2,
+        "writes": [
+          {
+            "id": "0x106",
+            "value": 1
+          },
+          {
+            "id": "0x107",
+            "value": 0
+          }
+        ],
+        "meaning": "Weak/Small"
+      },
+      {
+        "index": 3,
+        "writes": [
+          {
+            "id": "0x106",
+            "value": 1
+          },
+          {
+            "id": "0x107",
+            "value": 1
+          }
+        ],
+        "meaning": "Weak/Large"
+      },
+      {
+        "index": 4,
+        "writes": [
+          {
+            "id": "0x106",
+            "value": 2
+          }
+        ],
+        "meaning": "Off; SIZE remains unchanged"
+      }
+    ],
+    "d195_wire_to_selector_model": [
+      {
+        "D195": 1,
+        "selector_index": 4,
+        "meaning": "Off; preserve size"
+      },
+      {
+        "D195": 2,
+        "selector_index": 2,
+        "meaning": "Weak/Small"
+      },
+      {
+        "D195": 3,
+        "selector_index": 0,
+        "meaning": "Strong/Small"
+      },
+      {
+        "D195": 4,
+        "selector_index": 3,
+        "meaning": "Weak/Large"
+      },
+      {
+        "D195": 5,
+        "selector_index": 1,
+        "meaning": "Strong/Large"
+      }
+    ],
+    "d195_to_selector_evidence_level": "К",
+    "d195_to_selector_limit": "Связь USB SetDevicePropValue(D195) с вызовом внутреннего обработчика не установлена в коде; сопоставление следует из значений D195 и ветви 0x108."
+  },
+  "q_grain_d023_comparison": {
+    "dictionary": {
+      "menu_to_usb": {
+        "0": 5,
+        "1": 3,
+        "2": 4,
+        "3": 2,
+        "4": 1
+      }
+    },
+    "firmware_converter": {
+      "function": "0x12E67AC",
+      "internal_id": "0x108",
+      "mapping_table": "0x1769350",
+      "pointer_record": "0x1BD62D8",
+      "menu_to_usb": [
+        5,
+        3,
+        4,
+        2,
+        1
+      ]
+    },
+    "conclusion": "Таблица D023 совпадает с указанным преобразователем 0x108, но её порядок не совпадает с D195 wire-to-selector моделью; не считать её подтверждением D195.",
+    "evidence_level": "Д для содержимого таблиц; К для их применения именно к D023"
+  },
+  "validation_analysis": {
+    "observed_rejected": {
+      "D195": 6,
+      "response": "0x201C Invalid_DeviceProp_Value"
+    },
+    "not_tested": [
+      7
+    ],
+    "internal_selector_bounds": {
+      "address": "0x2C8A2A8",
+      "accepted_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "other_values": "branch to 0x2C8ECF8 without setter calls",
+      "evidence_level": "Д"
+    },
+    "ptp_error_check_location": "Не установлен. Ветка 0x2C8A2A8 не формирует PTP-ответ 0x201C; нельзя приписывать ей наблюдаемый отказ.",
+    "evidence_level_for_error_location": "Г"
+  },
+  "reverse_read_analysis": {
+    "internal_selector_reader": {
+      "function": "0x2C93FD4",
+      "id_0x108_case": "0x2C94A78",
+      "result": "Объединяет GRAIN/SIZE в индексы 0..4; GRAIN=2 даёт 4 независимо от SIZE.",
+      "does_not_emit": [
+        6,
+        7
+      ],
+      "evidence_level": "Д"
+    },
+    "d195_formula": "if GRAIN == 2: D195 = 6 + GRAIN_SIZE; else: D195 = 3 + 2*GRAIN_SIZE - GRAIN",
+    "d195_6_7_encoder_location": "Не найден в статическом коде; формула сверена по наблюдениям и backup C1-C7.",
+    "evidence_level": "К"
+  },
+  "evidence_levels": {
+    "Д": [
+      "таблица переходов id 0x108",
+      "аргумент w20",
+      "пять ветвей записи GRAIN/SIZE",
+      "эмуляция ветви",
+      "сверка резервной копии C1-C7"
+    ],
+    "К": [
+      "сопоставление кодов D195 1..5 с индексами 0..4",
+      "формула чтения D195 1..7"
+    ],
+    "Г": [
+      "точное место проверки, возвращающей 0x201C",
+      "статический кодировщик D195 6/7"
+    ]
+  },
+  "chain_status": "Частично закрыта: внутренний диспетчер и его ветвь доказаны; PTP-валидация D195 и статический путь чтения 6/7 остаются неустановленными."
+}

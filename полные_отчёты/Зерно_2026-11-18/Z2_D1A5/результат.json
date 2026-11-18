@@ -1,0 +1,1115 @@
+{
+  "firmware": "X-H2 5.30",
+  "scope": "PTP свойства 0xD18C–0xD1A5 из списка RAW CONV",
+  "source_list": {
+    "address": "0x32AEDD0",
+    "count": 61,
+    "slot_range_count": 26,
+    "first": "0xD18C",
+    "last": "0xD1A5"
+  },
+  "registry": {
+    "main": "0x3443000",
+    "D1A5_entry": "0x344350C",
+    "special_slot_group": "0x3443590",
+    "special_group_codes": "D18E–D197 и D1B0–D1B9",
+    "D1A5_in_special_slot_group": false
+  },
+  "descriptor_findings": {
+    "camera_get_device_prop_desc": "0x1014 returned 0x2002 GeneralError and zero bytes for each of D18C–D1A5 in snapshot 04_после_set_c7",
+    "firmware_table_278": {
+      "D18C": {
+        "type": "UINT16",
+        "access": "чтение и запись",
+        "form": "список",
+        "default": "0x0001"
+      },
+      "D18D": {
+        "type": "STR",
+        "access": "чтение и запись",
+        "form": "нет",
+        "default": "0x0000"
+      }
+    },
+    "other_defaults": "не установлены из доступного описателя PTP"
+  },
+  "properties": [
+    {
+      "code": "0xD18C",
+      "name_fujicli": "Custom Setting Slot",
+      "internal_settings": [
+        {
+          "id": "0x0DC",
+          "name": "UI_SETP_CUSTOM_SET_SAVE",
+          "confidence": "Д"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение и запись",
+      "form": "список",
+      "domain_fujicli": "0x1=C1; 0x2=C2; 0x3=C3; 0x4=C4; 0x5=C5; 0x6=C6; 0x7=C7",
+      "default_from_descriptor": "0x0001",
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0100",
+      "observed_slots": {},
+      "descriptor_status": "строка таблицы 278; камера GetDevicePropDesc не отдаёт",
+      "mapping_level": "Д",
+      "fujicli_option_id": "custom_setting",
+      "wire_lookup": {
+        "c1": "0x1",
+        "c2": "0x2",
+        "c3": "0x3",
+        "c4": "0x4",
+        "c5": "0x5",
+        "c6": "0x6",
+        "c7": "0x7"
+      },
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null
+    },
+    {
+      "code": "0xD18D",
+      "name_fujicli": "Custom Setting Name",
+      "internal_settings": [
+        {
+          "id": "0x730",
+          "name": "UI_SETP_CUSTOM_SAVE_NAME",
+          "confidence": "Д"
+        }
+      ],
+      "ptp_type": "STR",
+      "access": "чтение и запись",
+      "form": "нет",
+      "domain_fujicli": "строка длиной до 25 символов (fujicli)",
+      "default_from_descriptor": "0x0000",
+      "observed_value_bytes_C7": 41,
+      "observed_value_hex_C7": "144b006f00640061006b00200050006f007200740061003400300030007600320020002b0031000000",
+      "observed_slots": {
+        "C1": "Kodak Porta400v2 +1",
+        "C2": "Kodak Ektachrome100v2+2/3",
+        "C3": "Cinematic Gold +1",
+        "C4": "Classic Cuban Neg",
+        "C5": "Kodak Porta 160v2 +1/3+1",
+        "C6": "Technicolor (Warm)",
+        "C7": "Velvia City Nights"
+      },
+      "descriptor_status": "строка таблицы 278; камера GetDevicePropDesc не отдаёт",
+      "mapping_level": "Д",
+      "fujicli_option_id": "custom_setting_name",
+      "wire_lookup": null,
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null
+    },
+    {
+      "code": "0xD18E",
+      "name_fujicli": "Image Size",
+      "internal_settings": [
+        {
+          "id": "0x66A",
+          "name": "UI_SETP_PIXEL",
+          "confidence": "К"
+        },
+        {
+          "id": "0x66F",
+          "name": "UI_SETP_ASPECT",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение подтверждено; запись в этой задаче не проверена",
+      "form": "список",
+      "domain_fujicli": "0x07=L 3:2; 0x08=L 16:9; 0x09=L 1:1; 0x0e=L 4:3; 0x10=L 5:4; 0x04=M 3:2; 0x05=M 16:9; 0x06=M 1:1; 0x12=M 4:3; 0x14=M 5:4; 0x01=S 3:2; 0x02=S 16:9; 0x03=S 1:1; 0x0a=S 4:3; 0x0c=S 5:4",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0700",
+      "observed_slots": {
+        "C1": "l_3_2",
+        "C2": "l_3_2",
+        "C3": "l_3_2",
+        "C4": "l_3_2",
+        "C5": "l_3_2",
+        "C6": "l_3_2",
+        "C7": "l_3_2"
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "image_size",
+      "wire_lookup": {
+        "l_3_2": "0x07",
+        "l_16_9": "0x08",
+        "l_1_1": "0x09",
+        "l_4_3": "0x0e",
+        "l_5_4": "0x10",
+        "m_3_2": "0x04",
+        "m_16_9": "0x05",
+        "m_1_1": "0x06",
+        "m_4_3": "0x12",
+        "m_5_4": "0x14",
+        "s_3_2": "0x01",
+        "s_16_9": "0x02",
+        "s_1_1": "0x03",
+        "s_4_3": "0x0a",
+        "s_5_4": "0x0c"
+      },
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null
+    },
+    {
+      "code": "0xD18F",
+      "name_fujicli": "Image Quality",
+      "internal_settings": [
+        {
+          "id": "0x670",
+          "name": "UI_SETP_QUALITY",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "список",
+      "domain_fujicli": "0x04=Fine + RAW; 0x02=Fine; 0x05=Normal + RAW; 0x03=Normal; 0x01=RAW",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0100",
+      "observed_slots": {
+        "C1": "raw",
+        "C2": "raw",
+        "C3": "raw",
+        "C4": "fine_raw",
+        "C5": "raw",
+        "C6": "raw",
+        "C7": "raw"
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "image_quality",
+      "wire_lookup": {
+        "fine_raw": "0x04",
+        "fine": "0x02",
+        "normal_raw": "0x05",
+        "normal": "0x03",
+        "raw": "0x01"
+      },
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null
+    },
+    {
+      "code": "0xD190",
+      "name_fujicli": "Dynamic Range",
+      "internal_settings": [
+        {
+          "id": "0x6A6",
+          "name": "UI_SETP_DRANGE",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "список",
+      "domain_fujicli": "0xffff=Auto; 0x64=HDR100; 0xc8=HDR200; 0x190=HDR400; 0x320=HDR800; 0x640=HDR800+",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "6400",
+      "observed_slots": {
+        "C1": "hdr100",
+        "C2": "hdr200",
+        "C3": "hdr400",
+        "C4": "hdr400",
+        "C5": "auto",
+        "C6": "hdr400",
+        "C7": "hdr200"
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "dynamic_range",
+      "wire_lookup": {
+        "auto": "0xffff",
+        "hdr100": "0x64",
+        "hdr200": "0xc8",
+        "hdr400": "0x190",
+        "hdr800": "0x320",
+        "hdr800_plus": "0x640"
+      },
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null
+    },
+    {
+      "code": "0xD191",
+      "name_fujicli": "Dynamic Range Priority",
+      "internal_settings": [
+        {
+          "id": "0x6B0",
+          "name": "UI_SETP_WIDEDRANGE",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "список",
+      "domain_fujicli": "0x8000=Auto; 0x03=Plus; 0x02=Strong; 0x01=Weak; 0x00=Off",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0000",
+      "observed_slots": {
+        "C1": "off",
+        "C2": "off",
+        "C3": "off",
+        "C4": "off",
+        "C5": "off",
+        "C6": "off",
+        "C7": "off"
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "dynamic_range_priority",
+      "wire_lookup": {
+        "auto": "0x8000",
+        "plus": "0x03",
+        "strong": "0x02",
+        "weak": "0x01",
+        "off": "0x00"
+      },
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null
+    },
+    {
+      "code": "0xD192",
+      "name_fujicli": "Film Simulation",
+      "internal_settings": [
+        {
+          "id": "0x68E",
+          "name": "UI_SETP_FILM_SIM",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "список",
+      "domain_fujicli": "0x01=Provia; 0x02=Velvia; 0x03=Astia; 0x04=PRO Neg. Hi; 0x05=PRO Neg. Std; 0x06=Monochrome; 0x07=Monochrome + Ye; 0x08=Monochrome + R; 0x09=Monochrome + G; 0x0a=Sepia; 0x0b=Classic Chrome; 0x0c=Acros; 0x0d=Acros + Ye; 0x0e=Acros + R; 0x0f=Acros + G; 0x10=Eterna; 0x11=Classic Negative; 0x12=Eterna Bleach Bypass; 0x13=Nostalgic Negative; 0x14=Reala Ace",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0b00",
+      "observed_slots": {
+        "C1": "classic_chrome",
+        "C2": "classic_negative",
+        "C3": "classic_negative",
+        "C4": "classic_negative",
+        "C5": "classic_chrome",
+        "C6": "classic_negative",
+        "C7": "velvia"
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "film_simulation",
+      "wire_lookup": {
+        "provia": "0x01",
+        "velvia": "0x02",
+        "astia": "0x03",
+        "pro_neg_hi": "0x04",
+        "pro_neg_std": "0x05",
+        "monochrome": "0x06",
+        "monochrome_ye": "0x07",
+        "monochrome_r": "0x08",
+        "monochrome_g": "0x09",
+        "sepia": "0x0a",
+        "classic_chrome": "0x0b",
+        "acros": "0x0c",
+        "acros_ye": "0x0d",
+        "acros_r": "0x0e",
+        "acros_g": "0x0f",
+        "eterna": "0x10",
+        "classic_negative": "0x11",
+        "eterna_bleach_bypass": "0x12",
+        "nostalgic_negative": "0x13",
+        "reala_ace": "0x14"
+      },
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null
+    },
+    {
+      "code": "0xD193",
+      "name_fujicli": "Monochromatic Color Temperature",
+      "internal_settings": [
+        {
+          "id": "0x6A2",
+          "name": "UI_SETP_BLACK_TONE",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "INT16",
+      "access": "чтение подтверждено; запись в этой задаче не проверена",
+      "form": "диапазон",
+      "domain_fujicli": "-18…18, шаг 1; масштаб USB/внутреннего значения ×10",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0000",
+      "observed_slots": {
+        "C1": 0.0,
+        "C2": 0.0,
+        "C3": 0.0,
+        "C4": 0.0,
+        "C5": 0.0,
+        "C6": 0.0,
+        "C7": 0.0
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "monochromatic_color_temperature",
+      "wire_lookup": null,
+      "scale": 10,
+      "min": -18,
+      "max": 18,
+      "step": 1
+    },
+    {
+      "code": "0xD194",
+      "name_fujicli": "Monochromatic Color Tint",
+      "internal_settings": [
+        {
+          "id": "0x6A4",
+          "name": "UI_SETP_BLACK_TONE_RG",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "INT16",
+      "access": "чтение подтверждено; запись в этой задаче не проверена",
+      "form": "диапазон",
+      "domain_fujicli": "-18…18, шаг 1; масштаб USB/внутреннего значения ×10",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0000",
+      "observed_slots": {
+        "C1": 0.0,
+        "C2": 0.0,
+        "C3": 0.0,
+        "C4": 0.0,
+        "C5": 0.0,
+        "C6": 0.0,
+        "C7": 0.0
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "monochromatic_color_tint",
+      "wire_lookup": null,
+      "scale": 10,
+      "min": -18,
+      "max": 18,
+      "step": 1
+    },
+    {
+      "code": "0xD195",
+      "name_fujicli": "Grain Effect",
+      "internal_settings": [
+        {
+          "id": "0x106",
+          "name": "UI_SETP_GRAIN",
+          "confidence": "Д"
+        },
+        {
+          "id": "0x107",
+          "name": "UI_SETP_GRAIN_SIZE",
+          "confidence": "Д"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "список",
+      "domain_fujicli": "0x05=Strong Large; 0x04=Weak Large; 0x03=Strong Small; 0x02=Weak Small; [0x01, 0x06, 0x07]=Off; fujicli также читает 0x06 и 0x07 как Off",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0600",
+      "observed_slots": {
+        "C1": "off",
+        "C2": "off",
+        "C3": "strong_small",
+        "C4": "off",
+        "C5": "off",
+        "C6": "off",
+        "C7": "off"
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "Д",
+      "fujicli_option_id": "grain_effect",
+      "wire_lookup": {
+        "strong_large": "0x05",
+        "weak_large": "0x04",
+        "strong_small": "0x03",
+        "weak_small": "0x02",
+        "off": "[0x01, 0x06, 0x07]"
+      },
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null
+    },
+    {
+      "code": "0xD196",
+      "name_fujicli": "Color Chrome Effect",
+      "internal_settings": [
+        {
+          "id": "0x109",
+          "name": "UI_SETP_SHADOWING",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "список",
+      "domain_fujicli": "0x03=Strong; 0x02=Weak; 0x01=Off",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0300",
+      "observed_slots": {
+        "C1": "strong",
+        "C2": "strong",
+        "C3": "off",
+        "C4": "strong",
+        "C5": "weak",
+        "C6": "off",
+        "C7": "strong"
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "color_chrome_effect",
+      "wire_lookup": {
+        "strong": "0x03",
+        "weak": "0x02",
+        "off": "0x01"
+      },
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null
+    },
+    {
+      "code": "0xD197",
+      "name_fujicli": "Color Chrome FX Blue",
+      "internal_settings": [
+        {
+          "id": "0x10A",
+          "name": "UI_SETP_BLUE_EFFECT",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "список",
+      "domain_fujicli": "0x03=Strong; 0x02=Weak; 0x01=Off",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0200",
+      "observed_slots": {
+        "C1": "weak",
+        "C2": "strong",
+        "C3": "off",
+        "C4": "strong",
+        "C5": "weak",
+        "C6": "weak",
+        "C7": "weak"
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "color_chrome_fx_blue",
+      "wire_lookup": {
+        "strong": "0x03",
+        "weak": "0x02",
+        "off": "0x01"
+      },
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null
+    },
+    {
+      "code": "0xD198",
+      "name_fujicli": "Smooth Skin Effect",
+      "internal_settings": [
+        {
+          "id": "0x10B",
+          "name": "UI_SETP_SMOOTH_SKIN",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение подтверждено; запись в этой задаче не проверена",
+      "form": "список",
+      "domain_fujicli": "0x03=Strong; 0x02=Weak; 0x01=Off",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0100",
+      "observed_slots": {
+        "C1": "off",
+        "C2": "off",
+        "C3": "off",
+        "C4": "off",
+        "C5": "off",
+        "C6": "off",
+        "C7": "off"
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "smooth_skin_effect",
+      "wire_lookup": {
+        "strong": "0x03",
+        "weak": "0x02",
+        "off": "0x01"
+      },
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null
+    },
+    {
+      "code": "0xD199",
+      "name_fujicli": "White Balance",
+      "internal_settings": [
+        {
+          "id": "0x5F5",
+          "name": "UI_SETP_WB",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "список",
+      "domain_fujicli": "0x0000=As Shot; 0x8020=White Priority; 0x0002=Auto; 0x8021=Ambience Priority; 0x8008=Custom 1; 0x8009=Custom 2; 0x800a=Custom 3; 0x8007=Temperature; 0x0004=Daylight; 0x8006=Shade; 0x8001=Fluorescent 1; 0x8002=Fluorescent 2; 0x8003=Fluorescent 3; 0x0006=Incandescent; 0x0008=Underwater",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0200",
+      "observed_slots": {
+        "C1": "auto",
+        "C2": "temperature",
+        "C3": "daylight",
+        "C4": "auto",
+        "C5": "daylight",
+        "C6": "temperature",
+        "C7": "incandescent"
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "white_balance",
+      "wire_lookup": {
+        "as_shot": "0x0000",
+        "white_priority": "0x8020",
+        "auto": "0x0002",
+        "ambience_priority": "0x8021",
+        "custom1": "0x8008",
+        "custom2": "0x8009",
+        "custom3": "0x800a",
+        "temperature": "0x8007",
+        "daylight": "0x0004",
+        "shade": "0x8006",
+        "fluorescent1": "0x8001",
+        "fluorescent2": "0x8002",
+        "fluorescent3": "0x8003",
+        "incandescent": "0x0006",
+        "underwater": "0x0008"
+      },
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null
+    },
+    {
+      "code": "0xD19A",
+      "name_fujicli": "White Balance Shift Red",
+      "internal_settings": [
+        {
+          "id": "0x6BF",
+          "name": "UI_SETP_WB_TUNING_R",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "INT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "диапазон",
+      "domain_fujicli": "-9…9, шаг 1",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0000",
+      "observed_slots": {
+        "C1": 0,
+        "C2": 1,
+        "C3": 4,
+        "C4": 1,
+        "C5": 4,
+        "C6": 0,
+        "C7": 2
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "white_balance_shift_red",
+      "wire_lookup": null,
+      "scale": 1,
+      "min": -9,
+      "max": 9,
+      "step": 1
+    },
+    {
+      "code": "0xD19B",
+      "name_fujicli": "White Balance Shift Blue",
+      "internal_settings": [
+        {
+          "id": "0x6DD",
+          "name": "UI_SETP_WB_TUNING_B",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "INT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "диапазон",
+      "domain_fujicli": "-9…9, шаг 1",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "fcff",
+      "observed_slots": {
+        "C1": -4,
+        "C2": -5,
+        "C3": -5,
+        "C4": -5,
+        "C5": -5,
+        "C6": 0,
+        "C7": -3
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "white_balance_shift_blue",
+      "wire_lookup": null,
+      "scale": 1,
+      "min": -9,
+      "max": 9,
+      "step": 1
+    },
+    {
+      "code": "0xD19C",
+      "name_fujicli": "White Balance Temperature",
+      "internal_settings": [
+        {
+          "id": "0x5F7",
+          "name": "UI_SETP_WB_KELVIN",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение подтверждено; запись в этой задаче не проверена",
+      "form": "диапазон",
+      "domain_fujicli": "2500…10000, шаг 10",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "5014",
+      "observed_slots": {
+        "C1": 5200,
+        "C2": 5750,
+        "C3": 5200,
+        "C4": 5200,
+        "C5": 5200,
+        "C6": 5900,
+        "C7": 5200
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "white_balance_temperature",
+      "wire_lookup": null,
+      "scale": 1,
+      "min": 2500,
+      "max": 10000,
+      "step": 10
+    },
+    {
+      "code": "0xD19D",
+      "name_fujicli": "Highlight Tone",
+      "internal_settings": [
+        {
+          "id": "0x6B9",
+          "name": "UI_SETP_HIGHLIGHT",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "INT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "диапазон",
+      "domain_fujicli": "-2.0…4.0, шаг 0.5; масштаб USB/внутреннего значения ×10",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "f6ff",
+      "observed_slots": {
+        "C1": -1.0,
+        "C2": 1.5,
+        "C3": 0.0,
+        "C4": -2.0,
+        "C5": 0.0,
+        "C6": -2.0,
+        "C7": 0.0
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "highlight_tone",
+      "wire_lookup": null,
+      "scale": 10,
+      "min": -2.0,
+      "max": 4.0,
+      "step": 0.5
+    },
+    {
+      "code": "0xD19E",
+      "name_fujicli": "Shadow Tone",
+      "internal_settings": [
+        {
+          "id": "0x6BB",
+          "name": "UI_SETP_SHADOW",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "INT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "диапазон",
+      "domain_fujicli": "-2.0…4.0, шаг 0.5; масштаб USB/внутреннего значения ×10",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "f6ff",
+      "observed_slots": {
+        "C1": -1.0,
+        "C2": 0.5,
+        "C3": 0.0,
+        "C4": 1.0,
+        "C5": 0.0,
+        "C6": -1.0,
+        "C7": 1.0
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "shadow_tone",
+      "wire_lookup": null,
+      "scale": 10,
+      "min": -2.0,
+      "max": 4.0,
+      "step": 0.5
+    },
+    {
+      "code": "0xD19F",
+      "name_fujicli": "Color",
+      "internal_settings": [
+        {
+          "id": "0x6B3",
+          "name": "UI_SETP_STILLCOLOR",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "INT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "диапазон",
+      "domain_fujicli": "-4…4, шаг 1; масштаб USB/внутреннего значения ×10",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "1400",
+      "observed_slots": {
+        "C1": 2.0,
+        "C2": 1.0,
+        "C3": 3.0,
+        "C4": 4.0,
+        "C5": 0.0,
+        "C6": -2.0,
+        "C7": -4.0
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "color",
+      "wire_lookup": null,
+      "scale": 10,
+      "min": -4,
+      "max": 4,
+      "step": 1
+    },
+    {
+      "code": "0xD1A0",
+      "name_fujicli": "Sharpness",
+      "internal_settings": [
+        {
+          "id": "0x6B5",
+          "name": "UI_SETP_SHARPNESS",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "INT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "диапазон",
+      "domain_fujicli": "-4…4, шаг 1; масштаб USB/внутреннего значения ×10",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0000",
+      "observed_slots": {
+        "C1": 0.0,
+        "C2": -1.0,
+        "C3": -2.0,
+        "C4": 0.0,
+        "C5": -1.0,
+        "C6": -2.0,
+        "C7": 0.0
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "sharpness",
+      "wire_lookup": null,
+      "scale": 10,
+      "min": -4,
+      "max": 4,
+      "step": 1
+    },
+    {
+      "code": "0xD1A1",
+      "name_fujicli": "High ISO Noise Reduction",
+      "internal_settings": [
+        {
+          "id": "0x603",
+          "name": "UI_SETP_NR",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "диапазон",
+      "domain_fujicli": "-4…4, шаг 1",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0080",
+      "observed_slots": {
+        "C1": "-4",
+        "C2": "-4",
+        "C3": "-4",
+        "C4": "-4",
+        "C5": "-4",
+        "C6": "-4",
+        "C7": "-4"
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "noise_reduction",
+      "wire_lookup": {
+        "4": "0x5000",
+        "3": "0x6000",
+        "2": "0x0000",
+        "1": "0x1000",
+        "0": "0x2000",
+        "-1": "0x3000",
+        "-2": "0x4000",
+        "-3": "0x7000",
+        "-4": "0x8000"
+      },
+      "scale": null,
+      "min": -4,
+      "max": 4,
+      "step": 1
+    },
+    {
+      "code": "0xD1A2",
+      "name_fujicli": "Clarity",
+      "internal_settings": [
+        {
+          "id": "0x605",
+          "name": "UI_SETP_CLARITY",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "INT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "диапазон",
+      "domain_fujicli": "-5…5, шаг 1; масштаб USB/внутреннего значения ×10",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0000",
+      "observed_slots": {
+        "C1": 0.0,
+        "C2": 3.0,
+        "C3": -2.0,
+        "C4": 0.0,
+        "C5": 0.0,
+        "C6": -2.0,
+        "C7": -1.0
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "clarity",
+      "wire_lookup": null,
+      "scale": 10,
+      "min": -5,
+      "max": 5,
+      "step": 1
+    },
+    {
+      "code": "0xD1A3",
+      "name_fujicli": "Lens Modulation Optimizer",
+      "internal_settings": [
+        {
+          "id": "0x615",
+          "name": "UI_SETP_LEQ",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "список",
+      "domain_fujicli": "0x01=On; 0x02=Off",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0100",
+      "observed_slots": {
+        "C1": "on",
+        "C2": "on",
+        "C3": "on",
+        "C4": "on",
+        "C5": "on",
+        "C6": "on",
+        "C7": "on"
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "lens_modulation_optimizer",
+      "wire_lookup": {
+        "on": "0x01",
+        "off": "0x02"
+      },
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null
+    },
+    {
+      "code": "0xD1A4",
+      "name_fujicli": "Color Space",
+      "internal_settings": [
+        {
+          "id": "0x104",
+          "name": "UI_SETP_COLOR_SPACE",
+          "confidence": "К"
+        }
+      ],
+      "ptp_type": "UINT16",
+      "access": "чтение подтверждено; запись проверена",
+      "form": "список",
+      "domain_fujicli": "0x01=sRGB; 0x02=Adobe RGB",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0100",
+      "observed_slots": {
+        "C1": "srgb",
+        "C2": "srgb",
+        "C3": "adobe_rgb",
+        "C4": "srgb",
+        "C5": "srgb",
+        "C6": "srgb",
+        "C7": "adobe_rgb"
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "К",
+      "fujicli_option_id": "color_space",
+      "wire_lookup": {
+        "srgb": "0x01",
+        "adobe_rgb": "0x02"
+      },
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null
+    },
+    {
+      "code": "0xD1A5",
+      "name_fujicli": null,
+      "internal_settings": [],
+      "ptp_type": "UINT16 по длине ответа",
+      "access": "чтение подтверждено; запись не проверена",
+      "form": "не установлено",
+      "domain_fujicli": "не установлено",
+      "default_from_descriptor": null,
+      "observed_value_bytes_C7": 2,
+      "observed_value_hex_C7": "0700",
+      "observed_slots": {
+        "C1": 7,
+        "C2": 7,
+        "C3": 7,
+        "C4": 7,
+        "C5": 7,
+        "C6": 7,
+        "C7": 7
+      },
+      "descriptor_status": "GetDevicePropDesc 0x1014 → GeneralError (0x2002), без данных",
+      "mapping_level": "не найдено"
+    }
+  ],
+  "d1a5": {
+    "finding": "Свойство читается и равно 7 во всех C1–C7, но имя UI_SETP и прямая связь с полем банка не установлены.",
+    "handler_search": "В блоке 5.30 b1 точный 32-битный литерал D1A5 найден только в реестре 0x344350C; дизассемблер не нашёл отдельного сравнения с immediate 0xD1A5.",
+    "bank_candidates_equal_7": [
+      {
+        "id": "0x6FC",
+        "name": "UI_SETP_FOCUS_90",
+        "blob_offset_C1": "0xF7BC",
+        "type": "u8",
+        "values_C1_C7": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "id": "0x6FD",
+        "name": "UI_SETP_FOCUS_270",
+        "blob_offset_C1": "0xF7BD",
+        "type": "u8",
+        "values_C1_C7": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      }
+    ],
+    "interpretation": "Совпадение значения 7 не доказывает связь: в слотовом банке два несвязанных по смыслу кандидата, UI_SETP_FOCUS_90 и UI_SETP_FOCUS_270, оба равны 7 во всех слотах. D1A5 отсутствует в fujicli option.cue и в выделенной группе 0x3443590.",
+    "value_C1_C7": {
+      "C1": 7,
+      "C2": 7,
+      "C3": 7,
+      "C4": 7,
+      "C5": 7,
+      "C6": 7,
+      "C7": 7
+    },
+    "backup_container": {
+      "detected": true,
+      "payload_offset": 168,
+      "format": "X-BACKUP0100 + 0xA8-byte container",
+      "magic_offset": 8,
+      "container_offset": 0,
+      "header_length": 168,
+      "header_sha256": "edfc0f104525f2808c2234fc1f0cd9af685c36727d5027771cc292d2e27bc109"
+    },
+    "backup_warnings": []
+  },
+  "sources": [
+    "PTP_чтение_2026-11-10/Связь_USB_и_прошивки.md",
+    "Сравнение_версий_2026-11-16/blocks/X-H2_5.30_b1_0x840274.bin",
+    "Камера_2026-11-17/K2_прошивка/карта_банка.tsv и карта_банка.json",
+    "fujicli_2026-11-18/C2_модель_камеры/сопоставление.json; Внешние_репозитории/fujicli/fml/option.cue",
+    "fujicli_2026-11-18/совместимость/снимки/04_после_set_c7/snapshot.json и backup.bin"
+  ]
+}

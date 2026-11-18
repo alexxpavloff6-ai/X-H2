@@ -1,0 +1,4744 @@
+{
+  "firmware": "X-H2 5.30",
+  "block": "b0, base 0x1101000",
+  "converter_table_base": "0x1BD5AB8",
+  "record_size": 16,
+  "sentinel_value": "0x7FFFFFFE",
+  "property_tables": {
+    "0x670": {
+      "name": "UI_SETP_QUALITY",
+      "pointer_entry": "0x1BD8E38",
+      "table_address": "0x1769A20",
+      "rows": [
+        {
+          "row": 0,
+          "columns_u32": [
+            "0x00000005",
+            "0x7FFFFFFE",
+            "0x00000007",
+            "0x00000006"
+          ]
+        },
+        {
+          "row": 1,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x00000002"
+          ]
+        },
+        {
+          "row": 2,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x00000003"
+          ]
+        },
+        {
+          "row": 3,
+          "columns_u32": [
+            "0x00000006",
+            "0x7FFFFFFE",
+            "0x00000007",
+            "0x00000007"
+          ]
+        },
+        {
+          "row": 4,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x00000004"
+          ]
+        },
+        {
+          "row": 5,
+          "columns_u32": [
+            "0x00000003",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x00000005"
+          ]
+        },
+        {
+          "row": 6,
+          "columns_u32": [
+            "0x00000004",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x00000001"
+          ]
+        },
+        {
+          "row": 7,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 8,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 9,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 10,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 11,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x00000001"
+          ]
+        },
+        {
+          "row": 12,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x00000002"
+          ]
+        },
+        {
+          "row": 13,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 14,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 15,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 16,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 17,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 18,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 19,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 20,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000004",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 21,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0xFFFFFFFF",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 22,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000005",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 23,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0xFFFFFFFF",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 24,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 25,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 26,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 27,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000004",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 28,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0xFFFFFFFF",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 29,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000005",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 30,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0xFFFFFFFF",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 31,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 32,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 33,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 34,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000004",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 35,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0xFFFFFFFF",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 36,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000005",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 37,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0xFFFFFFFF",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 38,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 39,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000012",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 40,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000011",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 41,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000010",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 42,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x0000000F",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 43,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x0000000E",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 44,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x0000000D",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 45,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x0000000C",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 46,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x0000000B",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 47,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x0000000A",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 48,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000009",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 49,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000008",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 50,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000007",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 51,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000006",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 52,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000005",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 53,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000004",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 54,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000003",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 55,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 56,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 57,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 58,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0xFFFFFFFF",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 59,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0xFFFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 60,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0xFFFFFFFD",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 61,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0xFFFFFFFC",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 62,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0xFFFFFFFB",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 63,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0xFFFFFFFA",
+            "0x7FFFFFFE"
+          ]
+        }
+      ],
+      "candidate_usb_to_bank_col0_col3": [
+        {
+          "usb": "0x00000006",
+          "bank": "0x00000005",
+          "row": 0
+        },
+        {
+          "usb": "0x00000002",
+          "bank": "0x00000000",
+          "row": 1
+        },
+        {
+          "usb": "0x00000003",
+          "bank": "0x00000001",
+          "row": 2
+        },
+        {
+          "usb": "0x00000007",
+          "bank": "0x00000006",
+          "row": 3
+        },
+        {
+          "usb": "0x00000004",
+          "bank": "0x00000002",
+          "row": 4
+        },
+        {
+          "usb": "0x00000005",
+          "bank": "0x00000003",
+          "row": 5
+        },
+        {
+          "usb": "0x00000001",
+          "bank": "0x00000004",
+          "row": 6
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 7
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 10
+        },
+        {
+          "usb": "0x00000001",
+          "bank": "0x00000000",
+          "row": 11
+        },
+        {
+          "usb": "0x00000002",
+          "bank": "0x00000001",
+          "row": 12
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 13
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 16
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 38
+        }
+      ]
+    },
+    "0x68E": {
+      "name": "UI_SETP_FILM_SIM",
+      "pointer_entry": "0x1BD8F28",
+      "table_address": "0x1758BD0",
+      "rows": [
+        {
+          "row": 0,
+          "columns_u32": [
+            "0x00000001",
+            "0x00000000",
+            "0x00000000",
+            "0x00000001"
+          ]
+        },
+        {
+          "row": 1,
+          "columns_u32": [
+            "0x00000002",
+            "0x00000002",
+            "0x00000001",
+            "0x00000003"
+          ]
+        },
+        {
+          "row": 2,
+          "columns_u32": [
+            "0x00000003",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 3,
+          "columns_u32": [
+            "0x00000004",
+            "0x00000001",
+            "0x00000003",
+            "0x00000002"
+          ]
+        },
+        {
+          "row": 4,
+          "columns_u32": [
+            "0x00000005",
+            "0x7FFFFFFE",
+            "0x00000004",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 5,
+          "columns_u32": [
+            "0x00000006",
+            "0x00000004",
+            "0x00000005",
+            "0x0000000A"
+          ]
+        },
+        {
+          "row": 6,
+          "columns_u32": [
+            "0x00000007",
+            "0x7FFFFFFE",
+            "0x00000006",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 7,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 8,
+          "columns_u32": [
+            "0x00000009",
+            "0x00000003",
+            "0x00000007",
+            "0x00000006"
+          ]
+        },
+        {
+          "row": 9,
+          "columns_u32": [
+            "0x0000000A",
+            "0x00000008",
+            "0x00000008",
+            "0x00000008"
+          ]
+        },
+        {
+          "row": 10,
+          "columns_u32": [
+            "0x0000000B",
+            "0x00000007",
+            "0x00000009",
+            "0x00000007"
+          ]
+        },
+        {
+          "row": 11,
+          "columns_u32": [
+            "0x0000000C",
+            "0x00000009",
+            "0x0000000A",
+            "0x00000009"
+          ]
+        },
+        {
+          "row": 12,
+          "columns_u32": [
+            "0x0000000D",
+            "0x00000006",
+            "0x0000000B",
+            "0x00000005"
+          ]
+        },
+        {
+          "row": 13,
+          "columns_u32": [
+            "0x0000000E",
+            "0x00000005",
+            "0x0000000C",
+            "0x00000004"
+          ]
+        },
+        {
+          "row": 14,
+          "columns_u32": [
+            "0x0000000F",
+            "0x0000000A",
+            "0x0000000D",
+            "0x0000000B"
+          ]
+        },
+        {
+          "row": 15,
+          "columns_u32": [
+            "0x00000010",
+            "0x00000010",
+            "0x00000013",
+            "0x00000011"
+          ]
+        },
+        {
+          "row": 16,
+          "columns_u32": [
+            "0x00000011",
+            "0x00000012",
+            "0x00000015",
+            "0x00000013"
+          ]
+        },
+        {
+          "row": 17,
+          "columns_u32": [
+            "0x00000019",
+            "0x00000013",
+            "0x00000016",
+            "0x00000014"
+          ]
+        },
+        {
+          "row": 18,
+          "columns_u32": [
+            "0x00000012",
+            "0x0000000F",
+            "0x00000012",
+            "0x00000010"
+          ]
+        },
+        {
+          "row": 19,
+          "columns_u32": [
+            "0x00000013",
+            "0x00000011",
+            "0x00000014",
+            "0x00000012"
+          ]
+        },
+        {
+          "row": 20,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 21,
+          "columns_u32": [
+            "0x00000015",
+            "0x0000000B",
+            "0x0000000E",
+            "0x0000000C"
+          ]
+        },
+        {
+          "row": 22,
+          "columns_u32": [
+            "0x00000016",
+            "0x0000000D",
+            "0x0000000F",
+            "0x0000000E"
+          ]
+        },
+        {
+          "row": 23,
+          "columns_u32": [
+            "0x00000017",
+            "0x0000000C",
+            "0x00000010",
+            "0x0000000D"
+          ]
+        },
+        {
+          "row": 24,
+          "columns_u32": [
+            "0x00000018",
+            "0x0000000E",
+            "0x00000011",
+            "0x0000000F"
+          ]
+        },
+        {
+          "row": 25,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000013"
+          ]
+        },
+        {
+          "row": 26,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 27,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 28,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 29,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 30,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 31,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 32,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 33,
+          "columns_u32": [
+            "0x00000000",
+            "0x0000001E",
+            "0xFFFFFFF1",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 34,
+          "columns_u32": [
+            "0x00000001",
+            "0x0000001D",
+            "0xFFFFFFF2",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 35,
+          "columns_u32": [
+            "0x00000002",
+            "0x0000001C",
+            "0xFFFFFFF3",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 36,
+          "columns_u32": [
+            "0x00000003",
+            "0x0000001B",
+            "0xFFFFFFF4",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 37,
+          "columns_u32": [
+            "0x00000004",
+            "0x0000001A",
+            "0xFFFFFFF5",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 38,
+          "columns_u32": [
+            "0x00000005",
+            "0x00000019",
+            "0xFFFFFFF6",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 39,
+          "columns_u32": [
+            "0x00000006",
+            "0x00000018",
+            "0xFFFFFFF7",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 40,
+          "columns_u32": [
+            "0x00000007",
+            "0x00000017",
+            "0xFFFFFFF8",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 41,
+          "columns_u32": [
+            "0x00000008",
+            "0x00000016",
+            "0xFFFFFFF9",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 42,
+          "columns_u32": [
+            "0x00000009",
+            "0x00000015",
+            "0xFFFFFFFA",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 43,
+          "columns_u32": [
+            "0x0000000A",
+            "0x00000014",
+            "0xFFFFFFFB",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 44,
+          "columns_u32": [
+            "0x0000000B",
+            "0x00000013",
+            "0xFFFFFFFC",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 45,
+          "columns_u32": [
+            "0x0000000C",
+            "0x00000012",
+            "0xFFFFFFFD",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 46,
+          "columns_u32": [
+            "0x0000000D",
+            "0x00000011",
+            "0xFFFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 47,
+          "columns_u32": [
+            "0x0000000E",
+            "0x00000010",
+            "0xFFFFFFFF",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 48,
+          "columns_u32": [
+            "0x0000000F",
+            "0x00000000",
+            "0x00000000",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 49,
+          "columns_u32": [
+            "0x00000010",
+            "0x00000001",
+            "0x00000001",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 50,
+          "columns_u32": [
+            "0x00000011",
+            "0x00000002",
+            "0x00000002",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 51,
+          "columns_u32": [
+            "0x00000012",
+            "0x00000003",
+            "0x00000003",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 52,
+          "columns_u32": [
+            "0x00000013",
+            "0x00000004",
+            "0x00000004",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 53,
+          "columns_u32": [
+            "0x00000014",
+            "0x00000005",
+            "0x00000005",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 54,
+          "columns_u32": [
+            "0x00000015",
+            "0x00000006",
+            "0x00000006",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 55,
+          "columns_u32": [
+            "0x00000016",
+            "0x00000007",
+            "0x00000007",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 56,
+          "columns_u32": [
+            "0x00000017",
+            "0x00000008",
+            "0x00000008",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 57,
+          "columns_u32": [
+            "0x00000018",
+            "0x00000009",
+            "0x00000009",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 58,
+          "columns_u32": [
+            "0x00000019",
+            "0x0000000A",
+            "0x0000000A",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 59,
+          "columns_u32": [
+            "0x0000001A",
+            "0x0000000B",
+            "0x0000000B",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 60,
+          "columns_u32": [
+            "0x0000001B",
+            "0x0000000C",
+            "0x0000000C",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 61,
+          "columns_u32": [
+            "0x0000001C",
+            "0x0000000D",
+            "0x0000000D",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 62,
+          "columns_u32": [
+            "0x0000001D",
+            "0x0000000E",
+            "0x0000000E",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 63,
+          "columns_u32": [
+            "0x0000001E",
+            "0x0000000F",
+            "0x0000000F",
+            "0x7FFFFFFE"
+          ]
+        }
+      ],
+      "candidate_usb_to_bank_col0_col3": [
+        {
+          "usb": "0x00000001",
+          "bank": "0x00000001",
+          "row": 0
+        },
+        {
+          "usb": "0x00000003",
+          "bank": "0x00000002",
+          "row": 1
+        },
+        {
+          "usb": "0x00000002",
+          "bank": "0x00000004",
+          "row": 3
+        },
+        {
+          "usb": "0x0000000A",
+          "bank": "0x00000006",
+          "row": 5
+        },
+        {
+          "usb": "0x00000006",
+          "bank": "0x00000009",
+          "row": 8
+        },
+        {
+          "usb": "0x00000008",
+          "bank": "0x0000000A",
+          "row": 9
+        },
+        {
+          "usb": "0x00000007",
+          "bank": "0x0000000B",
+          "row": 10
+        },
+        {
+          "usb": "0x00000009",
+          "bank": "0x0000000C",
+          "row": 11
+        },
+        {
+          "usb": "0x00000005",
+          "bank": "0x0000000D",
+          "row": 12
+        },
+        {
+          "usb": "0x00000004",
+          "bank": "0x0000000E",
+          "row": 13
+        },
+        {
+          "usb": "0x0000000B",
+          "bank": "0x0000000F",
+          "row": 14
+        },
+        {
+          "usb": "0x00000011",
+          "bank": "0x00000010",
+          "row": 15
+        },
+        {
+          "usb": "0x00000013",
+          "bank": "0x00000011",
+          "row": 16
+        },
+        {
+          "usb": "0x00000014",
+          "bank": "0x00000019",
+          "row": 17
+        },
+        {
+          "usb": "0x00000010",
+          "bank": "0x00000012",
+          "row": 18
+        },
+        {
+          "usb": "0x00000012",
+          "bank": "0x00000013",
+          "row": 19
+        },
+        {
+          "usb": "0x0000000C",
+          "bank": "0x00000015",
+          "row": 21
+        },
+        {
+          "usb": "0x0000000E",
+          "bank": "0x00000016",
+          "row": 22
+        },
+        {
+          "usb": "0x0000000D",
+          "bank": "0x00000017",
+          "row": 23
+        },
+        {
+          "usb": "0x0000000F",
+          "bank": "0x00000018",
+          "row": 24
+        },
+        {
+          "usb": "0x00000013",
+          "bank": "0x00000000",
+          "row": 25
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 26
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 29
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 32
+        }
+      ]
+    },
+    "0x6A2": {
+      "name": "UI_SETP_BLACK_TONE",
+      "pointer_entry": "0x1BD8FC8",
+      "table_address": "0x1755720",
+      "rows": [
+        {
+          "row": 0,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x00000012",
+            "0x000000B4"
+          ]
+        },
+        {
+          "row": 1,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x00000011",
+            "0x000000AA"
+          ]
+        },
+        {
+          "row": 2,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x00000010",
+            "0x000000A0"
+          ]
+        },
+        {
+          "row": 3,
+          "columns_u32": [
+            "0x00000003",
+            "0x7FFFFFFE",
+            "0x0000000F",
+            "0x00000096"
+          ]
+        },
+        {
+          "row": 4,
+          "columns_u32": [
+            "0x00000004",
+            "0x7FFFFFFE",
+            "0x0000000E",
+            "0x0000008C"
+          ]
+        },
+        {
+          "row": 5,
+          "columns_u32": [
+            "0x00000005",
+            "0x7FFFFFFE",
+            "0x0000000D",
+            "0x00000082"
+          ]
+        },
+        {
+          "row": 6,
+          "columns_u32": [
+            "0x00000006",
+            "0x7FFFFFFE",
+            "0x0000000C",
+            "0x00000078"
+          ]
+        },
+        {
+          "row": 7,
+          "columns_u32": [
+            "0x00000007",
+            "0x7FFFFFFE",
+            "0x0000000B",
+            "0x0000006E"
+          ]
+        },
+        {
+          "row": 8,
+          "columns_u32": [
+            "0x00000008",
+            "0x7FFFFFFE",
+            "0x0000000A",
+            "0x00000064"
+          ]
+        },
+        {
+          "row": 9,
+          "columns_u32": [
+            "0x00000009",
+            "0x7FFFFFFE",
+            "0x00000009",
+            "0x0000005A"
+          ]
+        },
+        {
+          "row": 10,
+          "columns_u32": [
+            "0x0000000A",
+            "0x7FFFFFFE",
+            "0x00000008",
+            "0x00000050"
+          ]
+        },
+        {
+          "row": 11,
+          "columns_u32": [
+            "0x0000000B",
+            "0x7FFFFFFE",
+            "0x00000007",
+            "0x00000046"
+          ]
+        },
+        {
+          "row": 12,
+          "columns_u32": [
+            "0x0000000C",
+            "0x7FFFFFFE",
+            "0x00000006",
+            "0x0000003C"
+          ]
+        },
+        {
+          "row": 13,
+          "columns_u32": [
+            "0x0000000D",
+            "0x7FFFFFFE",
+            "0x00000005",
+            "0x00000032"
+          ]
+        },
+        {
+          "row": 14,
+          "columns_u32": [
+            "0x0000000E",
+            "0x7FFFFFFE",
+            "0x00000004",
+            "0x00000028"
+          ]
+        },
+        {
+          "row": 15,
+          "columns_u32": [
+            "0x0000000F",
+            "0x7FFFFFFE",
+            "0x00000003",
+            "0x0000001E"
+          ]
+        },
+        {
+          "row": 16,
+          "columns_u32": [
+            "0x00000010",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x00000014"
+          ]
+        },
+        {
+          "row": 17,
+          "columns_u32": [
+            "0x00000011",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x0000000A"
+          ]
+        },
+        {
+          "row": 18,
+          "columns_u32": [
+            "0x00000012",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x00000000"
+          ]
+        },
+        {
+          "row": 19,
+          "columns_u32": [
+            "0x00000013",
+            "0x7FFFFFFE",
+            "0xFFFFFFFF",
+            "0xFFFFFFF6"
+          ]
+        },
+        {
+          "row": 20,
+          "columns_u32": [
+            "0x00000014",
+            "0x7FFFFFFE",
+            "0xFFFFFFFE",
+            "0xFFFFFFEC"
+          ]
+        },
+        {
+          "row": 21,
+          "columns_u32": [
+            "0x00000015",
+            "0x7FFFFFFE",
+            "0xFFFFFFFD",
+            "0xFFFFFFE2"
+          ]
+        },
+        {
+          "row": 22,
+          "columns_u32": [
+            "0x00000016",
+            "0x7FFFFFFE",
+            "0xFFFFFFFC",
+            "0xFFFFFFD8"
+          ]
+        },
+        {
+          "row": 23,
+          "columns_u32": [
+            "0x00000017",
+            "0x7FFFFFFE",
+            "0xFFFFFFFB",
+            "0xFFFFFFCE"
+          ]
+        },
+        {
+          "row": 24,
+          "columns_u32": [
+            "0x00000018",
+            "0x7FFFFFFE",
+            "0xFFFFFFFA",
+            "0xFFFFFFC4"
+          ]
+        },
+        {
+          "row": 25,
+          "columns_u32": [
+            "0x00000019",
+            "0x7FFFFFFE",
+            "0xFFFFFFF9",
+            "0xFFFFFFBA"
+          ]
+        },
+        {
+          "row": 26,
+          "columns_u32": [
+            "0x0000001A",
+            "0x7FFFFFFE",
+            "0xFFFFFFF8",
+            "0xFFFFFFB0"
+          ]
+        },
+        {
+          "row": 27,
+          "columns_u32": [
+            "0x0000001B",
+            "0x7FFFFFFE",
+            "0xFFFFFFF7",
+            "0xFFFFFFA6"
+          ]
+        },
+        {
+          "row": 28,
+          "columns_u32": [
+            "0x0000001C",
+            "0x7FFFFFFE",
+            "0xFFFFFFF6",
+            "0xFFFFFF9C"
+          ]
+        },
+        {
+          "row": 29,
+          "columns_u32": [
+            "0x0000001D",
+            "0x7FFFFFFE",
+            "0xFFFFFFF5",
+            "0xFFFFFF92"
+          ]
+        },
+        {
+          "row": 30,
+          "columns_u32": [
+            "0x0000001E",
+            "0x7FFFFFFE",
+            "0xFFFFFFF4",
+            "0xFFFFFF88"
+          ]
+        },
+        {
+          "row": 31,
+          "columns_u32": [
+            "0x0000001F",
+            "0x7FFFFFFE",
+            "0xFFFFFFF3",
+            "0xFFFFFF7E"
+          ]
+        },
+        {
+          "row": 32,
+          "columns_u32": [
+            "0x00000020",
+            "0x7FFFFFFE",
+            "0xFFFFFFF2",
+            "0xFFFFFF74"
+          ]
+        },
+        {
+          "row": 33,
+          "columns_u32": [
+            "0x00000021",
+            "0x7FFFFFFE",
+            "0xFFFFFFF1",
+            "0xFFFFFF6A"
+          ]
+        },
+        {
+          "row": 34,
+          "columns_u32": [
+            "0x00000022",
+            "0x7FFFFFFE",
+            "0xFFFFFFF0",
+            "0xFFFFFF60"
+          ]
+        },
+        {
+          "row": 35,
+          "columns_u32": [
+            "0x00000023",
+            "0x7FFFFFFE",
+            "0xFFFFFFEF",
+            "0xFFFFFF56"
+          ]
+        },
+        {
+          "row": 36,
+          "columns_u32": [
+            "0x00000024",
+            "0x7FFFFFFE",
+            "0xFFFFFFEE",
+            "0xFFFFFF4C"
+          ]
+        },
+        {
+          "row": 37,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 38,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x00000001"
+          ]
+        },
+        {
+          "row": 39,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x00000002"
+          ]
+        },
+        {
+          "row": 40,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x00000003"
+          ]
+        },
+        {
+          "row": 41,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 42,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 43,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 44,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 45,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x00000001"
+          ]
+        },
+        {
+          "row": 46,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x00000002"
+          ]
+        },
+        {
+          "row": 47,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 48,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x00000001"
+          ]
+        },
+        {
+          "row": 49,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x00000005"
+          ]
+        },
+        {
+          "row": 50,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x00000002"
+          ]
+        },
+        {
+          "row": 51,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x00000006"
+          ]
+        },
+        {
+          "row": 52,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x00000003"
+          ]
+        },
+        {
+          "row": 53,
+          "columns_u32": [
+            "0x00000003",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 54,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 55,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x00000005",
+            "0x00000003"
+          ]
+        },
+        {
+          "row": 56,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x00000006",
+            "0x00000004"
+          ]
+        },
+        {
+          "row": 57,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x00000001"
+          ]
+        },
+        {
+          "row": 58,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 59,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000001"
+          ]
+        },
+        {
+          "row": 60,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000002"
+          ]
+        },
+        {
+          "row": 61,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000003"
+          ]
+        },
+        {
+          "row": 62,
+          "columns_u32": [
+            "0x00000003",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 63,
+          "columns_u32": [
+            "0x00000004",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        }
+      ],
+      "candidate_usb_to_bank_col0_col3": [
+        {
+          "usb": "0x000000B4",
+          "bank": "0x00000000",
+          "row": 0
+        },
+        {
+          "usb": "0x000000AA",
+          "bank": "0x00000001",
+          "row": 1
+        },
+        {
+          "usb": "0x000000A0",
+          "bank": "0x00000002",
+          "row": 2
+        },
+        {
+          "usb": "0x00000096",
+          "bank": "0x00000003",
+          "row": 3
+        },
+        {
+          "usb": "0x0000008C",
+          "bank": "0x00000004",
+          "row": 4
+        },
+        {
+          "usb": "0x00000082",
+          "bank": "0x00000005",
+          "row": 5
+        },
+        {
+          "usb": "0x00000078",
+          "bank": "0x00000006",
+          "row": 6
+        },
+        {
+          "usb": "0x0000006E",
+          "bank": "0x00000007",
+          "row": 7
+        },
+        {
+          "usb": "0x00000064",
+          "bank": "0x00000008",
+          "row": 8
+        },
+        {
+          "usb": "0x0000005A",
+          "bank": "0x00000009",
+          "row": 9
+        },
+        {
+          "usb": "0x00000050",
+          "bank": "0x0000000A",
+          "row": 10
+        },
+        {
+          "usb": "0x00000046",
+          "bank": "0x0000000B",
+          "row": 11
+        },
+        {
+          "usb": "0x0000003C",
+          "bank": "0x0000000C",
+          "row": 12
+        },
+        {
+          "usb": "0x00000032",
+          "bank": "0x0000000D",
+          "row": 13
+        },
+        {
+          "usb": "0x00000028",
+          "bank": "0x0000000E",
+          "row": 14
+        },
+        {
+          "usb": "0x0000001E",
+          "bank": "0x0000000F",
+          "row": 15
+        },
+        {
+          "usb": "0x00000014",
+          "bank": "0x00000010",
+          "row": 16
+        },
+        {
+          "usb": "0x0000000A",
+          "bank": "0x00000011",
+          "row": 17
+        },
+        {
+          "usb": "0x00000000",
+          "bank": "0x00000012",
+          "row": 18
+        },
+        {
+          "usb": "0xFFFFFFF6",
+          "bank": "0x00000013",
+          "row": 19
+        },
+        {
+          "usb": "0xFFFFFFEC",
+          "bank": "0x00000014",
+          "row": 20
+        },
+        {
+          "usb": "0xFFFFFFE2",
+          "bank": "0x00000015",
+          "row": 21
+        },
+        {
+          "usb": "0xFFFFFFD8",
+          "bank": "0x00000016",
+          "row": 22
+        },
+        {
+          "usb": "0xFFFFFFCE",
+          "bank": "0x00000017",
+          "row": 23
+        },
+        {
+          "usb": "0xFFFFFFC4",
+          "bank": "0x00000018",
+          "row": 24
+        },
+        {
+          "usb": "0xFFFFFFBA",
+          "bank": "0x00000019",
+          "row": 25
+        },
+        {
+          "usb": "0xFFFFFFB0",
+          "bank": "0x0000001A",
+          "row": 26
+        },
+        {
+          "usb": "0xFFFFFFA6",
+          "bank": "0x0000001B",
+          "row": 27
+        },
+        {
+          "usb": "0xFFFFFF9C",
+          "bank": "0x0000001C",
+          "row": 28
+        },
+        {
+          "usb": "0xFFFFFF92",
+          "bank": "0x0000001D",
+          "row": 29
+        },
+        {
+          "usb": "0xFFFFFF88",
+          "bank": "0x0000001E",
+          "row": 30
+        },
+        {
+          "usb": "0xFFFFFF7E",
+          "bank": "0x0000001F",
+          "row": 31
+        },
+        {
+          "usb": "0xFFFFFF74",
+          "bank": "0x00000020",
+          "row": 32
+        },
+        {
+          "usb": "0xFFFFFF6A",
+          "bank": "0x00000021",
+          "row": 33
+        },
+        {
+          "usb": "0xFFFFFF60",
+          "bank": "0x00000022",
+          "row": 34
+        },
+        {
+          "usb": "0xFFFFFF56",
+          "bank": "0x00000023",
+          "row": 35
+        },
+        {
+          "usb": "0xFFFFFF4C",
+          "bank": "0x00000024",
+          "row": 36
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 37
+        },
+        {
+          "usb": "0x00000001",
+          "bank": "0x00000000",
+          "row": 38
+        },
+        {
+          "usb": "0x00000002",
+          "bank": "0x00000001",
+          "row": 39
+        },
+        {
+          "usb": "0x00000003",
+          "bank": "0x00000002",
+          "row": 40
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 41
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 44
+        },
+        {
+          "usb": "0x00000001",
+          "bank": "0x00000001",
+          "row": 45
+        },
+        {
+          "usb": "0x00000002",
+          "bank": "0x00000000",
+          "row": 46
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 47
+        },
+        {
+          "usb": "0x00000001",
+          "bank": "0x00000000",
+          "row": 48
+        },
+        {
+          "usb": "0x00000005",
+          "bank": "0x00000000",
+          "row": 49
+        },
+        {
+          "usb": "0x00000002",
+          "bank": "0x00000001",
+          "row": 50
+        },
+        {
+          "usb": "0x00000006",
+          "bank": "0x00000001",
+          "row": 51
+        },
+        {
+          "usb": "0x00000003",
+          "bank": "0x00000002",
+          "row": 52
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 54
+        },
+        {
+          "usb": "0x00000003",
+          "bank": "0x00000000",
+          "row": 55
+        },
+        {
+          "usb": "0x00000004",
+          "bank": "0x00000001",
+          "row": 56
+        },
+        {
+          "usb": "0x00000001",
+          "bank": "0x00000002",
+          "row": 57
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 58
+        },
+        {
+          "usb": "0x00000001",
+          "bank": "0x00000000",
+          "row": 59
+        },
+        {
+          "usb": "0x00000002",
+          "bank": "0x00000001",
+          "row": 60
+        },
+        {
+          "usb": "0x00000003",
+          "bank": "0x00000002",
+          "row": 61
+        }
+      ]
+    },
+    "0x6A4": {
+      "name": "UI_SETP_BLACK_TONE_RG",
+      "pointer_entry": "0x1BD8FD8",
+      "table_address": "0x17554C0",
+      "rows": [
+        {
+          "row": 0,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x00000012",
+            "0x000000B4"
+          ]
+        },
+        {
+          "row": 1,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x00000011",
+            "0x000000AA"
+          ]
+        },
+        {
+          "row": 2,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x00000010",
+            "0x000000A0"
+          ]
+        },
+        {
+          "row": 3,
+          "columns_u32": [
+            "0x00000003",
+            "0x7FFFFFFE",
+            "0x0000000F",
+            "0x00000096"
+          ]
+        },
+        {
+          "row": 4,
+          "columns_u32": [
+            "0x00000004",
+            "0x7FFFFFFE",
+            "0x0000000E",
+            "0x0000008C"
+          ]
+        },
+        {
+          "row": 5,
+          "columns_u32": [
+            "0x00000005",
+            "0x7FFFFFFE",
+            "0x0000000D",
+            "0x00000082"
+          ]
+        },
+        {
+          "row": 6,
+          "columns_u32": [
+            "0x00000006",
+            "0x7FFFFFFE",
+            "0x0000000C",
+            "0x00000078"
+          ]
+        },
+        {
+          "row": 7,
+          "columns_u32": [
+            "0x00000007",
+            "0x7FFFFFFE",
+            "0x0000000B",
+            "0x0000006E"
+          ]
+        },
+        {
+          "row": 8,
+          "columns_u32": [
+            "0x00000008",
+            "0x7FFFFFFE",
+            "0x0000000A",
+            "0x00000064"
+          ]
+        },
+        {
+          "row": 9,
+          "columns_u32": [
+            "0x00000009",
+            "0x7FFFFFFE",
+            "0x00000009",
+            "0x0000005A"
+          ]
+        },
+        {
+          "row": 10,
+          "columns_u32": [
+            "0x0000000A",
+            "0x7FFFFFFE",
+            "0x00000008",
+            "0x00000050"
+          ]
+        },
+        {
+          "row": 11,
+          "columns_u32": [
+            "0x0000000B",
+            "0x7FFFFFFE",
+            "0x00000007",
+            "0x00000046"
+          ]
+        },
+        {
+          "row": 12,
+          "columns_u32": [
+            "0x0000000C",
+            "0x7FFFFFFE",
+            "0x00000006",
+            "0x0000003C"
+          ]
+        },
+        {
+          "row": 13,
+          "columns_u32": [
+            "0x0000000D",
+            "0x7FFFFFFE",
+            "0x00000005",
+            "0x00000032"
+          ]
+        },
+        {
+          "row": 14,
+          "columns_u32": [
+            "0x0000000E",
+            "0x7FFFFFFE",
+            "0x00000004",
+            "0x00000028"
+          ]
+        },
+        {
+          "row": 15,
+          "columns_u32": [
+            "0x0000000F",
+            "0x7FFFFFFE",
+            "0x00000003",
+            "0x0000001E"
+          ]
+        },
+        {
+          "row": 16,
+          "columns_u32": [
+            "0x00000010",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x00000014"
+          ]
+        },
+        {
+          "row": 17,
+          "columns_u32": [
+            "0x00000011",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x0000000A"
+          ]
+        },
+        {
+          "row": 18,
+          "columns_u32": [
+            "0x00000012",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x00000000"
+          ]
+        },
+        {
+          "row": 19,
+          "columns_u32": [
+            "0x00000013",
+            "0x7FFFFFFE",
+            "0xFFFFFFFF",
+            "0xFFFFFFF6"
+          ]
+        },
+        {
+          "row": 20,
+          "columns_u32": [
+            "0x00000014",
+            "0x7FFFFFFE",
+            "0xFFFFFFFE",
+            "0xFFFFFFEC"
+          ]
+        },
+        {
+          "row": 21,
+          "columns_u32": [
+            "0x00000015",
+            "0x7FFFFFFE",
+            "0xFFFFFFFD",
+            "0xFFFFFFE2"
+          ]
+        },
+        {
+          "row": 22,
+          "columns_u32": [
+            "0x00000016",
+            "0x7FFFFFFE",
+            "0xFFFFFFFC",
+            "0xFFFFFFD8"
+          ]
+        },
+        {
+          "row": 23,
+          "columns_u32": [
+            "0x00000017",
+            "0x7FFFFFFE",
+            "0xFFFFFFFB",
+            "0xFFFFFFCE"
+          ]
+        },
+        {
+          "row": 24,
+          "columns_u32": [
+            "0x00000018",
+            "0x7FFFFFFE",
+            "0xFFFFFFFA",
+            "0xFFFFFFC4"
+          ]
+        },
+        {
+          "row": 25,
+          "columns_u32": [
+            "0x00000019",
+            "0x7FFFFFFE",
+            "0xFFFFFFF9",
+            "0xFFFFFFBA"
+          ]
+        },
+        {
+          "row": 26,
+          "columns_u32": [
+            "0x0000001A",
+            "0x7FFFFFFE",
+            "0xFFFFFFF8",
+            "0xFFFFFFB0"
+          ]
+        },
+        {
+          "row": 27,
+          "columns_u32": [
+            "0x0000001B",
+            "0x7FFFFFFE",
+            "0xFFFFFFF7",
+            "0xFFFFFFA6"
+          ]
+        },
+        {
+          "row": 28,
+          "columns_u32": [
+            "0x0000001C",
+            "0x7FFFFFFE",
+            "0xFFFFFFF6",
+            "0xFFFFFF9C"
+          ]
+        },
+        {
+          "row": 29,
+          "columns_u32": [
+            "0x0000001D",
+            "0x7FFFFFFE",
+            "0xFFFFFFF5",
+            "0xFFFFFF92"
+          ]
+        },
+        {
+          "row": 30,
+          "columns_u32": [
+            "0x0000001E",
+            "0x7FFFFFFE",
+            "0xFFFFFFF4",
+            "0xFFFFFF88"
+          ]
+        },
+        {
+          "row": 31,
+          "columns_u32": [
+            "0x0000001F",
+            "0x7FFFFFFE",
+            "0xFFFFFFF3",
+            "0xFFFFFF7E"
+          ]
+        },
+        {
+          "row": 32,
+          "columns_u32": [
+            "0x00000020",
+            "0x7FFFFFFE",
+            "0xFFFFFFF2",
+            "0xFFFFFF74"
+          ]
+        },
+        {
+          "row": 33,
+          "columns_u32": [
+            "0x00000021",
+            "0x7FFFFFFE",
+            "0xFFFFFFF1",
+            "0xFFFFFF6A"
+          ]
+        },
+        {
+          "row": 34,
+          "columns_u32": [
+            "0x00000022",
+            "0x7FFFFFFE",
+            "0xFFFFFFF0",
+            "0xFFFFFF60"
+          ]
+        },
+        {
+          "row": 35,
+          "columns_u32": [
+            "0x00000023",
+            "0x7FFFFFFE",
+            "0xFFFFFFEF",
+            "0xFFFFFF56"
+          ]
+        },
+        {
+          "row": 36,
+          "columns_u32": [
+            "0x00000024",
+            "0x7FFFFFFE",
+            "0xFFFFFFEE",
+            "0xFFFFFF4C"
+          ]
+        },
+        {
+          "row": 37,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 38,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x00000012",
+            "0x000000B4"
+          ]
+        },
+        {
+          "row": 39,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x00000011",
+            "0x000000AA"
+          ]
+        },
+        {
+          "row": 40,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x00000010",
+            "0x000000A0"
+          ]
+        },
+        {
+          "row": 41,
+          "columns_u32": [
+            "0x00000003",
+            "0x7FFFFFFE",
+            "0x0000000F",
+            "0x00000096"
+          ]
+        },
+        {
+          "row": 42,
+          "columns_u32": [
+            "0x00000004",
+            "0x7FFFFFFE",
+            "0x0000000E",
+            "0x0000008C"
+          ]
+        },
+        {
+          "row": 43,
+          "columns_u32": [
+            "0x00000005",
+            "0x7FFFFFFE",
+            "0x0000000D",
+            "0x00000082"
+          ]
+        },
+        {
+          "row": 44,
+          "columns_u32": [
+            "0x00000006",
+            "0x7FFFFFFE",
+            "0x0000000C",
+            "0x00000078"
+          ]
+        },
+        {
+          "row": 45,
+          "columns_u32": [
+            "0x00000007",
+            "0x7FFFFFFE",
+            "0x0000000B",
+            "0x0000006E"
+          ]
+        },
+        {
+          "row": 46,
+          "columns_u32": [
+            "0x00000008",
+            "0x7FFFFFFE",
+            "0x0000000A",
+            "0x00000064"
+          ]
+        },
+        {
+          "row": 47,
+          "columns_u32": [
+            "0x00000009",
+            "0x7FFFFFFE",
+            "0x00000009",
+            "0x0000005A"
+          ]
+        },
+        {
+          "row": 48,
+          "columns_u32": [
+            "0x0000000A",
+            "0x7FFFFFFE",
+            "0x00000008",
+            "0x00000050"
+          ]
+        },
+        {
+          "row": 49,
+          "columns_u32": [
+            "0x0000000B",
+            "0x7FFFFFFE",
+            "0x00000007",
+            "0x00000046"
+          ]
+        },
+        {
+          "row": 50,
+          "columns_u32": [
+            "0x0000000C",
+            "0x7FFFFFFE",
+            "0x00000006",
+            "0x0000003C"
+          ]
+        },
+        {
+          "row": 51,
+          "columns_u32": [
+            "0x0000000D",
+            "0x7FFFFFFE",
+            "0x00000005",
+            "0x00000032"
+          ]
+        },
+        {
+          "row": 52,
+          "columns_u32": [
+            "0x0000000E",
+            "0x7FFFFFFE",
+            "0x00000004",
+            "0x00000028"
+          ]
+        },
+        {
+          "row": 53,
+          "columns_u32": [
+            "0x0000000F",
+            "0x7FFFFFFE",
+            "0x00000003",
+            "0x0000001E"
+          ]
+        },
+        {
+          "row": 54,
+          "columns_u32": [
+            "0x00000010",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x00000014"
+          ]
+        },
+        {
+          "row": 55,
+          "columns_u32": [
+            "0x00000011",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x0000000A"
+          ]
+        },
+        {
+          "row": 56,
+          "columns_u32": [
+            "0x00000012",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x00000000"
+          ]
+        },
+        {
+          "row": 57,
+          "columns_u32": [
+            "0x00000013",
+            "0x7FFFFFFE",
+            "0xFFFFFFFF",
+            "0xFFFFFFF6"
+          ]
+        },
+        {
+          "row": 58,
+          "columns_u32": [
+            "0x00000014",
+            "0x7FFFFFFE",
+            "0xFFFFFFFE",
+            "0xFFFFFFEC"
+          ]
+        },
+        {
+          "row": 59,
+          "columns_u32": [
+            "0x00000015",
+            "0x7FFFFFFE",
+            "0xFFFFFFFD",
+            "0xFFFFFFE2"
+          ]
+        },
+        {
+          "row": 60,
+          "columns_u32": [
+            "0x00000016",
+            "0x7FFFFFFE",
+            "0xFFFFFFFC",
+            "0xFFFFFFD8"
+          ]
+        },
+        {
+          "row": 61,
+          "columns_u32": [
+            "0x00000017",
+            "0x7FFFFFFE",
+            "0xFFFFFFFB",
+            "0xFFFFFFCE"
+          ]
+        },
+        {
+          "row": 62,
+          "columns_u32": [
+            "0x00000018",
+            "0x7FFFFFFE",
+            "0xFFFFFFFA",
+            "0xFFFFFFC4"
+          ]
+        },
+        {
+          "row": 63,
+          "columns_u32": [
+            "0x00000019",
+            "0x7FFFFFFE",
+            "0xFFFFFFF9",
+            "0xFFFFFFBA"
+          ]
+        }
+      ],
+      "candidate_usb_to_bank_col0_col3": [
+        {
+          "usb": "0x000000B4",
+          "bank": "0x00000000",
+          "row": 0
+        },
+        {
+          "usb": "0x000000AA",
+          "bank": "0x00000001",
+          "row": 1
+        },
+        {
+          "usb": "0x000000A0",
+          "bank": "0x00000002",
+          "row": 2
+        },
+        {
+          "usb": "0x00000096",
+          "bank": "0x00000003",
+          "row": 3
+        },
+        {
+          "usb": "0x0000008C",
+          "bank": "0x00000004",
+          "row": 4
+        },
+        {
+          "usb": "0x00000082",
+          "bank": "0x00000005",
+          "row": 5
+        },
+        {
+          "usb": "0x00000078",
+          "bank": "0x00000006",
+          "row": 6
+        },
+        {
+          "usb": "0x0000006E",
+          "bank": "0x00000007",
+          "row": 7
+        },
+        {
+          "usb": "0x00000064",
+          "bank": "0x00000008",
+          "row": 8
+        },
+        {
+          "usb": "0x0000005A",
+          "bank": "0x00000009",
+          "row": 9
+        },
+        {
+          "usb": "0x00000050",
+          "bank": "0x0000000A",
+          "row": 10
+        },
+        {
+          "usb": "0x00000046",
+          "bank": "0x0000000B",
+          "row": 11
+        },
+        {
+          "usb": "0x0000003C",
+          "bank": "0x0000000C",
+          "row": 12
+        },
+        {
+          "usb": "0x00000032",
+          "bank": "0x0000000D",
+          "row": 13
+        },
+        {
+          "usb": "0x00000028",
+          "bank": "0x0000000E",
+          "row": 14
+        },
+        {
+          "usb": "0x0000001E",
+          "bank": "0x0000000F",
+          "row": 15
+        },
+        {
+          "usb": "0x00000014",
+          "bank": "0x00000010",
+          "row": 16
+        },
+        {
+          "usb": "0x0000000A",
+          "bank": "0x00000011",
+          "row": 17
+        },
+        {
+          "usb": "0x00000000",
+          "bank": "0x00000012",
+          "row": 18
+        },
+        {
+          "usb": "0xFFFFFFF6",
+          "bank": "0x00000013",
+          "row": 19
+        },
+        {
+          "usb": "0xFFFFFFEC",
+          "bank": "0x00000014",
+          "row": 20
+        },
+        {
+          "usb": "0xFFFFFFE2",
+          "bank": "0x00000015",
+          "row": 21
+        },
+        {
+          "usb": "0xFFFFFFD8",
+          "bank": "0x00000016",
+          "row": 22
+        },
+        {
+          "usb": "0xFFFFFFCE",
+          "bank": "0x00000017",
+          "row": 23
+        },
+        {
+          "usb": "0xFFFFFFC4",
+          "bank": "0x00000018",
+          "row": 24
+        },
+        {
+          "usb": "0xFFFFFFBA",
+          "bank": "0x00000019",
+          "row": 25
+        },
+        {
+          "usb": "0xFFFFFFB0",
+          "bank": "0x0000001A",
+          "row": 26
+        },
+        {
+          "usb": "0xFFFFFFA6",
+          "bank": "0x0000001B",
+          "row": 27
+        },
+        {
+          "usb": "0xFFFFFF9C",
+          "bank": "0x0000001C",
+          "row": 28
+        },
+        {
+          "usb": "0xFFFFFF92",
+          "bank": "0x0000001D",
+          "row": 29
+        },
+        {
+          "usb": "0xFFFFFF88",
+          "bank": "0x0000001E",
+          "row": 30
+        },
+        {
+          "usb": "0xFFFFFF7E",
+          "bank": "0x0000001F",
+          "row": 31
+        },
+        {
+          "usb": "0xFFFFFF74",
+          "bank": "0x00000020",
+          "row": 32
+        },
+        {
+          "usb": "0xFFFFFF6A",
+          "bank": "0x00000021",
+          "row": 33
+        },
+        {
+          "usb": "0xFFFFFF60",
+          "bank": "0x00000022",
+          "row": 34
+        },
+        {
+          "usb": "0xFFFFFF56",
+          "bank": "0x00000023",
+          "row": 35
+        },
+        {
+          "usb": "0xFFFFFF4C",
+          "bank": "0x00000024",
+          "row": 36
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 37
+        },
+        {
+          "usb": "0x000000B4",
+          "bank": "0x00000000",
+          "row": 38
+        },
+        {
+          "usb": "0x000000AA",
+          "bank": "0x00000001",
+          "row": 39
+        },
+        {
+          "usb": "0x000000A0",
+          "bank": "0x00000002",
+          "row": 40
+        },
+        {
+          "usb": "0x00000096",
+          "bank": "0x00000003",
+          "row": 41
+        },
+        {
+          "usb": "0x0000008C",
+          "bank": "0x00000004",
+          "row": 42
+        },
+        {
+          "usb": "0x00000082",
+          "bank": "0x00000005",
+          "row": 43
+        },
+        {
+          "usb": "0x00000078",
+          "bank": "0x00000006",
+          "row": 44
+        },
+        {
+          "usb": "0x0000006E",
+          "bank": "0x00000007",
+          "row": 45
+        },
+        {
+          "usb": "0x00000064",
+          "bank": "0x00000008",
+          "row": 46
+        },
+        {
+          "usb": "0x0000005A",
+          "bank": "0x00000009",
+          "row": 47
+        },
+        {
+          "usb": "0x00000050",
+          "bank": "0x0000000A",
+          "row": 48
+        },
+        {
+          "usb": "0x00000046",
+          "bank": "0x0000000B",
+          "row": 49
+        },
+        {
+          "usb": "0x0000003C",
+          "bank": "0x0000000C",
+          "row": 50
+        },
+        {
+          "usb": "0x00000032",
+          "bank": "0x0000000D",
+          "row": 51
+        },
+        {
+          "usb": "0x00000028",
+          "bank": "0x0000000E",
+          "row": 52
+        },
+        {
+          "usb": "0x0000001E",
+          "bank": "0x0000000F",
+          "row": 53
+        },
+        {
+          "usb": "0x00000014",
+          "bank": "0x00000010",
+          "row": 54
+        },
+        {
+          "usb": "0x0000000A",
+          "bank": "0x00000011",
+          "row": 55
+        },
+        {
+          "usb": "0x00000000",
+          "bank": "0x00000012",
+          "row": 56
+        },
+        {
+          "usb": "0xFFFFFFF6",
+          "bank": "0x00000013",
+          "row": 57
+        },
+        {
+          "usb": "0xFFFFFFEC",
+          "bank": "0x00000014",
+          "row": 58
+        },
+        {
+          "usb": "0xFFFFFFE2",
+          "bank": "0x00000015",
+          "row": 59
+        },
+        {
+          "usb": "0xFFFFFFD8",
+          "bank": "0x00000016",
+          "row": 60
+        },
+        {
+          "usb": "0xFFFFFFCE",
+          "bank": "0x00000017",
+          "row": 61
+        },
+        {
+          "usb": "0xFFFFFFC4",
+          "bank": "0x00000018",
+          "row": 62
+        },
+        {
+          "usb": "0xFFFFFFBA",
+          "bank": "0x00000019",
+          "row": 63
+        }
+      ]
+    },
+    "0x6A6": {
+      "name": "UI_SETP_DRANGE",
+      "pointer_entry": "0x1BD8FE8",
+      "table_address": "0x1757CD0",
+      "rows": [
+        {
+          "row": 0,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 1,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x00000064"
+          ]
+        },
+        {
+          "row": 2,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x000000C8"
+          ]
+        },
+        {
+          "row": 3,
+          "columns_u32": [
+            "0x00000003",
+            "0x7FFFFFFE",
+            "0x00000003",
+            "0x00000190"
+          ]
+        },
+        {
+          "row": 4,
+          "columns_u32": [
+            "0x00000004",
+            "0x7FFFFFFE",
+            "0x00000004",
+            "0x00000320"
+          ]
+        },
+        {
+          "row": 5,
+          "columns_u32": [
+            "0x00000005",
+            "0x7FFFFFFE",
+            "0x00000005",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 6,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 7,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x00000005",
+            "0x0000000A"
+          ]
+        },
+        {
+          "row": 8,
+          "columns_u32": [
+            "0x00000004",
+            "0x7FFFFFFE",
+            "0x00000006",
+            "0x0000000C"
+          ]
+        },
+        {
+          "row": 9,
+          "columns_u32": [
+            "0x00000006",
+            "0x7FFFFFFE",
+            "0x00000007",
+            "0x0000000E"
+          ]
+        },
+        {
+          "row": 10,
+          "columns_u32": [
+            "0x00000012",
+            "0x7FFFFFFE",
+            "0x0000000B",
+            "0x0000000F"
+          ]
+        },
+        {
+          "row": 11,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 12,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 13,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 14,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x00000003",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 15,
+          "columns_u32": [
+            "0x00000003",
+            "0x7FFFFFFE",
+            "0x00000004",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 16,
+          "columns_u32": [
+            "0x00000004",
+            "0x7FFFFFFE",
+            "0x00000004",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 17,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 18,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000004"
+          ]
+        },
+        {
+          "row": 19,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 20,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 21,
+          "columns_u32": [
+            "0x00000003",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000002"
+          ]
+        },
+        {
+          "row": 22,
+          "columns_u32": [
+            "0x0000000F",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000011"
+          ]
+        },
+        {
+          "row": 23,
+          "columns_u32": [
+            "0x00000004",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000003"
+          ]
+        },
+        {
+          "row": 24,
+          "columns_u32": [
+            "0x00000005",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x0000000B"
+          ]
+        },
+        {
+          "row": 25,
+          "columns_u32": [
+            "0x00000006",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x0000000D"
+          ]
+        },
+        {
+          "row": 26,
+          "columns_u32": [
+            "0x00000007",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 27,
+          "columns_u32": [
+            "0x00000008",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000009"
+          ]
+        },
+        {
+          "row": 28,
+          "columns_u32": [
+            "0x00000009",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 29,
+          "columns_u32": [
+            "0x0000000A",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000005"
+          ]
+        },
+        {
+          "row": 30,
+          "columns_u32": [
+            "0x0000000B",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 31,
+          "columns_u32": [
+            "0x0000000C",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000007"
+          ]
+        },
+        {
+          "row": 32,
+          "columns_u32": [
+            "0x0000000D",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 33,
+          "columns_u32": [
+            "0x0000000E",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x00000010"
+          ]
+        },
+        {
+          "row": 34,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 35,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 36,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 37,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 38,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 39,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 40,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 41,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 42,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 43,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 44,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 45,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 46,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 47,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 48,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 49,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 50,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 51,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 52,
+          "columns_u32": [
+            "0x00000003",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 53,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 54,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 55,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 56,
+          "columns_u32": [
+            "0x00000000",
+            "0xAAAAAAA5",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 57,
+          "columns_u32": [
+            "0x00000001",
+            "0xAAAAAAA6",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 58,
+          "columns_u32": [
+            "0x00000002",
+            "0xAAAAAAA7",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 59,
+          "columns_u32": [
+            "0x00000003",
+            "0xAAAAAAA8",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 60,
+          "columns_u32": [
+            "0x00000004",
+            "0xAAAAAAA9",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 61,
+          "columns_u32": [
+            "0x00000005",
+            "0xAAAAAAAA",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 62,
+          "columns_u32": [
+            "0x00000006",
+            "0xAAAAAAAB",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 63,
+          "columns_u32": [
+            "0x00000007",
+            "0xAAAAAAAC",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        }
+      ],
+      "candidate_usb_to_bank_col0_col3": [
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x00000000",
+          "row": 0
+        },
+        {
+          "usb": "0x00000064",
+          "bank": "0x00000001",
+          "row": 1
+        },
+        {
+          "usb": "0x000000C8",
+          "bank": "0x00000002",
+          "row": 2
+        },
+        {
+          "usb": "0x00000190",
+          "bank": "0x00000003",
+          "row": 3
+        },
+        {
+          "usb": "0x00000320",
+          "bank": "0x00000004",
+          "row": 4
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 6
+        },
+        {
+          "usb": "0x0000000A",
+          "bank": "0x00000002",
+          "row": 7
+        },
+        {
+          "usb": "0x0000000C",
+          "bank": "0x00000004",
+          "row": 8
+        },
+        {
+          "usb": "0x0000000E",
+          "bank": "0x00000006",
+          "row": 9
+        },
+        {
+          "usb": "0x0000000F",
+          "bank": "0x00000012",
+          "row": 10
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 11
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 17
+        },
+        {
+          "usb": "0x00000004",
+          "bank": "0x00000000",
+          "row": 18
+        },
+        {
+          "usb": "0x00000002",
+          "bank": "0x00000003",
+          "row": 21
+        },
+        {
+          "usb": "0x00000011",
+          "bank": "0x0000000F",
+          "row": 22
+        },
+        {
+          "usb": "0x00000003",
+          "bank": "0x00000004",
+          "row": 23
+        },
+        {
+          "usb": "0x0000000B",
+          "bank": "0x00000005",
+          "row": 24
+        },
+        {
+          "usb": "0x0000000D",
+          "bank": "0x00000006",
+          "row": 25
+        },
+        {
+          "usb": "0x00000009",
+          "bank": "0x00000008",
+          "row": 27
+        },
+        {
+          "usb": "0x00000005",
+          "bank": "0x0000000A",
+          "row": 29
+        },
+        {
+          "usb": "0x00000007",
+          "bank": "0x0000000C",
+          "row": 31
+        },
+        {
+          "usb": "0x00000010",
+          "bank": "0x0000000E",
+          "row": 33
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 34
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 38
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 41
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 44
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 48
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 53
+        }
+      ]
+    },
+    "0x6B0": {
+      "name": "UI_SETP_WIDEDRANGE",
+      "pointer_entry": "0x1BD9038",
+      "table_address": "0x176FB10",
+      "rows": [
+        {
+          "row": 0,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x00000001",
+            "0x00008000"
+          ]
+        },
+        {
+          "row": 1,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x00000004",
+            "0x00000003"
+          ]
+        },
+        {
+          "row": 2,
+          "columns_u32": [
+            "0x00000002",
+            "0x7FFFFFFE",
+            "0x00000002",
+            "0x00000002"
+          ]
+        },
+        {
+          "row": 3,
+          "columns_u32": [
+            "0x00000003",
+            "0x7FFFFFFE",
+            "0x00000003",
+            "0x00000001"
+          ]
+        },
+        {
+          "row": 4,
+          "columns_u32": [
+            "0x00000004",
+            "0x7FFFFFFE",
+            "0x00000000",
+            "0x00000000"
+          ]
+        },
+        {
+          "row": 5,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 6,
+          "columns_u32": [
+            "0x00000000",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 7,
+          "columns_u32": [
+            "0x00000001",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 8,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 9,
+          "columns_u32": [
+            "0x00000041",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 10,
+          "columns_u32": [
+            "0x00000042",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 11,
+          "columns_u32": [
+            "0x00000043",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 12,
+          "columns_u32": [
+            "0x00000044",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 13,
+          "columns_u32": [
+            "0x00000045",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 14,
+          "columns_u32": [
+            "0x00000046",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 15,
+          "columns_u32": [
+            "0x00000047",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 16,
+          "columns_u32": [
+            "0x00000048",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 17,
+          "columns_u32": [
+            "0x00000049",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 18,
+          "columns_u32": [
+            "0x0000004A",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 19,
+          "columns_u32": [
+            "0x0000004B",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 20,
+          "columns_u32": [
+            "0x0000004C",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 21,
+          "columns_u32": [
+            "0x0000004D",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 22,
+          "columns_u32": [
+            "0x0000004E",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 23,
+          "columns_u32": [
+            "0x0000004F",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 24,
+          "columns_u32": [
+            "0x00000050",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 25,
+          "columns_u32": [
+            "0x00000051",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 26,
+          "columns_u32": [
+            "0x00000052",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 27,
+          "columns_u32": [
+            "0x00000053",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 28,
+          "columns_u32": [
+            "0x00000054",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 29,
+          "columns_u32": [
+            "0x00000055",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 30,
+          "columns_u32": [
+            "0x00000056",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 31,
+          "columns_u32": [
+            "0x00000057",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 32,
+          "columns_u32": [
+            "0x00000058",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 33,
+          "columns_u32": [
+            "0x00000059",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 34,
+          "columns_u32": [
+            "0x0000005A",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 35,
+          "columns_u32": [
+            "0x00000030",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 36,
+          "columns_u32": [
+            "0x00000031",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 37,
+          "columns_u32": [
+            "0x00000032",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 38,
+          "columns_u32": [
+            "0x00000033",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 39,
+          "columns_u32": [
+            "0x00000034",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 40,
+          "columns_u32": [
+            "0x00000035",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 41,
+          "columns_u32": [
+            "0x00000036",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 42,
+          "columns_u32": [
+            "0x00000037",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 43,
+          "columns_u32": [
+            "0x00000038",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 44,
+          "columns_u32": [
+            "0x00000039",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 45,
+          "columns_u32": [
+            "0x00000020",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 46,
+          "columns_u32": [
+            "0x0000002D",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 47,
+          "columns_u32": [
+            "0x0000002E",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 48,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 49,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 50,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 51,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 52,
+          "columns_u32": [
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 53,
+          "columns_u32": [
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF",
+            "0x0000FFFF"
+          ]
+        },
+        {
+          "row": 54,
+          "columns_u32": [
+            "0x00000041",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 55,
+          "columns_u32": [
+            "0x00000042",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 56,
+          "columns_u32": [
+            "0x00000043",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 57,
+          "columns_u32": [
+            "0x00000044",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 58,
+          "columns_u32": [
+            "0x00000045",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 59,
+          "columns_u32": [
+            "0x00000046",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 60,
+          "columns_u32": [
+            "0x00000047",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 61,
+          "columns_u32": [
+            "0x00000048",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 62,
+          "columns_u32": [
+            "0x00000049",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        },
+        {
+          "row": 63,
+          "columns_u32": [
+            "0x0000004A",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE",
+            "0x7FFFFFFE"
+          ]
+        }
+      ],
+      "candidate_usb_to_bank_col0_col3": [
+        {
+          "usb": "0x00008000",
+          "bank": "0x00000000",
+          "row": 0
+        },
+        {
+          "usb": "0x00000003",
+          "bank": "0x00000001",
+          "row": 1
+        },
+        {
+          "usb": "0x00000002",
+          "bank": "0x00000002",
+          "row": 2
+        },
+        {
+          "usb": "0x00000001",
+          "bank": "0x00000003",
+          "row": 3
+        },
+        {
+          "usb": "0x00000000",
+          "bank": "0x00000004",
+          "row": 4
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 5
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 8
+        },
+        {
+          "usb": "0x0000FFFF",
+          "bank": "0x0000FFFF",
+          "row": 53
+        }
+      ]
+    }
+  },
+  "image_size_table": {
+    "address": "0x18BBCF0",
+    "record_size": 28,
+    "rows": [
+      [
+        "0xF",
+        "0x2",
+        "0x1",
+        "0xF30",
+        "0xA20",
+        "0x1",
+        "0x1"
+      ],
+      [
+        "0x10",
+        "0x2",
+        "0x2",
+        "0xF30",
+        "0x888",
+        "0x1",
+        "0x2"
+      ],
+      [
+        "0x11",
+        "0x2",
+        "0x3",
+        "0xA20",
+        "0xA20",
+        "0x1",
+        "0x3"
+      ],
+      [
+        "0x8",
+        "0x1",
+        "0x1",
+        "0x1560",
+        "0xE40",
+        "0x1",
+        "0x4"
+      ],
+      [
+        "0x9",
+        "0x1",
+        "0x2",
+        "0x1560",
+        "0xC08",
+        "0x1",
+        "0x5"
+      ],
+      [
+        "0xA",
+        "0x1",
+        "0x3",
+        "0xE40",
+        "0xE40",
+        "0x1",
+        "0x6"
+      ],
+      [
+        "0x1",
+        "0x0",
+        "0x1",
+        "0x1E30",
+        "0x1420",
+        "0x1",
+        "0x7"
+      ],
+      [
+        "0x2",
+        "0x0",
+        "0x2",
+        "0x1E30",
+        "0x10F8",
+        "0x1",
+        "0x8"
+      ],
+      [
+        "0x3",
+        "0x0",
+        "0x3",
+        "0x1420",
+        "0x1420",
+        "0x1",
+        "0x9"
+      ],
+      [
+        "0x15",
+        "0x3",
+        "0x1",
+        "0x1770",
+        "0xFA0",
+        "0x1",
+        "0x0"
+      ],
+      [
+        "0x16",
+        "0x3",
+        "0x2",
+        "0x1770",
+        "0xD30",
+        "0x1",
+        "0x0"
+      ],
+      [
+        "0x17",
+        "0x3",
+        "0x3",
+        "0xFA0",
+        "0xFA0",
+        "0x1",
+        "0x0"
+      ],
+      [
+        "0x18",
+        "0x3",
+        "0x0",
+        "0x14D0",
+        "0xFA0",
+        "0x1",
+        "0x0"
+      ],
+      [
+        "0x19",
+        "0x3",
+        "0x5",
+        "0x1380",
+        "0xFA0",
+        "0x1",
+        "0x0"
+      ],
+      [
+        "0xE",
+        "0x2",
+        "0x0",
+        "0xD80",
+        "0xA20",
+        "0x1",
+        "0xA"
+      ],
+      [
+        "0x12",
+        "0x2",
+        "0x4",
+        "0x0",
+        "0x0",
+        "0x0",
+        "0xB"
+      ],
+      [
+        "0x13",
+        "0x2",
+        "0x5",
+        "0xCC0",
+        "0xA20",
+        "0x1",
+        "0xC"
+      ],
+      [
+        "0x14",
+        "0x2",
+        "0x6",
+        "0x0",
+        "0x0",
+        "0x0",
+        "0xD"
+      ],
+      [
+        "0x0",
+        "0x0",
+        "0x0",
+        "0x1AD0",
+        "0x1420",
+        "0x1",
+        "0xE"
+      ],
+      [
+        "0x4",
+        "0x0",
+        "0x4",
+        "0x0",
+        "0x0",
+        "0x0",
+        "0xF"
+      ],
+      [
+        "0x5",
+        "0x0",
+        "0x5",
+        "0x1920",
+        "0x1420",
+        "0x1",
+        "0x10"
+      ],
+      [
+        "0x6",
+        "0x0",
+        "0x6",
+        "0x0",
+        "0x0",
+        "0x0",
+        "0x11"
+      ],
+      [
+        "0x7",
+        "0x1",
+        "0x0",
+        "0x1300",
+        "0xE40",
+        "0x1",
+        "0x12"
+      ],
+      [
+        "0xB",
+        "0x1",
+        "0x4",
+        "0x0",
+        "0x0",
+        "0x0",
+        "0x13"
+      ],
+      [
+        "0xC",
+        "0x1",
+        "0x5",
+        "0x11D0",
+        "0xE40",
+        "0x1",
+        "0x14"
+      ],
+      [
+        "0xD",
+        "0x1",
+        "0x6",
+        "0x0",
+        "0x0",
+        "0x0",
+        "0x15"
+      ]
+    ]
+  }
+}

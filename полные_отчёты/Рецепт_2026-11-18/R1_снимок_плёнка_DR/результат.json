@@ -1,0 +1,142 @@
+{
+  "firmware": "Fujifilm X-H2 5.30",
+  "scope": "Слотовые свойства D18D–D194: имя, размер, качество, DR, плёнка и ч/б тонировка",
+  "analysis_date": "2026-11-18",
+  "source_backup": "Анализ_прошивки/Зерно_2026-11-18/опыт_камера/04_C7_D1A5_18_копия/backup.bin",
+  "source_backup_payload_offset": "0xA8",
+  "slot_stride": "0x400",
+  "common_path": {
+    "setter": "0x2C88E98",
+    "setter_jump_table": "0x33A77E8",
+    "setter_index": "id - 0xB",
+    "getter": "0x2C93FD4",
+    "getter_jump_table": "0x33A929C",
+    "getter_index": "id - 0xF",
+    "value_converter": "0x1135930",
+    "conversion_table_base": "0x1BD5AB8 + 8*id",
+    "bank_writer": "0x11335C4"
+  },
+  "confidence_policy": {
+    "К": "Сильное сопоставление по названиям и значению полей карты банка, коду и семи наблюдённым слотам; для свойств этой задачи отдельный опыт записи на камере не проводился.",
+    "open": "Точный USB↔внутренний алгоритм для всех вариантов не восстановлен; не делать выводов сверх приведённых наблюдений."
+  },
+  "properties": [
+    {
+      "usb_code": "0xD18D",
+      "fujicli_option": "custom_setting_name",
+      "usb_type": "STR; таблица 278 свойств указывает чтение/запись, фактическое значение — строка",
+      "usb_domain": "Строка длиной до 25 символов по схеме fujicli",
+      "internal_settings": [{"id": "0x730", "name": "UI_SETP_CUSTOM_SAVE_NAME", "confidence": "Д (карта свойств Z2)"}],
+      "combined_setting": false,
+      "setter": {"dispatch": "0x2C88E98 / 0x33A77E8", "branch": "0x2C93AA8; вызывает 0x11335C4 для выбранного идентификатора UI_SETP", "validation": "Строковая запись отдельно не воспроизводилась в рамках R1."},
+      "getter": {"dispatch": "0x2C93FD4 / 0x33A929C", "branch": "0x2C9AFF4; generic conversion and availability check at 0x2C86350"},
+      "conversion": {"mapping": "Строковое значение; числовая таблица USB↔банк не применима.", "scale": null},
+      "bank": {"fields": null, "C1_C7": null, "comparison": "Прямое поле не найдено в карте экспортированных полей банка. Строка имени C1 не найдена в проверенной резервной копии; это не доказывает отсутствия отдельного хранилища."},
+      "observed_usb_C1_C7": ["Kodak Porta400v2 +1", "Kodak Ektachrome100v2+2/3", "Cinematic Gold +1", "Classic Cuban Neg", "Kodak Porta 160v2 +1/3+1", "Technicolor (Warm)", "Velvia City Nights"],
+      "level": "Д для сопоставления имени со свойством и UI_SETP; место хранения строки не установлено"
+    },
+    {
+      "usb_code": "0xD18E",
+      "fujicli_option": "image_size",
+      "usb_type": "UINT16 по размеру ответа; PTP-описатель не получен",
+      "usb_domain": "0x01=S 3:2; 0x02=S 16:9; 0x03=S 1:1; 0x04=M 3:2; 0x05=M 16:9; 0x06=M 1:1; 0x07=L 3:2; 0x08=L 16:9; 0x09=L 1:1; 0x0A=S 4:3; 0x0C=S 5:4; 0x0E=L 4:3; 0x10=L 5:4; 0x12=M 4:3; 0x14=M 5:4",
+      "internal_settings": [
+        {"id": "0x66A", "name": "UI_SETP_PIXEL", "confidence": "К"},
+        {"id": "0x66F", "name": "UI_SETP_ASPECT", "confidence": "К"}
+      ],
+      "combined_setting": true,
+      "setter": {"dispatch": "0x2C88E98 / 0x33A77E8", "branches": {"0x66A": "0x2C8E1C4; scan 26-row size table at 0x18BBCF0", "0x66F": "0x2C93AA8; common UI_SETP store"}, "validation": "The PIXEL branch scans a finite table; exact accepted D18E→PIXEL/ASPECT relation is not established."},
+      "getter": {"dispatch": "0x2C93FD4 / 0x33A929C", "branch": "0x2C9556C", "behavior": "Reads and combines PIXEL and ASPECT after value conversion."},
+      "conversion": {"mapping": "USB size enum ↔ two internal fields; converter table is selected from 0x1BD5AB8 + 8*id.", "scale": null, "d1a5_comparison": "D1A5 writes current PIXEL/ASPECT. Its observation (wire 0x12 -> current values 1/0) does not prove the same slot conversion table."},
+      "bank": {"fields": [{"id": "0x66A", "name": "UI_SETP_PIXEL", "C1_blob_offset": "0xF779", "type": "u8", "values_C1_C7": [0,0,0,0,0,0,0]}, {"id": "0x66F", "name": "UI_SETP_ASPECT", "C1_blob_offset": "0xF77A", "type": "u8", "values_C1_C7": [1,1,1,1,1,1,1]}], "observed_usb_C1_C7": [7,7,7,7,7,7,7], "predicted_usb_C1_C7": [7,7,7,7,7,7,7], "comparison": "Matches fujicli L 3:2 labels; exact inverse table not reconstructed."},
+      "level": "К"
+    },
+    {
+      "usb_code": "0xD18F",
+      "fujicli_option": "image_quality",
+      "usb_type": "UINT16; PTP-описатель не получен",
+      "usb_domain": "0x01=RAW; 0x02=Fine; 0x03=Normal; 0x04=Fine+RAW; 0x05=Normal+RAW",
+      "internal_settings": [{"id": "0x670", "name": "UI_SETP_QUALITY", "confidence": "К"}],
+      "combined_setting": false,
+      "setter": {"dispatch": "0x2C88E98 / 0x33A77E8", "branch": "0x2C8E238", "behavior": "Handles an enum and updates quality/format state; exact slot-byte write relation not independently tested."},
+      "getter": {"dispatch": "0x2C93FD4 / 0x33A929C", "branch": "0x2C95658"},
+      "conversion": {"mapping": "Table 0x1769A20 via converter pointer 0x1BD5AB8 + 8*0x670; USB code is not the raw bank byte.", "bank_to_usb": {"0": 2, "1": 3, "2": 4, "3": 5, "4": 1}, "scale": null, "observed_wire_to_bank": "wire 1 maps to bank 4 in C1-C3,C5-C7; wire 4 maps to bank 2 in C4."},
+      "bank": {"fields": [{"id": "0x670", "name": "UI_SETP_QUALITY", "C1_blob_offset": "0xF77B", "type": "u8", "values_C1_C7": [4,4,4,2,4,4,4]}], "observed_usb_C1_C7": [1,1,1,4,1,1,1], "predicted_usb_C1_C7": [1,1,1,4,1,1,1], "comparison": "All seven observations agree with fujicli RAW/Fine+RAW interpretation after conversion."},
+      "level": "К"
+    },
+    {
+      "usb_code": "0xD190",
+      "fujicli_option": "dynamic_range",
+      "usb_type": "UINT16; PTP-описатель не получен",
+      "usb_domain": "0x0064=DR100; 0x00C8=DR200; 0x0190=DR400; 0xFFFF=Auto; fujicli additionally lists 0x0320=DR800 and 0x0640=DR800+",
+      "internal_settings": [{"id": "0x6A6", "name": "UI_SETP_DRANGE", "confidence": "К"}],
+      "combined_setting": false,
+      "setter": {"dispatch": "0x2C88E98 / 0x33A77E8", "branch": "0x2C8A3EC", "validation": "DRANGE family branch; explicit slot-value rejection conditions were not isolated."},
+      "getter": {"dispatch": "0x2C93FD4 / 0x33A929C", "branch": "0x2C96E24", "behavior": "DRANGE-family conversion, with a separate mode-dependent branch for movie DRANGE."},
+      "conversion": {"mapping": "Table 0x1757CD0 via converter pointer 0x1BD5AB8 + 8*0x6A6; observed bank enum 1/2/3/0 ↔ USB 100/200/400/0xFFFF.", "bank_to_usb_observed_table": {"0": "0xFFFF", "1": 100, "2": 200, "3": 400, "4": 800}, "auto": {"usb": "0xFFFF", "bank_byte": 0, "meaning": "Auto sentinel is translated; 0xFFFF is not stored in the one-byte bank field."}, "scale": null, "postprocessing": "Z3 found that RAW development parameter Auto (internal 0x641 or -1 in that path) is clamped to 100; that later path is separate from slot storage."},
+      "bank": {"fields": [{"id": "0x6A6", "name": "UI_SETP_DRANGE", "C1_blob_offset": "0xF7AB", "type": "u8", "values_C1_C7": [1,2,3,3,0,3,2]}], "observed_usb_C1_C7": [100,200,400,400,65535,400,200], "predicted_usb_C1_C7": [100,200,400,400,65535,400,200], "comparison": "Exact agreement for values present in C1-C7."},
+      "level": "К"
+    },
+    {
+      "usb_code": "0xD191",
+      "fujicli_option": "dynamic_range_priority",
+      "usb_type": "UINT16; PTP-описатель не получен",
+      "usb_domain": "0=Off; 1=Weak; 2=Strong; 3=Plus; 0x8000=Auto",
+      "internal_settings": [{"id": "0x6B0", "name": "UI_SETP_WIDEDRANGE", "confidence": "К"}],
+      "combined_setting": false,
+      "setter": {"dispatch": "0x2C88E98 / 0x33A77E8", "branch": "0x2C8A460", "validation": "WIDEDRANGE family branch; observed slots only cover Off."},
+      "getter": {"dispatch": "0x2C93FD4 / 0x33A929C", "branch": "0x2C96EC4"},
+      "conversion": {"mapping": "Table 0x176FB10 via converter pointer 0x1BD5AB8 + 8*0x6B0; observed USB Off (0) ↔ internal bank 4.", "bank_to_usb": {"0": "0x8000", "1": 3, "2": 2, "3": 1, "4": 0}, "scale": null, "relationship": "fujicli permits DRANGE setting only when WIDEDRANGE priority is Off; other combinations are not represented in the seven observed slots."},
+      "bank": {"fields": [{"id": "0x6B0", "name": "UI_SETP_WIDEDRANGE", "C1_blob_offset": "0xF7AD", "type": "u8", "values_C1_C7": [4,4,4,4,4,4,4]}], "observed_usb_C1_C7": [0,0,0,0,0,0,0], "predicted_usb_C1_C7": [0,0,0,0,0,0,0], "comparison": "All seven Off readings match; mappings for non-Off states remain unverified."},
+      "level": "К"
+    },
+    {
+      "usb_code": "0xD192",
+      "fujicli_option": "film_simulation",
+      "usb_type": "UINT16; PTP-описатель не получен",
+      "usb_domain": "0x01 Provia; 0x02 Velvia; 0x03 Astia; 0x04 PRO Neg Hi; 0x05 PRO Neg Std; 0x06 Monochrome; 0x07 Mono+Ye; 0x08 Mono+R; 0x09 Mono+G; 0x0A Sepia; 0x0B Classic Chrome; 0x0C Acros; 0x0D Acros+Ye; 0x0E Acros+R; 0x0F Acros+G; 0x10 Eterna; 0x11 Classic Negative; 0x12 Eterna Bleach Bypass; 0x13 Nostalgic Negative; 0x14 Reala Ace",
+      "internal_settings": [{"id": "0x68E", "name": "UI_SETP_FILM_SIM", "confidence": "К"}],
+      "combined_setting": false,
+      "setter": {"dispatch": "0x2C88E98 / 0x33A77E8", "branch": "0x2C89B98", "behavior": "FILM_SIM-specific branch; handles variants and related film settings."},
+      "getter": {"dispatch": "0x2C93FD4 / 0x33A929C", "branch": "0x2C96AC8", "behavior": "FILM_SIM-specific getter with mode-dependent handling."},
+      "conversion": {"mapping": "Candidate USB↔bank mapping from table 0x1758BD0 (record fields 0 and 3), reached through the value-conversion table 0x1BD5AB8 + 8*0x68E; static mapping is K and only three distinct pairs are matched by observed slots.", "usb_to_bank_enum": {"0x01": 1, "0x02": 4, "0x03": 2, "0x04": 14, "0x05": 13, "0x06": 9, "0x07": 11, "0x08": 10, "0x09": 12, "0x0A": 6, "0x0B": 15, "0x0C": 21, "0x0D": 22, "0x0E": 20, "0x0F": 23, "0x10": 18, "0x11": 16, "0x12": 19, "0x13": 17, "0x14": 25}, "restriction": "The condition checker at 0x2CA0644 converts FILM_SIM separately and tests result codes 7–10 and 14–17 for BLACK_TONE. These are not USB codes or direct serialized-bank values."},
+      "bank": {"fields": [{"id": "0x68E", "name": "UI_SETP_FILM_SIM", "C1_blob_offset": "0xF79B", "type": "u8", "values_C1_C7": [15,16,16,16,15,16,4]}], "observed_usb_C1_C7": [11,17,17,17,11,17,2], "predicted_usb_C1_C7": [11,17,17,17,11,17,2], "comparison": "All seven observations match the cited film names through the enum conversion; only three distinct pairs occur in this sample."},
+      "level": "К"
+    },
+    {
+      "usb_code": "0xD193",
+      "fujicli_option": "monochromatic_color_temperature",
+      "usb_type": "INT16; PTP-описатель не получен",
+      "usb_domain": "-18…18, шаг 1; масштаб значения USB ×10 в схеме fujicli",
+      "internal_settings": [{"id": "0x6A2", "name": "UI_SETP_BLACK_TONE", "confidence": "К"}],
+      "combined_setting": false,
+      "setter": {"dispatch": "0x2C88E98 / 0x33A77E8", "branch": "0x2C8A09C", "validation": "Через общий преобразователь значений; возможная доступность проверяется по типу плёнки."},
+      "getter": {"dispatch": "0x2C93FD4 / 0x33A929C", "branch": "0x2C96BE4"},
+      "conversion": {"mapping": "Таблица 0x1755720 связывает bank 18 ↔ USB 0; соседние значения bank идут с шагом 1, а соответствующее значение USB меняется с шагом 10 в обратном направлении.", "bank_to_usb_examples": {"0": 180, "18": 0, "36": -180}, "scale": 10, "condition": "После отдельного преобразования BLACK_TONE разрешается для значений FILM_SIM 7–10 и 14–17."},
+      "bank": {"fields": [{"id": "0x6A2", "name": "UI_SETP_BLACK_TONE", "C1_blob_offset": "0xF7A7", "type": "u8", "values_C1_C7": [18,18,18,18,18,18,18]}], "observed_usb_C1_C7": [0,0,0,0,0,0,0], "predicted_usb_C1_C7": [0,0,0,0,0,0,0], "comparison": "All seven zero readings correspond to the internal center value 18."},
+      "level": "К"
+    },
+    {
+      "usb_code": "0xD194",
+      "fujicli_option": "monochromatic_color_tint",
+      "usb_type": "INT16; PTP-описатель не получен",
+      "usb_domain": "-18…18, шаг 1; масштаб значения USB ×10 в схеме fujicli",
+      "internal_settings": [{"id": "0x6A4", "name": "UI_SETP_BLACK_TONE_RG", "confidence": "К"}],
+      "combined_setting": false,
+      "setter": {"dispatch": "0x2C88E98 / 0x33A77E8", "branch": "0x2C8A0C0", "validation": "Через общий преобразователь значений; возможная доступность проверяется по типу плёнки."},
+      "getter": {"dispatch": "0x2C93FD4 / 0x33A929C", "branch": "0x2C96C84"},
+      "conversion": {"mapping": "Таблица 0x17554C0 связывает bank 18 ↔ USB 0; соседние значения bank идут с шагом 1, а соответствующее значение USB меняется с шагом 10 в обратном направлении.", "bank_to_usb_examples": {"0": 180, "18": 0, "36": -180}, "scale": 10, "condition": "Ветка проверки содержит дополнительные условия по режиму и контексту (0xD031, 0xD274, 0x80AD); их предметный смысл не установлен."},
+      "bank": {"fields": [{"id": "0x6A4", "name": "UI_SETP_BLACK_TONE_RG", "C1_blob_offset": "0xF7A9", "type": "u8", "values_C1_C7": [18,18,18,18,18,18,18]}], "observed_usb_C1_C7": [0,0,0,0,0,0,0], "predicted_usb_C1_C7": [0,0,0,0,0,0,0], "comparison": "All seven zero readings correspond to the internal center value 18."},
+      "level": "К"
+    }
+  ],
+  "sources": [
+    "Зерно_2026-11-18/КОНТЕКСТ.md и ИТОГ.md",
+    "Зерно_2026-11-18/Z2_D1A5/отчёт.md и результат.json",
+    "Зерно_2026-11-18/Z3_правила/отчёт.md и результат.json",
+    "Камера_2026-11-17/K2_прошивка/карта_банка.tsv и карта_банка.json",
+    "PTP_чтение_2026-11-10/xh2_slots_C1-C7_072426.txt",
+    "fujicli_2026-11-18/C2_модель_камеры/сопоставление.json и Внешние_репозитории/fujicli/fml/option.cue",
+    "X-H2 5.30 block 1, base 0x29AE000; block 0, base 0x1101000"
+  ]
+}
