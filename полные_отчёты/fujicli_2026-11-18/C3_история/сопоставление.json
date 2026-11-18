@@ -1,0 +1,83 @@
+{
+  "title": "История fujicli и сопоставление с исследованием Fujifilm X-H2",
+  "date": "2026-11-18",
+  "repository": {
+    "canonical": "https://git.karaolidis.com/karaolidis/fujicli",
+    "mirror": "https://github.com/karaolidis/fujicli",
+    "revision": "27d3a6b",
+    "commit_count": 112,
+    "history_start": "2025-10-12",
+    "latest_commit_date": "2026-11-17",
+    "license": "AGPL-3.0-or-later",
+    "testing_caveat": "Только X-T5 испытана широко; совместимость остальных моделей не гарантируется"
+  },
+  "chronology": [
+    {"period":"2025-10-12—2025-10-19","stage":"PTP, устройства и рецепты","commits":["73c75f9","f74328d","6bb4e64","7c43e0f","a1668bb","0f59970","8120690","91d5d5b","fb4610b"],"result":"База CLI/PTP, идентификация камеры, backup export/restore, чтение и изменение пользовательских слотов."},
+    {"period":"2025-10-30","stage":"Устройства и обмен рецептами","commits":["da0bb10","c0b4de7"],"result":"Обобщение поддержки моделей, импорт и экспорт рецептов."},
+    {"period":"2026-01-05—2026-01-21","stage":"Проявка и обратный анализ","commits":["f919d6d","3907b7c","0e2e12b","81f6f46","a702e53","87d3687","10fdc21"],"result":"Проявка RAF камерным процессором, профили, дамп, X-S20 и исследовательские заметки."},
+    {"period":"2026-05-25—2026-06-03","stage":"FML","commits":["edfb8e3","3adeb9d"],"result":"Язык модели камер и генерация кода из схем, области действия правил."},
+    {"period":"2026-10-05","stage":"Перестройка по схемам","commits":["a44974f","e8ce5cd","c42213a","7612608","9e2e221","a72c486","321cdfc"],"result":"Декларативные модели, свойства и зависимости; устойчивый PTP; документация man; проверки профилей."},
+    {"period":"2026-10-20—2026-11-11","stage":"Транспорт и модельные ограничения","commits":["6366cff","4e00335","4f6f2ee","9b182f4","093367a","69924ef","4e59022","893c78d","27824b0","9e55f67","1132927","6e9bfa8","c866052","24660a7"],"result":"AGPL-3.0-or-later, Windows WPD, выбор по серийному номеру, профили проявки, точные коды и ограничения X-T5."},
+    {"period":"2026-11-17","stage":"RAW-проявка и сохранение исходных параметров","commits":["037f6a9","eea8dd1","3ff6f1c","efaf13a","c583cf3","27d3a6b"],"result":"WB-сдвиги, размеры по классу/соотношению сторон, шаблоны по sensor/processor, Auto и RAW/JPEG."}
+  ],
+  "camera_findings": [
+    {"topic":"monochrome_parameters","finding":"Монохромные температура и оттенок записываются только при чёрно-белой имитации.","commits":["4b6ce46"],"evidence":"fml/generation.cue"},
+    {"topic":"negative_exposure_cli","finding":"Отрицательное значение экспокоррекции требовало специального разбора CLI; это не свидетельство запрета значения камерой.","commits":["8687fb0"]},
+    {"topic":"x_s20_slots","finding":"X-S20 ограничена четырьмя слотами рецептов.","commits":["87d3687"],"evidence":"fml/camera.cue"},
+    {"topic":"grain_off","finding":"Коды 0x01, 0x06, 0x07 свойства 0xD195 читаются как Off; 0x06/0x07 сохраняют размер зерна.","commits":["4f6f2ee"],"evidence":"fml/option.cue"},
+    {"topic":"color_space","finding":"Для свойства 0xD1A4 sRGB = 0x01, Adobe RGB = 0x02.","commits":["9e55f67"],"evidence":"fml/option.cue"},
+    {"topic":"raw_quality","finding":"Размер пропускается при RAW; Fine+RAW проявляется как Fine, Normal+RAW — как Normal, чистый RAW убирает JPEG-поле качества.","commits":["93cc182","27d3a6b"],"evidence":"fml/generation.cue, fml/trait.cue"},
+    {"topic":"white_balance","finding":"Сдвиги WB сохраняются в профиле с вариантом As Shot.","commits":["037f6a9"],"evidence":"fml/trait.cue"},
+    {"topic":"dynamic_range_auto","finding":"Auto оставляется исходным; разрешённый диапазон проявки зависит от исходного динамического диапазона и приоритета.","commits":["1132927","efaf13a"],"evidence":"fml/trait.cue"},
+    {"topic":"image_size","finding":"Размеры задаются классом и соотношением сторон и ограничиваются моделью; 40-Мп значения X-T5 не подходят как общий список для 26-Мп камер.","commits":["eea8dd1","6e9bfa8"],"issue":"https://github.com/karaolidis/fujicli/issues/4"},
+    {"topic":"schema_repair","finding":"Генератор не должен очищать обязательные поля; значения опций проверяются через тип и пределы.","commits":["7612608","3e181fa"]},
+    {"topic":"ptp_transport","finding":"Некорректные PTP-контейнеры отклоняются; экспортный файл открывается после успешного чтения камеры.","commits":["c42213a","e8ce5cd"],"scope":"Защита транспорта, не модельная особенность камеры"}
+  ],
+  "model_support": {
+    "X-T5":{"processor":"X-Processor 5","backup":true,"simulation_slots":7,"render":true,"testing":"широко испытана"},
+    "X-S20":{"processor":"X-Processor 5","backup":true,"simulation_slots":4,"render":false},
+    "X-H2":{"processor":"X-Processor 5","backup":false,"simulation":false,"render":false,"available":"только device info; остальные функции не проверены"},
+    "X-H2S":{"processor":"X-Processor 5","backup":false,"simulation":false,"render":false,"available":"только device info; остальные функции не проверены"}
+  },
+  "xh2_comparison": [
+    {"our_finding":"UI_SETP, USB PTP-свойства и record-ID — разные слои; есть мост UI_SETP ↔ USB.","fujicli_relation":"FML перечисляет внешние PTP-коды и кодировки, но не полный мост X-H2.","status":"Уточняет внешний слой; соответствия проверять по модели."},
+    {"our_finding":"Backup X-H2 5.30 — объект FUJIFILM X-BACKUP0100 размером 70 524 байта; внутри картирован банк 0x12768 и преобразования.","fujicli_relation":"CLI передаёт полный backup как непрозрачный объект и восстанавливает без изменений.","status":"Дополняющие уровни; внутренняя карта fujicli не описана."},
+    {"our_finding":"Запись 0x4C и MOVDC-флаг не относятся к обычной таблице UI_SETP; писатель записи остался за сервисной границей.","fujicli_relation":"Не моделируется в FML.","status":"Не покрывается, противоречия нет."},
+    {"our_finding":"MODE_RECORD и путь задания кадра — отдельная часть прошивки.","fujicli_relation":"FML описывает рецепты и проявку, не AF или путь съёмки.","status":"Не покрывается."},
+    {"our_finding":"Условие guard и видимый LCD-дефект различны; на проверенном X-H2 линии не наблюдались.","fujicli_relation":"Нет данных о MOVDC, LCD-дефекте или пороге X-H2.","status":"Не покрывается."}
+  ],
+  "github_mirror": {
+    "checked": true,
+    "endpoint": "repos/karaolidis/fujicli/issues?state=all",
+    "records_found": 6,
+    "note": "Зеркало не пустое; CONTRIBUTING указывает, что Gitea канонический и слияния идут там первыми.",
+    "selected_records": [
+      {"number":2,"title":"fix: read grain effect 0x06 as off","state":"closed"},
+      {"number":3,"title":"feat: add FUJIFILM X-T30 III","state":"open"},
+      {"number":4,"title":"Image Size labels are the X-T5's 40 MP sizes on 26 MP cameras","state":"closed"},
+      {"number":5,"title":"feat(image): extract the simulation from MakerNotes","state":"closed","merged":false},
+      {"number":6,"title":"feat(backup): read and edit recipes in an X-T30 III backup file","state":"closed","merged":false,"label":"wontfix","reason":"Автор отказался изменять reverse-engineered backup из-за риска для файла, который камера затем импортирует."}
+    ]
+  },
+  "future_use": {
+    "useful_as":"Кандидатный справочник PTP-свойств, кодов, значений, пределов, формата профиля и правил совместимости.",
+    "not_proof_of":"Поддержка X-H2, внутреннее устройство прошивки, карта backup, record-ID, AF/MOVDC и безопасность записи.",
+    "suggested_table_fields":["модель","версия прошивки","слой-источник","свойство","код","кодировка значения","допустимые значения/диапазон","шаг","зависимости","прочитано","запись проверена","основание","уверенность"]
+  },
+  "sources": [
+    "README.md",
+    "CONTRIBUTING.md",
+    "man/fujicli.1",
+    "man/fujicli.7",
+    "man/fujicli-fml.5",
+    "fml/camera.cue",
+    "fml/option.cue",
+    "fml/trait.cue",
+    "fml/generation.cue",
+    "git log и git show выбранных коммитов",
+    "GitHub issues API",
+    "Анализ_прошивки/Камера_2026-11-17/ИТОГ.md",
+    "Анализ_прошивки/Камера_2026-11-17/K2_прошивка/отчёт.md",
+    "Анализ_прошивки/Камера_2026-11-17/Q3_мост/отчёт.md"
+  ]
+}

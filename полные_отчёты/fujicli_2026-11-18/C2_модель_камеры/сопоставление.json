@@ -1,0 +1,1456 @@
+{
+  "source": {
+    "repository": "fujicli",
+    "revision": "27d3a6b",
+    "files": [
+      "fml/option.cue",
+      "fml/trait.cue",
+      "fml/camera.cue",
+      "fml/profile.cue",
+      "man/fujicli-fml.5"
+    ]
+  },
+  "options": [
+    {
+      "id": "custom_setting",
+      "name": "Custom Setting Slot",
+      "kind": "enum",
+      "prop_code": "0xD18C",
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "c1",
+          "name": "C1",
+          "aliases": [
+            "1"
+          ],
+          "wire_value": "0x1"
+        },
+        {
+          "id": "c2",
+          "name": "C2",
+          "aliases": [
+            "2"
+          ],
+          "wire_value": "0x2"
+        },
+        {
+          "id": "c3",
+          "name": "C3",
+          "aliases": [
+            "3"
+          ],
+          "wire_value": "0x3"
+        },
+        {
+          "id": "c4",
+          "name": "C4",
+          "aliases": [
+            "4"
+          ],
+          "wire_value": "0x4"
+        },
+        {
+          "id": "c5",
+          "name": "C5",
+          "aliases": [
+            "5"
+          ],
+          "wire_value": "0x5"
+        },
+        {
+          "id": "c6",
+          "name": "C6",
+          "aliases": [
+            "6"
+          ],
+          "wire_value": "0x6"
+        },
+        {
+          "id": "c7",
+          "name": "C7",
+          "aliases": [
+            "7"
+          ],
+          "wire_value": "0x7"
+        }
+      ],
+      "lookup": {
+        "c1": "0x1",
+        "c2": "0x2",
+        "c3": "0x3",
+        "c4": "0x4",
+        "c5": "0x5",
+        "c6": "0x6",
+        "c7": "0x7"
+      },
+      "our_data": {
+        "comparison": "not mapped in the local D185 experiment"
+      }
+    },
+    {
+      "id": "usb_mode",
+      "name": "USB Mode",
+      "kind": "enum",
+      "prop_code": "0xD16E",
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "raw_conversion",
+          "name": "Raw Conversion",
+          "aliases": [
+            "raw"
+          ],
+          "wire_value": "0x6"
+        }
+      ],
+      "lookup": {
+        "raw_conversion": "0x6"
+      },
+      "our_data": {
+        "comparison": "not mapped in the local D185 experiment"
+      }
+    },
+    {
+      "id": "custom_setting_name",
+      "name": "Custom Setting Name",
+      "kind": "string",
+      "prop_code": "0xD18D",
+      "encoding": "raw",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": null,
+      "lookup": null,
+      "our_data": {
+        "comparison": "not mapped in the local D185 experiment"
+      }
+    },
+    {
+      "id": "image_size",
+      "name": "Image Size",
+      "kind": "enum",
+      "prop_code": "0xD18E",
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "l_3_2",
+          "name": "L 3:2",
+          "aliases": [],
+          "wire_value": "0x07"
+        },
+        {
+          "id": "l_16_9",
+          "name": "L 16:9",
+          "aliases": [],
+          "wire_value": "0x08"
+        },
+        {
+          "id": "l_1_1",
+          "name": "L 1:1",
+          "aliases": [],
+          "wire_value": "0x09"
+        },
+        {
+          "id": "l_4_3",
+          "name": "L 4:3",
+          "aliases": [],
+          "wire_value": "0x0e"
+        },
+        {
+          "id": "l_5_4",
+          "name": "L 5:4",
+          "aliases": [],
+          "wire_value": "0x10"
+        },
+        {
+          "id": "m_3_2",
+          "name": "M 3:2",
+          "aliases": [],
+          "wire_value": "0x04"
+        },
+        {
+          "id": "m_16_9",
+          "name": "M 16:9",
+          "aliases": [],
+          "wire_value": "0x05"
+        },
+        {
+          "id": "m_1_1",
+          "name": "M 1:1",
+          "aliases": [],
+          "wire_value": "0x06"
+        },
+        {
+          "id": "m_4_3",
+          "name": "M 4:3",
+          "aliases": [],
+          "wire_value": "0x12"
+        },
+        {
+          "id": "m_5_4",
+          "name": "M 5:4",
+          "aliases": [],
+          "wire_value": "0x14"
+        },
+        {
+          "id": "s_3_2",
+          "name": "S 3:2",
+          "aliases": [],
+          "wire_value": "0x01"
+        },
+        {
+          "id": "s_16_9",
+          "name": "S 16:9",
+          "aliases": [],
+          "wire_value": "0x02"
+        },
+        {
+          "id": "s_1_1",
+          "name": "S 1:1",
+          "aliases": [],
+          "wire_value": "0x03"
+        },
+        {
+          "id": "s_4_3",
+          "name": "S 4:3",
+          "aliases": [],
+          "wire_value": "0x0a"
+        },
+        {
+          "id": "s_5_4",
+          "name": "S 5:4",
+          "aliases": [],
+          "wire_value": "0x0c"
+        }
+      ],
+      "lookup": {
+        "l_3_2": "0x07",
+        "l_16_9": "0x08",
+        "l_1_1": "0x09",
+        "l_4_3": "0x0e",
+        "l_5_4": "0x10",
+        "m_3_2": "0x04",
+        "m_16_9": "0x05",
+        "m_1_1": "0x06",
+        "m_4_3": "0x12",
+        "m_5_4": "0x14",
+        "s_3_2": "0x01",
+        "s_16_9": "0x02",
+        "s_1_1": "0x03",
+        "s_4_3": "0x0a",
+        "s_5_4": "0x0c"
+      },
+      "our_data": {
+        "d185_index": 3,
+        "d185_observed": "profile value 7; D183 sets output size"
+      }
+    },
+    {
+      "id": "image_quality",
+      "name": "Image Quality",
+      "kind": "enum",
+      "prop_code": "0xD18F",
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "fine_raw",
+          "name": "Fine + RAW",
+          "aliases": [],
+          "wire_value": "0x04"
+        },
+        {
+          "id": "fine",
+          "name": "Fine",
+          "aliases": [],
+          "wire_value": "0x02"
+        },
+        {
+          "id": "normal_raw",
+          "name": "Normal + RAW",
+          "aliases": [],
+          "wire_value": "0x05"
+        },
+        {
+          "id": "normal",
+          "name": "Normal",
+          "aliases": [],
+          "wire_value": "0x03"
+        },
+        {
+          "id": "raw",
+          "name": "RAW",
+          "aliases": [],
+          "wire_value": "0x01"
+        }
+      ],
+      "lookup": {
+        "fine_raw": "0x04",
+        "fine": "0x02",
+        "normal_raw": "0x05",
+        "normal": "0x03",
+        "raw": "0x01"
+      },
+      "our_data": {
+        "d185_index": 4,
+        "d185_observed": "value 2 in tested profiles; changing to 1 or 1000 did not affect output in tested case"
+      }
+    },
+    {
+      "id": "film_simulation",
+      "name": "Film Simulation",
+      "kind": "enum",
+      "prop_code": "0xD192",
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "provia",
+          "name": "Provia",
+          "aliases": [],
+          "wire_value": "0x01"
+        },
+        {
+          "id": "velvia",
+          "name": "Velvia",
+          "aliases": [],
+          "wire_value": "0x02"
+        },
+        {
+          "id": "astia",
+          "name": "Astia",
+          "aliases": [],
+          "wire_value": "0x03"
+        },
+        {
+          "id": "pro_neg_hi",
+          "name": "PRO Neg. Hi",
+          "aliases": [
+            "pro_neg_high"
+          ],
+          "wire_value": "0x04"
+        },
+        {
+          "id": "pro_neg_std",
+          "name": "PRO Neg. Std",
+          "aliases": [
+            "pro_neg_standard"
+          ],
+          "wire_value": "0x05"
+        },
+        {
+          "id": "monochrome",
+          "name": "Monochrome",
+          "aliases": [
+            "mono"
+          ],
+          "wire_value": "0x06"
+        },
+        {
+          "id": "monochrome_ye",
+          "name": "Monochrome + Ye",
+          "aliases": [
+            "mono_ye",
+            "mono_yellow",
+            "monochrome_yellow"
+          ],
+          "wire_value": "0x07"
+        },
+        {
+          "id": "monochrome_r",
+          "name": "Monochrome + R",
+          "aliases": [
+            "mono_r",
+            "mono_red",
+            "monochrome_red"
+          ],
+          "wire_value": "0x08"
+        },
+        {
+          "id": "monochrome_g",
+          "name": "Monochrome + G",
+          "aliases": [
+            "mono_g",
+            "mono_green",
+            "monochrome_green"
+          ],
+          "wire_value": "0x09"
+        },
+        {
+          "id": "sepia",
+          "name": "Sepia",
+          "aliases": [],
+          "wire_value": "0x0a"
+        },
+        {
+          "id": "classic_chrome",
+          "name": "Classic Chrome",
+          "aliases": [],
+          "wire_value": "0x0b"
+        },
+        {
+          "id": "acros",
+          "name": "Acros",
+          "aliases": [],
+          "wire_value": "0x0c"
+        },
+        {
+          "id": "acros_ye",
+          "name": "Acros + Ye",
+          "aliases": [
+            "acros_yellow"
+          ],
+          "wire_value": "0x0d"
+        },
+        {
+          "id": "acros_r",
+          "name": "Acros + R",
+          "aliases": [
+            "acros_red"
+          ],
+          "wire_value": "0x0e"
+        },
+        {
+          "id": "acros_g",
+          "name": "Acros + G",
+          "aliases": [
+            "acros_green"
+          ],
+          "wire_value": "0x0f"
+        },
+        {
+          "id": "eterna",
+          "name": "Eterna",
+          "aliases": [],
+          "wire_value": "0x10"
+        },
+        {
+          "id": "classic_negative",
+          "name": "Classic Negative",
+          "aliases": [
+            "classic_neg"
+          ],
+          "wire_value": "0x11"
+        },
+        {
+          "id": "eterna_bleach_bypass",
+          "name": "Eterna Bleach Bypass",
+          "aliases": [
+            "eterna_bb",
+            "eterna_bleach"
+          ],
+          "wire_value": "0x12"
+        },
+        {
+          "id": "nostalgic_negative",
+          "name": "Nostalgic Negative",
+          "aliases": [
+            "nostalgic_neg"
+          ],
+          "wire_value": "0x13"
+        },
+        {
+          "id": "reala_ace",
+          "name": "Reala Ace",
+          "aliases": [
+            "reala"
+          ],
+          "wire_value": "0x14"
+        }
+      ],
+      "lookup": {
+        "provia": "0x01",
+        "velvia": "0x02",
+        "astia": "0x03",
+        "pro_neg_hi": "0x04",
+        "pro_neg_std": "0x05",
+        "monochrome": "0x06",
+        "monochrome_ye": "0x07",
+        "monochrome_r": "0x08",
+        "monochrome_g": "0x09",
+        "sepia": "0x0a",
+        "classic_chrome": "0x0b",
+        "acros": "0x0c",
+        "acros_ye": "0x0d",
+        "acros_r": "0x0e",
+        "acros_g": "0x0f",
+        "eterna": "0x10",
+        "classic_negative": "0x11",
+        "eterna_bleach_bypass": "0x12",
+        "nostalgic_negative": "0x13",
+        "reala_ace": "0x14"
+      },
+      "our_data": {
+        "d185_index": 8,
+        "profile_examples": {
+          "11": "Classic Chrome",
+          "17": "Classic Negative",
+          "2": "Velvia",
+          "20": "Reala Ace"
+        },
+        "evidence": "D185 profile readings and MakerNote comparison"
+      }
+    },
+    {
+      "id": "monochromatic_color_temperature",
+      "name": "Monochromatic Color Temperature",
+      "kind": "integer",
+      "prop_code": "0xD193",
+      "encoding": "scale",
+      "scale": 10,
+      "min": -18,
+      "max": 18,
+      "step": 1,
+      "variants": null,
+      "lookup": null,
+      "our_data": {
+        "d185_index": 23,
+        "profile_scale": "x10",
+        "tests": {
+          "20": "+2 warm",
+          "-20": "-2 cool"
+        },
+        "evidence": "D185 tests on Monochrome and Acros"
+      }
+    },
+    {
+      "id": "monochromatic_color_tint",
+      "name": "Monochromatic Color Tint",
+      "kind": "integer",
+      "prop_code": "0xD194",
+      "encoding": "scale",
+      "scale": 10,
+      "min": -18,
+      "max": 18,
+      "step": 1,
+      "variants": null,
+      "lookup": null,
+      "our_data": {
+        "d185_index": 26,
+        "profile_scale": "x10",
+        "tests": {
+          "20": "+2 greener",
+          "-20": "-2 more magenta"
+        },
+        "evidence": "D185 tests on Monochrome and Acros"
+      }
+    },
+    {
+      "id": "grain_effect",
+      "name": "Grain Effect",
+      "kind": "enum",
+      "prop_code": "0xD195",
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "strong_large",
+          "name": "Strong Large",
+          "aliases": [
+            "large_strong"
+          ],
+          "wire_value": "0x05"
+        },
+        {
+          "id": "weak_large",
+          "name": "Weak Large",
+          "aliases": [
+            "large_weak"
+          ],
+          "wire_value": "0x04"
+        },
+        {
+          "id": "strong_small",
+          "name": "Strong Small",
+          "aliases": [
+            "small_strong"
+          ],
+          "wire_value": "0x03"
+        },
+        {
+          "id": "weak_small",
+          "name": "Weak Small",
+          "aliases": [
+            "small_weak"
+          ],
+          "wire_value": "0x02"
+        },
+        {
+          "id": "off",
+          "name": "Off",
+          "aliases": [],
+          "wire_value": "[0x01, 0x06, 0x07]"
+        }
+      ],
+      "lookup": {
+        "strong_large": "0x05",
+        "weak_large": "0x04",
+        "strong_small": "0x03",
+        "weak_small": "0x02",
+        "off": "[0x01, 0x06, 0x07]"
+      },
+      "our_data": {
+        "d185_index": 9,
+        "profile_examples": {
+          "1": "Off",
+          "3": "Strong Small",
+          "4": "Weak Large"
+        },
+        "evidence": "D185 one-field tests; off also has camera codes 6/7 retaining grain size"
+      }
+    },
+    {
+      "id": "color_chrome_effect",
+      "name": "Color Chrome Effect",
+      "kind": "enum",
+      "prop_code": "0xD196",
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "strong",
+          "name": "Strong",
+          "aliases": [],
+          "wire_value": "0x03"
+        },
+        {
+          "id": "weak",
+          "name": "Weak",
+          "aliases": [],
+          "wire_value": "0x02"
+        },
+        {
+          "id": "off",
+          "name": "Off",
+          "aliases": [],
+          "wire_value": "0x01"
+        }
+      ],
+      "lookup": {
+        "strong": "0x03",
+        "weak": "0x02",
+        "off": "0x01"
+      },
+      "our_data": {
+        "d185_index": 10,
+        "profile_values": {
+          "1": "Off",
+          "2": "Weak",
+          "3": "Strong"
+        },
+        "firmware_field": "SHADOWING",
+        "evidence": "D185 one-field tests"
+      }
+    },
+    {
+      "id": "color_chrome_fx_blue",
+      "name": "Color Chrome FX Blue",
+      "kind": "enum",
+      "prop_code": "0xD197",
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "strong",
+          "name": "Strong",
+          "aliases": [],
+          "wire_value": "0x03"
+        },
+        {
+          "id": "weak",
+          "name": "Weak",
+          "aliases": [],
+          "wire_value": "0x02"
+        },
+        {
+          "id": "off",
+          "name": "Off",
+          "aliases": [],
+          "wire_value": "0x01"
+        }
+      ],
+      "lookup": {
+        "strong": "0x03",
+        "weak": "0x02",
+        "off": "0x01"
+      },
+      "our_data": {
+        "d185_index": 25,
+        "profile_values": {
+          "1": "Off",
+          "2": "Weak",
+          "3": "Strong"
+        },
+        "firmware_field": "BLUE_EFFECT",
+        "evidence": "D185 tests"
+      }
+    },
+    {
+      "id": "white_balance",
+      "name": "White Balance",
+      "kind": "enum",
+      "prop_code": "0xD199",
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "as_shot",
+          "name": "As Shot",
+          "aliases": [
+            "original"
+          ],
+          "wire_value": "0x0000"
+        },
+        {
+          "id": "white_priority",
+          "name": "White Priority",
+          "aliases": [
+            "white"
+          ],
+          "wire_value": "0x8020"
+        },
+        {
+          "id": "auto",
+          "name": "Auto",
+          "aliases": [],
+          "wire_value": "0x0002"
+        },
+        {
+          "id": "ambience_priority",
+          "name": "Ambience Priority",
+          "aliases": [
+            "ambience",
+            "ambient"
+          ],
+          "wire_value": "0x8021"
+        },
+        {
+          "id": "custom1",
+          "name": "Custom 1",
+          "aliases": [
+            "c1"
+          ],
+          "wire_value": "0x8008"
+        },
+        {
+          "id": "custom2",
+          "name": "Custom 2",
+          "aliases": [
+            "c2"
+          ],
+          "wire_value": "0x8009"
+        },
+        {
+          "id": "custom3",
+          "name": "Custom 3",
+          "aliases": [
+            "c3"
+          ],
+          "wire_value": "0x800a"
+        },
+        {
+          "id": "temperature",
+          "name": "Temperature",
+          "aliases": [
+            "temp",
+            "k",
+            "kelvin"
+          ],
+          "wire_value": "0x8007"
+        },
+        {
+          "id": "daylight",
+          "name": "Daylight",
+          "aliases": [
+            "sunny"
+          ],
+          "wire_value": "0x0004"
+        },
+        {
+          "id": "shade",
+          "name": "Shade",
+          "aliases": [
+            "cloudy"
+          ],
+          "wire_value": "0x8006"
+        },
+        {
+          "id": "fluorescent1",
+          "name": "Fluorescent 1",
+          "aliases": [],
+          "wire_value": "0x8001"
+        },
+        {
+          "id": "fluorescent2",
+          "name": "Fluorescent 2",
+          "aliases": [],
+          "wire_value": "0x8002"
+        },
+        {
+          "id": "fluorescent3",
+          "name": "Fluorescent 3",
+          "aliases": [],
+          "wire_value": "0x8003"
+        },
+        {
+          "id": "incandescent",
+          "name": "Incandescent",
+          "aliases": [
+            "tungsten"
+          ],
+          "wire_value": "0x0006"
+        },
+        {
+          "id": "underwater",
+          "name": "Underwater",
+          "aliases": [],
+          "wire_value": "0x0008"
+        }
+      ],
+      "lookup": {
+        "as_shot": "0x0000",
+        "white_priority": "0x8020",
+        "auto": "0x0002",
+        "ambience_priority": "0x8021",
+        "custom1": "0x8008",
+        "custom2": "0x8009",
+        "custom3": "0x800a",
+        "temperature": "0x8007",
+        "daylight": "0x0004",
+        "shade": "0x8006",
+        "fluorescent1": "0x8001",
+        "fluorescent2": "0x8002",
+        "fluorescent3": "0x8003",
+        "incandescent": "0x0006",
+        "underwater": "0x0008"
+      },
+      "our_data": {
+        "d185_index": 12,
+        "ptp_values": {
+          "0x0004": "Daylight",
+          "0x0006": "Incandescent",
+          "0x8007": "Temperature",
+          "0x0002": "Auto"
+        },
+        "d185_gate": "field 11=2 applies profile WB; field 11=1 keeps as-shot",
+        "evidence": "10 USB tests"
+      }
+    },
+    {
+      "id": "white_balance_shift_red",
+      "name": "White Balance Shift Red",
+      "kind": "integer",
+      "prop_code": "0xD19A",
+      "encoding": "scale",
+      "scale": 1,
+      "min": -9,
+      "max": 9,
+      "step": 1,
+      "variants": null,
+      "lookup": null,
+      "our_data": {
+        "d185_index": 13,
+        "d185_example": "+3 = MakerNote FineTune R +60"
+      }
+    },
+    {
+      "id": "white_balance_shift_blue",
+      "name": "White Balance Shift Blue",
+      "kind": "integer",
+      "prop_code": "0xD19B",
+      "encoding": "scale",
+      "scale": 1,
+      "min": -9,
+      "max": 9,
+      "step": 1,
+      "variants": null,
+      "lookup": null,
+      "our_data": {
+        "d185_index": 14
+      }
+    },
+    {
+      "id": "white_balance_temperature",
+      "name": "White Balance Temperature",
+      "kind": "integer",
+      "prop_code": "0xD19C",
+      "encoding": "scale",
+      "scale": 1,
+      "min": 2500,
+      "max": 10000,
+      "step": 10,
+      "variants": null,
+      "lookup": null,
+      "our_data": {
+        "d185_index": 15,
+        "tested_kelvin": [
+          3000,
+          5000
+        ],
+        "d185_gate": "used only when WB code is 0x8007"
+      }
+    },
+    {
+      "id": "highlight_tone",
+      "name": "Highlight Tone",
+      "kind": "float",
+      "prop_code": "0xD19D",
+      "encoding": "scale",
+      "scale": 10,
+      "min": -2.0,
+      "max": 4.0,
+      "step": 0.5,
+      "variants": null,
+      "lookup": null,
+      "our_data": {
+        "d185_index": 16,
+        "profile_scale": "x10",
+        "d185_test": "+20 -> +2"
+      }
+    },
+    {
+      "id": "shadow_tone",
+      "name": "Shadow Tone",
+      "kind": "float",
+      "prop_code": "0xD19E",
+      "encoding": "scale",
+      "scale": 10,
+      "min": -2.0,
+      "max": 4.0,
+      "step": 0.5,
+      "variants": null,
+      "lookup": null,
+      "our_data": {
+        "d185_index": 17,
+        "profile_scale": "x10",
+        "d185_test": "+20 -> +2"
+      }
+    },
+    {
+      "id": "color",
+      "name": "Color",
+      "kind": "integer",
+      "prop_code": "0xD19F",
+      "encoding": "scale",
+      "scale": 10,
+      "min": -4,
+      "max": 4,
+      "step": 1,
+      "variants": null,
+      "lookup": null,
+      "our_data": {
+        "d185_index": 18,
+        "profile_scale": "x10",
+        "d185_examples": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          -40
+        ]
+      }
+    },
+    {
+      "id": "sharpness",
+      "name": "Sharpness",
+      "kind": "integer",
+      "prop_code": "0xD1A0",
+      "encoding": "scale",
+      "scale": 10,
+      "min": -4,
+      "max": 4,
+      "step": 1,
+      "variants": null,
+      "lookup": null,
+      "our_data": {
+        "d185_index": 19,
+        "profile_scale": "x10",
+        "d185_test": "-20 -> -2"
+      }
+    },
+    {
+      "id": "noise_reduction",
+      "name": "High ISO Noise Reduction",
+      "kind": "integer",
+      "prop_code": "0xD1A1",
+      "encoding": "lookup",
+      "scale": null,
+      "min": -4,
+      "max": 4,
+      "step": 1,
+      "variants": null,
+      "lookup": {
+        "4": "0x5000",
+        "3": "0x6000",
+        "2": "0x0000",
+        "1": "0x1000",
+        "0": "0x2000",
+        "-1": "0x3000",
+        "-2": "0x4000",
+        "-3": "0x7000",
+        "-4": "0x8000"
+      },
+      "our_data": {
+        "d185_index": 20,
+        "ptp_values": {
+          "0x2000": "0",
+          "0x8000": "-4"
+        },
+        "evidence": "D185 and MakerNote; full mapping is encoded by lookup"
+      }
+    },
+    {
+      "id": "clarity",
+      "name": "Clarity",
+      "kind": "integer",
+      "prop_code": "0xD1A2",
+      "encoding": "scale",
+      "scale": 10,
+      "min": -5,
+      "max": 5,
+      "step": 1,
+      "variants": null,
+      "lookup": null,
+      "our_data": {
+        "d185_index": 27
+      }
+    },
+    {
+      "id": "lens_modulation_optimizer",
+      "name": "Lens Modulation Optimizer",
+      "kind": "enum",
+      "prop_code": "0xD1A3",
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "on",
+          "name": "On",
+          "aliases": [
+            "true"
+          ],
+          "wire_value": "0x01"
+        },
+        {
+          "id": "off",
+          "name": "Off",
+          "aliases": [
+            "false"
+          ],
+          "wire_value": "0x02"
+        }
+      ],
+      "lookup": {
+        "on": "0x01",
+        "off": "0x02"
+      },
+      "our_data": {
+        "d185_index": 21,
+        "profile_values": {
+          "1": "On",
+          "2": "Off"
+        },
+        "firmware_name": "LEQ"
+      }
+    },
+    {
+      "id": "color_space",
+      "name": "Color Space",
+      "kind": "enum",
+      "prop_code": "0xD1A4",
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "srgb",
+          "name": "sRGB",
+          "aliases": [
+            "s"
+          ],
+          "wire_value": "0x01"
+        },
+        {
+          "id": "adobe_rgb",
+          "name": "Adobe RGB",
+          "aliases": [
+            "adobe"
+          ],
+          "wire_value": "0x02"
+        }
+      ],
+      "lookup": {
+        "srgb": "0x01",
+        "adobe_rgb": "0x02"
+      },
+      "our_data": {
+        "d185_index": 22,
+        "profile_values": {
+          "1": "sRGB",
+          "2": "Adobe RGB"
+        }
+      }
+    },
+    {
+      "id": "dynamic_range",
+      "name": "Dynamic Range",
+      "kind": "enum",
+      "prop_code": "0xD190",
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "auto",
+          "name": "Auto",
+          "aliases": [],
+          "wire_value": "0xffff"
+        },
+        {
+          "id": "hdr100",
+          "name": "HDR100",
+          "aliases": [
+            "100",
+            "dr100"
+          ],
+          "wire_value": "0x64"
+        },
+        {
+          "id": "hdr200",
+          "name": "HDR200",
+          "aliases": [
+            "200",
+            "dr200"
+          ],
+          "wire_value": "0xc8"
+        },
+        {
+          "id": "hdr400",
+          "name": "HDR400",
+          "aliases": [
+            "400",
+            "dr400"
+          ],
+          "wire_value": "0x190"
+        },
+        {
+          "id": "hdr800",
+          "name": "HDR800",
+          "aliases": [
+            "800",
+            "dr800"
+          ],
+          "wire_value": "0x320"
+        },
+        {
+          "id": "hdr800_plus",
+          "name": "HDR800+",
+          "aliases": [
+            "800+",
+            "dr800+",
+            "hdr800+",
+            "dr800_plus"
+          ],
+          "wire_value": "0x640"
+        }
+      ],
+      "lookup": {
+        "auto": "0xffff",
+        "hdr100": "0x64",
+        "hdr200": "0xc8",
+        "hdr400": "0x190",
+        "hdr800": "0x320",
+        "hdr800_plus": "0x640"
+      },
+      "our_data": {
+        "d185_index": 6,
+        "profile_examples": {
+          "100": "HDR100/effective Auto example",
+          "200": "HDR200 request; shot at ISO125 returned effective 100",
+          "400": "HDR400"
+        },
+        "evidence": "D185 profile reads; exact Auto retained per source commit efaf13a"
+      }
+    },
+    {
+      "id": "dynamic_range_priority",
+      "name": "Dynamic Range Priority",
+      "kind": "enum",
+      "prop_code": "0xD191",
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "auto",
+          "name": "Auto",
+          "aliases": [],
+          "wire_value": "0x8000"
+        },
+        {
+          "id": "plus",
+          "name": "Plus",
+          "aliases": [],
+          "wire_value": "0x03"
+        },
+        {
+          "id": "strong",
+          "name": "Strong",
+          "aliases": [],
+          "wire_value": "0x02"
+        },
+        {
+          "id": "weak",
+          "name": "Weak",
+          "aliases": [],
+          "wire_value": "0x01"
+        },
+        {
+          "id": "off",
+          "name": "Off",
+          "aliases": [],
+          "wire_value": "0x00"
+        }
+      ],
+      "lookup": {
+        "auto": "0x8000",
+        "plus": "0x03",
+        "strong": "0x02",
+        "weak": "0x01",
+        "off": "0x00"
+      },
+      "our_data": {
+        "d185_index": 7,
+        "d185_observed": "0 in tested profiles"
+      }
+    },
+    {
+      "id": "smooth_skin_effect",
+      "name": "Smooth Skin Effect",
+      "kind": "enum",
+      "prop_code": "0xD198",
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "strong",
+          "name": "Strong",
+          "aliases": [],
+          "wire_value": "0x03"
+        },
+        {
+          "id": "weak",
+          "name": "Weak",
+          "aliases": [],
+          "wire_value": "0x02"
+        },
+        {
+          "id": "off",
+          "name": "Off",
+          "aliases": [],
+          "wire_value": "0x01"
+        }
+      ],
+      "lookup": {
+        "strong": "0x03",
+        "weak": "0x02",
+        "off": "0x01"
+      },
+      "our_data": {
+        "d185_index": 24,
+        "profile_observed": "1=Off; 2 likely Weak, not fully verified"
+      }
+    },
+    {
+      "id": "exposure_offset",
+      "name": "Exposure Offset",
+      "kind": "float",
+      "prop_code": null,
+      "encoding": "lookup",
+      "scale": null,
+      "min": -3.0,
+      "max": 3.0,
+      "step": null,
+      "variants": null,
+      "lookup": {
+        "3.0": "3000",
+        "2.7": "2667",
+        "2.3": "2333",
+        "2.0": "2000",
+        "1.7": "1667",
+        "1.3": "1333",
+        "1.0": "1000",
+        "0.7": "667",
+        "0.3": "333",
+        "0.0": "0",
+        "-0.3": "-333",
+        "-0.7": "-667",
+        "-1.0": "-1000",
+        "-1.3": "-1333",
+        "-1.7": "-1667",
+        "-2.0": "-2000",
+        "-2.3": "-2333",
+        "-2.7": "-2667",
+        "-3.0": "-3000"
+      },
+      "our_data": {
+        "d185_index": 5,
+        "profile_scale": "D185 uses milli-EV",
+        "d185_test": "+1000 made output brighter by about 31 RGB levels"
+      }
+    },
+    {
+      "id": "file_type",
+      "name": "File Type",
+      "kind": "enum",
+      "prop_code": null,
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "jpeg",
+          "name": "JPEG",
+          "aliases": [
+            "jpg"
+          ],
+          "wire_value": "0x07"
+        },
+        {
+          "id": "heif",
+          "name": "HEIF",
+          "aliases": [],
+          "wire_value": "0x12"
+        },
+        {
+          "id": "tiff8",
+          "name": "TIFF 8-bit",
+          "aliases": [],
+          "wire_value": "0x09"
+        },
+        {
+          "id": "tiff16",
+          "name": "TIFF 16-bit",
+          "aliases": [],
+          "wire_value": "0x0b"
+        }
+      ],
+      "lookup": {
+        "jpeg": "0x07",
+        "heif": "0x12",
+        "tiff8": "0x09",
+        "tiff16": "0x0b"
+      },
+      "our_data": {
+        "d185_index": 2
+      }
+    },
+    {
+      "id": "teleconverter",
+      "name": "Teleconverter",
+      "kind": "enum",
+      "prop_code": null,
+      "encoding": "lookup",
+      "scale": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "variants": [
+        {
+          "id": "on",
+          "name": "On",
+          "aliases": [
+            "true"
+          ],
+          "wire_value": "0x01"
+        },
+        {
+          "id": "off",
+          "name": "Off",
+          "aliases": [
+            "false"
+          ],
+          "wire_value": "0x02"
+        }
+      ],
+      "lookup": {
+        "on": "0x01",
+        "off": "0x02"
+      },
+      "our_data": {
+        "comparison": "not mapped in the local D185 experiment"
+      }
+    }
+  ],
+  "camera_only_controls": [
+    {
+      "id": "shutter_type",
+      "ui_setp": "0x827",
+      "usb": "not listed in X-H2 RAW CONV",
+      "our_finding": "actual shutter type is an effective/mirrored field used in the firmware predicate"
+    },
+    {
+      "id": "continuous_drive",
+      "ui_setp": "0x858",
+      "usb": "D201: CH=2, CL=3, S=4"
+    },
+    {
+      "id": "shutter_speed",
+      "ui_setp": "0x4D1",
+      "usb": "500D, unavailable in RAW CONV",
+      "our_finding": "0x3456B20 uses shutter denominator/100"
+    }
+  ],
+  "notes": [
+    "prop_code is a PTP property code, distinct from UI_SETP and D185 field position.",
+    "Scale encodes value multiplied by scale; lookup may accept multiple wire codes on read.",
+    "Where local field mapping is absent, it is marked as not mapped rather than inferred."
+  ]
+}

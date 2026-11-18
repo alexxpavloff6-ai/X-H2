@@ -1,0 +1,7 @@
+{
+ "mode": "grain",
+ "before": "0600",
+ "write": 8193,
+ "after": "0600",
+ "slot_after": "0100"
+}

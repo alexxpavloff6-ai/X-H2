@@ -1,0 +1,101 @@
+{
+  "задача": "C1 протокол и устройство fujicli",
+  "источник": {"проект": "karaolidis/fujicli", "ревизия": "27d3a6b", "режим": "только чтение; без сборки, запуска и камеры"},
+  "поддержка_XH2": {"usb_id": "04cb:02f2", "распознаётся": true, "включённые_функции": [], "обычные_команды": "только device info", "hidden_device_reverse": "диагностические команды напрямую пробуют PTP и открывают модель как неизвестную; это не подтверждает успех на X-H2", "backup/simulation/render": "не включены в схему для X-H2"},
+  "операции_PTP": [
+    {"код":"0x1001","имя":"GetDeviceInfo","направление":"камера→ПК","CLI":["device info","device reverse info"]},
+    {"код":"0x1002","имя":"OpenSession","направление":"нет","CLI":["открытие сеанса libusb, номер 1"]},
+    {"код":"0x1003","имя":"CloseSession","направление":"нет","CLI":["закрытие сеанса libusb при Drop"]},
+    {"код":"0x1007","имя":"GetObjectHandles","направление":"камера→ПК","CLI":["image render: опрос результата"]},
+    {"код":"0x1008","имя":"GetObjectInfo","направление":"камера→ПК","CLI":["backup export; ответ игнорируется"]},
+    {"код":"0x1009","имя":"GetObject","направление":"камера→ПК","CLI":["backup export","получение JPEG"]},
+    {"код":"0x100B","имя":"DeleteObject","направление":"нет","CLI":["удалить JPEG после скачивания"],"меняет_состояние":true},
+    {"код":"0x100C","имя":"SendObjectInfo","направление":"ПК→камера","CLI":["backup import"],"меняет_состояние":true},
+    {"код":"0x100D","имя":"SendObject","направление":"ПК→камера","CLI":["backup import: передача файла"],"меняет_состояние":true},
+    {"код":"0x1015","имя":"GetDevicePropValue","направление":"камера→ПК","CLI":["device info","simulation","профиль","диагностическое чтение"]},
+    {"код":"0x1016","имя":"SetDevicePropValue","направление":"ПК→камера","CLI":["выбор слота","запись рецепта","D185 и запуск render"],"меняет_состояние":true},
+    {"код":"0x900C","имя":"FujiSendObjectInfo","направление":"ПК→камера","CLI":["загрузка RAF"],"меняет_состояние":true},
+    {"код":"0x900D","имя":"FujiSendObject","направление":"ПК→камера","CLI":["передача RAF"],"меняет_состояние":true}
+  ],
+  "свойства": [
+    {"код":"0xD16E","имя":"USB Mode","CLI":["device info","device reverse info"],"направление":"чтение","значение":{"Raw Conversion":6},"BACKUP_RESTORE_описан":false},
+    {"код":"0xD18C","имя":"Custom Setting Slot","CLI":["simulation","image render --slot","reverse simulation"],"направление":"запись номера слота; затем чтение или запись","значения":[1,2,3,4,5,6,7],"меняет_выбранный_слот":true},
+    {"код":"0xD18D","имя":"Custom Setting Name","CLI":["simulation get/set/import"],"направление":"чтение/запись","ограничение":"до 25 символов"},
+    {"код":"0xD18E","имя":"Image Size","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD18F","имя":"Image Quality","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD190","имя":"Dynamic Range","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD191","имя":"Dynamic Range Priority","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD192","имя":"Film Simulation","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD193","имя":"Monochromatic Color Temperature","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD194","имя":"Monochromatic Color Tint","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD195","имя":"Grain Effect","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD196","имя":"Color Chrome Effect","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD197","имя":"Color Chrome FX Blue","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD198","имя":"Smooth Skin Effect","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD199","имя":"White Balance","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD19A","имя":"White Balance Shift Red","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD19B","имя":"White Balance Shift Blue","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD19C","имя":"White Balance Temperature","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD19D","имя":"Highlight Tone","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD19E","имя":"Shadow Tone","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD19F","имя":"Color","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD1A0","имя":"Sharpness","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD1A1","имя":"High ISO Noise Reduction","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD1A2","имя":"Clarity","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD1A3","имя":"Lens Modulation Optimizer","CLI":["simulation","render profile"],"направление":"чтение/запись","особенность":"flaky: некритичный отказ поля допускает продолжение, отключение устройства — ошибка"},
+    {"код":"0xD1A4","имя":"Color Space","CLI":["simulation","render profile"],"направление":"чтение/запись"},
+    {"код":"0xD183","имя":"Fuji Raw Conversion Run","CLI":["image render"],"направление":"запись","полное":1,"draft":0},
+    {"код":"0xD184","имя":"Fuji Raw Conversion Profile Code","CLI":["device reverse info"],"направление":"чтение"},
+    {"код":"0xD185","имя":"Fuji Raw Conversion Profile","CLI":["image render"],"направление":"чтение/запись"},
+    {"код":"0xD186","имя":"Fuji Raw Conversion Condition Code","CLI":["device reverse info"],"направление":"чтение"},
+    {"код":"0xD187","имя":"Fuji Raw Conversion Compatibility Code","CLI":["device reverse info"],"направление":"чтение"},
+    {"код":"0xD36B","имя":"Fuji Battery Info 2","CLI":["device info","device reverse info"],"направление":"чтение","разбор":"строка; число перед запятой — заряд в процентах"}
+  ],
+  "backup": {
+    "export": ["GetObjectInfo(0), ответ игнорируется", "GetObject(0)", "содержимое записывается без изменений"],
+    "import": ["файл целиком читается в память", "ObjectInfo format=0x5000 FujiBackup", "compressed_size равен длине файла", "ObjectInfo дополняется 1020 нулевыми байтами", "SendObjectInfo(0,0)", "SendObject(0) с исходным содержимым"],
+    "внутренний_формат_разбирается": false,
+    "маркер_X_BACKUP0100_проверяется": false,
+    "checksum_проверяется": false,
+    "имена_полей_известны": false,
+    "слоты_разбираются": false,
+    "модель_проверяется": false,
+    "сверка_XH2": {
+      "банк": "0x12768 байт",
+      "payload": "0x112D4 байт",
+      "контейнер_перед_payload": "0xA8 байт",
+      "checksum_raw_offset": "0x3C",
+      "сегменты": ["0xF6D4", "0x1C00"],
+      "0xF6BC": "service u16 кандидат; обновление при перезапуске наблюдается, точный смысл не доказан",
+      "0xF724": "неизвестное volatile service поле",
+      "добавочные_знания_fujicli_о_формате": "нет; известны PTP ObjectFormat и оболочка обмена"
+    }
+  },
+  "render": {
+    "порядок": ["прочитать RAF и необязательный рецепт", "FujiSendObjectInfo 0x900C", "FujiSendObject 0x900D", "прочитать D185", "записать D185", "записать D183", "поллить GetObjectHandles через 100 мс", "GetObject JPEG", "DeleteObject", "сохранить JPEG"],
+    "профиль": {
+      "число_полей": 29,
+      "заголовок": "16-битное число полей",
+      "код": "UTF-16LE ExactString в области 0x1FF байт с нулевым дополнением",
+      "значения": "int32 little-endian",
+      "поля_в_порядке": ["shoot_condition","file_type","image_size","image_quality","exposure_offset","dynamic_range","dynamic_range_priority","film_simulation","grain_effect","color_chrome_effect","white_balance_as_shot","white_balance","white_balance_shift_red","white_balance_shift_blue","white_balance_temperature","highlight_tone","shadow_tone","color","sharpness","noise_reduction","lens_modulation_optimizer","color_space","monochromatic_color_temperature","smooth_skin_effect","color_chrome_fx_blue","monochromatic_color_tint","clarity","teleconverter","portrait_enhancer"],
+      "наши_измерения_XH2": {"длина":625,"число_полей":29,"смещение_значений":509,"тип":"29 x int32 LE","сравнение":"форматно согласуется; точную схему X-T5 нельзя переносить на X-H2, для которой fujicli render не включает"}
+    }
+  },
+  "сеанс_и_ошибки": {
+    "libusb":"найти Imaging и bulk endpoints; claim interface; OpenSession(1); transaction id; CloseSession при Drop",
+    "windows":"WPD/MTP; чанки ограничены оптимумом драйвера и лимитом схемы модели",
+    "DeviceBusy":"ошибка распознаётся, автоматического повтора нет",
+    "ожидание_render":"GetObjectHandles каждые 100 мс без тайм-аута",
+    "события":"явного ожидания событий нет; неожиданные libusb-контейнеры пропускаются с предупреждением",
+    "emulate":"меняет выбранную программную реализацию по VID/PID; не добавляет отсутствующую модель"
+  },
+  "сопоставление": [
+    {"тема":"USB и UI_SETP","fujicli":"FML описывает коды, имена, значения и преобразования USB-свойств","наши_данные":"D-коды связаны с обработчиками и словарём UI_SETP; пространства номеров различаются","итог":"прикладная схема согласуется с мостом, но не заменяет карту прошивки"},
+    {"тема":"D185","fujicli":"структура 29 полей и схема X-T5","наши_данные":"измерены значения и эффекты полей X-H2, связь с RAW_DEV","итог":"совпадает форматный шаблон, но не доказано позиционное соответствие X-H2"},
+    {"тема":"BACKUP","fujicli":"непрозрачный blob без checksum, имён и слотов","наши_данные":"сигнатура, размеры, сегменты, checksum и карта полей","итог":"fujicli не добавляет знаний о внутреннем формате"},
+    {"тема":"0xF6BC/0xF724","fujicli":"не рассматривает","наши_данные":"первое меняется при циклах питания; смысл кандидатный. второе неизвестное volatile поле","итог":"внешнее подтверждение отсутствует"},
+    {"тема":"output/display при питании","fujicli":"не описывает","наши_данные":"устаревшие значения без перезапуска и обновлённые в 07C; механизм не установлен","итог":"локальная гипотеза не подтверждена fujicli"}
+  ],
+  "источники": ["Внешние_репозитории/fujicli/crates/fujicore/src/ptp/container.rs", "Внешние_репозитории/fujicli/crates/fujicore/src/ptp/props.rs", "Внешние_репозитории/fujicli/crates/fujicore/src/features/backup/manager.rs", "Внешние_репозитории/fujicli/crates/fujicore/src/features/render/manager.rs", "Внешние_репозитории/fujicli/crates/fujicore/src/features/render/profile.rs", "Внешние_репозитории/fujicli/crates/fujicodegen/src/common/simulations/camera.rs", "Внешние_репозитории/fujicli/fml/{camera,option,profile,trait}.cue", "Внешние_репозитории/fujicli/man/fujicli.7", "Анализ_прошивки/Камера_2026-11-17/K2_прошивка/отчёт.md", "Анализ_прошивки/PTP_чтение_2026-11-10/Связь_USB_и_прошивки.md", "Анализ_прошивки/PTP_чтение_2026-11-10/профиль_D185/ИТОГ_поля_D185.txt"]
+}

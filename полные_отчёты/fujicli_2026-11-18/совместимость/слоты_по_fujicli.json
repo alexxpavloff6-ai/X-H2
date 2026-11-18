@@ -1,0 +1,722 @@
+{
+ "slots": {
+  "C1": {
+   "0xD18D": [
+    "custom_setting_name",
+    "Kodak Porta400v2 +1"
+   ],
+   "0xD18E": [
+    "image_size",
+    "l_3_2"
+   ],
+   "0xD18F": [
+    "image_quality",
+    "raw"
+   ],
+   "0xD190": [
+    "dynamic_range",
+    "hdr100"
+   ],
+   "0xD191": [
+    "dynamic_range_priority",
+    "off"
+   ],
+   "0xD192": [
+    "film_simulation",
+    "classic_chrome"
+   ],
+   "0xD193": [
+    "monochromatic_color_temperature",
+    0.0
+   ],
+   "0xD194": [
+    "monochromatic_color_tint",
+    0.0
+   ],
+   "0xD195": [
+    "grain_effect",
+    "off"
+   ],
+   "0xD196": [
+    "color_chrome_effect",
+    "strong"
+   ],
+   "0xD197": [
+    "color_chrome_fx_blue",
+    "weak"
+   ],
+   "0xD198": [
+    "smooth_skin_effect",
+    "off"
+   ],
+   "0xD199": [
+    "white_balance",
+    "auto"
+   ],
+   "0xD19A": [
+    "white_balance_shift_red",
+    0
+   ],
+   "0xD19B": [
+    "white_balance_shift_blue",
+    -4
+   ],
+   "0xD19C": [
+    "white_balance_temperature",
+    5200
+   ],
+   "0xD19D": [
+    "highlight_tone",
+    -1.0
+   ],
+   "0xD19E": [
+    "shadow_tone",
+    -1.0
+   ],
+   "0xD19F": [
+    "color",
+    2.0
+   ],
+   "0xD1A0": [
+    "sharpness",
+    0.0
+   ],
+   "0xD1A1": [
+    "noise_reduction",
+    "-4"
+   ],
+   "0xD1A2": [
+    "clarity",
+    0.0
+   ],
+   "0xD1A3": [
+    "lens_modulation_optimizer",
+    "on"
+   ],
+   "0xD1A4": [
+    "color_space",
+    "srgb"
+   ],
+   "0xD1A5": [
+    "нет в fujicli",
+    "0x7"
+   ]
+  },
+  "C2": {
+   "0xD18D": [
+    "custom_setting_name",
+    "Kodak Ektachrome100v2+2/3"
+   ],
+   "0xD18E": [
+    "image_size",
+    "l_3_2"
+   ],
+   "0xD18F": [
+    "image_quality",
+    "raw"
+   ],
+   "0xD190": [
+    "dynamic_range",
+    "hdr200"
+   ],
+   "0xD191": [
+    "dynamic_range_priority",
+    "off"
+   ],
+   "0xD192": [
+    "film_simulation",
+    "classic_negative"
+   ],
+   "0xD193": [
+    "monochromatic_color_temperature",
+    0.0
+   ],
+   "0xD194": [
+    "monochromatic_color_tint",
+    0.0
+   ],
+   "0xD195": [
+    "grain_effect",
+    "off"
+   ],
+   "0xD196": [
+    "color_chrome_effect",
+    "strong"
+   ],
+   "0xD197": [
+    "color_chrome_fx_blue",
+    "strong"
+   ],
+   "0xD198": [
+    "smooth_skin_effect",
+    "off"
+   ],
+   "0xD199": [
+    "white_balance",
+    "temperature"
+   ],
+   "0xD19A": [
+    "white_balance_shift_red",
+    1
+   ],
+   "0xD19B": [
+    "white_balance_shift_blue",
+    -5
+   ],
+   "0xD19C": [
+    "white_balance_temperature",
+    5750
+   ],
+   "0xD19D": [
+    "highlight_tone",
+    1.5
+   ],
+   "0xD19E": [
+    "shadow_tone",
+    0.5
+   ],
+   "0xD19F": [
+    "color",
+    1.0
+   ],
+   "0xD1A0": [
+    "sharpness",
+    -1.0
+   ],
+   "0xD1A1": [
+    "noise_reduction",
+    "-4"
+   ],
+   "0xD1A2": [
+    "clarity",
+    3.0
+   ],
+   "0xD1A3": [
+    "lens_modulation_optimizer",
+    "on"
+   ],
+   "0xD1A4": [
+    "color_space",
+    "srgb"
+   ],
+   "0xD1A5": [
+    "нет в fujicli",
+    "0x7"
+   ]
+  },
+  "C3": {
+   "0xD18D": [
+    "custom_setting_name",
+    "Cinematic Gold +1"
+   ],
+   "0xD18E": [
+    "image_size",
+    "l_3_2"
+   ],
+   "0xD18F": [
+    "image_quality",
+    "raw"
+   ],
+   "0xD190": [
+    "dynamic_range",
+    "hdr400"
+   ],
+   "0xD191": [
+    "dynamic_range_priority",
+    "off"
+   ],
+   "0xD192": [
+    "film_simulation",
+    "classic_negative"
+   ],
+   "0xD193": [
+    "monochromatic_color_temperature",
+    0.0
+   ],
+   "0xD194": [
+    "monochromatic_color_tint",
+    0.0
+   ],
+   "0xD195": [
+    "grain_effect",
+    "strong_small"
+   ],
+   "0xD196": [
+    "color_chrome_effect",
+    "off"
+   ],
+   "0xD197": [
+    "color_chrome_fx_blue",
+    "off"
+   ],
+   "0xD198": [
+    "smooth_skin_effect",
+    "off"
+   ],
+   "0xD199": [
+    "white_balance",
+    "daylight"
+   ],
+   "0xD19A": [
+    "white_balance_shift_red",
+    4
+   ],
+   "0xD19B": [
+    "white_balance_shift_blue",
+    -5
+   ],
+   "0xD19C": [
+    "white_balance_temperature",
+    5200
+   ],
+   "0xD19D": [
+    "highlight_tone",
+    0.0
+   ],
+   "0xD19E": [
+    "shadow_tone",
+    0.0
+   ],
+   "0xD19F": [
+    "color",
+    3.0
+   ],
+   "0xD1A0": [
+    "sharpness",
+    -2.0
+   ],
+   "0xD1A1": [
+    "noise_reduction",
+    "-4"
+   ],
+   "0xD1A2": [
+    "clarity",
+    -2.0
+   ],
+   "0xD1A3": [
+    "lens_modulation_optimizer",
+    "on"
+   ],
+   "0xD1A4": [
+    "color_space",
+    "adobe_rgb"
+   ],
+   "0xD1A5": [
+    "нет в fujicli",
+    "0x7"
+   ]
+  },
+  "C4": {
+   "0xD18D": [
+    "custom_setting_name",
+    "Classic Cuban Neg"
+   ],
+   "0xD18E": [
+    "image_size",
+    "l_3_2"
+   ],
+   "0xD18F": [
+    "image_quality",
+    "fine_raw"
+   ],
+   "0xD190": [
+    "dynamic_range",
+    "hdr400"
+   ],
+   "0xD191": [
+    "dynamic_range_priority",
+    "off"
+   ],
+   "0xD192": [
+    "film_simulation",
+    "classic_negative"
+   ],
+   "0xD193": [
+    "monochromatic_color_temperature",
+    0.0
+   ],
+   "0xD194": [
+    "monochromatic_color_tint",
+    0.0
+   ],
+   "0xD195": [
+    "grain_effect",
+    "off"
+   ],
+   "0xD196": [
+    "color_chrome_effect",
+    "strong"
+   ],
+   "0xD197": [
+    "color_chrome_fx_blue",
+    "strong"
+   ],
+   "0xD198": [
+    "smooth_skin_effect",
+    "off"
+   ],
+   "0xD199": [
+    "white_balance",
+    "auto"
+   ],
+   "0xD19A": [
+    "white_balance_shift_red",
+    1
+   ],
+   "0xD19B": [
+    "white_balance_shift_blue",
+    -5
+   ],
+   "0xD19C": [
+    "white_balance_temperature",
+    5200
+   ],
+   "0xD19D": [
+    "highlight_tone",
+    -2.0
+   ],
+   "0xD19E": [
+    "shadow_tone",
+    1.0
+   ],
+   "0xD19F": [
+    "color",
+    4.0
+   ],
+   "0xD1A0": [
+    "sharpness",
+    0.0
+   ],
+   "0xD1A1": [
+    "noise_reduction",
+    "-4"
+   ],
+   "0xD1A2": [
+    "clarity",
+    0.0
+   ],
+   "0xD1A3": [
+    "lens_modulation_optimizer",
+    "on"
+   ],
+   "0xD1A4": [
+    "color_space",
+    "srgb"
+   ],
+   "0xD1A5": [
+    "нет в fujicli",
+    "0x7"
+   ]
+  },
+  "C5": {
+   "0xD18D": [
+    "custom_setting_name",
+    "Kodak Porta 160v2 +1/3+1"
+   ],
+   "0xD18E": [
+    "image_size",
+    "l_3_2"
+   ],
+   "0xD18F": [
+    "image_quality",
+    "raw"
+   ],
+   "0xD190": [
+    "dynamic_range",
+    "auto"
+   ],
+   "0xD191": [
+    "dynamic_range_priority",
+    "off"
+   ],
+   "0xD192": [
+    "film_simulation",
+    "classic_chrome"
+   ],
+   "0xD193": [
+    "monochromatic_color_temperature",
+    0.0
+   ],
+   "0xD194": [
+    "monochromatic_color_tint",
+    0.0
+   ],
+   "0xD195": [
+    "grain_effect",
+    "off"
+   ],
+   "0xD196": [
+    "color_chrome_effect",
+    "weak"
+   ],
+   "0xD197": [
+    "color_chrome_fx_blue",
+    "weak"
+   ],
+   "0xD198": [
+    "smooth_skin_effect",
+    "off"
+   ],
+   "0xD199": [
+    "white_balance",
+    "daylight"
+   ],
+   "0xD19A": [
+    "white_balance_shift_red",
+    4
+   ],
+   "0xD19B": [
+    "white_balance_shift_blue",
+    -5
+   ],
+   "0xD19C": [
+    "white_balance_temperature",
+    5200
+   ],
+   "0xD19D": [
+    "highlight_tone",
+    0.0
+   ],
+   "0xD19E": [
+    "shadow_tone",
+    0.0
+   ],
+   "0xD19F": [
+    "color",
+    0.0
+   ],
+   "0xD1A0": [
+    "sharpness",
+    -1.0
+   ],
+   "0xD1A1": [
+    "noise_reduction",
+    "-4"
+   ],
+   "0xD1A2": [
+    "clarity",
+    0.0
+   ],
+   "0xD1A3": [
+    "lens_modulation_optimizer",
+    "on"
+   ],
+   "0xD1A4": [
+    "color_space",
+    "srgb"
+   ],
+   "0xD1A5": [
+    "нет в fujicli",
+    "0x7"
+   ]
+  },
+  "C6": {
+   "0xD18D": [
+    "custom_setting_name",
+    "Technicolor (Warm)"
+   ],
+   "0xD18E": [
+    "image_size",
+    "l_3_2"
+   ],
+   "0xD18F": [
+    "image_quality",
+    "raw"
+   ],
+   "0xD190": [
+    "dynamic_range",
+    "hdr400"
+   ],
+   "0xD191": [
+    "dynamic_range_priority",
+    "off"
+   ],
+   "0xD192": [
+    "film_simulation",
+    "classic_negative"
+   ],
+   "0xD193": [
+    "monochromatic_color_temperature",
+    0.0
+   ],
+   "0xD194": [
+    "monochromatic_color_tint",
+    0.0
+   ],
+   "0xD195": [
+    "grain_effect",
+    "off"
+   ],
+   "0xD196": [
+    "color_chrome_effect",
+    "off"
+   ],
+   "0xD197": [
+    "color_chrome_fx_blue",
+    "weak"
+   ],
+   "0xD198": [
+    "smooth_skin_effect",
+    "off"
+   ],
+   "0xD199": [
+    "white_balance",
+    "temperature"
+   ],
+   "0xD19A": [
+    "white_balance_shift_red",
+    0
+   ],
+   "0xD19B": [
+    "white_balance_shift_blue",
+    0
+   ],
+   "0xD19C": [
+    "white_balance_temperature",
+    5900
+   ],
+   "0xD19D": [
+    "highlight_tone",
+    -2.0
+   ],
+   "0xD19E": [
+    "shadow_tone",
+    -1.0
+   ],
+   "0xD19F": [
+    "color",
+    -2.0
+   ],
+   "0xD1A0": [
+    "sharpness",
+    -2.0
+   ],
+   "0xD1A1": [
+    "noise_reduction",
+    "-4"
+   ],
+   "0xD1A2": [
+    "clarity",
+    -2.0
+   ],
+   "0xD1A3": [
+    "lens_modulation_optimizer",
+    "on"
+   ],
+   "0xD1A4": [
+    "color_space",
+    "srgb"
+   ],
+   "0xD1A5": [
+    "нет в fujicli",
+    "0x7"
+   ]
+  },
+  "C7": {
+   "0xD18D": [
+    "custom_setting_name",
+    "Velvia City Nights"
+   ],
+   "0xD18E": [
+    "image_size",
+    "l_3_2"
+   ],
+   "0xD18F": [
+    "image_quality",
+    "raw"
+   ],
+   "0xD190": [
+    "dynamic_range",
+    "hdr200"
+   ],
+   "0xD191": [
+    "dynamic_range_priority",
+    "off"
+   ],
+   "0xD192": [
+    "film_simulation",
+    "velvia"
+   ],
+   "0xD193": [
+    "monochromatic_color_temperature",
+    0.0
+   ],
+   "0xD194": [
+    "monochromatic_color_tint",
+    0.0
+   ],
+   "0xD195": [
+    "grain_effect",
+    "off"
+   ],
+   "0xD196": [
+    "color_chrome_effect",
+    "strong"
+   ],
+   "0xD197": [
+    "color_chrome_fx_blue",
+    "weak"
+   ],
+   "0xD198": [
+    "smooth_skin_effect",
+    "off"
+   ],
+   "0xD199": [
+    "white_balance",
+    "incandescent"
+   ],
+   "0xD19A": [
+    "white_balance_shift_red",
+    2
+   ],
+   "0xD19B": [
+    "white_balance_shift_blue",
+    -3
+   ],
+   "0xD19C": [
+    "white_balance_temperature",
+    5200
+   ],
+   "0xD19D": [
+    "highlight_tone",
+    0.0
+   ],
+   "0xD19E": [
+    "shadow_tone",
+    1.0
+   ],
+   "0xD19F": [
+    "color",
+    -4.0
+   ],
+   "0xD1A0": [
+    "sharpness",
+    0.0
+   ],
+   "0xD1A1": [
+    "noise_reduction",
+    "-4"
+   ],
+   "0xD1A2": [
+    "clarity",
+    -1.0
+   ],
+   "0xD1A3": [
+    "lens_modulation_optimizer",
+    "on"
+   ],
+   "0xD1A4": [
+    "color_space",
+    "adobe_rgb"
+   ],
+   "0xD1A5": [
+    "нет в fujicli",
+    "0x7"
+   ]
+  }
+ },
+ "unknown_props": [
+  "0xD1A5"
+ ],
+ "issues": []
+}
